@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Trademarks","shortdesc":"\n            <p class=\"shortdesc\">The following terms are trademarks of the Retro Tools in the United States, other countries, or both:</p>\n         ","href":"topics\/trademarks.html","attributes": {"data-id":"trademarks",},"menu": {"hasChildren":false,},"tocID":"trademarks-d66e133","topics":[]}]});
