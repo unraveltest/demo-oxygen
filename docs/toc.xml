@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><toc xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc">
+   <title><span xmlns="http://www.w3.org/1999/xhtml" class="booktitle">  <span class="ph mainbooktitle">un40</span>  </span></title>
+   <topic href="50688254.html" data-id="FAGIICFE" wh-toc-id="FAGIICFE-d66e14">
+      <title>Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH), with Cloudera Manager (CM) </title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIICFE"></resourceid>
+         <navtitle class="- topic/navtitle ">Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH), with Cloudera Manager (CM) </navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH), with Cloudera Manager (CM)</linktext>
+      </topicmeta>
+      <topic href="50792782.html" data-id="FAHJCHIC" wh-toc-id="FAHJCHIC-d66e22">
+         <title>Part 1: Install Unravel Server on CDH+CM </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAHJCHIC"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 1: Install Unravel Server on CDH+CM </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 1: Install Unravel Server on CDH+CM</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="50689256.html" data-id="FAGIJCFG" wh-toc-id="FAGIJCFG-d66e30">
+         <title>Part 2: Install Unravel Sensor Parcel on CDH+CM </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJCFG"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 2: Install Unravel Sensor Parcel on CDH+CM </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 2: Install Unravel Sensor Parcel on CDH+CM</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="51212745.html" data-id="FBCBCHEF" wh-toc-id="FBCBCHEF-d66e38">
+         <title>Part 3: Additional Topics for CDH </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBCHEF"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 3: Additional Topics for CDH </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 3: Additional Topics for CDH</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="50688443.html" data-id="FAGIIEED" wh-toc-id="FAGIIEED-d66e47">
+      <title>Installation Guide for Hortonworks Data Platform (HDP) </title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIIEED"></resourceid>
+         <navtitle class="- topic/navtitle ">Installation Guide for Hortonworks Data Platform (HDP) </navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Installation Guide for Hortonworks Data Platform (HDP)</linktext>
+      </topicmeta>
+      <topic href="50672736.html" data-id="FAGHCHDG" wh-toc-id="FAGHCHDG-d66e55">
+         <title>Part 1: Install Unravel Server on HDP </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGHCHDG"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 1: Install Unravel Server on HDP </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 1: Install Unravel Server on HDP</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="50689477.html" data-id="FAGIJEHH" wh-toc-id="FAGIJEHH-d66e63">
+         <title>Part 2: Enable Additional Data Collection / Instrumentation for HDP </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJEHH"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 2: Enable Additional Data Collection / Instrumentation for HDP </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 2: Enable Additional Data Collection / Instrumentation for HDP</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="51213196.html" data-id="FBCBDBJG" wh-toc-id="FBCBDBJG-d66e71">
+         <title>Part 3: Additional Topics for HDP </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBDBJG"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 3: Additional Topics for HDP </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 3: Additional Topics for HDP</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="Installation-Guide-for-MapR_50961894.html" data-id="Installation-Guide-for-MapR_50961894" wh-toc-id="Installation-Guide-for-MapR_50961894-d66e80">
+      <title> Unravel 4.0-4.1 : Installation Guide for MapR </title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="Installation-Guide-for-MapR_50961894"></resourceid>
+         <navtitle class="- topic/navtitle "> Unravel 4.0-4.1 : Installation Guide for MapR </navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Unravel 4.0-4.1 : Installation Guide for MapR</linktext>
+      </topicmeta>
+      <topic href="50690385.html" data-id="FAGJADIF" wh-toc-id="FAGJADIF-d66e88">
+         <title>Part 1: Install Unravel Server on MapR </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGJADIF"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 1: Install Unravel Server on MapR </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 1: Install Unravel Server on MapR</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="50688326.html" data-id="FAGIIDCG" wh-toc-id="FAGIIDCG-d66e96">
+         <title>Part 2: Enable Additional Data Collection / Instrumentation for MapR </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIIDCG"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 2: Enable Additional Data Collection / Instrumentation for MapR </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 2: Enable Additional Data Collection / Instrumentation for MapR</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="51213065.html" data-id="FBCBDAGF" wh-toc-id="FBCBDAGF-d66e104">
+         <title>Part 3: AdditionalTopics for MapR </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBDAGF"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 3: AdditionalTopics for MapR </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 3: AdditionalTopics for MapR</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="50688627.html" data-id="FAGIIGCH" wh-toc-id="FAGIIGCH-d66e113">
+      <title>Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole Clusters </title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIIGCH"></resourceid>
+         <navtitle class="- topic/navtitle ">Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole Clusters </navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole Clusters</linktext>
+      </topicmeta>
+      <topic href="50689611.html" data-id="FAGIJGBB" wh-toc-id="FAGIJGBB-d66e121">
+         <title>Part 1: Install Unravel Server for Amazon EMR or Qubole Cluster </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJGBB"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 1: Install Unravel Server for Amazon EMR or Qubole Cluster </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 1: Install Unravel Server for Amazon EMR or Qubole Cluster</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="50689789.html" data-id="FAGIJHIJ" wh-toc-id="FAGIJHIJ-d66e129">
+         <title>Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive Cluster </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJHIJ"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive Cluster </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive Cluster</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="52567661.html" data-id="FCFGHGGB" wh-toc-id="FCFGHGGB-d66e137">
+         <title>Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark Cluster </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FCFGHGGB"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark Cluster </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark Cluster</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="50876309.html" data-id="FAIHGDAJ" wh-toc-id="FAIHGDAJ-d66e145">
+         <title>Part 4: Modify Amazon EMR Cluster Bootstrap/Setup </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAIHGDAJ"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 4: Modify Amazon EMR Cluster Bootstrap/Setup </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 4: Modify Amazon EMR Cluster Bootstrap/Setup</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="51213131.html" data-id="FBCBDBDB" wh-toc-id="FBCBDBDB-d66e153">
+         <title>Part 5: Additional Topics for EMR or Qubole </title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBDBDB"></resourceid>
+            <navtitle class="- topic/navtitle ">Part 5: Additional Topics for EMR or Qubole </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Part 5: Additional Topics for EMR or Qubole</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="53167025.html" data-id="FDBGHACF" wh-toc-id="FDBGHACF-d66e163">
+      <title>Setting Up Auto Actions (Alerts) </title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="FDBGHACF"></resourceid>
+         <navtitle class="- topic/navtitle ">Setting Up Auto Actions (Alerts) </navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Setting Up Auto Actions (Alerts)</linktext>
+      </topicmeta>
+   </topic>
+   <topic href="53900010.html" wh-toc-id="tocId-d66e172">
+      <title>***</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid=""></resourceid>
+      </topicmeta>
+   </topic>
+</toc>
