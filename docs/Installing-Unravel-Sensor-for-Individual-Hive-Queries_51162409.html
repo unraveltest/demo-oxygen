@@ -1,0 +1,439 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Unravel 4.0-4.1 Unravel 4.0-4.1 Advanced Topics Sensors The MapReduce JVM sensor is a prepackaged distribution of JVM agent which enables collection of additional information, including resource usage ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="DC.Relation" scheme="URI" content="Sensors_53900864.html" /><meta name="DC.Relation" scheme="URI" content="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040.html" /><meta name="DC.Relation" scheme="URI" content="Workflows_53900905.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409" /><meta name="DC.Language" content="en-us" /><title>Installing Unravel Sensor for Individual Hive Queries</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409-d66e310" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2018122203" /></head>
+
+    <body id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="unravel-logo-white-small-1.png" alt="  Unravel 4.0-4.1  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Unravel 4.0-4.1</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="Overview_53899450-d66e14" data-state="leaf" class=" topicref " data-id="Overview_53899450"><span class="title"><a href="Overview_53899450.html">Overview </a></span></span></li>
+   <li class="has-children"><span data-tocid="installation-d66e23" data-state="not-ready" class=" topicref " data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="User-Guide_50687944-d66e176" data-state="not-ready" class=" topicref " data-id="User-Guide_50687944"><span class="title"><a href="User-Guide_50687944.html">User Guide </a></span></span></li>
+   <li><span data-tocid="Unravel-Server-Reference_50690507-d66e260" data-state="leaf" class=" topicref " data-id="Unravel-Server-Reference_50690507"><span class="title"><a href="Unravel-Server-Reference_50690507.html">Unravel Server Reference </a></span></span></li>
+   <li class="has-children"><span data-tocid="Advanced-Topics_50688158-d66e270" data-state="not-ready" class=" topicref " data-id="Advanced-Topics_50688158"><span class="title"><a href="Advanced-Topics_50688158.html">Advanced Topics </a></span></span></li>
+   <li><span data-tocid="tocId-d66e479" data-state="leaf" class=" topicref "><span class="title"><a href="53900010.html">***</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="Advanced-Topics_50688158"><span class="title"><a href="Advanced-Topics_50688158.html">Advanced Topics </a></span></span></li>
+   <li><span class="topicref" data-id="Sensors_53900864"><span class="title"><a href="Sensors_53900864.html"> Sensors </a></span></span></li>
+   <li class="active"><span class="topicref" data-id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409"><span class="title"><a href="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.html">Installing Unravel Sensor for Individual Hive Queries </a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040.html" title="Installing Unravel Sensor for Individual Applications Submitted Through spark-submit" aria-label="Previous topic: Installing Unravel Sensor for Individual Applications Submitted Through spark-submit" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="Workflows_53900905.html" title="Workflows" aria-label="Next topic: Workflows" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="Advanced-Topics_50688158-d66e270" class="topicref" data-id="Advanced-Topics_50688158" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action Advanced-Topics_50688158-d66e270-link" class="wh-expand-btn"></span><span class="title"><a href="Advanced-Topics_50688158.html" id="Advanced-Topics_50688158-d66e270-link">Advanced Topics </a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913-d66e278" class="topicref" data-id="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913.html" id="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913-d66e278-link"> Creating Active Directory Kerberos Principals and Keytabs for Unravel </a></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="Sensors_53900864-d66e286" class="topicref" data-id="Sensors_53900864" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action Sensors_53900864-d66e286-link" class="wh-expand-btn"></span><span class="title"><a href="Sensors_53900864.html" id="Sensors_53900864-d66e286-link"> Sensors </a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545-d66e294" class="topicref" data-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.html" id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545-d66e294-link"> Installing Unravel Sensor for Individual Applications Submitted Through spark-shell </a></span></span></li>
+               <li role="treeitem"><span data-tocid="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040-d66e302" class="topicref" data-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040.html" id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040-d66e302-link">Installing Unravel Sensor for Individual Applications Submitted Through spark-submit </a></span></span></li>
+               <li role="treeitem" class="active"><span data-tocid="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409-d66e310" class="topicref" data-id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.html" id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409-d66e310-link">Installing Unravel Sensor for Individual Hive Queries </a></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="Workflows_53900905-d66e318" class="topicref" data-id="Workflows_53900905" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action Workflows_53900905-d66e318-link" class="wh-expand-btn"></span><span class="title"><a href="Workflows_53900905.html" id="Workflows_53900905-d66e318-link"> Workflows </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="Custom-Configurations_54044915-d66e350" class="topicref" data-id="Custom-Configurations_54044915" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action Custom-Configurations_54044915-d66e350-link" class="wh-expand-btn"></span><span class="title"><a href="Custom-Configurations_54044915.html" id="Custom-Configurations_54044915-d66e350-link"> Custom Configurations </a></span></span></li>
+         <li role="treeitem"><span data-tocid="Connecting-to-a-Hive-Metastore_51162326-d66e414" class="topicref" data-id="Connecting-to-a-Hive-Metastore_51162326" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Connecting-to-a-Hive-Metastore_51162326.html" id="Connecting-to-a-Hive-Metastore_51162326-d66e414-link">Connecting to a Hive Metastore </a></span></span></li>
+         <li role="treeitem"><span data-tocid="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267-d66e422" class="topicref" data-id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.html" id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267-d66e422-link"> Creating an AWS RDS CloudWatch Alarm for FreeStorageSpace </a></span></span></li>
+         <li role="treeitem"><span data-tocid="Creating-Application-Tags_54048480-d66e430" class="topicref" data-id="Creating-Application-Tags_54048480" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Creating-Application-Tags_54048480.html" id="Creating-Application-Tags_54048480-d66e430-link">Creating Application Tags </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="Troubleshooting_50881320-d66e438" class="topicref" data-id="Troubleshooting_50881320" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action Troubleshooting_50881320-d66e438-link" class="wh-expand-btn"></span><span class="title"><a href="Troubleshooting_50881320.html" id="Troubleshooting_50881320-d66e438-link">Troubleshooting </a></span></span></li>
+         <li role="treeitem"><span data-tocid="Uninstalling-Unravel-Server_50688928-d66e462" class="topicref" data-id="Uninstalling-Unravel-Server_50688928" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Uninstalling-Unravel-Server_50688928.html" id="Uninstalling-Unravel-Server_50688928-d66e462-link"> Uninstalling Unravel Server </a></span></span></li>
+         <li role="treeitem"><span data-tocid="Upgrading-Unravel-Server_51854263-d66e470" class="topicref" data-id="Upgrading-Unravel-Server_51854263" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Upgrading-Unravel-Server_51854263.html" id="Upgrading-Unravel-Server_51854263-d66e470-link"> Upgrading Unravel Server </a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Installing Unravel Sensor for Individual Hive Queries </h1>
+   <div class="body taskbody">
+      <section class="section context">
+         <ol class="ol">
+
+            <li class="li first">
+               <span class="ph">
+                  <a class="xref" href="index.html">Unravel 4.0-4.1</a>
+               </span>
+            </li>
+
+            <li class="li">
+               <span class="ph">
+                  <a class="xref" href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a>
+               </span>
+            </li>
+
+            <li class="li">
+               <span class="ph">
+                  <a class="xref" href="Advanced-Topics_50688158.html">Advanced Topics</a>
+               </span>
+            </li>
+
+            <li class="li">
+               <span class="ph">
+                  <a class="xref" href="Sensors_53900864.html">Sensors</a>
+               </span>
+            </li>
+
+         </ol>
+         <p class="p">
+            <span class="ph">The MapReduce JVM sensor is a prepackaged distribution of JVM agent which enables collection of
+               additional information, including resource usage metrics. The sensor binary is distributed as </span>
+            <code class="ph codeph">
+               <span class="ph">unravel-sensor-for-mapreduce-bin.zip</span>
+            </code>
+            <span class="ph">. This archive contains the following 4 jars:</span>
+         </p>
+         <ul class="ul">
+
+            <li class="li">
+               <p class="p">
+                  <code class="ph codeph">
+                     <span class="ph">btrace-agent.jar</span>
+                  </code>
+               </p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <code class="ph codeph">
+                     <span class="ph">btrace-boot.jar </span>
+                  </code>
+               </p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <code class="ph codeph">
+                     <span class="ph">unravel-mr-boot.jar </span>
+                  </code>
+               </p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <code class="ph codeph">
+                     <span class="ph">unravel-mr-sys.jar </span>
+                  </code>
+               </p>
+            </li>
+
+         </ul>
+         <p class="p">
+            <span class="ph">When you enable this sensor, it uses the standard MapReduce profiling extension. You can copy and paste
+               the following configuration snippets for a quick bootstrap:</span>
+         </p>
+         <p class="p">
+            <span class="ph">
+               <span class="ph">Option A: Installing the MapReduce JVM Sensor </span>on Cloudera</span>
+         </p>
+         <ol class="ol">
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">
+                        <span class="ph">Enable profiling:</span>
+                     </span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.task.profile=true;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">Select map and reduce profiles:</span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">
+                        <span class="ph">Enable the JVM agent for map and reduce tasks:</span>
+                     </span>
+                  </span>
+               </p>
+               <span class="ph aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span>
+               <p class="p">
+                  <span class="ph">Set </span>
+                  <span class="ph">UNRAVEL_HOST_IP</span>
+                  <span class="ph">of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set 
+mapreduce.task.profile.params=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">
+                        <span class="ph">Enable the JVM agent for application master:</span>
+                     </span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set 
+yarn.app.mapreduce.am.command-opts=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043 -Dcom.sun.btrace.FileClient.flush=-1;</code></pre>
+            </li>
+
+         </ol>
+         <p class="p">
+            <span class="ph">
+               <span class="ph">Option B: Installing the MapReduce JVM Sensor on </span>
+            </span>Cloudera Manager for Hive</p>
+         <p class="p with-breadcrumbs">See <em class="ph i">Optional - Configure YARN - MapReduce (MR) JVM Sensor Cluster-Wide</em>
+            in <a class="xref" href="50689256.html">Part 2: Install Unravel Sensor Parcel on CDH+CM</a>.</p>
+         <p class="p">
+            <span class="ph">
+               <span class="ph">Option C: Installing the MapReduce JVM Sensor on</span> HDFS</span>
+         </p>
+         <p class="p">
+            <span class="ph">Change your <code class="ph codeph">*init</code> file as follows:</span>
+         </p>
+         <ol class="ol">
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">Set the path to the JVM sensor archive:</span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.job.cache.archives=path_in_hdfs/unravel-sensor-for-mapreduce-bin.zip;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">Enable profiling:</span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.task.profile=true;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">Select map and reduce profiles:</span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">
+                        <span class="ph">Enable the JVM agent for map and reduce tasks</span>:</span>
+                  </span>
+               </p>
+               <span class="ph aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span>
+               <p class="p">
+                  <span class="ph">Set </span>
+                  <span class="ph">UNRAVEL_HOST_IP </span>
+                  <span class="ph">of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set 
+mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">Enable the JVM agent for application master:</span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</code></pre>
+            </li>
+
+         </ol>
+         <p class="p">
+            <span class="ph">
+               <span class="ph">Option D: Installing the MapReduce JVM Sensor on the </span>Local File System</span>
+         </p>
+         <ol class="ol">
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">Add the JVM sensor archive to the PATH environment variable.</span>
+                  </span>
+               </p>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">Enable profiling:</span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.task.profile=true;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">Select map and reduce profiles:</span>
+                  </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.task.profile.maps=0-5;set mapreduce.task.profile.reduces=0-5;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">
+                     <span class="ph">
+                        <span class="ph">Enable the JVM agent for map and reduce tasks</span>:</span>
+                  </span>
+               </p>
+               <span class="ph aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span>
+               <p class="p">
+                  <span class="ph">Set </span>
+                  <span class="ph">UNRAVEL_HOST_IP </span>
+                  <span class="ph">of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</code></pre>
+            </li>
+
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <span class="ph">Enable the JVM agent for application master.</span>
+               </p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</code></pre>
+            </li>
+
+         </ol>
+         <p class="p"></p>
+         <p class="p"></p>
+         <p class="p">Attachments:</p>
+         <img class="image" src="images/icons/bullet_blue.gif" alt="" />
+         <a class="xref" href="media/51162413.png">logo_small.png</a> (image/png)
+         
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>
