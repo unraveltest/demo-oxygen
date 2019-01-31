@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"typical-apms","href":"typical_apms.html","attributes": {"data-id":"typical_apms",},"menu": {"hasChildren":false,},"tocID":"typical_apms-d66e493","topics":[]},{"title":"spark-apm","href":"spark_apm.html","attributes": {"data-id":"spark_apm",},"menu": {"hasChildren":false,},"tocID":"spark_apm-d66e501","topics":[]}]});
