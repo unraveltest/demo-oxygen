@@ -2,27 +2,35 @@
    <title><span xmlns="http://www.w3.org/1999/xhtml" class="booktitle">  <span class="ph mainbooktitle">Unravel 4.0-4.1</span>  </span></title>
    <topic href="Overview_53899450.html" data-id="Overview_53899450" wh-toc-id="Overview_53899450-d66e14">
       <title>Overview </title>
+      <shortdesc>
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">See what Unravel does and why.</p>
+      </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="Overview_53899450"></resourceid>
          <navtitle class="- topic/navtitle ">Overview </navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">Overview</linktext>
+         <linktext class="- map/linktext ">Overview</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">See what Unravel does and why.</shortdesc>
       </topicmeta>
    </topic>
-   <topic href="installation.html" data-id="installation" wh-toc-id="installation-d66e23">
+   <topic href="installation.html" data-id="installation" wh-toc-id="installation-d66e26">
       <title>Installation Guides</title>
+      <shortdesc>
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Find installation steps for your platform.</p>
+      </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="installation"></resourceid>
          <navtitle class="- topic/navtitle ">Installation Guides</navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">Installation Guides</linktext>
+         <linktext class="- map/linktext ">Installation Guides</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">Find installation steps for your platform.</shortdesc>
       </topicmeta>
-      <topic href="50688254.html" data-id="FAGIICFE" wh-toc-id="FAGIICFE-d66e31">
+      <topic href="50688254.html" data-id="FAGIICFE" wh-toc-id="FAGIICFE-d66e37">
          <title>Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH), with Cloudera Manager (CM) </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIICFE"></resourceid>
             <navtitle class="- topic/navtitle ">Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH), with Cloudera Manager (CM) </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH), with Cloudera Manager (CM)</linktext>
          </topicmeta>
-         <topic href="50792782.html" data-id="FAHJCHIC" wh-toc-id="FAHJCHIC-d66e39">
+         <topic href="50792782.html" data-id="FAHJCHIC" wh-toc-id="FAHJCHIC-d66e45">
             <title>Part 1: Install Unravel Server on CDH+CM </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAHJCHIC"></resourceid>
@@ -30,7 +38,7 @@
                <linktext class="- map/linktext ">Part 1: Install Unravel Server on CDH+CM</linktext>
             </topicmeta>
          </topic>
-         <topic href="50689256.html" data-id="FAGIJCFG" wh-toc-id="FAGIJCFG-d66e47">
+         <topic href="50689256.html" data-id="FAGIJCFG" wh-toc-id="FAGIJCFG-d66e53">
             <title>Part 2: Install Unravel Sensor Parcel on CDH+CM </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJCFG"></resourceid>
@@ -38,7 +46,7 @@
                <linktext class="- map/linktext ">Part 2: Install Unravel Sensor Parcel on CDH+CM</linktext>
             </topicmeta>
          </topic>
-         <topic href="51212745.html" data-id="FBCBCHEF" wh-toc-id="FBCBCHEF-d66e55">
+         <topic href="51212745.html" data-id="FBCBCHEF" wh-toc-id="FBCBCHEF-d66e61">
             <title>Part 3: Additional Topics for CDH </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBCHEF"></resourceid>
@@ -47,14 +55,14 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="Installation-Guide-for-MapR_50961894.html" data-id="Installation-Guide-for-MapR_50961894" wh-toc-id="Installation-Guide-for-MapR_50961894-d66e63">
+      <topic href="Installation-Guide-for-MapR_50961894.html" data-id="Installation-Guide-for-MapR_50961894" wh-toc-id="Installation-Guide-for-MapR_50961894-d66e69">
          <title>Installation Guide for MapR </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Installation-Guide-for-MapR_50961894"></resourceid>
             <navtitle class="- topic/navtitle ">Installation Guide for MapR </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Installation Guide for MapR</linktext>
          </topicmeta>
-         <topic href="50690385.html" data-id="FAGJADIF" wh-toc-id="FAGJADIF-d66e71">
+         <topic href="50690385.html" data-id="FAGJADIF" wh-toc-id="FAGJADIF-d66e77">
             <title>Part 1: Install Unravel Server on MapR </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGJADIF"></resourceid>
@@ -62,7 +70,7 @@
                <linktext class="- map/linktext ">Part 1: Install Unravel Server on MapR</linktext>
             </topicmeta>
          </topic>
-         <topic href="50688326.html" data-id="FAGIIDCG" wh-toc-id="FAGIIDCG-d66e79">
+         <topic href="50688326.html" data-id="FAGIIDCG" wh-toc-id="FAGIIDCG-d66e85">
             <title>Part 2: Enable Additional Data Collection / Instrumentation for MapR </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIIDCG"></resourceid>
@@ -70,7 +78,7 @@
                <linktext class="- map/linktext ">Part 2: Enable Additional Data Collection / Instrumentation for MapR</linktext>
             </topicmeta>
          </topic>
-         <topic href="51213065.html" data-id="FBCBDAGF" wh-toc-id="FBCBDAGF-d66e87">
+         <topic href="51213065.html" data-id="FBCBDAGF" wh-toc-id="FBCBDAGF-d66e93">
             <title>Part 3: AdditionalTopics for MapR </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBDAGF"></resourceid>
@@ -79,14 +87,14 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="50688627.html" data-id="FAGIIGCH" wh-toc-id="FAGIIGCH-d66e95">
+      <topic href="50688627.html" data-id="FAGIIGCH" wh-toc-id="FAGIIGCH-d66e101">
          <title>Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole Clusters </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIIGCH"></resourceid>
             <navtitle class="- topic/navtitle ">Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole Clusters </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole Clusters</linktext>
          </topicmeta>
-         <topic href="50689611.html" data-id="FAGIJGBB" wh-toc-id="FAGIJGBB-d66e103">
+         <topic href="50689611.html" data-id="FAGIJGBB" wh-toc-id="FAGIJGBB-d66e109">
             <title>Part 1: Install Unravel Server for Amazon EMR or Qubole Cluster </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJGBB"></resourceid>
@@ -94,7 +102,7 @@
                <linktext class="- map/linktext ">Part 1: Install Unravel Server for Amazon EMR or Qubole Cluster</linktext>
             </topicmeta>
          </topic>
-         <topic href="50689789.html" data-id="FAGIJHIJ" wh-toc-id="FAGIJHIJ-d66e111">
+         <topic href="50689789.html" data-id="FAGIJHIJ" wh-toc-id="FAGIJHIJ-d66e117">
             <title>Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive Cluster </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJHIJ"></resourceid>
@@ -102,7 +110,7 @@
                <linktext class="- map/linktext ">Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive Cluster</linktext>
             </topicmeta>
          </topic>
-         <topic href="52567661.html" data-id="FCFGHGGB" wh-toc-id="FCFGHGGB-d66e119">
+         <topic href="52567661.html" data-id="FCFGHGGB" wh-toc-id="FCFGHGGB-d66e125">
             <title>Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark Cluster </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FCFGHGGB"></resourceid>
@@ -110,7 +118,7 @@
                <linktext class="- map/linktext ">Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark Cluster</linktext>
             </topicmeta>
          </topic>
-         <topic href="50876309.html" data-id="FAIHGDAJ" wh-toc-id="FAIHGDAJ-d66e127">
+         <topic href="50876309.html" data-id="FAIHGDAJ" wh-toc-id="FAIHGDAJ-d66e133">
             <title>Part 4: Modify Amazon EMR Cluster Bootstrap/Setup </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAIHGDAJ"></resourceid>
@@ -118,7 +126,7 @@
                <linktext class="- map/linktext ">Part 4: Modify Amazon EMR Cluster Bootstrap/Setup</linktext>
             </topicmeta>
          </topic>
-         <topic href="51213131.html" data-id="FBCBDBDB" wh-toc-id="FBCBDBDB-d66e135">
+         <topic href="51213131.html" data-id="FBCBDBDB" wh-toc-id="FBCBDBDB-d66e141">
             <title>Part 5: Additional Topics for EMR or Qubole </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBDBDB"></resourceid>
@@ -127,14 +135,14 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="50688443.html" data-id="FAGIIEED" wh-toc-id="FAGIIEED-d66e143">
+      <topic href="50688443.html" data-id="FAGIIEED" wh-toc-id="FAGIIEED-d66e149">
          <title>Installation Guide for Hortonworks Data Platform (HDP) </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIIEED"></resourceid>
             <navtitle class="- topic/navtitle ">Installation Guide for Hortonworks Data Platform (HDP) </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Installation Guide for Hortonworks Data Platform (HDP)</linktext>
          </topicmeta>
-         <topic href="50672736.html" data-id="FAGHCHDG" wh-toc-id="FAGHCHDG-d66e151">
+         <topic href="50672736.html" data-id="FAGHCHDG" wh-toc-id="FAGHCHDG-d66e157">
             <title>Part 1: Install Unravel Server on HDP </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGHCHDG"></resourceid>
@@ -142,7 +150,7 @@
                <linktext class="- map/linktext ">Part 1: Install Unravel Server on HDP</linktext>
             </topicmeta>
          </topic>
-         <topic href="50689477.html" data-id="FAGIJEHH" wh-toc-id="FAGIJEHH-d66e159">
+         <topic href="50689477.html" data-id="FAGIJEHH" wh-toc-id="FAGIJEHH-d66e165">
             <title>Part 2: Enable Additional Data Collection / Instrumentation for HDP </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FAGIJEHH"></resourceid>
@@ -150,7 +158,7 @@
                <linktext class="- map/linktext ">Part 2: Enable Additional Data Collection / Instrumentation for HDP</linktext>
             </topicmeta>
          </topic>
-         <topic href="51213196.html" data-id="FBCBDBJG" wh-toc-id="FBCBDBJG-d66e167">
+         <topic href="51213196.html" data-id="FBCBDBJG" wh-toc-id="FBCBDBJG-d66e173">
             <title>Part 3: Additional Topics for HDP </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="FBCBDBJG"></resourceid>
@@ -160,14 +168,18 @@
          </topic>
       </topic>
    </topic>
-   <topic href="User-Guide_50687944.html" data-id="User-Guide_50687944" wh-toc-id="User-Guide_50687944-d66e176">
+   <topic href="User-Guide_50687944.html" data-id="User-Guide_50687944" wh-toc-id="User-Guide_50687944-d66e182">
       <title>User Guide </title>
+      <shortdesc>
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Get help on our user interface.</p>
+      </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="User-Guide_50687944"></resourceid>
          <navtitle class="- topic/navtitle ">User Guide </navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">User Guide</linktext>
+         <linktext class="- map/linktext ">User Guide</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">Get help on our user interface.</shortdesc>
       </topicmeta>
-      <topic href="Getting-Started_53157411.html" data-id="Getting-Started_53157411" wh-toc-id="Getting-Started_53157411-d66e184">
+      <topic href="Getting-Started_53157411.html" data-id="Getting-Started_53157411" wh-toc-id="Getting-Started_53157411-d66e193">
          <title>Getting Started </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Getting-Started_53157411"></resourceid>
@@ -175,7 +187,7 @@
             <linktext class="- map/linktext ">Getting Started</linktext>
          </topicmeta>
       </topic>
-      <topic href="The-Operations-Tab_53165661.html" data-id="The-Operations-Tab_53165661" wh-toc-id="The-Operations-Tab_53165661-d66e192">
+      <topic href="The-Operations-Tab_53165661.html" data-id="The-Operations-Tab_53165661" wh-toc-id="The-Operations-Tab_53165661-d66e201">
          <title>The Operations Tab </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="The-Operations-Tab_53165661"></resourceid>
@@ -183,14 +195,14 @@
             <linktext class="- map/linktext ">The Operations Tab</linktext>
          </topicmeta>
       </topic>
-      <topic href="The-Applications-Tab_53166005.html" data-id="The-Applications-Tab_53166005" wh-toc-id="The-Applications-Tab_53166005-d66e200">
+      <topic href="The-Applications-Tab_53166005.html" data-id="The-Applications-Tab_53166005" wh-toc-id="The-Applications-Tab_53166005-d66e209">
          <title>The Applications Tab </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="The-Applications-Tab_53166005"></resourceid>
             <navtitle class="- topic/navtitle ">The Applications Tab </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">The Applications Tab</linktext>
          </topicmeta>
-         <topic href="Resource-Metrics_53232237.html" data-id="Resource-Metrics_53232237" wh-toc-id="Resource-Metrics_53232237-d66e208">
+         <topic href="Resource-Metrics_53232237.html" data-id="Resource-Metrics_53232237" wh-toc-id="Resource-Metrics_53232237-d66e217">
             <title>Resource Metrics </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Resource-Metrics_53232237"></resourceid>
@@ -199,7 +211,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="The-Data-Tab_53166350.html" data-id="The-Data-Tab_53166350" wh-toc-id="The-Data-Tab_53166350-d66e216">
+      <topic href="The-Data-Tab_53166350.html" data-id="The-Data-Tab_53166350" wh-toc-id="The-Data-Tab_53166350-d66e225">
          <title>The Data Tab </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="The-Data-Tab_53166350"></resourceid>
@@ -207,7 +219,7 @@
             <linktext class="- map/linktext ">The Data Tab</linktext>
          </topicmeta>
       </topic>
-      <topic href="53167025.html" data-id="FDBGHACF" wh-toc-id="FDBGHACF-d66e224">
+      <topic href="53167025.html" data-id="FDBGHACF" wh-toc-id="FDBGHACF-d66e233">
          <title>Setting Up Auto Actions (Alerts) </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="FDBGHACF"></resourceid>
@@ -215,12 +227,12 @@
             <linktext class="- map/linktext ">Setting Up Auto Actions (Alerts)</linktext>
          </topicmeta>
       </topic>
-      <topic href="Use-Cases_53314582.html" wh-toc-id="tocId-d66e232">
+      <topic href="Use-Cases_53314582.html" wh-toc-id="tocId-d66e241">
          <title>***</title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid=""></resourceid>
          </topicmeta>
-         <topic href="Detecting-Resource-Contention-in-the-Cluster_51745187.html" data-id="Detecting-Resource-Contention-in-the-Cluster_51745187" wh-toc-id="Detecting-Resource-Contention-in-the-Cluster_51745187-d66e235">
+         <topic href="Detecting-Resource-Contention-in-the-Cluster_51745187.html" data-id="Detecting-Resource-Contention-in-the-Cluster_51745187" wh-toc-id="Detecting-Resource-Contention-in-the-Cluster_51745187-d66e244">
             <title>Detecting Resource Contention in the Cluster </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Detecting-Resource-Contention-in-the-Cluster_51745187"></resourceid>
@@ -228,7 +240,7 @@
                <linktext class="- map/linktext ">Detecting Resource Contention in the Cluster</linktext>
             </topicmeta>
          </topic>
-         <topic href="Identifying-Rogue-Applications_51744637.html" data-id="Identifying-Rogue-Applications_51744637" wh-toc-id="Identifying-Rogue-Applications_51744637-d66e243">
+         <topic href="Identifying-Rogue-Applications_51744637.html" data-id="Identifying-Rogue-Applications_51744637" wh-toc-id="Identifying-Rogue-Applications_51744637-d66e252">
             <title> Identifying Rogue Applications </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Identifying-Rogue-Applications_51744637"></resourceid>
@@ -236,7 +248,7 @@
                <linktext class="- map/linktext ">Identifying Rogue Applications</linktext>
             </topicmeta>
          </topic>
-         <topic href="Optimizing-the-Performance-of-Spark-Applications_52494973.html" data-id="Optimizing-the-Performance-of-Spark-Applications_52494973" wh-toc-id="Optimizing-the-Performance-of-Spark-Applications_52494973-d66e251">
+         <topic href="Optimizing-the-Performance-of-Spark-Applications_52494973.html" data-id="Optimizing-the-Performance-of-Spark-Applications_52494973" wh-toc-id="Optimizing-the-Performance-of-Spark-Applications_52494973-d66e260">
             <title>Optimizing the Performance of Spark Applications </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Optimizing-the-Performance-of-Spark-Applications_52494973"></resourceid>
@@ -246,22 +258,30 @@
          </topic>
       </topic>
    </topic>
-   <topic href="Unravel-Server-Reference_50690507.html" data-id="Unravel-Server-Reference_50690507" wh-toc-id="Unravel-Server-Reference_50690507-d66e260">
+   <topic href="Unravel-Server-Reference_50690507.html" data-id="Unravel-Server-Reference_50690507" wh-toc-id="Unravel-Server-Reference_50690507-d66e269">
       <title>Unravel Server Reference </title>
+      <shortdesc>
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Get reference information on our product.</p>
+      </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="Unravel-Server-Reference_50690507"></resourceid>
          <navtitle class="- topic/navtitle ">Unravel Server Reference </navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">Unravel Server Reference</linktext>
+         <linktext class="- map/linktext ">Unravel Server Reference</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">Get reference information on our product.</shortdesc>
       </topicmeta>
    </topic>
-   <topic href="Advanced-Topics_50688158.html" data-id="Advanced-Topics_50688158" wh-toc-id="Advanced-Topics_50688158-d66e270">
+   <topic href="Advanced-Topics_50688158.html" data-id="Advanced-Topics_50688158" wh-toc-id="Advanced-Topics_50688158-d66e282">
       <title>Advanced Topics </title>
+      <shortdesc>
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Find procedures for specific sensors, workflow engines, query engines, and more.</p>
+      </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="Advanced-Topics_50688158"></resourceid>
          <navtitle class="- topic/navtitle ">Advanced Topics </navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">Advanced Topics</linktext>
+         <linktext class="- map/linktext ">Advanced Topics</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">Find procedures for specific sensors, workflow engines, query engines, and more.</shortdesc>
       </topicmeta>
-      <topic href="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913.html" data-id="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913" wh-toc-id="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913-d66e278">
+      <topic href="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913.html" data-id="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913" wh-toc-id="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913-d66e293">
          <title> Creating Active Directory Kerberos Principals and Keytabs for Unravel </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913"></resourceid>
@@ -269,14 +289,14 @@
             <linktext class="- map/linktext ">Creating Active Directory Kerberos Principals and Keytabs for Unravel</linktext>
          </topicmeta>
       </topic>
-      <topic href="Sensors_53900864.html" data-id="Sensors_53900864" wh-toc-id="Sensors_53900864-d66e286">
+      <topic href="Sensors_53900864.html" data-id="Sensors_53900864" wh-toc-id="Sensors_53900864-d66e301">
          <title> Sensors </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Sensors_53900864"></resourceid>
             <navtitle class="- topic/navtitle "> Sensors </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Sensors</linktext>
          </topicmeta>
-         <topic href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.html" data-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545" wh-toc-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545-d66e294">
+         <topic href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.html" data-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545" wh-toc-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545-d66e309">
             <title> Installing Unravel Sensor for Individual Applications Submitted Through spark-shell </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545"></resourceid>
@@ -284,7 +304,7 @@
                <linktext class="- map/linktext ">Installing Unravel Sensor for Individual Applications Submitted Through spark-shell</linktext>
             </topicmeta>
          </topic>
-         <topic href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040.html" data-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040" wh-toc-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040-d66e302">
+         <topic href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040.html" data-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040" wh-toc-id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040-d66e317">
             <title>Installing Unravel Sensor for Individual Applications Submitted Through spark-submit </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040"></resourceid>
@@ -292,7 +312,7 @@
                <linktext class="- map/linktext ">Installing Unravel Sensor for Individual Applications Submitted Through spark-submit</linktext>
             </topicmeta>
          </topic>
-         <topic href="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.html" data-id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409" wh-toc-id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409-d66e310">
+         <topic href="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.html" data-id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409" wh-toc-id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409-d66e325">
             <title>Installing Unravel Sensor for Individual Hive Queries </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409"></resourceid>
@@ -301,14 +321,14 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="Workflows_53900905.html" data-id="Workflows_53900905" wh-toc-id="Workflows_53900905-d66e318">
+      <topic href="Workflows_53900905.html" data-id="Workflows_53900905" wh-toc-id="Workflows_53900905-d66e333">
          <title> Workflows </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Workflows_53900905"></resourceid>
             <navtitle class="- topic/navtitle "> Workflows </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Workflows</linktext>
          </topicmeta>
-         <topic href="Monitoring-Airflow-Workflows_52961844.html" data-id="Monitoring-Airflow-Workflows_52961844" wh-toc-id="Monitoring-Airflow-Workflows_52961844-d66e326">
+         <topic href="Monitoring-Airflow-Workflows_52961844.html" data-id="Monitoring-Airflow-Workflows_52961844" wh-toc-id="Monitoring-Airflow-Workflows_52961844-d66e341">
             <title> Monitoring Airflow Workflows </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Monitoring-Airflow-Workflows_52961844"></resourceid>
@@ -316,7 +336,7 @@
                <linktext class="- map/linktext ">Monitoring Airflow Workflows</linktext>
             </topicmeta>
          </topic>
-         <topic href="Monitoring-Oozie-Workflows_51161894.html" data-id="Monitoring-Oozie-Workflows_51161894" wh-toc-id="Monitoring-Oozie-Workflows_51161894-d66e334">
+         <topic href="Monitoring-Oozie-Workflows_51161894.html" data-id="Monitoring-Oozie-Workflows_51161894" wh-toc-id="Monitoring-Oozie-Workflows_51161894-d66e349">
             <title> Monitoring Oozie Workflows </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Monitoring-Oozie-Workflows_51161894"></resourceid>
@@ -324,7 +344,7 @@
                <linktext class="- map/linktext ">Monitoring Oozie Workflows</linktext>
             </topicmeta>
          </topic>
-         <topic href="Tagging-Workflows_51162078.html" data-id="Tagging-Workflows_51162078" wh-toc-id="Tagging-Workflows_51162078-d66e342">
+         <topic href="Tagging-Workflows_51162078.html" data-id="Tagging-Workflows_51162078" wh-toc-id="Tagging-Workflows_51162078-d66e357">
             <title>Tagging Workflows </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Tagging-Workflows_51162078"></resourceid>
@@ -333,14 +353,14 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="Custom-Configurations_54044915.html" data-id="Custom-Configurations_54044915" wh-toc-id="Custom-Configurations_54044915-d66e350">
+      <topic href="Custom-Configurations_54044915.html" data-id="Custom-Configurations_54044915" wh-toc-id="Custom-Configurations_54044915-d66e365">
          <title> Custom Configurations </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Custom-Configurations_54044915"></resourceid>
             <navtitle class="- topic/navtitle "> Custom Configurations </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Custom Configurations</linktext>
          </topicmeta>
-         <topic href="Adding-More-Admins-to-Unravel-Web-UI_50672747.html" data-id="Adding-More-Admins-to-Unravel-Web-UI_50672747" wh-toc-id="Adding-More-Admins-to-Unravel-Web-UI_50672747-d66e358">
+         <topic href="Adding-More-Admins-to-Unravel-Web-UI_50672747.html" data-id="Adding-More-Admins-to-Unravel-Web-UI_50672747" wh-toc-id="Adding-More-Admins-to-Unravel-Web-UI_50672747-d66e373">
             <title>Adding More Admins to Unravel Web UI </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Adding-More-Admins-to-Unravel-Web-UI_50672747"></resourceid>
@@ -348,7 +368,7 @@
                <linktext class="- map/linktext ">Adding More Admins to Unravel Web UI</linktext>
             </topicmeta>
          </topic>
-         <topic href="Configuring-Multiple-Hosts-for-Unravel-Server_50690195.html" data-id="Configuring-Multiple-Hosts-for-Unravel-Server_50690195" wh-toc-id="Configuring-Multiple-Hosts-for-Unravel-Server_50690195-d66e366">
+         <topic href="Configuring-Multiple-Hosts-for-Unravel-Server_50690195.html" data-id="Configuring-Multiple-Hosts-for-Unravel-Server_50690195" wh-toc-id="Configuring-Multiple-Hosts-for-Unravel-Server_50690195-d66e381">
             <title>Configuring Multiple Hosts for Unravel Server </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Configuring-Multiple-Hosts-for-Unravel-Server_50690195"></resourceid>
@@ -356,7 +376,7 @@
                <linktext class="- map/linktext ">Configuring Multiple Hosts for Unravel Server</linktext>
             </topicmeta>
          </topic>
-         <topic href="Creating-Multiple-Workers-for-High-Volume-Data_51162494.html" data-id="Creating-Multiple-Workers-for-High-Volume-Data_51162494" wh-toc-id="Creating-Multiple-Workers-for-High-Volume-Data_51162494-d66e374">
+         <topic href="Creating-Multiple-Workers-for-High-Volume-Data_51162494.html" data-id="Creating-Multiple-Workers-for-High-Volume-Data_51162494" wh-toc-id="Creating-Multiple-Workers-for-High-Volume-Data_51162494-d66e389">
             <title>Creating Multiple Workers for High Volume Data </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Creating-Multiple-Workers-for-High-Volume-Data_51162494"></resourceid>
@@ -364,7 +384,7 @@
                <linktext class="- map/linktext ">Creating Multiple Workers for High Volume Data</linktext>
             </topicmeta>
          </topic>
-         <topic href="Defining-a-Custom-TC-Port_50688848.html" data-id="Defining-a-Custom-TC-Port_50688848" wh-toc-id="Defining-a-Custom-TC-Port_50688848-d66e382">
+         <topic href="Defining-a-Custom-TC-Port_50688848.html" data-id="Defining-a-Custom-TC-Port_50688848" wh-toc-id="Defining-a-Custom-TC-Port_50688848-d66e397">
             <title>Defining a Custom TC Port </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Defining-a-Custom-TC-Port_50688848"></resourceid>
@@ -372,7 +392,7 @@
                <linktext class="- map/linktext ">Defining a Custom TC Port</linktext>
             </topicmeta>
          </topic>
-         <topic href="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161.html" data-id="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161" wh-toc-id="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161-d66e390">
+         <topic href="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161.html" data-id="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161" wh-toc-id="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161-d66e405">
             <title>Integrating LDAP Authentication for Unravel Web UI </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161"></resourceid>
@@ -380,7 +400,7 @@
                <linktext class="- map/linktext ">Integrating LDAP Authentication for Unravel Web UI</linktext>
             </topicmeta>
          </topic>
-         <topic href="Setting-Retention-Time-in-Unravel-Server_51757832.html" data-id="Setting-Retention-Time-in-Unravel-Server_51757832" wh-toc-id="Setting-Retention-Time-in-Unravel-Server_51757832-d66e398">
+         <topic href="Setting-Retention-Time-in-Unravel-Server_51757832.html" data-id="Setting-Retention-Time-in-Unravel-Server_51757832" wh-toc-id="Setting-Retention-Time-in-Unravel-Server_51757832-d66e413">
             <title>Setting Retention Time in Unravel Server </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Setting-Retention-Time-in-Unravel-Server_51757832"></resourceid>
@@ -388,7 +408,7 @@
                <linktext class="- map/linktext ">Setting Retention Time in Unravel Server</linktext>
             </topicmeta>
          </topic>
-         <topic href="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.html" data-id="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243" wh-toc-id="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243-d66e406">
+         <topic href="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.html" data-id="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243" wh-toc-id="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243-d66e421">
             <title>Setting Up Email for Auto Actions and Collaboration </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243"></resourceid>
@@ -397,7 +417,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="Connecting-to-a-Hive-Metastore_51162326.html" data-id="Connecting-to-a-Hive-Metastore_51162326" wh-toc-id="Connecting-to-a-Hive-Metastore_51162326-d66e414">
+      <topic href="Connecting-to-a-Hive-Metastore_51162326.html" data-id="Connecting-to-a-Hive-Metastore_51162326" wh-toc-id="Connecting-to-a-Hive-Metastore_51162326-d66e429">
          <title>Connecting to a Hive Metastore </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Connecting-to-a-Hive-Metastore_51162326"></resourceid>
@@ -405,7 +425,7 @@
             <linktext class="- map/linktext ">Connecting to a Hive Metastore</linktext>
          </topicmeta>
       </topic>
-      <topic href="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.html" data-id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267" wh-toc-id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267-d66e422">
+      <topic href="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.html" data-id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267" wh-toc-id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267-d66e437">
          <title> Creating an AWS RDS CloudWatch Alarm for FreeStorageSpace </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267"></resourceid>
@@ -413,7 +433,7 @@
             <linktext class="- map/linktext ">Creating an AWS RDS CloudWatch Alarm for FreeStorageSpace</linktext>
          </topicmeta>
       </topic>
-      <topic href="Creating-Application-Tags_54048480.html" data-id="Creating-Application-Tags_54048480" wh-toc-id="Creating-Application-Tags_54048480-d66e430">
+      <topic href="Creating-Application-Tags_54048480.html" data-id="Creating-Application-Tags_54048480" wh-toc-id="Creating-Application-Tags_54048480-d66e445">
          <title>Creating Application Tags </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Creating-Application-Tags_54048480"></resourceid>
@@ -421,14 +441,14 @@
             <linktext class="- map/linktext ">Creating Application Tags</linktext>
          </topicmeta>
       </topic>
-      <topic href="Troubleshooting_50881320.html" data-id="Troubleshooting_50881320" wh-toc-id="Troubleshooting_50881320-d66e438">
+      <topic href="Troubleshooting_50881320.html" data-id="Troubleshooting_50881320" wh-toc-id="Troubleshooting_50881320-d66e453">
          <title>Troubleshooting </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Troubleshooting_50881320"></resourceid>
             <navtitle class="- topic/navtitle ">Troubleshooting </navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Troubleshooting</linktext>
          </topicmeta>
-         <topic href="Running-Verification-Scripts-and-Benchmarks_52960296.html" data-id="Running-Verification-Scripts-and-Benchmarks_52960296" wh-toc-id="Running-Verification-Scripts-and-Benchmarks_52960296-d66e446">
+         <topic href="Running-Verification-Scripts-and-Benchmarks_52960296.html" data-id="Running-Verification-Scripts-and-Benchmarks_52960296" wh-toc-id="Running-Verification-Scripts-and-Benchmarks_52960296-d66e461">
             <title>Running Verification Scripts and Benchmarks </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Running-Verification-Scripts-and-Benchmarks_52960296"></resourceid>
@@ -436,7 +456,7 @@
                <linktext class="- map/linktext ">Running Verification Scripts and Benchmarks</linktext>
             </topicmeta>
          </topic>
-         <topic href="Sending-Diagnostics-to-Unravel-Support_50689210.html" data-id="Sending-Diagnostics-to-Unravel-Support_50689210" wh-toc-id="Sending-Diagnostics-to-Unravel-Support_50689210-d66e454">
+         <topic href="Sending-Diagnostics-to-Unravel-Support_50689210.html" data-id="Sending-Diagnostics-to-Unravel-Support_50689210" wh-toc-id="Sending-Diagnostics-to-Unravel-Support_50689210-d66e469">
             <title> Sending Diagnostics to Unravel Support </title>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="Sending-Diagnostics-to-Unravel-Support_50689210"></resourceid>
@@ -445,7 +465,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="Uninstalling-Unravel-Server_50688928.html" data-id="Uninstalling-Unravel-Server_50688928" wh-toc-id="Uninstalling-Unravel-Server_50688928-d66e462">
+      <topic href="Uninstalling-Unravel-Server_50688928.html" data-id="Uninstalling-Unravel-Server_50688928" wh-toc-id="Uninstalling-Unravel-Server_50688928-d66e477">
          <title> Uninstalling Unravel Server </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Uninstalling-Unravel-Server_50688928"></resourceid>
@@ -453,7 +473,7 @@
             <linktext class="- map/linktext ">Uninstalling Unravel Server</linktext>
          </topicmeta>
       </topic>
-      <topic href="Upgrading-Unravel-Server_51854263.html" data-id="Upgrading-Unravel-Server_51854263" wh-toc-id="Upgrading-Unravel-Server_51854263-d66e470">
+      <topic href="Upgrading-Unravel-Server_51854263.html" data-id="Upgrading-Unravel-Server_51854263" wh-toc-id="Upgrading-Unravel-Server_51854263-d66e485">
          <title> Upgrading Unravel Server </title>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="Upgrading-Unravel-Server_51854263"></resourceid>
@@ -462,10 +482,24 @@
          </topicmeta>
       </topic>
    </topic>
-   <topic href="53900010.html" wh-toc-id="tocId-d66e479">
-      <title>***</title>
+   <topic href="53900010.html" data-id="FDJAAABA" wh-toc-id="FDJAAABA-d66e494">
+      <title>Release Notes</title>
+      <shortdesc>
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Read about what's new  or improved in this release.</p>
+      </shortdesc>
       <topicmeta>
-         <resourceid class="- topic/resourceid " oxy-source="topic" appid=""></resourceid>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="FDJAAABA"></resourceid>
+         <navtitle class="- topic/navtitle ">Release Notes</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Release Notes</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">Read about what's new  or improved in this release.</shortdesc>
       </topicmeta>
+      <topic href="release-notes-v4-1-941.html" data-id="FDJAAABA" wh-toc-id="FDJAAABA-d66e505">
+         <title>v4.1.941</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="FDJAAABA"></resourceid>
+            <navtitle class="- topic/navtitle ">v4.1.941</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">v4.1.941</linktext>
+         </topicmeta>
+      </topic>
    </topic>
 </toc>
