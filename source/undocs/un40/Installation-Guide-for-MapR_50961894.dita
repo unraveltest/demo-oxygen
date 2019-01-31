@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" >
+<topic xml:lang="en-us" id="Installation-Guide-for-MapR_50961894">
+   <title>Installation Guide for MapR </title>
+   <titlealts>
+      <searchtitle>Installation Guide for MapR</searchtitle>
+   </titlealts>
+   <body>
+     <p/>
+      
+      <p>This guide is compatible with</p>
+      <ul>
+
+         <li>
+            <p outputclass="_mce_tagged_br">MapR 5.1</p>
+         </li>
+
+      </ul>
+      <section>
+         <title>Ordered Steps</title>
+      </section>
+      <p/>
+
+      <ul outputclass="content-by-label">
+
+         <li>
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default">Page:</ph>
+            <xref href="Part_Install_Unravel_Server_on_MapR_50690385.dita" format="dita">Part 1:
+               Install Unravel Server on MapR</xref>
+         </li>
+
+         <li>
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default">Page:</ph>
+            <xref href="50688326.dita" format="dita">Part 2: Enable Additional Data Collection /
+               Instrumentation for MapR</xref>
+         </li>
+
+         <li>
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default">Page:</ph>
+            <xref href="Part_Additional_Topics_for_MapR_51213065.dita" format="dita">Part 3:
+               Additional Topics for MapR</xref>
+         </li>
+
+      </ul>
+
+
+
+   </body>
+</topic>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Detecting Resource Contention in the Cluster</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="User-Guide_50687944.html">User Guide</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Use-Cases_53314582.html">Use Cases</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Detecting Resource Contention in the Cluster </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p>If your cluster has a lot of apps these apps will contend for resources in the cluster.
+                            Unravel Web UI assists you in detecting and resolving resource contention.</p><ol>
+                            <li>Click <strong>Operations</strong> | <strong>Charts</strong> |
+                                <strong>Resources</strong>.</li>
+                            <li>In the <strong>Cluster VCores</strong> or <strong>Cluster MemoryMB</strong> graph, click
+                                on a spike.<br />Unravel Web UI displays the list of applications running or pending in
+                                the cluster at the spike's timestamp, at the bottom of the page. When you see many
+                                applications in the ACCEPTED state (not RUNNING), it means they are waiting for
+                                resources. For example, the screenshot below shows that only one Spark application is
+                                RUNNING (consuming resources) and four MR applications are ACCEPTED (waiting for
+                                resources). Now you can take steps to resolve the problem.<span
+                                    class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image"
+                                        src="media/51745197.png" data-image-src="media/51745197.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="51745197"
+                                        data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-05 at 11.41.20 PM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51745187"
+                                        data-linked-resource-container-version="4"
+                                        data-media-id="bd0d9ffa-81c4-471f-94fe-6b0a6458aaeb" data-media-type="file"
+                                     /></span></li>
+                        </ol><p><br /></p><h1 id="DetectingResourceContentionintheCluster-SettingUpAutoActions(Alerts)"
+                            >Setting Up Auto Actions (Alerts)</h1><p>To define an action for Unravel to execute
+                            automatically when it detects resource contention in the cluster:</p><ol>
+                            <li>Click <strong>Manage</strong> | <strong>Auto Actions</strong>.</li>
+                            <li>Select <strong>Resource Contention in Cluster</strong>.<br /><span
+                                    class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image"
+                                        src="media/51745220.png" data-image-src="media/51745220.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="51745220"
+                                        data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-05 at 11.43.07 PM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51745187"
+                                        data-linked-resource-container-version="4"
+                                        data-media-id="9b6f3b7f-5e4a-491b-b6ef-1851da2a5ea1" data-media-type="file"
+                                     /></span></li>
+                            <li>Specify the rules for triggering this auto action, such as a memory threshold, job count
+                                threshold, and so on:<span class="confluence-embedded-file-wrapper"><img
+                                        class="confluence-embedded-image" src="media/51745239.png"
+                                        data-image-src="media/51745239.png" data-unresolved-comment-count="0"
+                                        data-linked-resource-id="51745239" data-linked-resource-version="2"
+                                        data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-05 at 11.43.57 PM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51745187"
+                                        data-linked-resource-container-version="4"
+                                        data-media-id="5ea9400d-52f5-49fc-826f-cdabeadb2782" data-media-type="file"
+                                     /></span></li>
+                            <li>Select the <strong>Send Email</strong> check box.</li>
+                        </ol><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51975570.png">Screen Shot 2017-04-05 at 11.41.20 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51975675.png">Screen Shot 2017-04-05 at 11.43.07 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51975748.png">Screen Shot 2017-04-05 at 11.43.57 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51745197.png">Screen Shot 2017-04-05 at 11.41.20 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51745220.png">Screen Shot 2017-04-05 at 11.43.07 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51745239.png">Screen Shot 2017-04-05 at 11.43.57 PM.png</a> (image/png)
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FAGIIEED" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="topic:1;4:39">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="title:1;5:11">Installation Guide for Hortonworks Data Platform (HDP) </title>
+   <body class="- topic/body " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="body:1;6:10">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ol:1;7:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="li:1;9:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ph:1;10:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="xref:1;11:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="li:2;15:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ph:2;16:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="xref:2;17:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="p:1;23:10">This guide is compatible with:</p>
+      <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ul:1;24:11">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="li:3;26:14">HDP 2.2-2.6</li>
+
+      </ul>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="section:1;29:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="title:2;30:17">Ordered Steps</title>
+      </section>
+      <ul outputclass="content-by-label" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ul:2;32:42">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="li:4;34:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ph:3;35:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50672736/Part+1%3A+Install+Unravel+Server+on+HDP" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="xref:3;37:30"><?ditaot usertext?>Part 1: Install Unravel Server on HDP</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="li:5;40:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ph:4;41:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50689477" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="xref:4;42:73"><?ditaot usertext?>Part 2: Enable Additional
+               Data Collection / Instrumentation for HDP</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="li:6;46:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="ph:5;47:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/51213196/Part+3%3A+Additional+Topics+for+HDP" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688443.dita" xtrc="xref:5;49:30"><?ditaot usertext?>Part 3: Additional Topics for HDP</xref>
+         </li>
+
+      </ul>
+   </body>
+</topic>

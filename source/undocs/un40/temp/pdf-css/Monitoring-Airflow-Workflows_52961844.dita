@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Monitoring-Airflow-Workflows_52961844" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="task:1;3:118">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="title:1;4:11">
+                        Monitoring Airflow Workflows 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="taskbody:1;7:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="context:1;8:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ol:1;12:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="li:1;14:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:1;16:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="xref:1;17:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="li:2;22:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:2;24:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="xref:2;25:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="li:3;30:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:3;32:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="xref:3;33:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="li:4;38:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:4;40:20">
+                  <xref href="Workflows_53900905.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="xref:4;41:56" type="topic"><?ditaot usertext?>Workflows</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:1;53:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:5;54:17">This article describes how to set
+                                up Unravel Server to monitor Airflow workflows so that you can see them in Unravel Web
+                                UI. </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:2;58:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:6;59:17">All the
+                                following steps are on the Unravel Server host that runs </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:7;61:17">the
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:1;62:41">unravel_jcs2</codeph>
+            </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:8;64:17">
+                                daemon. </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:9;66:17">Highlighted</ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:10;67:17"> text
+                                indicates where you need to substitute your particular values.</ph>
+         </p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:11;70:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:3;71:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:12;72:17">Before you start, ensure that
+                                        the Unravel Server host and the server that runs Airflow web service are in the
+                                        same cluster. </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:4;76:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:13;77:17">If You Use Http For Airflow Web UI
+                                </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:14;79:17">Access
+                                </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:5;82:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:15;83:17">Add the following
+                                3 settings to </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:16;85:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:2;86:24">/usr/local/unravel/etc/unravel.properties</codeph>:</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:6;88:14"/>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:17;89:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:7;90:13">Replace <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:18;90:25">{airflow web url}</ph> with the full URL,
+                                    starting with <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:3;91:59">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:19;92:20">http://</ph>
+            </codeph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:20;94:17">. </ph>
+         </p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeblock:1;97:57">com.unraveldata.airflow.protocol=http
+com.unraveldata.airflow.server.url={airflow web url}
+com.unraveldata.airflow.available=true</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:8;101:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:21;102:17">Then restart
+                                </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:22;104:17">the
+                                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:4;105:45">unravel_jcs2</codeph>
+            </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:23;107:17"> daemon:</ph>
+         </p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeblock:2;110:57">sudo /etc/init.d/unravel_jcs2 restart</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:9;112:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:24;113:17">If You Use Https For Airflow Web UI
+                                </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:25;115:17">Access
+                                </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:10;118:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:26;119:17">Add the following
+                                4 settings to </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:27;121:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:5;122:24">/usr/local/unravel/etc/unravel.properties</codeph>:</ph>
+         </p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:28;124:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:11;125:13">Replace <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:29;125:25">{airflow web url}</ph> with the full URL,
+                                    starting with <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:6;126:59">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:30;127:20">http://</ph>
+            </codeph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:31;129:17">. </ph>
+         </p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeblock:3;132:57">com.unraveldata.airflow.server.url={airflow web url}
+com.unraveldata.airflow.available=true
+com.unraveldata.airflow.login.name={airflow web UI username}
+com.unraveldata.airflow.login.password={airflow web UI password}</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:12;137:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:32;138:17">Then restart
+                                </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:33;140:17">the
+                                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:7;141:45">unravel_jcs2</codeph>
+            </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:34;143:17"> daemon:</ph>
+         </p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeblock:4;146:57">sudo /etc/init.d/unravel_jcs2 restart</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:13;148:13"> </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:14;149:13">Changing the Range of Monitoring</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:15;150:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:16;151:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:35;152:17">By default, Unravel Server ingests all
+                                the workflows that started within the last 5 days. If you wish to change the date range
+                                to the last </ph>
+            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:8;155:21">
+               <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="i:1;156:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:36;157:23">x</ph>
+               </i>
+            </codeph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:37;160:17">
+                                days, do the following:</ph>
+         </p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ol:2;163:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="li:5;165:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:17;166:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:38;167:23">Add
+                                        the following configuration to </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:39;169:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:9;170:30">/usr/local/unravel/etc/unravel.properties</codeph>.</ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:40;171:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:41;172:26"> Note there’s a “-” (minus
+                                            sign) in the value.</ph>
+                  </ph>
+               </p>
+                                        
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeblock:5;177:63">airflow.look.back.num.days=-x</codeblock>
+                                    
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="li:6;181:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:18;182:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:42;183:23">Restart </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:43;184:23">the
+                                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeph:10;185:49">unravel_jcs2</codeph>
+                  </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="ph:44;187:23"> daemon:</ph>
+               </p>
+                                        
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="codeblock:6;190:63">sudo /etc/init.d/unravel_jcs2 restart</codeblock>
+                                    
+            </li>
+                        
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:19;195:13"> </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:20;196:14"/>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="p:21;201:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="image:1;205:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="alt:1;206:19"/>
+         </image>
+                            
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Airflow-Workflows_52961844.dita" xtrc="xref:5;209:52"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+                        
+                    
+                
+            </context>
+   </taskbody>
+</task>

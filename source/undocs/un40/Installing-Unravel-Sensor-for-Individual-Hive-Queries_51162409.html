@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Installing Unravel Sensor for Individual Hive Queries</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Sensors_53900864.html">Sensors</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Installing Unravel Sensor for Individual Hive Queries
+                        </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p><span style="color: rgb(0,0,0);text-decoration: none;">The MapReduce JVM sensor is a
+                                prepackaged distribution of JVM agent which enables collection of additional
+                                information, including resource usage metrics. The sensor binary is distributed as
+                                    </span><code><span style="color: rgb(0,0,0);text-decoration: none;"
+                                    >unravel-sensor-for-mapreduce-bin.zip</span></code><span
+                                style="color: rgb(0,0,0);text-decoration: none;">. This archive contains the following 4
+                                jars:</span></p><ul>
+                            <li style="list-style-type: disc;"><p><code><span
+                                            style="color: rgb(0,0,0);text-decoration: none;"
+                                        >btrace-agent.jar</span></code></p></li>
+                            <li style="list-style-type: disc;"><p><code><span
+                                            style="color: rgb(0,0,0);text-decoration: none;">btrace-boot.jar
+                                        </span></code></p></li>
+                            <li style="list-style-type: disc;"><p><code><span
+                                            style="color: rgb(0,0,0);text-decoration: none;">unravel-mr-boot.jar
+                                        </span></code></p></li>
+                            <li style="list-style-type: disc;"><p><code><span
+                                            style="color: rgb(0,0,0);text-decoration: none;">unravel-mr-sys.jar
+                                        </span></code></p></li>
+                        </ul><p><span style="color: rgb(0,0,0);text-decoration: none;">When you enable this sensor, it
+                                uses the standard MapReduce profiling extension. You can copy and paste the following
+                                configuration snippets for a quick bootstrap:</span></p><h2
+                            id="InstallingUnravelSensorforIndividualHiveQueries-OptionA:InstallingtheMapReduceJVMSensoronCloudera"
+                                ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    style="color: rgb(0,0,0);text-decoration: none;">Option A: Installing the MapReduce
+                                    JVM Sensor </span>on Cloudera<br /></span></h2><ol>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Enable
+                                                profiling:</span></span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.task.profile=true;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Select map and
+                                            reduce profiles:</span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Enable the JVM agent
+                                                for map and reduce tasks:</span></span></span></p><div
+                                    class="confluence-information-macro confluence-information-macro-tip"><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Set </span><span
+                                                style="color: rgb(255,153,0);">UNRAVEL_HOST_IP</span>
+                                            <span style="color: rgb(0,0,0);">of your Unravel gateway server. Port #4043
+                                                is where Unravel LR server is running. </span></p></div></div><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set 
+mapreduce.task.profile.params=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Enable the JVM agent
+                                                for application master:</span></span></span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set 
+yarn.app.mapreduce.am.command-opts=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043 -Dcom.sun.btrace.FileClient.flush=-1;</pre>
+                                    </div></div></li>
+                        </ol><h2
+                            id="InstallingUnravelSensorforIndividualHiveQueries-OptionB:InstallingtheMapReduceJVMSensoronClouderaManagerforHive"
+                                ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    style="color: rgb(0,0,0);text-decoration: none;">Option B: Installing the MapReduce
+                                    JVM Sensor on </span></span>Cloudera Manager for Hive</h2><p
+                            class="with-breadcrumbs">See <em>Optional - Configure YARN - MapReduce (MR) JVM Sensor
+                                Cluster-Wide</em> in <a href="50689256.html" data-linked-resource-id="50689256"
+                                data-linked-resource-version="66" data-linked-resource-type="page">Part 2: Install
+                                Unravel Sensor Parcel on CDH+CM</a>.</p><h2
+                            id="InstallingUnravelSensorforIndividualHiveQueries-OptionC:InstallingtheMapReduceJVMSensoronHDFS"
+                                ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    style="color: rgb(0,0,0);text-decoration: none;">Option C: Installing the MapReduce
+                                    JVM Sensor on</span> HDFS</span></h2><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Change your <code>*init</code> file as
+                                follows:</span></p><ol>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Set the path to the
+                                            JVM sensor archive:</span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.job.cache.archives=path_in_hdfs/unravel-sensor-for-mapreduce-bin.zip;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Enable
+                                            profiling:</span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.task.profile=true;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Select map and
+                                            reduce profiles:</span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Enable the JVM agent
+                                                for map and reduce tasks</span>:</span></span></p><div
+                                    class="confluence-information-macro confluence-information-macro-tip"><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p><span
+                                                style="color: rgb(0,0,0);">Set </span><span
+                                                style="color: rgb(255,153,0);">UNRAVEL_HOST_IP </span><span
+                                                style="color: rgb(0,0,0);">of your Unravel gateway server. Port #4043 is
+                                                where Unravel LR server is running. </span></p></div></div><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set 
+mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Enable the JVM agent for application master:</span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</pre>
+                                    </div></div></li>
+                        </ol><h2
+                            id="InstallingUnravelSensorforIndividualHiveQueries-OptionD:InstallingtheMapReduceJVMSensorontheLocalFileSystem"
+                                ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    style="color: rgb(0,0,0);text-decoration: none;">Option D: Installing the MapReduce
+                                    JVM Sensor on the </span>Local File System</span></h2><ol>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Add the JVM sensor
+                                            archive to the PATH environment variable.</span></span></p></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Enable
+                                            profiling:</span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.task.profile=true;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Select map and
+                                            reduce profiles:</span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.task.profile.maps=0-5;set mapreduce.task.profile.reduces=0-5;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Enable the JVM agent
+                                                for map and reduce tasks</span>:</span></span></p><div
+                                    class="confluence-information-macro confluence-information-macro-tip"><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p><span
+                                                style="color: rgb(0,0,0);">Set </span><span
+                                                style="color: rgb(255,153,0);">UNRAVEL_HOST_IP </span><span
+                                                style="color: rgb(0,0,0);">of your Unravel gateway server. Port #4043 is
+                                                where Unravel LR server is running. </span></p></div></div><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Enable the JVM agent for application master.</span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: php; gutter: false; theme: Confluence" data-theme="Confluence">set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</pre>
+                                    </div></div></li>
+                        </ol><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51162413.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

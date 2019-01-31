@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Configuring Multiple Hosts for Unravel Server</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced
+                                    Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Custom-Configurations_54044915.html">Custom
+                                        Configurations</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Configuring Multiple Hosts for
+                            Unravel Server </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p style="text-align: left;">This topic explains how to configure multiple
+                            hosts for Unravel Server. This is useful for
+                            volume/throughput/reliability requirements.</p><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-Prerequisites"
+                            >Prerequisites</h2><ul>
+                            <li>If you use Kerberos, set that up first on
+                                <strong>host1</strong>.</li>
+                            <li>Install the same Unravel RPM on one or two additional hosts,
+                                hereafter referred to as <strong>host2</strong> and
+                                    <strong>host3</strong>.  This distinction is important because
+                                certain instructions only apply to specific hosts.</li>
+                        </ul><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>The
+                                    internal DNS or IP address of a host is specific to your
+                                    installation.</p></div></div><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Each host
+                                    is assigned unique roles identified by daemon names that start
+                                    with <code>unravel_</code>.</p></div></div><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-ExpectedResult">Expected
+                            Result</h2><p>When you complete the steps below, the expected result
+                            is</p><ul>
+                            <li>Multiple Unravel hosts work together in an ensemble.</li>
+                            <li>Each host has a unique role, and is identified by a daemon named
+                                    <code>unravel_xyz</code> or <code>unravel_xyz_<em>n</em></code>
+                                (where <em><code>n</code></em> is 1, 2, 3,...), which runs on
+                                exactly one host.</li>
+                            <li>Unravel Web UI (<code>unravel_tc</code>) runs on
+                                    <strong>host1</strong>.</li>
+                            <li>Port 4043 <code>unravel_lr</code> runs on
+                                <strong>host2</strong>.</li>
+                            <li>If you do not use an external database (db), <code>unravel_db</code>
+                                runs on <strong>host1</strong>. However, <code>unravel_db</code> can
+                                also run harmlessly if an external db is used.</li>
+                            <li><p class="auto-cursor-target"
+                                        ><code>/usr/local/unravel/etc/unravel.properties</code> is
+                                    identical on all Unravel hosts in the ensemble.</p><div
+                                    class="confluence-information-macro confluence-information-macro-note"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                            ><p>The file <code>unravel.properties</code> is never
+                                            changed by an RPM upgrade because it contains
+                                            site-specific information, but some one-time changes 
+                                            occur when setting up multiple hosts. The file
+                                                <code>unravel.properties</code> must be identical on
+                                            all hosts, so if you are using data center automation
+                                            like Puppet, Chef, Salt, Ansible, CloudFormation,
+                                            Cfengine, and so on, you must maintain one
+                                            &quot;golden&quot; <code>unravel.properties</code> per
+                                            Unravel ensemble. After you modify
+                                                <code>unravel.properties</code> as described below,
+                                            you must update the &quot;golden&quot;
+                                                <code>unravel.properties</code> file for your
+                                            site.</p></div></div></li>
+                            <li>Daemons are enabled/disabled via <code>chkconfig</code>.
+                                    <code>chkconfig</code> sets symbolic links which are persistent
+                                across Unravel Server RPM upgrades.</li>
+                        </ul><p><br /></p><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-1.StopUnravelServer">1.
+                            Stop Unravel Server</h2><p>On each Unravel host, run this
+                            command:</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_all.sh stop</pre>
+                            </div></div><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-2.Modifyunravel.propertiesonhost1"
+                            >2. Modify <code>unravel.properties</code> on host1</h2><ol>
+                            <li>Pick a machine to be <strong>host1</strong>, where the Unravel Web
+                                UI will run.</li>
+                            <li><p class="auto-cursor-target"><strong>If the bundled db is in
+                                        use</strong>, edit
+                                        <code>/usr/local/unravel/etc/unravel.properties</code> on
+                                        <strong>host1</strong> to change:</p><div
+                                    class="confluence-information-macro confluence-information-macro-note"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                            ><p>Replace <span style="color: rgb(255,0,0);"
+                                                  ><code>127.0.0.1</code></span> with your LAN IP
+                                            address or fully qualified hostname, replace <span
+                                                style="color: rgb(255,0,0);"
+                                                ><code>3316</code></span> with your port number, 
+                                            and replace <span style="color: rgb(255,0,0);"
+                                                  ><code>unravel_mysql_prod</code></span> with your
+                                            database name.</p><p>To find your fully qualified
+                                            hostname, type <code>hostname -I</code> at the OS
+                                            prompt.</p></div></div><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">unravel.jdbc.url=jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod</pre>
+                                    </div></div></li>
+                        </ol><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-2.Copyhost1&#39;sunravel.propertiestoOtherHosts"
+                                ><strong>2. Copy host1's <code>unravel.properties</code> to Other
+                                Hosts</strong></h2><p><strong><br /></strong></p><ol>
+                            <li><p class="auto-cursor-target">Copy
+                                        <code>/usr/local/unravel/etc/unravel.properties</code> and
+                                        <code>/usr/local/unravel/etc/unravel.ext.sh</code> from
+                                        <strong>host1</strong> to <strong>host2</strong> (and
+                                        <strong>host3</strong>, if you are using three hosts). For
+                                    example,</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+scp /usr/local/unravel/etc/unravel.properties host2:/usr/local/unravel/etc/
+# host1
+scp /usr/local/unravel/etc/unravel.ext.sh host2:/usr/local/unravel/etc/</pre>
+                                    </div></div></li>
+                            <li>Verify that the ownership of <code>unravel.properties</code> and
+                                    <code>unravel.ext.sh</code> is
+                                <code>unravel:unravel</code>.</li>
+                        </ol><p><br /></p><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><p class="title">Important Note</p><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>The
+                                    scripts invoked below will make an identical change to the
+                                        <code>unravel.properties</code> file on each
+                                machine.</p></div></div><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-3.AssignRoles">3. Assign
+                            Roles</h2><p><br class="atl-forced-newline" /> Use these scripts to
+                            assign unique roles to the hosts. To reduce the chance of errors, the
+                            command line arguments are the same on each host, but notice that the
+                            script name is different. The arguments are the hostnames IP addresses
+                            of the hosts in the ensemble.</p><ul>
+                            <li><p>For a 2-host ensemble (substitute <span
+                                        style="color: rgb(255,0,0);">host</span>):</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+sudo /usr/local/unravel/install_bin/switch_to_1of2.sh\ 
+host1 host2 
+# host2
+sudo /usr/local/unravel/install_bin/switch_to_2of2.sh\ 
+host1 host2</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">For a 3-host ensemble (substitute
+                                        <span style="color: rgb(255,0,0);">host</span>):</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1 sudo /usr/local/unravel/install_bin/switch_to_1of3.sh\ 
+host1 host2 host3
+# host2 sudo /usr/local/unravel/install_bin/switch_to_2of3.sh\ 
+host1 host2 host3
+# host3 sudo /usr/local/unravel/install_bin/switch_to_3of3.sh\ 
+host1 host2 host3</pre>
+                                    </div></div></li>
+                        </ul><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>These
+                                    scripts establish the roles each host plays in the ensemble. The
+                                    main effect is to assign specific Unravel logical daemons to one
+                                    host and only one host. <br class="atl-forced-newline" />
+                                    <br class="atl-forced-newline" /> Note that some daemons have
+                                    names like <code>unravel_<em>xyz</em>_1</code> or
+                                            <code>unravel_<em>xyz</em>_2</code>, and so on. The
+                                    entire name with the instance numeric suffix is set to run on
+                                    one host in the ensemble. In some cases, multiple
+                                            <em><code>xyz</code></em> numeric instances run on one
+                                    machine, but the overall name with suffix runs on one host only.
+                                        <br class="atl-forced-newline" />
+                                    <br class="atl-forced-newline" /> The <code>switch_to_*</code>
+                                    scripts change <code>unravel.properties</code> in a coordinated
+                                    fashion and also create a file, <code><a
+                                            href="http://unravel.id" class="external-link"
+                                            rel="nofollow">unravel.id</a>.properties</code>, to hold
+                                    the integer property indicating which role the particular
+                                    machine has (1, 2, or 3).</p></div></div><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-4.SetUpZookeeperandKafka"
+                            >4. Set Up Zookeeper and Kafka</h2><h3
+                            id="ConfiguringMultipleHostsforUnravelServer-AssignKafkaPartitions"
+                            >Assign Kafka Partitions</h3><p>Kafka partition assignment (for 3 host
+                            installs) is done by evenly distributing a topic over the hosts that
+                            exist at topic create time. Topics must be created anew when a new host
+                            is added in order to have proper distribution.</p><h3
+                            id="ConfiguringMultipleHostsforUnravelServer-RedistributeZookeeperTopics"
+                            >Redistribute Zookeeper Topics</h3><p>Perform these steps, <em>in
+                                sequential order, on the specific hosts</em> as indicated by the
+                            prompt name. Skip <strong>host3</strong> if you are only using 2 hosts
+                            for Unravel Server:</p><ul>
+                            <li><p>Stop all and clear Zookeeper and Kafka data areas on each
+                                    host:</p><div class="code panel pdl" style="border-width: 1px;"
+                                        ><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host2
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host3
+sudo /usr/local/unravel/install_bin/kafka_clear.sh</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Start up Zookeeper ensemble:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1 
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host2
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host3
+sudo /etc/init.d/unravel_all.sh start-zk</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Wait 15sec for Zookeeper quorum to
+                                    settle:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sleep 15</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Start up Kafka ensemble:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+sudo /etc/init.d/unravel_all.sh start-k 
+# host2
+sudo /etc/init.d/unravel_all.sh start-k 
+# host3
+sudo /etc/init.d/unravel_all.sh start-k</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Wait 10sec for Kafka
+                                    coordination:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sleep 10</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Create the Kafka topics (only on one
+                                    host):</p><div class="code panel pdl" style="border-width: 1px;"
+                                        ><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1 
+sudo /usr/local/unravel/install_bin/kafka_create_topics.sh</pre>
+                                    </div></div></li>
+                        </ul><h2 id="ConfiguringMultipleHostsforUnravelServer-5.StartUnravelServer"
+                            >5. Start Unravel Server</h2><p>Finish multi-host installation by
+                            starting up Unravel Server:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+sudo /etc/init.d/unravel_all.sh start 
+# host1
+echo &quot;http://$(hostname -f):3000/&quot; 
+# host2
+sudo /etc/init.d/unravel_all.sh start</pre>
+                            </div></div><p><br /></p><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-6.EditHive-siteSnippetforHive-Hook"
+                            >6. Edit Hive-site Snippet for Hive-Hook</h2><p>The port 4043 is on
+                                <strong>host2</strong> and that means the <code>hive-site.xml</code>
+                            file changes needed for Unravel hive-hook are in
+                                <code>/usr/local/unravel/hive-hook/hive-site.xml.snip</code> on
+                                <strong>host2</strong>. If <code>hive-site.xml</code> was already
+                            configured for <strong>host1</strong>, then modify it for
+                                <strong>host2</strong>.</p><h2
+                            id="ConfiguringMultipleHostsforUnravelServer-7.Snapshotunravel.propertiesasnewgoldenfile"
+                            >7. Snapshot unravel.properties as new golden
+                            file</h2><p><br /></p><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51229596.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

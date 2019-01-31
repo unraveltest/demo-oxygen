@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="Getting-Started_53157411">
+   <title>Getting Started </title>
+   <conbody>
+
+
+
+
+
+
+      <p>Table of Contents</p>
+
+
+      <ul outputclass="toc-indentation">
+
+         <li>
+            <xref href="#Getting-Started_53157411/GettingStarted-UseCaseVideos">Use Case Videos</xref>
+            <ul outputclass="toc-indentation">
+
+               <li>
+                  <xref
+                     href="#Getting-Started_53157411/GettingStarted-UseCase1-HowtoSearchforApplicationsandOptimize/TuneaHiveApplication"
+                     >Use Case #1: How to Search for Applications and Optimize/Tune a Hive Application</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="#Getting-Started_53157411-GettingStarted-UseCase2-Howto-RootCause-IssueswithaWorkflowthatMissedItsSLA"
+                     >Use Case #2: How to "Root Cause" Issues with a Workflow that Missed Its SLA</xref>
+               </li>
+
+               <li>
+                  <xref href="#Getting-Started_53157411/GettingStarted-UseCase3-HowtoDebugFailedApplications">Use Case
+                     #3: How to Debug Failed Applications</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="#Getting-Started_53157411/GettingStarted-UseCase4-HowtoReviewSparkApplicationsandIdentifyAreasforPerformanceImprovements"
+                     >Use Case #4: How to Review Spark Applications and Identify Areas for Performance
+                     Improvements</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li>
+            <xref href="#Getting-Started_53157411/GettingStarted-RunningtheConfigurationWizard">Running the
+               Configuration Wizard</xref>
+            <ul outputclass="toc-indentation">
+
+               <li>
+                  <xref href="#Getting-Started_53157411/GettingStarted-SettingUpAccesstoBigDataComponents">Setting Up
+                     Access to Big Data Components</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="#Getting-Started_53157411/GettingStarted-CreatingUsersandSettingUpEmail/SMTP,LDAP,Kerberos"
+                     >Creating Users and Setting Up Email/SMTP, LDAP, Kerberos</xref>
+               </li>
+
+            </ul>
+         </li>
+
+      </ul>
+
+
+      <p/>
+      <section>
+         <title>Use Case Videos</title>
+      </section>
+      <section>
+         <title>Use Case #1: How to Search for Applications and Optimize/Tune a Hive Application</title>
+         <ph/>
+      </section>
+
+      <section>
+         <title>Use Case #2: How to "Root Cause" Issues with a Workflow that Missed Its SLA</title>
+         <ph/>
+      </section>
+
+      <section>
+         <title>Use Case #3: How to Debug Failed Applications</title>
+         <ph/>
+      </section>
+
+      <section>
+         <title>Use Case #4: How to Review Spark Applications and Identify Areas for Performance Improvements</title>
+         <ph/>
+      </section>
+
+      <section>
+         <title>Running the Configuration Wizard</title>
+         <p>After you install the Unravel Server RPM, you can run Unravel Web UI's configuration wizard to:</p>
+         <ul>
+
+            <li>Set up access to various Big Data components (HDFS, Hive, Oozie, and so on).</li>
+
+            <li>
+               <p>Create users</p>
+            </li>
+
+            <li>
+               <p>Set up email/SMTP, LDAP, Kerberos</p>
+            </li>
+
+         </ul>
+         <p>The configuration wizard informs you of errors and continuously checks for failed and incorrect settings. To
+            start the configuration wizard, click <b>Admin</b> | <b>Manage</b> | <b>Configuration</b>.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>The Unravel Web UI configuration wizard is available only for the <codeph>admin</codeph> user.</p>
+      </section>
+      <section>
+         <title>Setting Up Access to Big Data Components</title>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53157532.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+      </section>
+      <section>
+         <title>Creating Users and Setting Up Email/SMTP, LDAP, Kerberos</title>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53157529.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+      </section>
+
+
+
+   </conbody>
+</concept>

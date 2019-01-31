@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Identifying Rogue Applications</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="User-Guide_50687944.html">User Guide</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Use-Cases_53314582.html">Use Cases</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Identifying Rogue Applications </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p>Rogue applications can affect cluster health and lead to missed SLAs. Therefore, it is best
+                            practice to identify and eliminate them. Symptoms of a cluster with rogue applications
+                            include jobs that take too long to run or applications that use too many vcores. Unravel Web
+                            UI makes identifying rogue apps easy:</p><ol>
+                            <li>Click <strong>Operations</strong> | <strong>Charts</strong> |
+                                <strong>Resources</strong>.</li>
+                            <li>In the <strong>Cluster VCores</strong> or <strong>Cluster MemoryMB</strong> graph, click
+                                on a spike.<br />Unravel Web UI displays the list of applications running or pending in
+                                the cluster at the spike's timestamp, at the bottom of the page.<span
+                                    class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image"
+                                        src="media/51744670.png" data-image-src="media/51744670.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="51744670"
+                                        data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-05 at 11.16.49 PM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51744637"
+                                        data-linked-resource-container-version="5"
+                                        data-media-id="58930539-fd39-4c64-8512-bb6a1b3203a0" data-media-type="file"
+                                     /></span><br /><br /></li>
+                            <li>Click the application which has allocated the highest number of vcores. In this example,
+                                there is a MapReduce application which has allocated 240 vcores of the cluster.<span
+                                    class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image"
+                                        src="media/51744760.png" data-image-src="media/51744760.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="51744760"
+                                        data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-05 at 11.21.10 PM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51744637"
+                                        data-linked-resource-container-version="5"
+                                        data-media-id="7b86dc54-21a2-4e1d-949c-e2b04aa440de" data-media-type="file"
+                                     /></span></li>
+                            <li>Check the Application page to see Unravel's recommendations for improving the efficiency
+                                of this MapReduce application. For example:<span
+                                    class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image"
+                                        src="media/51744795.png" data-image-src="media/51744795.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="51744795"
+                                        data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-06 at 8.31.49 AM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51744637"
+                                        data-linked-resource-container-version="5"
+                                        data-media-id="08f6da34-60d0-4921-9cd9-556f5e7ff3ba" data-media-type="file"
+                                     /></span></li>
+                            <li><span style="color: rgb(0,0,0);">Set up an AutoAction to proactively alert if a rogue
+                                    application is occupying the cluster.</span></li>
+                        </ol><p><span style="color: rgb(0,0,0);"><span class="confluence-embedded-file-wrapper"><img
+                                        class="confluence-embedded-image" src="media/51744833.png"
+                                        data-image-src="media/51744833.png" data-unresolved-comment-count="0"
+                                        data-linked-resource-id="51744833" data-linked-resource-version="2"
+                                        data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-05 at 11.21.50 PM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51744637"
+                                        data-linked-resource-container-version="5"
+                                        data-media-id="3eb44a35-fdcb-4ac6-9ef2-d2067f81d4e2" data-media-type="file"
+                                     /></span></span></p><p><span style="color: rgb(0,0,0);"><span
+                                    class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image"
+                                        src="media/51744853.png" data-image-src="media/51744853.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="51744853"
+                                        data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="Screen Shot 2017-04-05 at 11.23.34 PM.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="51744637"
+                                        data-linked-resource-container-version="5"
+                                        data-media-id="2ec991bc-14f9-4713-97cc-4d7c972b18ba" data-media-type="file"
+                                     /></span><br /></span></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52269790.png">Screen Shot 2017-04-05 at 11.16.49 PM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52269861.png">Screen Shot 2017-04-05 at 11.21.10 PM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52269926.png">Screen Shot 2017-04-06 at 8.31.49 AM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52270004.png">Screen Shot 2017-04-05 at 11.21.50 PM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52270065.png">Screen Shot 2017-04-05 at 11.23.34 PM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51744670.png">Screen Shot 2017-04-05 at 11.16.49 PM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51744760.png">Screen Shot 2017-04-05 at 11.21.10 PM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51744795.png">Screen Shot 2017-04-06 at 8.31.49 AM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51744833.png">Screen Shot 2017-04-05 at 11.21.50 PM.png</a> 
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51744853.png">Screen Shot 2017-04-05 at 11.23.34 PM.png</a> 
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

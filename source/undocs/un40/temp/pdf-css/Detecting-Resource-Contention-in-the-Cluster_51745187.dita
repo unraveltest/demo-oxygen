@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Detecting-Resource-Contention-in-the-Cluster_51745187" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="task:1;4:83">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="title:1;5:11">Detecting Resource Contention in the Cluster </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ph:3;23:20">
+                  <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:3;24:57" type="topic"><?ditaot usertext?>User Guide</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:4;28:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ph:4;29:20">
+                  <xref href="Use-Cases_53314582.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:4;30:56"><?ditaot usertext?>Use Cases</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="p:1;35:13">If your cluster has a lot of apps these apps will contend for resources in the cluster. Unravel Web UI
+            assists you in detecting and resolving resource contention.</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ol:2;37:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:5;39:17">Click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:1;39:26">Operations</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:2;39:46">Charts</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:3;39:62">Resources</b>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:6;41:17">In the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:4;41:27">Cluster VCores</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:5;41:52">Cluster MemoryMB</b> graph, click on a
+               spike.Unravel Web UI displays the list of
+               applications running or pending in the cluster at the spike's timestamp, at the bottom of the page. When
+               you see many applications in the ACCEPTED state (not RUNNING), it means they are waiting for resources.
+               For example, the screenshot below shows that only one Spark application is RUNNING (consuming resources)
+               and four MR applications are ACCEPTED (waiting for resources). Now you can take steps to resolve the
+                  problem.<ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ph:5;47:78">
+                  <image href="media/51745197.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:1;48:93"/>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="p:2;53:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="p:3;54:13">Setting Up Auto Actions (Alerts)</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="p:4;55:13">To define an action for Unravel to execute automatically when it detects resource contention in the
+            cluster:</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ol:3;57:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:7;59:17">Click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:6;59:26">Manage</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:7;59:42">Auto Actions</b>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:8;61:17">Select <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:8;61:27">Resource Contention in Cluster</b>.
+               <ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ph:6;62:67">
+                  <image href="media/51745220.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:2;63:93"/>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:9;67:17">Specify the rules for triggering this auto action, such as a memory threshold, job count threshold, and
+               so on:<ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="ph:7;68:73">
+                  <image href="media/51745239.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:3;69:93"/>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="li:10;73:17">Select the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="b:9;73:31">Send Email</b> check box.</li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="p:5;76:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="p:6;77:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="p:7;78:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:4;79:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="alt:1;80:19"/>
+         </image>
+         <xref href="media/51975570.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:5;82:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.41.20 PM.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:5;83:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="alt:2;84:19"/>
+         </image>
+         <xref href="media/51975675.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:6;86:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.43.07 PM.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:6;87:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="alt:3;88:19"/>
+         </image>
+         <xref href="media/51975748.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:7;90:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.43.57 PM.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:7;91:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="alt:4;92:19"/>
+         </image>
+         <xref href="media/51745197.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:8;94:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.41.20 PM.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:8;95:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="alt:5;96:19"/>
+         </image>
+         <xref href="media/51745220.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:9;98:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.43.07 PM.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="image:9;99:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="alt:6;100:19"/>
+         </image>
+         <xref href="media/51745239.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Detecting-Resource-Contention-in-the-Cluster_51745187.dita" xtrc="xref:10;102:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.43.57 PM.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

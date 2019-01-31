@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243">
+   <title>Setting Up Email for Auto Actions and Collaboration </title>
+   <taskbody>
+      <context>
+         <p>You can specify an SMTP server for Unravel Server so that it can send reports, alerts, and collaboration
+            emails. Several examples are shown below. Adapt the one that is most similar to your environment.</p>
+         <p>You can set these values through Unravel Web UI's <b>Manage</b> page | <b>Configuration</b> | <b>Email</b>
+            side tab as shown in diagram. The <b>Web UI</b> column in the table below corresponds to the values in the
+            Unravel Web UI dialog box.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/52731267.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>An alternative to using Unravel Web UI's <b>Manage</b> page is to enter the settings into
+               <codeph>/usr/local/unravel/etc/unravel.properties</codeph> using the property name shown in the
+               <b>Property</b> column.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>If you specify a saved email setting in Unravel Web UI, that setting overrides the corresponding setting in
+            the <codeph>unravel.properties</codeph> file.</p>
+         <p>Defaults</p>
+         <p>When you do not specify properties or configuration settings, Unravel Server tries to use the default
+            'classic' SMTP setting at localhost:25 ; this sometimes works for customers that set up SMTP spooling with
+            sendmail or postfix, but it might block emails to external domains (for anti-spam reasons). On EC2, this
+            sometimes works for small emails, but significant use is blocked for anti-spam reasons.</p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="4">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <colspec colname="col4"/>
+               <tbody>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">PORT</entry>
+                     <entry outputclass="confluenceTd">mail.smtp.port</entry>
+                     <entry outputclass="confluenceTd">25</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Port</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">AUTHENTICATE</entry>
+                     <entry outputclass="confluenceTd">mail.smtp.auth</entry>
+                     <entry outputclass="confluenceTd">false</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Enable SMTP authentication? If true,
+                        then USER (mail.smtp.user) and USER PASSWORD (<xref href="http://mail.smtp.pw" scope="external"
+                           format="html" outputclass="external-link">mail.smtp.pw</xref>) are used when
+                        connecting</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">START TLS</entry>
+                     <entry outputclass="confluenceTd">mail.smtp.starttls.enable</entry>
+                     <entry outputclass="confluenceTd">false</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Use start-TLS?</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">SSL ENABLE</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.ssl.enable</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">false</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Use SSL right from the
+                        start?</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">USER</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.user</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">null</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Username for SMTP
+                        authentication</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">USER PASSWORD</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.pw</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">null</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">
+                        <ph>Password<ph> for SMTP authentication</ph>
+                        </ph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">HOST</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.host</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <ph outputclass="s1">
+                           <xref href="http://smtp.gmail.com/" scope="external" format="html"
+                              outputclass="external-link">l</xref>ocalhost</ph>
+                     </entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Host for SMTP server</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">FROM USER</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.from</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <ph>someone<xref href="mailto:someone@example.com" format="html" scope="external"
+                              outputclass="external-link">@example.com</xref>
+                        </ph>
+                     </entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Use a <codeph>From:</codeph> name
+                        that is appropriate for your environment</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">LOCALHOST</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.localhost</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">localhost.local</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">A domain name for apparent sender;
+                        must have at least one dot (e.g. organization.com)</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">DEBUG</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.debug</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">false</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Enable debug mode? Set to true
+                        (temporarily) to see more details in logs.</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p>GMail SMTP Example</p>
+         <p>These settings are for our internal use. Do <b>not</b> compile this into the product or otherwise use as a
+            default in our source code. For security reasons, we don't want to mix our internal testing SMTP (or POP)
+            with the external one. </p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="4">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <colspec colname="col4"/>
+               <tbody>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">PORT</entry>
+                     <entry outputclass="confluenceTd">mail.smtp.port</entry>
+                     <entry outputclass="confluenceTd">587</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Port</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">AUTHENTICATE</entry>
+                     <entry outputclass="confluenceTd">mail.smtp.auth</entry>
+                     <entry outputclass="confluenceTd">true</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Enable SMTP authentication?</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">START TLS</entry>
+                     <entry outputclass="confluenceTd">mail.smtp.starttls.enable</entry>
+                     <entry outputclass="confluenceTd">true</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Use start-TLS?</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">SSL ENABLE</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.ssl.enable</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">false</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Use SSL right from the
+                        start?</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">USER</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.user</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <xref href="mailto:daemon@unraveldata.com" format="html" outputclass="external-link"
+                           scope="external">s</xref>omeone@organization.com</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Username for SMTP
+                        authentication</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">USER PASSWORD</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">
+                        <xref href="http://mail.smtp.pw" scope="external" format="html" outputclass="external-link"
+                           >mail.smtp.pw</xref>
+                     </entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">********</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Password<ph> for SMTP
+                           authentication</ph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">HOST</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.host</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <ph outputclass="s1">
+                           <xref href="http://smtp.gmail.com" scope="external" format="html" outputclass="external-link"
+                              >smtp.gmail.com</xref>
+                        </ph>
+                     </entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Host for SMTP server</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">FROM USER</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.from</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">someone@example.com</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">This sets the From header</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">LOCALHOST</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.localhost</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <xref href="http://unraveldata.com" scope="external" format="html" outputclass="external-link"
+                           >e</xref>xample.com</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">A domain name for apparent sender;
+                        must have at least one dot</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">DEBUG</entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">mail.smtp.debug</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">false</entry>
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd">Enable debug mode? Set to true
+                        (temporarily) to see more details in logs. Debug mode under "Advance SMTP" section</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p>Unravel daemons to restart after email setup</p>
+         <p>Run the following commands on Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_tc restart 
+sudo /etc/init.d/unravel_all.sh stop-etl
+sudo /etc/init.d/unravel_all.sh start</codeblock>
+         <p/>
+         <p>Verify email setup works</p>
+         <p>Run the following commands on Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo -u unravel /usr/local/unravel/install_bin/diag_email.sh   someone@example.com 
+--&gt; enter password from dist.unraveldata.com
+--&gt; should see following output in terminal mode and if you see "result is = null", then, setup is correct.
+:
+:
+result is = null
+At least one smtp pathway worked
+for log output see /usr/local/unravel/logs/test_email.log</codeblock>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>See the stdout. It will test smtp settings (either from unravel.properties or defaults or in settings table
+            in db or command line overrides). It will also test "smtp2" email which is compiled-in as a backup for
+            alerts to Unravel Support. Customer reports are <b>not</b> send via smtp2, so if only that one works,
+            customer report email is not going to work.</p>
+         <p>Email setup for Auto-Actions</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>After above email setup has been completed in Unravel UI under Email Config Wizard, next, please do below
+            steps to configure Auto-Actions.</p>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">Add following properties to /usr/local/unravel/unravel.properties on
+                  Unravel Server:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">mail.smtp.from=someone@example.com
+com.unraveldata.report.user.email.domain=example.com</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Disable unneeded daemons:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">sudo service unravel_os3 stop
+sudo chkconfig unravel_os3 off</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Restart daemons:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_all.sh restart</codeblock>
+            </li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

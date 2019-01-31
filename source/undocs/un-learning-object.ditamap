@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE learningObjectMap PUBLIC "-//OASIS//DTD DITA Learning Object Map//EN" "learningObjectMap.rng">
+<learningObjectMap>
+    
+    <!-- doesn't work as-is -->
+    
+    <title>Unravel Documentation -- DOCTYPE learningObjectMap</title>
+    
+    <mapref href="un45/un45.ditamap" format="ditamap"/>
+    <mapref href="un44/un44.ditamap" format="ditamap"/>
+    <mapref href="un43/un43.ditamap" format="ditamap"/>
+    <mapref href="un42/un42.ditamap" format="ditamap"/>
+    <mapref href="un40/un40.ditamap" format="ditamap"/>
+</learningObjectMap>

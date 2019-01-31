@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Connecting to a Hive Metastore</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced
+                                    Topics</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Connecting to a Hive Metastore
+                        </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    
+                    <div id="main-content" class="wiki-content group">
+                        <p class="auto-cursor-target">Connecting to a Hive metastore enables Unravel
+                            Server to collect instrumentation from it, which results in the
+                            population of the Data Page in Unravel Web UI.</p><h2
+                            id="ConnectingtoaHiveMetastore-ForCDH+CM">For CDH+CM</h2><p>You can
+                            enable instrumentation for the Hive metastore through Unravel Web UI's
+                            configuration wizard, but first you need to obtain <span
+                                style="color: rgb(44,44,44);"><span style="color: rgb(44,44,44);"
+                                        ><span style="color: rgb(44,44,44);"><span>Hive metastore
+                                            details from Cloudera
+                                Manager.</span></span></span></span></p><ol>
+                            <li>Obtain the Hive metastore details from the Cloudera Manager by using
+                                a CDH REST API</li>
+                        </ol><ul>
+                            <li style="list-style-type: none;background-image: none;"><ul>
+                                    <li>From CDH version 5.5 onward, use the REST API
+                                                &quot;<code>http://<span
+                                                style="color: rgb(255,0,0);"
+                                            >CMGR_HOSTNAME_IP</span>:7182/api/v12/cm/deployment</code>&quot;</li>
+                                    <li><p>Look at the response body, a JSON-like text format as in
+                                            the image below.</p></li>
+                                    <li><p>Search the response body for
+                                            &quot;<code>metastore</code>&quot;.</p></li>
+                                </ul></li>
+                        </ul><p style="margin-left: 90.0px;"><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                    ><img class="confluence-embedded-image" height="400"
+                                    src="media/52274297.png"
+                                    data-image-src="media/52274297.png"
+                                    data-unresolved-comment-count="0"
+                                    data-linked-resource-id="52274297"
+                                    data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="CMGR_rest_api_extracting_HM_pwd.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="51162326"
+                                    data-linked-resource-container-version="17"
+                                    data-media-id="b80c76b7-a97a-476c-ae8e-bd61adadd5ef"
+                                    data-media-type="file" /></span></p><p><br /></p><p
+                            style="margin-left: 30.0px;">2. In Unravel Web UI, on the top right-hand
+                            corner, click <strong>Admin</strong> and, in the pull-down menu, select
+                                <strong>Manage</strong>.</p><p style="margin-left: 60.0px;"><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                    ><img class="confluence-embedded-image" height="400"
+                                    src="media/52274015.png"
+                                    data-image-src="media/52274015.png"
+                                    data-unresolved-comment-count="0"
+                                    data-linked-resource-id="52274015"
+                                    data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="UI_Admin_Manage_page.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="51162326"
+                                    data-linked-resource-container-version="17"
+                                    data-media-id="fe28ae58-39fc-48e6-b041-f31d5e1bc0a7"
+                                    data-media-type="file" /></span></p><p
+                            style="margin-left: 30.0px;">3. On the left tab, click
+                                <strong>Hive</strong>, and fill in the values you obtained from
+                            Cloudera Manager:</p><ul>
+                            <li style="list-style-type: none;background-image: none;"><ul>
+                                    <li><span style="color: rgb(44,44,44);">HIVE METASTORE
+                                            URL</span></li>
+                                    <li><span style="color: rgb(44,44,44);"><span
+                                                style="color: rgb(44,44,44);">HIVE METASTORE
+                                                DRIVER</span><br /></span></li>
+                                    <li><span style="color: rgb(44,44,44);"><span
+                                                style="color: rgb(44,44,44);"><span
+                                                  style="color: rgb(44,44,44);">HIVE METASTORE USER
+                                                  NAME</span><br /></span></span></li>
+                                    <li><span style="color: rgb(44,44,44);"><span
+                                                style="color: rgb(44,44,44);"><span
+                                                  style="color: rgb(44,44,44);"><span
+                                                  style="color: rgb(44,44,44);">HIVE METASTORE
+                                                  PASSWORD</span></span></span></span><br /><p><span
+                                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                                  ><img class="confluence-embedded-image"
+                                                  height="400" src="media/52274083.png"
+                                                  data-image-src="media/52274083.png"
+                                                  data-unresolved-comment-count="0"
+                                                  data-linked-resource-id="52274083"
+                                                  data-linked-resource-version="1"
+                                                  data-linked-resource-type="attachment"
+                                                  data-linked-resource-default-alias="UI_Hive_Metastore_page.png"
+                                                  data-base-url="https://unraveldata.atlassian.net/wiki"
+                                                  data-linked-resource-content-type="image/png"
+                                                  data-linked-resource-container-id="51162326"
+                                                  data-linked-resource-container-version="17"
+                                                  data-media-id="bab6bffe-954c-4551-a75d-1a90d631091e"
+                                                  data-media-type="file" /></span></p><br /><span
+                                            style="color: rgb(44,44,44);"><span
+                                                style="color: rgb(44,44,44);"><span
+                                                  style="color: rgb(44,44,44);"><span
+                                                  style="color: rgb(44,44,44);"
+                                                ><br /></span></span></span></span></li>
+                                </ul></li>
+                        </ul><p style="margin-left: 30.0px;">4. Save the information when done:
+                                <span style="color: rgb(44,44,44);"><span
+                                    style="color: rgb(44,44,44);"><span
+                                        style="color: rgb(44,44,44);"><span
+                                            style="color: rgb(44,44,44);">click <strong>Save
+                                                Changes</strong>.</span></span></span></span></p><p
+                            style="margin-left: 30.0px;">5. Restart Unravel Server:</p><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_all.sh restart</pre>
+                            </div></div><p style="margin-left: 30.0px;">6. After restart, confirm
+                            that Hive queries appear in Unravel UI in the
+                                <strong>Application</strong> tab.</p><h2
+                            id="ConnectingtoaHiveMetastore-ForHDP">For HDP </h2><p>See <a
+                                href="50689477.html" data-linked-resource-id="50689477"
+                                data-linked-resource-version="74" data-linked-resource-type="page"
+                                >Part 2: Enable Additional Data Collection / Instrumentation for
+                                HDP</a></p><h2 id="ConnectingtoaHiveMetastore-ForMapR">For
+                            MapR</h2><p>See <a href="50688326.html"
+                                data-linked-resource-id="50688326" data-linked-resource-version="38"
+                                data-linked-resource-type="page">Part 2: Enable Additional Data
+                                Collection / Instrumentation for MapR</a></p><p> </p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51162330.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52274015.png">UI_Admin_Manage_page.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52274083.png">UI_Hive_Metastore_page.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52274297.png">CMGR_rest_api_extracting_HM_pwd.png</a>
+                            (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

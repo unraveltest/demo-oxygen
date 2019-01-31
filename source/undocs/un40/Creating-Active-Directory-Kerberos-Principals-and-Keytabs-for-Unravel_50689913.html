@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Creating Active Directory Kerberos Principals and Keytabs for Unravel</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Creating Active Directory Kerberos Principals and
+                            Keytabs for Unravel </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <h2
+                            id="CreatingActiveDirectoryKerberosPrincipalsandKeytabsforUnravel-DefineHOSTVariableforUnravelServerasanFQDN"
+                            >Define HOST Variable for Unravel Server as an FQDN</h2><p>(Replace <span
+                                style="color: rgb(255,0,255);"><code>UNRAVEL_HOST</code></span> with your host's
+                            FQDN):</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">HOST=$UNRAVEL_HOST</pre>
+                            </div></div><h2
+                            id="CreatingActiveDirectoryKerberosPrincipalsandKeytabsforUnravel-DefineREALMVariable"
+                            >Define REALM Variable</h2><p>(Use upper case for all; replace <span
+                                style="color: rgb(255,0,255);"><code>EXAMPLEDOTCOM</code></span> with your
+                            realm):</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">REALM=$EXAMPLEDOTCOM</pre>
+                            </div></div><h2
+                            id="CreatingActiveDirectoryKerberosPrincipalsandKeytabsforUnravel-CreatetheActiveDirectory(AD)KerberosPrincipalsandKeytabs"
+                            ><br /> Create the Active Directory (AD) Kerberos Principals and Keytabs</h2><p>Use the two
+                            variables you defined above to replace the <span style="color: rgb(255,0,255);"
+                                >magenta</span> text below.</p><ol>
+                            <li>Verify that Unravel Server host is running ntpd service and that time is accurate.</li>
+                            <li>For proper Kerberos operation with AD-KDC, DNS entries, <span
+                                    style="color: rgb(34,34,34);">including reverse DNS entries, must be in
+                                    place.</span></li>
+                            <li><span style="color: rgb(34,34,34);">On AD server, logged in as AD Administrator, add 2
+                                    Managed Service Accounts <code>unravel</code> and </span><code>hdfs</code>:<ol>
+                                    <li><span style="color: rgb(34,34,34);">Open the <strong>Active Directory Users and
+                                                Computers</strong> snap-in.</span></li>
+                                    <li><span style="color: rgb(34,34,34);">Confirm that the <strong>Managed Service
+                                                Account</strong> container exists under the target</span>
+                                        <span style="color: rgb(34,34,34);"><span style="color: rgb(255,0,255);"
+                                                    ><code>REALM</code></span>.</span></li>
+                                    <li><span style="color: rgb(34,34,34);">Right-click the <strong>Managed Service
+                                                Account</strong> container and choose
+                                            <strong>New-&gt;User</strong>.</span></li>
+                                    <li><span style="color: rgb(34,34,34);">Set names (<code>unravel</code> and
+                                                <code>hdfs</code>) to account in first screen and click
+                                                <strong>Next</strong>.</span></li>
+                                    <li><span style="color: rgb(34,34,34);">Set a strong password to account (the
+                                            password will not be used) and</span><ol>
+                                            <li><span style="color: rgb(34,34,34);">Check <strong>Password never
+                                                        expires</strong>.</span></li>
+                                            <li><span style="color: rgb(34,34,34);"><strong>UN</strong>check
+                                                        <strong>Password must be changed</strong>.</span></li>
+                                            <li><span style="color: rgb(34,34,34);">Check <strong>Password cannot be
+                                                        changed</strong>.</span></li>
+                                        </ol></li>
+                                    <li><span style="color: rgb(34,34,34);">Right-click the created user, choose
+                                                <strong>Properties</strong>, and select the <strong>Account</strong>
+                                            tab. <br /></span></li>
+                                    <li><span style="color: rgb(34,34,34);"><span style="color: rgb(34,34,34);">In the
+                                                    <strong>Account Options</strong> panel,</span> check
+                                                <strong>Kerberos AES256-SHA1</strong>.</span></li>
+                                </ol></li>
+                            <li><span style="color: rgb(34,34,34);">On AD server, logged in as AD Administrator, create
+                                    the Service Principal Names:</span><ol>
+                                    <li><span style="color: rgb(34,34,34);">The commands to run in a cmd or powershell
+                                            are the following:</span></li>
+                                    <li><code><span style="color: rgb(34,34,34);">setspn -A unravel/</span><span
+                                                style="color: rgb(255,0,255);">HOST</span>
+                                            <span style="color: rgb(34,34,34);">unravel</span></code></li>
+                                    <li><code><span style="color: rgb(34,34,34);">setspn -A hdfs/</span><span
+                                                style="color: rgb(255,0,255);">HOST</span>
+                                            <span style="color: rgb(34,34,34);">hdfs</span></code></li>
+                                </ol></li>
+                            <li><span style="color: rgb(34,34,34);">On AD server, logged in as AD Administrator,
+                                    generate keytab files that Unravel Server will use to authenticate with Kerberos
+                                    using the <code>ktpass</code> utility in Active Directory:</span><ol>
+                                    <li><code><span style="color: rgb(34,34,34);">ktpass -princ unravel/</span><span
+                                                style="color: rgb(255,0,255);">HOST</span><span
+                                                style="color: rgb(34,34,34);">@</span><span
+                                                style="color: rgb(255,0,255);">REALM</span>
+                                            <span style="color: rgb(34,34,34);">-mapUser unravel -Target</span>
+                                            <span style="color: rgb(255,0,255);">REALM</span>
+                                            <span style="color: rgb(34,34,34);">+rndPass -out unravel.keytab -ptype
+                                                KRB5_NT_PRINCIPAL -crypto AES256-SHA1</span></code></li>
+                                    <li><code><span style="color: rgb(255,0,255);">ktpass -princ hdfs/HOST@REALM</span>
+                                            <span style="color: rgb(34,34,34);">-mapUser hdfs -Target</span>
+                                            <span style="color: rgb(255,0,255);">REALM</span>
+                                            <span style="color: rgb(34,34,34);">+rndPass -out hdfs.keytab -ptype
+                                                KRB5_NT_PRINCIPAL -crypto AES256-SHA1</span></code></li>
+                                </ol></li>
+                            <li><span style="color: rgb(34,34,34);">Copy the two keytabs (<code>unravel.keytab</code>
+                                    and <code>hdfs.keytab</code>) from AD server to the Unravel Server at</span> <span
+                                    style="color: rgb(255,0,255);"><code>HOST</code></span>
+                                <span style="color: rgb(34,34,34);">into <code>/etc/keytabs/</code> (create the
+                                    destination directory if need be) and</span><ol>
+                                    <li><code><span style="color: rgb(34,34,34);">sudo chmod 700
+                                            /etc/keytabs/*</span></code></li>
+                                    <li><code><span style="color: rgb(34,34,34);">sudo chown unravel:unravel
+                                                /etc/keytabs/unravel.keytab</span></code></li>
+                                    <li><code><span style="color: rgb(34,34,34);">sudo chown hdfs:hdfs
+                                                /etc/keytabs/hdfs.keytab</span></code></li>
+                                </ol></li>
+                        </ol><p><br class="atl-forced-newline" />
+                            <span style="color: rgb(34,34,34);">Assurances: <code style="color: rgb(34,34,34);"
+                                    >hdfs.keytab</code> is only usable on Unravel Server and is only used to access HDFS
+                                log files and Hive metastore (if applicable).</span></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51229701.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

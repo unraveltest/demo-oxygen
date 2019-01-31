@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Creating-Multiple-Workers-for-High-Volume-Data_51162494">
+   <title>Creating Multiple Workers for High Volume Data </title>
+   <taskbody>
+      <context>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+         <p>These instructions apply to single host Unravel deployments only; for multihost deployments, please contact
+               <xref href="mailto:support@unraveldata.com" format="html" scope="external" outputclass="external-link"
+               >Unravel Support</xref>.</p>
+         <p>If you have 10000-20000 jobs per day, run these commands on Unravel Server to enable these workers:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo chkconfig --add unravel_ew_2 
+sudo chkconfig --add unravel_hhw_2 
+sudo chkconfig --add unravel_jcw2_2
+# If Spark is in use:
+sudo chkconfig --add unravel_sw_2 </codeblock>
+         <p>If you have 20000-30000 jobs per day, run these commands on Unravel Server to enable these workers:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo chkconfig --add unravel_ew_3 
+sudo chkconfig --add unravel_hhw_3 
+sudo chkconfig --add unravel_jcw2_3
+# If Spark is in use:
+sudo chkconfig --add unravel_sw_3</codeblock>
+         <p>If you have more than 30000 jobs per day, run these commands on Unravel Server to enable these workers:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo chkconfig --add unravel_ew_4 
+sudo chkconfig --add unravel_hhw_4 
+sudo chkconfig --add unravel_jcw2_4
+# If Spark is in use:
+sudo chkconfig --add unravel_sw_4</codeblock>
+         <p>Start Unravel Server</p>
+         <p>Run the following command to start the additional daemons you enabled above:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_all.sh start
+</codeblock>
+      </context>
+   </taskbody>
+</task>

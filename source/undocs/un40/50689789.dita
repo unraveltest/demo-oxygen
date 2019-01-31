@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="FAGIJHIJ">
+   <title>Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive Cluster </title>
+   <taskbody>
+      <context>
+         <p>Follow these steps only if you have a Qubole-based Hadoop2/Hive cluster.</p>
+         <p>Highlighted text indicates where you must substitute your particular values.</p>
+         <p>Introduction</p>
+         <p>This topic explains how to install Unravel Sensor (Hive Hook) on Qubole-based Hadoop2/Hive clusters. Unravel
+            Sensor collects information about Hive queries in Hadoop and pushes it to Unravel Server.</p>
+         <b>Workflow Summary</b>
+         <ol>
+            <li>Step 1 is a one-time only step.</li>
+            <li>If the Qubole cluster already exists (is already running), do a "setup" procedure: follow the steps 3 to
+               5 in Hive Bootstrap and Unravel Hive Hook Sensor <xref
+                  href="#FAGIJHIJ/Part2:InstallUnravelHiveSensoronQuboleHadoop2/HiveCluster-hivehooksetupexistingcluster"
+                  >Setup.</xref>
+            </li>
+         </ol>
+         <p/>
+         <p>Hive Bootstrap and Unravel Hive Hook Sensor Setup:</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>{location_in_s3_where_unravel_jar_folder} - is the s3 location where the unravel hive hook jar will be
+            accessed</p>
+         <p>
+            <ph>{</ph>Unravel_Hostname_IP} - is the Unravel server's fully qualified internal IP address, preferably the
+            LAN (private) IP if in the same availability zone</p>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">Add a one-time Unravel Hive Bootstrap into Qubole's control panel on
+                  the left-hand side in the "Hive Bootstrap" section, as follows:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">add jar  s3n://{location_in_s3_where_unravel_jar_folder} /unravel-hive-0.13.0-hook.jar;
+
+set com.unraveldata.hive.hdfs.dir=/user/unravel/HOOK_RESULT_DIR;
+set hive.exec.driver.run.hooks=com.unraveldata.dataflow.hive.hook.HiveDriverHook;
+set hive.exec.pre.hooks=com.unraveldata.dataflow.hive.hook.HivePreHook;
+set hive.exec.post.hooks=com.unraveldata.dataflow.hive.hook.HivePostHook;
+set hive.exec.failure.hooks=com.unraveldata.dataflow.hive.hook.HiveFailHook;
+set com.unraveldata.host=&lt;Unravel_Hostname_FQDN_Internal_IP&gt;;
+set com.unraveldata.hive.hook.tcp=true;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Determine the Hive version that Qubole uses, and use that value for <ph>
+                     <codeph>HIVE_VER</codeph>
+                  </ph> in the commands below.</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+               <p>To determine the Hive version Qubole uses, see <xref
+                     href="http://docs.qubole.com/en/latest/faqs/hive/version-hive-qubole-provide.html" scope="external"
+                     format="html" outputclass="external-link"
+                     >http://docs.qubole.com/en/latest/faqs/hive/version-hive-qubole-provide.html</xref>.</p>
+               <p>
+                  <ph>
+                     <codeph>HIVE_VER</codeph>
+                  </ph> must be a Hive version that Unravel Server supports:  either <codeph>1.2.0</codeph> or
+                     <codeph>0.13.0</codeph>. Be sure to use either of these values in exactly this format.</p>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">On the master node of the Qubole Hadoop2/Hive cluster, check that
+                  Unravel Server is reachable.</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+               <p>Ensure the security group on the master/slave allows TCP port #3000 and #4043 accessible.</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># curl http://{Unravel_Hostname_IP}:3000/version.txt</codeblock>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+               <p>If the version information is not visible, adjust security groups and routing and try again.</p>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">SSH to the master server of the existing Qubole Hadoop2/Hive cluster,
+                  run the following commands:</p>
+               <ol>
+                  <li>
+                     <p outputclass="auto-cursor-target">Use <codeph>curl</codeph> to get the script from Unravel
+                        Server:</p>
+                     <codeblock outputclass="syntaxhighlighter-pre"># curl http://{Unravel_Hostname_IP}:3000/hh/unraveldata-clients/unravel_qubole_setup.sh &gt; unravel_qubole_setup.sh</codeblock>
+                  </li>
+                  <li>
+                     <p outputclass="auto-cursor-target">Ensure <codeph>wget</codeph> is installed, and run the script
+                        on each server in the cluster:</p>
+                     <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+                     <p>
+                        <ph>Files will be installed under:</ph>
+                     </p>
+                     <p>
+                        <ph>     Hive hook jar is /usr/local/unravel_client/.</ph>
+                     </p>
+                     <p>
+                        <ph>
+                           <ph>     Spark jar is /usr/local/unravel-spark/.</ph>
+                        </ph>
+                     </p>
+                     <p>
+                        <ph>
+                           <ph>     Unravel ES is /usr/local/unravel_es/.</ph>
+                        </ph>
+                     </p>
+                     <p>
+                        <ph>On the master node, /etc/init.d/unravel_es service will be defined and started.</ph>
+                     </p>
+                     <codeblock outputclass="syntaxhighlighter-pre"># yum install -y wget
+# chmod 755 unravel_qubole_setup.sh 
+# sudo ./unravel_qubole_setup.sh install -y --unravel-server UNRAVEL_HOST_IP:3000</codeblock>
+                  </li>
+               </ol>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Verify if the setup works in Qubole by invoking Analyze and execute
+                  following Hive test query:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">set hive.on.master=true ;
+select count(*) from default_qubole_memetracker;</codeblock>
+            </li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

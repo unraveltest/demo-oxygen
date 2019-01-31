@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409">
+   <title>Installing Unravel Sensor for Individual Hive Queries </title>
+   <taskbody>
+      <context>
+         <p>
+            <ph>The MapReduce JVM sensor is a prepackaged distribution of JVM agent which enables collection of
+               additional information, including resource usage metrics. The sensor binary is distributed as </ph>
+            <codeph>
+               <ph>unravel-sensor-for-mapreduce-bin.zip</ph>
+            </codeph>
+            <ph>. This archive contains the following 4 jars:</ph>
+         </p>
+         <ul>
+            <li>
+               <p>
+                  <codeph>
+                     <ph>btrace-agent.jar</ph>
+                  </codeph>
+               </p>
+            </li>
+            <li>
+               <p>
+                  <codeph>
+                     <ph>btrace-boot.jar </ph>
+                  </codeph>
+               </p>
+            </li>
+            <li>
+               <p>
+                  <codeph>
+                     <ph>unravel-mr-boot.jar </ph>
+                  </codeph>
+               </p>
+            </li>
+            <li>
+               <p>
+                  <codeph>
+                     <ph>unravel-mr-sys.jar </ph>
+                  </codeph>
+               </p>
+            </li>
+         </ul>
+         <p>
+            <ph>When you enable this sensor, it uses the standard MapReduce profiling extension. You can copy and paste
+               the following configuration snippets for a quick bootstrap:</ph>
+         </p>
+         <p>
+            <ph>
+               <ph>Option A: Installing the MapReduce JVM Sensor </ph>on Cloudera</ph>
+         </p>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>
+                        <ph>Enable profiling:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.task.profile=true;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>Select map and reduce profiles:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>
+                        <ph>Enable the JVM agent for map and reduce tasks:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+               <p>
+                  <ph>Set </ph>
+                  <ph>UNRAVEL_HOST_IP</ph>
+                  <ph>of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set 
+mapreduce.task.profile.params=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>
+                        <ph>Enable the JVM agent for application master:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set 
+yarn.app.mapreduce.am.command-opts=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+         </ol>
+         <p>
+            <ph>
+               <ph>Option B: Installing the MapReduce JVM Sensor on </ph>
+            </ph>Cloudera Manager for Hive</p>
+         <p outputclass="with-breadcrumbs">See <i>Optional - Configure YARN - MapReduce (MR) JVM Sensor Cluster-Wide</i>
+            in <xref href="50689256.dita">Part 2: Install Unravel Sensor Parcel on CDH+CM</xref>.</p>
+         <p>
+            <ph>
+               <ph>Option C: Installing the MapReduce JVM Sensor on</ph> HDFS</ph>
+         </p>
+         <p>
+            <ph>Change your <codeph>*init</codeph> file as follows:</ph>
+         </p>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>Set the path to the JVM sensor archive:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.job.cache.archives=path_in_hdfs/unravel-sensor-for-mapreduce-bin.zip;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>Enable profiling:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.task.profile=true;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>Select map and reduce profiles:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>
+                        <ph>Enable the JVM agent for map and reduce tasks</ph>:</ph>
+                  </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+               <p>
+                  <ph>Set </ph>
+                  <ph>UNRAVEL_HOST_IP </ph>
+                  <ph>of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set 
+mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>Enable the JVM agent for application master:</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+         </ol>
+         <p>
+            <ph>
+               <ph>Option D: Installing the MapReduce JVM Sensor on the </ph>Local File System</ph>
+         </p>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>Add the JVM sensor archive to the PATH environment variable.</ph>
+                  </ph>
+               </p>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>Enable profiling:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.task.profile=true;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>Select map and reduce profiles:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.task.profile.maps=0-5;set mapreduce.task.profile.reduces=0-5;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>
+                        <ph>Enable the JVM agent for map and reduce tasks</ph>:</ph>
+                  </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+               <p>
+                  <ph>Set </ph>
+                  <ph>UNRAVEL_HOST_IP </ph>
+                  <ph>of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>Enable the JVM agent for application master.</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

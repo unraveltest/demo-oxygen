@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Unravel Server Reference</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Unravel Server Reference </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p style="text-align: left;"><br class="atl-forced-newline" /> This
+                            reference covers both the on-premises and Unravel for EMR editions. Some
+                            daemons and properties do not apply to the EMR edition.</p><h1
+                            id="UnravelServerReference-_bwaxof3tb14eUnravelServerDaemons"><span
+                                class="confluence-anchor-link"
+                                id="UnravelServerReference-_bwaxof3tb14e"></span>Unravel Server
+                            Daemons</h1><p>The Unravel service is composed of many daemons which are
+                            summarized in the next table. The single script
+                                <code>/etc/init.d/unravel_all.sh</code> can be used with a
+                                <code>start</code> or <code>stop</code> or <code>restart</code>
+                            argument to control all the daemons on a host, in the correct order. The
+                            suffix <code>_N</code> means 1, 2, 3, up to 4 separate daemons.</p><div
+                            class="table-wrap"><table class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="confluenceTd"><p><strong>Daemon Logical
+                                                  Name</strong></p></td>
+                                        <td class="confluenceTd"
+                                            ><p><strong>Description</strong></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_tc</p></td>
+                                        <td class="confluenceTd"><p>bundled TomCat (port 3000), Web
+                                                UI</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_db</p></td>
+                                        <td class="confluenceTd"><p>bundled db (on a custom
+                                                port)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_zk_N</p></td>
+                                        <td class="confluenceTd"><p>bundled Zookeeper (on a custom
+                                                port)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_k</p></td>
+                                        <td class="confluenceTd"><p>bundled Kafka (on a custom
+                                                port)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_hhs</p></td>
+                                        <td class="confluenceTd"><p>Hive Hook Sensor</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_hhw</p></td>
+                                        <td class="confluenceTd"><p>Hive Hook Worker</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_hhwe</p></td>
+                                        <td class="confluenceTd"><p>Hive Hook Worker EMR</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_hvw</p></td>
+                                        <td class="confluenceTd"><p>Hive Worker</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_jcs1</p></td>
+                                        <td class="confluenceTd"><p>Job Collector Sensor
+                                            MRv1</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_jcs2</p></td>
+                                        <td class="confluenceTd"><p>Job Collector Sensor
+                                            YARN</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_jcse2</p></td>
+                                        <td class="confluenceTd"><p>Job Collector Sensor YARN for
+                                                EMR</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_jcw1_N</p></td>
+                                        <td class="confluenceTd"><p>Job Collector Sensor Worker
+                                                MRv1</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_jcw2_N</p></td>
+                                        <td class="confluenceTd"><p>Job Collector Sensor Worker
+                                                YARN</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_lr</p></td>
+                                        <td class="confluenceTd"><p>Log Receiver</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_mrw</p></td>
+                                        <td class="confluenceTd"><p>Map Reduce Worker</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_ja</p></td>
+                                        <td class="confluenceTd"><p>&quot;Job Analyzer&quot;
+                                                summarizes jobs</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_td</p></td>
+                                        <td class="confluenceTd"><p>&quot;Tidy Dir&quot; cleans up
+                                                and archives hdfs directories, db retention
+                                                cleaner</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_os3</p></td>
+                                        <td class="confluenceTd"><p>Oozie v3 Sensor</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_os4</p></td>
+                                        <td class="confluenceTd"><p>Oozie v4 Sensor</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_tw</p></td>
+                                        <td class="confluenceTd"><p>Table Worker</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_pw</p></td>
+                                        <td class="confluenceTd"><p>Partition Worker</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_ew_N</p></td>
+                                        <td class="confluenceTd"><p>Event Worker</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p>unravel_sw_N</p></td>
+                                        <td class="confluenceTd"><p>Spark Worker</p></td>
+                                    </tr>
+                                </tbody>
+                            </table></div><p><br /></p><h1
+                            id="UnravelServerReference-_ranitvt6e5pgUnravelServerAdjustableProperties"
+                                ><span class="confluence-anchor-link"
+                                id="UnravelServerReference-_ranitvt6e5pg"></span>Unravel Server
+                            Adjustable Properties</h1><p>The file
+                                <code>/usr/local/unravel/etc/unravel.properties</code> contains
+                            settings that can be preserved during an RPM upgrade. These properties
+                            are described in the following table:</p><div class="table-wrap"><table
+                                class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="confluenceTd"><p><strong>Property
+                                                Name</strong></p></td>
+                                        <td class="confluenceTd"><p><strong>Default
+                                                Value</strong></p></td>
+                                        <td class="confluenceTd"
+                                            ><p><strong>Description</strong></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.tmpdir</code></p></td>
+                                        <td class="confluenceTd"><p><code>/srv/unravel/tmp or
+                                                  $UNRAVEL_DATA_DIR/tmp</code></p></td>
+                                        <td class="confluenceTd"><p>Determines where daemons will
+                                                put temporary files. Depending on the daemon role,
+                                                up to 10GB might be used temporarily.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.logdir</code></p></td>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/usr/local/unravel/logs</code></p></td>
+                                        <td class="confluenceTd"><p>Do not set directly; set
+                                                UNRAVEL_LOG_DIR in etc/unravel.ext.sh instead and
+                                                this property will be derived from that</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.zk.quorum</code></p></td>
+                                        <td class="confluenceTd"
+                                            ><p><code>127.0.0.1:4181</code></p></td>
+                                        <td class="confluenceTd"><p>embedded Zookeeper ensemble in
+                                                form host1:port1,host2:port2, …</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.kafka.broker_list</code></p></td>
+                                        <td class="confluenceTd"
+                                            ><p><code>127.0.0.1:4091</code></p></td>
+                                        <td class="confluenceTd"><p>embedded Kafka</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>unravel.jdbc.username</code></p></td>
+                                        <td class="confluenceTd"><p><code>unravel</code></p></td>
+                                        <td class="confluenceTd"><p>MySQL (embedded or external)
+                                                username for db</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>unravel.jdbc.password</code></p></td>
+                                        <td class="confluenceTd"><p><code>random generated for
+                                                  bundled MySQL</code></p></td>
+                                        <td class="confluenceTd"><p>MySQL (embedded or external)
+                                                password for db</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                ><p><code>unravel.jdbc.url</code></p></td>
+                                        <td class="confluenceTd"><p><code>jdbc:<a rel="nofollow"
+                                                  >mysql://127.0.0.1:3316/unravel_mysql_prod</a></code></p></td>
+                                        <td class="confluenceTd"><p>This is JDBC URL without
+                                                username and password</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.hdfs.interactive.monitoring.interval.sec</code></p></td>
+                                        <td class="confluenceTd"><p><code>30</code></p></td>
+                                        <td class="confluenceTd"><p>Number of seconds between checks
+                                                for presence of hive queries and MR logs to load
+                                                into Unravel for interactive visibility; should be
+                                                between 5 and 60 (inclusive)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.hdfs.batch.monitoring.interval.sec</code></p></td>
+                                        <td class="confluenceTd"><p><code>300</code></p></td>
+                                        <td class="confluenceTd"><p>Number of seconds between checks
+                                                for presence of hive queries and MR logs to load
+                                                into Unravel for batch visibility; should be between
+                                                300 and 1800 (inclusive)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.longest.job.duration.days</code></p></td>
+                                        <td class="confluenceTd"><p><code>2</code></p></td>
+                                        <td class="confluenceTd"><p>Number of days for the longest
+                                                running Map Reduce job ever expected; should be
+                                                between 2 and 7 (inclusive)</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                ><p><code>oozie.server.url</code></p></td>
+                                        <td class="confluenceTd"><p><code><a
+                                                  href="http://localhost:11000/oozie"
+                                                  class="external-link" rel="nofollow"
+                                                  >http://localhost:11000/oozie</a></code></p></td>
+                                        <td class="confluenceTd"><p>URL for accessing Oozie to track
+                                                workflows</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.oozie.fetch.num</code></p></td>
+                                        <td class="confluenceTd"><p><code>100</code></p></td>
+                                        <td class="confluenceTd"><p>Max number of jobs to fetch
+                                                during an interval</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>com.unraveldata.oozie.fetch.interval.sec</code></p></td>
+                                        <td class="confluenceTd"><p><code>120</code></p></td>
+                                        <td class="confluenceTd"><p>seconds between intervals for
+                                                fetching Oozie workflow status</p></td>
+                                    </tr>
+                                </tbody>
+                            </table></div><p><br /></p><h1
+                            id="UnravelServerReference-_dhjhvxwiog21AdjustableEnvironmentSettings"
+                                ><span class="confluence-anchor-link"
+                                id="UnravelServerReference-_dhjhvxwiog21"></span>Adjustable
+                            Environment Settings</h1><p>The optional file
+                                <code>/usr/local/unravel/etc/unravel.ext.sh</code> is
+                                <code>source'</code>d to allow site-specific env variables to be
+                            set. The following table shows possible choices:</p><div
+                            class="table-wrap"><table class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="confluenceTd"><p><strong>Env
+                                                Variable</strong></p></td>
+                                        <td class="confluenceTd"><p><strong>Default if not
+                                                  set</strong></p></td>
+                                        <td class="confluenceTd"
+                                            ><p><strong>Description</strong></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><code>JAVA_HOME</code></p></td>
+                                        <td class="confluenceTd"><p>Should use update-alternatives
+                                                to make correct Java first choice</p></td>
+                                        <td class="confluenceTd"><p>The standard way to specify the
+                                                home dir. of Oracle Java so that $JAVA_HOME/bin/java
+                                                is the jvm</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                            ><p><code>JAVA_EXT_OPTS</code></p></td>
+                                        <td class="confluenceTd"><p><em>unset</em></p></td>
+                                        <td class="confluenceTd"><p>Last chance arguments to jvm to
+                                                override other settings</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                            ><p><code>HADOOP_CONF</code></p></td>
+                                        <td class="confluenceTd"><p>as discovered by running
+                                                &quot;hadoop fs -ls &quot;</p></td>
+                                        <td class="confluenceTd"><p>The directory containing the
+                                                hadoop config files core-site.xml, hdfs-site.xml,
+                                                and mapred-site.xml</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                ><p><code>UNRAVEL_DATA_DIR</code></p></td>
+                                        <td class="confluenceTd"
+                                            ><p><code>/srv/unravel</code></p></td>
+                                        <td class="confluenceTd"><p>A base dir. owned by user
+                                                unravel, during installation unravel creates
+                                                multiple sub dirs for holding persistent data
+                                                (db_data, k_data, zk_data) and also tmp data if
+                                                property com.unraveldata.tmpdir is not set.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                ><p><code>UNRAVEL_LISTEN_PORT</code></p></td>
+                                        <td class="confluenceTd"><p><code>3000</code></p></td>
+                                        <td class="confluenceTd"><p>The Web UI port on the primary
+                                                or standalone Unravel installation (service
+                                                unravel_tc) which listens on 0.0.0.0 ; the property
+                                                  <a href="http://com.unraveldata.tc"
+                                                  class="external-link" rel="nofollow"
+                                                  >com.unraveldata.tc</a>.port automatically
+                                                reflects this env var.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                            ><p><code>UNRAVEL_LOG_DIR</code></p></td>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/usr/local/unravel/logs</code></p></td>
+                                        <td class="confluenceTd"><p>A destination dir. owned by user
+                                                unravel for log files</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>UNRAVEL_TC_SHUTDOWN_PORT</code></p></td>
+                                        <td class="confluenceTd"><p><code>3005</code></p></td>
+                                        <td class="confluenceTd"><p>An unoccupied port used for
+                                                cleanly stopping the Web UI (service unravel_tc)
+                                                which listens on 127.0.0.1</p></td>
+                                    </tr>
+                                </tbody>
+                            </table></div><p><br /></p><h1
+                            id="UnravelServerReference-_37le18boksr8UnravelServerDirectoriesandFiles"
+                                ><span class="confluence-anchor-link"
+                                id="UnravelServerReference-_37le18boksr8"></span>Unravel Server
+                            Directories and Files</h1><p>The following is a cross-reference of
+                            notable directories and files used by Unravel Server:</p><div
+                            class="table-wrap"><table class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="confluenceTd"><p><strong>Path</strong></p></td>
+                                        <td class="confluenceTd"
+                                            ><p><strong>Purpose</strong></p></td>
+                                        <td class="confluenceTd"><p><strong>Expected
+                                                Size</strong></p></td>
+                                        <td class="confluenceTd"><p><strong>Notes</strong></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                ><p><code>/usr/local/unravel</code></p></td>
+                                        <td class="confluenceTd"><p>Unravel Server installation
+                                                directory</p></td>
+                                        <td class="confluenceTd"><p>1-2.5GB</p></td>
+                                        <td class="confluenceTd"><p>This directory is created by
+                                                installing the Unravel RPM; this is a fixed
+                                                destination</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/usr/local/unravel/logs</code></p></td>
+                                        <td class="confluenceTd"><p>Logs written by Unravel
+                                                daemons</p></td>
+                                        <td class="confluenceTd"><p>~1.5GB max</p></td>
+                                        <td class="confluenceTd"><p>Each daemon will have a maximum
+                                                of 100MB of logs, auto-rolled; use a symlink to put
+                                                on another partition.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                            ><p><code>/srv/unravel/</code></p></td>
+                                        <td class="confluenceTd"><p>Base directory for Unravel
+                                                server data kept separately from installation
+                                                directory; contains messaging data for process
+                                                coordination, bundled db, Elasticsearch indexes,
+                                                temporary files</p></td>
+                                        <td class="confluenceTd"><p>2-900GB ; depending on activity
+                                                level, retention</p></td>
+                                        <td class="confluenceTd"><p>This directory or subdirectories
+                                                can be a symlinks to other volumes for disk io
+                                                performance reasons to distribute load over multiple
+                                                volumes. If this is an EBS on AWS, then it must be
+                                                provisioned for max available IOPS and the Unravel
+                                                server must be EBS optimized.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/etc/init.d/unravel_all.sh</code></p></td>
+                                        <td class="confluenceTd"><p>convenience script for Unravel
+                                                start, restart, status, and stop ; controls daemons
+                                                in proper order</p></td>
+                                        <td class="confluenceTd"><p>n/a</p></td>
+                                        <td class="confluenceTd"><p>Note for multi-host
+                                                installations: run this script on both primary and
+                                                secondary Unravel host</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/usr/local/unravel/etc/unravel.properties</code></p></td>
+                                        <td class="confluenceTd"><p>site-specific settings for
+                                                Unravel</p></td>
+                                        <td class="confluenceTd"><p>n/a</p></td>
+                                        <td class="confluenceTd"><p>Keep a &quot;golden&quot; copy
+                                                of this file; <code>rpm -U</code> upgrades will not
+                                                overwrite</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/usr/local/unravel/etc/unravel.version.properties</code></p></td>
+                                        <td class="confluenceTd"><p>version-specific values for
+                                                Unravel like version number, build
+                                            timestamp</p></td>
+                                        <td class="confluenceTd"><p>n/a</p></td>
+                                        <td class="confluenceTd"><p>Updated during upgrades; do not
+                                                modify this reference file to preserve
+                                                traceability</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/usr/local/unravel/etc/unravel.ext.sh</code></p></td>
+                                        <td class="confluenceTd"><p>an optional file for overriding
+                                                JAVA_HOME or other settings as shown in table
+                                                above</p></td>
+                                        <td class="confluenceTd"><p>n/a</p></td>
+                                        <td class="confluenceTd"><p>Optional; example syntax:
+                                                  <code>export JAVA_HOME=/path</code></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/srv/unravel/log_hdfs</code></p></td>
+                                        <td class="confluenceTd"><p>log directory for daemons that
+                                                run as user hdfs (for YARN, when
+                                            applicable)</p></td>
+                                        <td class="confluenceTd"><p>&lt;2GB</p></td>
+                                        <td class="confluenceTd"><p>Needed for YARN. Owned by user
+                                                hdfs; not applicable for MRv1 or EMR</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                                  ><p><code>/srv/unravel/tmp_hdfs</code></p></td>
+                                        <td class="confluenceTd"><p>tmp directory for daemons that
+                                                run as user hdfs (for YARN, when
+                                            applicable)</p></td>
+                                        <td class="confluenceTd"><p>&lt;1GB</p></td>
+                                        <td class="confluenceTd"><p>Needed for YARN. Owned by user
+                                                hdfs; not applicable for MRv1 or EMR</p></td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox" align="left">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51243870.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

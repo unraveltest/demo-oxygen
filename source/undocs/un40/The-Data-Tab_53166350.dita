@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="The-Data-Tab_53166350">
+   <title>The Data Tab </title>
+   <conbody>
+      <p>Table of Contents</p>
+      <ul outputclass="toc-indentation">
+
+         <li>
+            <xref href="#The-Data-Tab_53166350/TheDataTab-Table/PartitionUsage">Table/Partition Usage</xref>
+            <ul outputclass="toc-indentation">
+
+               <li>
+                  <xref href="#The-Data-Tab_53166350/TheDataTab-TableDetails">Table Details</xref>
+               </li>
+
+               <li>
+                  <xref href="#The-Data-Tab_53166350/TheDataTab-PartitionDetails">Partition Details</xref>
+               </li>
+
+            </ul>
+         </li>
+
+      </ul>
+      <section>
+         <title>Table/Partition Usage</title>
+         <p>The Data tab provides a quick snapshot of the tables and partitions in the cluster. To see table and
+            partition details, click the <b>Details</b> tab.</p>
+         <p/>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53166417.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p>On the<b> Details</b> tab, you can sort the data on any column by clicking that column's header. </p>
+         <ul>
+
+            <li>Click on any column to sort by that metric such as:<ul>
+
+                  <li>Last Access - to find tables used most recently</li>
+
+                  <li>Created At - to sort oldest/newest tables</li>
+
+                  <li>Read I/O - to find tables which have performed most I/O</li>
+
+                  <li>Attempts - to find tables which have had most number of read/write attempts on them</li>
+
+                  <li>Apps - to find tables which have most number of applications using it</li>
+
+                  <li>Users - to find tables which have the most number of users using it</li>
+
+                  <li>Other Tables - shows other tables commonly used along with a particular table in applications</li>
+
+                  <li>Labels - view tables which have been labeled Hot, Warm or Cold</li>
+
+               </ul>
+            </li>
+
+            <li>Hover on columns like Users and Other Tables to know respectively which users accessed this table and
+               which other tables are accessed along with this table.</li>
+
+            <li>View trends of table usage and access by accessing the drop-down menu on the top right corner. Metrics
+               available are Read I/O, Total Users, Total Apps, Total Attempts as shown below.</li>
+
+            <li>You can also search for a particular table by typing part of the table name in the table search box as
+               shown below. In our example we are looking for tables with the word customer in it.</li>
+
+         </ul>
+         <p/>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53166414.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p/>
+         <p>Table Details</p>
+         <p>To drill down into a particular table click its <uicontrol>More Info</uicontrol> icon.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53315752.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p/>
+         <p>This opens a <b>Table Detail</b> pane as shown below.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53166408.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>You can view different metric trends on this pane including:</p>
+         <ul>
+
+            <li>Read IO</li>
+
+            <li>Number of Users</li>
+
+            <li>Number of Apps</li>
+
+            <li>Number of Attempts</li>
+
+         </ul>
+         <p>It also allows you to view the historical usage and access information about this table. The table detail
+            view also shows a list of applications and users that accessed the table in the given time range. This list
+            of applications and users is also sortable for easy search and browse capabilities.</p>
+         <p>Partition Details</p>
+         <p>To view detailed information about partitions associated with a Table, click the Partition Detail tab in the
+            Table Detailed View and you will open up a Partition detail page as shown below.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53166411.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>The Partition histogram provide the Access Age of Partitions (including the Max Access Age). This
+            information is used to calculate the number and size of Reclaimable Partitions. This can be explained as
+            follows:</p>
+         <ul>
+
+            <li>Reclaimable Partitions Found = number of Partitions with Last Access Time &lt; (Current Time - Max
+               Access Age of Partitions). In the example above:</li>
+
+            <li>No partition is accessed by any application more than 4 days 14 hrs. after it is created. Thus, the
+               partitions created on Dec 1, 2015, will not be accessed after Dec 5, 2015.</li>
+
+            <li>In Unravel, the Max Access Age of Partitions for the above Table will be computed as 4 days 14 hrs.
+               based on the history of accesses to partitions in the above Table</li>
+
+            <li>So on Dec 15, 2015, if the above Table is reviewed:</li>
+
+            <li>Reclaimable Partitions found = number of Partitions with Last Access Time &lt; (Dec 14 2015 - 4days 14
+               hrs.) i.e., (Dec 10, 2015). Thus, the partitions created on any day before Dec 10, 2015 will be marked as
+               a Reclaimable Partition. In this case, it will be all the 26 partitions.</li>
+
+         </ul>
+         <p>The page also list all Partitions by key KPI’s, including:</p>
+         <ul>
+
+            <li>Last access date/time</li>
+
+            <li>Create date/time</li>
+
+            <li>Current Size</li>
+
+            <li># of Users accessing the Partition</li>
+
+         </ul>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53166405.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>Unravel provides an easy way to label Tables/Partitions as “HOT”, “WARM” and “COLD” based on access patterns
+            – last access time or age (last access time – create time).</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53166402.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>Once you have the rule configured as above, please click on the "SAVE RULES" and you will see a confirmation
+            as below. </p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53236814.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>While the "HOT", "WARM" and "COLD" labels are associated with the Tables right away, the main dashboard page
+            with appropriate pie chart values are typically populated in 24 hrs. </p>
+         <p/>
+         <p/>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53166399.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>As illustrated above, HOT rule can be  “Last Access &lt;= 120 days”, WARN rule  can be “Last Access &lt;=
+            175 days and &gt; 120 days” and COLD rule can be “Last Access &gt;= 176 days”</p>
+         <p>These rules are checked periodically (every 24 hrs.) and tables/partition are labeled and classified
+            accordingly. The Data overview page provides a quick summary information based on these labels. Operators
+            can use this information to identify unused or frequently used tables/partitions and take appropriate
+            actions.</p>
+      </section>
+   </conbody>
+</concept>

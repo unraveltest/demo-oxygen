@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="task:1;4:90">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="title:1;5:11">Setting Up Email for Auto Actions and Collaboration </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:3;23:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:3;24:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="li:4;28:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:4;29:20">
+                  <xref href="Custom-Configurations_54044915.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:4;30:68" type="topic"><?ditaot usertext?>Custom Configurations</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:1;35:13">You can specify an SMTP server for Unravel Server so that it can send reports, alerts, and collaboration
+            emails. Several examples are shown below. Adapt the one that is most similar to your environment.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:2;37:13">You can set these values through Unravel Web UI's <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:1;37:66">Manage</b> page | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:2;37:87">Configuration</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:3;37:110">Email</b>
+            side tab as shown in diagram. The <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:4;38:50">Web UI</b> column in the table below corresponds to the values in the
+            Unravel Web UI dialog box.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:3;40:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:5;41:96">
+               <image href="media/52731267.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="image:1;42:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:4;45:13">An alternative to using Unravel Web UI's <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:5;45:57">Manage</b> page is to enter the settings into
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeph:1;46:24">/usr/local/unravel/etc/unravel.properties</codeph> using the property name shown in the
+               <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:6;47:19">Property</b> column.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:6;48:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:5;49:13">If you specify a saved email setting in Unravel Web UI, that setting overrides the corresponding setting in
+            the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeph:2;50:25">unravel.properties</codeph> file.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:6;51:13">Defaults</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:7;52:13">When you do not specify properties or configuration settings, Unravel Server tries to use the default
+            'classic' SMTP setting at localhost:25 ; this sometimes works for customers that set up SMTP spooling with
+            sendmail or postfix, but it might block emails to external domains (for anti-spam reasons). On EC2, this
+            sometimes works for small emails, but significant use is blocked for anti-spam reasons.</p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="table:1;56:55">
+            <tgroup cols="4" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="tgroup:1;57:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:1;58:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:2;59:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:3;60:41" colnum="3"/>
+               <colspec colname="col4" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:4;61:41" colnum="4"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="tbody:1;62:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:1;63:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:1;65:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="1">PORT</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:2;67:56" colname="col2" dita-ot:x="2" dita-ot:y="1">mail.smtp.port</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:3;69:56" colname="col3" dita-ot:x="3" dita-ot:y="1">25</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:4;71:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="1">Port</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:2;74:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:5;76:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="2">AUTHENTICATE</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:6;78:56" colname="col2" dita-ot:x="2" dita-ot:y="2">mail.smtp.auth</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:7;80:56" colname="col3" dita-ot:x="3" dita-ot:y="2">false</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:8;82:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="2">Enable SMTP authentication? If true,
+                        then USER (mail.smtp.user) and USER PASSWORD (<xref href="http://mail.smtp.pw" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:5;84:70"><?ditaot usertext?>mail.smtp.pw</xref>) are used when
+                        connecting</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:3;88:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:9;90:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="3">START TLS</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:10;92:56" colname="col2" dita-ot:x="2" dita-ot:y="3">mail.smtp.starttls.enable</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:11;94:56" colname="col3" dita-ot:x="3" dita-ot:y="3">false</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:12;96:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="3">Use start-TLS?</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:4;99:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:13;101:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="4">SSL ENABLE</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:14;103:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="4">mail.smtp.ssl.enable</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:15;105:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="4">false</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:16;107:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="4">Use SSL right from the
+                        start?</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:5;111:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:17;113:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="5">USER</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:18;115:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="5">mail.smtp.user</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:19;117:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="5">null</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:20;119:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="5">Username for SMTP
+                        authentication</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:6;123:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:21;125:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="6">USER PASSWORD</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:22;127:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="6">mail.smtp.pw</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:23;129:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="6">null</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:24;131:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="6">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:7;132:29">Password<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:8;132:41"> for SMTP authentication</ph>
+                        </ph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:7;137:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:25;139:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="7">HOST</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:26;141:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="7">mail.smtp.host</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:27;143:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="7">
+                        <ph outputclass="s1" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:9;144:46">
+                           <xref href="http://smtp.gmail.com/" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:6;146:59"><?ditaot usertext?>l</xref>ocalhost</ph>
+                     </entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:28;149:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="7">Host for SMTP server</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:8;152:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:29;154:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="8">FROM USER</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:30;156:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="8">mail.smtp.from</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:31;158:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="8">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:10;159:29">someone<xref href="mailto:someone@example.com" format="html" scope="external" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:7;160:59"><?ditaot usertext?>@example.com</xref>
+                        </ph>
+                     </entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:32;164:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="8">Use a <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeph:3;164:99">From:</codeph> name
+                        that is appropriate for your environment</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:9;168:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:33;170:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="9">LOCALHOST</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:34;172:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="9">mail.smtp.localhost</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:35;174:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="9">localhost.local</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:36;176:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="9">A domain name for apparent sender;
+                        must have at least one dot (e.g. organization.com)</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:10;180:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:37;182:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="10">DEBUG</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:38;184:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="10">mail.smtp.debug</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:39;186:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="10">false</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:40;188:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="10">Enable debug mode? Set to true
+                        (temporarily) to see more details in logs.</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:8;195:13">GMail SMTP Example</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:9;196:13">These settings are for our internal use. Do <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:7;196:60">not</b> compile this into the product or otherwise use as a
+            default in our source code. For security reasons, we don't want to mix our internal testing SMTP (or POP)
+            with the external one. </p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="table:2;199:55">
+            <tgroup cols="4" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="tgroup:2;200:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:5;201:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:6;202:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:7;203:41" colnum="3"/>
+               <colspec colname="col4" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="colspec:8;204:41" colnum="4"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="tbody:2;205:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:11;206:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:41;208:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="1">PORT</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:42;210:56" colname="col2" dita-ot:x="2" dita-ot:y="1">mail.smtp.port</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:43;212:56" colname="col3" dita-ot:x="3" dita-ot:y="1">587</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:44;214:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="1">Port</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:12;217:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:45;219:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="2">AUTHENTICATE</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:46;221:56" colname="col2" dita-ot:x="2" dita-ot:y="2">mail.smtp.auth</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:47;223:56" colname="col3" dita-ot:x="3" dita-ot:y="2">true</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:48;225:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="2">Enable SMTP authentication?</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:13;228:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:49;230:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="3">START TLS</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:50;232:56" colname="col2" dita-ot:x="2" dita-ot:y="3">mail.smtp.starttls.enable</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:51;234:56" colname="col3" dita-ot:x="3" dita-ot:y="3">true</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:52;236:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="3">Use start-TLS?</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:14;239:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:53;241:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="4">SSL ENABLE</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:54;243:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="4">mail.smtp.ssl.enable</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:55;245:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="4">false</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:56;247:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="4">Use SSL right from the
+                        start?</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:15;251:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:57;253:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="5">USER</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:58;255:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="5">mail.smtp.user</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:59;257:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="5">
+                        <xref href="mailto:daemon@unraveldata.com" format="html" outputclass="external-link" scope="external" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:8;259:45"><?ditaot usertext?>s</xref>omeone@organization.com</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:60;261:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="5">Username for SMTP
+                        authentication</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:16;265:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:61;267:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="6">USER PASSWORD</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:62;269:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="6">
+                        <xref href="http://mail.smtp.pw" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:9;271:29"><?ditaot usertext?>mail.smtp.pw</xref>
+                     </entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:63;274:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="6">********</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:64;276:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="6">Password<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:11;276:97"> for SMTP
+                           authentication</ph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:17;281:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:65;283:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="7">HOST</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:66;285:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="7">mail.smtp.host</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:67;287:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="7">
+                        <ph outputclass="s1" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:12;288:46">
+                           <xref href="http://smtp.gmail.com" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:10;290:32"><?ditaot usertext?>smtp.gmail.com</xref>
+                        </ph>
+                     </entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:68;294:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="7">Host for SMTP server</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:18;297:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:69;299:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="8">FROM USER</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:70;301:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="8">mail.smtp.from</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:71;303:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="8">someone@example.com</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:72;305:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="8">This sets the From header</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:19;308:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:73;310:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="9">LOCALHOST</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:74;312:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="9">mail.smtp.localhost</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:75;314:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="9">
+                        <xref href="http://unraveldata.com" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:11;316:29"><?ditaot usertext?>e</xref>xample.com</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:76;318:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="9">A domain name for apparent sender;
+                        must have at least one dot</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="row:20;322:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:77;324:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="10">DEBUG</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:78;326:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="10">mail.smtp.debug</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:79;328:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="10">false</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="entry:80;330:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="10">Enable debug mode? Set to true
+                        (temporarily) to see more details in logs. Debug mode under "Advance SMTP" section</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:10;337:13">Unravel daemons to restart after email setup</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:11;338:13">Run the following commands on Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeblock:1;339:57">sudo /etc/init.d/unravel_tc restart 
+sudo /etc/init.d/unravel_all.sh stop-etl
+sudo /etc/init.d/unravel_all.sh start</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:12;342:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:13;343:13">Verify email setup works</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:14;344:13">Run the following commands on Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeblock:2;345:57">sudo -u unravel /usr/local/unravel/install_bin/diag_email.sh   someone@example.com 
+--&gt; enter password from dist.unraveldata.com
+--&gt; should see following output in terminal mode and if you see "result is = null", then, setup is correct.
+:
+:
+result is = null
+At least one smtp pathway worked
+for log output see /usr/local/unravel/logs/test_email.log</codeblock>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:13;353:105"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:15;354:13">See the stdout. It will test smtp settings (either from unravel.properties or defaults or in settings table
+            in db or command line overrides). It will also test "smtp2" email which is compiled-in as a backup for
+            alerts to Unravel Support. Customer reports are <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="b:8;356:64">not</b> send via smtp2, so if only that one works,
+            customer report email is not going to work.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:16;358:13">Email setup for Auto-Actions</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ph:14;359:105"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:17;360:13">After above email setup has been completed in Unravel UI under Email Config Wizard, next, please do below
+            steps to configure Auto-Actions.</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="ol:2;362:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="li:5;364:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:18;365:52">Add following properties to /usr/local/unravel/unravel.properties on
+                  Unravel Server:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeblock:3;367:63">mail.smtp.from=someone@example.com
+com.unraveldata.report.user.email.domain=example.com</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="li:6;371:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:19;372:52">Disable unneeded daemons:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeblock:4;373:63">sudo service unravel_os3 stop
+sudo chkconfig unravel_os3 off</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="li:7;377:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:20;378:52">Restart daemons:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="codeblock:5;379:63">sudo /etc/init.d/unravel_all.sh restart</codeblock>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:21;383:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="p:22;384:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="image:2;385:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="alt:1;386:19"/>
+         </image>
+         <xref href="media/51162247.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:12;388:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="image:3;389:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="alt:2;390:19"/>
+         </image>
+         <xref href="media/52731267.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita" xtrc="xref:13;392:56"><?ditaot usertext?>Unravel_email_setup.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

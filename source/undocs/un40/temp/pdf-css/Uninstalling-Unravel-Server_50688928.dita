@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Uninstalling-Unravel-Server_50688928" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="task:1;3:117">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="title:1;4:11">
+                        Uninstalling Unravel Server 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="taskbody:1;7:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="context:1;8:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="ol:1;12:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="li:1;14:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="ph:1;16:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="xref:1;17:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="li:2;22:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="ph:2;24:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="xref:2;25:62" type="topic"><?ditaot usertext?>Unravel
+                                    4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="li:3;31:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="ph:3;33:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="xref:3;34:62" type="topic"><?ditaot usertext?>Advanced
+                                    Topics</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="ph:4;47:106"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="p:1;48:13">Disable
+                                    and uninstall cluster instrumentation before uninstalling
+                                    Unravel Server.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="p:2;51:13">The Unravel Server RPM has the
+                            service name <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="codeph:1;52:50">unravel</codeph>. That means you can uninstall it by
+                            running the following commands:</p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="codeblock:1;55:57">sudo rpm -e unravel
+sudo /bin/rm -rf /usr/local/unravel /srv/unravel/* /etc/unravel_ctl</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="p:3;58:13">All data in the bundled database is deleted by the
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="codeph:2;59:41">rm</codeph> command.</p>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="p:4;64:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="image:1;68:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="alt:1;69:19"/>
+         </image>
+                            
+         <xref href="media/51230506.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Uninstalling-Unravel-Server_50688928.dita" xtrc="xref:4;72:56"><?ditaot usertext?>logo_small.png</xref> 
+                        
+                    
+                
+            
+      </context>
+   </taskbody>
+</task>

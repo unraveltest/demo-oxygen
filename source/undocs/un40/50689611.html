@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Part 1: Install Unravel Server for Amazon EMR or Qubole
+            Cluster</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="50688627.html">Installation Guide for Amazon Elastic
+                                        MapReduce (Amazon EMR) and Qubole Clusters</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Part 1: Install Unravel Server for
+                            Amazon EMR or Qubole Cluster </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    
+                    <div id="main-content" class="wiki-content group">
+                        <div class="panel"
+                            style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"
+                                ><div class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Table of Contents</b></div><div class="panelContent">
+                                <div class="toc-macro rbtoc1548486127546">
+                                    <ul class="toc-indentation">
+                                        <li><a
+                                                href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Introduction"
+                                                >Introduction</a></li>
+                                        <li><a
+                                                href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-RequirementsChecklist"
+                                                >Requirements Checklist</a>
+                                            <ul class="toc-indentation">
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-PlatformCompatibility"
+                                                  >Platform Compatibility</a>
+                                                  <ul class="toc-indentation">
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Software"
+                                                  >Software</a></li>
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Hardware"
+                                                  >Hardware</a></li>
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Network"
+                                                  >Network</a></li>
+                                                  </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a
+                                                href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-1.ConfiguretheCluster"
+                                                >1. Configure the Cluster</a>
+                                            <ul class="toc-indentation">
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ProvisionanInstance"
+                                                  >Provision an Instance</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfiguretheEnvironmentatFirstLogin"
+                                                  >Configure the Environment at First Login</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfigureEphemeralStorage"
+                                                  >Configure Ephemeral Storage</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfigureDurableStorage[HVD]"
+                                                  >Configure Durable Storage [HVD]</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a
+                                                href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-2.InstalltheUnravelServerRPMontheCluster"
+                                                >2. Install the Unravel Server RPM on the
+                                                Cluster</a>
+                                            <ul class="toc-indentation">
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-GettheUnravelServerRPM"
+                                                  >Get the Unravel Server RPM</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-InstalltheUnravelServerRPM"
+                                                  >Install the Unravel Server RPM</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-GrantAccesstoUnravelServer"
+                                                  >Grant Access to Unravel Server</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SupplyCredentialsNeededforEMRandEC2"
+                                                  >Supply Credentials Needed for EMR and EC2</a>
+                                                  <ul class="toc-indentation">
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-CreateIAMUser(s)andCredentials"
+                                                  >Create IAM User(s) and Credentials</a>
+                                                  <ul class="toc-indentation">
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-S3Read-OnlyAccess"
+                                                  >S3 Read-Only Access</a></li>
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-EMRAPIRead-OnlyAccess"
+                                                  >EMR API Read-Only Access</a></li>
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-CloudwatchAPIRead-OnlyAccess"
+                                                  >Cloudwatch API Read-Only Access</a></li>
+                                                  </ul>
+                                                  </li>
+                                                  </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a
+                                                href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-3.ConfigureUnravelServer(Basic/CoreOptions)"
+                                                >3. Configure Unravel Server (Basic/Core
+                                                Options)</a>
+                                            <ul class="toc-indentation">
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-CopyS3andEMRCredentialFilestoUnravelServer"
+                                                  >Copy S3 and EMR Credential Files to Unravel
+                                                  Server</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-OpenanSSHSessiontoUnravelServer"
+                                                  >Open an SSH Session to Unravel Server</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SetCorrectPermissionsontheUnravelConfigurationDirectory"
+                                                  >Set Correct Permissions on the Unravel
+                                                  Configuration Directory</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Modifyunravel.properties"
+                                                  >Modify unravel.properties</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Enable/DisableOptionalDaemons"
+                                                  >Enable/Disable Optional Daemons</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-EnableCollectionfromHiveMetastore"
+                                                  >Enable Collection from Hive Metastore</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-AdjustStorageLocations[HVD]"
+                                                  >Adjust Storage Locations [HVD]</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-StartUnravelServer"
+                                                  >Start Unravel Server</a></li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SetUpanExternalDB[HVD]"
+                                                  >Set Up an External DB [HVD]</a>
+                                                  <ul class="toc-indentation">
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SetUpRDSMySQL[HVD]"
+                                                  >Set Up RDS MySQL  [HVD]</a></li>
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-DumpBundledDBwithSchema[HVD]"
+                                                  >Dump Bundled DB with Schema [HVD]</a></li>
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-LoadDBwithSchemaIntoRDSMySQL[HVD]"
+                                                  >Load DB with Schema Into RDS MySQL [HVD]</a></li>
+                                                  <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfiguretoUseRDSMySQL[HVD]"
+                                                  >Configure to Use RDS MySQL [HVD]</a></li>
+                                                  </ul>
+                                                </li>
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-RestartUnravelServer"
+                                                  >Restart Unravel Server</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a
+                                                href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-4.LogintoUnravelWebUI"
+                                                >4. Log into Unravel Web UI</a>
+                                            <ul class="toc-indentation">
+                                                <li><a
+                                                  href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Congratulations!"
+                                                  >Congratulations!</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a
+                                                href="#Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-5.(Optional)EnableAdditionalDataCollection/Instrumentation"
+                                                >5. (Optional) Enable Additional Data
+                                                Collection/Instrumentation</a></li>
+                                    </ul>
+                                </div>
+                            </div></div><h2 style="text-align: left;"
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Introduction"
+                            >Introduction</h2><p style="text-align: left;">This topic explains how
+                            to <span>deploy Unravel Server 4.0 on  Amazon EMR or Qubole</span>. For
+                            instructions that correspond to older versions of Unravel Server,
+                            contact Unravel Support.</p><p style="text-align: left;"><br />
+                            <em>Steps marked <span style="color: rgb(0,128,0);">[HVD]</span> are for
+                                production high volume and durable installations can be skipped for
+                                PoCs.</em></p><div class="panel"
+                            style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"
+                                ><div class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Workflow Summary</b></div><div class="panelContent">
+                                <ol>
+                                    <li>Configure the cluster.</li>
+                                    <li>Install the Unravel Server RPM on the cluster.</li>
+                                    <li><p>Configure Unravel Server (basic/core options).</p></li>
+                                    <li>Log into Unravel Web UI.</li>
+                                    <li><p>(Optional) Enable additional data
+                                            collection/instrumentation.</p></li>
+                                </ol>
+                            </div></div><h2
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-RequirementsChecklist"
+                            >Requirements Checklist</h2><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-PlatformCompatibility"
+                            >Platform Compatibility</h3><ul>
+                            <li>Amazon EMR 3.4 - 4.7</li>
+                            <li>Hadoop 1.x - 2.x</li>
+                            <li>Kerberos</li>
+                            <li>Hive 0.9.x - 1.2.x</li>
+                            <li>Spark 1.3.x - 1.6.x</li>
+                        </ul><h4 id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Software"
+                            >Software</h4><ul>
+                            <li>Operating System: RedHat/Centos 6.4 - 7.3</li>
+                            <li>libaio.x86_64 installed</li>
+                            <li><code>SELINUX=permissive</code> should be set in
+                                    <code>/etc/selinux/config</code></li>
+                            <li>HDFS+Hive+YARN client/gateway, hadoop and hive commands in
+                                    <code>PATH</code></li>
+                            <li>If Spark is in use, Spark client gateway</li>
+                            <li>Open signup or LDAP for Unravel Web UI user authentication</li>
+                        </ul><h4 id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Hardware"
+                            >Hardware</h4><ul>
+                            <li>Architecture: x86_64</li>
+                            <li>Cores: 8</li>
+                            <li>RAM: 64GB minimum</li>
+                            <li>Disk: <code>/</code> with 2.5GB free minimum</li>
+                            <li>Disk: <code>/srv</code> with 500GB free minimum</li>
+                            <li>For 10,000+ MR jobs per day, two or more gateway/edge nodes are
+                                recommended</li>
+                        </ul><h4 id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Network"
+                            >Network</h4><ul>
+                            <li>Port 3000 (or 4020) for Unravel Web UI access</li>
+                            <li>HDFS ports open from Hadoop cluster to Unravel Server(s)</li>
+                            <li>For MR1, TaskTracker port open from Hadoop cluster to Unravel
+                                Server(s)</li>
+                            <li>For MR1/YARN, Hive Metadata DB port open to Unravel Server(s) for
+                                partition reporting</li>
+                            <li>UDP and TCP ports 4041-4043 open from Hadoop cluster to Unravel
+                                Server(s) unless Hive-hook via HDFS option is used</li>
+                            <li>For Oozie, port 11000 open to Unravel Server(s)</li>
+                        </ul><h2
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-1.ConfiguretheCluster"
+                            >1. Configure the Cluster</h2><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ProvisionanInstance"
+                            >Provision an Instance</h3><ul>
+                            <li>Instance Type: r3.2xlarge</li>
+                            <li>OS: centos7</li>
+                            <li>Server must be &quot;Optimized for EBS&quot; if EBS durable storage
+                                is used</li>
+                            <li>Set boot partition to 12GB or larger</li>
+                            <li>You <strong>must</strong> add the SSD ephemeral (instance storage)
+                                disk(s) included with the instance</li>
+                            <li>Must be in same region as the EMR clusters Unravel Server will
+                                monitor</li>
+                            <li>Note the Availability Zone (AZ) of the instance because the EBS
+                                partition you create/mount below must be in the same AZ. <span
+                                    style="color: rgb(0,128,0);">[HVD]</span></li>
+                            <li>Security Group<ul>
+                                    <li>Unravel Server works with multiple EMR clusters, including
+                                        existing clusters and new clusters. A TCP and UDP connection
+                                        is needed from the master node of each EMR cluster to
+                                        Unravel Server.</li>
+                                    <li>Simplest approach it to make Unravel server a member of the
+                                        security group ElasticMapReduce-master when the instance
+                                        running Unravel Server is first launched.</li>
+                                    <li>If Unravel Server is already started or if you prefer more
+                                        security groups, open ports 3000 (TCP) and 4041-4043 (TCP
+                                        and UDP) from the ElasticMapReduce-master group to a new
+                                        server security group called 'unravel'.</li>
+                                </ul></li>
+                            <li>Start <code>ntpd</code> and check whether time is accurate.</li>
+                        </ul><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfiguretheEnvironmentatFirstLogin"
+                            >Configure the Environment at First Login</h3><ul>
+                            <li><p>Disable <code>selinux</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo setenforce Permissive
+</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Edit the file to make sure setting
+                                    persists after reboot.  Make sure SELINUX=permissive</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># vi /etc/selinux/config
+</pre>
+                                    </div></div></li>
+                            <li><p>Install <code>libaio.x86_64</code>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo yum -y install libaio.x86_64</pre>
+                                    </div></div></li>
+                            <li><p>Install <code>lzop</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo yum install lzop.x86_64</pre>
+                                    </div></div></li>
+                        </ul><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfigureEphemeralStorage"
+                            >Configure Ephemeral Storage</h3><p>Find the available ephemeral storage
+                            (also called <em>instance storage</em>). Use <code>lsblk</code> to find
+                            unmounted devices. If no ephemeral/instance storage is allocated,
+                            terminate the server and re-provision it, being sure to add storage of
+                            type &quot;instance storage&quot;.</p><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><p class="title">Tip</p><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body">It can be
+                                convenient to use <code>/srv</code> as the mount point when only one
+                                ephemeral device is present.</div></div><ul>
+                            <li><p>Find block devices with no mount point:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># lsblk</pre>
+                                    </div></div></li>
+                            <li><p>For each unmounted area do the following steps, substituting
+                                    correct value for <span style="color: rgb(255,0,0);"
+                                                >{<code><span style="color: rgb(255,0,0);"
+                                            >Z</span>}</code></span>,  and substituting<span
+                                        style="color: rgb(255,0,0);">
+                                        {<code>EPHEMERAL</code>}</span> for the mount point you
+                                    chose:</p><div class="code panel pdl" style="border-width: 1px;"
+                                        ><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo mkfs.ext4 /dev/xvd{Z}
+</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">If necessary, create mount point and
+                                    check if mounted,</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># mkdir $EPHEMERAL 
+# echo &quot;/dev/xvd{Z} $EPHEMERAL ext4 defaults,noatime,nodiratime 1 2&quot; | sudo tee -a /etc/fstab 
+# sudo mount -a
+# df -h $EPHEMERAL</pre>
+                                    </div></div></li>
+                        </ul><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body">Make a note
+                                of the path to the mounted ephemeral store, referred to as
+                                    <code>UNRAVEL_EPHEMERAL</code> below.</div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfigureDurableStorage[HVD]"
+                            >Configure Durable Storage <span style="color: rgb(0,128,0);"
+                                >[HVD]</span></h3><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p><em>In a
+                                        PoC or test install, this step can be skipped if there is
+                                        sufficient disk space (at least 100GB) on / or under /srv
+                                        mounted from an ephemeral ('instance storage') disk
+                                        area.</em></p></div></div><p>Here we create a
+                            &quot;Provisioned IOPS&quot; EBS volume, setting the maximum IOPS, based
+                            on the size 300GB.</p><ul>
+                            <li>In AWS EC2 console, <strong>Volumes</strong>, create an EBS
+                                Provisioned IOPS SSD volume of 300GB and 3000 IOPS <em>in the same
+                                    AZ as the Unravel server</em> and associate it with the Unravel
+                                server.</li>
+                            <li>On Unravel server, find the letter <span
+                                    style="color: rgb(255,0,0);">{<code><span
+                                            style="color: rgb(255,0,0);">Z</span>}</code></span> of
+                                the new un-mounted device with <code>lsblk</code></li>
+                            <li><p>Use <code>dd</code> to pre-warm the new EBS area (volume <span
+                                        style="color: rgb(255,0,0);">{<code><span
+                                                style="color: rgb(255,0,0);"
+                                    >Z</span>}</code></span>) before mounting it (this can take an
+                                    hour!):</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo dd if=/dev/zero of=/dev/xvd{Z} bs=1M</pre>
+                                    </div></div><p>Reference:[ |<a
+                                        href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-prewarm.html"
+                                        class="external-link" rel="nofollow"
+                                        >http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-prewarm.html</a>]<a
+                                        href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-prewarm.html"
+                                        class="external-link" rel="nofollow"><span
+                                            style="color: rgb(17,85,204);">{+}</span></a><a
+                                        class="external-link"
+                                        href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-prewarm.html+"
+                                        rel="nofollow"
+                                        >http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-prewarm.html+</a></p></li>
+                            <li><p>Format the volume as <code>ext4</code>, substituting the correct
+                                    value for <span style="color: rgb(255,0,0);"
+                                        ><code>Z</code></span>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo mkfs.ext4 /dev/xvd{Z}</pre>
+                                    </div></div></li>
+                        </ul><ul>
+                            <li><p>Mount the new volume (for example, as
+                                        <code>/mnt/unravel_durable</code> and referred to as
+                                        <code>UNRAVEL_DURABLE</code> below) by adding an entry to
+                                        <code>/etc/fstab</code> and then doing <code>mount -a</code>
+                                    while substituting the correct <code><span
+                                            style="color: rgb(255,0,0);">Z</span></code>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># echo &quot;/dev/xvd{Z} $UNRAVEL_DURABLE ext4 defaults,noatime,nodiratime 1 2&quot; | sudo tee -a /etc/fstab 
+# sudo mount -a
+</pre>
+                                    </div></div></li>
+                            <li><p>Check if the volume is mounted:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># df -h $UNRAVEL_DURABLE</pre>
+                                    </div></div></li>
+                        </ul><h2
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-2.InstalltheUnravelServerRPMontheCluster"
+                            >2. Install the Unravel Server RPM on the Cluster</h2><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>The
+                                    precise RPM filename will vary. The version has the structure
+                                            <em><code>x.y.b</code></em> where
+                                        <em><code>b</code></em> is a build number that is imposed as
+                                    an RPM epoch which means it takes precedence over version
+                                    numbers for determining what is more up-to-date. The Unravel
+                                    build numbers always increase and are allocated so that they
+                                    respect the ordering of <em><code>x.y</code></em>
+                                    versioning.</p></div></div><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Replace
+                                    the asterisks below as needed to be more
+                            selective.</p></div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-GettheUnravelServerRPM"
+                            >Get the Unravel Server RPM</h3><p>Copy the RPM from the Unravel
+                            distribution server to the host machine using the username and password
+                            given to you by Unravel Support:</p><ul>
+                            <li><p class="auto-cursor-target">For the free trial version:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># scp &quot;unraveltrial@trial.unraveldata.com:unravel-4.0-*.x86_64.EMR.rpm&quot; .</pre>
+                                    </div></div></li>
+                            <li>For the enterprise version:<div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># scp $USER@dist.unraveldata.com:unravel-4.0-*.x86_64.EMR.rpm.$timestamp .</pre>
+                                    </div></div></li>
+                        </ul><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-InstalltheUnravelServerRPM"
+                            >Install the Unravel Server RPM</h3><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo rpm -U unravel-4.0*.x86_64.EMR.rpm*</pre>
+                            </div></div><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>The
+                                    installation creates <code>/usr/local/unravel/</code> which
+                                    contains the executables, scripts, and settings. User
+                                        <code>unravel</code> is created. The initial internal
+                                    database and other durable state are put in
+                                        <code>/srv/unravel/</code> for larger storage. By default,
+                                    the installation supports YARN. <br class="atl-forced-newline"
+                                         /><br class="atl-forced-newline" /> The master
+                                    configuration file is in
+                                        <code>/usr/local/unravel/etc/unravel.properties</code> and
+                                    the logs are in <code>/usr/local/unravel/logs/</code>. The RPM
+                                    installation creates user <code>unravel</code> if it does not
+                                    already exist; <code>/etc/init.d/unravel_*</code> scripts for
+                                    controlling its services, as well as
+                                        <code>/etc/init.d/unravel_all.sh</code> which can be used to
+                                    manually stop, start, and get status of all daemons in proper
+                                    order. <br class="atl-forced-newline" /><br
+                                        class="atl-forced-newline" /> During initial install, a
+                                    bundled database is used. This can be switched to use an
+                                    externally managed MySQL for production. (The bundled database
+                                    root mysql password is stored in
+                                        <code>/root/unravel.install.include</code> during
+                                    installation.)</p></div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-GrantAccesstoUnravelServer"
+                            >Grant Access to Unravel Server</h3><ul>
+                            <li>Assign elastic IP to Unravel Server using AWS Console [unless you
+                                use VPC]</li>
+                            <li>Adjust internal DNS for new IP [for access via a browser]</li>
+                            <li>Request reverse DNS change from AWS [if you plan on adding SSL]</li>
+                        </ul><div
+                            class="confluence-information-macro confluence-information-macro-warning"
+                                ><p class="title">Restriction</p><span
+                                class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body">Do not make
+                                Unravel Server accessible on the public Internet because doing so
+                                would violate your licensing terms.</div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SupplyCredentialsNeededforEMRandEC2"
+                            >Supply Credentials Needed for EMR and EC2</h3><h4
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-CreateIAMUser(s)andCredentials"
+                            >Create IAM User(s) and Credentials</h4><p>Open the AWS IAM (Identity
+                            and Access Management) console with your browser and then make the
+                            following users and credentials so that Unravel Server can access EMR
+                            logs stored in S3 and use EMR read-only permission to find EMR clusters
+                            for efficient data loading. These credentials are described separately,
+                            but can be combined into one user if desired. <br /> Multiple accounts
+                            can also be created per access kind here if Unravel Server is going to
+                            monitor multiple accounts; just create multiple credential files.</p><h5
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-S3Read-OnlyAccess"
+                            >S3 Read-Only Access</h5><ol>
+                            <li>Create a group named <code>s3ro</code> with managed policy
+                                    <code>AmazonS3ReadOnlyAccess</code>.</li>
+                            <li>Create a user named <code>s3unravel</code>, and save the access
+                                credentials for configuring Unravel.</li>
+                            <li>Add user <code>s3unravel</code> to group <code>s3ro.</code></li>
+                        </ol><h5
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-EMRAPIRead-OnlyAccess"
+                            >EMR API Read-Only Access</h5><ol>
+                            <li>Create a group named <code>emrro</code> with managed policy
+                                    <code>AmazonElasticMapReduceReadOnlyAccess</code>.</li>
+                            <li>Create a user named <code>emrunravel</code>, and save the access
+                                credentials for configuring Unravel.</li>
+                            <li>Add user <code>emrunravel</code> to group <code>emrro</code>.</li>
+                        </ol><h5
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-CloudwatchAPIRead-OnlyAccess"
+                            >Cloudwatch API Read-Only Access</h5><ol>
+                            <li>Create a group named <code>cwro</code> with managed policy
+                                    <code>AmazonCloudWatchReadOnlyAccess</code>.</li>
+                            <li>Create a user named <code>cwunravel</code>, and save the access
+                                credentials for configuring Unravel.</li>
+                            <li>Add user <code>cwunravel</code> to group <code>cwro</code>.</li>
+                        </ol><h2
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-3.ConfigureUnravelServer(Basic/CoreOptions)"
+                            >3. Configure Unravel Server (Basic/Core Options)</h2><p>The Unravel
+                            Server's configuration directory is located at
+                                <code>/usr/local/unravel/etc</code> on Unravel Server. You will need
+                            to put your credential files as property files there, modify
+                                <code>unravel.properties</code>, and restart Unravel Server, as
+                            detailed below.</p><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-CopyS3andEMRCredentialFilestoUnravelServer"
+                            >Copy S3 and EMR Credential Files to Unravel Server</h3><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># scp -i ~/rsa.pem s3ro.properties root@xx.xxx.xx.xxx:/usr/local/unravel/etc 
+# scp -i ~/rsa.pem emrro.properties root@xx.xxx.xx.xxx:/usr/local/unravel/etc 
+# scp -i ~/rsa.pem cwro.properties root@xx.xxx.xx.xxx:/usr/local/unravel/etc</pre>
+                            </div></div><p>where:</p><ul>
+                            <li><code> rsa.pem</code> is your RSA key,</li>
+                            <li><span style="color: rgb(255,0,0);"
+                                    ><code>root@xx.xxx.xx.xxx</code></span> is the LOCAL_IP of the
+                                Unravel Server, and</li>
+                            <li><code>s3ro.properties</code>, <code>emrro.properties</code>, and
+                                    <code>cwro.properties</code> are your credential files
+                                containing the respective credentials in the following format:</li>
+                        </ul><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">[default]
+aws_access_key_id = {your access key}
+aws_secret_access_key = {your secret key}</pre>
+                            </div></div><p>You can create multiple credentials of the same type for
+                            multiple accounts by creating multiple files with the same base name and
+                            appending &quot;.1&quot; for the second account, &quot;.2&quot; for the
+                            third account, and so on. For example, using the file naming convention
+                            suggested above, copy these additional files into
+                                <code>/usr/local/unravel/etc/</code>:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">s3ro.properties.1
+emrro.properties.1
+cwro.properties.1</pre>
+                            </div></div><p>All three files are required for each account.</p><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-OpenanSSHSessiontoUnravelServer"
+                            >Open an SSH Session to Unravel Server</h3><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Replace
+                                        <span style="color: rgb(255,0,0);">{<code><span
+                                                style="color: rgb(255,0,0);"
+                                            >some</span>file.pem}</code></span> with the correct
+                                    filename.</p><p><span style="color: rgb(255,0,0);"><code><span
+                                                style="color: rgb(255,0,0);"
+                                            >UNRAVEL_HOST_IP</span></code></span> - must be a fully
+                                    qualified path.</p></div></div><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># ssh -i {somefile.pem} root@$UNRAVEL_IP</pre>
+                            </div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SetCorrectPermissionsontheUnravelConfigurationDirectory"
+                            >Set Correct Permissions on the Unravel Configuration Directory</h3><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># cd /usr/local/unravel/etc
+# sudo chown unravel:unravel *.properties 
+# sudo chmod 644 *.properties</pre>
+                            </div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Modifyunravel.properties"
+                            >Modify <code>unravel.properties</code></h3><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body">The settings
+                                file <code>/usr/local/unravel/etc/unravel.properties</code> is
+                                created during initial install and subsequent RPM upgrades will not
+                                change it because your site-specific properties are put into this
+                                file.</div></div><ul>
+                            <li><p>Open <span style="color: rgb(0,0,0);"
+                                            ><code>/usr/local/unravel/etc/unravel.properties</code></span>
+                                    with <code>vi</code>.</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo vi /usr/local/unravel/etc/unravel.properties</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Edit the following values in <span
+                                        style="color: rgb(0,0,0);"
+                                        ><code>unravel.properties</code></span>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.s3.profile.config.file.path=/usr/local/unravel/etc/s3ro.properties 
+com.unraveldata.emr.profile.config.file.path=/usr/local/unravel/etc/emrro.properties 
+com.unraveldata.cloudwatch.profile.config.file.path=/usr/local/unravel/etc/cwro.properties</pre>
+                                    </div></div></li>
+                            <li>Adjust other values in <span style="color: rgb(0,0,0);"
+                                        ><code>unravel.properties</code></span> using the guidelines
+                                and descriptions in the table below.</li>
+                        </ul><div class="table-wrap"><table class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="1" class="confluenceTh">Property</th>
+                                        <th colspan="1" class="confluenceTh">Description</th>
+                                        <th colspan="1" class="confluenceTh">Example</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.advertised.url</code></td>
+                                        <td colspan="1" class="confluenceTd">Defines the Unravel
+                                            Server URL for HTTP traffic.</td>
+                                        <td colspan="1" class="confluenceTd"
+                                                  ><code>com.unraveldata.advertised.url=<span
+                                                  class="nolink"><span class="nolink">http://<span
+                                                  style="color: rgb(255,0,0);"
+                                                  >LAN_DNS</span>:3000</span></span></code></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.customer.organization</code></td>
+                                        <td colspan="1" class="confluenceTd">Identifies your
+                                            installation for reporting purposes.</td>
+                                        <td colspan="1" class="confluenceTd"
+                                                  ><code>com.unraveldata.customer.organization=<span
+                                                  style="color: rgb(255,0,0);"
+                                                  >Company_and_org</span></code></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.tmpdir</pre></td>
+                                        <td colspan="1" class="confluenceTd">Location where
+                                            Unravel's temp file will reside</td>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.tmpdir=/srv/unravel/tmp</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.history.maxSize.weeks</code></td>
+                                        <td colspan="1" class="confluenceTd">Sets retention for
+                                            search data.</td>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.history.maxSize.weeks=26</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.hive.hook.topic.num.threads</code></td>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><strong>Optional</strong>. Defines the number of
+                                            threads. Default is 1. Depending on job volume, increase
+                                            this property to <em>N</em> where <em>N</em> is between
+                                            1 and 4, or roughly <em>ThousandJobsPerDay</em>/10.</td>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.hive.hook.topic.num.threads=1</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.s3.profile.config.file.path</pre></td>
+                                        <td colspan="1" class="confluenceTd">Location of Unravel s3
+                                                <span>read-only access &amp; secret key filename
+                                            </span>s3ro.properties.</td>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.s3.profile.config.file.path=/usr/local/unravel/etc/s3ro.properties</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.emr.profile.config.file.path</pre></td>
+                                        <td colspan="1" class="confluenceTd"><span>Location of
+                                                Unravel EMR read-only access &amp; secret key
+                                                filename emrro.properties.</span></td>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.emr.profile.config.file.path=/usr/local/unravel/etc/emrro.properties</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.cloudwatch.profile.config.file.path</pre></td>
+                                        <td colspan="1" class="confluenceTd"><span>Location of
+                                                Unravel Cloud Watch <span>read-only access &amp;
+                                                  secret key filename
+                                            </span>cwro.properties.</span></td>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.cloudwatch.profile.config.file.path=/usr/local/unravel/etc/cwro.properties</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.spark.s3.profilesToBuckets</pre></td>
+                                        <td colspan="1" class="confluenceTd">s3 profile associated
+                                            to the s3 bucket</td>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>For 1 bucket, follow example as follows:</pre><pre>    com.unraveldata.spark.s3.profilesToBuckets=&lt;default&gt;:&lt;s3_bucket&gt;</pre><pre>For 2 buckets follow below example:</pre><pre>    com.unraveldata.spark.s3.profilesToBuckets=&lt;s3_profile&gt;:&lt;bucket&gt;,&lt;s3_2nd_profile&gt;:&lt;2nd_s3_bucket&gt;</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.login.admins</code></td>
+                                        <td colspan="1" class="confluenceTd">Defines the usernames
+                                            that can access Unravel Web UI's admin pages. Default is
+                                                <code>admin</code>.</td>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.login.admins=admin</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.s3.batch.monitoring.interval.sec</code></td>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><strong>Optional</strong>. Defines the monitoring
+                                            frequency. Default is 300 seconds (5 minutes). Set this
+                                            property to 60 for lower latency.</td>
+                                        <td colspan="1" class="confluenceTd"
+                                                ><code>com.unraveldata.s3.batch.monitoring.interval.sec=120</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"><code><span
+                                                  style="color: rgb(0,0,0);"
+                                                  >com.unraveldata.spark.eventlog.location</span></code></td>
+                                        <td colspan="1" class="confluenceTd">Where to find Spark
+                                            event logs</td>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>com.unraveldata.spark.eventlog.location=hdfs://example.localdomain:8020/spark-history/</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" class="confluenceTd"><code><span
+                                                  style="color: rgb(0,0,0);"
+                                                >oozie.server.url</span></code></td>
+                                        <td colspan="1" class="confluenceTd">Oozie URL</td>
+                                        <td colspan="1" class="confluenceTd"
+                                            ><pre>oozie.server.url=http://example.localdomain<a class="external-link" href="http://ip-10-0-0-90.ec2.internal:11000/oozie" rel="nofollow">:11000/oozie</a></pre></td>
+                                    </tr>
+                                </tbody>
+                            </table></div><p><br /></p><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Enable/DisableOptionalDaemons"
+                            >Enable/Disable Optional Daemons</h3><p>Depending on your workload
+                            volume or kind of activity, you can enable or disable optional daemons
+                            at this point.</p><ul>
+                            <li><p>If you are not using Oozie, disable
+                                    <code>unravel_os3</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo chkconfig unravel_os3 off</pre>
+                                    </div></div></li>
+                            <li><p>If you are not using Spark, disable
+                                    <code>unravel_sw_1</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo chkconfig unravel_sw_1 off</pre>
+                                    </div></div></li>
+                            <li><p>If you have 10000-20000 jobs per day, enable these
+                                    workers:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo chkconfig --add unravel_ew_2 
+# sudo chkconfig --add unravel_hhw_2 
+# sudo chkconfig --add unravel_jcw2_2</pre>
+                                    </div></div></li>
+                            <li><p>If you have 20000-30000 jobs per day, enable these
+                                    workers:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo chkconfig --add unravel_ew_3 
+# sudo chkconfig --add unravel_hhw_3 
+# sudo chkconfig --add unravel_jcw2_3</pre>
+                                    </div></div></li>
+                            <li><p>If you have more than 30000 jobs per day, enable these
+                                    workers:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo chkconfig --add unravel_ew_4 
+# sudo chkconfig --add unravel_hhw_4 
+# sudo chkconfig --add unravel_jcw2_4</pre>
+                                    </div></div></li>
+                        </ul><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-EnableCollectionfromHiveMetastore"
+                            >Enable Collection from Hive Metastore</h3><p>If you have a central Hive
+                            Metastore, you can inform Unravel Server to enable more monitoring and
+                            analysis:</p><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>For MySQL
+                                    use  avax.jdo.option.ConnectionDriverName=com.mysql.jdbc.Driver
+                                    instead of the postgresql driver</p></div></div><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"
+                                    ><p>Substitute  thecorrect values for your
+                            site.</p></div></div><p><br /></p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># echo &quot; 
+ javax.jdo.option.ConnectionURL=jdbc:postgresql://10.0.0.10:7432/hive_nqz 
+ javax.jdo.option.ConnectionDriverName=org.postgresql.Driver 
+ javax.jdo.option.ConnectionUserName=hive_nqz 
+ javax.jdo.option.ConnectionPassword=123456789abc 
+ &quot; | sudo tee -a /usr/local/unravel/unravel.properties</pre>
+                            </div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-AdjustStorageLocations[HVD]"
+                            >Adjust Storage Locations <span style="color: rgb(0,128,0);"
+                                >[HVD]</span></h3><p>Prepare symlinks from <code>/srv/unravel</code>
+                            to ephemeral (<code>$UNRAVEL_EPHEMERAL</code>) and durable
+                                (<code>$UNRAVEL_DURABLE</code>) storage here. During initial
+                            install, areas under <code>/srv</code> are created and we will move them
+                            for performance reasons because the boot partition does not have the
+                            best performance (although the boot partition can be useful for low
+                            volume because it is durable). Some areas should be ephemeral and some
+                            durable/provisioned-iops:</p><ul>
+                            <li><p>Make sure daemons are stopped <span style="color: rgb(0,128,0);"
+                                            ><strong>[HVD]</strong></span>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo /etc/init.d/unravel_all.sh stop</pre>
+                                    </div></div></li>
+                            <li><p>Check that all Unravel daemons are stopped:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># ps -U unravel -f</pre>
+                                    </div></div></li>
+                            <li><p>If any processes are owned by Unravel, stop them with a kill
+                                    command.</p><p><br /></p></li>
+                            <li><p>Check that destination areas are present <strong><span
+                                            style="color: rgb(0,128,0);"
+                                    >[HVD]</span></strong>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># df -h $UNRAVEL_EPHEMERAL 
+# df -h $UNRAVEL_DURABLE</pre>
+                                    </div></div></li>
+                            <li><p>Move files and create symlinks <span style="color: rgb(0,128,0);"
+                                            ><strong>[HVD]</strong></span>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo /bin/mv /srv/unravel/k_data $UNRAVEL_DURABLE/k_data 
+# sudo ln -s $UNRAVEL_DURABLE/k_data /srv/unravel/k_data 
+
+# sudo /bin/mv /srv/unravel/zk_1_data $UNRAVEL_DURABLE/zk_1_data 
+# sudo ln -s $UNRAVEL_DURABLE/zk_1_data /srv/unravel/zk_1_data 
+
+# sudo /bin/mv /srv/unravel/zk_2_data $UNRAVEL_DURABLE/zk_2_data 
+# sudo ln -s $UNRAVEL_DURABLE/zk_2_data /srv/unravel/zk_2_data</pre>
+                                    </div></div></li>
+                            <li><p>This <code>zk</code> is intentionally on a different kind of
+                                        storage: <span style="color: rgb(0,128,0);"
+                                    >[HVD]</span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo /bin/mv /srv/unravel/zk_3_data $UNRAVEL_EPHEMERAL/zk_3_data 
+# sudo ln -s $UNRAVEL_EPHEMERAL/zk_3_data /srv/unravel/zk_3_data 
+
+# sudo /bin/mv /srv/unravel/db_data $UNRAVEL_DURABLE/db_data 
+# sudo ln -s $UNRAVEL_DURABLE/db_data /srv/unravel/db_data 
+
+# sudo /bin/mv /srv/unravel/s_1_data $UNRAVEL_DURABLE/s_1_data 
+# sudo ln -s $UNRAVEL_DURABLE/s_1_data /srv/unravel/s_1_data 
+
+# sudo /bin/mv /srv/unravel/tmp $UNRAVEL_EPHEMERAL/tmp 
+# sudo ln -s $UNRAVEL_EPHEMERAL/tmp /srv/unravel/tmp 
+
+# sudo /bin/mv /srv/unravel/log_hdfs $UNRAVEL_EPHEMERAL/log_hdfs 
+# sudo ln -s $UNRAVEL_EPHEMERAL/log_hdfs /srv/unravel/log_hdfs 
+
+# sudo /bin/mv /srv/unravel/tmp_hdfs $UNRAVEL_EPHEMERAL/tmp_hdfs 
+# sudo ln -s $UNRAVEL_EPHEMERAL/tmp_hdfs /srv/unravel/tmp_hdfs </pre>
+                                    </div></div></li>
+                        </ul><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-StartUnravelServer"
+                            >Start Unravel Server</h3><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo /etc/init.d/unravel_all.sh start</pre>
+                            </div></div><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SetUpanExternalDB[HVD]"
+                            >Set Up an External DB <span style="color: rgb(0,128,0);"
+                            >[HVD]</span></h3><p>For performance and ease of management, using an
+                            RDS MySQL instead of the bundled mysql is recommended.</p><h4
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-SetUpRDSMySQL[HVD]"
+                            >Set Up RDS MySQL  <span style="color: rgb(0,128,0);">[HVD]</span></h4><ul>
+                            <li>RDS Security Group: create on VPC of Unravel Server and allow access
+                                from Unravel Server security group</li>
+                            <li>Create db instance<ul>
+                                    <li>Select multi-AZ</li>
+                                    <li>Select <code>db.m3.large</code></li>
+                                    <li>Select provisioned IOPS 1000</li>
+                                    <li>Select SSD size (capacity depends on activity level)<ul>
+                                            <li>770GB for 180 days retention (number of days set in
+                                                unravel.properties)</li>
+                                            <li>1.54TB for 360 days retention</li>
+                                        </ul></li>
+                                    <li>No read-only replicas needed</li>
+                                    <li>Prefer overlap with Unravel Server AZ</li>
+                                    <li>Retain 7 days of snapshots</li>
+                                    <li>Specify <code>unravel</code> or
+                                            <code>ElasticMapReduce-master</code> RDS Security group,
+                                        depending on which was picked earlier</li>
+                                    <li>Name db instance &quot;<code>unravel<span
+                                                style="color: rgb(255,0,0);">X</span></code>&quot;
+                                            (<span style="color: rgb(255,0,0);">X</span>=p for
+                                        production, <span style="color: rgb(255,0,0);">X</span>=d
+                                        for development, <span style="color: rgb(255,0,0);"
+                                        >X</span>=t for test)</li>
+                                    <li>Use MySQL 5.5.42</li>
+                                    <li>Disable auto-minor-upgrade</li>
+                                </ul></li>
+                            <li>Define a parameter group &quot;<code>unravel</code>&quot;<ul>
+                                    <li>key_buffer_size = 268435456</li>
+                                    <li>max_allowed_packet = 33554432</li>
+                                    <li>table_open_cache = 256</li>
+                                    <li>read_buffer_size = 262144</li>
+                                    <li>read_rnd_buffer_size = 4194304</li>
+                                    <li>max_connect_errors=2000000000</li>
+                                    <li>open_files_limit=9000</li>
+                                    <li>innodb_open_files=9000</li>
+                                    <li>character_set_server=utf8</li>
+                                    <li>collation_server = utf8_unicode_ci</li>
+                                    <li>innodb_autoextend_increment=100</li>
+                                    <li>innodb_additional_mem_pool_size = 20971520</li>
+                                    <li>innodb_log_file_size = 134217728</li>
+                                    <li>innodb_log_buffer_size = 33554432</li>
+                                    <li>innodb_flush_log_at_trx_commit = 2</li>
+                                    <li>innodb_lock_wait_timeout = 50</li>
+                                </ul></li>
+                            <li>Modify <code>unravel<span style="color: rgb(255,0,0);"
+                                    >X</span></code> instance (<span style="color: rgb(255,0,0);"
+                                    >X</span>=p for production, <span style="color: rgb(255,0,0);"
+                                    >X</span>=d for development, <span style="color: rgb(255,0,0);"
+                                    >X</span>=t for test)<ul>
+                                    <li>Use <code>unravel</code> parameter group</li>
+                                    <li>Take effect immediately</li>
+                                </ul></li>
+                            <li>create &quot;<code>unravel</code>&quot; user<ul>
+                                    <li>Pick a db password for user <code>unravel</code><ul>
+                                            <li>DB_PASSWORD=&quot;$(cat /dev/urandom | tr -cd
+                                                'a-zA-Z0-9' | head -c10)&quot;</li>
+                                        </ul></li>
+                                    <li><p>Log into RDS mysql instance from Unravel Server as
+                                            admin/master user and do the following commands,
+                                            substituting above <span style="color: rgb(255,0,0);"
+                                                  ><code>DB_PASSWORD</code></span> below:</p><div
+                                            class="code panel pdl" style="border-width: 1px;"><div
+                                                class="codeContent panelContent pdl">
+                                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">CREATE DATABASE unravel_mysql_prod; 
+ COMMIT; 
+ CREATE USER &#39;unravel&#39;@&#39;%&#39; IDENTIFIED BY &#39;changeme&#39;; 
+ GRANT ALL PRIVILEGES ON unravel_mysql_prod.* TO &#39;unravel&#39;@&#39;%&#39;; 
+ FLUSH PRIVILEGES; 
+ UPDATE user SET Password=PASSWORD(&#39;${DB_PASSWORD}&#39;) WHERE user.User=&#39;unravel&#39;; 
+ FLUSH PRIVILEGES; 
+ COMMIT; 
+ QUIT;</pre>
+                                            </div></div></li>
+                                </ul></li>
+                            <li>Log into RDS mysql as user <code>unravel</code> to test <span
+                                    style="color: rgb(255,0,0);"
+                                ><code>DB_PASSWORD</code></span>.</li>
+                        </ul><h4
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-DumpBundledDBwithSchema[HVD]"
+                            >Dump Bundled DB with Schema <span style="color: rgb(0,128,0);"
+                                >[HVD]</span></h4><p>On Unravel Server, do the following to dump the
+                            db with schema:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo /etc/init.d/unravel_all.sh stop 
+# sudo /etc/init.d/unravel_db start 
+ RPW=$(grep &#39;DB_ROOT_PASSWORD&#39; /root/unravel.install.include | awk -F= &#39;{ print $2 }&#39;) 
+ [ ! &quot;$RPW&quot; ] &amp;&amp; echo &quot;could not find Unravel bundled db root password&quot; 
+ DEST_FILE=/tmp/unravel.backup.$(export TZ=UTC;date &#39;+%Y%m%dt%H%MZ&#39;).sql.gz 
+ /usr/local/unravel/mysql/bin/mysqldump --host=127.0.0.1 -u root --port=3316 --opt \ 
+ --complete-insert --tz-utc --skip-comments --single-transaction --insert-ignore \ 
+ unravel_mysql_prod -p$RPW | gzip &gt; $DEST_FILE</pre>
+                            </div></div><h4
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-LoadDBwithSchemaIntoRDSMySQL[HVD]"
+                            >Load DB with Schema Into RDS MySQL <span style="color: rgb(0,128,0);"
+                                >[HVD]</span></h4><p>Load the initial db with schema into the RDS
+                            MySQL instance, substituting <span style="color: rgb(255,0,0);"
+                                    ><code>$RDS_HOST</code></span> for host of the RDS MySQL db;
+                            change the port if a different port is used. The password for
+                                <code>unravel</code> user on mysql will be needed:</p><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># gunzip --stdout $DEST_FILE | /usr/local/unravel/mysql/bin/mysql --host=$RDS_HOST -u unravel -p --port=3306 --force unravel_mysql_prod</pre>
+                            </div></div><h4
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-ConfiguretoUseRDSMySQL[HVD]"
+                            >Configure to Use RDS MySQL <span style="color: rgb(0,128,0);"
+                                >[HVD]</span></h4><p>Configure <code>unravel.properties</code> to
+                            use the new database:</p><ul>
+                            <li><p>Edit the file:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo vi /usr/local/unravel/etc/unravel.properties</pre>
+                                    </div></div></li>
+                        </ul><ul>
+                            <li><p>Adjust existing properties to point to new RDS MySQL. Change
+                                    example values as needed:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">unravel.jdbc.username=unravel 
+unravel.jdbc.url=jdbc:mysql://unravelrds.something.REGION.rds.amazonaws.com:3306/unravel_mysql_prod 
+unravel.jdbc.password=******</pre>
+                                    </div></div></li>
+                        </ul><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-RestartUnravelServer"
+                            >Restart Unravel Server</h3><p>After edits to
+                                <code>com.unraveldata.login.admins</code> in
+                                <code>/usr/local/unravel/etc/unravel.properties</code> it is
+                            necessary to restart Unravel Server in order for changes to take effect.
+                            The <code>echo</code> command shows the page to visit with your browser.
+                            If you are using an SSH tunnel or HTTP proxy, you might need to make
+                            adjustments to the host/IP of the URL:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo /etc/init.d/unravel_all.sh start
+# sleep 60
+# echo &quot;http://$(hostname -f):3000/&quot;</pre>
+                            </div></div><h2
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-4.LogintoUnravelWebUI"
+                            >4. Log into Unravel Web UI</h2><p style="text-align: left;">Using a web
+                            browser, navigate to <code><span class="nolink">http://($hostname</span>
+                                -f):3000</code> and login as user &quot;<code>admin&quot;</code>
+                            with password <code>&quot;unraveldata</code>&quot;.</p><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>For the
+                                    free trial version, use the Chrome web
+                            browser.</p></div></div><p style="text-align: left;"><span
+                                class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+                                    ><img class="confluence-embedded-image image-center"
+                                    height="250" src="media/50968977.png"
+                                    data-image-src="media/50968977.png"
+                                    data-unresolved-comment-count="0"
+                                    data-linked-resource-id="50968977"
+                                    data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="image2017-2-26_0-20-12.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="50689611"
+                                    data-linked-resource-container-version="60"
+                                    data-media-id="b9d34fcc-86f2-4da4-a8a2-1c44a4ef16b6"
+                                    data-media-type="file" /></span></p><p
+                            style="text-align: center;"><em>Unravel Web UI Login Screen</em></p><h3
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-Congratulations!"
+                            >Congratulations!</h3><p>Unravel Server is up and running. You should
+                            begin to see information collected. For instructions on using Unravel
+                            Web UI, see the <a href="User-Guide_50687944.html"
+                                data-linked-resource-id="50687944" data-linked-resource-version="49"
+                                data-linked-resource-type="page">User Guide</a>.</p><p><br /></p><h2
+                            id="Part1:InstallUnravelServerforAmazonEMRorQuboleCluster-5.(Optional)EnableAdditionalDataCollection/Instrumentation"
+                            >5. (Optional) Enable Additional Data
+                            Collection/Instrumentation</h2><p>For instructions, see <a
+                                href="50689789.html" data-linked-resource-id="50689789"
+                                data-linked-resource-version="76" data-linked-resource-type="page"
+                                >Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive
+                                Cluster</a>, <a
+                                href="https://unraveldata.atlassian.net/wiki/display/UN40/Part+3%3A+Install+Unravel+Spark+Sensor+on+New+or+Existing+Qubole+Spark+Cluster?src=contextnavpagetreemode"
+                                rel="nofollow">Part 3: Install Unravel Spark Sensor on New or
+                                Existing Qubole Spark Cluster</a> and <a href="50876309.html"
+                                data-linked-resource-id="50876309" data-linked-resource-version="16"
+                                data-linked-resource-type="page">Part 4: Modify Amazon EMR Cluster
+                                Bootstrap/Setup</a>.</p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/50689618.png"
+                                >worddavb613e73f110587889f8b58fd6cdcdfa4.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/50689625.png"
+                                >worddav17bd11fa4b44a52a180fec44ac2a622c.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/50968977.png">image2017-2-26_0-20-12.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51089435.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

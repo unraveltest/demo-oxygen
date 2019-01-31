@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Connecting-to-a-Hive-Metastore_51162326">
+   <title>Connecting to a Hive Metastore </title>
+   <taskbody>
+      <context>
+         <p outputclass="auto-cursor-target">Connecting to a Hive metastore enables Unravel Server to collect
+            instrumentation from it, which results in the population of the Data Page in Unravel Web UI.</p>
+         <p>For CDH+CM</p>
+         <p>You can enable instrumentation for the Hive metastore through Unravel Web UI's configuration wizard, but
+            first you need to obtain <ph>
+               <ph>
+                  <ph>
+                     <ph>Hive metastore details from Cloudera Manager.</ph>
+                  </ph>
+               </ph>
+            </ph>
+         </p>
+         <ol>
+            <li>Obtain the Hive metastore details from the Cloudera Manager by using a CDH REST API</li>
+         </ol>
+         <ul>
+            <li>
+               <ul>
+                  <li>From CDH version 5.5 onward, use the REST API
+                        "<codeph>http://<ph>CMGR_HOSTNAME_IP</ph>:7182/api/v12/cm/deployment</codeph>"</li>
+                  <li>
+                     <p>Look at the response body, a JSON-like text format as in the image below.</p>
+                  </li>
+                  <li>
+                     <p>Search the response body for "<codeph>metastore</codeph>".</p>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/52274297.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p/>
+         <p>2. In Unravel Web UI, on the top right-hand corner, click <b>Admin</b> and, in the pull-down menu, select
+               <b>Manage</b>.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/52274015.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>3. On the left tab, click <b>Hive</b>, and fill in the values you obtained from Cloudera Manager:</p>
+         <ul>
+            <li>
+               <ul>
+                  <li>
+                     <ph>HIVE METASTORE URL</ph>
+                  </li>
+                  <li>
+                     <ph>
+                        <ph>HIVE METASTORE DRIVER</ph>
+                     </ph>
+                  </li>
+                  <li>
+                     <ph>
+                        <ph>
+                           <ph>HIVE METASTORE USER NAME</ph>
+                        </ph>
+                     </ph>
+                  </li>
+                  <li>
+                     <ph>
+                        <ph>
+                           <ph>
+                              <ph>HIVE METASTORE PASSWORD</ph>
+                           </ph>
+                        </ph>
+                     </ph><!--A BR tag was used here in the original source.-->
+                     <p>
+                        <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                           <image href="media/52274083.png" outputclass="confluence-embedded-image"/>
+                        </ph>
+                     </p><!--A BR tag was used here in the original source.-->
+                     <ph>
+                        <ph>
+                           <ph>
+                              <ph/>
+                           </ph>
+                        </ph>
+                     </ph>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <p>4. Save the information when done: <ph>
+               <ph>
+                  <ph>
+                     <ph>click <b>Save Changes</b>.</ph>
+                  </ph>
+               </ph>
+            </ph>
+         </p>
+         <p>5. Restart Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_all.sh restart</codeblock>
+         <p>6. After restart, confirm that Hive queries appear in Unravel UI in the <b>Application</b> tab.</p>
+         <p>For HDP </p>
+         <p>See <xref href="50689477.dita">Part 2: Enable Additional Data Collection / Instrumentation for HDP</xref>
+         </p>
+         <p>For MapR</p>
+         <p>See <xref href="50688326.dita">Part 2: Enable Additional Data Collection / Instrumentation for MapR</xref>
+         </p>
+      </context>
+   </taskbody>
+</task>

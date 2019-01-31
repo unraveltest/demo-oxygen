@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Defining-a-Custom-TC-Port_50688848">
+   <title>Defining a Custom TC Port </title>
+   <taskbody>
+      <context>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+         <p>These instructions apply to any deployment.</p>
+         <p>Run the following command on Unravel Server <b>host1</b>. Replace <ph>
+               <codeph>18080</codeph>
+            </ph> with your chosen port number:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">echo 'export UNRAVEL_LISTEN_PORT=18080' \
+&gt;&gt;/usr/local/unravel/etc/unravel.ext.sh</codeblock>
+      </context>
+   </taskbody>
+</task>

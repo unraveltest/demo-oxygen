@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FBCBDBDB" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="topic:1;4:39">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="title:1;5:11">Part 5: Additional Topics for EMR or Qubole </title>
+   <body class="- topic/body " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="body:1;6:10">
+
+
+
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ol:1;10:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:1;12:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ph:1;13:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:1;14:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:2;18:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ph:2;19:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:2;20:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:3;24:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ph:3;25:17">
+               <xref href="50688627.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:3;26:43" type="topic"><?ditaot usertext?>Installation Guide for Amazon Elastic MapReduce (Amazon
+                  EMR) and Qubole Clusters</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+
+
+
+
+
+      <ul outputclass="childpages-macro" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ul:1;38:42">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:4;40:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50689913/Creating+Active+Directory+Kerberos+Principals+and+Keytabs+for+Unravel" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:4;43:47"><?ditaot usertext?>Creating Active Directory Kerberos Principals and
+               Keytabs for Unravel</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:5;47:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/53900864/Sensors" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:5;49:47"><?ditaot usertext?>Sensors</xref>
+            <ul outputclass="childpages-macro" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ul:2;50:48">
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:6;52:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/53908545/Installing+Unravel+Sensor+for+Individual+Applications+Submitted+Through+spark-shell" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:6;55:53"><?ditaot usertext?>Installing Unravel Sensor for Individual
+                     Applications Submitted Through spark-shell</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:7;59:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51977040/Installing+Unravel+Sensor+for+Individual+Applications+Submitted+Through+spark-submit" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:7;62:53"><?ditaot usertext?>Installing Unravel Sensor for Individual
+                     Applications Submitted Through spark-submit</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:8;66:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162409/Installing+Unravel+Sensor+for+Individual+Hive+Queries" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:8;69:53"><?ditaot usertext?>Installing Unravel Sensor for Individual Hive
+                     Queries</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:9;76:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/53900905/Workflows" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:9;78:47"><?ditaot usertext?>Workflows</xref>
+            <ul outputclass="childpages-macro" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ul:3;79:48">
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:10;81:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/52961844/Monitoring+Airflow+Workflows" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:10;84:53"><?ditaot usertext?>Monitoring Airflow Workflows</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:11;87:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51161894/Monitoring+Oozie+Workflows" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:11;90:53"><?ditaot usertext?>Monitoring Oozie Workflows</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:12;93:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162078/Tagging+Workflows" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:12;96:53"><?ditaot usertext?>Tagging Workflows</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:13;102:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/54044915/Custom+Configurations" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:13;105:47"><?ditaot usertext?>Custom Configurations</xref>
+            <ul outputclass="childpages-macro" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ul:4;106:48">
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:14;108:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50672747/Adding+More+Admins+to+Unravel+Web+UI" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:14;111:53"><?ditaot usertext?>Adding More Admins to Unravel Web UI</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:15;114:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50690195/Configuring+Multiple+Hosts+for+Unravel+Server" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:15;117:53"><?ditaot usertext?>Configuring Multiple Hosts for Unravel
+                     Server</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:16;121:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162494/Creating+Multiple+Workers+for+High+Volume+Data" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:16;124:53"><?ditaot usertext?>Creating Multiple Workers for High Volume
+                     Data</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:17;128:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50688848/Defining+a+Custom+TC+Port" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:17;131:53"><?ditaot usertext?>Defining a Custom TC Port</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:18;134:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162161/Integrating+LDAP+Authentication+for+Unravel+Web+UI" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:18;137:53"><?ditaot usertext?>Integrating LDAP Authentication for Unravel Web
+                     UI</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:19;141:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51757832/Setting+Retention+Time+in+Unravel+Server" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:19;144:53"><?ditaot usertext?>Setting Retention Time in Unravel Server</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:20;147:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162243/Setting+Up+Email+for+Auto+Actions+and+Collaboration" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:20;150:53"><?ditaot usertext?>Setting Up Email for Auto Actions and
+                     Collaboration</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:21;157:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162326/Connecting+to+a+Hive+Metastore" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:21;160:47"><?ditaot usertext?>Connecting to a Hive Metastore</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:22;163:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/52728267/Creating+an+AWS+RDS+CloudWatch+Alarm+for+FreeStorageSpace" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:22;166:47"><?ditaot usertext?>Creating an AWS RDS CloudWatch Alarm for
+               FreeStorageSpace</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:23;170:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/54048480/Creating+Application+Tags" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:23;173:47"><?ditaot usertext?>Creating Application Tags</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:24;176:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50881320/Troubleshooting" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:24;179:47"><?ditaot usertext?>Troubleshooting</xref>
+            <ul outputclass="childpages-macro" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="ul:5;180:48">
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:25;182:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/52960296/Running+Verification+Scripts+and+Benchmarks" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:25;185:53"><?ditaot usertext?>Running Verification Scripts and
+                     Benchmarks</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:26;189:20">
+                  <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50689210/Sending+Diagnostics+to+Unravel+Support" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:26;192:53"><?ditaot usertext?>Sending Diagnostics to Unravel Support</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:27;198:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50688928/Uninstalling+Unravel+Server" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:27;201:47"><?ditaot usertext?>Uninstalling Unravel Server</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="li:28;204:14">
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51854263/Upgrading+Unravel+Server" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="xref:28;207:47"><?ditaot usertext?>Upgrading Unravel Server</xref>
+         </li>
+
+      </ul>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/51213131.dita" xtrc="p:1;211:11"/>
+
+
+
+   </body>
+</topic>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Tagging-Workflows_51162078">
+   <title>Tagging Workflows </title>
+   <taskbody>
+      <context>
+         <p>About Unravel Tags</p>
+         <p>You can add two Unravel tags (key-value pairs) to mark queries and jobs that belong to a particular
+            workflow:</p>
+         <ul>
+            <li>
+               <codeph>unravel.workflow.name</codeph>: a string that represents the name of the workflow. Recommended
+               format is <codeph>
+                  <i>TenantName</i>-<i>ProjectName</i>-<i>WorkflowName</i>
+               </codeph>.</li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <codeph>unravel.workflow.utctimestamp</codeph>: a timestamp in <i>
+                     <codeph>yyyyMMddThhmmssZ</codeph>
+                  </i> format that represents the logical time of a run of the workflow in UTC/ISO format. In UNIX/LINUX
+                  bash, you can get a timestamp in UTC format by running the command "<codeph>$(date -u
+                     '+%Y%m%dT%H%M%SZ')</codeph>".</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+               <p>Do not put quotes ("") or blank spaces in/around the tag keys or values. For example:</p>
+               <ul>
+                  <li>
+                     <codeph>SET unravel.workflow.name="ETL-Workflow";</codeph> [Wrong usage]</li>
+                  <li>
+                     <codeph>SET unravel.workflow.name=ETL-Workflow;</codeph> [Correct usage]</li>
+               </ul>
+            </li>
+         </ul>
+         <p>Please note the following:</p>
+         <ul>
+            <li>Different runs of the <b>same </b>workflow have the <b>same</b> value for
+                  <codeph>unravel.workflow.name</codeph>.</li>
+            <li>Different runs of the <b>same</b> workflow have <b>different </b>values for
+                  <codeph>unravel.workflow.utctimestamp</codeph>.</li>
+            <li>
+               <p outputclass="auto-cursor-target">Different workflows have different values for
+                     <codeph>unravel.workflow.name</codeph>.</p>
+            </li>
+         </ul>
+         <p>The example below shows a Hive query that is marked as part of the
+               <codeph>Financial-Tenant-ETL-Workflow</codeph> workflow that was run on February 1, 2016:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">SET unravel.workflow.name=Financial-Tenant-ETL-Workflow;
+SET unravel.workflow.utctimestamp=20160201T000000Z;
+
+SELECT foo FROM table WHERE … [Rest of Hive Query text goes here]</codeblock>
+         <p>Easy Recipes for Tagging Workflows</p>
+         <p outputclass="auto-cursor-target">First, export the workflow name and UTC timestamp from your top-level
+            script that schedules each run of the workflow:</p>
+         <p outputclass="auto-cursor-target">Export the workflow name:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">export WORKFLOW_NAME=Financial-Tenant-ETL-Workflow</codeblock>
+         <p outputclass="auto-cursor-target">Export the UTC timestamp for this run of the workflow. Here, we use bash's
+               <codeph>date</codeph> command:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">export UTC_TIME_STAMP=$(date -u '+%Y%m%dT%H%M%SZ')</codeblock>
+         <p>Then follow the appropriate instructions below:</p>
+         <ul>
+            <li>
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagHive">Tagging a Hive query</xref>
+            </li>
+            <li>
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagSqoop">Tagging a Sqoop job</xref>
+            </li>
+            <li>
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagMapReduce">Tagging a direct MapReduce
+                  job</xref>
+            </li>
+            <li>
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagSpark">Tagging a Spark job</xref>
+            </li>
+            <li>
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagPig">Tagging a Pig job</xref>
+            </li>
+            <li>
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagImpala">Tagging a Impala query</xref>
+            </li>
+         </ul>
+         <p> How to Tag a Hive Query Using <codeph>SET</codeph> Commands in Hive</p>
+         <codeblock outputclass="syntaxhighlighter-pre">hive -f hive/simple_wf.hql </codeblock>
+         <p>In <codeph>hive/simple_wf.hql</codeph>:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">SET unravel.workflow.name=${env:WORKFLOW_NAME};
+SET unravel.workflow.utctimestamp=${env:UTC_TIME_STAMP};
+select count(1) from lineitem;</codeblock>
+         <p> How to Tag a Sqoop Job Using <codeph>–D</codeph> Command Line Parameters</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sqoop export \
+ *-D"unravel.workflow.name=$WORKFLOW_NAME" -D"unravel.workflow.utctimestamp=$UTC_TIME_STAMP" * \
+ --connect jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod --table settings -m 1 \
+ --export-dir /tmp/sqoop_test --username unravel --verbose --password foobar</codeblock>
+         <p> How to Tag a Direct MapReduce Job Using <codeph>–D</codeph> Command Line Parameters</p>
+         <codeblock outputclass="syntaxhighlighter-pre">hadoop jar libs/ooziemr-1.0.jar com.unraveldata.mr.apps.Driver \
+*-D"unravel.workflow.name=$WORKFLOW_NAME" -D"unravel.workflow.utctimestamp=$UTC_TIME_STAMP" * \
+-p /wordcount.properties -input /tmp/soumitra/data/small -output /tmp/soumitra/outsmoke</codeblock>
+         <p> How to Tag a Spark Job Using <codeph>--conf</codeph> Command Line Parameters</p>
+         <p>For Spark jobs, you must prefix the Unravel tags with "<codeph>spark.</codeph>". For example, <codeph>
+               <xref href="http://unravel.workflow.name" scope="external" format="html" outputclass="external-link"
+                  >unravel.workflow.name</xref>
+            </codeph> becomes <codeph>
+               <xref href="http://spark.unravel.workflow.name" scope="external" format="html"
+                  outputclass="external-link">spark.unravel.workflow.name</xref>
+            </codeph>.</p>
+         <codeblock outputclass="syntaxhighlighter-pre">spark-submit \
+ *   --conf "spark.unravel.workflow.name=$WORKFLOW_NAME" *
+ *   --conf "spark.unravel.workflow.utctimestamp=$UTC_TIME_STAMP" *
+    --conf "spark.eventLog.enabled=true" \
+    --class org.apache.spark.examples.SparkPi \
+    --master yarn-cluster \
+    --deploy-mode cluster</codeblock>
+         <p> How to Tag a Pig Job Using <codeph>–param</codeph> and <codeph>SET</codeph> Commands</p>
+         <codeblock outputclass="syntaxhighlighter-pre">pig \
+*-param WORKFLOW_NAME=$WORKFLOW_NAME -param UTC_TIME_STAMP=$UTC_TIME_STAMP * \
+-x mapreduce -f pig/simple.pig</codeblock>
+         <p> In <codeph>pig/simple.pig</codeph>:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">SET unravel.workflow.name $WORKFLOW_NAME;
+SET unravel.workflow.utctimestamp $UTC_TIME_STAMP;
+
+lines = LOAD '/tmp/soumitra/data/small' using PigStorage('|') AS (line:chararray);
+words = FOREACH lines GENERATE FLATTEN(TOKENIZE(line)) as word;
+grouped = GROUP words BY word;
+wordcount = FOREACH grouped GENERATE group, COUNT(words);
+DUMP wordcount;</codeblock>
+         <p> How to Tag a Impala Job Using <codeph>–-query_options</codeph> and <codeph>SET</codeph> Command</p>
+         <p>User can set DEBUG_ACTION in Impala script to pass the workflow tags into impala queries:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">SET DEBUG_ACTION=|unravel.workflow.name::{$WORKFLOW_NAME}|unravel.workflow.utctimestamp::{$WORKFLOW_TIMESTAMP};</codeblock>
+         <p>According to this CDH article: <xref
+               href="https://www.cloudera.com/documentation/enterprise/5-14-x/topics/impala_query_options.html"
+               scope="external" format="html" outputclass="external-link"
+               >https://www.cloudera.com/documentation/enterprise/5-14-x/topics/impala_query_options.html</xref>, user
+            can pass in query options via --query_options i<ph>n<ph> </ph>
+            </ph>
+            <ph>
+               <ph outputclass="keyword">CDH 5.14 / Impala 2.11</ph> and later:</ph>
+         </p>
+         <codeblock outputclass="syntaxhighlighter-pre">impala-shell --query_option=DEBUG_ACTION=|unravel.workflow.name::{$WORKFLOW_NAME}|unravel.workflow.utctimestamp::{$WORKFLOW_TIMESTAMP}| -f impala.script</codeblock>
+         <p>Note: the tagging option should be turned on for this tagging to work. ie, the followings need to be set in
+            unravel.properties:</p>
+         <codeblock outputclass="syntaxhighlighter-pre"># Tagging
+com.unraveldata.tagging.script.enabled=true
+com.unraveldata.app.tagging.script.path=/tmp/app_tag.py
+com.unraveldata.app.tagging.script.method.name=get_tags</codeblock>
+         <p>Finding Workflows in Unravel Web UI</p>
+         <p>Once your tagged workflows have been run, go log into Unravel Web UI and select <b>Application</b> |
+               <b>Workflow</b> to start exploring Unravel's Workflow Management features, as illustrated in the
+            screenshot below.  <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/51192096.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+      </context>
+   </taskbody>
+</task>

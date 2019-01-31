@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Upgrading-Unravel-Server_51854263" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="task:1;3:114">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="title:1;4:11">
+                        Upgrading Unravel Server 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="taskbody:1;7:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="context:1;8:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ol:1;12:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:1;14:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:1;16:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="xref:1;17:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:2;22:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:2;24:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="xref:2;25:62" type="topic"><?ditaot usertext?>Unravel
+                                    4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:3;31:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:3;33:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="xref:3;34:62" type="topic"><?ditaot usertext?>Advanced
+                                    Topics</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:1;47:13">This topic explains how to upgrade the Unravel
+                            Server RPM in a single or multi-host environment.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:4;49:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:2;50:13">For single
+                                    Unravel gateway or client host, run only the commands that are
+                                    marked as <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="codeph:1;52:55">host1</codeph> in each step below.</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ol:2;53:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:4;55:17">Copy the new RPM to each Unravel host.</li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:5;57:17">Stop each host <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="b:1;57:35">simultaneously</b>:
+                                        <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="codeblock:1;58:88"># host1
+sudo /etc/init.d/unravel_all.sh stop 
+# host2
+sudo /etc/init.d/unravel_all.sh stop 
+# host3
+sudo /etc/init.d/unravel_all.sh stop</codeblock>
+                                    
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:6;67:17">Upgrade the RPM on each host <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="b:2;67:49">simultaneously</b>:
+                                        <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="codeblock:2;68:88"># host1
+sudo rpm -U unravel-4.*.x86_64.rpm* 
+# host2
+sudo rpm -U unravel-4.*.x86_64.rpm* 
+# host3
+sudo rpm -U unravel-4.*.x86_64.rpm*</codeblock>
+                                    
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:7;77:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:3;78:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:5;79:23">Add your
+                                        license key to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="codeph:2;80:64">unravel.properties</codeph>.
+                                    </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:6;83:112"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:4;84:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:7;85:23">You
+                                                must enter add license key to <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ph:8;86:83">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="codeph:3;87:33">unravel.properties</codeph>
+                     </ph> before
+                                                starting/restarting Unravel
+                                    Server.</ph>
+               </p>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:8;94:17">Run
+                                <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="b:3;95:36">/usr/local/unravel/install_bin/await_fixups.sh </b>script
+                                after upgrade</li>
+                        
+         </ol>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="codeblock:3;100:57">sudo /usr/local/unravel/install_bin/await_fixups.sh</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:5;102:14"/>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="ol:3;103:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="li:9;105:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:6;106:52">After all the RPM upgrades finish,
+                                    restart Unravel Server on each host
+                                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="b:4;108:44">simultaneously</b>:</p>
+                                        
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="codeblock:4;110:63"># host1
+sudo /etc/init.d/unravel_all.sh start 
+# host2
+sudo /etc/init.d/unravel_all.sh start 
+# host3
+sudo /etc/init.d/unravel_all.sh start</codeblock>
+                                    
+            </li>
+                        
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:7;120:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:8;121:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:9;122:14"/>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="p:10;127:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="image:1;131:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="alt:1;132:19"/>
+         </image>
+                            
+         <xref href="media/51854267.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="xref:4;135:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+                            <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="image:2;136:90">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="alt:2;137:19"/>
+         </image>
+                            
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Upgrading-Unravel-Server_51854263.dita" xtrc="xref:5;140:52"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref>
+                            (image/png) 
+                        
+                    
+                
+            </context>
+   </taskbody>
+</task>

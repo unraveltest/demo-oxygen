@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Part 3: Install Unravel Spark Sensor on New or Existing Qubole
+            Spark Cluster</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="50688627.html">Installation Guide for Amazon Elastic
+                                        MapReduce (Amazon EMR) and Qubole Clusters</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Part 3: Install Unravel Spark
+                            Sensor on New or Existing Qubole Spark Cluster </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    
+                    <div id="main-content" class="wiki-content group">
+                        <h1 class="western"
+                            id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-Introduction"
+                            >Introduction</h1><p>Unravel Sensor can collect information about Spark
+                            applications. This guide describes how to install Unravel Sensor for
+                            Qubole-based Spark clusters. The information here applies to Spark
+                            versions 1.5.x through 2.0.x and Unravel 3.4-4.1. Highlighted text
+                            indicates where you must substitute your particular values.</p><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p><span
+                                        style="color: rgb(255,0,0);"><code>HIGHLIGHTED</code></span>
+                                    text and text with brackets ( { } ), unless otherwise noted,
+                                    indicates where you must substitute your particular values for
+                                    the text.</p><p><span style="color: rgb(255,0,0);">
+                                        <code>UNRAVEL_HOST_IP</code>
+                                    </span>must be a fully qualified DNS or the IP
+                                        address.</p><p><span style="color: rgb(0,0,0);"><span
+                                            style="color: rgb(0,0,0);"><span
+                                                style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"
+                                                  ><code>PATH_TO_SENSOR_JARS</code></span></span></span></span></span>:
+                                        <span style="color: rgb(0,0,0);"><span
+                                            style="color: rgb(0,0,0);">is the absolute path to the
+                                            location of the sensor jars.</span></span></p><p><span
+                                        style="color: rgb(255,0,0);"
+                                > </span><span><br /></span></p></div></div><h1 class="western"
+                            id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-AddUnravelSparkInstrumentationtoNewQuboleSparkCluster"
+                            >Add Unravel Spark Instrumentation to New Qubole Spark Cluster</h1><ol>
+                            <li><p><span class="confluence-anchor-link"
+                                        id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-configure_s3ro"
+                                        ></span>Configure<strong> </strong>Unravel s3 read-only
+                                    credentials in
+                                        <code>/usr/local/unravel/etc/s3ro.properties</code> as
+                                    follows:</p><div
+                                    class="confluence-information-macro confluence-information-macro-information"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                            ><p>This sample <code>s3ro.properties</code> file has
+                                            multiple s3 profiles and access
+                                    keys.</p></div></div><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">[default]
+aws_access_key_id = {ACCESS_KEY_VALUE1}
+aws_secret_access_key = {SECRET_KEY_VALUE1}
+
+[profile_name_2]
+aws_access_key_id = {ACCESS_KEY_VALUE2}
+aws_secret_access_key = {SECRET_KEY_VALUE2}</pre>
+                                    </div></div><p class="auto-cursor-target"><em>Note: Substitute
+                                        actual values for ACCESS_KEY_VALUEx and
+                                        SECRET_KEY_VALUEx.</em></p><p><br /></p></li>
+                            <li><p>Edit <code>/usr/local/unravel/etc/unravel.properties</code> so
+                                    that Unravel Server incorporates
+                                    <code>s3ro.properties</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.s3.profile.config.file.path=/usr/local/unravel/etc/s3ro.properties
+com.unraveldata.spark.s3.profilesToBuckets=&lt;default&gt;:&lt;s3ro_bucket1&gt;,&lt;profile_name_2&gt;:&lt;s3r0_bucket2&gt;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Restart the Unravel ETL
+                                    daemon(s):</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># sudo /etc/init.d/unravel_all.sh stop-etl
+# sudo /etc/init.d/unravel_all.sh start</pre>
+                                    </div></div></li>
+                            <li>Ensure ports 3000 (for web UI access) and 4043 (from cluster) are
+                                open for incoming traffic. These should <strong>not</strong> be open
+                                to the public Internet.<br /><br /></li>
+                            <li><p class="auto-cursor-target">Verify that port 3000 is open by
+                                    running a <code>curl</code> command from a potential Unravel
+                                    user machine as follows :</p><div
+                                    class="confluence-information-macro confluence-information-macro-tip"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p>If
+                                            the version information is not visible (request
+                                            timeout), then adjust security groups, firewalls, etc.
+                                            and try again. For VPCs, it might be necessary to add a
+                                            route.</p></div></div><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># curl http://{UNRAVEL_HOST_IP}:3000/version.txt</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Copy the Unravel Spark bootstrap file
+                                    from Unravel Server to your Spark Qubole cluster, using
+                                        <code>curl</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># curl http://{UNRAVEL_HOST_IP}:3000/hh/unraveldata-clients/unravel_qubole_bootstrap.sh &gt; unravel_qubole_bootstrap.sh</pre>
+                                    </div></div><p class="auto-cursor-target"><em>Note: Substitute
+                                        the actual host for UNRAVEL_HOST_IP.</em></p><p
+                                    class="auto-cursor-target"><em><br /></em></p></li>
+                            <li><p class="auto-cursor-target">Copy Unravel Spark bootstrap file to
+                                    your s3://<span style="color: rgb(255,0,0);"><span
+                                            style="color: rgb(255,0,0);"
+                                                ><code>Bootstrap_location_for_Spark Qubole
+                                                Cluster</code></span></span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">aws s3 cp unravel_qubole_bootstrap.sh s3://{Bootstrap_location_for_Spark Qubole cluster}/unravel_qubole_bootstrap.sh</pre>
+                                    </div></div></li>
+                            <li>In Qubole’s <strong>Edit Cluster Setting</strong>, if you
+                                        <u><strong>do not</strong></u> have your own customized Node
+                                Bootstrap file, add <code>unravel_qubole_bootstrap.sh</code> into
+                                this field as shown in the diagram:<br /><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                        ><img
+                                        class="confluence-embedded-image confluence-content-image-border"
+                                        width="680" src="media/52620138.png"
+                                        data-image-src="media/52620138.png"
+                                        data-unresolved-comment-count="0"
+                                        data-linked-resource-id="52620138"
+                                        data-linked-resource-version="1"
+                                        data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="hadoop_cluster_settings1.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="52567661"
+                                        data-linked-resource-container-version="70"
+                                        data-media-id="a8da89bd-1cdf-426a-8968-36c2b26f7740"
+                                        data-media-type="file" /></span></li>
+                            <li>In Qubole, scripts do not take input parameters. Therefore,
+                                Unravel's bootstrap script takes all the required parameters from
+                                the Hadoop configuration. You can customize your Hadoop
+                                configuration through specific parameters within the
+                                    <strong>Override Hadoop Configuration Variables</strong> section
+                                as shown in the diagram below. As you can see,
+                                    <strong>unravel-bootstrap </strong>is the property name you must
+                                use prepend to all configuration parameters relevant to Unravel.
+                                    <br /><br /><em>Note: Separate parameters with
+                                    commas.</em><br /><br /><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                        ><img
+                                        class="confluence-embedded-image confluence-content-image-border"
+                                        height="400" width="680" src="media/52620160.png"
+                                        data-image-src="media/52620160.png"
+                                        data-unresolved-comment-count="0"
+                                        data-linked-resource-id="52620160"
+                                        data-linked-resource-version="1"
+                                        data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="hadoop_cluster_settings2.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="52567661"
+                                        data-linked-resource-container-version="70"
+                                        data-media-id="3a7bb60c-38cf-420b-a94d-fc373cf16ba4"
+                                        data-media-type="file" /></span></li>
+                            <li><p class="auto-cursor-target">Add these settings
+                                        to <code>unravel-bootstrap</code> for Spark
+                                    clusters:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">unravel-bootstrap=UNRAVEL_SERVER=UNRAVEL_HOST_AND_PORT, SPARK_VER_XYZ=SPARK_VER_XYZ[,SPARK_APP_LOAD_MODE=SPARK_APP_LOAD_MODE,WRAPPED_SCRIPT=WRAPPED_SCRIPT]</pre>
+                                    </div></div><p><span style="color: rgb(255,0,0);"><code><span
+                                                style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(0,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(0,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><code><span
+                                                  style="color: rgb(255,0,0);">SPARK_VERSION<span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"
+                                                  ><code>_X.Y.Z</code></span></span></span></code></span><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(0,0,0);"> - target Spark version
+                                                  (eg. 1.3.0, 1.6.0, 2.0.1,
+                                                  etc.)</span></span></span></span></span></span></code></span></p><div
+                                    class="confluence-information-macro has-no-icon confluence-information-macro-information"
+                                        ><p class="title">Note:</p><div
+                                        class="confluence-information-macro-body"><p><span
+                                                style="color: rgb(0,0,0);"><code>The parameters in
+                                                  square brackets [ ] above are optional. Their
+                                                  meanings are:</code></span></p><p><span
+                                                style="color: rgb(255,0,0);"
+                                                  ><code>SPARK_APP_LOAD_MODE </code></span>is either
+                                            OPS or DEV mode, and if not explicitly specified
+                                            defaults to OPS mode. For details on application loading
+                                            modes, see <a
+                                                href="#Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-Appendix"
+                                                >Appendix</a>.</p><p><span
+                                                style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(0,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(0,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><code><span
+                                                  style="color: rgb(255,0,0);"
+                                                  >WRAPPED_SCRIPT</span></code></span></span></span></span></span></span>
+                                            is the full S3 path to your original bootstrap script.
+                                            Your bootstrap script is invoked from <span
+                                                style="color: rgb(255,0,0);"
+                                                  ><code>unravel_qubole_bootstrap.sh</code></span>.</p></div></div></li>
+                            <li><p class="auto-cursor-target">Confirm that the
+                                        <code>unravel_es</code> service is installed:</p><ol>
+                                    <li><p class="auto-cursor-target">Open an SSH session to the
+                                            Qubole master node.</p></li>
+                                    <li><p class="auto-cursor-target">Run this command to check that
+                                            the unravel_es service has been started:</p><div
+                                            class="code panel pdl" style="border-width: 1px;"><div
+                                                class="codeContent panelContent pdl">
+                                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># ps -aux | grep unravel_es</pre>
+                                            </div></div></li>
+                                </ol></li>
+                        </ol><h1 class="western"
+                            id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-(Optional)AddUnravelSparkInstrumentationtoanExistingQuboleSparkCluster"
+                            >(Optional) Add Unravel Spark Instrumentation to an Existing Qubole
+                            Spark Cluster</h1><ol>
+                            <li>Ensure that you have configured s3 read-only credentials
+                                    in <code>/usr/local/unravel/etc/s3ro.properties</code> for
+                                Unravel, as described in <a
+                                    href="#Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-configure_s3ro"
+                                    >steps 1 and 2 above</a>.</li>
+                            <li><p>Obtain following essential Spark version files from Unravel
+                                    Server:</p><ol>
+                                    <li><p>To obtain Spark version 1.6.x zip file:</p><div
+                                            class="code panel pdl" style="border-width: 1px;"><div
+                                                class="codeContent panelContent pdl">
+                                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># wget http://{UNRAVEL_HOST_IP}:3000/hh/unravel-sensor-for-spark-bin-1.6.zip
+</pre>
+                                            </div></div></li>
+                                    <li><p>To obtain Spark version 2.0.x zip file:</p><div
+                                            class="code panel pdl" style="border-width: 1px;"><div
+                                                class="codeContent panelContent pdl">
+                                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># wget http://{UNRAVEL_HOST_IP}:3000/hh/unravel-sensor-for-spark-bin-2.0.zip</pre>
+                                            </div></div><div
+                                            class="confluence-information-macro confluence-information-macro-tip"
+                                                ><span
+                                                class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                                ></span><div
+                                                class="confluence-information-macro-body"><p><span
+                                                  style="color: rgb(0,0,0);">Unzip the archive
+                                                  </span><code><span style="color: rgb(0,0,0);"
+                                                  >unravel-sensor-for-spark-bin-1.6.zip</span></code><span
+                                                  style="color: rgb(0,0,0);"> and ensure via the
+                                                  bootstrap action that the included jars are
+                                                  deployed on Qubole nodes at <span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"
+                                                  ><code>PATH_TO_SENSOR_JARS</code></span></span></span></span><span
+                                                  style="color: rgb(255,0,0);"> </span><span
+                                                  style="color: rgb(0,0,0);">which is used in the
+                                                  configuration settings outlined in step 4.
+                                                  </span></p></div></div></li>
+                                </ol></li>
+                            <li><p class="auto-cursor-target"><span><span style="color: rgb(0,0,0);"
+                                            >Obtain EMR jar files and snippet script that should be
+                                            added to the bootstrap action to start the unravel_es
+                                            process:</span></span><span><span><span
+                                                style="color: rgb(0,0,0);"
+                                        ><br /></span></span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">
+#wget http://{UNRAVEL_HOST_IP}:3000/hh/unraveldata-clients/snippets/run-es.sh
+#wget http://{UNRAVEL_HOST_IP}:3000/hh/unravel-emr-sensor.jar
+</pre>
+                                    </div></div><div
+                                    class="confluence-information-macro confluence-information-macro-tip"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                                ><p><span style="color: rgb(0,0,0);">Ensure that
+                                                  <code>unravel-emr-sensor.jar</code></span><span
+                                                style="color: rgb(0,0,0);"> is deployed on the
+                                                Qubole nodes via the bootstrap action. Preferably,
+                                                  deploy <span style="color: rgb(0,0,0);"
+                                                  ><code>unravel-emr-sensor.jar</code></span></span>
+                                            <span style="color: rgb(0,0,0);">at the same path
+                                                  of <span style="color: rgb(0,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"><span
+                                                  style="color: rgb(255,0,0);"
+                                                  ><code>PATH_TO_SENSOR_JARS</code></span></span></span></span></span><span
+                                                style="color: rgb(204,0,0);"> </span><span
+                                                style="color: rgb(0,0,0);">as used
+                                        above.</span></p></div></div></li>
+                            <li><p class="auto-cursor-target">Edit <code>run-es.sh</code> snippet
+                                    script to customize following two parameters to fit into your
+                                    Qubole Spark environment:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># Replace following two parameters into your Qubole Spark environment #
+UNRAVEL_HOST={UNRAVEL_HOST_IP}
+UNRAVEL_EMR_SENSOR_JAR={PATH_TO_SENSOR_JARS}</pre>
+                                    </div></div><p class="auto-cursor-target"
+                                ><em><br /></em></p></li>
+                            <li><p class="auto-cursor-target"><span><span style="color: rgb(0,0,0);"
+                                            >Spark configuration can be provided in the </span><span
+                                            style="color: rgb(0,0,0);">Qubole console</span><span
+                                            style="color: rgb(0,0,0);"> at bootstrap or directly
+                                            inside </span><span style="color: rgb(0,0,0);"><span
+                                                style="color: rgb(0,0,0);"
+                                                  ><code>spark-defaults.conf</code></span></span><span
+                                            style="color: rgb(0,0,0);"> configuration file, if the
+                                            cluster is already started. </span></span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">spark.unravel.server.hostport {UNRAVEL_HOST_IP}:4043
+spark.driver.extraJavaOptions -javaagent:{PATH_TO_SENSOR_JARS}/btrace-agent.jar=bootClassPath={PATH_TO_SENSOR_JARS}/unravel-boot.jar,systemClassPath=&lt;PATH_TO_SENSOR_JARS&gt;/unravel-sys.jar,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1
+spark.executor.extraJavaOptions -javaagent:{PATH_TO_SENSOR_JARS}/btrace-agent.jar=bootClassPath={PATH_TO_SENSOR_JARS}/unravel-boot.jar,systemClassPath={PATH_TO_SENSOR_JARS}/unravel-sys.jar,script=ExecutorProbe.class -Dcom.sun.btrace.FileClient.flush=-1</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Edit <code>zeppelin-env.sh</code> by
+                                    appending the following values to
+                                        <code>ZEPPELIN_JAVA_OPTS</code> as follows:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">export ZEPPELIN_JAVA_OPTS=&quot;-Dcom.sun.btrace.FileClient.flush=-1 -javaagent:{PATH_TO_SENSOR_JARS}/btrace-agent.jar=bootClassPath={PATH_TO_SENSOR_JARS}/unravel-boot.jar,systemClassPath={PATH_TO_SENSOR_JARS}/unravel-sys.jar,script=DriverProbe.class:SQLProbe.class&quot;</pre>
+                                    </div></div><p class="auto-cursor-target"
+                                    ><em><br /></em></p><div
+                                    class="confluence-information-macro confluence-information-macro-tip"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                            ><p>The Zeppelin configuration is located at
+                                                <code>/usr/lib/zeppelin/conf/zeppelin-env.sh</code>.</p></div></div></li>
+                        </ol><p><br /></p><h1
+                            id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-AppendixAppendix"
+                                ><span class="confluence-anchor-link"
+                                id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-Appendix"
+                            ></span>Appendix</h1><h2
+                            id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-ApplicationLoadingModesforSparkApplications:OPS,DEV,andBATCH"
+                                ><strong>Application Loading Modes for Spark Applications: OPS, DEV,
+                                and BATCH</strong></h2><p>There are three modes in which Spark
+                            applications can be loaded into Unravel Web UI:</p><ul>
+                            <li>OPS mode shows applications in the UI after the application is
+                                done.</li>
+                            <li>DEV mode shows applications in the UI as soon as the first job of
+                                the Spark application completes.</li>
+                            <li>BATCH mode loads applications for which the sensor was not enabled
+                                at the time the application has been run.  <span><span
+                                    > </span></span></li>
+                        </ul><p>You can specify the application load mode for the bootstrap script
+                            by setting <code>SPARK_APP_LOAD_MODE</code> to <code>OPS</code> or
+                                <code>DEV</code>. By default, if not explicitly specified,
+                                <code>SPARK_APP_LOAD_MODE</code> is <code>OPS</code>. All three
+                            modes can coexist in the same Unravel Server. For example, all Spark
+                            applications from Qubole cluster A can be loaded in OPS mode, all Spark
+                            applications from Qubole cluster B can be loaded in DEV mode, and all
+                            Spark applications from Qubole cluster C can be loaded in BATCH
+                            mode.</p><h2
+                            id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-WhentoUseWhichMode"
+                                ><strong>When to Use Which Mode</strong></h2><ul>
+                            <li><p>Unravel recommends using OPS mode as the cluster-side default for
+                                    all Qubole clusters. The OPS mode has been rigorously
+                                    benchmarked to have less than 1.3% CPU and memory overhead. Both
+                                    the OPS and DEV modes use the Unravel Spark sensor, which is
+                                    enabled via modifications to
+                                            <span><code>spark.driver.extraJavaOptions</code>.</span>
+                                    The key difference is that OPS mode sets
+                                            <code><span>-Dcom.unraveldata.spark.sensor.disableLiveUpdates=true</span></code>
+                                    while DEV mode sets<span><code>
+                                            -Dcom.unraveldata.spark.sensor.disableLiveUpdates=false</code>
+                                        (false is the default).<br /></span></p></li>
+                        </ul><ul>
+                            <li><p>DEV mode is useful during Spark application development. This
+                                    mode shows a Spark application as soon as the first Spark job of
+                                    the application finishes. For long running applications, this
+                                    functionality is useful, as the application is shown in the UI
+                                    while the application is running. In addition, DEV mode shows
+                                    applications even when the Spark event log is not being
+                                    persisted to HDFS or S3. This is an advantage in situations like
+                                    Spark on Mesos.</p></li>
+                        </ul><ul>
+                            <li><p>In a Qubole cluster that is using OPS mode as the default, DEV
+                                    mode can be obtained for individual Spark applications by
+                                    overriding <span><code>spark.driver.extraJavaOptions</code> to
+                                        include
+                                            <code>-Dcom.unraveldata.spark.sensor.disableLiveUpdates=false</code>.</span></p></li>
+                        </ul><ul>
+                            <li><p>BATCH mode is always on and does not interfere with application
+                                    performance in any way since the loading is entirely outside the
+                                    application execution path. For details see the next
+                                    section.</p></li>
+                        </ul><p><br /></p><h2
+                            id="Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-LoadingApplicationsinBatchMode"
+                                ><strong>Loading Applications in Batch Mode</strong></h2><p>In order
+                            to load Spark apps in BATCH mode, Unravel Server must pull the Spark
+                            event log file either from S3 or from HDFS. The data collected in the UI
+                            is less detailed than when  Unravel Sensor is enabled (for instance,
+                            detailed resource usage metrics are unavailable). The BATCH mode of
+                            operation is helpful to load all of the applications that have been run
+                            in the past, before Unravel Sensor was installed. To enable the batch
+                            mode, add the following property to
+                                <code>/usr/local/unravel/etc/unravel.properties</code> and restart
+                            the Spark worker daemon(s) as listed earlier:</p><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.spark.eventlog.location=hdfs://NAMENODE_IP_PORT/user/spark/applicationHistory/</pre>
+                            </div></div><p><br /></p><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><p class="title">Note:</p><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Currently,
+                                    only one event log location is supported.</p></div></div><p><em
+                                class="auto-cursor-target"><br class="auto-cursor-target"
+                             /></em></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52567665.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52567668.png"
+                                >worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52620090.png">image2017-6-2_19-21-20.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52620138.png">hadoop_cluster_settings1.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52620160.png">hadoop_cluster_settings2.png</a>
+                            (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

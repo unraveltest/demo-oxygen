@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="Optimizing-the-Performance-of-Spark-Applications_52494973">
+   <title>Optimizing the Performance of Spark Applications </title>
+   <conbody>
+      <p>Unravel Web UI makes it easy for you to identify underperforming Spark apps: click <b>Operations</b> |
+            <b>Dashboard</b>, and scroll down to <b>INEFFICIENT APPLICATIONS</b>.</p>
+      <p>The following case illustrates the performance of a Spark app before and after tuning it based on Unravel's
+         performance analysis:</p>
+      <section>
+         <title>
+            <ph>Before Tuning</ph>
+         </title>
+         <p>
+            <ph>Before tuning, Unravel Web UI indicated that this app had a running duration of 34 min 11sec:</ph>
+         </p>
+         <p>
+            <ph>
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                  <image href="media/52567511.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </ph>
+         </p>
+         <p>In addition, Unravel Web UI captured details as shown in the following events:</p>
+         <ul>
+
+            <li>
+               <p>
+                  <ph>LOW UTILIZATION OF MEMORY RESOURCES</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>LOW UTILIZATION OF SPARK STORAGE MEMORY</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>CONTENTION FOR CPU RESOURCES</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>OPPORTUNITY FOR RDD CACHING</ph>
+               </p>
+               <ul>
+
+                  <li>
+                     <p>
+                        <ph>Save up to 9 minutes by caching at </ph>
+                        <ph>PetFoodAnalysisCaching.scala:129, </ph>
+                        <ph>with StorageLevel.MEMORY_AND_DISK_SER</ph>
+                     </p>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li>
+               <p>
+                  <ph>TOO FEW PARTITIONS W.R.T. AVAILABLE PARALLELISM</ph>
+               </p>
+               <ul>
+
+                  <li>
+                     <p>
+                        <ph>Change executor instances from 2 to 127, partitions from 2 to 289, adjust driver memory (to </ph>
+                        <ph>1161908224)</ph>
+                        <ph> and yarn overhead (to 819 MB).</ph>
+                     </p>
+                  </li>
+
+               </ul>
+            </li>
+
+         </ul>
+         <p> </p>
+      </section>
+      <section>
+         <title>After Tuning</title>
+         <p>
+            <ph>After tuning, <ph>Unravel Web UI indicates that this app now has a running duration of <ph>1min
+                     19sec</ph>:</ph>
+            </ph>
+         </p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/52495353.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p/>
+         <ul>
+
+            <li>
+               <p>
+                  <ph>Unravel Web UI displays these events:</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>LOW UTILIZATION OF MEMORY RESOURCES</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>LOW UTILIZATION OF SPARK STORAGE MEMORY</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>LARGE IDLE TIME FOR EXECUTORS</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>TOO FEW PARTITIONS W.R.T. AVAILABLE PARALLELISM</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>Change executor instances from 127 to 138</ph>
+               </p>
+            </li>
+
+         </ul>
+      </section>
+   </conbody>
+</concept>

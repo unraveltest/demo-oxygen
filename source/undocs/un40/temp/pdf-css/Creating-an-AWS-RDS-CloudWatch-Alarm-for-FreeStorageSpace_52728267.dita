@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="task:1;3:147">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="title:1;4:11">
+                        Creating an AWS RDS CloudWatch Alarm for
+                            FreeStorageSpace 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="taskbody:1;8:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="context:1;9:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ol:1;13:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:1;15:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:1;17:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="xref:1;18:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:2;23:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:2;25:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="xref:2;26:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:3;31:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:3;33:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="xref:3;34:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="p:1;46:13">This guide is to configure an AWS RDS CloudWatch Alarm for Disk
+                                <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="i:1;47:36">FreeStorageSpace</i> Metrics as part of RDS monitoring:</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ol:2;48:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:4;50:17">Go to <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:4;50:27">
+                  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:1;51:22">AWS Cloud Watch</b>
+               </ph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:5;55:17">Select on the left-hand corner tab for "<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:2;55:60">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:5;56:23">Alarms"</ph>
+               </b>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:6;60:17">Click on "<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:3;60:30">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:6;61:23">Create
+                                Alarm</ph>
+               </b>"</li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:7;65:17">On the right-hand section under "<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:4;65:53">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:7;66:23">RDS
+                                        Metrics</ph>
+               </b>" and click on "<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:5;68:39">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:8;69:23">Per-Database Metrics</ph>
+               </b>"</li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:8;72:17">Under the column DBInstanceIdentifier, <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="i:2;72:59">select the database</i> you wish to monitor
+                                for  "<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:6;73:42">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:9;74:23">FreeStorageSpace</ph>
+               </b>" and click "<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:10;75:37">
+                  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:7;76:22">Next</b>
+               </ph>" when you are
+                                    done
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:11;79:99">
+                  <image href="media/52729341.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="image:1;80:93"/>
+               </ph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:9;84:17">In "<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:8;84:24">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:12;85:23">Alarm
+                                Threshold</ph>
+               </b>" panel, please add and complete following:<ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ol:3;87:67">
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:10;89:23">"<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:9;89:27">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:13;90:29">Name</ph>
+                     </b>" -
+                                        for this Database Metrics (e.g. RDS_FreeStorageSpace_for_MySQL-A)</li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:11;94:23">"<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:10;94:27">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:14;95:29">Description</ph>
+                     </b>" - describe what the above database metrics
+                                        name you entered (e.g. Disk space monitor of RDS MySQL-A)</li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:12;99:23">
+                     <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="p:2;100:58">Add free storage of 20% left to alert contact
+                                            under "<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:15;101:56">
+                           <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:11;102:31">Whenever
+                                                    FreeStorageSpace</b>
+                        </ph>" is &lt;=  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:12;104:45">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:16;105:32">2</ph>
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:17;106:32">0</ph>
+                        </b>
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:13;108:28">
+                           <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:14;109:31">
+                              <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:18;110:36"/>
+                           </b>
+                        </b>
+                     </p>
+                     <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:19;114:120"/>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="p:3;115:25">I have
+                                                    suggested adding 20% of free storage space left, however, you can
+                                                    tune this to be lower.</p>
+                  </li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:13;120:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:20;121:26">Add 10  for "</ph>
+                     <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:15;122:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:21;123:29">10</ph>
+                     </b>
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:22;125:26">" </ph>
+                     <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:16;126:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:23;127:29">consecutive</ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:24;128:29">
+                                            period(s)</ph>
+                     </b>
+                     <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:17;131:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:25;132:29">
+                           <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:26;133:111">
+                              <image href="media/52729864.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="image:2;134:105"/>
+                           </ph>
+                        </ph>
+                     </b>
+                  </li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:14;140:23">Under <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:18;140:32">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:27;141:29">Actions</ph>
+                     </b>, add
+                                            "<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:28;143:50">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:19;144:28">Send notifications
+                                                to</b>
+                     </ph>", which is your SNS topic:
+                     <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="i:3;147:25">Note: this
+                                            sns topic should already be setup before you add it.</i>
+                     <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:29;149:105">
+                        <image href="media/52730065.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="image:3;150:99"/>
+                     </ph>
+                  </li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:15;154:23">Click "<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:30;154:34">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:20;155:28">Create
+                                            Alarm</b>
+                     </ph>" to create the Alarm metrics for RDS monitoring
+                                        on Storage Space</li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:16;160:23">Now, you will see in "<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:31;160:49">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:21;161:28">Alarms</b>
+                     </ph>" the alarm you just created, but do
+                                        not be surprise when you see "<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:32;163:75">INSUFFICIENT DATA</ph>" and it is ok since the alarm is not
+                                        triggered, yet.  Once, it is triggered, an <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:33;164:88">ALARM</ph> appears under "<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:22;164:117">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:34;165:29">Alarms</ph>
+                     </b>" tab.  In addition, email alerts will be
+                                        distributed as defined in the SNS topic.</li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="li:17;169:23">Click "<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="ph:35;169:34">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="b:23;170:28">Create
+                                            Alarm</b>
+                     </ph>" to create the Alarm metrics for RDS monitoring
+                                        on Storage Space</li>
+                                
+               </ol>
+            </li>
+                        
+         </ol>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="p:4;183:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="image:4;187:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="alt:1;188:19"/>
+         </image>
+                            
+         <xref href="media/52729341.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="xref:4;191:56"><?ditaot usertext?>AWS_CW_RDS_FreeStorageSpace.png</xref> (image/png) 
+                            <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="image:5;192:90">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="alt:2;193:19"/>
+         </image>
+                            
+         <xref href="media/52730717.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="xref:5;196:56"><?ditaot usertext?>AWS_CW_RDS_Disk_Used_80.png</xref> (image/png) 
+                            <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="image:6;197:90">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="alt:3;198:19"/>
+         </image>
+                            
+         <xref href="media/52730065.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="xref:6;201:56"><?ditaot usertext?>AWS_CW_RDS_Notify.png</xref> (image/png) 
+                            <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="image:7;202:90">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="alt:4;203:19"/>
+         </image>
+                            
+         <xref href="media/52729864.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita" xtrc="xref:7;206:56"><?ditaot usertext?>AWS_CW_RDS_Disk_Used_80.png</xref> (image/png) 
+                        
+                    
+                
+            </context>
+   </taskbody>
+</task>

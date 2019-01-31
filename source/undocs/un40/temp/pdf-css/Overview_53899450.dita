@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Overview_53899450" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="concept:1;4:50">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="title:1;5:11">Overview </title>
+   <conbody class="- topic/body  concept/conbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="conbody:1;6:13">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ol:1;7:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="li:1;9:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:1;10:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="xref:1;11:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="li:2;15:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:2;16:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="xref:2;17:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+      </ol>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="section:1;22:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="title:2;23:17">Where Does Unravel Server Reside?</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:1;24:13">Unravel Server is positioned in a Hadoop cluster on its own Gateway/Edge node to communicate with HDFS and
+            TaskTracker nodes, and to enable client access to Unravel Web UI. A basic deployment takes two hours or
+            less.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:2;27:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:3;28:17">
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:4;29:99">
+                  <image href="media/53899460.png" outputclass="confluence-embedded-image confluence-content-image-border" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="image:1;31:95"/>
+               </ph>
+            </ph>
+            
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="i:1;35:16">The Unravel Server on a Gateway/Edge Node in a Hadoop Cluster</i>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="section:2;38:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="title:3;39:17">What Does a Basic Deployment Provide?</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:3;40:13">Once deployed, Unravel Server begins to collect information <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:5;40:77">from relevant services like YARN, Hive,
+               Oozie, Spark, </ph>Pig, and MapReduce jobs via HDFS, analyze this information, and store its analyses in
+            its database. Unravel Web UI displays information from the database, as well as real-time event streams it
+            receives directly from Unravel Server. The figure below illustrates the flow of information from the Hadoop
+            cluster, to Unravel Server, to Unravel Web UI.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:4;45:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:6;46:17">
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:7;47:99">
+                  <image href="media/53899457.png" outputclass="confluence-embedded-image confluence-content-image-border" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="image:2;49:94">
+                     <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="alt:1;50:27">Information Flow from the Hadoop Cluster, to Unravel Server, to Unravel Web UI</alt>
+                  </image>
+               </ph>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:5;55:13">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="i:2;56:16">Information Flow from the Hadoop Cluster to Unravel Server to Unravel Web UI</i>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:6;58:14"/>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="section:3;60:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="title:4;61:17">What Are Advanced Deployment Options?</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:7;62:13">After basic deployment, advanced setup steps are optional, but may include:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ul:1;63:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="li:3;65:17">Deploying Unravel Sensors for Hive and Spark, which can push additional metadata to Unravel Server.
+               <ph outputclass="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="ph:8;66:120">
+                  <image href="media/53899454.png" outputclass="confluence-embedded-image confluence-content-image-border image-center" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="image:3;68:108"/>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="li:4;72:17">In YARN, enabling log aggregation.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="li:5;74:17">In Oozie, pushing information via the Oozie REST API.</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:8;77:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="p:9;78:14"/>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="section:4;80:16">
+         <title outputclass="pageSectionTitle" class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="title:5;81:48">Attachments:</title>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="image:4;82:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="alt:2;83:19"/>
+         </image>
+         <xref href="media/53899454.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="xref:3;85:56"><?ditaot usertext?>overview3.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="image:5;86:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="alt:3;87:19"/>
+         </image>
+         <xref href="media/53899457.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="xref:4;89:56"><?ditaot usertext?>overview2.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="image:6;90:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="alt:4;91:19"/>
+         </image>
+         <xref href="media/53899460.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="xref:5;93:56"><?ditaot usertext?>overview1.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="image:7;94:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="alt:5;95:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Overview_53899450.dita" xtrc="xref:6;97:52"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref>
+      </section>
+   </conbody>
+</concept>

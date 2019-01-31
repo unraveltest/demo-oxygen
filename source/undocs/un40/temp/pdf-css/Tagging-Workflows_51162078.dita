@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Tagging-Workflows_51162078" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="task:1;4:56">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="title:1;5:11">Tagging Workflows </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:3;23:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:3;24:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:4;28:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:4;29:20">
+                  <xref href="Workflows_53900905.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:4;30:56" type="topic"><?ditaot usertext?>Workflows</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:1;35:13">About Unravel Tags</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:2;36:13">You can add two Unravel tags (key-value pairs) to mark queries and jobs that belong to a particular
+            workflow:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ul:1;38:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:5;40:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:1;41:24">unravel.workflow.name</codeph>: a string that represents the name of the workflow. Recommended
+               format is <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:2;42:34">
+                  <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="i:1;43:22">TenantName</i>-<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="i:2;43:40">ProjectName</i>-<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="i:3;43:59">WorkflowName</i>
+               </codeph>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:6;46:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:3;47:52">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:3;48:27">unravel.workflow.utctimestamp</codeph>: a timestamp in <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="i:4;48:85">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:4;49:30">yyyyMMddThhmmssZ</codeph>
+                  </i> format that represents the logical time of a run of the workflow in UTC/ISO format. In UNIX/LINUX
+                  bash, you can get a timestamp in UTC format by running the command "<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:5;51:95">$(date -u
+                     '+%Y%m%dT%H%M%SZ')</codeph>".</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:5;53:114"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:4;54:19">Do not put quotes ("") or blank spaces in/around the tag keys or values. For example:</p>
+               <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ul:2;55:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:7;57:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:6;58:30">SET unravel.workflow.name="ETL-Workflow";</codeph> [Wrong usage]</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:8;60:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:7;61:30">SET unravel.workflow.name=ETL-Workflow;</codeph> [Correct usage]</li>
+
+               </ul>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:5;67:13">Please note the following:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ul:3;68:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:9;70:17">Different runs of the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="b:1;70:42">same </b>workflow have the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="b:2;70:72">same</b> value for
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:8;71:27">unravel.workflow.name</codeph>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:10;73:17">Different runs of the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="b:3;73:42">same</b> workflow have <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="b:4;73:68">different </b>values for
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:9;74:27">unravel.workflow.utctimestamp</codeph>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:11;76:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:6;77:52">Different workflows have different values for
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:10;78:30">unravel.workflow.name</codeph>.</p>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:7;82:13">The example below shows a Hive query that is marked as part of the
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:11;83:24">Financial-Tenant-ETL-Workflow</codeph> workflow that was run on February 1, 2016:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:1;84:57">SET unravel.workflow.name=Financial-Tenant-ETL-Workflow;
+SET unravel.workflow.utctimestamp=20160201T000000Z;
+
+SELECT foo FROM table WHERE … [Rest of Hive Query text goes here]</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:8;88:13">Easy Recipes for Tagging Workflows</p>
+         <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:9;89:46">First, export the workflow name and UTC timestamp from your top-level
+            script that schedules each run of the workflow:</p>
+         <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:10;91:46">Export the workflow name:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:2;92:57">export WORKFLOW_NAME=Financial-Tenant-ETL-Workflow</codeblock>
+         <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:11;93:46">Export the UTC
+            timestamp for this run of the workflow. Here, we use bash's <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:12;94:81">date</codeph> command:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:3;95:57">export UTC_TIME_STAMP=$(date -u '+%Y%m%dT%H%M%SZ')</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:12;96:13">Then follow the appropriate instructions below:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ul:4;97:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:12;99:17">
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagHive" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:5;100:82"><?ditaot usertext?>Tagging a Hive query</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:13;103:17">
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagSqoop" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:6;104:83"><?ditaot usertext?>Tagging a Sqoop job</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:14;107:17">
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagMapReduce" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:7;108:87"><?ditaot usertext?>Tagging a direct MapReduce
+                  job</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:15;112:17">
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagSpark" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:8;113:83"><?ditaot usertext?>Tagging a Spark job</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:16;116:17">
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagPig" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:9;117:81"><?ditaot usertext?>Tagging a Pig job</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="li:17;120:17">
+               <xref href="#Tagging-Workflows_51162078/TaggingWorkflows-TagImpala" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:10;121:84"><?ditaot usertext?>Tagging a Impala query</xref>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:13;125:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:14;126:13">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:6;127:55"/>How to Tag a Hive Query Using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:13;127:93">SET</codeph> Commands in
+            Hive</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:4;129:57">hive -f hive/simple_wf.hql </codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:15;130:13">In <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:14;130:24">hive/simple_wf.hql</codeph>:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:5;131:57">SET unravel.workflow.name=${env:WORKFLOW_NAME};
+SET unravel.workflow.utctimestamp=${env:UTC_TIME_STAMP};
+select count(1) from lineitem;</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:16;134:13">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:7;135:55"/>How to Tag a Sqoop Job Using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:15;135:92">–D</codeph> Command Line
+            Parameters</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:6;137:57">sqoop export \
+ *-D"unravel.workflow.name=$WORKFLOW_NAME" -D"unravel.workflow.utctimestamp=$UTC_TIME_STAMP" * \
+ --connect jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod --table settings -m 1 \
+ --export-dir /tmp/sqoop_test --username unravel --verbose --password foobar</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:17;141:13">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:8;142:55"/>How to Tag a Direct MapReduce Job Using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:16;142:103">–D</codeph>
+            Command Line Parameters</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:7;144:57">hadoop jar libs/ooziemr-1.0.jar com.unraveldata.mr.apps.Driver \
+*-D"unravel.workflow.name=$WORKFLOW_NAME" -D"unravel.workflow.utctimestamp=$UTC_TIME_STAMP" * \
+-p /wordcount.properties -input /tmp/soumitra/data/small -output /tmp/soumitra/outsmoke</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:18;147:13">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:9;148:55"/>How to Tag a Spark Job Using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:17;148:92">--conf</codeph> Command Line
+            Parameters</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:10;150:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:19;151:13">For Spark jobs, you must prefix the Unravel tags with "<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:18;151:76">spark.</codeph>". For example, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:19;151:115">
+               <xref href="http://unravel.workflow.name" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:11;153:20"><?ditaot usertext?>unravel.workflow.name</xref>
+            </codeph> becomes <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:20;154:39">
+               <xref href="http://spark.unravel.workflow.name" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:12;156:47"><?ditaot usertext?>spark.unravel.workflow.name</xref>
+            </codeph>.</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:8;158:57">spark-submit \
+ *   --conf "spark.unravel.workflow.name=$WORKFLOW_NAME" *
+ *   --conf "spark.unravel.workflow.utctimestamp=$UTC_TIME_STAMP" *
+    --conf "spark.eventLog.enabled=true" \
+    --class org.apache.spark.examples.SparkPi \
+    --master yarn-cluster \
+    --deploy-mode cluster</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:20;165:13">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:11;166:55"/>How to Tag a Pig Job Using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:21;166:90">–param</codeph> and
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:22;167:24">SET</codeph> Commands</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:9;168:57">pig \
+*-param WORKFLOW_NAME=$WORKFLOW_NAME -param UTC_TIME_STAMP=$UTC_TIME_STAMP * \
+-x mapreduce -f pig/simple.pig</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:21;171:13"> In <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:23;171:25">pig/simple.pig</codeph>:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:10;172:57">SET unravel.workflow.name $WORKFLOW_NAME;
+SET unravel.workflow.utctimestamp $UTC_TIME_STAMP;
+
+lines = LOAD '/tmp/soumitra/data/small' using PigStorage('|') AS (line:chararray);
+words = FOREACH lines GENERATE FLATTEN(TOKENIZE(line)) as word;
+grouped = GROUP words BY word;
+wordcount = FOREACH grouped GENERATE group, COUNT(words);
+DUMP wordcount;</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:22;180:13">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:12;181:55"/>How to Tag a Impala Job Using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:24;181:93">–-query_options</codeph> and
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeph:25;182:24">SET</codeph> Command</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:23;183:13">User can set DEBUG_ACTION in Impala script to pass the workflow tags into impala queries:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:11;184:57">SET DEBUG_ACTION=|unravel.workflow.name::{$WORKFLOW_NAME}|unravel.workflow.utctimestamp::{$WORKFLOW_TIMESTAMP};</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:24;185:13">According to this CDH article: <xref href="https://www.cloudera.com/documentation/enterprise/5-14-x/topics/impala_query_options.html" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:13;188:17"><?ditaot usertext?>https://www.cloudera.com/documentation/enterprise/5-14-x/topics/impala_query_options.html</xref>, user
+            can pass in query options via --query_options i<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:13;189:64">n<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:14;189:69"> </ph>
+            </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:15;191:17">
+               <ph outputclass="keyword" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:16;192:42">CDH 5.14 / Impala 2.11</ph> and later:</ph>
+         </p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:12;194:57">impala-shell --query_option=DEBUG_ACTION=|unravel.workflow.name::{$WORKFLOW_NAME}|unravel.workflow.utctimestamp::{$WORKFLOW_TIMESTAMP}| -f impala.script</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:25;195:13">Note: the tagging option should be turned on for this tagging to work. ie, the followings need to be set in
+            unravel.properties:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="codeblock:13;197:57"># Tagging
+com.unraveldata.tagging.script.enabled=true
+com.unraveldata.app.tagging.script.path=/tmp/app_tag.py
+com.unraveldata.app.tagging.script.method.name=get_tags</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:26;201:13">Finding Workflows in Unravel Web UI</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:27;202:13">Once your tagged workflows have been run, go log into Unravel Web UI and select <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="b:5;202:96">Application</b> |
+               <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="b:6;203:19">Workflow</b> to start exploring Unravel's Workflow Management features, as illustrated in the
+            screenshot below. 
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="ph:17;205:96">
+               <image href="media/51192096.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="image:1;206:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="p:28;209:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="image:2;210:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="alt:1;211:19"/>
+         </image>
+         <xref href="media/51162082.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:14;213:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="image:3;214:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="alt:2;215:19"/>
+         </image>
+         <xref href="media/51192096.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Tagging-Workflows_51162078.dita" xtrc="xref:15;217:56"><?ditaot usertext?>worddav45f3dd6c1009f4ad8588eb86ede42f01.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

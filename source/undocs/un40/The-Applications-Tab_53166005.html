@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : The Applications Tab</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="User-Guide_50687944.html">User Guide</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">The Applications Tab </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <div class="panel" style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"><div
+                                class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Topics</b></div><div class="panelContent">
+                                <p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1548486429076 {padding: 0px;}
+div.rbtoc1548486429076 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1548486429076 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class="toc-macro rbtoc1548486429076">
+                                        <ul class="toc-indentation">
+                                            <li><a href="#TheApplicationsTab-FindingApplications">Finding
+                                                    Applications</a></li>
+                                            <li><a href="#TheApplicationsTab-Application-SpecificManagers"
+                                                    >Application-Specific Managers</a>
+                                                <ul class="toc-indentation">
+                                                    <li><a href="#TheApplicationsTab-SparkApplicationManager">Spark
+                                                            Application Manager</a>
+                                                        <ul class="toc-indentation">
+                                                            <li><a
+                                                            href="#TheApplicationsTab-KeyPerformanceIndicators(KPIs)"
+                                                            >Key Performance Indicators (KPIs)</a></li>
+                                                            <li><a href="#TheApplicationsTab-Sub-Tabs">Sub-Tabs</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#TheApplicationsTab-HiveApplicationManager">Hive
+                                                            Application Manager</a>
+                                                        <ul class="toc-indentation">
+                                                            <li><a
+                                                            href="#TheApplicationsTab-KeyPerformanceIndicators(KPIs).1"
+                                                            >Key Performance Indicators (KPIs)</a></li>
+                                                            <li><a href="#TheApplicationsTab-Sub-Tabs.1"
+                                                            >Sub-Tabs</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#TheApplicationsTab-MapReduceApplicationManager"
+                                                            >MapReduce Application Manager</a>
+                                                        <ul class="toc-indentation">
+                                                            <li><a href="#TheApplicationsTab-Sub-Tabs.2"
+                                                            >Sub-Tabs</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#TheApplicationsTab-FindingWorkflows">Finding Workflows</a>
+                                                <ul class="toc-indentation">
+                                                    <li><a href="#TheApplicationsTab-"></a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#TheApplicationsTab-WorkflowManager">Workflow Manager</a>
+                                                <ul class="toc-indentation">
+                                                    <li><a href="#TheApplicationsTab-KeyPerformanceIndicators(KPIs).2"
+                                                            >Key Performance Indicators (KPIs)</a></li>
+                                                    <li><a href="#TheApplicationsTab-Sub-Tabs.3">Sub-Tabs</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#TheApplicationsTab-EventsEvents">Events</a></li>
+                                            <li><a href="#TheApplicationsTab-ErrorView">Error View</a></li>
+                                        </ul>
+                                    </div></p>
+                            </div></div><p>The <strong>Applications</strong> tab is the main interface for finding your
+                            applications and analyzing their performance. Unravel supports both ad-hoc applications and
+                            repeated running workflows or data pipelines. Ad-hoc applications are generally Hive
+                            queries, MR jobs, Spark applications, Impala queries, and so on; these are generated by end
+                            user tools (such as BI tools like Tableau, Microstrategy etc.) or submitted via CLI.
+                            Repeated running workflows or data pipelines are created using cron or schedulers like
+                            Oozie, AirFlow or ETL tools like Informatica, Pentaho and others.</p><p><span
+                                class="confluence-embedded-file-wrapper"><img
+                                    class="confluence-embedded-image emoticon emoticon-light-on confluence-external-resource"
+                                    alt="(lightbulb)" src="images/icons/emoticons/lightbulb_on.png"
+                                    data-image-src="https://unraveldata.atlassian.net/wiki/s/842030753/6452/173d98b0845b7d808ff86f3be6e70c34a3469bbe/_/images/icons/emoticons/lightbulb_on.png"
+                                 /></span> The performance and reliability of an application depends on several factors
+                            such as quality of the code, types of joins used, configuration settings, data size,
+                            scheduler settings, contention with other applications, and so on. Therefore, it takes
+                            significant expertise and effort to get to the root cause of problems of an application.
+                            Unravel provides insights into an application. These insights are called <em>events</em>.
+                            For more information about events, see <em>Key Performance Indicators</em> within the
+                            appropriate application &quot;manager&quot; below.</p><h1
+                            id="TheApplicationsTab-FindingApplications">Finding Applications</h1><p>You can search on
+                            various dimensions (app type, status, queue, user, cluster, duration, and so on) to find
+                            your application(s).  Use the date pull-down menu to limit results to a specific time range.
+                            Search results are ordered by the most recent start time. To reorder the results by another
+                            property, click the appropriate header in the results table.</p><p><br /></p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="487"
+                                    width="840" src="media/53166127.png" data-image-src="media/53166127.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166127"
+                                    data-linked-resource-version="3" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_applications.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="9a3b6321-ce36-4ea4-8139-27f042886e0d" data-media-type="file"
+                                 /></span></p><p>You can also use the global search bar in the top banner to search by
+                            full job ID, user name, table name and cluster ID. </p><p><span
+                                class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image"
+                                    src="media/53166025.png" data-image-src="media/53166025.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166025"
+                                    data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_global_search.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="c24271bf-7492-464d-ab68-db366fb7c54b" data-media-type="file"
+                                 /></span></p><p><br /></p><p><img class="emoticon emoticon-light-on"
+                                src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" border="0" /> Search
+                            results list individual jobs, and job IDs. If the job is part of a Hive query, Pig script,
+                            and/or a workflow, then a link to that Hive query/Pig script/workflow page appears on the
+                            same line. To go to the job-specific page, click the job ID.  To go to the
+                            application-specific manager for a query/script/job/workflow, click the icon under its
+                                <strong>GoTo</strong> column as highlighted in the image below.</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="203"
+                                    width="839" src="media/53224524.png" data-image-src="media/53224524.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53224524"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui043goto.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="01a77ec9-b0d3-4080-8347-eeb2f52acb2b" data-media-type="file"
+                                 /></span></p><p><br /></p><h1 id="TheApplicationsTab-Application-SpecificManagers"
+                            >Application-Specific Managers</h1><h2 id="TheApplicationsTab-SparkApplicationManager">Spark
+                            Application Manager</h2><p>The Spark Application Manager provides a detailed view into the
+                            behavior of Spark applications. You can use this view to:</p><ul>
+                            <li>Resolve inefficiencies, bottlenecks, and reasons for failure within applications</li>
+                            <li>Optimize resource allocation for Spark executors</li>
+                            <li>Detect and fix poor partitioning</li>
+                            <li>Detect and fix inefficient and failed Spark apps</li>
+                            <li>Tune JVM settings for Spark drivers/executors</li>
+                        </ul><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="362"
+                                    width="840" src="media/53166028.png" data-image-src="media/53166028.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166028"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_spark_app_mgr.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="126bf2cf-9602-4de1-9b75-756c30f94828" data-media-type="file"
+                                 /></span></p><h3 id="TheApplicationsTab-KeyPerformanceIndicators(KPIs)">Key Performance
+                            Indicators (KPIs)</h3><p>The key performance indicators (KPIs) at the top provide the most
+                            important information about the Spark application. The Spark Application Manager displays
+                            the following KPIs:</p><ul>
+                            <li><strong>Events</strong>: The number of Unravel recommendations or insights for this
+                                query. To see details, click the <strong>Events</strong> icon as highlighted in the
+                                image below.<br /><p><span
+                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                            class="confluence-embedded-image confluence-content-image-border"
+                                            height="144" width="840" src="media/53546227.png"
+                                            data-image-src="media/53546227.png" data-unresolved-comment-count="0"
+                                            data-linked-resource-id="53546227" data-linked-resource-version="1"
+                                            data-linked-resource-type="attachment"
+                                            data-linked-resource-default-alias="gui053events.png"
+                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                            data-linked-resource-content-type="image/png"
+                                            data-linked-resource-container-id="53166005"
+                                            data-linked-resource-container-version="22"
+                                            data-media-id="cced92e0-88d1-48f4-9da1-fce48c4e3bab" data-media-type="file"
+                                         /></span></p><p>The performance and reliability of your Spark application
+                                    depends on several factors such as quality of the code, types of joins used,
+                                    configuration settings, data size, scheduler settings, contention with other
+                                    applications, and so on. Therefore, it takes significant expertise and effort to get
+                                    to the root cause of problems in a Spark application. Unravel Events are designed to
+                                    save you time and effort by automatically providing insights into the application.
+                                    These events capture reasons for failed and killed queries as well as provide
+                                    recommendations to improve application performance.</p><p><span
+                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                            class="confluence-embedded-image confluence-content-image-border"
+                                            height="362" width="840" src="media/53546255.png"
+                                            data-image-src="media/53546255.png" data-unresolved-comment-count="0"
+                                            data-linked-resource-id="53546255" data-linked-resource-version="1"
+                                            data-linked-resource-type="attachment"
+                                            data-linked-resource-default-alias="gui054.png"
+                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                            data-linked-resource-content-type="image/png"
+                                            data-linked-resource-container-id="53166005"
+                                            data-linked-resource-container-version="22"
+                                            data-media-id="3b6e033d-3881-407c-86d1-101502bc9f2d" data-media-type="file"
+                                         /></span></p><p><br /></p></li>
+                            <li><strong>Duration</strong>: Total time taken by the application to complete
+                                execution</li>
+                            <li><strong>Data I/O</strong>: Total data read and written by the application</li>
+                            <li><strong>Number of Stages</strong>: The number of stages that make up the Spark
+                                application and their status</li>
+                        </ul><h3 id="TheApplicationsTab-Sub-Tabs">Sub-Tabs</h3><p>The Spark Application Manager contains
+                            multiple sub-tabs, each of which is described below.</p><ul>
+                            <li><p><strong>Navigation</strong>: A table of the stages associated with this application.
+                                    To see details about a stage, click its row in the table. This displays the Spark
+                                    Stage view, as illustrated in the image below.  </p><p><span
+                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                            class="confluence-embedded-image confluence-content-image-border"
+                                            alt="Spark Stage View" height="407" width="840"
+                                            src="media/53251597.png" data-image-src="media/53251597.png"
+                                            data-unresolved-comment-count="0" data-linked-resource-id="53251597"
+                                            data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                            data-linked-resource-default-alias="gui137.png"
+                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                            data-linked-resource-content-type="image/png"
+                                            data-linked-resource-container-id="53166005"
+                                            data-linked-resource-container-version="22"
+                                            data-media-id="39d96c1b-b6ca-4898-b47a-b9d6b38212a9" data-media-type="file"
+                                            title="Spark Stage View" /></span></p><p>The Spark Stage view provides
+                                    detailed information about each Spark stage. It includes:</p><ul>
+                                    <li><strong>Graphs</strong>: General task/slot statistics of the stage</li>
+                                    <li><strong>Timeline</strong>: Timeline and histogram of task attempts, duration,
+                                        and bytes shuffled/spilled. <img class="emoticon emoticon-light-on"
+                                            title="(lightbulb)" src="images/icons/emoticons/lightbulb_on.png"
+                                            alt="(lightbulb)" border="0" /> This information is very useful for
+                                        identifying data skew.</li>
+                                    <li><p class="auto-cursor-target"><strong>Configuration</strong>: Key/value pairs of
+                                            configuration settings for the application</p><div id="expander-608079738"
+                                            class="expand-container"><div id="expander-control-608079738"
+                                                class="expand-control"><span class="expand-control-icon"><img
+                                                        style="vertical-align:middle;" class="expand-control-image"
+                                                        src="images/icons/grey_arrow_down.png" /></span>
+                                                <span class="expand-control-text">Click here to see sample
+                                                    screenshots...</span></div>
+                                            <div id="expander-content-608079738" class="expand-content">
+                                                <p><span
+                                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                                                        <img class="confluence-embedded-image" height="400" width="830"
+                                                            src="media/53166031.png"
+                                                            data-image-src="media/53166031.png"
+                                                            data-unresolved-comment-count="0"
+                                                            data-linked-resource-id="53166031"
+                                                            data-linked-resource-version="3"
+                                                            data-linked-resource-type="attachment"
+                                                            data-linked-resource-default-alias="gui_spark_app_mgr2.png"
+                                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                                            data-linked-resource-content-type="image/png"
+                                                            data-linked-resource-container-id="53166005"
+                                                            data-linked-resource-container-version="22"
+                                                            data-media-id="a32d80aa-1a70-4ea2-b1f3-1cd67c9cf138"
+                                                            data-media-type="file" /></span></p>
+                                                <p><span class="confluence-embedded-file-wrapper"><img
+                                                            class="confluence-embedded-image" src="media/53166046.png"
+                                                            data-image-src="media/53166046.png"
+                                                            data-unresolved-comment-count="0"
+                                                            data-linked-resource-id="53166046"
+                                                            data-linked-resource-version="2"
+                                                            data-linked-resource-type="attachment"
+                                                            data-linked-resource-default-alias="gui_spark_app_mgr3.png"
+                                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                                            data-linked-resource-content-type="image/png"
+                                                            data-linked-resource-container-id="53166005"
+                                                            data-linked-resource-container-version="22"
+                                                            data-media-id="b303c0de-bb87-419a-802f-dd5b4fdf62cf"
+                                                            data-media-type="file" /></span></p>
+                                            </div>
+                                        </div><p><br /></p></li>
+                                </ul></li>
+                            <li><p><strong>Execution Graph</strong>: Displays both the stage view and RDD view
+                                    associated with this application.</p></li>
+                            <li><p><strong>Gantt Chart</strong>: A timeline of application stages</p></li>
+                            <li><p><strong>Query Plan</strong>: The logical plan of the SparkSQL query</p></li>
+                            <li><p><strong>Errors</strong>: Exceptions, errors, and warnings associated with this
+                                    application</p></li>
+                            <li><p><strong>Logs</strong>: Logs for the driver and executors of this application, and a
+                                    skyline of task attempts within the stage</p></li>
+                            <li><p><strong>Program</strong>: Source code of a general purpose Spark application, or the
+                                    SQL query for a SparkSQL query</p></li>
+                            <li><p><strong>Task Attempts</strong>: Statistics about the task attempts that are executed
+                                    as part of the current application</p></li>
+                            <li><p><strong>Containers</strong>: Utilization of slot containers over time</p></li>
+                            <li><p><strong>Vcores</strong>: Utilization of slot vcores over time</p></li>
+                            <li><p><strong>Memory</strong>: Utilization of slot memory over time</p></li>
+                            <li><p><strong>Resource</strong>: Graphs of JVM-level metrics at the executor and driver
+                                    level. To show the graph for a specific metric, select that metric from the
+                                        <strong>METRIC</strong> pull-down menu and click <strong>Get Data</strong>. For
+                                    a list of resource-level metrics, see <a href="Resource-Metrics_53232237.html"
+                                        data-linked-resource-id="53232237" data-linked-resource-version="2"
+                                        data-linked-resource-type="page">Resource Metrics</a>. <img
+                                        class="emoticon emoticon-light-on" title="(lightbulb)"
+                                        src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" border="0" />
+                                    These graphs are very useful for identifying critical resources that caused a
+                                    performance degradation.</p></li>
+                        </ul><h2 id="TheApplicationsTab-HiveApplicationManager">Hive Application Manager</h2><p>The Hive
+                            Application Manager provides a detailed view into the behavior of Hive queries. You can use
+                            this view to resolve inefficiencies, bottlenecks and reasons for failure within
+                            applications. Typical users are Hadoop DBAs or application owners (engineers, BI team,
+                            analysts). The Hive Application Manager uses Unravel's Intelligence Engine to automatically
+                            identify certain inefficiencies with the application and to provide recommendations on how
+                            to improve efficiency.</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="362"
+                                    width="840" src="media/53166121.png" data-image-src="media/53166121.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166121"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_hive_app_mgr1.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="72215383-997d-462a-8ff4-39336842406d" data-media-type="file"
+                                 /></span></p>
+                        <p><br /></p><h3 id="TheApplicationsTab-KeyPerformanceIndicators(KPIs).1">Key Performance
+                            Indicators (KPIs)</h3><p>The key performance indicators (KPIs) at the top provide the most
+                            important information about the Hive query. The Hive Application Manager displays the
+                            following KPIs:</p><ul>
+                            <li><strong>Events</strong>: The number of Unravel recommendations or insights for this
+                                query. To see details, click the <strong>Events</strong> icon as highlighted in the
+                                image below.<br /><p><span
+                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                            class="confluence-embedded-image confluence-content-image-border"
+                                            height="144" width="840" src="media/53224722.png"
+                                            data-image-src="media/53224722.png" data-unresolved-comment-count="0"
+                                            data-linked-resource-id="53224722" data-linked-resource-version="1"
+                                            data-linked-resource-type="attachment"
+                                            data-linked-resource-default-alias="gui075events.png"
+                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                            data-linked-resource-content-type="image/png"
+                                            data-linked-resource-container-id="53166005"
+                                            data-linked-resource-container-version="22"
+                                            data-media-id="1cc4b869-8753-40b5-bd74-19cfb45faec6" data-media-type="file"
+                                         /></span></p><p>The performance and reliability of your Hive query depends on
+                                    several factors such as quality of the code, types of joins used, configuration
+                                    settings, data size, scheduler settings, contention with other applications, and so
+                                    on. Therefore, it takes significant expertise and effort to get to the root cause of
+                                    problems in a Hive query. Unravel Events are designed to save you time and effort by
+                                    automatically providing insights into the application. These events capture reasons
+                                    for failed and killed queries as well as provide recommendations to improve
+                                    application performance.</p><p><span
+                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                            class="confluence-embedded-image confluence-content-image-border"
+                                            height="359" width="840" src="media/53224679.png"
+                                            data-image-src="media/53224679.png" data-unresolved-comment-count="0"
+                                            data-linked-resource-id="53224679" data-linked-resource-version="1"
+                                            data-linked-resource-type="attachment"
+                                            data-linked-resource-default-alias="gui076.png"
+                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                            data-linked-resource-content-type="image/png"
+                                            data-linked-resource-container-id="53166005"
+                                            data-linked-resource-container-version="22"
+                                            data-media-id="8427f2bd-80ad-4d82-b1ed-3705dc0e2f0b" data-media-type="file"
+                                         /></span></p></li>
+                            <li><strong>Duration</strong>: Total time taken by the application to complete
+                                execution</li>
+                            <li><strong>Data I/O</strong>: Total data read and written by the application</li>
+                            <li><strong>Number of YARN apps</strong>: The number of YARN apps that make up the Hive
+                                query</li>
+                        </ul><p> </p><h3 id="TheApplicationsTab-Sub-Tabs.1">Sub-Tabs</h3><p>The Hive Application Manager
+                            contains multiple sub-tabs, each of which is described below.</p><ul>
+                            <li><p><strong>Navigation</strong>: Provides an easy way to understand the breakdown of the
+                                    application and drill down into MapReduce jobs that make up the application. It
+                                    includes information about MapReduce jobs such as duration, I/O, resources, events,
+                                    job ID, and job status. When you select a MapReduce job, its details are shown in a
+                                    pane below it. This detailed view includes the MapReduce timeline, MapReduce task
+                                    attempts, and slot usage graph.</p></li>
+                            <li><p><strong>Execution Graph</strong>: Provides insights into the execution of the
+                                    application. It shows detailed information about MapReduce stages and their
+                                    relationship with one another. The execution view is split into two areas; the
+                                    execution plan and the expanded info area. <img class="emoticon emoticon-light-on"
+                                        title="(lightbulb)" src="images/icons/emoticons/lightbulb_on.png"
+                                        alt="(lightbulb)" border="0" /> This view helps identify bottlenecks and
+                                    inefficiencies.</p></li>
+                            <li><p><strong>Gantt Chart</strong>: Shows the relationship between MapReduce stages and
+                                    high level information about each stage. The information shown in each stage box
+                                    includes MapReduce job ID, base table name, time taken by the stage, percentage of
+                                    total run time taken by the stage, and execution status.</p></li>
+                            <li><p><strong>Errors</strong></p></li>
+                            <li><p><strong>Query</strong>: Shows detailed information about a stage when selected. The
+                                    expanded info shows each of the map reduce functions, tables usage information,
+                                    timings of each function and input paths used by the stage.</p></li>
+                        </ul><ul>
+                            <li><p><strong>Task Attempts</strong>: Provides an easy way to understand efficiency and
+                                    status of MapReduce task attempts by breaking down attempted tasks by successful,
+                                    failed and killed.</p></li>
+                            <li><p><strong>Attempts</strong></p></li>
+                            <li><p><strong>Slot Usage</strong>: Shows slot usage by Map and Reduce jobs over
+                                time.</p></li>
+                        </ul><h2 id="TheApplicationsTab-MapReduceApplicationManager">MapReduce Application
+                            Manager</h2><p>The MapReduce Application Manager provides a detailed view into the behavior
+                            of MapReduce applications. It is used by Hadoop DBAs or application owners (engineers, BI
+                            team, analysts) to resolve inefficiencies, bottlenecks and reasons for failure within
+                            applications. The MapReduce Application Manager uses the Unravel intelligence engine to
+                            automatically identify certain inefficiencies with the application and provides solutions on
+                            how to the fix the problem.</p><p>It contains similar sections to the Hive Application
+                            Manager and additionally shows the timeline view of MapReduce job execution, logs and
+                            configuration.</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="334"
+                                    width="840" src="media/53166037.png" data-image-src="media/53166037.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166037"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_mapreduce_app_mgr1.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="6f7eceec-5f5a-48ae-9c27-7eb41dcdfcf9" data-media-type="file"
+                                 /></span></p>
+                        <h3 id="TheApplicationsTab-Sub-Tabs.2">Sub-Tabs</h3>
+                        <p>The MapReduce Application Manager contains multiple sub-tabs, each of which is described
+                            below.</p><ul>
+                            <li><strong>Timeline</strong>: Provides a detailed view into a MapReduce job execution. The
+                                Timeline shows execution of each MapReduce task on the machine that those tasks ran on
+                                and allows drill-down into each task to obtain further information. The timeline view
+                                comes with filters which can be used to display only map tasks, reduce tasks and
+                                killed/failed tasks. The histograms above the Timeline show the distribution of
+                                MapReduce tasks along time and data size. This histogram can also be used as a filter to
+                                zoom in on specific tasks.</li>
+                            <li><strong>Logs</strong>: Provides comprehensive information about each application
+                                including task and job logs. The logs section intelligently selects interesting tasks
+                                and presents its logs in an organized manner.</li>
+                            <li><strong>Configuration</strong>: Provides a complete list of configuration settings used
+                                during the application execution.</li>
+                        </ul><h1 id="TheApplicationsTab-FindingWorkflows">Finding Workflows</h1><p>To find workflows,
+                            select <strong>SHOW</strong> | <strong>Workflow</strong> as highlighted in the image
+                            below.</p><h2 id="TheApplicationsTab-"><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="233"
+                                    width="840" src="media/53546377.png" data-image-src="media/53546377.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53546377"
+                                    data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui085cropped.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="9f916c47-67fd-48b4-a179-7a4bf75d9600" data-media-type="file"
+                                 /></span></h2>
+                        <h1 id="TheApplicationsTab-WorkflowManager">Workflow Manager</h1>
+                        <p>The Workflow Manager provides a comprehensive view to understand workflows and their patterns
+                            of execution. It is used by Workflow (Pipelines) owners to identify anomalies,
+                            inefficiencies and bottlenecks in workflow instances. The Workflow Manager uses the Unravel
+                            intelligence engine to automatically identify inefficiencies with the workflow and provides
+                            solutions on how to the fix the problem. The Workflow Manager helps pipeline owners easily
+                            maintain SLAs.</p>
+                        <p>The workflow header provides primary information about the workflow such as name, user name,
+                            queue that the workflow was submitted on, start time and tags that the workflow has been
+                            given.</p>
+                        <p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="564"
+                                    width="840" src="media/53166040.png" data-image-src="media/53166040.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166040"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_workflow_mgr1.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="23ce2f53-47fa-4d1e-8fc6-d63d261d8b0b" data-media-type="file"
+                                 /></span></p><p><br /></p>
+                        <h3 id="TheApplicationsTab-KeyPerformanceIndicators(KPIs).2">Key Performance Indicators
+                            (KPIs)</h3><ul>
+                            <li><strong>Events</strong>: The number of Unravel recommendations or insights for this
+                                workflow. To see details, click the <strong>Events</strong> icon.</li>
+                            <li><strong>Duration</strong>: Total time taken by the workflow to complete execution</li>
+                            <li><strong>Data I/O</strong>: Total data read and written by the workflow</li>
+                            <li><strong>Resources</strong></li>
+                            <li><strong>Number of Apps</strong>: The number of apps that make up this workflow</li>
+                        </ul><h3 id="TheApplicationsTab-Sub-Tabs.3">Sub-Tabs</h3><p>The Workflow Manager contains
+                            multiple sub-tabs, each of which is described below.</p><ul>
+                            <li><strong>Navigation</strong>: Provides an easy way to understand the breakdown of the
+                                workflow and drill down into the Hive queries, Spark jobs, and MapReduce jobs that make
+                                up the application. It includes information about duration, I/O, resources, events, job
+                                IDs, and job status.</li>
+                            <li><strong>Gantt Chart</strong>: Shows the dependency between the various components and
+                                the time taken by each. It helps you to identify stuck or incomplete components which
+                                could be affecting the overall completion of the workflow.<br /><span
+                                    class="confluence-embedded-file-wrapper"><img
+                                        class="confluence-embedded-image confluence-content-image-border"
+                                        src="media/53166043.png" data-image-src="media/53166043.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="53166043"
+                                        data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="gui_workflow_mgr2.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="53166005"
+                                        data-linked-resource-container-version="22"
+                                        data-media-id="6c5d5c72-3971-4383-a332-152540602c7c" data-media-type="file"
+                                     /></span></li>
+                            <li><strong>DAG View</strong>: Clearly shows the dependencies between various components of
+                                the workflow and the status of components. To see details about status, hover over a
+                                status box to see the tool tips.<br /><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                        class="confluence-embedded-image" height="400" width="799"
+                                        src="media/53166049.png" data-image-src="media/53166049.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="53166049"
+                                        data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="gui_workflow_mgr3.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="53166005"
+                                        data-linked-resource-container-version="22"
+                                        data-media-id="f56157c3-0517-4b33-8469-fe1fd5d2cfb1" data-media-type="file"
+                                     /></span></li>
+                        </ul><ul>
+                            <li><strong>Compare</strong>: Provides a quick way to understand how well a workflow run
+                                compares to its other runs. Hovering your pointer over instances displays top KPIs such
+                                as duration, data I/O, resources, and the number of jobs in that instance. Clicking on a
+                                point on the chart loads that particular instance for inspection.</li>
+                        </ul><p><br /></p><h1 id="TheApplicationsTab-EventsEvents"><span class="confluence-anchor-link"
+                                id="TheApplicationsTab-Events"></span>Events</h1><p>Unravel Events are designed to save
+                            you time and effort by automatically providing <strong>recommendations</strong> and
+                                <strong>insights</strong> into the application. Recommendations are concrete suggestions
+                            at the level of configuration settings that can be applied at subsequent application runs to
+                            speed up the application performance, and to improve the resource efficiency. Insights, on
+                            the other hand, are identifying performance bottlenecks, data skew problems, capture reasons
+                            for failed, killed, and slow applications. In addition, insights provide useful guidelines
+                            that can be used to adjust the current configuration settings of the application. Unravel
+                            Events fall into the following categories:  Application Speedup, Application Failure,
+                            Resource Efficiency, SLA Management.</p><p>Example: Hive Recommendations</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="422"
+                                    width="840" src="media/53166118.png" data-image-src="media/53166118.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166118"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="hive-recommendation.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="1261766c-8a2a-4fe3-8df7-88e858eb4640" data-media-type="file"
+                                 /></span></p><p>Example: Hive Insights</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="438"
+                                    width="840" src="media/53166052.png" data-image-src="media/53166052.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166052"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_events_hive.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="bb752432-cdbc-427f-8955-4e65f8881a2d" data-media-type="file"
+                                 /></span></p><p>Example: Spark Recommendations</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="338"
+                                    width="840" src="media/53166112.png" data-image-src="media/53166112.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166112"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="spark-insights3.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="ce89d7fb-9efd-4106-85e7-99eb2ae3702a" data-media-type="file"
+                                 /></span></p><p>Example: Spark Insights</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="425"
+                                    width="840" src="media/53166115.png" data-image-src="media/53166115.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166115"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="caching-opportunity.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="0bef6f87-aaa0-4683-afa5-f6ff23f286aa" data-media-type="file"
+                                 /></span></p><p>Example: Workflow Events</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="282"
+                                    width="840" src="media/53166058.png" data-image-src="media/53166058.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166058"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_events_workflow.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="f5d9ed6e-655f-4321-93f4-b50c6f9e41e3" data-media-type="file"
+                                 /></span></p><h1 id="TheApplicationsTab-ErrorView">Error View</h1><p>This new feature
+                            allows to quickly identify errors affecting your applications. Error views are available for
+                            MR, Hive and Oozie applications.</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="382"
+                                    width="840" src="media/53166061.png" data-image-src="media/53166061.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166061"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_error_view.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166005"
+                                    data-linked-resource-container-version="22"
+                                    data-media-id="14576c6f-bbfc-46dd-8e4d-c8681bcb6a7f" data-media-type="file"
+                                 /></span></p><p>Errors for each application are categorized by Severity type and also
+                            include Keywords and details associated with each. Keywords extract important details from
+                            the errors messages/log data that can help developers/operators quickly root cause issue.
+                            Examples of keywords include Oozie errors code(s), Java run time error(s)
+                            etc.</p><p><br /></p><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox" align="left">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166013.png">image2017-2-26_0-20-12.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166016.png">admin_manage_configuration.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166019.png">gui_admin_manage_configuration.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166022.png">gui_email.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166025.png">gui_global_search.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53224606.png">gui_spark_app_mgr.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251708.png">gui_spark_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166034.png">gui_hive_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251801.png">gui_mapreduce_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251829.png">gui_workflow_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251862.png">gui_workflow_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251767.png">gui_spark_app_mgr3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166049.png">gui_workflow_mgr3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251926.png">gui_events_hive.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166055.png">gui_events_spark.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251989.png">gui_events_workflow.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53252081.png">gui_error_view.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166064.png">gui_ops_dashboard.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166067.png">gui_ops_cluster_metrics.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166070.png">gui_ops_chargeback.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166073.png">gui_data_table.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166076.png">gui_data_table_summary.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166079.png">gui_data_table_details.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166082.png">gui_data_table_details2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166085.png">gui_data_table_details3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166088.png">gui_data_table_rules1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166091.png">gui_data_table_rules2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166094.png">gui_report_ops.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166097.png">gui_report_users.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-1.mp4">Unravel-Product-Use-Case-Demo-1.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-2.mp4">Unravel-Product-Use-Case-Demo2.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-3.mp4">Unravel-Product-Use-Case-Demo3.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-4.mp4">Unravel-Product-Use-Case-Demo4.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251960.png">spark-insights3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53252292.png">caching-opportunity.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251897.png">hive-recommendation.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53224649.png">gui_hive_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166124.png">gui_hive_app_mgr1_events.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53224433.png">gui_applications.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166130.png">gui_auto_actions1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166133.png">gui_auto_actions2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166136.png">gui_auto_actions_select.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53224449.png">gui_applications.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166127.png">gui_applications.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251673.png">gui043goto.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166028.png">gui_spark_app_mgr.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166121.png">gui_hive_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53224679.png">gui076.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53224722.png">gui075events.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251597.png">gui137.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53224524.png">gui043goto.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53251738.png">gui_spark_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166031.png">gui_spark_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166046.png">gui_spark_app_mgr3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166037.png">gui_mapreduce_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166040.png">gui_workflow_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166043.png">gui_workflow_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166118.png">hive-recommendation.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166052.png">gui_events_hive.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166112.png">spark-insights3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166058.png">gui_events_workflow.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166061.png">gui_error_view.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166115.png">caching-opportunity.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53546227.png">gui053events.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53546255.png">gui054.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53546377.png">gui085cropped.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

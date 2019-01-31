@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="Resource-Metrics_53232237">
+   <title>Resource Metrics </title>
+   <conbody>
+
+
+
+
+
+
+
+      <p>
+         <ph>The table below lists the resource metrics collected by Unravel. The availability of a particular metric is
+            dependent on the underlying OS and JVM GC algorithm in use.</ph>
+      </p>
+      <table outputclass="wrapped confluenceTable">
+         <tgroup cols="3">
+            <colspec colname="col1"/>
+            <colspec colname="col2"/>
+            <colspec colname="col3"/>
+            <tbody>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Metric</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Unit</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Description</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>snapshotTs</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>TIMESTAMP (milliseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The time the metric was read</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>startTs</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>TIMESTAMP (milliseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The time when the collection process started</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>totalPhysicalMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The total physical memory in the operating system</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>freePhysicalMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The free physical memory in the operating system</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>committedVirtualMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The committed virtual memory in the operating system</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>freeSwap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The free swap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>availableMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>An estimate of memory available for launching new processes</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>vmRss</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The resident set size of the complete process tree</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>vmRssDir</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The resident set size of the process</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>totalSwap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>The total swap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>processCpuLoad</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average process CPU load for the last minute (all cores)</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>systemCpuLoad</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average system CPU load for the last minute (all cores)</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>fullGcCount</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>COUNT</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Number of full GC runs</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>minorGcCount</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>COUNT</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Number of minor GC runs</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>minorGcTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Accumulated time spent in minor GC</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>fullGcTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Accumulated time spent in full GC</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>gcEdenSurvivedAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average number of bytes moved from eden to survivor space. Might not be available for
+                        particular GC algorithms</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>gcSurvivorPromotedAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average number of bytes moved from survivor to old space. Might not be available for particular
+                        GC algorithms</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>gcYoungLiveAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average number of bytes alive in the young generation (eden + survivor spaces). Might not be
+                        available for particular GC algorithms</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>allocatedBytes</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Accumulated number of allocated bytes</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>edenPeakUsage</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Maximum memory usage in the eden space</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>survivorPeakUsage</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Maximum memory usage in the survivor space</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>oldPeakUsage</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Maximum memory usage in the old space</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>avgMinorInterval</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average interval between two subsequent minor GCs. Might not be available for particular GC
+                        algorithms</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>gcLoad</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Percentage of CPU time spent in GC</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>blockingRatio</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Estimated percentage of CPU time spent in kernel blocking operations</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>avgFullGcInterval</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average interval between two subsequent full GCs. Might not be available for particular GC
+                        algorithms</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>gcOldLiveAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Average number of bytes alive in the old generation. Might not be available for particular GC
+                        algorithms</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>initHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Initial heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>maxHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Maximum heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>usedHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Used heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>committedHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Committed heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>initNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Initial non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>maxNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Maximum non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>usedNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Used non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>committedNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Committed non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>currentThreadCpuTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Current thread CPU time elapsed since the start of the measurement. Might not be available on
+                        some operating systems</ph>
+                  </entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>currentThreadUserTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd">
+                     <ph>Current thread user time elapsed since the start of the measurement. Might not be available on
+                        some operating systems</ph>
+                  </entry>
+
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+
+
+
+   </conbody>
+</concept>

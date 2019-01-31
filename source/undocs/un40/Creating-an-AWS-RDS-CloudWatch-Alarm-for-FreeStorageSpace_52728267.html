@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Creating an AWS RDS CloudWatch Alarm for FreeStorageSpace</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Creating an AWS RDS CloudWatch Alarm for
+                            FreeStorageSpace </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <h3
+                            id="CreatinganAWSRDSCloudWatchAlarmforFreeStorageSpace-ThisguideistoconfigureanAWSRDSCloudWatchAlarmforDiskFreeStorageSpaceMetricsaspartofRDSmonitoring:"
+                            ><br />This guide is to configure an AWS RDS CloudWatch Alarm for Disk
+                                <em>FreeStorageSpace</em> Metrics as part of RDS monitoring:</h3><ol>
+                            <li>Go to <span style="color: rgb(0,0,255);"><strong>AWS Cloud Watch</strong></span></li>
+                            <li>Select on the left-hand corner tab for &quot;<strong><span style="color: rgb(0,0,255);"
+                                        >Alarms&quot;</span></strong></li>
+                            <li>Click on &quot;<strong><span style="color: rgb(0,0,255);">Create
+                                Alarm</span></strong>&quot;</li>
+                            <li>On the right-hand section under &quot;<strong><span style="color: rgb(0,0,255);">RDS
+                                        Metrics</span></strong>&quot; and click on &quot;<strong><span
+                                        style="color: rgb(0,0,255);">Per-Database Metrics</span></strong>&quot;</li>
+                            <li>Under the column DBInstanceIdentifier, <em>select the database</em> you wish to monitor
+                                for  &quot;<strong><span style="color: rgb(0,0,255);"
+                                >FreeStorageSpace</span></strong>&quot; and click &quot;<span
+                                    style="color: rgb(0,0,255);"><strong>Next</strong></span>&quot; when you are
+                                    done<br /><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                        class="confluence-embedded-image" height="250"
+                                        src="media/52729341.png" data-image-src="media/52729341.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="52729341"
+                                        data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="AWS_CW_RDS_FreeStorageSpace.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="52728267"
+                                        data-linked-resource-container-version="27"
+                                        data-media-id="c4356cec-7050-4ad6-9e61-5aab218d7221" data-media-type="file"
+                                     /></span></li>
+                            <li>In &quot;<strong><span style="color: rgb(0,0,255);">Alarm
+                                Threshold</span></strong>&quot; panel, please add and complete following:<ol>
+                                    <li>&quot;<strong><span style="color: rgb(0,0,255);">Name</span></strong>&quot; -
+                                        for this Database Metrics (e.g. RDS_FreeStorageSpace_for_MySQL-A)</li>
+                                    <li>&quot;<strong><span style="color: rgb(0,0,255);"
+                                        >Description</span></strong>&quot; - describe what the above database metrics
+                                        name you entered (e.g. Disk space monitor of RDS MySQL-A)</li>
+                                    <li><p class="auto-cursor-target">Add free storage of 20% left to alert contact
+                                            under &quot;<span style="color: rgb(0,0,255);"><strong>Whenever
+                                                    FreeStorageSpace</strong></span>&quot; is &lt;=  <strong><span
+                                                    style="color: rgb(0,0,255);">2</span><span
+                                                    style="color: rgb(0,0,255);">0</span></strong><strong><strong><span
+                                                        style="color: rgb(0,0,255);"
+                                            ><br /></span></strong></strong></p><div
+                                            class="confluence-information-macro confluence-information-macro-tip"><span
+                                                class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                                ></span><div class="confluence-information-macro-body"><p>I have
+                                                    suggested adding 20% of free storage space left, however, you can
+                                                    tune this to be lower.</p></div></div></li>
+                                    <li><span style="color: rgb(0,0,0);">Add 10  for &quot;</span><strong
+                                            style="color: rgb(0,0,0);"><span style="color: rgb(0,0,255);"
+                                            >10</span></strong><span style="color: rgb(0,0,0);">&quot; </span><strong
+                                            style="color: rgb(0,0,0);"><span style="color: rgb(0,0,255);"
+                                                >consecutive</span><span style="color: rgb(0,0,255);">
+                                            period(s)</span></strong><br /><strong><span style="color: rgb(0,0,255);"
+                                                    ><span
+                                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                                        ><img class="confluence-embedded-image" height="250"
+                                                        src="media/52729864.png"
+                                                        data-image-src="media/52729864.png"
+                                                        data-unresolved-comment-count="0"
+                                                        data-linked-resource-id="52729864"
+                                                        data-linked-resource-version="2"
+                                                        data-linked-resource-type="attachment"
+                                                        data-linked-resource-default-alias="AWS_CW_RDS_Disk_Used_80.png"
+                                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                                        data-linked-resource-content-type="image/png"
+                                                        data-linked-resource-container-id="52728267"
+                                                        data-linked-resource-container-version="27"
+                                                        data-media-id="d52b95d9-41e7-44de-8e89-ebddd84c2d5f"
+                                                        data-media-type="file" /></span></span></strong></li>
+                                    <li>Under <strong><span style="color: rgb(0,0,255);">Actions</span></strong>, add
+                                            &quot;<span style="color: rgb(0,0,255);"><strong>Send notifications
+                                                to</strong></span>&quot;, which is your SNS topic:<br /><em>Note: this
+                                            sns topic should already be setup before you add it.</em><br /><span
+                                            class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                                ><img class="confluence-embedded-image" height="250"
+                                                src="media/52730065.png" data-image-src="media/52730065.png"
+                                                data-unresolved-comment-count="0" data-linked-resource-id="52730065"
+                                                data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                                data-linked-resource-default-alias="AWS_CW_RDS_Notify.png"
+                                                data-base-url="https://unraveldata.atlassian.net/wiki"
+                                                data-linked-resource-content-type="image/png"
+                                                data-linked-resource-container-id="52728267"
+                                                data-linked-resource-container-version="27"
+                                                data-media-id="37efef80-3f45-4b0b-b9df-eabb7dcc6fd3"
+                                                data-media-type="file" /></span></li>
+                                    <li>Click &quot;<span style="color: rgb(0,0,255);"><strong>Create
+                                            Alarm</strong></span>&quot; to create the Alarm metrics for RDS monitoring
+                                        on Storage Space</li>
+                                    <li>Now, you will see in &quot;<span style="color: rgb(0,0,255);"
+                                                ><strong>Alarms</strong></span>&quot; the alarm you just created, but do
+                                        not be surprise when you see &quot;<span style="color: rgb(255,102,0);"
+                                            >INSUFFICIENT DATA</span>&quot; and it is ok since the alarm is not
+                                        triggered, yet.  Once, it is triggered, an <span style="color: rgb(255,0,0);"
+                                            >ALARM</span> appears under &quot;<strong><span style="color: rgb(0,0,255);"
+                                                >Alarms</span></strong>&quot; tab.  In addition, email alerts will be
+                                        distributed as defined in the SNS topic.</li>
+                                    <li>Click &quot;<span style="color: rgb(0,0,255);"><strong>Create
+                                            Alarm</strong></span>&quot; to create the Alarm metrics for RDS monitoring
+                                        on Storage Space</li>
+                                </ol></li>
+                        </ol>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52729341.png">AWS_CW_RDS_FreeStorageSpace.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52730717.png">AWS_CW_RDS_Disk_Used_80.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52730065.png">AWS_CW_RDS_Notify.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52729864.png">AWS_CW_RDS_Disk_Used_80.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

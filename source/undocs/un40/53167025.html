@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Setting Up Auto Actions (Alerts)</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="User-Guide_50687944.html">User Guide</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Setting Up Auto Actions (Alerts)
+                        </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <h1 id="SettingUpAutoActions(Alerts)-AutoActions">Auto
+                            Actions</h1><p><br /></p><p>An Auto Action is basically a policy such
+                            that when it is violated, an action is taken automatically. You can use
+                            an Auto Action to alert you to a situation that needs manual
+                            intervention, such as resource contention, stuck jobs, failed queries,
+                            and so on.</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                    ><img class="confluence-embedded-image" height="250"
+                                    src="media/53167150.png"
+                                    data-image-src="media/53167150.png"
+                                    data-unresolved-comment-count="0"
+                                    data-linked-resource-id="53167150"
+                                    data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_auto_actions1.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53167025"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="2b4cc0e8-a78d-478d-8802-b936c71e294f"
+                                    data-media-type="file" /></span></p><p>To create an Auto
+                            Action:</p><ol>
+                            <li>Click the <strong>Admin</strong> pull-down menu, and select
+                                    <strong>Manage</strong>.</li>
+                            <li>On the <strong>Manage</strong> page, select the <strong>Auto
+                                    Actions</strong> tab.</li>
+                            <li>Click <strong>ADD NEW AUTO ACTION</strong>.</li>
+                            <li>Select the desired Auto Action type, and then click
+                                    <strong>Next</strong>.<br /><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                        ><img class="confluence-embedded-image" height="250"
+                                        src="media/53167156.png"
+                                        data-image-src="media/53167156.png"
+                                        data-unresolved-comment-count="0"
+                                        data-linked-resource-id="53167156"
+                                        data-linked-resource-version="1"
+                                        data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="gui_auto_actions_select.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="53167025"
+                                        data-linked-resource-container-version="6"
+                                        data-media-id="b7b20133-7090-4f3b-9afe-ea709dbd6636"
+                                        data-media-type="file" /></span></li>
+                            <li>Enter a name for the new Auto Action, and specify its prerequisite
+                                conditions, defining conditions, and actions:<br /><ul>
+                                    <li>Prerequisite conditions: A set of boolean conditions such
+                                        that when they are all met, Unravel will evaluate the
+                                        defining conditions of the Auto Action. Examples include:
+                                        whether this Auto Action should be evaluated during a given
+                                        time, whether this Auto Action should be evaluated for a job
+                                        belonging to a given user, etc.</li>
+                                    <li>Defining conditions: A set of boolean conditions defining
+                                        the Auto Action. When they are all met, the corresponding
+                                        action defined as part of the Auto Action will be taken
+                                        automatically. Examples include: Is this job running for too
+                                        long? Does it use too many mappers?</li>
+                                    <li>Actions: A set of actions to be taken when the defining
+                                        conditions are all evaluated to be true. Examples include:
+                                        send an email to admin (i.e., “alerting”), kill the job,
+                                            etc.<br /><span class="confluence-embedded-file-wrapper"
+                                                ><img class="confluence-embedded-image"
+                                                src="media/53167153.png"
+                                                data-image-src="media/53167153.png"
+                                                data-unresolved-comment-count="0"
+                                                data-linked-resource-id="53167153"
+                                                data-linked-resource-version="1"
+                                                data-linked-resource-type="attachment"
+                                                data-linked-resource-default-alias="gui_auto_actions2.png"
+                                                data-base-url="https://unraveldata.atlassian.net/wiki"
+                                                data-linked-resource-content-type="image/png"
+                                                data-linked-resource-container-id="53167025"
+                                                data-linked-resource-container-version="6"
+                                                data-media-id="7e0f4a61-25b4-407b-a096-2cc05e550593"
+                                                data-media-type="file" /></span><br /><br /></li>
+                                </ul></li>
+                            <li>Click <strong>SAVE AUTO ACTION</strong>.</li>
+                        </ol><p><br /></p><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167032.png">image2017-2-26_0-20-12.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167035.png">admin_manage_configuration.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167038.png">gui_admin_manage_configuration.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167041.png">gui_email.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167045.png">gui_global_search.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167048.png">gui_spark_app_mgr.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167051.png">gui_spark_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167054.png">gui_hive_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167057.png">gui_mapreduce_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167060.png">gui_workflow_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167063.png">gui_workflow_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167066.png">gui_spark_app_mgr3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167069.png">gui_workflow_mgr3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167072.png">gui_events_hive.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167075.png">gui_events_spark.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167078.png">gui_events_workflow.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167081.png">gui_error_view.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167084.png">gui_ops_dashboard.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167087.png">gui_ops_cluster_metrics.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167090.png">gui_ops_chargeback.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167093.png">gui_data_table.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167096.png">gui_data_table_summary.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167099.png">gui_data_table_details.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167102.png">gui_data_table_details2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167105.png">gui_data_table_details3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167108.png">gui_data_table_rules1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167111.png">gui_data_table_rules2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167114.png">gui_report_ops.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167117.png">gui_report_users.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-1.mp4">Unravel-Product-Use-Case-Demo-1.mp4</a>
+                            (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-2.mp4">Unravel-Product-Use-Case-Demo2.mp4</a>
+                            (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-3.mp4">Unravel-Product-Use-Case-Demo3.mp4</a>
+                            (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-4.mp4">Unravel-Product-Use-Case-Demo4.mp4</a>
+                            (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167132.png">spark-insights3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167135.png">caching-opportunity.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167138.png">hive-recommendation.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167141.png">gui_hive_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167144.png">gui_hive_app_mgr1_events.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167147.png">gui_applications.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167150.png">gui_auto_actions1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167153.png">gui_auto_actions2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53167156.png">gui_auto_actions_select.png</a> (image/png)
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

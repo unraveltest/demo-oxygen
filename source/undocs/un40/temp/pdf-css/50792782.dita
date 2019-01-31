@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FAHJCHIC" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="task:1;4:38">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="title:1;5:11">Part 1: Install Unravel Server on CDH+CM </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:3;23:20">
+                  <xref href="50688254.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:3;24:46" type="topic"><?ditaot usertext?>Installation Guide for Cloudera Distribution Including
+                     Apache Hadoop (CDH), with Cloudera Manager (CM)</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:1;30:13">Introduction</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:2;31:13">This topic explains how to <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:4;31:44">deploy Unravel Server 4.0 on a CDH gateway/edge
+            node</ph>. For instructions that correspond to older versions of Unravel Server, contact
+            Unravel Support.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:3;34:14"/>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="b:1;35:13">Workflow Summary</b>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ol:2;36:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:4;38:17">Pre-installation check</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:5;40:17">Configure the host machine.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:6;42:17">Install the Unravel Server RPM on the host machine.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:7;44:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:4;45:19">Configure Unravel Server (basic/core options).</p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:8;48:17">Log into Unravel Web UI.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:9;50:17">(Optional) Configure Unravel Server (advanced options).</li>
+
+         </ol>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="b:2;53:13">Table of Contents</b>
+         <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:1;54:44">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:10;56:17">
+               <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Introduction" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:4;58:20"><?ditaot usertext?>Introduction</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:11;61:17">
+               <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Pre-InstallationCheck" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:5;63:20"><?ditaot usertext?>Pre-Installation Check</xref>
+               <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:2;64:50">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:12;66:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-PlatformCompatibility" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:6;68:26"><?ditaot usertext?>Platform Compatibility</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:13;71:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Hardware" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:7;73:26"><?ditaot usertext?>Hardware</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:14;76:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Software" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:8;78:26"><?ditaot usertext?>Software</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:15;81:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-AccessPermissions" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:9;83:26"><?ditaot usertext?>Access Permissions</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:16;86:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Network" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:10;88:26"><?ditaot usertext?>Network</xref>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:17;94:17">
+               <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-1.ConfiguretheHostMachine" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:11;96:20"><?ditaot usertext?>1. Configure the Host Machine</xref>
+               <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:3;97:50">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:18;99:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-AllocateaClusterGateway/Edge/ClientHostwithHDFSAccess" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:12;102:26"><?ditaot usertext?>Allocate a Cluster Gateway/Edge/Client Host with HDFS Access</xref>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:19;108:17">
+               <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-2.InstalltheUnravelServerRPMontheHostMachine" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:13;111:20"><?ditaot usertext?>2. Install the Unravel Server RPM on the Host Machine</xref>
+               <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:4;112:50">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:20;114:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-GettheUnravelServerRPM" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:14;117:26"><?ditaot usertext?>Get the Unravel Server RPM</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:21;120:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-InstalltheUnravelServerRPM" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:15;123:26"><?ditaot usertext?>Install the Unravel Server RPM</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:22;126:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-DoHost-SpecificPost-InstallationActions" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:16;129:26"><?ditaot usertext?>Do Host-Specific Post-Installation Actions</xref>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:23;135:17">
+               <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-3.ConfigureUnravelServer(Basic/CoreOptions)" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:17;138:20"><?ditaot usertext?>3. Configure Unravel Server (Basic/Core Options)</xref>
+               <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:5;139:50">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:24;141:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Enable/DisableOptionalDaemons" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:18;144:26"><?ditaot usertext?>Enable/Disable Optional Daemons</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:25;147:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Modifyunravel.properties" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:19;150:26"><?ditaot usertext?>Modify unravel.properties</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:26;153:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-IfKerberosisEnabled:" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:20;155:26"><?ditaot usertext?>If Kerberos is Enabled:</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:27;158:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-IfSentryisEnabled:" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:21;159:99"><?ditaot usertext?>If
+                        Sentry is Enabled:</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:28;163:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-DoHost-SpecificConfigurationSteps" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:22;166:26"><?ditaot usertext?>Do Host-Specific Configuration Steps</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:29;169:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-RestartUnravelServer" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:23;171:26"><?ditaot usertext?>Restart Unravel Server</xref>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:30;177:17">
+               <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-4.LogintoUnravelWebUI" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:24;178:96"><?ditaot usertext?>4.
+                  Log into Unravel Web UI</xref>
+               <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:6;180:50">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:31;182:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-Congratulations!" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:25;184:26"><?ditaot usertext?>Congratulations!</xref>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:32;190:17">
+               <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-5.(Optional)ConfigureUnravelServer(AdvancedOptions)" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:26;193:20"><?ditaot usertext?>5. (Optional) Configure Unravel Server (Advanced Options)</xref>
+               <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:7;194:50">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:33;196:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-EnableAdditionalDataCollection/Instrumentation" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:27;199:26"><?ditaot usertext?>Enable Additional Data Collection/Instrumentation</xref>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:34;202:23">
+                     <xref href="#FAHJCHIC/Part1:InstallUnravelServeronCDH+CM-RuntheUnravelWebUIConfigurationWizard" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:28;205:26"><?ditaot usertext?>Run the Unravel Web UI Configuration Wizard</xref>
+                  </li>
+
+               </ul>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:5;212:13">Pre-Installation Check</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:6;213:13">The following installation requirements must be met for successful installation of
+            Unravel.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:7;215:13">Platform Compatibility</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:8;216:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:35;218:17">CDH 4.5 - 5.10</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:36;220:17">Hadoop 1.x - 2.x</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:37;222:17">Kerberos</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:38;224:17">Hive 0.9.x - 1.2.x</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:39;226:17">Spark 1.3.x - 2.0.x</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:8;229:13">Hardware</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:9;230:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:40;232:17">Architecture: x86_64</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:41;234:17">Cores: 8</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:42;236:17">RAM: 64GB minimum</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:43;238:17">Disk: <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:1;238:31">/usr/local/unravel</codeph> with 2.5GB free minimum</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:44;240:17">Disk: <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:2;240:31">/srv/unravel</codeph> with 500GB free minimum</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:45;242:17">For 10,000+ MR jobs per day, two or more gateway/edge nodes are recommended</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:9;245:13">Software</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:10;246:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:46;248:17">Operating System: RedHat/Centos 6.4 - 7.3</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:47;250:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:3;251:24">libaio.x86_64</codeph> installed</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:48;253:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:4;254:24">SELINUX=permissive</codeph> (or disabled) should be set in
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:5;255:27">/etc/selinux/config</codeph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:49;258:17">HDFS+Hive+YARN client/gateway, Hadoop and Hive commands in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:6;258:84">PATH</codeph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:50;261:17">If Spark is in use, Spark client gateway</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:51;263:17">LDAP (AD or Open LDAP) compatible for Unravel Web UI user authentication (Open
+               signup by default)</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:52;266:17">On Unravel Edge-node server, please <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="b:3;266:56">
+                  <u class="+ topic/ph hi-d/u " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="u:1;267:22">do not</u>
+               </b> have zookeeper installed in same server</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:10;271:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:11;272:13">Access Permissions</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:11;273:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:53;275:17">If Kerberos is in use, a keytab for principal hdfs (or read-only equivalent) is
+               required for access to:<ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:12;276:43">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:54;278:23">Access to YARN’s “done dir” in HDFS</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:55;280:23">Access to YARN’s log aggregation directory in HDFS</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:56;282:23">Access to Spark event log directory in HDFS</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:57;284:23">Access to file sizes under HIve warehouse directory</li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:58;289:17">Access to YARN Resource Manager REST API
+               <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:13;290:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:59;292:23">principal needs right to find out which RM is active</li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:60;297:17">JDBC access to the Hive Metastore (read-only user is sufficient)</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:12;300:13">Network</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:14;301:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:61;303:17">Port 3000 (or 4020) from users and entire cluster to Unravel Web UI</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:62;305:17">HDFS ports open from Hadoop cluster to Unravel Server(s)</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:63;307:17">For MR1, TaskTracker port open from Hadoop cluster to Unravel Server(s)</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:64;309:17">For MR1/YARN, Hive Metadata DB port open to Unravel Server(s) for partition
+               reporting</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:65;312:17">UDP and TCP port 4043 open from entire cluster to Unravel Server(s)</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:66;314:17">For Oozie, port 11000 open from Unravel Server(s) to the Oozie server</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:67;316:17">Resource Manager (RM) port 8032 from Unravel Server(s) to the RM server(s)</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:68;318:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:5;319:20">Port 4176, 4181 through 4189, 3316, 4091 must be available for localhost
+                  communication between Unravel daemons or services</ph>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:13;324:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:14;325:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:15;326:13">1. Configure the Host Machine</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:16;327:13">Allocate a Cluster Gateway/Edge/Client Host with HDFS Access</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:17;328:13">Use Cloudera Manager to create the gateway configuration for the Unravel server(s) that
+            has client roles for HDFS, YARN, Spark, Hive.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:18;330:13">2. Install the Unravel Server RPM on the Host Machine</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:19;331:13">Get the Unravel Server RPM</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:20;332:13">Copy the RPM from the Unravel distribution server to the host machine using the username
+            and password given to you by Unravel Support:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:15;334:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:69;336:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:21;337:52">For the free trial version:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:1;338:63">scp "unraveltrial@trial.unraveldata.com:unravel-4.0-*.x86_64.rpm" .</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:70;341:17">For the enterprise version:
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:2;342:63">scp $USER@dist.unraveldata.com:unravel-4.0-*.x86_64.rpm.$timestamp .</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:22;346:13">The precise RPM filename will vary. The version has the structure <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:1;346:82">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:7;347:24">x.y.b</codeph>
+            </i> where <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:2;348:27">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:8;349:24">b</codeph>
+            </i> is a build number that is imposed as an RPM epoch which means it takes precedence
+            over version numbers for determining what is more up-to-date. The Unravel build numbers
+            always increase and are allocated so that they respect the ordering of <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:3;352:87">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:9;353:24">x.y</codeph>
+            </i> versioning.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:23;355:13">Install the Unravel Server RPM</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:24;356:13">Replace the asterisks as needed to be more selective.</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:3;357:57">sudo rpm -U unravel-4.0*.x86_64.rpm*</codeblock>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:6;359:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:25;360:13">The installation creates <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:10;360:46">/usr/local/unravel/</codeph> which contains the
+            executables, scripts, and settings. User <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:11;361:62">unravel</codeph> is created. The
+            initial internal database and other durable state are put
+               in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:12;363:27">/srv/unravel/</codeph> for larger storage. By default, the installation
+            supports YARN.
+            
+            The master configuration file is
+               in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:13;367:27">/usr/local/unravel/etc/unravel.properties</codeph> and the logs are in
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:14;368:24">/usr/local/unravel/logs/</codeph>. The RPM installation creates
+               user <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:15;369:29">unravel</codeph> if it does not already
+               exist; <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:16;370:31">/etc/init.d/unravel_*</codeph> scripts for controlling its services as
+            well as <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:17;371:29">/etc/init.d/unravel_all.sh</codeph> which can be used to manually stop,
+            start, and get status of all daemons in proper order.
+            
+            The RPM installation also creates an HDFS directory for Hive Hook information
+            collection.
+            
+            During initial install, a bundled database is used. This can be switched to use an
+            externally managed MySQL for production. (The bundled database root mysql password will
+            be stored in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:18;379:34">/root/unravel.install.include</codeph> during installation.)</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:26;380:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:7;381:17">Do Host-Specific Post-Installation Actions</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:27;383:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:8;384:17">For CDH, there are no host-specific post-installation actions.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:28;386:13">3. Configure Unravel Server (Basic/Core Options)</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:29;387:13">Enable/Disable Optional Daemons</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:30;388:13">Depending on your workload volume or kind of activity, you can enable or disable
+            optional daemons at this point.</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:16;390:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:71;392:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:31;393:19">If you are not using Oozie, disable <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:19;393:63">unravel_os3</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:4;394:63">sudo chkconfig unravel_os3 off</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:72;397:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:32;398:19">If you are not using Spark, disable <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:20;398:63">unravel_sw_1</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:5;399:63">sudo chkconfig unravel_sw_1 off</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:73;402:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:33;403:19">If you have 10000-20000 jobs per day, enable these workers:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:6;404:63">sudo chkconfig --add unravel_ew_2 
+sudo chkconfig --add unravel_hhw_2 
+sudo chkconfig --add unravel_jcw2_2</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:74;409:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:34;410:19">If you have 20000-30000 jobs per day, enable these workers:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:7;411:63">sudo chkconfig --add unravel_ew_3 
+sudo chkconfig --add unravel_hhw_3 
+sudo chkconfig --add unravel_jcw2_3</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:75;416:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:35;417:19">If you have more than 30000 jobs per day, enable these workers:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:8;418:63">sudo chkconfig --add unravel_ew_4 
+sudo chkconfig --add unravel_hhw_4 
+sudo chkconfig --add unravel_jcw2_4</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:36;424:13">Modify <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:21;424:28">unravel.properties</codeph>
+         </p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:9;427:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:37;428:13">All values in unravel.properties can be modified through the in Unravel Web UI's
+            configuration wizard, for CDH.  Furthermore, some properties can <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:4;429:81">only</i> be modified
+            by running the configuration wizard. Therefore, for CDH, this section is optional.</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ul:17;431:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:76;433:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:38;434:19">Open <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:10;434:28">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:22;435:30">/usr/local/unravel/etc/unravel.properties</codeph>
+                  </ph> with <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:23;436:38">vi</codeph>.</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:9;437:63">sudo vi /usr/local/unravel/etc/unravel.properties</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="li:77;440:17">Edit the values in <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:11;440:40">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:24;441:27">unravel.properties</codeph>
+               </ph> using the guidelines and descriptions in the table below.</li>
+
+         </ul>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="table:1;445:55">
+            <tgroup cols="3" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="tgroup:1;446:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="colspec:1;447:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="colspec:2;448:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="colspec:3;449:41" colnum="3"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="tbody:1;450:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:1;451:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:1;453:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="1">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:25;454:33"> com.unraveldata.advertised.url</codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:2;457:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="1">Defines the
+                        Unravel Server URL for HTTP traffic.</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:3;460:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="1">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:26;461:33"> com.unraveldata.advertised.url=<ph outputclass="nolink" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:12;461:90">
+                              <ph outputclass="nolink" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:13;462:56">http://<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:14;462:67">LAN_DNS</ph>:3000</ph>
+                           </ph>
+                        </codeph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:2;468:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:4;470:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:27;471:33">com.unraveldata.customer.organization</codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:5;474:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="2">Identifies your
+                        installation for reporting purposes.</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:6;477:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:28;478:33">com.unraveldata.customer.organization=<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:15;478:75">Company_and_org</ph>
+                        </codeph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:3;483:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:7;485:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:29;486:33">com.unraveldata.history.maxSize.weeks</codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:8;489:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="3">Sets retention
+                        for search data.</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:9;492:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:30;493:33">com.unraveldata.history.maxSize.weeks=26</codeph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:4;497:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:10;499:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="4">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:31;500:33">com.unraveldata.hive.hook.topic.num.threads</codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:11;503:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="4">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="b:4;504:28">Optional</b>. Defines the number of threads. Default is 1. Depending on
+                        job volume, increase this property to <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:5;505:66">N</i> where <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:6;505:81">N</i> is between 1
+                        and 4, or roughly <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:7;506:46">ThousandJobsPerDay</i>/10.</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:12;508:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="4">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:32;509:33">com.unraveldata.hive.hook.topic.num.threads=1</codeph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:5;513:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:13;515:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:33;516:33"> com.unraveldata.login.admins</codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:14;519:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="5">Defines the
+                        usernames that can access Unravel Web UI's admin pages. Default is
+                           <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:34;521:36">admin</codeph>.</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:15;523:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:35;524:33"> com.unraveldata.login.admins=admin</codeph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:6;528:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:16;530:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="6">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:36;531:33"> com.unraveldata.s3.batch.monitoring.interval.sec</codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:17;534:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="6">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="b:5;535:28">Optional</b>. Defines the monitoring frequency. Default is 300 seconds (5
+                        minutes). Set this property to 60 for lower latency.</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:18;538:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="6">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:37;539:33"> com.unraveldata.s3.batch.monitoring.interval.sec=120</codeph>
+                     </entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:39;546:13">If Kerberos is Enabled:</p>
+         <ph outputclass="expand-control-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:16;547:48">
+            <image href="images/icons/grey_arrow_down.png" outputclass="expand-control-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="image:1;548:96"/>
+         </ph>
+         <ph outputclass="expand-control-text" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:17;550:48">Add authentication for HDFS...</ph>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:40;551:13">(a) Create a keytab for unravel for daemons that run as <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:38;551:77">unravel</codeph> and put
+            the file in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:39;552:33">/usr/local/unravel/etc/unravel.keytab</codeph> (for example).</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:41;553:13">(b) Create a keytab for hdfs for the Unravel daemons that run as user
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:40;554:24">hdfs</codeph> and put the file in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:41;554:66">/etc/keytabs/hdfs.keytab</codeph>
+            (for example).</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:42;556:13">(c) Tell Unravel Server about it (env var for hdfs keytab location; substitute correct
+            hostname):</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:10;558:57">echo "export HDFS_KEYTAB_PATH=/etc/keytabs/hdfs.keytab 
+export HDFS_KERBEROS_PRINCIPAL=hdfs/myhost.mydomain@MYREALM 
+" | sudo tee -a /usr/local/unravel/etc/unravel.ext.sh </codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:43;561:13">(d) Add properties for Kerberos:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:11;562:57">echo "
+com.unraveldata.kerberos.principal=unravel/myhost.mydomain@MYREALM
+com.unraveldata.kerberos.keytab.path=/usr/local/unravel/etc/unravel.keytab
+" | sudo tee -a /usr/local/unravel/unravel.properties</codeblock>
+         <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:44;566:46">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:8;567:16">You can find the principal by using 'klist -kt KEYTAB_FILE'</i>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:45;569:13">If Sentry is Enabled:</p>
+         <ph outputclass="expand-control-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:18;570:48">
+            <image href="images/icons/grey_arrow_down.png" outputclass="expand-control-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="image:2;571:96"/>
+         </ph>
+         <ph outputclass="expand-control-text" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:19;573:48">Add these permissions...</ph>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="table:2;574:55">
+            <tgroup cols="4" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="tgroup:2;575:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="colspec:4;576:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="colspec:5;577:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="colspec:6;578:41" colnum="3"/>
+               <colspec colname="col4" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="colspec:7;579:41" colnum="4"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="tbody:2;580:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:7;581:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:19;583:56" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:42;584:33">hdfs://user/unravel/HOOK_RESULT_DIR</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:20;587:56" colname="col2" dita-ot:x="2" dita-ot:y="1">*</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:21;589:56" colname="col3" dita-ot:x="3" dita-ot:y="1">read+write</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:22;591:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="1">data transfer
+                        from Hive jobs when Unravel is not up</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:8;595:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:23;597:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:43;598:33">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:20;599:32">hdfs://user/spark/applicationHistory</ph>
+                        </codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:24;603:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="2">hdfs</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:25;605:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="2">read</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:26;607:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="2">Spark event
+                        log</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:9;611:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:27;613:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:44;614:33">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:21;615:32">hdfs://usr/history/done</ph>
+                        </codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:28;619:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="3">hdfs</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:29;621:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="3">read</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:30;623:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="3">MapReduce
+                        logs</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:10;627:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:31;629:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="4">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:45;630:33">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:22;631:32">hdfs://tmp/logs</ph>
+                        </codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:32;635:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="4">hdfs</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:33;637:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="4">read</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:34;639:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="4">YARN aggregation
+                        folder</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:11;643:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:35;645:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:46;646:33">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:23;647:32">hdfs://user/hive/warehouse</ph>
+                        </codeph>
+                     </entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:36;651:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="5">hdfs</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:37;653:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="5">read</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:38;655:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="5">Obtain table
+                        partition sizes</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="row:12;659:24">
+
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:39;661:85" colname="col1" dita-ot:morecols="0" dita-ot:x="1" dita-ot:y="6">Hive Metastore
+                        GRANT</entry>
+
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:40;664:85" colname="col2" dita-ot:morecols="0" dita-ot:x="2" dita-ot:y="6">hive</entry>
+
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:41;666:85" colname="col3" dita-ot:morecols="0" dita-ot:x="3" dita-ot:y="6">read</entry>
+
+                     <entry namest="col4" nameend="col4" outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="entry:42;668:85" colname="col4" dita-ot:morecols="0" dita-ot:x="4" dita-ot:y="6">Hive table
+                        information</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:46;675:13">Do Host-Specific Configuration Steps</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:47;676:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:24;677:17">For CDH, there are no host-specific configuration steps.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:48;679:13">Restart Unravel Server</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:49;680:13">After edits to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:47;680:36">com.unraveldata.login.admins</codeph> in
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:48;681:24">/usr/local/unravel/etc/unravel.properties</codeph> it is necessary to run the
+            following script in order to make changes take effect. The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:49;682:80">echo</codeph> command
+            shows the page to visit with your browser. If you are using an ssh tunnel or http proxy,
+            you might need to make adjustments.</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeblock:12;685:57">sudo /etc/init.d/unravel_all.sh start
+sleep 60
+echo "http://$(hostname -f):3000/"</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:50;688:13">This completes the basic/core configuration.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:51;689:13">4. Log into Unravel Web UI</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:52;690:13">Using a web browser, navigate to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:50;690:54">
+               <ph outputclass="nolink" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:25;691:41">http://($hostname</ph> -f):3000</codeph> and login as user
+               "<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:51;692:25">admin"</codeph> with password <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="codeph:52;692:63">"unraveldata</codeph>".</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:26;694:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:53;695:13">For the free trial version, use the Chrome web browser.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:54;696:13">
+            <ph outputclass="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="ph:27;698:116">
+               <image href="media/50876015.png" outputclass="confluence-embedded-image image-center" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="image:3;700:73"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:55;703:13">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="i:9;704:16">Unravel Web UI Login Screen</i>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:56;706:13">Congratulations!</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:57;707:13">Unravel Server is up and running. Unravel Web UI displays collected data. For
+            instructions on using Unravel Web UI, see the <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:29;708:97" type="topic"><?ditaot usertext?>User
+               Guide</xref>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:58;710:13">5. (Optional) Configure Unravel Server (Advanced Options)</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:59;711:13">Enable Additional Data Collection/Instrumentation</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:60;712:13">Install the Unravel Sensor Parcel on gateway/edge/client nodes that are used to submit
+            Hive queries to push additional information to Unravel Server. For details, see <xref href="50689256.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:30;714:37" type="task"><?ditaot usertext?>Part 2: Install Unravel Sensor Parcel on CDH+CM</xref>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:61;715:13">Run the Unravel Web UI Configuration Wizard</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:62;716:13">Run the Unravel Web UI configuration wizard to choose additional configuration options.
+            For instructions on configuring advanced options, see the <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:31;718:48" type="topic"><?ditaot usertext?>User Guide</xref>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:63;719:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="p:64;720:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="image:4;721:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="alt:1;722:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:32;725:14"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="image:5;726:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="alt:2;727:19"/>
+         </image>
+         <xref href="media/50876015.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:33;729:56"><?ditaot usertext?>image2017-2-26_0-20-12.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="image:6;730:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="alt:3;731:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50792782.dita" xtrc="xref:34;733:52"><?ditaot usertext?>logo_small.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Monitoring Oozie Workflows</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Workflows_53900905.html">Workflows</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Monitoring Oozie Workflows </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <h2 id="MonitoringOozieWorkflows-EnablingOozie">Enabling Oozie</h2><p>In <span
+                                style="color: rgb(0,0,0);"><code>unravel.properties</code></span>, update the
+                                <code>oozie.server.url</code> property with appropriate value.<span
+                                style="color: rgb(0,0,0);"><code>
+                                    <br /></code></span></p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo vi /usr/local/unravel/etc/unravel.properties</pre>
+                            </div></div><p><span style="color: rgb(0,0,0);"><br /></span></p><h2
+                            id="MonitoringOozieWorkflows-EnablingAirFlow">Enabling AirFlow</h2><p>The script below,
+                                <code>spark-test.py</code>, is a sample script for Spark.</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeHeader panelHeader pdl"
+                                style="border-bottom-width: 1px;"><b>spark-test.py</b></div><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">from airflow import DAG
+from airflow.operators.bash_operator import BashOperator
+from airflow.operators import PythonOperator
+from datetime import datetime, timedelta
+import subprocess
+
+
+default_args = {
+    &#39;owner&#39;: &#39;airflow&#39;,
+    &#39;depends_on_past&#39;: False,
+    &#39;start_date&#39;: datetime(2015, 6, 1),
+    &#39;email&#39;: [&#39;airflow@airflow.com&#39;],
+    &#39;email_on_failure&#39;: False,
+    &#39;email_on_retry&#39;: False,
+    &#39;retries&#39;: 1,
+    &#39;retry_delay&#39;: timedelta(minutes=5),
+    # &#39;queue&#39;: &#39;bash_queue&#39;,
+    # &#39;pool&#39;: &#39;backfill&#39;,
+    # &#39;priority_weight&#39;: 10,
+    # &#39;end_date&#39;: datetime(2016, 1, 1),
+}
+</pre>
+                            </div></div><p>In Oozie/Airflow, workflows are represented by directed acyclic graphs
+                            (DAGs). For example,</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">dag = DAG(&#39;spark-test&#39;, default_args=default_args)
+</pre>
+                            </div></div><h2 id="MonitoringOozieWorkflows-1.AddHooksforUnravelInstrumentation">1. Add
+                            Hooks for Unravel Instrumentation</h2><p>The example below shows the contents of a bash
+                            script, <code>example-hdp-client.sh</code>, that can be invoked to submit an Airflow Spark
+                            application via <code>spark-submit</code>. This script adds hooks for Unravel
+                            instrumentation by setting three Unravel-specific configuration parameters for Spark
+                            applications:</p><ul>
+                            <li><code>spark.driver.extraJavaOptions</code></li>
+                            <li><code>spark.executor.extraJavaOptions</code></li>
+                            <li><code>spark.unravel.server.hostport</code></li>
+                        </ul><p>Setting these parameters on a <strong>per-application</strong> basis is recommended when
+                            you only want to monitor/profile certain applications, rather than all the applications
+                            running in the cluster. Alternatively, you can specify these parameters in
+                                <code>spark-defaults.conf</code>.</p><p>This script references the following variables,
+                            which you would need to edit:</p><ul>
+                            <li><code>PATH_TO_SPARK_EXAMPLE_JAR=<span style="color: rgb(255,0,0);"
+                                        >/usr/hdp/2.3.6.0-3796/spark/lib/spark-examples-*.jar</span></code></li>
+                            <li><code>UNRAVEL_SERVER_IP_PORT=<span style="color: rgb(255,0,0);"
+                                    >10.20.30.40:4043</span></code></li>
+                            <li><code>SPARK_EVENT_LOG_DIR=<span>hdfs://<span style="color: rgb(255,0,0);"
+                                            >ip-10-0-0-21.ec2.internal:8020/user/ec2-user/eventlog</span></span></code></li>
+                        </ul><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"
+                                    ><b>example-hdp-client.sh</b></div><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">hdfs dfs -rmr pair.parquet
+spark-submit \
+--class org.apache.spark.examples.sql.RDDRelation \
+--master yarn-cluster \
+--conf &quot;spark.driver.extraJavaOptions=-javaagent:/usr/local/unravel_client/btrace-agent.jar=unsafe=true,stdout=false,noServer=true,startupRetransform=false,bootClassPath=/usr/local/unravel_client/unravel-boot.jar,systemClassPath=/usr/local/unravel_client/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1 -Dcom.unraveldata.spark.sensor.disableLiveUpdates=true&quot; \
+--conf &quot;spark.executor.extraJavaOptions=-javaagent:/usr/local/unravel_client/btrace-agent.jar=unsafe=true,stdout=false,noServer=true,startupRetransform=false,bootClassPath=/usr/local/unravel_client/unravel-boot.jar,systemClassPath=/usr/local/unravel_client/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class -Dcom.sun.btrace.FileClient.flush=-1&quot; \
+--conf &quot;spark.unravel.server.hostport=$UNRAVEL_SERVER_IP_PORT&quot; \
+--conf &quot;spark.eventLog.dir=$SPARK_EVENT_LOG_DIR&quot; \
+--conf &quot;spark.eventLog.enabled=true&quot; \
+$PATH_TO_SPARK_EXAMPLE_JAR</pre>
+                            </div></div><h2 id="MonitoringOozieWorkflows-2.SubmittheWorkflow">2. Submit the
+                            Workflow</h2><p>Operators (also called tasks) determine execution order (dependencies). In
+                            the example below, <code>t1</code> and <code>t2</code> are operators created
+                                by <code>BashOperator</code> or <code>PythonOperator</code>. They invoke
+                                <code>example-hdp-client.sh</code>, which submits the workflow for execution.</p><div
+                            class="confluence-information-macro confluence-information-macro-note"><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Note: The pathname
+                                        of <code>example-hdp-client.sh</code> is relative to the current directory, not
+                                    to <code>~/airflow/dags</code> as in the Airflow operator above!</p></div></div><div
+                            class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">t1 = BashOperator(
+task_id=&#39;example-hdp-client&#39;,
+bash_command=&quot;example-scripts/example-hdp-client.sh&quot;,
+retries=3,
+dag=dag)
+
+
+def spark_callback(**kwargs):
+sp
+ = subprocess.Popen([&#39;/bin/bash&#39;, 
+&#39;airflow/dags/example-scripts/example-hdp-client.sh&#39;], 
+stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+print sp.stdout.read()
+
+
+t2 = PythonOperator(
+task_id=&#39;example-python-call&#39;,
+provide_context=True,
+python_callable=spark_callback,
+retries=1,
+dag=dag)
+
+
+t2.set_upstream(t1)
+</pre>
+                            </div></div><div class="confluence-information-macro confluence-information-macro-tip"><span
+                                class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>You can test the operators
+                                    first. For example, in Airflow:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">airflow test spark-test example-python-call 2016-08-30</pre>
+                                    </div></div></div></div><h2 id="MonitoringOozieWorkflows-3.MonitortheWorkflow">3.
+                            Monitor the Workflow</h2><p>To see the new Oozie workflow in Unravel Web UI, select
+                                <strong>APPLICATIONS</strong> | <strong>Workflows</strong>, and then click <strong>Add
+                                Workflow</strong>.</p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51161898.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

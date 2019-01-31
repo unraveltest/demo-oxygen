@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FAGIJHIJ" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="task:1;4:38">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="title:1;5:11">Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive Cluster </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:3;23:20">
+                  <xref href="50688627.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="xref:3;24:46" type="topic"><?ditaot usertext?>Installation Guide for Amazon Elastic MapReduce (Amazon
+                     EMR) and Qubole Clusters</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:4;31:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:1;32:13">Follow these steps only if you have a Qubole-based Hadoop2/Hive cluster.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:2;33:13">Highlighted text indicates where you must substitute your particular values.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:3;34:13">Introduction</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:4;35:13">This topic explains how to install Unravel Sensor (Hive Hook) on Qubole-based
+            Hadoop2/Hive clusters. Unravel Sensor collects information about Hive queries in Hadoop
+            and pushes it to Unravel Server.</p>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="b:1;38:13">Workflow Summary</b>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ol:2;39:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:4;41:17">Step 1 is a one-time only step.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:5;43:17">If the Qubole cluster already exists (is already running), do a "setup" procedure:
+               follow the steps 3 to 5 in Hive Bootstrap and Unravel Hive Hook Sensor <xref href="#FAGIJHIJ/Part2:InstallUnravelHiveSensoronQuboleHadoop2/HiveCluster-hivehooksetupexistingcluster" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="xref:4;46:20"><?ditaot usertext?>Setup.</xref>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:5;50:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:6;51:13">Hive Bootstrap and Unravel Hive Hook Sensor Setup:</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:5;53:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:7;54:13">{location_in_s3_where_unravel_jar_folder} - is the s3 location where the unravel hive
+            hook jar will be accessed</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:8;56:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:6;57:17">{</ph>Unravel_Hostname_IP} - is the Unravel server's fully qualified internal IP
+            address, preferably the LAN (private) IP if in the same availability zone</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ol:3;59:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:6;61:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:9;62:52">Add a one-time Unravel Hive Bootstrap into
+                  Qubole's control panel on the left-hand side in the "Hive Bootstrap" section, as
+                  follows:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeblock:1;65:63">add jar  s3n://{location_in_s3_where_unravel_jar_folder} /unravel-hive-0.13.0-hook.jar;
+
+set com.unraveldata.hive.hdfs.dir=/user/unravel/HOOK_RESULT_DIR;
+set hive.exec.driver.run.hooks=com.unraveldata.dataflow.hive.hook.HiveDriverHook;
+set hive.exec.pre.hooks=com.unraveldata.dataflow.hive.hook.HivePreHook;
+set hive.exec.post.hooks=com.unraveldata.dataflow.hive.hook.HivePostHook;
+set hive.exec.failure.hooks=com.unraveldata.dataflow.hive.hook.HiveFailHook;
+set com.unraveldata.host=&lt;Unravel_Hostname_FQDN_Internal_IP&gt;;
+set com.unraveldata.hive.hook.tcp=true;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:7;76:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:10;77:52">Determine the Hive version that Qubole uses, and
+                  use that value for <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:7;78:42">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeph:1;79:30">HIVE_VER</codeph>
+                  </ph> in the commands below.</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:8;82:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:11;83:19">To determine the Hive version Qubole uses, see <xref href="http://docs.qubole.com/en/latest/faqs/hive/version-hive-qubole-provide.html" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="xref:5;86:23"><?ditaot usertext?>http://docs.qubole.com/en/latest/faqs/hive/version-hive-qubole-provide.html</xref>.</p>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:12;87:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:9;88:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeph:2;89:30">HIVE_VER</codeph>
+                  </ph> must be a Hive version that Unravel Server supports:  either
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeph:3;91:30">1.2.0</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeph:4;91:56">0.13.0</codeph>. Be sure to use either of
+                  these values in exactly this format.</p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:8;95:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:13;96:52">On the master node of the Qubole Hadoop2/Hive
+                  cluster, check that Unravel Server is reachable.</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:10;99:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:14;100:19">Ensure the security group on the master/slave allows TCP port #3000 and #4043
+                  accessible.</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeblock:2;102:63"># curl http://{Unravel_Hostname_IP}:3000/version.txt</codeblock>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:11;104:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:15;105:19">If the version information is not visible, adjust security groups and routing and
+                  try again.</p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:9;109:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:16;110:52">SSH to the master server of the existing Qubole
+                  Hadoop2/Hive cluster, run the following commands:</p>
+               <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ol:4;112:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:10;114:23">
+                     <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:17;115:58">Use <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeph:5;115:70">curl</codeph> to get the script
+                        from Unravel Server:</p>
+                     <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeblock:3;117:69"># curl http://{Unravel_Hostname_IP}:3000/hh/unraveldata-clients/unravel_qubole_setup.sh &gt; unravel_qubole_setup.sh</codeblock>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:11;120:23">
+                     <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:18;121:58">Ensure <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeph:6;121:73">wget</codeph> is installed,
+                        and run the script on each server in the cluster:</p>
+                     <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:12;124:116"/>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:19;125:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:13;126:29">Files will be installed under:</ph>
+                     </p>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:20;128:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:14;129:29">     Hive hook jar is /usr/local/unravel_client/.</ph>
+                     </p>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:21;131:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:15;132:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:16;133:32">     Spark jar is /usr/local/unravel-spark/.</ph>
+                        </ph>
+                     </p>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:22;136:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:17;137:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:18;138:32">     Unravel ES is /usr/local/unravel_es/.</ph>
+                        </ph>
+                     </p>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:23;141:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="ph:19;142:29">On the master node, /etc/init.d/unravel_es service will be defined and
+                           started.</ph>
+                     </p>
+                     <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeblock:4;145:69"># yum install -y wget
+# chmod 755 unravel_qubole_setup.sh 
+# sudo ./unravel_qubole_setup.sh install -y --unravel-server UNRAVEL_HOST_IP:3000</codeblock>
+                  </li>
+
+               </ol>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="li:12;153:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:24;154:52">Verify if the setup works in Qubole by invoking
+                  Analyze and execute following Hive test query:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="codeblock:5;156:63">set hive.on.master=true ;
+select count(*) from default_qubole_memetracker;</codeblock>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:25;161:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="p:26;162:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="image:1;163:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="alt:1;164:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="xref:6;167:14"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="image:2;168:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="alt:2;169:19"/>
+         </image>
+         <xref href="media/51089633.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50689789.dita" xtrc="xref:7;171:56"><?ditaot usertext?>logo_small.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Monitoring-Oozie-Workflows_51161894">
+   <title>
+                        Monitoring Oozie Workflows 
+                    </title>
+   <taskbody>
+      <context>
+         <p>Enabling Oozie</p>
+         <p>In <ph>
+               <codeph>unravel.properties</codeph>
+            </ph>, update the <codeph>oozie.server.url</codeph> property with appropriate value.<ph>
+               <codeph> </codeph>
+            </ph>
+         </p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo vi /usr/local/unravel/etc/unravel.properties</codeblock>
+         <p>Enabling AirFlow</p>
+         <p>The script below, <codeph>spark-test.py</codeph>, is a sample script for Spark.</p>
+         <b>spark-test.py</b>
+         <codeblock outputclass="syntaxhighlighter-pre">from airflow import DAG
+from airflow.operators.bash_operator import BashOperator
+from airflow.operators import PythonOperator
+from datetime import datetime, timedelta
+import subprocess
+
+
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'start_date': datetime(2015, 6, 1),
+    'email': ['airflow@airflow.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=5),
+    # 'queue': 'bash_queue',
+    # 'pool': 'backfill',
+    # 'priority_weight': 10,
+    # 'end_date': datetime(2016, 1, 1),
+}
+</codeblock>
+         <p>In Oozie/Airflow, workflows are represented by directed acyclic graphs (DAGs). For example,</p>
+         <codeblock outputclass="syntaxhighlighter-pre">dag = DAG('spark-test', default_args=default_args)
+</codeblock>
+         <p>1. Add Hooks for Unravel Instrumentation</p>
+         <p>The example below shows the contents of a bash script, <codeph>example-hdp-client.sh</codeph>, that can be
+            invoked to submit an Airflow Spark application via <codeph>spark-submit</codeph>. This script adds hooks for
+            Unravel instrumentation by setting three Unravel-specific configuration parameters for Spark
+            applications:</p>
+         <ul>
+            <li>
+               <codeph>spark.driver.extraJavaOptions</codeph>
+            </li>
+            <li>
+               <codeph>spark.executor.extraJavaOptions</codeph>
+            </li>
+            <li>
+               <codeph>spark.unravel.server.hostport</codeph>
+            </li>
+         </ul>
+         <p>Setting these parameters on a <b>per-application</b> basis is recommended when you only want to
+            monitor/profile certain applications, rather than all the applications running in the cluster.
+            Alternatively, you can specify these parameters in <codeph>spark-defaults.conf</codeph>.</p>
+         <p>This script references the following variables, which you would need to edit:</p>
+         <ul>
+            <li>
+               <codeph>PATH_TO_SPARK_EXAMPLE_JAR=<ph>/usr/hdp/2.3.6.0-3796/spark/lib/spark-examples-*.jar</ph>
+               </codeph>
+            </li>
+            <li>
+               <codeph>UNRAVEL_SERVER_IP_PORT=<ph>10.20.30.40:4043</ph>
+               </codeph>
+            </li>
+            <li>
+               <codeph>SPARK_EVENT_LOG_DIR=<ph>hdfs://<ph>ip-10-0-0-21.ec2.internal:8020/user/ec2-user/eventlog</ph>
+                  </ph>
+               </codeph>
+            </li>
+         </ul>
+         <b>example-hdp-client.sh</b>
+         <codeblock outputclass="syntaxhighlighter-pre">hdfs dfs -rmr pair.parquet
+spark-submit \
+--class org.apache.spark.examples.sql.RDDRelation \
+--master yarn-cluster \
+--conf "spark.driver.extraJavaOptions=-javaagent:/usr/local/unravel_client/btrace-agent.jar=unsafe=true,stdout=false,noServer=true,startupRetransform=false,bootClassPath=/usr/local/unravel_client/unravel-boot.jar,systemClassPath=/usr/local/unravel_client/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1 -Dcom.unraveldata.spark.sensor.disableLiveUpdates=true" \
+--conf "spark.executor.extraJavaOptions=-javaagent:/usr/local/unravel_client/btrace-agent.jar=unsafe=true,stdout=false,noServer=true,startupRetransform=false,bootClassPath=/usr/local/unravel_client/unravel-boot.jar,systemClassPath=/usr/local/unravel_client/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class -Dcom.sun.btrace.FileClient.flush=-1" \
+--conf "spark.unravel.server.hostport=$UNRAVEL_SERVER_IP_PORT" \
+--conf "spark.eventLog.dir=$SPARK_EVENT_LOG_DIR" \
+--conf "spark.eventLog.enabled=true" \
+$PATH_TO_SPARK_EXAMPLE_JAR</codeblock>
+         <p>2. Submit the Workflow</p>
+         <p>Operators (also called tasks) determine execution order (dependencies). In the example below,
+               <codeph>t1</codeph> and <codeph>t2</codeph> are operators created by <codeph>BashOperator</codeph> or
+               <codeph>PythonOperator</codeph>. They invoke <codeph>example-hdp-client.sh</codeph>, which submits the
+            workflow for execution.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>Note: The pathname of <codeph>example-hdp-client.sh</codeph> is relative to the current directory, not to
+               <codeph>~/airflow/dags</codeph> as in the Airflow operator above!</p>
+         <codeblock outputclass="syntaxhighlighter-pre">t1 = BashOperator(
+task_id='example-hdp-client',
+bash_command="example-scripts/example-hdp-client.sh",
+retries=3,
+dag=dag)
+
+
+def spark_callback(**kwargs):
+sp
+ = subprocess.Popen(['/bin/bash', 
+'airflow/dags/example-scripts/example-hdp-client.sh'], 
+stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+print sp.stdout.read()
+
+
+t2 = PythonOperator(
+task_id='example-python-call',
+provide_context=True,
+python_callable=spark_callback,
+retries=1,
+dag=dag)
+
+
+t2.set_upstream(t1)
+</codeblock>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+         <p>You can test the operators first. For example, in Airflow:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">airflow test spark-test example-python-call 2016-08-30</codeblock>
+         <p>3. Monitor the Workflow</p>
+         <p>To see the new Oozie workflow in Unravel Web UI, select <b>APPLICATIONS</b> | <b>Workflows</b>, and then
+            click <b>Add Workflow</b>.</p>
+      </context>
+   </taskbody>
+</task>

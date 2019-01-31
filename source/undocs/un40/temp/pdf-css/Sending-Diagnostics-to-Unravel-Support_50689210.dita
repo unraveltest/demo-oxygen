@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Sending-Diagnostics-to-Unravel-Support_50689210" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="task:1;3:128">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="title:1;4:11">
+                        Sending Diagnostics to Unravel Support 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="taskbody:1;7:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="context:1;8:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="ol:1;12:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:1;14:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="ph:1;16:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="xref:1;17:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:2;22:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="ph:2;24:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="xref:2;25:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:3;30:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="ph:3;32:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="xref:3;33:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:4;38:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="ph:4;40:20">
+                  <xref href="Troubleshooting_50881320.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="xref:4;41:62" type="concept"><?ditaot usertext?>Troubleshooting</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="ol:2;53:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:5;55:17">In the upper right corner of Unravel Web UI, click the pull-down menu, and select
+                                    <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="b:1;56:40">Manage</b>.</li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:6;58:17">Wait for the page to fully load.</li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:7;60:17">Select the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="b:2;60:31">Diagnostics</b> tab.</li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="li:8;62:17">Click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="b:3;62:26">Send Diagnostics to Unravel Support</b>.</li>
+                        
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="p:1;65:13">This sends an email message with a diagnostics report to Unravel Support and also to the
+                            users listed in the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="codeph:1;66:57">com.unraveldata.login.admins</codeph> property.</p>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="p:2;71:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="image:1;75:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="alt:1;76:19"/>
+         </image>
+                            
+         <xref href="media/51230264.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Sending-Diagnostics-to-Unravel-Support_50689210.dita" xtrc="xref:5;79:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+                        
+                    
+                
+            </context>
+   </taskbody>
+</task>

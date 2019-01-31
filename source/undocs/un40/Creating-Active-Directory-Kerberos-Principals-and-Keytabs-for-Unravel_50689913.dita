@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913">
+   <title>
+                        Creating Active Directory Kerberos Principals and
+                            Keytabs for Unravel 
+                    </title>
+   <taskbody>
+      <context>
+         <p>Define HOST Variable for Unravel Server as an FQDN</p>
+         <p>(Replace <ph>
+               <codeph>UNRAVEL_HOST</codeph>
+            </ph> with your host's FQDN):</p>
+         <codeblock outputclass="syntaxhighlighter-pre">HOST=$UNRAVEL_HOST</codeblock>
+         <p>Define REALM Variable</p>
+         <p>(Use upper case for all; replace <ph>
+               <codeph>EXAMPLEDOTCOM</codeph>
+            </ph> with your realm):</p>
+         <codeblock outputclass="syntaxhighlighter-pre">REALM=$EXAMPLEDOTCOM</codeblock>
+         <p> Create the Active Directory (AD) Kerberos Principals and Keytabs</p>
+         <p>Use the two variables you defined above to replace the <ph>magenta</ph> text below.</p>
+         <ol>
+            <li>Verify that Unravel Server host is running ntpd service and that time is accurate.</li>
+            <li>For proper Kerberos operation with AD-KDC, DNS entries, <ph>including reverse DNS entries, must be in
+                  place.</ph>
+            </li>
+            <li>
+               <ph>On AD server, logged in as AD Administrator, add 2 Managed Service Accounts <codeph>unravel</codeph>
+                  and </ph>
+               <codeph>hdfs</codeph>:<ol>
+                  <li>
+                     <ph>Open the <b>Active Directory Users and Computers</b> snap-in.</ph>
+                  </li>
+                  <li>
+                     <ph>Confirm that the <b>Managed Service Account</b> container exists under the target</ph>
+                     <ph>
+                        <ph>
+                           <codeph>REALM</codeph>
+                        </ph>.</ph>
+                  </li>
+                  <li>
+                     <ph>Right-click the <b>Managed Service Account</b> container and choose <b>New-&gt;User</b>.</ph>
+                  </li>
+                  <li>
+                     <ph>Set names (<codeph>unravel</codeph> and <codeph>hdfs</codeph>) to account in first screen and
+                        click <b>Next</b>.</ph>
+                  </li>
+                  <li>
+                     <ph>Set a strong password to account (the password will not be used) and</ph>
+                     <ol>
+                        <li>
+                           <ph>Check <b>Password never expires</b>.</ph>
+                        </li>
+                        <li>
+                           <ph>
+                              <b>UN</b>check <b>Password must be changed</b>.</ph>
+                        </li>
+                        <li>
+                           <ph>Check <b>Password cannot be changed</b>.</ph>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <ph>Right-click the created user, choose <b>Properties</b>, and select the <b>Account</b> tab.
+                     </ph>
+                  </li>
+                  <li>
+                     <ph>
+                        <ph>In the <b>Account Options</b> panel,</ph> check <b>Kerberos AES256-SHA1</b>.</ph>
+                  </li>
+               </ol>
+            </li>
+            <li>
+               <ph>On AD server, logged in as AD Administrator, create the Service Principal Names:</ph>
+               <ol>
+                  <li>
+                     <ph>The commands to run in a cmd or powershell are the following:</ph>
+                  </li>
+                  <li>
+                     <codeph>
+                        <ph>setspn -A unravel/</ph>
+                        <ph>HOST</ph>
+                        <ph>unravel</ph>
+                     </codeph>
+                  </li>
+                  <li>
+                     <codeph>
+                        <ph>setspn -A hdfs/</ph>
+                        <ph>HOST</ph>
+                        <ph>hdfs</ph>
+                     </codeph>
+                  </li>
+               </ol>
+            </li>
+            <li>
+               <ph>On AD server, logged in as AD Administrator, generate keytab files that Unravel Server will use to
+                  authenticate with Kerberos using the <codeph>ktpass</codeph> utility in Active Directory:</ph>
+               <ol>
+                  <li>
+                     <codeph>
+                        <ph>ktpass -princ unravel/</ph>
+                        <ph>HOST</ph>
+                        <ph>@</ph>
+                        <ph>REALM</ph>
+                        <ph>-mapUser unravel -Target</ph>
+                        <ph>REALM</ph>
+                        <ph>+rndPass -out unravel.keytab -ptype KRB5_NT_PRINCIPAL -crypto AES256-SHA1</ph>
+                     </codeph>
+                  </li>
+                  <li>
+                     <codeph>
+                        <ph>ktpass -princ hdfs/HOST@REALM</ph>
+                        <ph>-mapUser hdfs -Target</ph>
+                        <ph>REALM</ph>
+                        <ph>+rndPass -out hdfs.keytab -ptype KRB5_NT_PRINCIPAL -crypto AES256-SHA1</ph>
+                     </codeph>
+                  </li>
+               </ol>
+            </li>
+            <li>
+               <ph>Copy the two keytabs (<codeph>unravel.keytab</codeph> and <codeph>hdfs.keytab</codeph>) from AD
+                  server to the Unravel Server at</ph> <ph>
+                  <codeph>HOST</codeph>
+               </ph>
+               <ph>into <codeph>/etc/keytabs/</codeph> (create the destination directory if need be) and</ph>
+               <ol>
+                  <li>
+                     <codeph>
+                        <ph>sudo chmod 700 /etc/keytabs/*</ph>
+                     </codeph>
+                  </li>
+                  <li>
+                     <codeph>
+                        <ph>sudo chown unravel:unravel /etc/keytabs/unravel.keytab</ph>
+                     </codeph>
+                  </li>
+                  <li>
+                     <codeph>
+                        <ph>sudo chown hdfs:hdfs /etc/keytabs/hdfs.keytab</ph>
+                     </codeph>
+                  </li>
+               </ol>
+            </li>
+         </ol>
+         <p>
+            <ph>Assurances: <codeph>hdfs.keytab</codeph> is only usable on Unravel Server and is only used to access
+               HDFS log files and Hive metastore (if applicable).</ph>
+         </p>
+         <p>Attachments:</p>
+         <image href="images/icons/bullet_blue.gif">
+            <alt/>
+         </image>
+         <xref href="media/logo.png" format="html">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref> (image/png)
+            <image href="images/icons/bullet_blue.gif" placement="break">
+            <alt/>
+         </image>
+         <xref href="media/51229701.png" format="html">logo_small.png</xref> (image/png)  </context>
+   </taskbody>
+</task>

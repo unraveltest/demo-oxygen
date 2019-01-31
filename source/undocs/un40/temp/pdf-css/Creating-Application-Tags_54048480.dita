@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Creating-Application-Tags_54048480" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="concept:1;4:67">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:1;5:11">Creating Application Tags </title>
+   <conbody class="- topic/body  concept/conbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="conbody:1;6:13">
+
+
+
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ol:1;10:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:1;12:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:1;13:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="xref:1;14:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:2;18:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:2;19:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="xref:2;20:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:3;24:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:3;25:17">
+               <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="xref:3;26:59" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+
+
+
+
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:1;37:10">
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:4;38:14">Annotating applications with tags (key-value pairs) allows you to search, group, and charge back based on
+            tags. It also allows you to track Unravel's insights based on tags. </ph>
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:5;40:14">Thus, understanding how tags work in Unravel is crucial.</ph>
+      </p>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:2;42:11"/>
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:3;44:10">
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:6;45:14">Application tags are immutable: once created they cannot be changed</ph>.</p>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:4;46:11"/>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:1;47:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:2;48:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:7;49:17">What is a Tag in Unravel?</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:5;51:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:8;52:17">A tag is key-value pair <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="i:1;52:44">&lt;k,v&gt;</i> that has been associated with an application <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="i:2;52:108">A</i>.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:6;54:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:9;55:17">Thus, <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:10;55:27">application </ph>
+               <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="i:3;56:19">A</i> in Unravel can have zero or more tags associated with it: <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="i:4;56:86"> &lt;k1,v1&gt;, &lt;k2,v2&gt;,
+                  ...</i>
+            </ph>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:2;61:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:3;62:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:11;63:17">How Does Unravel Use Tags?</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:7;65:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:12;66:17">Unravel Server and Web UI use tags to:</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ul:1;68:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:4;70:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:8;71:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:13;72:23">Group applications for chargeback reports</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:5;76:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:9;77:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:14;78:23">Provide access control for different users</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:6;82:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:10;83:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:15;84:23">Search/group applications using tags</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:7;88:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:11;89:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:16;90:23">Group applications for insights</ph>
+               </p>
+            </li>
+
+         </ul>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:3;96:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:4;97:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:17;98:17">What Types of Tags Are There?</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:12;100:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:18;101:17">There are two types of tags: Unravel tags and user-created tags.</ph>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:4;104:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:5;105:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:19;106:17">Unravel Tags</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:13;108:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:20;109:17">All the tag names starting with <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="codeph:1;109:57">unravel</codeph> are internal to Unravel, and have a specific
+               meaning. For example, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="codeph:2;110:46">unravel.workflow.<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="i:5;110:66">name</i>
+               </codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="codeph:3;111:38">unravel.workflow.<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="i:6;111:58">utctimestamp</i>
+               </codeph> are used to create workflows. <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:21;112:60">Best practice is to use these tags only if you want to get
+                  the behavior associated with that tag. </ph>
+            </ph>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:5;117:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:6;118:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:22;119:17">User-Created Tags</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:14;121:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:23;122:17">You can create tags based on your use cases. </ph>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:6;125:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:7;126:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:24;127:17">How Do I Create Tags?</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:15;129:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:25;130:17">There are two ways to create tags: by adding them to the configuration of your application, or by
+               writing a Python script to inject them.</ph>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:7;134:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:8;135:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:26;136:17">Adding Tags to your Application's Configuration</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:16;138:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:27;139:17">Add tags to your application's configuration (configuration file or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="codeph:4;139:93">setConf</codeph>). Tags must
+               be in key-value format (<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="i:7;140:43">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="codeph:5;141:27">key1,value1,key2,value2,key3,value3,...</codeph>
+               </i>). Keys and values </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:28;143:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:29;144:20">can only contain alphanumeric characters. </ph>
+            </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:30;146:17">Unravel Server extracts these key-value pairs from the application's configuration file.</ph>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:8;149:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:9;150:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:31;151:17">Injecting Tags Through a Python Script</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:17;153:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:32;154:17">You can write Python script which is invoked in the ingestion pipeline and is set up to access
+               application metadata to create tags on the fly.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:18;157:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:33;158:17">Unravel receives metadata about applications from different sources, and that metadata can be received
+               out of order, but it is merged and <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:34;159:55">eventually </ph>reaches a consistent state. </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:35;160:17">For example, Spark receives data from Resource Manager, event log file, YARN aggregated logs, and
+               sensors. </ph>
+         </p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:36;163:106"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:19;164:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:37;165:17">Your Python script must be idempotent, in other words, it must produce the same result over multiple
+               invocations with <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:38;166:37">different input (metadata)</ph> for the same application. </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:20;168:14"/>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:9;170:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:10;171:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:39;172:17">Precedence of Tags</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:21;174:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:40;175:17">Unravel gives precedence to tags in this order (low to high):</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ul:2;177:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:8;179:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:41;180:20">Unravel tags defined in application configuration</ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:9;183:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:42;184:20">Tags extracted by Python script</ph>
+            </li>
+
+         </ul>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="section:10;189:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="title:11;190:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:43;191:17">Sample Use Cases</ph>
+         </title>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ul:3;193:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:10;195:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:22;196:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:44;197:23">Differentiate between job types such as pipeline and workflow</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="li:11;201:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:23;202:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:45;203:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:46;204:26">Differentiate between</ph> projects, queues, departments, <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:47;204:88">groups, </ph>
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:48;205:26">users, </ph>and tenants</ph>
+               </p>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:24;210:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:25;211:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="p:26;212:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Creating-Application-Tags_54048480.dita" xtrc="ph:49;213:18"/>
+         </p>
+      </section>
+
+   </conbody>
+</concept>

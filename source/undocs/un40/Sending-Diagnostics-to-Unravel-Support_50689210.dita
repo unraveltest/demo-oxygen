@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Sending-Diagnostics-to-Unravel-Support_50689210">
+   <title>
+                        Sending Diagnostics to Unravel Support 
+                    </title>
+   <taskbody>
+      <context>
+         <ol>
+            <li>In the upper right corner of Unravel Web UI, click the pull-down menu, and select <b>Manage</b>.</li>
+            <li>Wait for the page to fully load.</li>
+            <li>Select the <b>Diagnostics</b> tab.</li>
+            <li>Click <b>Send Diagnostics to Unravel Support</b>.</li>
+         </ol>
+         <p>This sends an email message with a diagnostics report to Unravel Support and also to the users listed in the
+               <codeph>com.unraveldata.login.admins</codeph> property.</p>
+      </context>
+   </taskbody>
+</task>

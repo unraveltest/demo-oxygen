@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="FAGIJCFG">
+   <title>Part 2: Install Unravel Sensor Parcel on CDH+CM </title>
+   <taskbody>
+      <context>
+         <p> Introduction</p>
+         <p>This topic explains how to install the Unravel Sensor 4.0 parcel on CDH clusters using Cloudera Manager
+            (CM). The parcel includes Hive Hook and Spark instrumentation JARs. Hive Hook is used to collect information
+            about Hive queries in Hadoop. The Spark instrumentation JARs measure Spark job performance.</p>
+         <p>These instructions apply to Unravel Sensor 4.0. For older versions of Unravel Server, contact Unravel
+            Support.</p>
+         <p>Before following these instructions, follow the steps in <xref href="50792782.dita">Part 1: Install Unravel
+               Server on CDH+CM</xref>.</p>
+         <b>Workflow Summary</b>
+         <ol>
+            <li>Obtain and distribute the parcel from Unravel Server.</li>
+            <li>
+               <p>Put the Hive Hook JAR in AUX_CLASSPATH.</p>
+            </li>
+            <li>
+               <p>Configure the gateway automatic deployment of Hive instrumentation.</p>
+            </li>
+            <li>Configure the gateway automatic deployment of Spark instrumentation.</li>
+         </ol>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>
+            <ph>Highlighted</ph> text below indicates where you must substitute your particular values.</p>
+         <p>When Active Directory Kerberos is used, <ph>
+               <codeph>
+                  <ph>UNRAVEL_HOST_IP</ph>
+               </codeph>
+            </ph> must be a fully qualified path.</p>
+         <ph outputclass="expand-control-icon">
+            <image href="images/icons/grey_arrow_down.png" outputclass="expand-control-image"/>
+         </ph>
+         <ph outputclass="expand-control-text">In this section...</ph>
+         <b>Table of Contents</b>
+         <ul outputclass="toc-indentation">
+            <li>
+               <xref href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-_17zqoqqgx4oqIntroduction"
+                  >Introduction</xref>
+            </li>
+            <li>
+               <xref
+                  href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-1.ObtainandDistributetheParcelfromUnravelServer"
+                  >1. Obtain and Distribute the Parcel from Unravel Server</xref>
+            </li>
+            <li>
+               <xref href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-2.PuttheHiveHookJARinAUX_CLASSPATH">2. Put
+                  the Hive Hook JAR in AUX_CLASSPATH</xref>
+               <ul outputclass="toc-indentation">
+                  <li>
+                     <xref href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-IfSentryisEnabled:">If Sentry is
+                        Enabled:</xref>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <xref
+                  href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-3.ConfiguretheGatewayAutomaticDeploymentofHiveInstrumentation"
+                  >3. Configure the Gateway Automatic Deployment of Hive Instrumentation</xref>
+               <ul outputclass="toc-indentation">
+                  <li>
+                     <xref
+                        href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-Setthehive-site.xmlSnippetinClouderaManager,andDeploytheHiveClientConfigurationtoGateways"
+                        >Set the hive-site.xml Snippet in Cloudera Manager, and Deploy the Hive Client Configuration to
+                        Gateways</xref>
+                  </li>
+                  <li>
+                     <xref href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-CheckUnravelWebUI">Check Unravel Web
+                        UI</xref>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <xref
+                  href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-4.ConfiguretheGatewayAutomaticDeploymentofSparkInstrumentation"
+                  >4. Configure the Gateway Automatic Deployment of Spark Instrumentation</xref>
+            </li>
+            <li>
+               <xref
+                  href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-ConfigureJVMSensorForYARN5.Optional-ConfigureYARN-MapReduce(MR)JVMSensorCluster-Wide"
+                  >5. Optional - Configure YARN - MapReduce (MR) JVM Sensor Cluster-Wide</xref>
+               <ul outputclass="toc-indentation">
+                  <li>
+                     <xref href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-SetinClouderaManager">Set in
+                        Cloudera Manager</xref>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <xref href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-_troubleshootingTroubleshooting"
+                  >Troubleshooting</xref>
+            </li>
+            <li>
+               <xref href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-References">References</xref>
+            </li>
+         </ul>
+         <p>1. Obtain and Distribute the Parcel from Unravel Server</p>
+         <ol>
+            <li>In Cloudera Manager, go to the <b>Parcels</b> page by clicking the parcels glyph (<ph
+                  outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                  <image href="media/50689263.png" outputclass="confluence-embedded-image"/>
+               </ph>) on the top of the page.</li>
+            <li>Click <b>Configuration</b> to see the <b>Parcel Settings</b> pop-up.</li>
+            <li>In the <b>Remote Parcel Repository URLs</b> section, click the <b>+</b> glyph to add a new entry.</li>
+            <li>Add <codeph>
+                  <ph outputclass="external-link">http://<ph>UNRAVEL_HOST_IP</ph>:3000/parcels/cdh<ph>X.Y</ph>/</ph>
+               </codeph> (include trailing slash) where <codeph>
+                  <ph>X.Y</ph>
+               </codeph> is the major, minor version of CDH version you are running and <codeph>
+                  <ph>UNRAVEL_HOST_IP</ph>
+               </codeph> is the host name or LAN IP address of Unravel Server where <codeph>unravel_lr</codeph> is
+               running. If you are running more than one version of CDH (multiple clusters) in Cloudera Manager, you can
+               add more than one parcel directory from the <codeph>
+                  <ph>UNRAVEL_HOST_IP</ph>
+               </codeph>.</li>
+            <li>Click <b>Save</b>.</li>
+            <li>Click <b>Check for New Parcels</b>.</li>
+            <li>On the <b>Parcels</b> page, pick a target cluster in the <b>Location</b> box.</li>
+            <li>In the list of <b>Parcel Names</b>, find the <codeph>UNRAVEL_SENSOR</codeph> parcel that matches the
+               version of the target cluster and click <b>Download</b>.</li>
+            <li>Click <b>Distribute</b>.</li>
+            <li>If you have an old parcel from Unravel, you can deactivate it now.</li>
+            <li>Then click <b>Activate</b> on the new parcel.</li>
+         </ol>
+         <p>2. Put the Hive Hook JAR in AUX_CLASSPATH</p>
+         <ol>
+            <li>In Cloudera Manager, for the target cluster, click <b>Hive</b> | <b>Configuration</b>, and search for
+               "hive-env" (without quotes).</li>
+            <li>
+               <p>In <b>Gateway Client Environment Advanced Configuration Snippet (Safety Valve)</b> for
+                     <codeph>hive-env.sh</codeph> enter the following:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">AUX_CLASSPATH=${AUX_CLASSPATH}:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel_hive_hook.jar</codeblock>
+            </li>
+         </ol>
+         <ol>
+            <li>In Cloudera Manager, click <b>YARN</b> | <b>Configuration</b>, and search for "hadoop-env" (without
+               quotes).</li>
+            <li>
+               <p>In <b>Gateway Client Environment Advanced Configuration Snippet (Safety Valve)</b> for
+                     <codeph>hadoop-env.sh</codeph>, enter the following:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">HADOOP_CLASSPATH=${HADOOP_CLASSPATH}:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel_hive_hook.jar</codeblock>
+            </li>
+         </ol>
+         <p>
+            <b>If Sentry is Enabled:</b>
+         </p>
+         <p>Sentry commands may also be needed to enable access to the Hive Hook JAR file. Grant privileges on the JAR
+            files to the roles that run hive queries. Log into Beeline as user <codeph>hive</codeph> and use the Hive
+               <codeph>SQL GRANT</codeph> statement to do so. For example (substitute <codeph>
+               <codeph>
+                  <ph>$ROLE</ph>
+               </codeph>
+            </codeph> as appropriate):</p>
+         <codeblock outputclass="syntaxhighlighter-pre">GRANT ALL ON URI 'file:///opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel_hive_hook.jar' TO ROLE $ROLE</codeblock>
+         <p>3. Configure the Gateway Automatic Deployment of Hive Instrumentation</p>
+         <p>Use Cloudera Manager to deploy the <codeph>hive-site.xml</codeph> snippet, which is the content of
+               <codeph>/usr/local/unravel/hive-hook/hive-site.xml.snip</codeph> on Unravel Server.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/> Note: <ph>On a
+            multi-host Unravel Server deployment</ph>, use host2's
+            <codeph>/usr/local/unravel/hive-hook/hive-site.xml.snip </codeph>
+         <p>
+            <ph>Set the hive-site.xml Snippet in Cloudera Manager, and Deploy the Hive Client Configuration to
+               Gateways</ph>
+         </p>
+         <p>In Cloudera Manager (CM):</p>
+         <ol>
+            <li>Go to Hive service.</li>
+            <li>Select the <b>Configuration</b> tab.</li>
+            <li>Search for <codeph>hive-site.xml</codeph> in the middle of the page.</li>
+            <li>
+               <p outputclass="auto-cursor-target">Add the xml snippet to <b>Hive Client Advanced Configuration Snippet
+                     for hive-site.xml</b> (Gateway Default Group) (Click <b>View as XML</b>).  </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+               <p>If cluster has been configured with "Cloudera Navigator"; the<ph> <i>hive.exec.post.hooks</i>
+                  </ph>
+                  <ph> </ph>property should has exsiting value(s). Therefore append the unravel's value into the
+                  existing <ph>
+                     <i>hive.exec.post.hooks</i>
+                  </ph> property with a comma and no space. (see example below)<ph/>
+               </p>
+               <p>
+                  <ph>
+                     <ph>
+                        <ph>
+                           <i>com.cloudera.navigator.audit.hive.HiveExecHookContext,org.apache.hadoop.hive.ql.hooks.LineageLogger</i>,</ph>
+                        <ph>
+                           <b>com.unraveldata.dataflow.hive.hook.HivePostHook</b>
+                        </ph>
+                     </ph>
+                  </ph>
+               </p>
+               <p outputclass="auto-cursor-target">
+                  <ph outputclass="confluence-embedded-file-wrapper">
+                     <image href="media/56328270.png" outputclass="confluence-embedded-image"/>
+                  </ph>
+               </p>
+            </li>
+            <li>Add the xml snippet to <b>HiveServer2 Advanced Configuration Snippet for hive-site.xml</b>. (Click
+                  <b>View as XML</b>).  Like above step, if properties exists, append unravel's value.</li>
+            <li>Save the changes with optional comment "Unravel snippet in hive-site.xml".</li>
+            <li>Perform action <b>Deploy Hive Client Configuration</b> by clicking the deploy glyph (<ph
+                  outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                  <image href="media/50689269.png" outputclass="confluence-embedded-image"/>
+               </ph>) or by using the <b>Actions</b> pull-down menu.</li>
+            <li>Restart the Hive and YARN services (click <b>Restart Stale Services</b> if that is visible.)</li>
+         </ol>
+         <p><!--A BR tag was used here in the original source.--> Again, monitor the situation to see if all Hive
+            queries are failing with a class not found or permission problems. <b>If they are failing</b>, you can
+            back-out the <codeph>hive-site.xml</codeph> advanced snippet changes in Cloudera Manager, deploy client
+            configuration, and restart the Hive service to revert, then refer to <xref
+               href="#FAGIJCFG/Part2:InstallUnravelSensorParcelonCDH+CM-_troubleshooting">Troubleshooting</xref>
+            below.</p>
+         <p>Check Unravel Web UI</p>
+         <p>If queries are running fine and appearing in Unravel Web UI, then you are done.</p>
+         <p>4. Configure the Gateway Automatic Deployment of Spark Instrumentation</p>
+         <ol>
+            <li>In Cloudera Manager, select the target cluster, then select the Spark service.</li>
+            <li>Select <b>Configuration</b>.</li>
+            <li>Search for "spark-defaults".</li>
+            <li>
+               <p>In the <b>Spark Client Advanced Configuration Snippet (Safety Valve)</b> box for
+                     <b>spark-conf/spark-defaults.conf</b>, enter the following text, substituting the highlighted text
+                  for your particular values:</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+               <p>
+                  <ph>On a multi-host Unravel Server deployment, use logical host2 for </ph>
+                  <ph>
+                     <codeph>
+                        <ph>UNRAVEL_HOST_IP</ph>
+                     </codeph>. </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+               <p>Copy the text below and paste it into the Cloudera Manager's <b>Spark Client Advanced Configuration
+                     Snippet (Safety Valve)</b> box for <b>spark-conf/spark-defaults.conf</b>. Then, modify the value of <ph>
+                     <codeph>
+                        <ph>UNRAVEL_HOST_IP</ph>
+                     </codeph>
+                  </ph>. Do not paste this text into the machine's Linux shell.</p>
+               <codeblock outputclass="syntaxhighlighter-pre">spark.unravel.server.hostport=UNRAVEL_HOST_IP:4043 
+ 
+spark.driver.extraJavaOptions=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-boot.jar,systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1 -Dcom.unraveldata.spark.sensor.disableLiveUpdates=true 
+ 
+spark.executor.extraJavaOptions=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-boot.jar,systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class -Dcom.sun.btrace.FileClient.flush=-1 
+ 
+spark.eventLog.enabled=true</codeblock>
+               <p outputclass="auto-cursor-target">Notice that in this code block, the blank lines separate only one
+                  full line of text that is wrapped due to length. </p>
+            </li>
+         </ol>
+         <p>5. Save changes.</p>
+         <p>6. Deploy client configuration by clicking the deploy glyph (<ph
+               outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/50689269.png" outputclass="confluence-embedded-image"/>
+            </ph>) or by using the <b>Actions</b> pull-down menu.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+         <p>Monitor the situation to see if all Spark queries are failing with a class not found or permission
+               problems. <b>If they are failing</b>, you can back-out the <codeph>spark-defaults.conf</codeph> changes
+            in Cloudera Manager, re-deploy client configuration, and then investigate and fix the issue.</p>
+         <p>
+            <ph outputclass="confluence-anchor-link"/>5. Optional - Configure YARN - MapReduce (MR) JVM Sensor
+            Cluster-Wide</p>
+         <p>
+            <ph>Set in Cloudera Manager</ph>
+         </p>
+         <p>In Cloudera Manager (CM):</p>
+         <ol>
+            <li>Go to <b>YARN</b> service.</li>
+            <li>Select the <b>Configuration</b> tab.</li>
+            <li>
+               <p outputclass="auto-cursor-target">Search for <b>
+                     <ph>ApplicationMaster Java Opts Base</ph>
+                  </b>
+                  <ph> and c</ph>
+                  <ph>oncatenate the following xml block properties snippet (ensure to start with a space and add
+                     below</ph>
+                  <b>
+                     <ph>).</ph>
+                  </b>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre"> -javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null  -Dcom.sun.btrace.FileClient.flush=-1 -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043</codeblock>
+               <p outputclass="auto-cursor-target">Notice that in this code block, ensure "-" is a minus sign and
+                  customer need to modify the value of <ph>
+                     <codeph>
+                        <ph>UNRAVEL_HOST_IP</ph>
+                     </codeph>
+                  </ph> with their own Unravel server IP address.  For multi-host Unravel installation, use the IP
+                  address of Host2.</p>
+            </li>
+            <li>Search for <b>MapReduce Client Advanced Configuration Snippet (Safety Valve) for mapred-site.xml </b>in
+               the middle of the page.</li>
+            <li>Enter following xml four block properties snippet to <ph outputclass="context-label">
+                  <b>Gateway Default Group</b> </ph> (Click <b>View as
+               XML</b>).<!--A BR tag was used here in the original source.-->
+            </li>
+         </ol>
+         <codeblock outputclass="syntaxhighlighter-pre">&lt;property&gt;&lt;name&gt;mapreduce.task.profile&lt;/name&gt;&lt;value&gt;true&lt;/value&gt;&lt;/property&gt;
+&lt;property&gt;&lt;name&gt;mapreduce.task.profile.maps&lt;/name&gt;&lt;value&gt;0-5&lt;/value&gt;&lt;/property&gt;
+&lt;property&gt;&lt;name&gt;mapreduce.task.profile.reduces&lt;/name&gt;&lt;value&gt;0-5&lt;/value&gt;&lt;/property&gt;
+&lt;property&gt;&lt;name&gt;mapreduce.task.profile.params&lt;/name&gt;&lt;value&gt;-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null  -Dcom.sun.btrace.FileClient.flush=-1 -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043&lt;/value&gt;&lt;/property&gt;</codeblock>
+         <p outputclass="auto-cursor-target">Notice that in this code block, ensure "-" is a minus sign and customer
+            need to <ph>modify the value of </ph>
+            <ph>
+               <codeph>
+                  <ph>UNRAVEL_HOST_IP</ph>
+               </codeph>
+            </ph> with their own Unravel server IP address.  For multi-host Unravel installation, use the IP address of
+            Host2.</p>
+         <p>6. Save changes.</p>
+         <p>7. Deploy client configuration by clicking the deploy glyph (<ph
+               outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/50689269.png" outputclass="confluence-embedded-image"/>i</ph>) or by using
+               the <b>Actions</b> pull-down menu.</p>
+         <p>8. Restart the YARN services (click <b>Restart Stale Services</b> if that is visible. <ph>However, you can
+               also perform this later</ph>
+            <ph> </ph>
+            <ph>when you have a planned maintenance</ph>)</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+         <p>Monitor the situation and you should see in Unravel UI a Resource Usage tab showing you mappers and reducers
+               <ph>when you view the Application page for any completed MR</ph>
+            <ph> </ph>
+            <ph>job</ph>.  Restart is important for MR sensor to be picked up by queries submitted via Hiveserver2.</p>
+         <p>
+            <ph outputclass="confluence-anchor-link"/>Troubleshooting</p>
+         <p/>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="3">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <tbody>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <b>Symptom</b>
+                     </entry>
+                     <entry outputclass="confluenceTd">
+                        <b>Problem</b>
+                     </entry>
+                     <entry outputclass="confluenceTd">
+                        <b>Remedy</b>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <codeph>hadoop fs -ls /user/unravel/HOOK_RESULT_DIR/</codeph>
+                        <!--A BR tag was used here in the original source.--> shows directory does not exist</entry>
+                     <entry outputclass="confluenceTd">
+                        <ul>
+                           <li>Unravel Server RPM is not yet installed, or</li>
+                           <li>Unravel Server RPM is installed on a different HDFS cluster, or</li>
+                           <li>HDFS home directory for Unravel does not exist, or</li>
+                           <li>kerberos/sentry actions are needed</li>
+                        </ul>
+                     </entry>
+                     <entry outputclass="confluenceTd">Install Unravel RPM on Unravel service host: <!--A BR tag was used here in the original source.-->
+                        <codeph>sudo rpm -U unravel*.rpm*</codeph>
+                        <!--A BR tag was used here in the original source.-->
+                        <!--A BR tag was used here in the original source.--> OR <!--A BR tag was used here in the original source.-->
+                        <!--A BR tag was used here in the original source.--> Verify that <codeph>unravel</codeph> user
+                        exists and has a <codeph>/user/unravel/</codeph> directory in HDFS and unravel has write
+                        access.</entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <codeph>ClassNotFound</codeph> error for
+                           <codeph>com.unraveldata.dataflow.hive.hook.HivePreHook</codeph> during Hive query
+                        execution</entry>
+                     <entry outputclass="confluenceTd">Unravel hive hook JAR was not found in in
+                           <codeph>$HIVE_HOME/lib/</codeph>.</entry>
+                     <entry outputclass="confluenceTd">Check whether UNRAVEL_SENSOR parcel was distributed and activated
+                        in CM. <!--A BR tag was used here in the original source.-->
+                        <!--A BR tag was used here in the original source.--> OR <!--A BR tag was used here in the original source.-->
+                        <!--A BR tag was used here in the original source.--> Put the Unravel hive-hook JAR
+                        corresponding to <codeph>$HIVE_VER</codeph> in <ph>
+                           <codeph>JAR_DEST</codeph>
+                        </ph> on each gateway by: <!--A BR tag was used here in the original source.-->
+                        <!--A BR tag was used here in the original source.-->
+                        <codeph>cd /usr/local/unravel/hive-hook/; </codeph><!--A BR tag was used here in the original source.-->
+                        <codeph> cp unravel-hive-<ph>HIVE_VER</ph>*hook.jar <ph>JAR_DEST</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">Permission denied writing to
+                           <codeph>hdfs://user/unravel/HOOK_RESULT_DIR</codeph> during Hive query execution</entry>
+                     <entry outputclass="confluenceTd">
+                        <codeph>hdfs://user/unravel/HOOK_RESULT_DIR/*</codeph> directories are not writable</entry>
+                     <entry outputclass="confluenceTd">
+                        <p>
+                           <codeph>hadoop fs -chmod 777 /user/unravel/HOOK_RESULT_DIR/*</codeph>
+                           <!--A BR tag was used here in the original source.-->
+                           <!--A BR tag was used here in the original source.--> OR</p>
+                        <p><!--A BR tag was used here in the original source.--> Sentry command is needed to give
+                           permission <!--A BR tag was used here in the original source.-->
+                           <!--A BR tag was used here in the original source.--> OR <!--A BR tag was used here in the original source.-->
+                           <!--A BR tag was used here in the original source.--> revert to your previous
+                              <codeph>hive-site.xml</codeph> without Unravel Hive Hook clauses.</p>
+                     </entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p/>
+         <p>References</p>
+         <p>
+            <xref
+               href="http://www.cloudera.com/documentation/enterprise/5-3-x/topics/cm_mc_hive_udf.html#concept_nc3_mms_lr_unique_2"
+               scope="external" format="html" outputclass="external-link">
+               <ph>{+}</ph>
+            </xref>
+            <xref
+               href="http://www.cloudera.com/documentation/enterprise/5-3-x/topics/cm_mc_hive_udf.html#concept_nc3_mms_lr_unique_2+"
+               scope="external" format="html" outputclass="external-link"
+               >http://www.cloudera.com/documentation/enterprise/5-3-x/topics/cm_mc_hive_udf.html#concept_nc3_mms_lr_unique_2+</xref>
+            see Creating Permanent Functions.</p>
+      </context>
+   </taskbody>
+</task>

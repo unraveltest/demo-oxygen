@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map productID="oxy-webhelp" productVersion="1.0">
+   <appContext helpID="overview" path="overview.html"/>
+   <appContext helpID="installation_guides" path="installation_guides.html"/>
+   <appContext helpID="cdh" path="cdh.html"/>
+   <appContext helpID="top" path="top.html"/>
+   <appContext helpID="pre_installation_cdh" path="pre_installation_cdh.html"/>
+   <appContext helpID="install_cdh_step1" path="install_cdh_step1.html"/>
+   <appContext helpID="install_cdh_step2" path="install_cdh_step2.html"/>
+   <appContext helpID="install_cdh_step3" path="install_cdh_step3.html"/>
+   <appContext helpID="hdp" path="hdp.html"/>
+   <appContext helpID="top_0" path="top_0.html"/>
+   <appContext helpID="pre_installation_hdp" path="pre_installation_hdp.html"/>
+   <appContext helpID="install_hdp_step1" path="install_hdp_step1.html"/>
+   <appContext helpID="install_hdp_step2" path="install_hdp_step2.html"/>
+   <appContext helpID="emr" path="emr.html"/>
+   <appContext helpID="mapr" path="mapr.html"/>
+   <appContext helpID="top_1" path="top_1.html"/>
+   <appContext helpID="pre_installation_mapr" path="pre_installation_mapr.html"/>
+   <appContext helpID="install_mapr_step1" path="install_mapr_step1.html"/>
+   <appContext helpID="install_mapr_step2" path="install_mapr_step2.html"/>
+   <appContext helpID="hdi" path="hdi.html"/>
+   <appContext helpID="install_hdinsight_app" path="install_hdinsight_app.html"/>
+   <appContext helpID="mysql" path="mysql.html"/>
+   <appContext helpID="install_configure_mysql" path="install_configure_mysql.html"/>
+   <appContext helpID="move_mysql" path="move_mysql.html"/>
+   <appContext helpID="partition_or_migrate_mysql" path="partition_or_migrate_mysql.html"/>
+   <appContext helpID="ondemand" path="ondemand.html"/>
+   <appContext helpID="install_or_upgrade_ondemand" path="install_or_upgrade_ondemand.html"/>
+   <appContext helpID="library_versions_and_licenses"
+               path="library_versions_and_licenses.html"/>
+   <appContext helpID="find_properties_in_hdi" path="find_properties_in_hdi.html"/>
+   <appContext helpID="user_guide" path="user_guide.html"/>
+   <appContext helpID="get_started" path="get_started.html"/>
+   <appContext helpID="common_ui_features" path="common_ui_features.html"/>
+   <appContext helpID="the_operations_page" path="the_operations_page.html"/>
+   <appContext helpID="the_applications_page" path="the_applications_page.html"/>
+   <appContext helpID="the_reports_page" path="the_reports_page.html"/>
+   <appContext helpID="operational_insights" path="operational_insights.html"/>
+   <appContext helpID="data_insights" path="data_insights.html"/>
+   <appContext helpID="cloud_reports" path="cloud_reports.html"/>
+   <appContext helpID="schedule_report" path="schedule_report.html"/>
+   <appContext helpID="reports_archive" path="reports_archive.html"/>
+   <appContext helpID="the_application_managers" path="the_application_managers.html"/>
+   <appContext helpID="typical_apms" path="typical_apms.html"/>
+   <appContext helpID="spark_apm" path="spark_apm.html"/>
+   <appContext helpID="events_and_insights" path="events_and_insights.html"/>
+   <appContext helpID="event_panel_and_insights" path="event_panel_and_insights.html"/>
+   <appContext helpID="impala_events" path="impala_events.html"/>
+   <appContext helpID="event_list" path="event_list.html"/>
+   <appContext helpID="auto_actions" path="auto_actions.html"/>
+   <appContext helpID="auto_actions_overview" path="auto_actions_overview.html"/>
+   <appContext helpID="create_auto_actions" path="create_auto_actions.html"/>
+   <appContext helpID="expert_rule" path="expert_rule.html"/>
+   <appContext helpID="same_logical_operator" path="same_logical_operator.html"/>
+   <appContext helpID="snooze_features" path="snooze_features.html"/>
+   <appContext helpID="sample_auto_actions" path="sample_auto_actions.html"/>
+   <appContext helpID="run_auto_action_demos" path="run_auto_action_demos.html"/>
+   <appContext helpID="supported_cluster_metrics" path="supported_cluster_metrics.html"/>
+   <appContext helpID="use_cases" path="use_cases.html"/>
+   <appContext helpID="identify_rogue_apps" path="identify_rogue_apps.html"/>
+   <appContext helpID="detect_resource_contention" path="detect_resource_contention.html"/>
+   <appContext helpID="optimize_spark_app_performance"
+               path="optimize_spark_app_performance.html"/>
+   <appContext helpID="get_kafka_insights" path="get_kafka_insights.html"/>
+   <appContext helpID="keywords_and_error_messages" path="keywords_and_error_messages.html"/>
+   <appContext helpID="resource_metrics" path="resource_metrics.html"/>
+   <appContext helpID="advanced_topics" path="advanced_topics.html"/>
+   <appContext helpID="back_up_and_disaster_recovery"
+               path="back_up_and_disaster_recovery.html"/>
+   <appContext helpID="cluster_wide_report" path="cluster_wide_report.html"/>
+   <appContext helpID="configurations" path="configurations.html"/>
+   <appContext helpID="custom_configurations" path="custom_configurations.html"/>
+   <appContext helpID="configure_permissions_on_cdh_sentry_secured_cluster"
+               path="configure_permissions_on_cdh_sentry_secured_cluster.html"/>
+   <appContext helpID="configure_multiple_hosts_for_unravel_server"
+               path="configure_multiple_hosts_for_unravel_server.html"/>
+   <appContext helpID="create_multiple_workers_for_high_volume_data"
+               path="create_multiple_workers_for_high_volume_data.html"/>
+   <appContext helpID="create_custom_banner" path="create_custom_banner.html"/>
+   <appContext helpID="define_custom_ui_port" path="define_custom_ui_port.html"/>
+   <appContext helpID="set_up_email_alerts" path="set_up_email_alerts.html"/>
+   <appContext helpID="configure_hbase" path="configure_hbase.html"/>
+   <appContext helpID="run_daemons_with_custom_user" path="run_daemons_with_custom_user.html"/>
+   <appContext helpID="set_retention_time" path="set_retention_time.html"/>
+   <appContext helpID="set_properties_for_spark_worker_daemon"
+               path="set_properties_for_spark_worker_daemon.html"/>
+   <appContext helpID="use_impalad_as_data_source" path="use_impalad_as_data_source.html"/>
+   <appContext helpID="security_configurations" path="security_configurations.html"/>
+   <appContext helpID="add_more_admins" path="add_more_admins.html"/>
+   <appContext helpID="add_ssl_and_tls" path="add_ssl_and_tls.html"/>
+   <appContext helpID="configure_alternate_kerberos_principal_for_cdh"
+               path="configure_alternate_kerberos_principal_for_cdh.html"/>
+   <appContext helpID="configure_hdfs_permission_on_cdh_sentry_secured_cluster"
+               path="configure_hdfs_permission_on_cdh_sentry_secured_cluster.html"/>
+   <appContext helpID="configure_hive_metastore_permissions"
+               path="configure_hive_metastore_permissions.html"/>
+   <appContext helpID="disable_browser_telemetry" path="disable_browser_telemetry.html"/>
+   <appContext helpID="disable_support_comments_panel"
+               path="disable_support_comments_panel.html"/>
+   <appContext helpID="enable_ldap_authentication" path="enable_ldap_authentication.html"/>
+   <appContext helpID="enable_saml_authentication" path="enable_saml_authentication.html"/>
+   <appContext helpID="enable_tls_directly_to_ui" path="enable_tls_directly_to_ui.html"/>
+   <appContext helpID="enable_small_files_and_file_reports_on_sentry_or_ranger_secured_clusters"
+               path="enable_small_files_and_file_reports_on_sentry_or_ranger_secured_clusters.html"/>
+   <appContext helpID="encrypt_passwords" path="encrypt_passwords.html"/>
+   <appContext helpID="add_kafka_security" path="add_kafka_security.html"/>
+   <appContext helpID="restrict_direct_access_to_ui" path="restrict_direct_access_to_ui.html"/>
+   <appContext helpID="use_private_cert_authority" path="use_private_cert_authority.html"/>
+   <appContext helpID="autoscale_hdi_spark_cluster" path="autoscale_hdi_spark_cluster.html"/>
+   <appContext helpID="create_ad_kerberos_principals_and_keytabs"
+               path="create_ad_kerberos_principals_and_keytabs.html"/>
+   <appContext helpID="create_aws_rds_cloudwatch_alarm_for_free_storage_space"
+               path="create_aws_rds_cloudwatch_alarm_for_free_storage_space.html"/>
+   <appContext helpID="trigger_import_of_fsimage" path="trigger_import_of_fsimage.html"/>
+   <appContext helpID="configure_jvm_sensor" path="configure_jvm_sensor.html"/>
+   <appContext helpID="enable_jvm_sensor_on_cdh" path="enable_jvm_sensor_on_cdh.html"/>
+   <appContext helpID="enable_jvm_sensor_on_hdp" path="enable_jvm_sensor_on_hdp.html"/>
+   <appContext helpID="connectivity" path="connectivity.html"/>
+   <appContext helpID="connect_and_configure_kafka_stream"
+               path="connect_and_configure_kafka_stream.html"/>
+   <appContext helpID="connect_and_configure_hive_metastore"
+               path="connect_and_configure_hive_metastore.html"/>
+   <appContext helpID="connect_hive_metastore" path="connect_hive_metastore.html"/>
+   <appContext helpID="configure_hive_metastore" path="configure_hive_metastore.html"/>
+   <appContext helpID="create_application_tags" path="create_application_tags.html"/>
+   <appContext helpID="deploy_over_selinux" path="deploy_over_selinux.html"/>
+   <appContext helpID="roles_and_rbac" path="roles_and_rbac.html"/>
+   <appContext helpID="rbac_roles" path="rbac_roles.html"/>
+   <appContext helpID="configure_rbac" path="configure_rbac.html"/>
+   <appContext helpID="manage_rbac" path="manage_rbac.html"/>
+   <appContext helpID="run_verification_scripts" path="run_verification_scripts.html"/>
+   <appContext helpID="rest_api" path="rest_api.html"/>
+   <appContext helpID="sign_in" path="sign_in.html"/>
+   <appContext helpID="application" path="application.html"/>
+   <appContext helpID="data" path="data.html"/>
+   <appContext helpID="operations" path="operations.html"/>
+   <appContext helpID="reports" path="reports.html"/>
+   <appContext helpID="use_case_for_rest_api" path="use_case_for_rest_api.html"/>
+   <appContext helpID="monitoring_service" path="monitoring_service.html"/>
+   <appContext helpID="configuration" path="configuration.html"/>
+   <appContext helpID="monitor_disks" path="monitor_disks.html"/>
+   <appContext helpID="monitor_jmx_client" path="monitor_jmx_client.html"/>
+   <appContext helpID="monitor_rest_api" path="monitor_rest_api.html"/>
+   <appContext helpID="properties" path="properties.html"/>
+   <appContext helpID="ondemand_configurations_for_reports"
+               path="ondemand_configurations_for_reports.html"/>
+   <appContext helpID="sensors" path="sensors.html"/>
+   <appContext helpID="servers_and_sensors" path="servers_and_sensors.html"/>
+   <appContext helpID="install_sensors" path="install_sensors.html"/>
+   <appContext helpID="on_individual_apps_submitted_through_spark_submitted_through_spark_submit"
+               path="on_individual_apps_submitted_through_spark_submitted_through_spark_submit.html"/>
+   <appContext helpID="on_individual_hive_queries" path="on_individual_hive_queries.html"/>
+   <appContext helpID="upgrade_server_and_sensors" path="upgrade_server_and_sensors.html"/>
+   <appContext helpID="upload_spark_programs" path="upload_spark_programs.html"/>
+   <appContext helpID="uninstall_unravel_server" path="uninstall_unravel_server.html"/>
+   <appContext helpID="workflows" path="workflows.html"/>
+   <appContext helpID="add_tags_to_workflows" path="add_tags_to_workflows.html"/>
+   <appContext helpID="add_tags_to_hive_on_tez_query"
+               path="add_tags_to_hive_on_tez_query.html"/>
+   <appContext helpID="monitor_oozie_workflows" path="monitor_oozie_workflows.html"/>
+   <appContext helpID="monitor_airflow_workflows" path="monitor_airflow_workflows.html"/>
+   <appContext helpID="write_jolokia_jmx_mbean" path="write_jolokia_jmx_mbean.html"/>
+   <appContext helpID="appendices" path="appendices.html"/>
+   <appContext helpID="server_daemon_reference" path="server_daemon_reference.html"/>
+   <appContext helpID="hbase_alerts_and_metrics" path="hbase_alerts_and_metrics.html"/>
+   <appContext helpID="troubleshooting" path="troubleshooting.html"/>
+   <appContext helpID="send_diagnostics_to_support" path="send_diagnostics_to_support.html"/>
+   <appContext helpID="release_notes" path="release_notes.html"/>
+   <appContext helpID="v450" path="v450.html"/>
+   <appContext helpID="v4502" path="v4502.html"/>
+   <appContext helpID="v4503" path="v4503.html"/>
+   <appContext helpID="upgrade_instructions" path="upgrade_instructions.html"/>
+   <appContext helpID="updates_to_properties" path="updates_to_properties.html"/>
+</map>

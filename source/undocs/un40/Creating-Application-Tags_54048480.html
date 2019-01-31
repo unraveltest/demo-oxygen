@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Creating Application Tags</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Creating Application Tags </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p><span style="color: rgb(0,0,0);text-decoration: none;">Annotating applications with tags
+                                (key-value pairs) allows you to search, group, and charge back based on tags. It also
+                                allows you to track Unravel's insights based on tags. </span><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Thus, understanding how tags work in
+                                Unravel is crucial.</span></p><p><br /></p><div
+                            class="confluence-information-macro confluence-information-macro-note"><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">Application tags are immutable:
+                                        once created they cannot be changed</span>.</p></div></div><p><br /></p><h1
+                            id="CreatingApplicationTags-WhatisaTaginUnravel?"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">What is a Tag in
+                                Unravel?</span></h1><p><span style="color: rgb(0,0,0);text-decoration: none;">A tag is
+                                key-value pair <em>&lt;k,v&gt;</em> that has been associated with an application
+                                    <em>A</em>.</span></p><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                    >Thus, <span style="color: rgb(0,0,0);text-decoration: none;">application </span>
+                                <em>A</em> in Unravel can have zero or more tags associated with it: <em> &lt;k1,v1&gt;,
+                                    &lt;k2,v2&gt;, ...</em></span></p><h1
+                            id="CreatingApplicationTags-HowDoesUnravelUseTags?"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">How Does Unravel Use
+                            Tags?<br /></span></h1><p><span style="color: rgb(0,0,0);text-decoration: none;">Unravel
+                                Server and Web UI use tags to:</span></p><ul>
+                            <li style="list-style-type: disc;"><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Group applications for chargeback reports</span></p></li>
+                            <li style="list-style-type: disc;"><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Provide access control for different users</span></p></li>
+                            <li style="list-style-type: disc;"><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Search/group applications using tags</span></p></li>
+                            <li style="list-style-type: disc;"><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Group applications for insights</span></p></li>
+                        </ul><h1 id="CreatingApplicationTags-WhatTypesofTagsAreThere?"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">What Types of Tags Are
+                            There?</span></h1><p><span style="color: rgb(0,0,0);text-decoration: none;">There are two
+                                types of tags: Unravel tags and user-created tags.<br /></span></p><h2
+                            id="CreatingApplicationTags-UnravelTags"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Unravel Tags</span></h2><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">All the tag names starting with
+                                    <code>unravel</code> are internal to Unravel, and have a specific meaning. For
+                                example, <code>unravel.workflow.<em>name</em></code> and
+                                        <code>unravel.workflow.<em>utctimestamp</em></code> are used to create
+                                workflows. <span style="color: rgb(0,0,0);text-decoration: none;">Best practice is to
+                                    use these tags only if you want to get the behavior associated with that tag.
+                                </span></span></p><h2 id="CreatingApplicationTags-User-CreatedTags"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">User-Created Tags</span></h2><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">You can create tags based on your use
+                                cases. <br /></span></p><h1 id="CreatingApplicationTags-HowDoICreateTags?"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">How Do I Create
+                                Tags?</span></h1><p><span style="color: rgb(0,0,0);text-decoration: none;">There are two
+                                ways to create tags: by adding them to the configuration of your application, or by
+                                writing a Python script to inject them.<br /></span></p><h2
+                            id="CreatingApplicationTags-AddingTagstoyourApplication&#39;sConfiguration"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Adding Tags to your Application's
+                                Configuration<br /></span></h2><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                >Add tags to your application's configuration (configuration file or
+                                    <code>setConf</code>). Tags must be in key-value format
+                                        (<em><code>key1,value1,key2,value2,key3,value3,...</code></em>). Keys and values
+                                </span><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    style="color: rgb(0,0,0);text-decoration: none;">can only contain alphanumeric
+                                    characters. </span></span><span style="color: rgb(0,0,0);text-decoration: none;"
+                                >Unravel Server extracts these key-value pairs from the application's configuration
+                                file.<br /></span></p><h2 id="CreatingApplicationTags-InjectingTagsThroughaPythonScript"
+                                ><span style="color: rgb(0,0,0);text-decoration: none;">Injecting Tags Through a Python
+                                Script</span></h2><p><span style="color: rgb(0,0,0);text-decoration: none;">You can
+                                write Python script which is invoked in the ingestion pipeline and is set up to access
+                                application metadata to create tags on the fly.</span></p><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Unravel receives metadata about
+                                applications from different sources, and that metadata can be received out of order, but
+                                it is merged and <span style="color: rgb(0,0,0);text-decoration: none;">eventually
+                                </span>reaches a consistent state. </span><span
+                                style="color: rgb(0,0,0);text-decoration: none;">For example, Spark receives data from
+                                Resource Manager, event log file, YARN aggregated logs, and sensors. </span></p><div
+                            class="confluence-information-macro confluence-information-macro-warning"><span
+                                class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">Your Python script must be
+                                        idempotent, in other words, it must produce the same result over multiple
+                                        invocations with <span style="color: rgb(0,0,0);text-decoration: none;"
+                                            >different input (metadata)</span> for the same application.
+                                    <br /></span></p></div></div><p><br /></p><h1
+                            id="CreatingApplicationTags-PrecedenceofTags"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Precedence of Tags</span></h1><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Unravel gives precedence to tags in
+                                this order (low to high):</span></p><ul>
+                            <li><span style="color: rgb(0,0,0);text-decoration: none;">Unravel tags defined in
+                                    application configuration</span></li>
+                            <li><span style="color: rgb(0,0,0);text-decoration: none;">Tags extracted by Python
+                                    script</span></li>
+                        </ul><h1 id="CreatingApplicationTags-SampleUseCases"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Sample Use Cases</span></h1><ul>
+                            <li style="list-style-type: disc;"><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Differentiate between job types such as pipeline and
+                                workflow<br /></span></p></li>
+                            <li style="list-style-type: disc;"><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><span style="color: rgb(0,0,0);text-decoration: none;">Differentiate
+                                            between</span> projects, queues, departments, <span
+                                            style="color: rgb(0,0,0);text-decoration: none;">groups, </span><span
+                                            style="color: rgb(0,0,0);text-decoration: none;">users, </span>and
+                                        tenants</span></p></li>
+                        </ul><p><br /></p><p><br /></p><p style="list-style-type: decimal;"><span
+                                style="color: rgb(0,0,0);text-decoration: none;"><br /></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

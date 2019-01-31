@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us"
+   id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040">
+   <title>Installing Unravel Sensor for Individual Applications Submitted Through spark-submit </title>
+   <taskbody>
+      <context>
+         <p>Introduction</p>
+         <p>This topic explains how to set up Unravel Sensor for Spark to profile <b>specific Spark applications</b>
+            only (in other words, <i>per-application profiling</i>, also called "dev mode"), rather than <i>cluster-wide
+               profiling</i>. The Unravel Sensor for Spark uses Java agents to intercept Spark applications at runtime.
+            Four JARs are included in the Unravel Sensor .zip package: <codeph>btrace-agent.jar</codeph>,
+               <codeph>btrace-boot.jar</codeph>, <codeph>unravel-boot.jar, and unravel-sys.jar</codeph>. The JARs are
+            fired up when you define <codeph>spark.driver.extraJavaOptions</codeph> and
+               <codeph>spark.executor.extraJavaOptions</codeph> as part of your <codeph>spark-submit</codeph>
+            command.</p>
+         <p>The information here applies to Spark versions 1.3.x through 2.0.x. <ph>Brown</ph> text indicates where you
+            must substitute your particular values.</p>
+         <p>1. Obtain the Sensor</p>
+         <p>The Unravel Sensor is included in the Unravel Server RPM installation. After installing the Unravel Server
+            RPM on <ph>
+               <codeph>UNRAVEL_HOST</codeph>
+            </ph>, you can obtain the sensor either from the filesystem on the Unravel Server host, or by HTTP from <ph
+               outputclass="nolink">
+               <codeph>http://<ph>UNRAVEL_HOST</ph>:3000/hh/spark-<ph>VERSION</ph>/unravel-sensor-for-spark-bin.zip</codeph>.</ph>
+         </p>
+         <p>
+            <ph outputclass="nolink">To obtain Unravel Sensor from the filesystem on the Unravel Server host:</ph>
+         </p>
+         <ul>
+            <li>Go to the <codeph>/usr/local/unravel/webapps/ROOT/hh/spark-<ph>VERSION</ph>/</codeph> directory on the
+               Unravel Server host, where <ph>
+                  <codeph>VERSION</codeph>
+               </ph> is<ul>
+                  <li>
+                     <codeph>2.0</codeph> for Spark 2.0.x</li>
+                  <li>
+                     <codeph>1.6</codeph> for Spark 1.6.x</li>
+                  <li>
+                     <codeph>1.5</codeph> for Spark 1.5.x</li>
+                  <li>
+                     <codeph>1.3</codeph> for Spark 1.3.x</li>
+               </ul>
+            </li>
+            <li>Within this directory, locate the sensor file: <codeph>unravel-sensor-for-spark-bin.zip</codeph>.</li>
+         </ul>
+         <p>2. Run the Sensor to Intercept Spark Apps</p>
+         <p>Option A:  If You Run Spark Apps in <codeph>yarn-cluster</codeph> Mode (Default)</p>
+         <p>Put the sensor on the host node(s) from which you will run <codeph>spark-submit</codeph> by first creating a
+            destination directory that is readable by all users.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+         <p>We suggest that <ph>
+               <codeph>UNRAVEL_SENSOR_PATH</codeph>
+            </ph> be <codeph>/usr/local/unravel-spark</codeph>.</p>
+         <ul>
+            <li outputclass="auto-cursor-target">
+               <p outputclass="auto-cursor-target">If <codeph>spark-submit</codeph> is used from a single client
+                  node:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">mkdir $UNRAVEL_SENSOR_PATH 
+cd $UNRAVEL_SENSOR_PATH 
+wget http://$UNRAVEL_HOST:3000/hh/spark-$VERSION/unravel-sensor-for-spark-bin.zip</codeblock>
+            </li>
+            <li outputclass="auto-cursor-target">
+               <p outputclass="auto-cursor-target">If <codeph>spark-submit</codeph> is used from multiple client nodes,
+                  copy the sensor .zip file to HDFS instead of copying it to every client node, and set <ph>
+                     <codeph>UNRAVEL_SENSOR_PATH</codeph>
+                  </ph> accordingly. For example, copy it to <codeph>hdfs:///tmp</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">mkdir $UNRAVEL_SENSOR_PATH 
+cd $UNRAVEL_SENSOR_PATH 
+wget http://$UNRAVEL_HOST:3000/hh/spark-$VERSION/unravel-sensor-for-spark-bin.zip
+cd $UNRAVEL_SENSOR_PATH 
+hdfs fs -copyFromLocal unravel-sensor-for-spark-bin.zip /tmp
+set UNRAVEL_SENSOR_PATH="hdfs:///tmp"</codeblock>
+            </li>
+         </ul>
+         <p>Define <codeph>spark.driver.extraJavaOptions</codeph> and <codeph>spark.executor.extraJavaOptions</codeph>
+            as part of your <codeph>spark-submit</codeph> command.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+         <p>To use the example below, be sure to replace <ph>
+               <codeph>UNRAVEL_SENSOR_PATH</codeph>
+            </ph>, <ph>
+               <codeph>UNRAVEL_SERVER_IP_PORT</codeph>
+            </ph>, <ph>
+               <codeph>SPARK_EVENT_LOG_DIR</codeph>
+            </ph>, and <ph>
+               <codeph>PATH_TO_SPARK_EXAMPLE_JAR</codeph>
+            </ph> with your values.</p>
+         <ul>
+            <li>
+               <ph>
+                  <codeph>UNRAVEL_SENSOR_PATH</codeph>
+               </ph>: Parent directory of the Unravel Sensor .zip file, <ph>
+                  <codeph>unravel-sensor-for-spark-bin.zip</codeph>
+               </ph>. If you put this file on HDFS, <ph>
+                  <codeph>UNRAVEL_SENSOR_PATH</codeph>
+               </ph> is the parent directory on HDFS.</li>
+            <li>
+               <ph>
+                  <codeph>UNRAVEL_SERVER_IP_PORT</codeph>
+               </ph>: IP address and port of the <codeph>unravel_lr</codeph> service in the format
+                  <codeph>IP:PORT</codeph>. Port is 4043 by default. Sample value:
+               <codeph>10.0.0.142:4043</codeph>.</li>
+            <li>
+               <ph>
+                  <codeph>SPARK_EVENT_LOG_DIR</codeph>
+               </ph>: Location of the event log directory on HDFS, S3, or local file system. If a remote address is
+               used, include the namenode IP address and port.</li>
+            <li>
+               <ph>
+                  <codeph>PATH_TO_SPARK_EXAMPLE_JAR</codeph>
+               </ph>: <b>Absolute</b> path to the jar file used in the <codeph>spark-submit</codeph> command.</li>
+         </ul>
+         <p/>
+         <p>For example,</p>
+         <codeblock outputclass="syntaxhighlighter-pre">export UNRAVEL_SENSOR_PATH=$UNRAVEL_SENSOR_PATH
+export UNRAVEL_SERVER_IP_PORT=$UNRAVEL_SERVER_IP_PORT
+export SPARK_EVENT_LOG_DIR=$SPARK_EVENT_LOG_DIR
+export PATH_TO_SPARK_EXAMPLE_JAR=$PATH_TO_SPARK_EXAMPLE_JAR
+
+export ENABLED_SENSOR_FOR_DRIVER="spark.driver.extraJavaOptions=-javaagent:unravel-sensor-for-spark-bin.zip/btrace-agent.jar=bootClassPath=unravel-sensor-for-spark-bin.zip/unravel-boot.jar,systemClassPath=unravel-sensor-for-spark-bin.zip/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1 -Dcom.unraveldata.spark.sensor.disableLiveUpdates=true"
+
+
+export ENABLED_SENSOR_FOR_EXECUTOR="spark.executor.extraJavaOptions=-javaagent:unravel-sensor-for-spark-bin.zip/btrace-agent.jar=bootClassPath=unravel-sensor-for-spark-bin.zip/unravel-boot.jar,systemClassPath=unravel-sensor-for-spark-bin.zip/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class  -Dcom.sun.btrace.FileClient.flush=-1"
+
+
+spark-submit \
+    --class org.apache.spark.examples.sql.RDDRelation \
+    --master yarn-cluster \
+    --archives $UNRAVEL_SENSOR_PATH/unravel-sensor-for-spark-bin.zip \
+    --conf "$ENABLED_SENSOR_FOR_DRIVER" \
+    --conf "$ENABLED_SENSOR_FOR_EXECUTOR" \
+    --conf "spark.unravel.server.hostport=$UNRAVEL_SERVER_IP_PORT" \
+    --conf "spark.eventLog.dir=${SPARK_EVENT_LOG_DIR}" \
+    --conf "spark.eventLog.enabled=true" \
+    $PATH_TO_SPARK_EXAMPLE_JAR</codeblock>
+         <p/>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>
+            <i>Note that a full blank line separates lengthy lines that are wrapped, except for the spark-submit that
+               uses line continuation backslashes.</i>
+         </p>
+         <p>Option B: If You Run Spark Apps in <codeph>yarn-client </codeph>Mode</p>
+         <p>To intercept Spark apps running in <codeph>yarn-client</codeph> mode, you need to unzip the Unravel Sensor
+            .zip file on the client node at a location on the local file system that is readable by all users, referred
+            to as <ph>
+               <codeph>UNZIPPED_ARCHIVE_DEST</codeph>
+            </ph> below. We suggest <codeph>/usr/local/unravel-spark</codeph>.</p>
+         <p>If you use multiple hosts as clients, do this step for <b>each client</b>.</p>
+         <codeblock outputclass="syntaxhighlighter-pre">mkdir $UNZIPPED_ARCHIVE_DEST
+cd $UNZIPPED_ARCHIVE_DEST 
+wget http://$UNRAVEL_HOST:3000/hh/spark-VERSION/unravel-sensor-for-spark-bin.zip
+unzip unravel-sensor-for-spark-bin.zip</codeblock>
+         <p outputclass="title">Important</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>Please keep the original <codeph>unravel-sensor-for-spark-bin.zip</codeph> file inside <ph>
+               <codeph>UNZIPPED_ARCHIVE_DEST</codeph>
+            </ph>.</p>
+         <p/>
+         <p>Define <codeph>spark.driver.extraJavaOptions</codeph> and <codeph>spark.executor.extraJavaOptions</codeph>
+            as part of your <codeph>spark-submit</codeph> command.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+         <p>To use the example below, be sure to replace <ph>
+               <codeph>UNRAVEL_SENSOR_PATH</codeph>
+            </ph>, <ph>
+               <codeph>UNRAVEL_SERVER_IP_PORT</codeph>
+            </ph>, <ph>
+               <codeph>SPARK_EVENT_LOG_DIR</codeph>
+            </ph>, and <ph>
+               <codeph>PATH_TO_SPARK_EXAMPLE_JAR</codeph>
+            </ph> with your values.</p>
+         <ul>
+            <li>
+               <codeph>
+                  <ph>UNRAVEL_SENSOR_PATH</ph>
+               </codeph>: Parent directory of the Unravel Sensor .zip file, <codeph>
+                  <ph>unravel-sensor-for-spark-bin.zip</ph>
+               </codeph>. If you put this file on HDFS, <codeph>
+                  <ph>UNRAVEL_SENSOR_PATH</ph>
+               </codeph> is the parent directory on HDFS.</li>
+            <li>
+               <codeph>
+                  <ph>UNRAVEL_SERVER_IP_PORT</ph>
+               </codeph>: IP address and port of the <codeph>unravel_lr</codeph> service in the format
+                  <codeph>IP:PORT</codeph>. Port is 4043 by default. Sample value:
+               <codeph>10.0.0.142:4043</codeph>.</li>
+            <li>
+               <ph>
+                  <codeph>SPARK_EVENT_LOG_DIR</codeph>
+               </ph>: Location of the event log directory on HDFS, S3, or local file system. If a remote address is
+               used, include the namenode IP address and port.</li>
+            <li>
+               <codeph>
+                  <ph>PATH_TO_SPARK_EXAMPLE_JAR</ph>
+               </codeph>:  <b>Absolute</b> path to the jar file used in the <codeph>spark-submit</codeph> command.
+               Sample value: <codeph>spark-examples.jar</codeph>.</li>
+            <li>
+               <codeph>
+                  <ph> UNZIPPED_ARCHIVE_DEST</ph>
+               </codeph>: Directory on the local file system that contains the unzipped content of
+                  <codeph>unravel-sensor-for-spark-bin.zip</codeph>. It also contains the original
+                  <codeph>unravel-sensor-for-spark-bin.zip</codeph> file.</li>
+         </ul>
+         <p/>
+         <p>For example,</p>
+         <codeblock outputclass="syntaxhighlighter-pre">export UNZIPPED_ARCHIVE_DEST=$UNZIPPED_ARCHIVE_DEST
+export UNRAVEL_SERVER_IP_PORT=$UNRAVEL_SERVER_IP_PORT
+export SPARK_EVENT_LOG_DIR=$SPARK_EVENT_LOG_DIR
+export PATH_TO_SPARK_EXAMPLE_JAR=$PATH_TO_SPARK_EXAMPLE_JAR
+
+export ENABLED_SENSOR_FOR_DRIVER="spark.driver.extraJavaOptions=-javaagent:$UNZIPPED_ARCHIVE_DEST/btrace-agent.jar=bootClassPath=$UNZIPPED_ARCHIVE_DEST/unravel-boot.jar,systemClassPath=$UNZIPPED_ARCHIVE_DEST/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1 -Dcom.unraveldata.spark.sensor.disableLiveUpdates=true"
+
+
+export ENABLED_SENSOR_FOR_EXECUTOR="spark.executor.extraJavaOptions=-javaagent:unravel-sensor-for-spark-bin.zip/btrace-agent.jar=bootClassPath=unravel-sensor-for-spark-bin.zip/unravel-boot.jar,systemClassPath=unravel-sensor-for-spark-bin.zip/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class  -Dcom.sun.btrace.FileClient.flush=-1"
+
+
+spark-submit \
+    --class org.apache.spark.examples.sql.RDDRelation \
+    --master yarn-client \
+    --archives $UNZIPPED_ARCHIVE_DEST/unravel-sensor-for-spark-bin.zip \
+    --conf "$ENABLED_SENSOR_FOR_DRIVER" \
+    --conf "$ENABLED_SENSOR_FOR_EXECUTOR" \
+    --conf "spark.unravel.server.hostport=$UNRAVEL_SERVER_IP_PORT" \
+    --conf "spark.eventLog.dir=${SPARK_EVENT_LOG_DIR}" \
+    --conf "spark.eventLog.enabled=true" \
+    $PATH_TO_SPARK_EXAMPLE_JAR</codeblock>
+         <note>
+            <p> Note that a full blank line separates lengthy lines that are wrapped, except for the spark-submit that
+               uses line continuation backslashes. </p>
+         </note>
+      </context>
+   </taskbody>
+</task>

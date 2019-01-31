@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FAGIICFE" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="topic:1;4:39">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="title:1;5:11">Installation Guide for Cloudera Distribution Including Apache Hadoop
+      (CDH), with Cloudera Manager (CM) </title>
+   <body class="- topic/body " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="body:1;7:10">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ol:1;8:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:1;10:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ph:1;11:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="xref:1;12:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:2;16:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ph:2;17:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="xref:2;18:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="p:1;25:10">This guide is compatible with</p>
+      <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ul:1;26:11">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:3;28:14">CDH 4.5 - 5.10</li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:4;30:14">Hive versions 0.10.0 through 1.2.x</li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:5;32:14">Spark versions 1.3, 1.5, 1.6, 2.0</li>
+
+      </ul>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="section:1;35:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="title:2;36:17">Ordered Steps</title>
+      </section>
+      <ul outputclass="content-by-label" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ul:2;38:42">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:6;40:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ph:3;41:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50792782" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="xref:3;42:73"><?ditaot usertext?>Part 1: Install Unravel
+               Server on CDH+CM</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:7;46:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ph:4;47:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50689256" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="xref:4;48:73"><?ditaot usertext?>Part 2: Install Unravel
+               Sensor Parcel on CDH+CM</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="li:8;52:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="ph:5;53:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/51212745/Part+3%3A+Additional+Topics+for+CDH" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688254.dita" xtrc="xref:5;55:30"><?ditaot usertext?>Part 3: Additional Topics for CDH</xref>
+         </li>
+
+      </ul>
+   </body>
+</topic>

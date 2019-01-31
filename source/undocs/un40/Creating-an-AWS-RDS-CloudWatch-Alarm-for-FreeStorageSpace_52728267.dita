@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267">
+   <title>
+                        Creating an AWS RDS CloudWatch Alarm for
+                            FreeStorageSpace 
+                    </title>
+   <taskbody>
+      <context>
+         <p>This guide is to configure an AWS RDS CloudWatch Alarm for Disk <i>FreeStorageSpace</i> Metrics as part of
+            RDS monitoring:</p>
+         <ol>
+            <li>Go to <ph>
+                  <b>AWS Cloud Watch</b>
+               </ph>
+            </li>
+            <li>Select on the left-hand corner tab for "<b>
+                  <ph>Alarms"</ph>
+               </b>
+            </li>
+            <li>Click on "<b>
+                  <ph>Create Alarm</ph>
+               </b>"</li>
+            <li>On the right-hand section under "<b>
+                  <ph>RDS Metrics</ph>
+               </b>" and click on "<b>
+                  <ph>Per-Database Metrics</ph>
+               </b>"</li>
+            <li>Under the column DBInstanceIdentifier, <i>select the database</i> you wish to monitor for  "<b>
+                  <ph>FreeStorageSpace</ph>
+               </b>" and click "<ph>
+                  <b>Next</b>
+               </ph>" when you are done<!--A BR tag was used here in the original source.-->
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                  <image href="media/52729341.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </li>
+            <li>In "<b>
+                  <ph>Alarm Threshold</ph>
+               </b>" panel, please add and complete following:<ol>
+                  <li>"<b>
+                        <ph>Name</ph>
+                     </b>" - for this Database Metrics (e.g. RDS_FreeStorageSpace_for_MySQL-A)</li>
+                  <li>"<b>
+                        <ph>Description</ph>
+                     </b>" - describe what the above database metrics name you entered (e.g. Disk space monitor of RDS
+                     MySQL-A)</li>
+                  <li>
+                     <p outputclass="auto-cursor-target">Add free storage of 20% left to alert contact under "<ph>
+                           <b>Whenever FreeStorageSpace</b>
+                        </ph>" is &lt;=  <b>
+                           <ph>2</ph>
+                           <ph>0</ph>
+                        </b>
+                        <b>
+                           <b>
+                              <ph/>
+                           </b>
+                        </b>
+                     </p>
+                     <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+                     <p>I have suggested adding 20% of free storage space left, however, you can tune this to be
+                        lower.</p>
+                  </li>
+                  <li>
+                     <ph>Add 10  for "</ph>
+                     <b>
+                        <ph>10</ph>
+                     </b>
+                     <ph>" </ph>
+                     <b>
+                        <ph>consecutive</ph>
+                        <ph> period(s)</ph>
+                     </b><!--A BR tag was used here in the original source.-->
+                     <b>
+                        <ph>
+                           <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                              <image href="media/52729864.png" outputclass="confluence-embedded-image"/>
+                           </ph>
+                        </ph>
+                     </b>
+                  </li>
+                  <li>Under <b>
+                        <ph>Actions</ph>
+                     </b>, add "<ph>
+                        <b>Send notifications to</b>
+                     </ph>", which is your SNS topic:<!--A BR tag was used here in the original source.-->
+                     <i>Note: this sns topic should already be setup before you add it.</i><!--A BR tag was used here in the original source.-->
+                     <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                        <image href="media/52730065.png" outputclass="confluence-embedded-image"/>
+                     </ph>
+                  </li>
+                  <li>Click "<ph>
+                        <b>Create Alarm</b>
+                     </ph>" to create the Alarm metrics for RDS monitoring on Storage Space</li>
+                  <li>Now, you will see in "<ph>
+                        <b>Alarms</b>
+                     </ph>" the alarm you just created, but do not be surprise when you see "<ph>INSUFFICIENT DATA</ph>"
+                     and it is ok since the alarm is not triggered, yet.  Once, it is triggered, an <ph>ALARM</ph>
+                     appears under "<b>
+                        <ph>Alarms</ph>
+                     </b>" tab.  In addition, email alerts will be distributed as defined in the SNS topic.</li>
+                  <li>Click "<ph>
+                        <b>Create Alarm</b>
+                     </ph>" to create the Alarm metrics for RDS monitoring on Storage Space</li>
+               </ol>
+            </li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

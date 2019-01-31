@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Release Notes: Version 4.1.941</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Release Notes: Version 4.1.941
+                        </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <div class="panel"
+                            style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"
+                                ><div class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Contents</b></div><div class="panelContent">
+                                <div class="toc-macro rbtoc1548486736112">
+                                    <ul class="toc-indentation">
+                                        <li><a href="#ReleaseNotes:Version4.1.941-SoftwareVersion"
+                                                >Software Version</a></li>
+                                        <li><a href="#ReleaseNotes:Version4.1.941-NewFeatures">New
+                                                Features</a></li>
+                                        <li><a href="#ReleaseNotes:Version4.1.941-TestedPlatforms"
+                                                >Tested Platforms</a></li>
+                                        <li><a
+                                                href="#ReleaseNotes:Version4.1.941-Improvements/Bugfixes"
+                                                >Improvements/Bugfixes</a>
+                                            <ul class="toc-indentation">
+                                                <li><a
+                                                  href="#ReleaseNotes:Version4.1.941-Robustness/Reliability"
+                                                  >Robustness/Reliability</a></li>
+                                                <li><a
+                                                  href="#ReleaseNotes:Version4.1.941-SparkSupport"
+                                                  >Spark Support</a></li>
+                                                <li><a
+                                                  href="#ReleaseNotes:Version4.1.941-WorkflowSupport"
+                                                  >Workflow Support</a></li>
+                                                <li><a
+                                                  href="#ReleaseNotes:Version4.1.941-MRInsights">MR
+                                                  Insights</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#ReleaseNotes:Version4.1.941-KnownIssues">Known
+                                                Issues</a></li>
+                                    </ul>
+                                </div>
+                            </div></div><h1 id="ReleaseNotes:Version4.1.941-SoftwareVersion"
+                            >Software Version</h1><div class="table-wrap"><table
+                                class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="confluenceTd">On-premise RPM</td>
+                                        <td class="confluenceTd"
+                                                ><code>unravel-4.1-941.x86_64.rpm.20170725T0407Z</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd">EMR RPM</td>
+                                        <td class="confluenceTd"
+                                                ><code>unravel-4.1-941.x86_64.EMR.rpm.20170725T0239Z</code></td>
+                                    </tr>
+                                </tbody>
+                            </table></div><h1 id="ReleaseNotes:Version4.1.941-NewFeatures">New
+                            Features</h1><ul>
+                            <li>Application data from Resource Manager is published to jc topic and
+                                then processed by JCW2 daemon to create entry in jobs table, and
+                                create hitdoc. This ensures that kill apps (jhist and job conf files
+                                are not available in HDFS) are available in Unravel.</li>
+                            <li>Cluster Analytics</li>
+                        </ul><h1 id="ReleaseNotes:Version4.1.941-TestedPlatforms">Tested
+                            Platforms</h1><ul>
+                            <li>CDH  with Kerberos</li>
+                            <li>HDP with Kerberos</li>
+                            <li>EMR 5.2.X</li>
+                            <li>Qubole Spark type cluster</li>
+                        </ul><h1 id="ReleaseNotes:Version4.1.941-Improvements/Bugfixes"
+                            >Improvements/Bugfixes</h1><ul>
+                            <li>Fixed the issue of “Done directory setting via UI”</li>
+                            <li>Fixed the issue of “Config wizard not showing the value of spark
+                                event log location”</li>
+                        </ul><p><br /></p><h2
+                            id="ReleaseNotes:Version4.1.941-Robustness/Reliability"
+                            >Robustness/Reliability</h2><ul>
+                            <li>Improved bootstrap scripts for Qubole and EMR</li>
+                            <li>Improved setup scripts for HDP and MapR</li>
+                            <li>Improved experience deploying and configuring the Unravel Resource
+                                Metrics Sensor</li>
+                            <li>One single distribution package - no need to download separate ZIP
+                                file for MR and Spark</li>
+                            <li>Simplified configuration - the common settings are all included and
+                                don't need to be specified by the user</li>
+                            <li>Improved Unravel Resource Metrics Sensor performance</li>
+                        </ul><h2 id="ReleaseNotes:Version4.1.941-SparkSupport">Spark Support</h2><ul>
+                            <li>Tag interesting Spark apps, usability improvements, time
+                                breakdown event</li>
+                            <li>Put caps on the maximum number of executors in recommendations</li>
+                            <li>Differentiate among actionable events in Spark using dynamic ranks
+                                as in Hive and MR</li>
+                            <li>Bounding executor logs + efficient log processing, API to access
+                                Spark configuration from MySQL</li>
+                            <li>Accessing S3 log files fixes:<ul>
+                                    <li>Mapping multiple S3 buckets to the same S3 profile</li>
+                                    <li>Set the S3 region to a custom one.</li>
+                                    <li>Scripts and DSL API extension to generate large Oozie
+                                        workflows programmatically</li>
+                                </ul></li>
+                        </ul><h2 id="ReleaseNotes:Version4.1.941-WorkflowSupport">Workflow
+                            Support</h2><ul>
+                            <li>Oozie workflow pipeline:<ul>
+                                    <li>Improve backend storage efficiency of Oozie workflows</li>
+                                    <li>Test and pass changes on large Oozie workflows</li>
+                                </ul></li>
+                            <li>Tagged workflow change:<ul>
+                                    <li>Enable using Python script to tag any Unravel supported
+                                        applications</li>
+                                    <li>Enable user to tag Oozie workflow via similar approach. If a
+                                        user enables this feature, the Oozie workflows won't show
+                                        up; instead, the selected (tagged) applications will be
+                                        grouped into a single tagged workflow and presented in the
+                                        Workflows tab.</li>
+                                </ul></li>
+                            <li>Airflow improvements</li>
+                        </ul><h2 id="ReleaseNotes:Version4.1.941-MRInsights">MR Insights</h2><ul>
+                            <li>Improvement to Hive/MR time breakdown event</li>
+                            <li>Mark interesting events to be shown on front end</li>
+                            <li>Get ApplicationMaster log for app performance tuning for MR
+                                jobs</li>
+                        </ul><h1 id="ReleaseNotes:Version4.1.941-KnownIssues">Known Issues</h1><ol>
+                            <li><p>Considerable delay in MR jobs to appear on UI. delay is more than
+                                    15 to 25 minutes. in EMR Need serious investigation on MR
+                                    pipeline to identify if there is issues with long SQL queries,
+                                    non-indexed column or JCW.</p></li>
+                            <li><p>Running Nested oozie workflow since 4 hours. jhist files for many
+                                    jobs are missing (source - unravel_emr_sensor.log in EMR
+                                    cluster)</p></li>
+                            <li>Improve/Rewrite EMR bootstrap script to avoid all manual steps.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

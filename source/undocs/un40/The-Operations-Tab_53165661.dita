@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="The-Operations-Tab_53165661">
+   <title>The Operations Tab </title>
+   <conbody>
+      <p>Table of Contents</p>
+      <ul outputclass="toc-indentation">
+
+         <li>
+            <xref href="#The-Operations-Tab_53165661/TheOperationsTab-Dashboard">Dashboard</xref>
+         </li>
+
+         <li>
+            <xref href="#The-Operations-Tab_53165661/TheOperationsTab-Charts">Charts</xref>
+         </li>
+
+         <li>
+            <xref href="#The-Operations-Tab_53165661/TheOperationsTab-Reports">Reports</xref>
+            <ul outputclass="toc-indentation">
+
+               <li>
+                  <xref href="#The-Operations-Tab_53165661/TheOperationsTab-Chargeback">Chargeback</xref>
+               </li>
+
+               <li>
+                  <xref href="#The-Operations-Tab_53165661/TheOperationsTab-ClusterSummary">Cluster Summary</xref>
+               </li>
+
+               <li>
+                  <xref href="#The-Operations-Tab_53165661/TheOperationsTab-ClusterCompare">Cluster Compare</xref>
+               </li>
+
+            </ul>
+         </li>
+
+      </ul>
+      <section>
+         <title>Dashboard</title>
+         <p>To view the Dashboard, click <b>Operations</b> | <b>Dashboard</b>.</p>
+         <p>The Dashboard provides a good overview of all activities in the cluster. It contains tiles that display
+            cluster KPI time series, application summaries, and highlights of inefficient applications and workflows
+            missing SLAs.</p>
+         <p>To see details within a specific tile, click that tile. </p>
+         <p>To configure the Dashboard for a specific time range or cluster, select options from the pull-down menus in
+            the banner.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53165737.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p/>
+      </section>
+      <section>
+         <title>Charts</title>
+         <p>To view charts, click <b>Operations</b> | <b>Charts</b>.</p>
+         <p>
+            <b>Charts</b> address one of the big challenges in managing a multi-tenant Hadoop clusters: understanding
+            how resources are being used or abused by the various applications running in the clusters. Unravel Web UI
+            provides a unique forensic view into each cluster's key performance indicators (KPIs) over time and how they
+            are related to the applications running in the cluster.</p>
+         <p>To see KPIs for resources, jobs, nodes, or services, select the appropriate secondary tab in the
+               <b>Charts</b> ribbon.</p>
+         <p>To see a detailed view of any of KPI, click the tile for that KPI.</p>
+         <p>To configure <b>Charts</b> for a specific time range or cluster, select options from the pull-down menus in
+            the banner.</p>
+         <p>
+            <image href="images/icons/emoticons/lightbulb_on.png" outputclass="emoticon emoticon-light-on">
+               <alt>(lightbulb)</alt>
+            </image> For example, if you notice a sudden spike in the total vCores or memory usage of the cluster, using
+            Unravel you can correctly pinpoint the applications that resulted in this spike. More importantly, you can
+            then drill down into these specific applications to understand their behavior and apply any recommendations
+            that Unravel suggests for optimizing them.</p>
+         <p/>
+         <p/>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53165734.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p/>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53223940.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p/>
+      </section>
+      <section>
+         <title>Reports</title>
+         <p>To view reports, click <b>Operations</b> | <b>Reports</b>.</p>
+      </section>
+      <section>
+         <title>Chargeback</title>
+         <p>Unravel provides an easy way to create chargeback reports for multi-tenant cluster usage. You can generate
+            usage reports categorized by application type, queue, users, and so on.</p>
+         <p>To configure <b>Chargeback</b> for a specific time range or cluster, select options from the pull-down menus
+            in the banner.</p>
+         <p>
+            <image href="images/icons/emoticons/lightbulb_on.png" outputclass="emoticon emoticon-light-on">
+               <alt>(lightbulb)</alt>
+            </image> For example, you can generate reports categorized first by application type and secondarily by
+            users and queue; then you can specify base costs (VCore/Hour ($) and Memory MB/Hour ($)) to estimate actual
+            costs across various dimensions.  </p>
+         <p/>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53165731.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p/>
+      </section>
+      <section>
+         <title>Cluster Summary</title>
+         <p>The <b>Cluster Summary</b>, a secondary tab of <b>Reports</b>, summarizes the cluster health. You can group
+            the summary by application, user, or queue.</p>
+         <p/>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53224157.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+         <p/>
+      </section>
+      <section>
+         <title>Cluster Compare</title>
+         <p>The <b>Cluster Compare</b>, a secondary tab of <b>Reports</b>, provides a visual assessment of cluster
+            health. You can group the comparison by user or queue.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53224204.png"
+                  outputclass="confluence-embedded-image confluence-content-image-border"/>
+            </ph>
+         </p>
+      </section>
+
+   </conbody>
+</concept>

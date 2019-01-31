@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Running-Verification-Scripts-and-Benchmarks_52960296" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="task:1;4:82">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="title:1;5:11">Running Verification Scripts and Benchmarks </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:3;23:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="xref:3;24:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:4;28:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:4;29:20">
+                  <xref href="Troubleshooting_50881320.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="xref:4;30:62" type="concept"><?ditaot usertext?>Troubleshooting</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:1;35:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:5;36:17">This topic explains how to run verification tests and benchmarks after you install or upgrade Unravel
+               Server. </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:2;39:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:6;40:17">Why Run Verification Tests or Benchmarks?</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ul:1;42:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:5;44:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:3;45:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:7;46:23">Verification tests highlight the value of Unravel’s application performance management/analysis.
+                  </ph>
+               </p>
+            </li>
+
+         </ul>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ul:2;52:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:6;54:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:4;55:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:8;56:23">Benchmarks verify that Unravel features are working correctly.</ph>
+               </p>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:5;61:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:9;62:17">Running Verification Tests (“Smoke Tests”)</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:6;64:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:10;65:17">Currently, we provide smoke tests for Spark jobs only. Please follow the instructions in the section
+               that matches your deployment.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:7;68:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:11;69:17">CDH </ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ul:3;71:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:7;73:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:8;74:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:12;75:23">On your Unravel Server host, run the </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:13;76:23">spark_test_via_parcel.sh</ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:14;77:23"> script. This script runs a Spark app. It’s a good way to verify that Unravel Server captures the
+                     data (events) generated by the Spark app, even before you install and configure Unravel Sensor. You
+                     should be able to see the data generated by this Spark app on Unravel Web UI. </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:1;81:63">/usr/local/unravel/install_bin/spark_test_via_parcel.sh --unravel-server &lt;unravel_host_IP_address&gt;</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:9;85:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:15;86:17">Note: You can run this script without installing and configuring Unravel Sensor.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:10;88:14"/>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ul:4;89:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:8;91:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:11;92:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:16;93:23">After you install Unravel Sensor for Spark, run a SparkPI job on your Unravel Server host to
+                     verify that the sensor is installed and configured correctly:</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:2;96:63">/opt/cloudera/parcels/CDH/lib/spark/bin/spark-submit \
+--class org.apache.spark.examples.SparkPi \
+--deploy-mode client \
+--master yarn \
+/opt/cloudera/parcels/CDH/lib/spark/examples/lib/spark-examples-*.jar 1000</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:12;104:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:13;105:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:17;106:17">HDP</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ul:5;108:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:9;110:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:14;111:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:18;112:23">After you install Unravel Sensor for Spark, run a SparkPI job on your Unravel Server host to
+                     verify that the sensor is installed and configured correctly:</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:3;115:63">/usr/bin/spark-submit \
+--class org.apache.spark.examples.SparkPi --master yarn-client \
+--num-executors 1 --driver-memory 512m --executor-memory 512m \
+--executor-cores 1 /usr/hdp/current/spark-client/lib/spark-examples*.jar 10</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:15;122:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:19;123:17">MapR</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ul:6;125:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:10;127:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:16;128:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:20;129:23">After you install Unravel Sensor for Spark, run a SparkPI job on your Unravel Server host to
+                     verify that the sensor is installed and configured correctly:</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:4;132:63">/opt/mapr/spark/spark-1.6.1/bin/spark-submit \
+--class org.apache.spark.examples.SparkPi --master yarn-client \
+--num-executors 1 --driver-memory 512m --executor-memory 512m \
+--executor-cores 1 /opt/mapr/spark/spark-1.6.1/lib/spark-examples*.jar 10</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:17;139:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:21;140:17">Running Benchmarks</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:18;142:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:22;143:17">We provide sample Spark, MapReduce, Hive, and WF apps that you can download from </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:23;144:17">
+               <xref href="https://preview.unraveldata.com" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="xref:5;146:20"><?ditaot usertext?>preview.unraveldata.com</xref>. These apps are useful for verifying that an upgrade is successful. </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:24;147:17">Please follow the instructions below for the app you want.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:19;149:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:25;150:17">Spark</ph>
+         </p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ol:2;152:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:11;154:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:20;155:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:26;156:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:27;157:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:28;158:29">Download our sample Spark app:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:5;162:63">curl https://preview.unraveldata.com/img/spark-benchmarks1.tgz -o spark-benchmarks1.tgz</codeblock>
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:21;163:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:29;164:23">This <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeph:1;164:36">.tgz</codeph> file includes both datasets and scripts.</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:12;168:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:22;169:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:30;170:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:31;171:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:32;172:29">Run </ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:33;173:29">md5sum</ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:34;174:29"> on spark-benchmarks1.tgz to ensure it is intact:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:6;178:63">md5sum spark-benchmarks1.tgz</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:13;181:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:23;182:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:35;183:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:36;184:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:37;185:29">Confirm that the output of </ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:38;186:29">md5sum</ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:39;187:29"> is exactly as shown on the line below:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:7;191:63">ff8e56b4d5abfb0fb9f9e4a624eeb771  spark-benchmarks1.tgz</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:14;194:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:24;195:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:40;196:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:41;197:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:42;198:29">Uncompress the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeph:2;198:52">.tgz</codeph> file:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeblock:8;202:63">tar -zxvf spark-benchmarks1.tgz</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:15;205:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:25;206:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:43;207:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:44;208:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:45;209:29">Run the samples.</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:46;213:114"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:26;214:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:47;215:23">Tip: Instructions on how to run the samples are included in the package itself, inside
+                     demo-benchmarks-for-spark/benchmarks/README.</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="li:16;220:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:48;221:20">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="ph:49;222:23">After running the samples, check the Program and the Execution Graph tabs in Unravel  Web UI.
+                     Click an RDD in the Execution Graph to see the corresponding line of code in the app.</ph>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:27;228:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:28;229:13">
+            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="codeph:3;230:22"/>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="p:29;232:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="image:1;233:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="alt:1;234:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Running-Verification-Scripts-and-Benchmarks_52960296.dita" xtrc="xref:6;236:52"><?ditaot usertext?>logo_small.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

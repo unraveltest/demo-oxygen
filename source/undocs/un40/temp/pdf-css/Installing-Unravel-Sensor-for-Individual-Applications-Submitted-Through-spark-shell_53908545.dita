@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="task:1;3:173">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="title:1;4:11">
+                        Installing Unravel Sensor for Individual Applications
+                            Submitted Through spark-shell 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="taskbody:1;8:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="context:1;9:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ol:1;13:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:1;15:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:1;17:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="xref:1;18:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:2;23:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:2;25:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="xref:2;26:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:3;31:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:3;33:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="xref:3;34:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:4;39:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:4;41:20">
+                  <xref href="Sensors_53900864.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="xref:4;42:54" type="topic"><?ditaot usertext?>Sensors</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:1;54:13">Introduction</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:2;55:13">This topic explains how to set up Unravel Sensor for Spark to profile
+                                <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="b:1;56:36">specific Spark applications</b> executed via the
+                                <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="b:2;57:36">spark-shell</b> (in other words, <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="i:1;57:72">per-application profiling</i>, also
+                            called "dev mode"), rather than <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="i:2;58:64">cluster-wide profiling</i>. The Unravel
+                            Sensor for Spark uses Java agents to intercept Spark applications at runtime. Four JARs are
+                            included in the Unravel Sensor .zip package: <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:1;60:82">btrace-agent.jar</codeph>,
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:2;61:41">btrace-boot.jar</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:3;61:75">unravel-boot.jar, and unravel-sys.jar</codeph>. The
+                            JARs are fired up when you define <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:4;62:71">spark.driver.extraJavaOptions</codeph> and
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:5;63:41">spark.executor.extraJavaOptions</codeph> as part of your <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:6;63:106">spark-submit</codeph>
+                            command.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:3;65:13">The information here applies to Spark versions 1.3.x through 2.0.x. <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:5;65:85">Brown</ph> text indicates where you must substitute
+                            your particular values.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:4;67:13">1. Obtain the Sensor</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:5;68:13">The Unravel Sensor is included in the Unravel Server RPM
+                            installation. After installing the Unravel Server RPM on <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:6;69:90">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:7;70:24">UNRAVEL_HOST</codeph>
+            </ph>, you can obtain the
+                            sensor either from the filesystem on the Unravel Server host, or by HTTP from <ph outputclass="nolink" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:7;72:132">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:8;73:24">http://<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:8;73:35">UNRAVEL_HOST</ph>:3000/hh/spark-<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:9;73:71">VERSION</ph>/unravel-sensor-for-spark-bin.zip</codeph>.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:6;75:13">
+            <ph outputclass="nolink" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:10;76:38">To obtain Unravel Sensor from the filesystem on the Unravel Server
+                                host:</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ul:1;79:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:5;81:17">Go to the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:9;81:35">/usr/local/unravel/webapps/ROOT/hh/spark-<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:11;81:80">VERSION</ph>/</codeph> directory on the Unravel
+                                Server host, where <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:12;82:56">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:10;83:27">VERSION</codeph>
+               </ph> is<ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ul:2;84:28">
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:6;86:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:11;87:30">2.0</codeph> for Spark 2.0.x</li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:7;89:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:12;90:30">1.6</codeph> for Spark 1.6.x</li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:8;92:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:13;93:30">1.5</codeph> for Spark 1.5.x</li>
+                                    
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:9;95:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:14;96:30">1.3</codeph> for Spark 1.3.x</li>
+                                
+               </ul>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:10;101:17">Within this directory, locate the sensor file:
+                                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:15;102:45">unravel-sensor-for-spark-bin.zip</codeph>.</li>
+                        
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:7;105:13">2. Run the Sensor to Intercept Spark Apps executed via the spark-shell</p>
+         <p outputclass="p1" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:8;106:30">To
+                            intercept Spark apps executed via the spark-shell, <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:13;107:84">you need to unzip the Unravel
+                                Sensor .zip file on the client node at a location on the local file system that is
+                                readable by all users, referred to as </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:14;110:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:16;111:24">UNZIPPED_ARCHIVE_DEST</codeph>
+            </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:15;113:17"> below. We suggest
+                                </ph>
+            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:17;115:21">/usr/local/unravel-spark</codeph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:16;116:17">.</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:9;118:13">If you use multiple
+                            hosts as clients, do this step for <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="b:3;119:67">each client</b>.</p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeblock:1;121:57">mkdir $UNZIPPED_ARCHIVE_DEST
+cd $UNZIPPED_ARCHIVE_DEST 
+wget http://$UNRAVEL_HOST:3000/hh/spark-VERSION/unravel-sensor-for-spark-bin.zip
+unzip unravel-sensor-for-spark-bin.zip</codeblock>
+                            
+         <p outputclass="title" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:10;126:33">Important</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:17;127:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:11;128:13">Please keep the original
+                                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:18;129:49">unravel-sensor-for-spark-bin.zip</codeph> file inside <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:18;129:107">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:19;130:24">UNZIPPED_ARCHIVE_DEST</codeph>
+            </ph>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:12;132:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:13;133:13">Define
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:20;134:41">spark.driver.extraJavaOptions</codeph> and
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:21;135:41">spark.executor.extraJavaOptions</codeph> as part of your <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:22;135:106">spark-shell</codeph>
+                            command. Please note that spark-shell is <u class="+ topic/ph hi-d/u " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="u:1;136:73">always executed in client mode</u>, so a
+                            deployment mode setting is not available. </p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:19;138:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:14;139:13">To use the example below, be
+                                    sure to replace <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:20;140:57">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:23;141:24">UNRAVEL_SENSOR_PATH</codeph>
+            </ph>, <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:21;142:24">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:24;143:24">UNRAVEL_SERVER_IP_PORT</codeph>
+            </ph>, <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:22;144:24">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:25;145:24">SPARK_EVENT_LOG_DIR</codeph>
+            </ph>, and
+                                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:23;147:45">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:26;148:24">PATH_TO_SPARK_EXAMPLE_JAR</codeph>
+            </ph> with your values.</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ul:3;150:14">
+                                    
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:11;152:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:27;153:24">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:24;154:23">UNRAVEL_SENSOR_PATH</ph>
+               </codeph>:
+                                        Parent directory of the Unravel Sensor .zip file, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:28;156:99">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:25;157:23">unravel-sensor-for-spark-bin.zip</ph>
+               </codeph>. If you put this file on
+                                        HDFS, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:29;159:55">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:26;160:23">UNRAVEL_SENSOR_PATH</ph>
+               </codeph>
+                                        is the parent directory on HDFS.</li>
+                                    
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:12;164:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:30;165:24">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:27;166:23">UNRAVEL_SERVER_IP_PORT</ph>
+               </codeph>:
+                                        IP address and port of the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:31;168:76">unravel_lr</codeph> service in the format
+                                            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:32;169:53">IP:PORT</codeph>. Port is 4043 by default. Sample value:
+                                            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:33;170:53">10.0.0.142:4043</codeph>.</li>
+                                    
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:13;172:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:28;173:20">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:34;174:27">SPARK_EVENT_LOG_DIR</codeph>
+               </ph>:
+                                        Location of the event log directory on HDFS, S3, or local file system. If a
+                                        remote address is used, include the namenode IP address and port.</li>
+                                
+         </ul>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ul:4;180:14">
+                                    
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="li:14;182:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:35;183:24">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:29;184:23">UNZIPPED_ARCHIVE_DEST</ph>
+               </codeph>:
+                                        Directory on the local file system that contains the unzipped content of
+                                            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:36;187:53">unravel-sensor-for-spark-bin.zip</codeph>. It also contains the original
+                                            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeph:37;188:53">unravel-sensor-for-spark-bin.zip</codeph> file.</li>
+                                
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:15;191:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:16;192:13">For example,</p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="codeblock:2;194:57">export UNZIPPED_ARCHIVE_DEST=$UNZIPPED_ARCHIVE_DEST
+export UNRAVEL_SERVER_IP_PORT=$UNRAVEL_SERVER_IP_PORT
+export SPARK_EVENT_LOG_DIR=$SPARK_EVENT_LOG_DIR
+
+export ENABLED_SENSOR_FOR_DRIVER="spark.driver.extraJavaOptions=-javaagent:$UNZIPPED_ARCHIVE_DEST/btrace-agent.jar=bootClassPath=$UNZIPPED_ARCHIVE_DEST/unravel-boot.jar,systemClassPath=$UNZIPPED_ARCHIVE_DEST/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1 -Dcom.unraveldata.spark.sensor.disableLiveUpdates=true"
+
+
+export ENABLED_SENSOR_FOR_EXECUTOR="spark.executor.extraJavaOptions=-javaagent:unravel-sensor-for-spark-bin.zip/btrace-agent.jar=bootClassPath=unravel-sensor-for-spark-bin.zip/unravel-boot.jar,systemClassPath=unravel-sensor-for-spark-bin.zip/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class  -Dcom.sun.btrace.FileClient.flush=-1"
+
+
+
+/usr/lib/spark/bin/spark-shell \
+    --archives $UNZIPPED_ARCHIVE_DEST/unravel-sensor-for-spark-bin.zip \
+    --conf "$ENABLED_SENSOR_FOR_DRIVER" \
+    --conf "$ENABLED_SENSOR_FOR_EXECUTOR" \
+    --conf "spark.unravel.server.hostport=$UNRAVEL_SERVER_IP_PORT" \
+    --conf "spark.eventLog.dir=${SPARK_EVENT_LOG_DIR}" \
+    --conf "spark.eventLog.enabled=true" \
+&lt;&lt;EOF
+// your spark-shell code snippet will follow here
+// For exemplifying, we use a snippet of RDDRelation below
+
+import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.sql.SQLContext
+import org.apache.spark.sql.functions._
+
+import sqlContext.implicits._
+
+case class Record(key: Int, value: String)
+
+    val df = sc.parallelize((1 to 100).map(i =&gt; Record(i, s"val_$i"))).toDF()
+
+    // Any RDD containing case classes can be registered as a table.  The schema of the table is
+    // automatically inferred using scala reflection.
+    df.registerTempTable("records")
+
+    // Once tables have been registered, you can run SQL queries over them.
+    println("Result of SELECT *:")
+    sqlContext.sql("SELECT * FROM records").collect().foreach(println)
+
+    // Aggregation queries are also supported.
+    val count = sqlContext.sql("SELECT COUNT(*) FROM records").collect().head.getLong(0)
+    println(s"COUNT(*): $count")
+
+exit
+
+EOF
+
+</codeblock>
+                            
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="ph:30;244:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:17;245:13">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="i:3;246:16">Note that a full blank
+                                        line separates lengthy lines that are wrapped, except for the spark-shell that
+                                        uses line continuation backslashes.</i>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:18;250:13">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="i:4;251:17"/>
+         </p>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="p:19;257:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="image:1;261:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="alt:1;262:19"/>
+         </image>
+                            
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita" xtrc="xref:5;265:52"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref> (image/png) 
+                        
+                    
+                
+            </context>
+   </taskbody>
+</task>

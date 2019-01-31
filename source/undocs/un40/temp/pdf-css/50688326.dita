@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FAGIIDCG" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="task:1;4:38">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="title:1;5:11">Part 2: Enable Additional Data Collection / Instrumentation for MapR </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:3;23:20">
+                  <xref href="Installation-Guide-for-MapR_50961894.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="xref:3;24:74" type="topic"><?ditaot usertext?>Installation Guide for
+                     MapR</xref>
+               </ph>
+            </li>
+
+         </ol> Created by <ph outputclass="author" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:4;29:52"> Ada-C</ph>, last modified on Sep 29, 2017 <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:1;29:99"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:2;30:13">Introduction</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:3;31:13">This topic explains how to <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:5;31:44">enable additional data collection or instrumentation on
+               the MapR converged data platform</ph>. These instructions apply to Unravel Server
+            v4.0. For older versions of Unravel Server, contact Unravel Support.</p>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="b:1;34:13">Workflow Summary</b>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ol:2;35:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:4;37:17">Enable additional instrumentation on Unravel Server's host.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:5;39:17">Enter correct value for Hive Metastore, Resource Manager and Oozie properties.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:6;41:17">Confirm that Unravel Web UI shows additional data.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:7;43:17">Confirm and adjust the settings in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:1;43:60">yarn-site.xml</codeph>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:8;45:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:4;46:19">Enable additional instrumentation on other hosts in the cluster.</p>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:5;50:13">1. Enable Additional Instrumentation on Unravel Server's Host</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:6;52:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:6;53:13">Best practice is to enable instrumentation on Unravel Server itself for testing,
+            practice, and demonstration purposes, before enabling instrumentation on other
+            gateway/edge/client machines that do real client work (Hive queries, Map-Reduce jobs,
+            Spark, and so on).</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:7;57:13">Run the shell script <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:2;57:42">unravel_mapr_setup.sh</codeph> on Unravel Server (on
+               <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="b:2;58:19">host1</b> for multi-host Unravel installs). This script installs Unravel Sensor
+            (Hive Hook) on Unravel Server's host:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeblock:1;60:57">sudo yum install -y wget
+cd /usr/local/unravel/install_bin/unraveldata-clients
+sudo ./unravel_mapr_setup.sh install -y --unravel-server $UNRAVEL_HOST:3000 --spark-version SPARK_VERSION --hive-version HIVE_VERSION</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:8;63:13">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="i:1;64:16">Note: In the code above, substitute valid values for:</i>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ul:1;66:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:9;68:17">
+               <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="i:2;69:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:7;70:23">UNRAVEL_HOST_IP <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:8;70:43">-</ph>
+                  </ph>fully qualified host name or IP address</i>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:10;74:17">
+               <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="i:3;75:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:9;76:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:10;77:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:11;78:29">SPARK_VERSION</ph> - target Spark version</ph>
+                  </ph>
+               </i>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:11;83:17">
+               <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="i:4;84:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:12;85:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:13;86:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:14;87:29">HIVE_VERSION</ph> - target Hive version</ph>
+                  </ph>
+               </i>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:9;93:13">2. Enter correct value for Hive Metastore, Resource Manager, and Oozie properties</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:10;94:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:15;95:17">Use <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:3;95:29">vi</codeph> to edit  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="b:3;95:53">/usr/local/unravel/etc/unravel.properties</b>:
+               un-comment relevant respective Hive Metastore, Resource Manager, and Oozie
+               properties: </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:11;99:14"/>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeblock:2;100:57">#     hive metastore
+#
+### Uncomment and enter correct HM java.jdo.option.Connection properties ###
+#javax.jdo.option.ConnectionURL=jdbc:mysql://example.localdomain:3306/hive
+#javax.jdo.option.ConnectionURL=jdbc:postgresql://example.localdomain:7432/hive_zzzzzz
+#javax.jdo.option.ConnectionDriverName=com.mysql.jdbc.Driver
+#javax.jdo.option.ConnectionDriverName=org.postgresql.Driver
+#javax.jdo.option.ConnectionUserName=hiveuser?
+#javax.jdo.option.ConnectionPassword=???????
+
+#     optional selectivity of databases to analyze in metastore
+#com.unraveldata.metastore.databasePattern=s*|t*|d*
+
+#     Resource Manager (RM)
+#
+#     Enable https access to Resource Manager
+#https.protocols=TLSv1.2
+#
+### Uncomment and enter correct below properties RM ###
+#yarn.resourcemanager.webapp.address=http://example.localdomain:8088 
+
+#     Resource Manager username to login
+#yarn.resourcemanager.webapp.username=foo
+
+#     Resource Manager password to login
+#yarn.resourcemanager.webapp.password=?????
+
+#
+#     oozie
+#
+### Uncomment below oozie properties when oozie is used ###
+# oozie.server.url=http://&lt;oozie-hostname-IP-address&gt;:11000/oozie</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:12;132:13">Then restart Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeblock:3;133:57">sudo /etc/init.d/unravel_all.sh restart</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:13;134:13">3. Confirm that Unravel Web UI Shows Additional Data</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:14;135:13">Run a Hive job using a test script provided by Unravel Server:</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:15;136:13">
+            <image href="images/icons/emoticons/lightbulb_on.png" outputclass="emoticon emoticon-light-on" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="image:1;138:57">
+               <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="alt:1;139:21">(lightbulb)</alt>
+            </image> This is where you can see the effects of the instrumentation setup. Best
+            practice is to run this test script on Unravel Server rather than on a
+            gateway/edge/client node. That way you can verify that instrumentation is working first,
+            and then enable instrumentation on other gateway/edge/client nodes.</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeblock:4;144:57">sudo -u $someUser /usr/local/unravel/install_bin/hive_test_simple.sh</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:16;145:13">This script creates a uniquely named table in the default database, adds some data, runs
+            a Hive query on it, and then deletes the table.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:17;147:13">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="i:5;148:16">Note: Replace $someUser with a user that can create tables in the default database.
+               If you need to use a different database, copy the script and edit it to change the
+               target database. </i>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:18;152:13">This script runs the query twice using different workflow tags so you can clearly see
+            the two different runs of the same workflow in Unravel Web UI.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:19;154:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:20;155:13">4. Confirm and Adjust the Settings in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:4;155:59">yarn-site.xml</codeph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:21;157:13">Check specific properties only Unravel srv in
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:5;158:24">/opt/mapr/hadoop/hadoop-2.7.0/etc/hadoop/yarn-site.xml</codeph> to be sure
+            that these settings are present (with your particular values for your Resource Manager
+            web app address):</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ul:2;161:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:12;163:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:22;164:19">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:6;165:27">yarn.resourcemanager.webapp.address</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeblock:5;166:63">&lt;property&gt;
+&lt;name&gt;yarn.resourcemanager.webapp.address&lt;/name&gt;
+&lt;value&gt;10.0.0.110:8088&lt;/value&gt;
+&lt;source&gt;yarn-site.xml&lt;/source&gt;
+&lt;/property&gt;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:13;173:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:23;174:19">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:7;175:27">yarn.log-aggregation-enable</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeblock:6;176:63">&lt;property&gt;
+&lt;name&gt;yarn.log-aggregation-enable&lt;/name&gt;
+&lt;value&gt;true&lt;/value&gt;
+&lt;description&gt;For log aggregations&lt;/description&gt;
+&lt;/property&gt;</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:24;184:13">5. Enable Additional Instrumentation on Other Hosts in the Cluster</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:16;186:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:25;187:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ph:17;188:17">To instrument more servers, you can use the setup script we provide or see the
+               effect it has and replicate it using your own provisioning automation system. If you
+               already have a way to customize and deploy hive-site.xml, yarn-site.xml and user
+               defined function jars, you can add the changes and jar from Unravel to your existing
+               mechanism.</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="ul:3;194:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:14;196:17">Run the shell script <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="codeph:8;196:46">unravel_mapr_setup.sh</codeph> on each node of the
+               cluster, just like it was run on the Unravel server above.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:15;199:17">Copy the newly edited (in the previous step 4) yarn-site.xml to all nodes.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="li:16;201:17">Do a rolling-restart of HiveServer2</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:26;204:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:27;205:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:28;206:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="p:29;207:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="image:2;208:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="alt:2;209:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="xref:4;211:52"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="image:3;212:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="alt:3;213:19"/>
+         </image>
+         <xref href="media/51087332.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688326.dita" xtrc="xref:5;215:56"><?ditaot usertext?>image2017-2-26_0-20-12.png</xref> (image/png) 
+         
+      </context>
+   </taskbody>
+</task>

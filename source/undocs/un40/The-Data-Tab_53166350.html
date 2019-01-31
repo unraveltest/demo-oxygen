@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : The Data Tab</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="User-Guide_50687944.html">User Guide</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">The Data Tab </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <div class="panel" style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"><div
+                                class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Table of Contents</b></div><div class="panelContent">
+                                <div class="toc-macro rbtoc1548486531807">
+                                    <ul class="toc-indentation">
+                                        <li><a href="#TheDataTab-Table/PartitionUsage">Table/Partition Usage</a>
+                                            <ul class="toc-indentation">
+                                                <li><a href="#TheDataTab-TableDetails">Table Details</a></li>
+                                                <li><a href="#TheDataTab-PartitionDetails">Partition Details</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div></div><h1 id="TheDataTab-Table/PartitionUsage">Table/Partition Usage</h1><p>The Data
+                            tab provides a quick snapshot of the tables and partitions in the cluster. To see table and
+                            partition details, click the <strong>Details</strong> tab.</p><p><br /></p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="486"
+                                    width="840" src="media/53166417.png" data-image-src="media/53166417.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166417"
+                                    data-linked-resource-version="3" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_data_table.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="dfe3eeb9-2fe6-44dd-9af3-95c5c2826f79" data-media-type="file"
+                                    title="Data and Partition Usage: Summary" /></span></p><p>On the<strong>
+                                Details</strong> tab, you can sort the data on any column by clicking that column's
+                            header. </p><ul>
+                            <li>Click on any column to sort by that metric such as:<ul>
+                                    <li>Last Access - to find tables used most recently</li>
+                                    <li>Created At - to sort oldest/newest tables</li>
+                                    <li>Read I/O - to find tables which have performed most I/O</li>
+                                    <li>Attempts - to find tables which have had most number of read/write attempts on
+                                        them</li>
+                                    <li>Apps - to find tables which have most number of applications using it</li>
+                                    <li>Users - to find tables which have the most number of users using it</li>
+                                    <li>Other Tables - shows other tables commonly used along with a particular table in
+                                        applications</li>
+                                    <li>Labels - view tables which have been labeled Hot, Warm or Cold</li>
+                                </ul></li>
+                            <li>Hover on columns like Users and Other Tables to know respectively which users accessed
+                                this table and which other tables are accessed along with this table.</li>
+                            <li>View trends of table usage and access by accessing the drop-down menu on the top right
+                                corner. Metrics available are Read I/O, Total Users, Total Apps, Total Attempts as shown
+                                below.</li>
+                            <li>You can also search for a particular table by typing part of the table name in the table
+                                search box as shown below. In our example we are looking for tables with the word
+                                customer in it.</li>
+                        </ul><p><br /></p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="487"
+                                    width="840" src="media/53166414.png" data-image-src="media/53166414.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166414"
+                                    data-linked-resource-version="2" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_data_table_summary.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="dd386eca-dff2-437b-a263-641198cf8d77" data-media-type="file"
+                                    title="Data and Partition Usage: Details" /></span></p><p><br /></p><h3
+                            id="TheDataTab-TableDetails">Table Details</h3><p>To drill down into a particular table
+                            click its <strong>More Info</strong> icon.</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image confluence-content-image-border" height="128"
+                                    width="838" src="media/53315752.png" data-image-src="media/53315752.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53315752"
+                                    data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui091moreinfo.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="9ebdd17e-9b47-4363-8675-fa7bdada062b" data-media-type="file"
+                                 /></span></p><p><br /></p><p>This opens a <strong>Table Detail</strong> pane as shown
+                            below.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                    ><img class="confluence-embedded-image" height="400"
+                                    src="media/53166408.png" data-image-src="media/53166408.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166408"
+                                    data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_data_table_details2.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="dd964b2a-7cdc-4b32-a8dc-fb084f286d77" data-media-type="file"
+                                 /></span></p><p>You can view different metric trends on this pane including:</p><ul>
+                            <li>Read IO</li>
+                            <li>Number of Users</li>
+                            <li>Number of Apps</li>
+                            <li>Number of Attempts</li>
+                        </ul><p>It also allows you to view the historical usage and access information about this table.
+                            The table detail view also shows a list of applications and users that accessed the table in
+                            the given time range. This list of applications and users is also sortable for easy search
+                            and browse capabilities.</p><h3 id="TheDataTab-PartitionDetails">Partition Details</h3><p>To
+                            view detailed information about partitions associated with a Table, click the Partition
+                            Detail tab in the Table Detailed View and you will open up a Partition detail page as shown
+                            below.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                    ><img class="confluence-embedded-image" height="250"
+                                    src="media/53166411.png" data-image-src="media/53166411.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="53166411"
+                                    data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_data_table_details.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="54bc6350-89d4-4251-b977-7326e41107e0" data-media-type="file"
+                                 /></span></p><p>The Partition histogram provide the Access Age of Partitions (including
+                            the Max Access Age). This information is used to calculate the number and size of
+                            Reclaimable Partitions. This can be explained as follows:</p><ul>
+                            <li>Reclaimable Partitions Found = number of Partitions with Last Access Time &lt; (Current
+                                Time - Max Access Age of Partitions). In the example above:</li>
+                            <li>No partition is accessed by any application more than 4 days 14 hrs. after it is
+                                created. Thus, the partitions created on Dec 1, 2015, will not be accessed after Dec 5,
+                                2015.</li>
+                            <li>In Unravel, the Max Access Age of Partitions for the above Table will be computed as 4
+                                days 14 hrs. based on the history of accesses to partitions in the above Table</li>
+                            <li>So on Dec 15, 2015, if the above Table is reviewed:</li>
+                            <li>Reclaimable Partitions found = number of Partitions with Last Access Time &lt; (Dec 14
+                                2015 - 4days 14 hrs.) i.e., (Dec 10, 2015). Thus, the partitions created on any day
+                                before Dec 10, 2015 will be marked as a Reclaimable Partition. In this case, it will be
+                                all the 26 partitions.</li>
+                        </ul><p>The page also list all Partitions by key KPI’s, including:</p><ul>
+                            <li>Last access date/time</li>
+                            <li>Create date/time</li>
+                            <li>Current Size</li>
+                            <li># of Users accessing the Partition</li>
+                        </ul><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image" height="400" src="media/53166405.png"
+                                    data-image-src="media/53166405.png" data-unresolved-comment-count="0"
+                                    data-linked-resource-id="53166405" data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_data_table_details3.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="68f6115a-9dab-435a-a066-0d4075e2e643" data-media-type="file"
+                                 /></span></p><p>Unravel provides an easy way to label Tables/Partitions as “HOT”,
+                            “WARM” and “COLD” based on access patterns – last access time or age (last access time –
+                            create time).</p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image" height="400" src="media/53166402.png"
+                                    data-image-src="media/53166402.png" data-unresolved-comment-count="0"
+                                    data-linked-resource-id="53166402" data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_data_table_rules1.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="ef879778-a1f8-48a5-bf12-4ce0a2917a69" data-media-type="file"
+                                 /></span></p><p>Once you have the rule configured as above, please click on the
+                            &quot;SAVE RULES&quot; and you will see a confirmation as below. </p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image" height="250" src="media/53236814.png"
+                                    data-image-src="media/53236814.png" data-unresolved-comment-count="0"
+                                    data-linked-resource-id="53236814" data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="Screen Shot 2017-07-06 at 1.14.55 PM.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="4ed19a1f-e68d-49e2-883d-1e3f2fecd1bb" data-media-type="file"
+                                 /></span></p><p>While the &quot;HOT&quot;, &quot;WARM&quot; and &quot;COLD&quot; labels
+                            are associated with the Tables right away, the main dashboard page with appropriate pie
+                            chart values are typically populated in 24 hrs. </p><p><br /></p><p><br /></p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image" height="400" src="media/53166399.png"
+                                    data-image-src="media/53166399.png" data-unresolved-comment-count="0"
+                                    data-linked-resource-id="53166399" data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_data_table_rules2.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="53166350"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="7e459a94-2f88-4ffd-a49c-23fce19ed089" data-media-type="file"
+                                 /></span></p><p>As illustrated above, HOT rule can be  “Last Access &lt;= 120 days”,
+                            WARN rule  can be “Last Access &lt;= 175 days and &gt; 120 days” and COLD rule can be “Last
+                            Access &gt;= 176 days”</p><p>These rules are checked periodically (every 24 hrs.) and
+                            tables/partition are labeled and classified accordingly. The Data overview page provides a
+                            quick summary information based on these labels. Operators can use this information to
+                            identify unused or frequently used tables/partitions and take appropriate
+                            actions.</p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166354.png">gui_auto_actions_select.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166357.png">gui_auto_actions2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166360.png">gui_auto_actions1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166363.png">gui_applications.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166366.png">gui_hive_app_mgr1_events.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166369.png">gui_hive_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166372.png">hive-recommendation.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166375.png">caching-opportunity.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166378.png">spark-insights3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-4.mp4">Unravel-Product-Use-Case-Demo4.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-3.mp4">Unravel-Product-Use-Case-Demo3.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-2.mp4">Unravel-Product-Use-Case-Demo2.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/use-case-1.mp4">Unravel-Product-Use-Case-Demo-1.mp4</a> (video/mp4) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166393.png">gui_report_users.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166396.png">gui_report_ops.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166399.png">gui_data_table_rules2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166402.png">gui_data_table_rules1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166405.png">gui_data_table_details3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166408.png">gui_data_table_details2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166411.png">gui_data_table_details.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53315588.png">gui_data_table_summary.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53315514.png">gui_data_table.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166420.png">gui_ops_chargeback.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166423.png">gui_ops_cluster_metrics.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166426.png">gui_ops_dashboard.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166430.png">gui_error_view.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166433.png">gui_events_workflow.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166436.png">gui_events_spark.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166439.png">gui_events_hive.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166442.png">gui_workflow_mgr3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166445.png">gui_spark_app_mgr3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166448.png">gui_workflow_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166451.png">gui_workflow_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166454.png">gui_mapreduce_app_mgr1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166457.png">gui_hive_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166460.png">gui_spark_app_mgr2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166463.png">gui_spark_app_mgr.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166466.png">gui_global_search.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166469.png">gui_email.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166472.png">gui_admin_manage_configuration.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166475.png">admin_manage_configuration.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166478.png">image2017-2-26_0-20-12.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53236814.png">Screen Shot 2017-07-06 at 1.14.55 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53315549.png">gui_data_table.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166417.png">gui_data_table.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53166414.png">gui_data_table_summary.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53315752.png">gui091moreinfo.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

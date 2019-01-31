@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="Troubleshooting_50881320">
+   <title>Troubleshooting </title>
+   <conbody>
+      <section>
+         <title>Troubleshooting article</title>
+         <p>Provide solutions for commonly encountered problems.</p>
+         <p>&lt;In progress&gt;</p>
+         <p>If you can't reach Unravel Server, (i) ping LANS_DNS, (ii) try this workaround:</p>
+      </section>
+   </conbody>
+</concept>

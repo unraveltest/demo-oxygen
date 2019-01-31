@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="UTF-8"?><toc xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc">
+   <title><span xmlns="http://www.w3.org/1999/xhtml" class="booktitle">  <span class="ph mainbooktitle"></span>  </span></title>
+   <topic href="overview.html" data-id="overview" wh-toc-id="overview-d66e13">
+      <title>overview</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="overview"></resourceid>
+         <navtitle class="- topic/navtitle ">overview</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">overview</linktext>
+      </topicmeta>
+   </topic>
+   <topic href="installation_guides.html" data-id="installation_guides" wh-toc-id="installation_guides-d66e22">
+      <title>installation-guides</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="installation_guides"></resourceid>
+         <navtitle class="- topic/navtitle ">installation-guides</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">installation-guides</linktext>
+      </topicmeta>
+      <topic href="cdh.html" data-id="cdh" wh-toc-id="cdh-d66e30">
+         <title>cdh</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cdh"></resourceid>
+            <navtitle class="- topic/navtitle ">cdh</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">cdh</linktext>
+         </topicmeta>
+         <topic href="top.html" data-id="top" wh-toc-id="top-d66e38">
+            <title>top</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="top"></resourceid>
+               <navtitle class="- topic/navtitle ">top</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">top</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="pre_installation_cdh.html" data-id="pre_installation_cdh" wh-toc-id="pre_installation_cdh-d66e46">
+            <title>pre-installation-cdh</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="pre_installation_cdh"></resourceid>
+               <navtitle class="- topic/navtitle ">pre-installation-cdh</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">pre-installation-cdh</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="install_cdh_step1.html" data-id="install_cdh_step1" wh-toc-id="install_cdh_step1-d66e54">
+            <title>install-cdh-step1</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_cdh_step1"></resourceid>
+               <navtitle class="- topic/navtitle ">install-cdh-step1</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-cdh-step1</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="install_cdh_step2.html" data-id="install_cdh_step2" wh-toc-id="install_cdh_step2-d66e62">
+            <title>install-cdh-step2</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_cdh_step2"></resourceid>
+               <navtitle class="- topic/navtitle ">install-cdh-step2</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-cdh-step2</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="install_cdh_step3.html" data-id="install_cdh_step3" wh-toc-id="install_cdh_step3-d66e70">
+            <title>install-cdh-step3</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_cdh_step3"></resourceid>
+               <navtitle class="- topic/navtitle ">install-cdh-step3</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-cdh-step3</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="hdp.html" data-id="hdp" wh-toc-id="hdp-d66e78">
+         <title>hdp</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="hdp"></resourceid>
+            <navtitle class="- topic/navtitle ">hdp</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">hdp</linktext>
+         </topicmeta>
+         <topic href="top_0.html" data-id="top_0" wh-toc-id="top_0-d66e86">
+            <title>top</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="top_0"></resourceid>
+               <navtitle class="- topic/navtitle ">top</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">top</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="pre_installation_hdp.html" data-id="pre_installation_hdp" wh-toc-id="pre_installation_hdp-d66e94">
+            <title>pre-installation-hdp</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="pre_installation_hdp"></resourceid>
+               <navtitle class="- topic/navtitle ">pre-installation-hdp</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">pre-installation-hdp</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="install_hdp_step1.html" data-id="install_hdp_step1" wh-toc-id="install_hdp_step1-d66e102">
+            <title>install-hdp-step1</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_hdp_step1"></resourceid>
+               <navtitle class="- topic/navtitle ">install-hdp-step1</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-hdp-step1</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="install_hdp_step2.html" data-id="install_hdp_step2" wh-toc-id="install_hdp_step2-d66e110">
+            <title>install-hdp-step2</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_hdp_step2"></resourceid>
+               <navtitle class="- topic/navtitle ">install-hdp-step2</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-hdp-step2</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="emr.html" data-id="emr" wh-toc-id="emr-d66e118">
+         <title>emr</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="emr"></resourceid>
+            <navtitle class="- topic/navtitle ">emr</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">emr</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="mapr.html" data-id="mapr" wh-toc-id="mapr-d66e126">
+         <title>mapr</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="mapr"></resourceid>
+            <navtitle class="- topic/navtitle ">mapr</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">mapr</linktext>
+         </topicmeta>
+         <topic href="top_1.html" data-id="top_1" wh-toc-id="top_1-d66e134">
+            <title>top</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="top_1"></resourceid>
+               <navtitle class="- topic/navtitle ">top</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">top</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="pre_installation_mapr.html" data-id="pre_installation_mapr" wh-toc-id="pre_installation_mapr-d66e142">
+            <title>pre-installation-mapr</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="pre_installation_mapr"></resourceid>
+               <navtitle class="- topic/navtitle ">pre-installation-mapr</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">pre-installation-mapr</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="install_mapr_step1.html" data-id="install_mapr_step1" wh-toc-id="install_mapr_step1-d66e150">
+            <title>install-mapr-step1</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_mapr_step1"></resourceid>
+               <navtitle class="- topic/navtitle ">install-mapr-step1</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-mapr-step1</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="install_mapr_step2.html" data-id="install_mapr_step2" wh-toc-id="install_mapr_step2-d66e158">
+            <title>install-mapr-step2</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_mapr_step2"></resourceid>
+               <navtitle class="- topic/navtitle ">install-mapr-step2</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-mapr-step2</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="hdi.html" data-id="hdi" wh-toc-id="hdi-d66e166">
+         <title>hdi</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="hdi"></resourceid>
+            <navtitle class="- topic/navtitle ">hdi</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">hdi</linktext>
+         </topicmeta>
+         <topic href="install_hdinsight_app.html" data-id="install_hdinsight_app" wh-toc-id="install_hdinsight_app-d66e174">
+            <title>install-hdinsight-app</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_hdinsight_app"></resourceid>
+               <navtitle class="- topic/navtitle ">install-hdinsight-app</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-hdinsight-app</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="mysql.html" data-id="mysql" wh-toc-id="mysql-d66e182">
+         <title>mysql</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="mysql"></resourceid>
+            <navtitle class="- topic/navtitle ">mysql</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">mysql</linktext>
+         </topicmeta>
+         <topic href="install_configure_mysql.html" data-id="install_configure_mysql" wh-toc-id="install_configure_mysql-d66e190">
+            <title>install-configure-mysql</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_configure_mysql"></resourceid>
+               <navtitle class="- topic/navtitle ">install-configure-mysql</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-configure-mysql</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="move_mysql.html" data-id="move_mysql" wh-toc-id="move_mysql-d66e198">
+            <title>move-mysql</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="move_mysql"></resourceid>
+               <navtitle class="- topic/navtitle ">move-mysql</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">move-mysql</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="partition_or_migrate_mysql.html" data-id="partition_or_migrate_mysql" wh-toc-id="partition_or_migrate_mysql-d66e206">
+            <title>partition-or-migrate-mysql</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="partition_or_migrate_mysql"></resourceid>
+               <navtitle class="- topic/navtitle ">partition-or-migrate-mysql</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">partition-or-migrate-mysql</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="ondemand.html" data-id="ondemand" wh-toc-id="ondemand-d66e214">
+         <title>ondemand</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="ondemand"></resourceid>
+            <navtitle class="- topic/navtitle ">ondemand</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">ondemand</linktext>
+         </topicmeta>
+         <topic href="install_or_upgrade_ondemand.html" data-id="install_or_upgrade_ondemand" wh-toc-id="install_or_upgrade_ondemand-d66e222">
+            <title>install-or-upgrade-ondemand</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_or_upgrade_ondemand"></resourceid>
+               <navtitle class="- topic/navtitle ">install-or-upgrade-ondemand</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-or-upgrade-ondemand</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="library_versions_and_licenses.html" data-id="library_versions_and_licenses" wh-toc-id="library_versions_and_licenses-d66e230">
+            <title>library-versions-and-licenses</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="library_versions_and_licenses"></resourceid>
+               <navtitle class="- topic/navtitle ">library-versions-and-licenses</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">library-versions-and-licenses</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="find_properties_in_hdi.html" data-id="find_properties_in_hdi" wh-toc-id="find_properties_in_hdi-d66e238">
+         <title>find-properties-in-hdi</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="find_properties_in_hdi"></resourceid>
+            <navtitle class="- topic/navtitle ">find-properties-in-hdi</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">find-properties-in-hdi</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="user_guide.html" data-id="user_guide" wh-toc-id="user_guide-d66e247">
+      <title>user-guide</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="user_guide"></resourceid>
+         <navtitle class="- topic/navtitle ">user-guide</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">user-guide</linktext>
+      </topicmeta>
+      <topic href="get_started.html" data-id="get_started" wh-toc-id="get_started-d66e255">
+         <title>get-started</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="get_started"></resourceid>
+            <navtitle class="- topic/navtitle ">get-started</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">get-started</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="common_ui_features.html" data-id="common_ui_features" wh-toc-id="common_ui_features-d66e263">
+         <title>common-ui-features</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="common_ui_features"></resourceid>
+            <navtitle class="- topic/navtitle ">common-ui-features</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">common-ui-features</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="the_operations_page.html" data-id="the_operations_page" wh-toc-id="the_operations_page-d66e271">
+         <title>the-operations-page</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="the_operations_page"></resourceid>
+            <navtitle class="- topic/navtitle ">the-operations-page</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">the-operations-page</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="the_applications_page.html" data-id="the_applications_page" wh-toc-id="the_applications_page-d66e279">
+         <title>the-applications-page</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="the_applications_page"></resourceid>
+            <navtitle class="- topic/navtitle ">the-applications-page</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">the-applications-page</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="the_reports_page.html" data-id="the_reports_page" wh-toc-id="the_reports_page-d66e287">
+         <title>the-reports-page</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="the_reports_page"></resourceid>
+            <navtitle class="- topic/navtitle ">the-reports-page</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">the-reports-page</linktext>
+         </topicmeta>
+         <topic href="operational_insights.html" data-id="operational_insights" wh-toc-id="operational_insights-d66e295">
+            <title>operational-insights</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="operational_insights"></resourceid>
+               <navtitle class="- topic/navtitle ">operational-insights</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">operational-insights</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="data_insights.html" data-id="data_insights" wh-toc-id="data_insights-d66e303">
+            <title>data-insights</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="data_insights"></resourceid>
+               <navtitle class="- topic/navtitle ">data-insights</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">data-insights</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="cloud_reports.html" data-id="cloud_reports" wh-toc-id="cloud_reports-d66e311">
+            <title>cloud-reports</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="cloud_reports"></resourceid>
+               <navtitle class="- topic/navtitle ">cloud-reports</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">cloud-reports</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="schedule_report.html" data-id="schedule_report" wh-toc-id="schedule_report-d66e319">
+            <title>schedule-report</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="schedule_report"></resourceid>
+               <navtitle class="- topic/navtitle ">schedule-report</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">schedule-report</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="reports_archive.html" data-id="reports_archive" wh-toc-id="reports_archive-d66e327">
+            <title>reports-archive</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="reports_archive"></resourceid>
+               <navtitle class="- topic/navtitle ">reports-archive</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">reports-archive</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="the_application_managers.html" data-id="the_application_managers" wh-toc-id="the_application_managers-d66e335">
+         <title>the-application-managers</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="the_application_managers"></resourceid>
+            <navtitle class="- topic/navtitle ">the-application-managers</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">the-application-managers</linktext>
+         </topicmeta>
+         <topic href="typical_apms.html" data-id="typical_apms" wh-toc-id="typical_apms-d66e343">
+            <title>typical-apms</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="typical_apms"></resourceid>
+               <navtitle class="- topic/navtitle ">typical-apms</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">typical-apms</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="spark_apm.html" data-id="spark_apm" wh-toc-id="spark_apm-d66e351">
+            <title>spark-apm</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="spark_apm"></resourceid>
+               <navtitle class="- topic/navtitle ">spark-apm</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">spark-apm</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="events_and_insights.html" data-id="events_and_insights" wh-toc-id="events_and_insights-d66e359">
+         <title>events-and-insights</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="events_and_insights"></resourceid>
+            <navtitle class="- topic/navtitle ">events-and-insights</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">events-and-insights</linktext>
+         </topicmeta>
+         <topic href="event_panel_and_insights.html" data-id="event_panel_and_insights" wh-toc-id="event_panel_and_insights-d66e367">
+            <title>event-panel-and-insights</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="event_panel_and_insights"></resourceid>
+               <navtitle class="- topic/navtitle ">event-panel-and-insights</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">event-panel-and-insights</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="impala_events.html" data-id="impala_events" wh-toc-id="impala_events-d66e375">
+            <title>impala-events</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="impala_events"></resourceid>
+               <navtitle class="- topic/navtitle ">impala-events</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">impala-events</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="event_list.html" data-id="event_list" wh-toc-id="event_list-d66e383">
+            <title>event-list</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="event_list"></resourceid>
+               <navtitle class="- topic/navtitle ">event-list</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">event-list</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="auto_actions.html" data-id="auto_actions" wh-toc-id="auto_actions-d66e391">
+         <title>auto-actions</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="auto_actions"></resourceid>
+            <navtitle class="- topic/navtitle ">auto-actions</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">auto-actions</linktext>
+         </topicmeta>
+         <topic href="auto_actions_overview.html" data-id="auto_actions_overview" wh-toc-id="auto_actions_overview-d66e399">
+            <title>auto-actions-overview</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="auto_actions_overview"></resourceid>
+               <navtitle class="- topic/navtitle ">auto-actions-overview</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">auto-actions-overview</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="create_auto_actions.html" data-id="create_auto_actions" wh-toc-id="create_auto_actions-d66e407">
+            <title>create-auto-actions</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_auto_actions"></resourceid>
+               <navtitle class="- topic/navtitle ">create-auto-actions</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">create-auto-actions</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="expert_rule.html" data-id="expert_rule" wh-toc-id="expert_rule-d66e415">
+            <title>expert-rule</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="expert_rule"></resourceid>
+               <navtitle class="- topic/navtitle ">expert-rule</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">expert-rule</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="same_logical_operator.html" data-id="same_logical_operator" wh-toc-id="same_logical_operator-d66e423">
+            <title>same-logical-operator</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="same_logical_operator"></resourceid>
+               <navtitle class="- topic/navtitle ">same-logical-operator</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">same-logical-operator</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="snooze_features.html" data-id="snooze_features" wh-toc-id="snooze_features-d66e431">
+            <title>snooze-features</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="snooze_features"></resourceid>
+               <navtitle class="- topic/navtitle ">snooze-features</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">snooze-features</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="sample_auto_actions.html" data-id="sample_auto_actions" wh-toc-id="sample_auto_actions-d66e439">
+            <title>sample-auto-actions</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="sample_auto_actions"></resourceid>
+               <navtitle class="- topic/navtitle ">sample-auto-actions</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">sample-auto-actions</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="run_auto_action_demos.html" data-id="run_auto_action_demos" wh-toc-id="run_auto_action_demos-d66e447">
+            <title>run-auto-action-demos</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="run_auto_action_demos"></resourceid>
+               <navtitle class="- topic/navtitle ">run-auto-action-demos</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">run-auto-action-demos</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="supported_cluster_metrics.html" data-id="supported_cluster_metrics" wh-toc-id="supported_cluster_metrics-d66e455">
+            <title>supported-cluster-metrics</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="supported_cluster_metrics"></resourceid>
+               <navtitle class="- topic/navtitle ">supported-cluster-metrics</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">supported-cluster-metrics</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="use_cases.html" data-id="use_cases" wh-toc-id="use_cases-d66e463">
+         <title>use-cases</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="use_cases"></resourceid>
+            <navtitle class="- topic/navtitle ">use-cases</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">use-cases</linktext>
+         </topicmeta>
+         <topic href="identify_rogue_apps.html" data-id="identify_rogue_apps" wh-toc-id="identify_rogue_apps-d66e471">
+            <title>identify-rogue-apps</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="identify_rogue_apps"></resourceid>
+               <navtitle class="- topic/navtitle ">identify-rogue-apps</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">identify-rogue-apps</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="detect_resource_contention.html" data-id="detect_resource_contention" wh-toc-id="detect_resource_contention-d66e479">
+            <title>detect-resource-contention</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="detect_resource_contention"></resourceid>
+               <navtitle class="- topic/navtitle ">detect-resource-contention</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">detect-resource-contention</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="optimize_spark_app_performance.html" data-id="optimize_spark_app_performance" wh-toc-id="optimize_spark_app_performance-d66e487">
+            <title>optimize-spark-app-performance</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="optimize_spark_app_performance"></resourceid>
+               <navtitle class="- topic/navtitle ">optimize-spark-app-performance</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">optimize-spark-app-performance</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="get_kafka_insights.html" data-id="get_kafka_insights" wh-toc-id="get_kafka_insights-d66e495">
+            <title>get-kafka-insights</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="get_kafka_insights"></resourceid>
+               <navtitle class="- topic/navtitle ">get-kafka-insights</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">get-kafka-insights</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="keywords_and_error_messages.html" data-id="keywords_and_error_messages" wh-toc-id="keywords_and_error_messages-d66e503">
+         <title>keywords-and-error-messages</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="keywords_and_error_messages"></resourceid>
+            <navtitle class="- topic/navtitle ">keywords-and-error-messages</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">keywords-and-error-messages</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="resource_metrics.html" data-id="resource_metrics" wh-toc-id="resource_metrics-d66e512">
+         <title>resource-metrics</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="resource_metrics"></resourceid>
+            <navtitle class="- topic/navtitle ">resource-metrics</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">resource-metrics</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="advanced_topics.html" data-id="advanced_topics" wh-toc-id="advanced_topics-d66e521">
+      <title>advanced-topics</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="advanced_topics"></resourceid>
+         <navtitle class="- topic/navtitle ">advanced-topics</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">advanced-topics</linktext>
+      </topicmeta>
+      <topic href="back_up_and_disaster_recovery.html" data-id="back_up_and_disaster_recovery" wh-toc-id="back_up_and_disaster_recovery-d66e529">
+         <title>back-up-and-disaster-recovery</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="back_up_and_disaster_recovery"></resourceid>
+            <navtitle class="- topic/navtitle ">back-up-and-disaster-recovery</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">back-up-and-disaster-recovery</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="cluster_wide_report.html" data-id="cluster_wide_report" wh-toc-id="cluster_wide_report-d66e537">
+         <title>cluster-wide-report</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cluster_wide_report"></resourceid>
+            <navtitle class="- topic/navtitle ">cluster-wide-report</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">cluster-wide-report</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="configurations.html" data-id="configurations" wh-toc-id="configurations-d66e545">
+         <title>configurations</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="configurations"></resourceid>
+            <navtitle class="- topic/navtitle ">configurations</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">configurations</linktext>
+         </topicmeta>
+         <topic href="custom_configurations.html" data-id="custom_configurations" wh-toc-id="custom_configurations-d66e553">
+            <title>custom-configurations</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="custom_configurations"></resourceid>
+               <navtitle class="- topic/navtitle ">custom-configurations</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">custom-configurations</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="configure_permissions_on_cdh_sentry_secured_cluster.html" data-id="configure_permissions_on_cdh_sentry_secured_cluster" wh-toc-id="configure_permissions_on_cdh_sentry_secured_cluster-d66e561">
+            <title>configure-permissions-on-cdh-sentry-secured-cluster</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_permissions_on_cdh_sentry_secured_cluster"></resourceid>
+               <navtitle class="- topic/navtitle ">configure-permissions-on-cdh-sentry-secured-cluster</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configure-permissions-on-cdh-sentry-secured-cluster</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="configure_multiple_hosts_for_unravel_server.html" data-id="configure_multiple_hosts_for_unravel_server" wh-toc-id="configure_multiple_hosts_for_unravel_server-d66e569">
+            <title>configure-multiple-hosts-for-unravel-server</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_multiple_hosts_for_unravel_server"></resourceid>
+               <navtitle class="- topic/navtitle ">configure-multiple-hosts-for-unravel-server</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configure-multiple-hosts-for-unravel-server</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="create_multiple_workers_for_high_volume_data.html" data-id="create_multiple_workers_for_high_volume_data" wh-toc-id="create_multiple_workers_for_high_volume_data-d66e577">
+            <title>create-multiple-workers-for-high-volume-data</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_multiple_workers_for_high_volume_data"></resourceid>
+               <navtitle class="- topic/navtitle ">create-multiple-workers-for-high-volume-data</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">create-multiple-workers-for-high-volume-data</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="create_custom_banner.html" data-id="create_custom_banner" wh-toc-id="create_custom_banner-d66e585">
+            <title>create-custom-banner</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_custom_banner"></resourceid>
+               <navtitle class="- topic/navtitle ">create-custom-banner</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">create-custom-banner</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="define_custom_ui_port.html" data-id="define_custom_ui_port" wh-toc-id="define_custom_ui_port-d66e593">
+            <title>define-custom-ui-port</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="define_custom_ui_port"></resourceid>
+               <navtitle class="- topic/navtitle ">define-custom-ui-port</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">define-custom-ui-port</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="set_up_email_alerts.html" data-id="set_up_email_alerts" wh-toc-id="set_up_email_alerts-d66e601">
+            <title>set-up-email-alerts</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="set_up_email_alerts"></resourceid>
+               <navtitle class="- topic/navtitle ">set-up-email-alerts</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">set-up-email-alerts</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="configure_hbase.html" data-id="configure_hbase" wh-toc-id="configure_hbase-d66e609">
+            <title>configure-hbase</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_hbase"></resourceid>
+               <navtitle class="- topic/navtitle ">configure-hbase</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configure-hbase</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="run_daemons_with_custom_user.html" data-id="run_daemons_with_custom_user" wh-toc-id="run_daemons_with_custom_user-d66e617">
+            <title>run-daemons-with-custom-user</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="run_daemons_with_custom_user"></resourceid>
+               <navtitle class="- topic/navtitle ">run-daemons-with-custom-user</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">run-daemons-with-custom-user</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="set_retention_time.html" data-id="set_retention_time" wh-toc-id="set_retention_time-d66e625">
+            <title>set-retention-time</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="set_retention_time"></resourceid>
+               <navtitle class="- topic/navtitle ">set-retention-time</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">set-retention-time</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="set_properties_for_spark_worker_daemon.html" data-id="set_properties_for_spark_worker_daemon" wh-toc-id="set_properties_for_spark_worker_daemon-d66e634">
+            <title>set-properties-for-spark-worker-daemon</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="set_properties_for_spark_worker_daemon"></resourceid>
+               <navtitle class="- topic/navtitle ">set-properties-for-spark-worker-daemon</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">set-properties-for-spark-worker-daemon</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="use_impalad_as_data_source.html" data-id="use_impalad_as_data_source" wh-toc-id="use_impalad_as_data_source-d66e642">
+            <title>use-impalad-as-data-source</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="use_impalad_as_data_source"></resourceid>
+               <navtitle class="- topic/navtitle ">use-impalad-as-data-source</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">use-impalad-as-data-source</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="security_configurations.html" data-id="security_configurations" wh-toc-id="security_configurations-d66e650">
+         <title>security-configurations</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="security_configurations"></resourceid>
+            <navtitle class="- topic/navtitle ">security-configurations</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">security-configurations</linktext>
+         </topicmeta>
+         <topic href="add_more_admins.html" data-id="add_more_admins" wh-toc-id="add_more_admins-d66e658">
+            <title>add-more-admins</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="add_more_admins"></resourceid>
+               <navtitle class="- topic/navtitle ">add-more-admins</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">add-more-admins</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="add_ssl_and_tls.html" data-id="add_ssl_and_tls" wh-toc-id="add_ssl_and_tls-d66e666">
+            <title>add-ssl-and-tls</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="add_ssl_and_tls"></resourceid>
+               <navtitle class="- topic/navtitle ">add-ssl-and-tls</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">add-ssl-and-tls</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="configure_alternate_kerberos_principal_for_cdh.html" data-id="configure_alternate_kerberos_principal_for_cdh" wh-toc-id="configure_alternate_kerberos_principal_for_cdh-d66e674">
+            <title>configure-alternate-kerberos-principal-for-cdh</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_alternate_kerberos_principal_for_cdh"></resourceid>
+               <navtitle class="- topic/navtitle ">configure-alternate-kerberos-principal-for-cdh</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configure-alternate-kerberos-principal-for-cdh</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="configure_hdfs_permission_on_cdh_sentry_secured_cluster.html" data-id="configure_hdfs_permission_on_cdh_sentry_secured_cluster" wh-toc-id="configure_hdfs_permission_on_cdh_sentry_secured_cluster-d66e682">
+            <title>configure-hdfs-permission-on-cdh-sentry-secured-cluster</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_hdfs_permission_on_cdh_sentry_secured_cluster"></resourceid>
+               <navtitle class="- topic/navtitle ">configure-hdfs-permission-on-cdh-sentry-secured-cluster</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configure-hdfs-permission-on-cdh-sentry-secured-cluster</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="configure_hive_metastore_permissions.html" data-id="configure_hive_metastore_permissions" wh-toc-id="configure_hive_metastore_permissions-d66e690">
+            <title>configure-hive-metastore-permissions</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_hive_metastore_permissions"></resourceid>
+               <navtitle class="- topic/navtitle ">configure-hive-metastore-permissions</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configure-hive-metastore-permissions</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="disable_browser_telemetry.html" data-id="disable_browser_telemetry" wh-toc-id="disable_browser_telemetry-d66e698">
+            <title>disable-browser-telemetry</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="disable_browser_telemetry"></resourceid>
+               <navtitle class="- topic/navtitle ">disable-browser-telemetry</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">disable-browser-telemetry</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="disable_support_comments_panel.html" data-id="disable_support_comments_panel" wh-toc-id="disable_support_comments_panel-d66e706">
+            <title>disable-support-comments-panel</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="disable_support_comments_panel"></resourceid>
+               <navtitle class="- topic/navtitle ">disable-support-comments-panel</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">disable-support-comments-panel</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="enable_ldap_authentication.html" data-id="enable_ldap_authentication" wh-toc-id="enable_ldap_authentication-d66e714">
+            <title>enable-ldap-authentication</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="enable_ldap_authentication"></resourceid>
+               <navtitle class="- topic/navtitle ">enable-ldap-authentication</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">enable-ldap-authentication</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="enable_saml_authentication.html" data-id="enable_saml_authentication" wh-toc-id="enable_saml_authentication-d66e722">
+            <title>enable-saml-authentication</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="enable_saml_authentication"></resourceid>
+               <navtitle class="- topic/navtitle ">enable-saml-authentication</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">enable-saml-authentication</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="enable_tls_directly_to_ui.html" data-id="enable_tls_directly_to_ui" wh-toc-id="enable_tls_directly_to_ui-d66e730">
+            <title>enable-tls-directly-to-ui</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="enable_tls_directly_to_ui"></resourceid>
+               <navtitle class="- topic/navtitle ">enable-tls-directly-to-ui</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">enable-tls-directly-to-ui</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="enable_small_files_and_file_reports_on_sentry_or_ranger_secured_clusters.html" data-id="enable_small_files_and_file_reports_on_sentry_or_ranger_secured_clusters" wh-toc-id="enable_small_files_and_file_reports_on_sentry_or_ranger_secured_clusters-d66e739">
+            <title>enable-small-files-and-file-reports-on-sentry-or-ranger-secured-clusters</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="enable_small_files_and_file_reports_on_sentry_or_ranger_secured_clusters"></resourceid>
+               <navtitle class="- topic/navtitle ">enable-small-files-and-file-reports-on-sentry-or-ranger-secured-clusters</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">enable-small-files-and-file-reports-on-sentry-or-ranger-secured-clusters</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="encrypt_passwords.html" data-id="encrypt_passwords" wh-toc-id="encrypt_passwords-d66e747">
+            <title>encrypt-passwords</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="encrypt_passwords"></resourceid>
+               <navtitle class="- topic/navtitle ">encrypt-passwords</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">encrypt-passwords</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="add_kafka_security.html" data-id="add_kafka_security" wh-toc-id="add_kafka_security-d66e755">
+            <title>add-kafka-security</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="add_kafka_security"></resourceid>
+               <navtitle class="- topic/navtitle ">add-kafka-security</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">add-kafka-security</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="restrict_direct_access_to_ui.html" data-id="restrict_direct_access_to_ui" wh-toc-id="restrict_direct_access_to_ui-d66e763">
+            <title>restrict-direct-access-to-ui</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="restrict_direct_access_to_ui"></resourceid>
+               <navtitle class="- topic/navtitle ">restrict-direct-access-to-ui</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">restrict-direct-access-to-ui</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="use_private_cert_authority.html" data-id="use_private_cert_authority" wh-toc-id="use_private_cert_authority-d66e771">
+            <title>use-private-cert-authority</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="use_private_cert_authority"></resourceid>
+               <navtitle class="- topic/navtitle ">use-private-cert-authority</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">use-private-cert-authority</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="autoscale_hdi_spark_cluster.html" data-id="autoscale_hdi_spark_cluster" wh-toc-id="autoscale_hdi_spark_cluster-d66e779">
+         <title>autoscale-hdi-spark-cluster</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="autoscale_hdi_spark_cluster"></resourceid>
+            <navtitle class="- topic/navtitle ">autoscale-hdi-spark-cluster</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">autoscale-hdi-spark-cluster</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="create_ad_kerberos_principals_and_keytabs.html" data-id="create_ad_kerberos_principals_and_keytabs" wh-toc-id="create_ad_kerberos_principals_and_keytabs-d66e787">
+         <title>create-ad-kerberos-principals-and-keytabs</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_ad_kerberos_principals_and_keytabs"></resourceid>
+            <navtitle class="- topic/navtitle ">create-ad-kerberos-principals-and-keytabs</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">create-ad-kerberos-principals-and-keytabs</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="create_aws_rds_cloudwatch_alarm_for_free_storage_space.html" data-id="create_aws_rds_cloudwatch_alarm_for_free_storage_space" wh-toc-id="create_aws_rds_cloudwatch_alarm_for_free_storage_space-d66e795">
+         <title>create-aws-rds-cloudwatch-alarm-for-free-storage-space</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_aws_rds_cloudwatch_alarm_for_free_storage_space"></resourceid>
+            <navtitle class="- topic/navtitle ">create-aws-rds-cloudwatch-alarm-for-free-storage-space</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">create-aws-rds-cloudwatch-alarm-for-free-storage-space</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="trigger_import_of_fsimage.html" data-id="trigger_import_of_fsimage" wh-toc-id="trigger_import_of_fsimage-d66e803">
+         <title>trigger-import-of-fsimage</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="trigger_import_of_fsimage"></resourceid>
+            <navtitle class="- topic/navtitle ">trigger-import-of-fsimage</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">trigger-import-of-fsimage</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="configure_jvm_sensor.html" data-id="configure_jvm_sensor" wh-toc-id="configure_jvm_sensor-d66e811">
+         <title>configure-jvm-sensor</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_jvm_sensor"></resourceid>
+            <navtitle class="- topic/navtitle ">configure-jvm-sensor</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">configure-jvm-sensor</linktext>
+         </topicmeta>
+         <topic href="enable_jvm_sensor_on_cdh.html" data-id="enable_jvm_sensor_on_cdh" wh-toc-id="enable_jvm_sensor_on_cdh-d66e819">
+            <title>enable-jvm-sensor-on-cdh</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="enable_jvm_sensor_on_cdh"></resourceid>
+               <navtitle class="- topic/navtitle ">enable-jvm-sensor-on-cdh</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">enable-jvm-sensor-on-cdh</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="enable_jvm_sensor_on_hdp.html" data-id="enable_jvm_sensor_on_hdp" wh-toc-id="enable_jvm_sensor_on_hdp-d66e827">
+            <title>enable-jvm-sensor-on-hdp</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="enable_jvm_sensor_on_hdp"></resourceid>
+               <navtitle class="- topic/navtitle ">enable-jvm-sensor-on-hdp</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">enable-jvm-sensor-on-hdp</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="connectivity.html" data-id="connectivity" wh-toc-id="connectivity-d66e835">
+         <title>connectivity</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="connectivity"></resourceid>
+            <navtitle class="- topic/navtitle ">connectivity</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">connectivity</linktext>
+         </topicmeta>
+         <topic href="connect_and_configure_kafka_stream.html" data-id="connect_and_configure_kafka_stream" wh-toc-id="connect_and_configure_kafka_stream-d66e843">
+            <title>connect-and-configure-kafka-stream</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="connect_and_configure_kafka_stream"></resourceid>
+               <navtitle class="- topic/navtitle ">connect-and-configure-kafka-stream</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">connect-and-configure-kafka-stream</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="connect_and_configure_hive_metastore.html" data-id="connect_and_configure_hive_metastore" wh-toc-id="connect_and_configure_hive_metastore-d66e851">
+            <title>connect-and-configure-hive-metastore</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="connect_and_configure_hive_metastore"></resourceid>
+               <navtitle class="- topic/navtitle ">connect-and-configure-hive-metastore</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">connect-and-configure-hive-metastore</linktext>
+            </topicmeta>
+            <topic href="connect_hive_metastore.html" data-id="connect_hive_metastore" wh-toc-id="connect_hive_metastore-d66e859">
+               <title>connect-hive-metastore</title>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="connect_hive_metastore"></resourceid>
+                  <navtitle class="- topic/navtitle ">connect-hive-metastore</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">connect-hive-metastore</linktext>
+               </topicmeta>
+            </topic>
+            <topic href="configure_hive_metastore.html" data-id="configure_hive_metastore" wh-toc-id="configure_hive_metastore-d66e867">
+               <title>configure-hive-metastore</title>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_hive_metastore"></resourceid>
+                  <navtitle class="- topic/navtitle ">configure-hive-metastore</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">configure-hive-metastore</linktext>
+               </topicmeta>
+            </topic>
+         </topic>
+      </topic>
+      <topic href="create_application_tags.html" data-id="create_application_tags" wh-toc-id="create_application_tags-d66e876">
+         <title>create-application-tags</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_application_tags"></resourceid>
+            <navtitle class="- topic/navtitle ">create-application-tags</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">create-application-tags</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="deploy_over_selinux.html" data-id="deploy_over_selinux" wh-toc-id="deploy_over_selinux-d66e884">
+         <title>deploy-over-selinux</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="deploy_over_selinux"></resourceid>
+            <navtitle class="- topic/navtitle ">deploy-over-selinux</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">deploy-over-selinux</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="roles_and_rbac.html" data-id="roles_and_rbac" wh-toc-id="roles_and_rbac-d66e892">
+         <title>roles-and-rbac</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="roles_and_rbac"></resourceid>
+            <navtitle class="- topic/navtitle ">roles-and-rbac</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">roles-and-rbac</linktext>
+         </topicmeta>
+         <topic href="rbac_roles.html" data-id="rbac_roles" wh-toc-id="rbac_roles-d66e900">
+            <title>rbac-roles</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="rbac_roles"></resourceid>
+               <navtitle class="- topic/navtitle ">rbac-roles</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">rbac-roles</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="configure_rbac.html" data-id="configure_rbac" wh-toc-id="configure_rbac-d66e908">
+            <title>configure-rbac</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configure_rbac"></resourceid>
+               <navtitle class="- topic/navtitle ">configure-rbac</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configure-rbac</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="manage_rbac.html" data-id="manage_rbac" wh-toc-id="manage_rbac-d66e916">
+            <title>manage-rbac</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="manage_rbac"></resourceid>
+               <navtitle class="- topic/navtitle ">manage-rbac</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">manage-rbac</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="run_verification_scripts.html" data-id="run_verification_scripts" wh-toc-id="run_verification_scripts-d66e924">
+         <title>run-verification-scripts</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="run_verification_scripts"></resourceid>
+            <navtitle class="- topic/navtitle ">run-verification-scripts</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">run-verification-scripts</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="rest_api.html" data-id="rest_api" wh-toc-id="rest_api-d66e932">
+         <title>rest-api</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="rest_api"></resourceid>
+            <navtitle class="- topic/navtitle ">rest-api</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">rest-api</linktext>
+         </topicmeta>
+         <topic href="sign_in.html" data-id="sign_in" wh-toc-id="sign_in-d66e940">
+            <title>sign-in</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="sign_in"></resourceid>
+               <navtitle class="- topic/navtitle ">sign-in</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">sign-in</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="application.html" data-id="application" wh-toc-id="application-d66e948">
+            <title>application</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="application"></resourceid>
+               <navtitle class="- topic/navtitle ">application</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">application</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="data.html" data-id="data" wh-toc-id="data-d66e956">
+            <title>data</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="data"></resourceid>
+               <navtitle class="- topic/navtitle ">data</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">data</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="operations.html" data-id="operations" wh-toc-id="operations-d66e964">
+            <title>operations</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="operations"></resourceid>
+               <navtitle class="- topic/navtitle ">operations</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">operations</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="reports.html" data-id="reports" wh-toc-id="reports-d66e972">
+            <title>reports</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="reports"></resourceid>
+               <navtitle class="- topic/navtitle ">reports</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">reports</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="use_case_for_rest_api.html" data-id="use_case_for_rest_api" wh-toc-id="use_case_for_rest_api-d66e980">
+            <title>use-case-for-rest-api</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="use_case_for_rest_api"></resourceid>
+               <navtitle class="- topic/navtitle ">use-case-for-rest-api</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">use-case-for-rest-api</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="monitoring_service.html" data-id="monitoring_service" wh-toc-id="monitoring_service-d66e988">
+         <title>monitoring-service</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="monitoring_service"></resourceid>
+            <navtitle class="- topic/navtitle ">monitoring-service</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">monitoring-service</linktext>
+         </topicmeta>
+         <topic href="configuration.html" data-id="configuration" wh-toc-id="configuration-d66e996">
+            <title>configuration</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="configuration"></resourceid>
+               <navtitle class="- topic/navtitle ">configuration</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">configuration</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="monitor_disks.html" data-id="monitor_disks" wh-toc-id="monitor_disks-d66e1004">
+            <title>monitor-disks</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="monitor_disks"></resourceid>
+               <navtitle class="- topic/navtitle ">monitor-disks</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">monitor-disks</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="monitor_jmx_client.html" data-id="monitor_jmx_client" wh-toc-id="monitor_jmx_client-d66e1012">
+            <title>monitor-jmx-client</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="monitor_jmx_client"></resourceid>
+               <navtitle class="- topic/navtitle ">monitor-jmx-client</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">monitor-jmx-client</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="monitor_rest_api.html" data-id="monitor_rest_api" wh-toc-id="monitor_rest_api-d66e1020">
+            <title>monitor-rest-api</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="monitor_rest_api"></resourceid>
+               <navtitle class="- topic/navtitle ">monitor-rest-api</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">monitor-rest-api</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="properties.html" data-id="properties" wh-toc-id="properties-d66e1028">
+         <title>properties</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="properties"></resourceid>
+            <navtitle class="- topic/navtitle ">properties</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">properties</linktext>
+         </topicmeta>
+         <topic href="ondemand_configurations_for_reports.html" data-id="ondemand_configurations_for_reports" wh-toc-id="ondemand_configurations_for_reports-d66e1036">
+            <title>ondemand-configurations-for-reports</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="ondemand_configurations_for_reports"></resourceid>
+               <navtitle class="- topic/navtitle ">ondemand-configurations-for-reports</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">ondemand-configurations-for-reports</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="sensors.html" data-id="sensors" wh-toc-id="sensors-d66e1044">
+            <title>sensors</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="sensors"></resourceid>
+               <navtitle class="- topic/navtitle ">sensors</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">sensors</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="servers_and_sensors.html" data-id="servers_and_sensors" wh-toc-id="servers_and_sensors-d66e1052">
+         <title>servers-and-sensors</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="servers_and_sensors"></resourceid>
+            <navtitle class="- topic/navtitle ">servers-and-sensors</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">servers-and-sensors</linktext>
+         </topicmeta>
+         <topic href="install_sensors.html" data-id="install_sensors" wh-toc-id="install_sensors-d66e1060">
+            <title>install-sensors</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="install_sensors"></resourceid>
+               <navtitle class="- topic/navtitle ">install-sensors</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">install-sensors</linktext>
+            </topicmeta>
+            <topic href="on_individual_apps_submitted_through_spark_submitted_through_spark_submit.html" data-id="on_individual_apps_submitted_through_spark_submitted_through_spark_submit" wh-toc-id="on_individual_apps_submitted_through_spark_submitted_through_spark_submit-d66e1068">
+               <title>on-individual-apps-submitted-through-spark-submitted-through-spark-submit</title>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="on_individual_apps_submitted_through_spark_submitted_through_spark_submit"></resourceid>
+                  <navtitle class="- topic/navtitle ">on-individual-apps-submitted-through-spark-submitted-through-spark-submit</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">on-individual-apps-submitted-through-spark-submitted-through-spark-submit</linktext>
+               </topicmeta>
+            </topic>
+            <topic href="on_individual_hive_queries.html" data-id="on_individual_hive_queries" wh-toc-id="on_individual_hive_queries-d66e1076">
+               <title>on-individual-hive-queries</title>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="on_individual_hive_queries"></resourceid>
+                  <navtitle class="- topic/navtitle ">on-individual-hive-queries</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">on-individual-hive-queries</linktext>
+               </topicmeta>
+            </topic>
+         </topic>
+         <topic href="upgrade_server_and_sensors.html" data-id="upgrade_server_and_sensors" wh-toc-id="upgrade_server_and_sensors-d66e1084">
+            <title>upgrade-server-and-sensors</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="upgrade_server_and_sensors"></resourceid>
+               <navtitle class="- topic/navtitle ">upgrade-server-and-sensors</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">upgrade-server-and-sensors</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="upload_spark_programs.html" data-id="upload_spark_programs" wh-toc-id="upload_spark_programs-d66e1092">
+            <title>upload-spark-programs</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="upload_spark_programs"></resourceid>
+               <navtitle class="- topic/navtitle ">upload-spark-programs</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">upload-spark-programs</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="uninstall_unravel_server.html" data-id="uninstall_unravel_server" wh-toc-id="uninstall_unravel_server-d66e1100">
+            <title>uninstall-unravel-server</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="uninstall_unravel_server"></resourceid>
+               <navtitle class="- topic/navtitle ">uninstall-unravel-server</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">uninstall-unravel-server</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="workflows.html" data-id="workflows" wh-toc-id="workflows-d66e1108">
+         <title>workflows</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="workflows"></resourceid>
+            <navtitle class="- topic/navtitle ">workflows</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">workflows</linktext>
+         </topicmeta>
+         <topic href="add_tags_to_workflows.html" data-id="add_tags_to_workflows" wh-toc-id="add_tags_to_workflows-d66e1116">
+            <title>add-tags-to-workflows</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="add_tags_to_workflows"></resourceid>
+               <navtitle class="- topic/navtitle ">add-tags-to-workflows</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">add-tags-to-workflows</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="add_tags_to_hive_on_tez_query.html" data-id="add_tags_to_hive_on_tez_query" wh-toc-id="add_tags_to_hive_on_tez_query-d66e1124">
+            <title>add-tags-to-hive-on-tez-query</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="add_tags_to_hive_on_tez_query"></resourceid>
+               <navtitle class="- topic/navtitle ">add-tags-to-hive-on-tez-query</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">add-tags-to-hive-on-tez-query</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="monitor_oozie_workflows.html" data-id="monitor_oozie_workflows" wh-toc-id="monitor_oozie_workflows-d66e1132">
+            <title>monitor-oozie-workflows</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="monitor_oozie_workflows"></resourceid>
+               <navtitle class="- topic/navtitle ">monitor-oozie-workflows</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">monitor-oozie-workflows</linktext>
+            </topicmeta>
+         </topic>
+         <topic href="monitor_airflow_workflows.html" data-id="monitor_airflow_workflows" wh-toc-id="monitor_airflow_workflows-d66e1140">
+            <title>monitor-airflow-workflows</title>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="monitor_airflow_workflows"></resourceid>
+               <navtitle class="- topic/navtitle ">monitor-airflow-workflows</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">monitor-airflow-workflows</linktext>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="write_jolokia_jmx_mbean.html" data-id="write_jolokia_jmx_mbean" wh-toc-id="write_jolokia_jmx_mbean-d66e1148">
+         <title>write-jolokia-jmx-mbean</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="write_jolokia_jmx_mbean"></resourceid>
+            <navtitle class="- topic/navtitle ">write-jolokia-jmx-mbean</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">write-jolokia-jmx-mbean</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="appendices.html" data-id="appendices" wh-toc-id="appendices-d66e1158">
+      <title>appendices</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="appendices"></resourceid>
+         <navtitle class="- topic/navtitle ">appendices</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">appendices</linktext>
+      </topicmeta>
+      <topic href="server_daemon_reference.html" data-id="server_daemon_reference" wh-toc-id="server_daemon_reference-d66e1166">
+         <title>server-daemon-reference</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="server_daemon_reference"></resourceid>
+            <navtitle class="- topic/navtitle ">server-daemon-reference</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">server-daemon-reference</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="hbase_alerts_and_metrics.html" data-id="hbase_alerts_and_metrics" wh-toc-id="hbase_alerts_and_metrics-d66e1174">
+         <title>hbase-alerts-and-metrics</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="hbase_alerts_and_metrics"></resourceid>
+            <navtitle class="- topic/navtitle ">hbase-alerts-and-metrics</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">hbase-alerts-and-metrics</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="troubleshooting.html" data-id="troubleshooting" wh-toc-id="troubleshooting-d66e1183">
+      <title>troubleshooting</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="troubleshooting"></resourceid>
+         <navtitle class="- topic/navtitle ">troubleshooting</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">troubleshooting</linktext>
+      </topicmeta>
+      <topic href="send_diagnostics_to_support.html" data-id="send_diagnostics_to_support" wh-toc-id="send_diagnostics_to_support-d66e1191">
+         <title>send-diagnostics-to-support</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="send_diagnostics_to_support"></resourceid>
+            <navtitle class="- topic/navtitle ">send-diagnostics-to-support</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">send-diagnostics-to-support</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="release_notes.html" data-id="release_notes" wh-toc-id="release_notes-d66e1200">
+      <title>release-notes</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="release_notes"></resourceid>
+         <navtitle class="- topic/navtitle ">release-notes</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">release-notes</linktext>
+      </topicmeta>
+      <topic href="v450.html" data-id="v450" wh-toc-id="v450-d66e1208">
+         <title>v450</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="v450"></resourceid>
+            <navtitle class="- topic/navtitle ">v450</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">v450</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="v4502.html" data-id="v4502" wh-toc-id="v4502-d66e1216">
+         <title>v4502</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="v4502"></resourceid>
+            <navtitle class="- topic/navtitle ">v4502</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">v4502</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="v4503.html" data-id="v4503" wh-toc-id="v4503-d66e1224">
+         <title>v4503</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="v4503"></resourceid>
+            <navtitle class="- topic/navtitle ">v4503</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">v4503</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="upgrade_instructions.html" data-id="upgrade_instructions" wh-toc-id="upgrade_instructions-d66e1232">
+         <title>upgrade-instructions</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="upgrade_instructions"></resourceid>
+            <navtitle class="- topic/navtitle ">upgrade-instructions</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">upgrade-instructions</linktext>
+         </topicmeta>
+      </topic>
+      <topic href="updates_to_properties.html" data-id="updates_to_properties" wh-toc-id="updates_to_properties-d66e1240">
+         <title>updates-to-properties</title>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="updates_to_properties"></resourceid>
+            <navtitle class="- topic/navtitle ">updates-to-properties</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">updates-to-properties</linktext>
+         </topicmeta>
+      </topic>
+   </topic>
+</toc>

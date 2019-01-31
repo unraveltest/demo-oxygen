@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Overview</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Overview </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <h2 id="Overview-WhereDoesUnravelServerReside?">Where Does Unravel Server Reside?</h2><p>Unravel
+                            Server is positioned in a Hadoop cluster on its own Gateway/Edge node to communicate with
+                            HDFS and TaskTracker nodes, and to enable client access to Unravel Web UI. A basic
+                            deployment takes two hours or less.</p><p style="text-align: center;"><span
+                                style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                        class="confluence-embedded-image confluence-content-image-border" height="250"
+                                        src="media/53899460.png" data-image-src="media/53899460.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="53899460"
+                                        data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="overview1.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="53899450"
+                                        data-linked-resource-container-version="2"
+                                        data-media-id="4deb1ac9-920f-4d71-a93e-fc0633d6b2e1" data-media-type="file"
+                                        title="The Unravel Server on a Gateway/Edge Node in a Hadoop Cluster"
+                                 /></span></span><br class="atl-forced-newline" />
+                            <br class="atl-forced-newline" /><em>The Unravel Server on a Gateway/Edge Node in a Hadoop
+                                Cluster</em></p><h2 id="Overview-WhatDoesaBasicDeploymentProvide?">What Does a Basic
+                            Deployment Provide?</h2><p>Once deployed, Unravel Server begins to collect information
+                                <span>from relevant services like YARN, Hive, Oozie, Spark, </span>Pig, and MapReduce
+                            jobs via HDFS, analyze this information, and store its analyses in its database. Unravel Web
+                            UI displays information from the database, as well as real-time event streams it receives
+                            directly from Unravel Server. The figure below illustrates the flow of information from the
+                            Hadoop cluster, to Unravel Server, to Unravel Web UI.</p><p style="text-align: center;"
+                                ><span style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                        class="confluence-embedded-image confluence-content-image-border"
+                                        alt="Information Flow from the Hadoop Cluster, to Unravel Server, to Unravel Web UI"
+                                        height="250" src="media/53899457.png"
+                                        data-image-src="media/53899457.png" data-unresolved-comment-count="0"
+                                        data-linked-resource-id="53899457" data-linked-resource-version="1"
+                                        data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="overview2.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="53899450"
+                                        data-linked-resource-container-version="2"
+                                        data-media-id="705c2012-9833-46f2-b407-f366badabf2d" data-media-type="file"
+                                        title="Information Flow from the Hadoop Cluster, to Unravel Server, to Unravel Web UI"
+                                     /></span><br /></span></p><p style="text-align: center;"><em>Information Flow from
+                                the Hadoop Cluster to Unravel Server to Unravel Web UI</em></p><p><br /></p><h2
+                            id="Overview-WhatAreAdvancedDeploymentOptions?">What Are Advanced Deployment
+                            Options?</h2><p>After basic deployment, advanced setup steps are optional, but may
+                            include:</p><ul>
+                            <li>Deploying Unravel Sensors for Hive and Spark, which can push additional metadata to
+                                Unravel Server.<br /><span
+                                    class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"
+                                        ><img
+                                        class="confluence-embedded-image confluence-content-image-border image-center"
+                                        height="250" src="media/53899454.png"
+                                        data-image-src="media/53899454.png" data-unresolved-comment-count="0"
+                                        data-linked-resource-id="53899454" data-linked-resource-version="1"
+                                        data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="overview3.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="53899450"
+                                        data-linked-resource-container-version="2"
+                                        data-media-id="56266313-4b8c-42fc-9f4a-49fa05748f26" data-media-type="file"
+                                     /></span></li>
+                            <li>In YARN, enabling log aggregation.</li>
+                            <li>In Oozie, pushing information via the Oozie REST API.</li>
+                        </ul><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53899454.png">overview3.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53899457.png">overview2.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/53899460.png">overview1.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

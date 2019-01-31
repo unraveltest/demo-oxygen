@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FAIHGDAJ" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="task:1;4:38">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="title:1;5:11">Part 4: Modify Amazon EMR Cluster Bootstrap/Setup </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:3;23:20">
+                  <xref href="50688627.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:3;24:46" type="topic"><?ditaot usertext?>Installation Guide for Amazon Elastic MapReduce (Amazon
+                     EMR) and Qubole Clusters</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:4;31:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:1;32:13">Follow these steps only if you have an Amazon EMR cluster.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:2;33:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:3;34:13">Introduction</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:4;35:13">This topic explains how to modify and Amazon EMR cluster's bootstrap/setup for
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:5;36:20">Unravel Server 4.0</ph>. For instructions that correspond to older versions of
+            Unravel Server, contact Unravel Support.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:5;38:13">
+            <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="i:1;39:16">Steps marked <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:6;39:33">[HVD]</ph> are for production high volume and durable installations
+               can be skipped for PoCs.</i>
+         </p>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:1;42:13">Workflow Summary</b>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ol:2;43:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:4;45:17">Add your AWS account number(s) to the Unravel Data main s3 bucket policy.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:5;47:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:6;48:19">Get the bootstrap script(s).</p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:6;51:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:7;52:19">Integrate the bootstrap script(s) into your Amazon EMR cluster(s).</p>
+            </li>
+
+         </ol>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:2;56:13">Table of Contents</b>
+         <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ul:1;57:44">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:7;59:17">
+               <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-Introduction" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:4;61:20"><?ditaot usertext?>Introduction</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:8;64:17">
+               <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-1.AddYourAWSAccountNumber(s)totheUnravelDataMainS3BucketPolicy" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:5;67:20"><?ditaot usertext?>1. Add Your AWS Account Number(s) to the Unravel Data Main S3 Bucket
+                  Policy</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:9;71:17">
+               <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-2.GettheBootstrapScript(s)" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:6;74:20"><?ditaot usertext?>2. Get the Bootstrap Script(s)</xref>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:10;77:17">
+               <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-3.IntegratetheBootstrapScript(s)intoYourAmazonEMRCluster(s)" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:7;80:20"><?ditaot usertext?>3. Integrate the Bootstrap Script(s) into Your Amazon EMR Cluster(s)</xref>
+               <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ul:2;81:50">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:11;83:23">
+                     <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-ForPersistent(%22Long-Running%22or%22Existing%22)AmazonEMRClusters" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:8;86:26"><?ditaot usertext?>For Persistent ("Long-Running" or "Existing") Amazon EMR Clusters</xref>
+                     <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ul:3;87:56">
+
+                        <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:12;89:29">
+                           <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:9;92:32"><?ditaot usertext?>Hive Applications:</xref>
+                        </li>
+
+                     </ul>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:13;98:23">
+                     <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-ForTransientAmazonEMRClusters" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:10;101:26"><?ditaot usertext?>For Transient Amazon EMR Clusters</xref>
+                     <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ul:4;102:56">
+
+                        <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:14;104:29">
+                           <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:.1" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:11;107:32"><?ditaot usertext?>Hive Applications:</xref>
+                        </li>
+
+                        <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:15;110:29">
+                           <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-SparkApplications:" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:12;113:32"><?ditaot usertext?>Spark Applications:</xref>
+                        </li>
+
+                     </ul>
+                  </li>
+
+               </ul>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:8;123:13">1. Add Your AWS Account Number(s) to the Unravel Data Main S3 Bucket Policy</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:7;125:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:9;126:13">Prior to doing below steps, ensure that your AWS account number(s) is added to the
+            Unravel Data main s3 bucket policy for <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:1;127:60">s3://unraveldata-client</codeph> by
+            asking Unravel Support to do this; alternatively, the scripts can be found on Unravel
+            Server in the directory
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:2;130:24">/usr/local/unravel/install_bin/unraveldata-clients</codeph>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:10;131:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:11;132:13">2. Get the Bootstrap Script(s)</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:12;133:13">To gain access to the s3 bucket that contains the bootstrap scripts
+               (<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:3;134:25">s3://</codeph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:8;135:17">unraveldata-clients/</ph>), add a one-time new Inline policy to <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:9;135:85">
+               <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:3;136:19">EMR_DefaultRole</b>
+            </ph> as follows:</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ol:3;138:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:16;140:17">In the IAM management console on the left-hand side, click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:4;140:79">Roles</b> | <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:10;140:95">
+                  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:5;141:22">EMR_DefaultRole</b>
+               </ph>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:17;144:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:11;145:20">Click </ph>
+               <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:6;146:19">Inline Policies</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:7;146:44">Create Role Policy</b>, and select <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:8;146:82">Custom
+               Policy</b>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:18;149:17">Click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:9;149:26">Select</b>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:19;151:17">Enter the policy name as you wish.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:20;153:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:13;154:19">Copy and paste below policy into the <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:12;154:60">
+                     <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:10;155:25">Policy Document:</b>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeblock:1;158:63">{
+    "Version": "2012-10-17", 
+    "Statement": [ 
+        { 
+            "Sid": "getunraveldataclients3files", 
+            "Effect": "Allow", 
+            "Action": [ 
+                "s3:ListBucket", 
+                "s3:Get*" 
+            ], 
+            "Resource": [ 
+              "arn:aws:s3:::unraveldata-clients/*" 
+            ] 
+        } 
+    ]
+}</codeblock>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:14;174:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:13;175:24"/>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:21;179:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:14;180:20">Save it by clicking <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:11;180:43">Apply Policy</b>.</ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:15;184:14"/>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:15;186:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:16;187:13">When you create a new Amazon EMR cluster, be sure to add a bootstrap action as shown in
+            the IAM screenshot below.  You need to copy and paste the full pathname of the bootstrap
+            action (script) into the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:12;189:41">Script location</b> field. The full pathname is the s3
+            bucket name plus the filename of the script.
+             Important Note: <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:13;191:86">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:16;192:20">Do not</ph>
+            </b> use the <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:17;194:95">
+               <image href="media/51156088.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="image:1;195:90"/>
+            </ph> folder glyph
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:18;197:96">
+               <image href="media/51156092.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="image:2;198:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:17;201:13">For guidance on which script to use, see the table below.</p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="table:1;202:55">
+            <tgroup cols="4" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="tgroup:1;203:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:1;204:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:2;205:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:3;206:41" colnum="3"/>
+               <colspec colname="col4" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:4;207:41" colnum="4"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="tbody:1;208:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="row:1;209:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:1;211:56" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:4;212:33">unravel_emr_bootstrap.sh</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:2;215:56" colname="col2" dita-ot:x="2" dita-ot:y="1">s3://unraveldata-clients/</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:3;217:56" colname="col3" dita-ot:x="3" dita-ot:y="1">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:5;218:33">install_bin/unraveldata-clients/</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:4;221:56" colname="col4" dita-ot:x="4" dita-ot:y="1">Amazon EMR 3.x Hive</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="row:2;224:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:5;226:56" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:6;227:33">unravel_emr4_bootstrap.sh</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:6;230:56" colname="col2" dita-ot:x="2" dita-ot:y="2">s3://unraveldata-clients/</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:7;232:56" colname="col3" dita-ot:x="3" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:7;233:33">install_bin/unraveldata-clients/</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:8;236:56" colname="col4" dita-ot:x="4" dita-ot:y="2">Amazon EMR 4.x Hive</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:18;242:13">3. Integrate the Bootstrap Script(s) into Your Amazon EMR Cluster(s)</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:19;243:13">For Persistent ("Long-Running" or "Existing") Amazon EMR Clusters</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:20;244:13">Hive Applications:</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:21;245:13">Unravel does not load data from a cluster until the cluster is instrumented. Use the
+            steps here to set up an existing cluster.</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ol:4;247:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:22;249:17">Identify the LOCAL_IP address of your Unravel Server.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:23;251:17">Download <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:8;251:34">s3://unraveldata-clients/unravel_emr_setup.sh</codeph> using the S3
+               console or '<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:9;252:36">aws s3</codeph>' command or other utility OR get it from the
+               Unravel Server in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:10;253:42">install_bin/unraveldata-clients</codeph>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:24;255:17">scp <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:11;255:29">unravel_emr_setup.sh</codeph> to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:12;255:70">/tmp</codeph> of the cluster's
+               master node (ssh user is <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:13;256:49">hadoop</codeph>).</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:25;258:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:22;259:19">Open an SSH session to the cluster's master node (ssh as user
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:14;260:30">hadoop</codeph>) and then do as <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:15;260:70">hadoop</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeblock:2;261:63">cd /tmp 
+aws s3 cp s3://unraveldata-clients/unravel_emr_setup.sh . 
+chmod +x unravel_emr_setup.sh 
+./unravel_emr_setup.sh --unravel-server $LOCAL_IP:3000</codeblock>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:19;266:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:23;267:19">To uninstall Hive instrumentation on an Amazon EMR cluster (perhaps because you
+                  want to upgrade the instrumentation), you simply run the same install script again
+                  with the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:16;269:36">uninstall</codeph> argument:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeblock:3;270:63">cd /tmp 
+aws s3 cp s3://unraveldata-clients/unravel_emr_setup.sh . 
+chmod +x unravel_emr_setup.sh 
+./unravel_emr_setup.sh --uninstall</codeblock>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:24;277:13">For Transient Amazon EMR Clusters</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:25;278:13">Hive Applications:</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:26;279:13">This is similar to the previous section on integrating an existing cluster except the
+            script used as a bootstrap step is one of the following files:</p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="table:2;281:55">
+            <tgroup cols="4" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="tgroup:2;282:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:5;283:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:6;284:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:7;285:41" colnum="3"/>
+               <colspec colname="col4" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="colspec:8;286:41" colnum="4"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="tbody:2;287:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="row:3;288:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:9;290:56" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:14;291:28">File</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:10;294:56" colname="col2" dita-ot:x="2" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:15;295:28">S3 Bucket</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:11;298:56" colname="col3" dita-ot:x="3" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:16;299:28">Local Directory</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:12;302:56" colname="col4" dita-ot:x="4" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="b:17;303:28">Applies To</b>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="row:4;307:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:13;309:56" colname="col1" dita-ot:x="1" dita-ot:y="2">unravel_emr_bootstrap.sh</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:14;311:56" colname="col2" dita-ot:x="2" dita-ot:y="2">s3://unraveldata-clients/</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:15;313:56" colname="col3" dita-ot:x="3" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:17;314:33">install_bin/unraveldata-clients/</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:16;317:56" colname="col4" dita-ot:x="4" dita-ot:y="2">Amazon EMR 3.x Hive</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="row:5;320:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:17;322:56" colname="col1" dita-ot:x="1" dita-ot:y="3">unravel_emr4_bootstrap.sh</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:18;324:56" colname="col2" dita-ot:x="2" dita-ot:y="3">s3://unraveldata-clients/</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:19;326:56" colname="col3" dita-ot:x="3" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:18;327:33">install_bin/unraveldata-clients/</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="entry:20;330:56" colname="col4" dita-ot:x="4" dita-ot:y="3">Amazon EMR 4.x Hive</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:27;336:13">Spark Applications:</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:28;337:13">The Unravel Server does not load data from a Spark cluster until the cluster is
+            instrumented. Use the steps here to set up an existing cluster.</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ol:5;339:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:26;341:17">Identify the LOCAL_IP address of your Unravel Server</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:27;343:17">Download <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:19;343:34">s3://unraveldata-clients/unravel_emr_spark_setup.sh</codeph> using
+               the S3 console or '<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:20;344:43">aws s3</codeph>' command or other utility OR get it from
+               the Unravel Server in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:21;345:46">install_bin/unraveldata-clients</codeph>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:28;347:17">scp <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:22;347:29">unravel_emr_setup.sh</codeph> to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:23;347:70">/tmp</codeph> of the EMR
+               cluster master node (ssh user is <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:24;348:57">ec2-user</codeph>).</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="li:29;350:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:29;351:19">Open an SSH session to the cluster's master node (ssh user is
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:25;352:30">ec2-user</codeph>) and then do as <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:26;352:72">ec2-user</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeblock:4;353:63">cd /tmp 
+sudo ./unravel_emr_spark_setup.sh --unravel-server \ 
+ $LOCAL_IP:3000 --client</codeblock>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="ph:20;358:18"/>Change <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:27;358:33">--client</codeph> to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="codeph:28;358:62">--cluster</codeph> if you use the Spark
+               driver in cluster mode.</li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="p:30;362:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="image:3;363:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="alt:1;364:19"/>
+         </image>
+         <xref href="media/50876269.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:13;366:56"><?ditaot usertext?>image2017-2-26_0-20-12.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="image:4;367:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="alt:2;368:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:14;371:14"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="image:5;372:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="alt:3;373:19"/>
+         </image>
+         <xref href="media/51156084.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:15;375:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="image:6;376:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="alt:4;377:19"/>
+         </image>
+         <xref href="media/51156088.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:16;380:14"><?ditaot usertext?>worddavb613e73f110587889f8b58fd6cdcdfa4.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="image:7;381:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="alt:5;382:19"/>
+         </image>
+         <xref href="media/51156092.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50876309.dita" xtrc="xref:17;385:14"><?ditaot usertext?>worddav17bd11fa4b44a52a180fec44ac2a622c.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

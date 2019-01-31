@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Setting Retention Time in Unravel Server</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Custom-Configurations_54044915.html">Custom Configurations</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Setting Retention Time in Unravel Server </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    
+                    <div id="main-content" class="wiki-content group">
+                        <p><br /></p><p>To adjust the retention time (<em>time horizon</em>), you need to change three
+                            settings. These settings can be made in /usr/local/unravel/etc/unravel.properties or via
+                                the <strong>Manage</strong><span style="color: rgb(44,44,44);"
+                                    > page, <strong>Configuration </strong>tab, <strong>Core</strong> section (tab on
+                                left) and scroll down to the</span><span style="color: rgb(44,44,44);"
+                                > </span><strong>Retention</strong><span style="color: rgb(44,44,44);"> heading. If you
+                                make the setting in the <strong>Manage</strong> page <strong>Configuration</strong> tab,
+                                then the corresponding property in unravel.properties <em>will be ignored</em> because
+                                settings made in the web UI take precedence.</span></p><p><span
+                                style="color: rgb(44,44,44);">When changing these settings, be aware that long retention
+                                requires significant disk space. As a rule of thumb, each map-reduce or Spark job
+                                requires about 500KB of disk space. That means about 2000 jobs per 1GB of
+                            disk. </span></p><ol>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(44,44,44);">In Unravel Web UI,
+                                        select the </span><strong>Manage</strong><span style="color: rgb(44,44,44);"
+                                        > page, </span><strong>Configuration </strong><span
+                                        style="color: rgb(44,44,44);">tab, </span><span style="color: rgb(44,44,44);"
+                                        >and </span><strong>Core</strong><span style="color: rgb(44,44,44);"> section
+                                        (tab on left). The settings below are show the label in the web UI and the boxes
+                                        show the corresponding property you can optionally set
+                                        in  /usr/local/unravel/etc/unravel.properties if you prefer.</span></p></li>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(44,44,44);"><span
+                                            style="color: rgb(44,44,44);">The <strong><span
+                                                    style="color: rgb(44,44,44);">TIME SERIES RETENTION
+                                                DAYS</span></strong> field is number of days to keep the heaviest data
+                                            (such as error logs and drill-down details). This corresponds to the <span
+                                                style="color: rgb(44,44,44);">property in
+                                                    <code>unravel.properties:</code></span></span></span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.retention.max.days=90</pre>
+                                    </div></div></li>
+                            <li><p><span style="color: rgb(44,44,44);"><span style="color: rgb(44,44,44);"
+                                                    >The <strong><span>WEEKS TO SHOW FOR SEARCH
+                                                RESULTS</span></strong> <span style="color: rgb(44,44,44);">field is
+                                                number of weeks to show in search results. This corresponds to
+                                                the</span><span style="color: rgb(44,44,44);"> </span><span
+                                                style="color: rgb(44,44,44);">property
+                                                    in <code>unravel.properties:</code></span></span></span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.history.maxSize.weeks=7</pre>
+                                    </div></div><p class="auto-cursor-target">This value should be no larger than the
+                                    next setting minus 1.</p></li>
+                            <li><p><span style="color: rgb(44,44,44);">The </span><strong>WEEKS TO SHOW FOR DEEP SEARCH
+                                        RESULTS</strong><span style="color: rgb(44,44,44);"> </span><span
+                                        style="color: rgb(44,44,44);">field is number of weeks to retain for search
+                                        results. This corresponds to the</span><span style="color: rgb(44,44,44);"
+                                        > </span><span style="color: rgb(44,44,44);">property
+                                            in <code>unravel.properties:</code></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.recent.maxSize.weeks=14</pre>
+                                    </div></div><p class="auto-cursor-target">This value should be at least 1 week more
+                                    than the setting immediately above. </p></li>
+                            <li><p><span style="color: rgb(44,44,44);">After changing any of the settings above, restart
+                                        unravel_td service:</span></p><p></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_td restart</pre>
+                                    </div></div></li>
+                        </ol><p><span style="color: rgb(44,44,44);"><br /></span></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

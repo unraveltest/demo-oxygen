@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Adding More Admins to Unravel Web UI</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced
+                                    Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Custom-Configurations_54044915.html">Custom
+                                        Configurations</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Adding More Admins to Unravel Web
+                            UI </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <ol>
+                            <li><p class="_mce_tagged_br">On Unravel Server, open
+                                        <code>/usr/local/unravel/etc/unravel.properties</code> with
+                                        <code>vi</code>.</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo vi /usr/local/unravel/etc/unravel.properties</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Append comma-separated usernames to
+                                    the value of <code>com.unraveldata.login.admins</code>. For
+                                    example,</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.login.admins=admin,admin1,admin2</pre>
+                                    </div></div></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

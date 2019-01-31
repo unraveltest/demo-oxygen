@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Creating Multiple Workers for High Volume Data</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Custom-Configurations_54044915.html">Custom Configurations</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Creating Multiple Workers for High Volume Data </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <div class="confluence-information-macro confluence-information-macro-tip"><span
+                                class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>These instructions apply to
+                                    single host Unravel deployments only; for multihost deployments, please contact <a
+                                        href="mailto:support@unraveldata.com" class="external-link" rel="nofollow"
+                                        >Unravel Support</a>.</p></div></div><p>If you have 10000-20000 jobs per day,
+                            run these commands on Unravel Server to enable these workers:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo chkconfig --add unravel_ew_2 
+sudo chkconfig --add unravel_hhw_2 
+sudo chkconfig --add unravel_jcw2_2
+# If Spark is in use:
+sudo chkconfig --add unravel_sw_2 </pre>
+                            </div></div><p>If you have 20000-30000 jobs per day, run these commands on Unravel Server to
+                            enable these workers:</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo chkconfig --add unravel_ew_3 
+sudo chkconfig --add unravel_hhw_3 
+sudo chkconfig --add unravel_jcw2_3
+# If Spark is in use:
+sudo chkconfig --add unravel_sw_3</pre>
+                            </div></div><p>If you have more than 30000 jobs per day, run these commands on Unravel
+                            Server to enable these workers:</p><div class="code panel pdl" style="border-width: 1px;"
+                                ><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo chkconfig --add unravel_ew_4 
+sudo chkconfig --add unravel_hhw_4 
+sudo chkconfig --add unravel_jcw2_4
+# If Spark is in use:
+sudo chkconfig --add unravel_sw_4</pre>
+                            </div></div><h3 id="CreatingMultipleWorkersforHighVolumeData-StartUnravelServer">Start
+                            Unravel Server</h3><p>Run the following command to start the additional daemons you enabled
+                            above:</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_all.sh start
+</pre>
+                            </div></div>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51162498.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

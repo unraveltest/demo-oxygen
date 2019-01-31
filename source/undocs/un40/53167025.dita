@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="FDBGHACF">
+   <title>Setting Up Auto Actions (Alerts) </title>
+   <taskbody>
+      <context>
+         <p>Auto Actions</p>
+         <p>An Auto Action is basically a policy such that when it is violated, an action is taken automatically. You
+            can use an Auto Action to alert you to a situation that needs manual intervention, such as resource
+            contention, stuck jobs, failed queries, and so on.</p>
+         <p>
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/53167150.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>To create an Auto Action:</p>
+         <ol>
+            <li>Click the <b>Admin</b> pull-down menu, and select <b>Manage</b>.</li>
+            <li>On the <b>Manage</b> page, select the <b>Auto Actions</b> tab.</li>
+            <li>Click <b>ADD NEW AUTO ACTION</b>.</li>
+            <li>Select the desired Auto Action type, and then click <b>Next</b>.<!--A BR tag was used here in the original source.-->
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                  <image href="media/53167156.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </li>
+            <li>Enter a name for the new Auto Action, and specify its prerequisite conditions, defining conditions, and actions:<!--A BR tag was used here in the original source.-->
+               <ul>
+                  <li>Prerequisite conditions: A set of boolean conditions such that when they are all met, Unravel will
+                     evaluate the defining conditions of the Auto Action. Examples include: whether this Auto Action
+                     should be evaluated during a given time, whether this Auto Action should be evaluated for a job
+                     belonging to a given user, etc.</li>
+                  <li>Defining conditions: A set of boolean conditions defining the Auto Action. When they are all met,
+                     the corresponding action defined as part of the Auto Action will be taken automatically. Examples
+                     include: Is this job running for too long? Does it use too many mappers?</li>
+                  <li>Actions: A set of actions to be taken when the defining conditions are all evaluated to be true.
+                     Examples include: send an email to admin (i.e., “alerting”), kill the job, etc.<!--A BR tag was used here in the original source.-->
+                     <ph outputclass="confluence-embedded-file-wrapper">
+                        <image href="media/53167153.png" outputclass="confluence-embedded-image"/>
+                     </ph><!--A BR tag was used here in the original source.-->
+                  </li>
+               </ul>
+            </li>
+            <li>Click <b>SAVE AUTO ACTION</b>.</li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

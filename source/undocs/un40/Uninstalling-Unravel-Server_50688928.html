@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Uninstalling Unravel Server</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced
+                                    Topics</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Uninstalling Unravel Server </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <div
+                            class="confluence-information-macro confluence-information-macro-warning"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Disable
+                                    and uninstall cluster instrumentation before uninstalling
+                                    Unravel Server.</p></div></div><p>The Unravel Server RPM has the
+                            service name <code>unravel</code>. That means you can uninstall it by
+                            running the following commands:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo rpm -e unravel
+sudo /bin/rm -rf /usr/local/unravel /srv/unravel/* /etc/unravel_ctl</pre>
+                            </div></div><p>All data in the bundled database is deleted by the
+                                <code>rm</code> command.</p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51230506.png">logo_small.png</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

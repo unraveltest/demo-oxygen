@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Monitoring-Oozie-Workflows_51161894" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="task:1;3:116">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="title:1;4:11">
+                        Monitoring Oozie Workflows 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="taskbody:1;7:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="context:1;8:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ol:1;12:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:1;14:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:1;16:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="xref:1;17:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:2;22:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:2;24:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="xref:2;25:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:3;30:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:3;32:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="xref:3;33:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:4;38:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:4;40:20">
+                  <xref href="Workflows_53900905.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="xref:4;41:56" type="topic"><?ditaot usertext?>Workflows</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:1;53:13">Enabling Oozie</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:2;54:13">In <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:5;54:20">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:1;55:24">unravel.properties</codeph>
+            </ph>, update the
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:2;57:41">oozie.server.url</codeph> property with appropriate value.<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:6;57:103">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:3;58:24">
+                                    
+               </codeph>
+            </ph>
+         </p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeblock:1;64:57">sudo vi /usr/local/unravel/etc/unravel.properties</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:3;66:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:7;67:18"/>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:4;69:13">Enabling AirFlow</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:5;70:13">The script below,
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:4;71:41">spark-test.py</codeph>, is a sample script for Spark.</p>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="b:1;72:13">spark-test.py</b>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeblock:2;74:57">from airflow import DAG
+from airflow.operators.bash_operator import BashOperator
+from airflow.operators import PythonOperator
+from datetime import datetime, timedelta
+import subprocess
+
+
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'start_date': datetime(2015, 6, 1),
+    'email': ['airflow@airflow.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=5),
+    # 'queue': 'bash_queue',
+    # 'pool': 'backfill',
+    # 'priority_weight': 10,
+    # 'end_date': datetime(2016, 1, 1),
+}
+</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:6;97:13">In Oozie/Airflow, workflows are represented by directed acyclic graphs
+                            (DAGs). For example,</p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeblock:3;100:57">dag = DAG('spark-test', default_args=default_args)
+</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:7;103:13">1. Add
+                            Hooks for Unravel Instrumentation</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:8;105:13">The example below shows the contents of a bash
+                            script, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:5;106:45">example-hdp-client.sh</codeph>, that can be invoked to submit an Airflow Spark
+                            application via <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:6;107:53">spark-submit</codeph>. This script adds hooks for Unravel
+                            instrumentation by setting three Unravel-specific configuration parameters for Spark
+                            applications:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ul:1;110:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:5;112:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:7;113:24">spark.driver.extraJavaOptions</codeph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:6;116:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:8;117:24">spark.executor.extraJavaOptions</codeph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:7;120:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:9;121:24">spark.unravel.server.hostport</codeph>
+            </li>
+                        
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:9;125:13">Setting these parameters on a <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="b:2;125:46">per-application</b> basis is recommended when
+                            you only want to monitor/profile certain applications, rather than all the applications
+                            running in the cluster. Alternatively, you can specify these parameters in
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:10;128:41">spark-defaults.conf</codeph>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:10;129:13">This script references the following variables,
+                            which you would need to edit:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ul:2;131:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:8;133:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:11;134:24">PATH_TO_SPARK_EXAMPLE_JAR=<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:8;134:54">/usr/hdp/2.3.6.0-3796/spark/lib/spark-examples-*.jar</ph>
+               </codeph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:9;138:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:12;139:24">UNRAVEL_SERVER_IP_PORT=<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:9;139:51">10.20.30.40:4043</ph>
+               </codeph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="li:10;143:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:13;144:24">SPARK_EVENT_LOG_DIR=<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:10;144:48">hdfs://<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:11;144:59">ip-10-0-0-21.ec2.internal:8020/user/ec2-user/eventlog</ph>
+                  </ph>
+               </codeph>
+            </li>
+                        
+         </ul>
+         <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="b:3;150:13">example-hdp-client.sh</b>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeblock:4;152:57">hdfs dfs -rmr pair.parquet
+spark-submit \
+--class org.apache.spark.examples.sql.RDDRelation \
+--master yarn-cluster \
+--conf "spark.driver.extraJavaOptions=-javaagent:/usr/local/unravel_client/btrace-agent.jar=unsafe=true,stdout=false,noServer=true,startupRetransform=false,bootClassPath=/usr/local/unravel_client/unravel-boot.jar,systemClassPath=/usr/local/unravel_client/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1 -Dcom.unraveldata.spark.sensor.disableLiveUpdates=true" \
+--conf "spark.executor.extraJavaOptions=-javaagent:/usr/local/unravel_client/btrace-agent.jar=unsafe=true,stdout=false,noServer=true,startupRetransform=false,bootClassPath=/usr/local/unravel_client/unravel-boot.jar,systemClassPath=/usr/local/unravel_client/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class -Dcom.sun.btrace.FileClient.flush=-1" \
+--conf "spark.unravel.server.hostport=$UNRAVEL_SERVER_IP_PORT" \
+--conf "spark.eventLog.dir=$SPARK_EVENT_LOG_DIR" \
+--conf "spark.eventLog.enabled=true" \
+$PATH_TO_SPARK_EXAMPLE_JAR</codeblock>
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:11;163:13">2. Submit the
+                            Workflow</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:12;165:13">Operators (also called tasks) determine execution order (dependencies). In
+                            the example below, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:14;166:56">t1</codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:15;166:80">t2</codeph> are operators created
+                                by <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:16;167:44">BashOperator</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:17;167:77">PythonOperator</codeph>. They invoke
+                                <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:18;168:41">example-hdp-client.sh</codeph>, which submits the workflow for execution.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:12;169:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:13;170:13">Note: The pathname
+                                        of <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:19;171:52">example-hdp-client.sh</codeph> is relative to the current directory, not
+                                    to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeph:20;172:48">~/airflow/dags</codeph> as in the Airflow operator above!</p>
+                                
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeblock:5;174:57">t1 = BashOperator(
+task_id='example-hdp-client',
+bash_command="example-scripts/example-hdp-client.sh",
+retries=3,
+dag=dag)
+
+
+def spark_callback(**kwargs):
+sp
+ = subprocess.Popen(['/bin/bash', 
+'airflow/dags/example-scripts/example-hdp-client.sh'], 
+stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+print sp.stdout.read()
+
+
+t2 = PythonOperator(
+task_id='example-python-call',
+provide_context=True,
+python_callable=spark_callback,
+retries=1,
+dag=dag)
+
+
+t2.set_upstream(t1)
+</codeblock>
+                            
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="ph:13;200:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:14;201:13">You can test the operators
+                                    first. For example, in Airflow:</p>
+                                        
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="codeblock:6;204:57">airflow test spark-test example-python-call 2016-08-30</codeblock>
+                                    
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:15;206:13">3.
+                            Monitor the Workflow</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:16;208:13">To see the new Oozie workflow in Unravel Web UI, select
+                                <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="b:4;209:36">APPLICATIONS</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="b:5;209:58">Workflows</b>, and then click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="b:6;209:91">Add
+                                Workflow</b>.</p>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="p:17;215:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="image:1;219:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="alt:1;220:19"/>
+         </image>
+                            
+         <xref href="media/51161898.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Monitoring-Oozie-Workflows_51161894.dita" xtrc="xref:5;223:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+                        
+                    
+                
+            </context>
+   </taskbody>
+</task>

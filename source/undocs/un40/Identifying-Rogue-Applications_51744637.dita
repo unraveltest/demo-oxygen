@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Identifying-Rogue-Applications_51744637">
+   <title>
+                        Identifying Rogue Applications 
+                    </title>
+   <taskbody>
+      <context>
+         <p>Rogue applications can affect cluster health and lead to missed SLAs. Therefore, it is best practice to
+            identify and eliminate them. Symptoms of a cluster with rogue applications include jobs that take too long
+            to run or applications that use too many vcores. Unravel Web UI makes identifying rogue apps easy:</p>
+         <ol>
+            <li>Click <b>Operations</b> | <b>Charts</b> | <b>Resources</b>.</li>
+            <li>In the <b>Cluster VCores</b> or <b>Cluster MemoryMB</b> graph, click on a spike.Unravel Web UI displays
+               the list of applications running or pending in the cluster at the spike's timestamp, at the bottom of the
+                  page.<ph outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51744670.png" outputclass="confluence-embedded-image"/>
+               </ph><!--A BR tag was used here in the original source.-->
+            </li>
+            <li>Click the application which has allocated the highest number of vcores. In this example, there is a
+               MapReduce application which has allocated 240 vcores of the cluster.<ph
+                  outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51744760.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </li>
+            <li>Check the Application page to see Unravel's recommendations for improving the efficiency of this
+               MapReduce application. For example:<ph outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51744795.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </li>
+            <li>
+               <ph>Set up an AutoAction to proactively alert if a rogue application is occupying the cluster.</ph>
+            </li>
+         </ol>
+         <p>
+            <ph>
+               <ph outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51744833.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </ph>
+         </p>
+         <p>
+            <ph>
+               <ph outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51744853.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </ph>
+         </p>
+      </context>
+   </taskbody>
+</task>

@@ -1,0 +1,196 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="topic" /><meta name="DC.Relation" scheme="URI" content="configurations.html" /><meta name="DC.Relation" scheme="URI" content="configure_hbase.html" /><meta name="DC.Relation" scheme="URI" content="set_retention_time.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="run_daemons_with_custom_user" /><title>run-daemons-with-custom-user</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="run_daemons_with_custom_user-d66e617" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2018122203" /></head>
+
+    <body id="run_daemons_with_custom_user" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="unravel-logo-white-small-1.png" alt="    " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle"></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                <h1>Unravel 4.2 Documentation</h1>
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="overview-d66e13" data-state="leaf" class=" topicref " data-id="overview"><span class="title"><a href="overview.html">overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="installation_guides-d66e22" data-state="not-ready" class=" topicref " data-id="installation_guides"><span class="title"><a href="installation_guides.html">installation-guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="user_guide-d66e247" data-state="not-ready" class=" topicref " data-id="user_guide"><span class="title"><a href="user_guide.html">user-guide</a></span></span></li>
+   <li class="has-children"><span data-tocid="advanced_topics-d66e521" data-state="not-ready" class=" topicref " data-id="advanced_topics"><span class="title"><a href="advanced_topics.html">advanced-topics</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendices-d66e1158" data-state="not-ready" class=" topicref " data-id="appendices"><span class="title"><a href="appendices.html">appendices</a></span></span></li>
+   <li class="has-children"><span data-tocid="troubleshooting-d66e1183" data-state="not-ready" class=" topicref " data-id="troubleshooting"><span class="title"><a href="troubleshooting.html">troubleshooting</a></span></span></li>
+   <li class="has-children"><span data-tocid="release_notes-d66e1200" data-state="not-ready" class=" topicref " data-id="release_notes"><span class="title"><a href="release_notes.html">release-notes</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="advanced_topics"><span class="title"><a href="advanced_topics.html">advanced-topics</a></span></span></li>
+   <li><span class="topicref" data-id="configurations"><span class="title"><a href="configurations.html">configurations</a></span></span></li>
+   <li class="active"><span class="topicref" data-id="run_daemons_with_custom_user"><span class="title"><a href="run_daemons_with_custom_user.html">run-daemons-with-custom-user</a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="configure_hbase.html" title="configure-hbase" aria-label="Previous topic: configure-hbase" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="set_retention_time.html" title="set-retention-time" aria-label="Next topic: set-retention-time" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="advanced_topics-d66e521" class="topicref" data-id="advanced_topics" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action advanced_topics-d66e521-link" class="wh-expand-btn"></span><span class="title"><a href="advanced_topics.html" id="advanced_topics-d66e521-link">advanced-topics</a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="back_up_and_disaster_recovery-d66e529" class="topicref" data-id="back_up_and_disaster_recovery" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="back_up_and_disaster_recovery.html" id="back_up_and_disaster_recovery-d66e529-link">back-up-and-disaster-recovery</a></span></span></li>
+         <li role="treeitem"><span data-tocid="cluster_wide_report-d66e537" class="topicref" data-id="cluster_wide_report" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cluster_wide_report.html" id="cluster_wide_report-d66e537-link">cluster-wide-report</a></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="configurations-d66e545" class="topicref" data-id="configurations" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action configurations-d66e545-link" class="wh-expand-btn"></span><span class="title"><a href="configurations.html" id="configurations-d66e545-link">configurations</a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="custom_configurations-d66e553" class="topicref" data-id="custom_configurations" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="custom_configurations.html" id="custom_configurations-d66e553-link">custom-configurations</a></span></span></li>
+               <li role="treeitem"><span data-tocid="configure_permissions_on_cdh_sentry_secured_cluster-d66e561" class="topicref" data-id="configure_permissions_on_cdh_sentry_secured_cluster" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="configure_permissions_on_cdh_sentry_secured_cluster.html" id="configure_permissions_on_cdh_sentry_secured_cluster-d66e561-link">configure-permissions-on-cdh-sentry-secured-cluster</a></span></span></li>
+               <li role="treeitem"><span data-tocid="configure_multiple_hosts_for_unravel_server-d66e569" class="topicref" data-id="configure_multiple_hosts_for_unravel_server" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="configure_multiple_hosts_for_unravel_server.html" id="configure_multiple_hosts_for_unravel_server-d66e569-link">configure-multiple-hosts-for-unravel-server</a></span></span></li>
+               <li role="treeitem"><span data-tocid="create_multiple_workers_for_high_volume_data-d66e577" class="topicref" data-id="create_multiple_workers_for_high_volume_data" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="create_multiple_workers_for_high_volume_data.html" id="create_multiple_workers_for_high_volume_data-d66e577-link">create-multiple-workers-for-high-volume-data</a></span></span></li>
+               <li role="treeitem"><span data-tocid="create_custom_banner-d66e585" class="topicref" data-id="create_custom_banner" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="create_custom_banner.html" id="create_custom_banner-d66e585-link">create-custom-banner</a></span></span></li>
+               <li role="treeitem"><span data-tocid="define_custom_ui_port-d66e593" class="topicref" data-id="define_custom_ui_port" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="define_custom_ui_port.html" id="define_custom_ui_port-d66e593-link">define-custom-ui-port</a></span></span></li>
+               <li role="treeitem"><span data-tocid="set_up_email_alerts-d66e601" class="topicref" data-id="set_up_email_alerts" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="set_up_email_alerts.html" id="set_up_email_alerts-d66e601-link">set-up-email-alerts</a></span></span></li>
+               <li role="treeitem"><span data-tocid="configure_hbase-d66e609" class="topicref" data-id="configure_hbase" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="configure_hbase.html" id="configure_hbase-d66e609-link">configure-hbase</a></span></span></li>
+               <li role="treeitem" class="active"><span data-tocid="run_daemons_with_custom_user-d66e617" class="topicref" data-id="run_daemons_with_custom_user" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="run_daemons_with_custom_user.html" id="run_daemons_with_custom_user-d66e617-link">run-daemons-with-custom-user</a></span></span></li>
+               <li role="treeitem"><span data-tocid="set_retention_time-d66e625" class="topicref" data-id="set_retention_time" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="set_retention_time.html" id="set_retention_time-d66e625-link">set-retention-time</a></span></span></li>
+               <li role="treeitem"><span data-tocid="set_properties_for_spark_worker_daemon-d66e634" class="topicref" data-id="set_properties_for_spark_worker_daemon" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="set_properties_for_spark_worker_daemon.html" id="set_properties_for_spark_worker_daemon-d66e634-link">set-properties-for-spark-worker-daemon</a></span></span></li>
+               <li role="treeitem"><span data-tocid="use_impalad_as_data_source-d66e642" class="topicref" data-id="use_impalad_as_data_source" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="use_impalad_as_data_source.html" id="use_impalad_as_data_source-d66e642-link">use-impalad-as-data-source</a></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="security_configurations-d66e650" class="topicref" data-id="security_configurations" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action security_configurations-d66e650-link" class="wh-expand-btn"></span><span class="title"><a href="security_configurations.html" id="security_configurations-d66e650-link">security-configurations</a></span></span></li>
+         <li role="treeitem"><span data-tocid="autoscale_hdi_spark_cluster-d66e779" class="topicref" data-id="autoscale_hdi_spark_cluster" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="autoscale_hdi_spark_cluster.html" id="autoscale_hdi_spark_cluster-d66e779-link">autoscale-hdi-spark-cluster</a></span></span></li>
+         <li role="treeitem"><span data-tocid="create_ad_kerberos_principals_and_keytabs-d66e787" class="topicref" data-id="create_ad_kerberos_principals_and_keytabs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="create_ad_kerberos_principals_and_keytabs.html" id="create_ad_kerberos_principals_and_keytabs-d66e787-link">create-ad-kerberos-principals-and-keytabs</a></span></span></li>
+         <li role="treeitem"><span data-tocid="create_aws_rds_cloudwatch_alarm_for_free_storage_space-d66e795" class="topicref" data-id="create_aws_rds_cloudwatch_alarm_for_free_storage_space" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="create_aws_rds_cloudwatch_alarm_for_free_storage_space.html" id="create_aws_rds_cloudwatch_alarm_for_free_storage_space-d66e795-link">create-aws-rds-cloudwatch-alarm-for-free-storage-space</a></span></span></li>
+         <li role="treeitem"><span data-tocid="trigger_import_of_fsimage-d66e803" class="topicref" data-id="trigger_import_of_fsimage" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="trigger_import_of_fsimage.html" id="trigger_import_of_fsimage-d66e803-link">trigger-import-of-fsimage</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="configure_jvm_sensor-d66e811" class="topicref" data-id="configure_jvm_sensor" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action configure_jvm_sensor-d66e811-link" class="wh-expand-btn"></span><span class="title"><a href="configure_jvm_sensor.html" id="configure_jvm_sensor-d66e811-link">configure-jvm-sensor</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="connectivity-d66e835" class="topicref" data-id="connectivity" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action connectivity-d66e835-link" class="wh-expand-btn"></span><span class="title"><a href="connectivity.html" id="connectivity-d66e835-link">connectivity</a></span></span></li>
+         <li role="treeitem"><span data-tocid="create_application_tags-d66e876" class="topicref" data-id="create_application_tags" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="create_application_tags.html" id="create_application_tags-d66e876-link">create-application-tags</a></span></span></li>
+         <li role="treeitem"><span data-tocid="deploy_over_selinux-d66e884" class="topicref" data-id="deploy_over_selinux" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="deploy_over_selinux.html" id="deploy_over_selinux-d66e884-link">deploy-over-selinux</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="roles_and_rbac-d66e892" class="topicref" data-id="roles_and_rbac" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action roles_and_rbac-d66e892-link" class="wh-expand-btn"></span><span class="title"><a href="roles_and_rbac.html" id="roles_and_rbac-d66e892-link">roles-and-rbac</a></span></span></li>
+         <li role="treeitem"><span data-tocid="run_verification_scripts-d66e924" class="topicref" data-id="run_verification_scripts" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="run_verification_scripts.html" id="run_verification_scripts-d66e924-link">run-verification-scripts</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="rest_api-d66e932" class="topicref" data-id="rest_api" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rest_api-d66e932-link" class="wh-expand-btn"></span><span class="title"><a href="rest_api.html" id="rest_api-d66e932-link">rest-api</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="monitoring_service-d66e988" class="topicref" data-id="monitoring_service" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action monitoring_service-d66e988-link" class="wh-expand-btn"></span><span class="title"><a href="monitoring_service.html" id="monitoring_service-d66e988-link">monitoring-service</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="properties-d66e1028" class="topicref" data-id="properties" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action properties-d66e1028-link" class="wh-expand-btn"></span><span class="title"><a href="properties.html" id="properties-d66e1028-link">properties</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="servers_and_sensors-d66e1052" class="topicref" data-id="servers_and_sensors" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action servers_and_sensors-d66e1052-link" class="wh-expand-btn"></span><span class="title"><a href="servers_and_sensors.html" id="servers_and_sensors-d66e1052-link">servers-and-sensors</a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="workflows-d66e1108" class="topicref" data-id="workflows" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action workflows-d66e1108-link" class="wh-expand-btn"></span><span class="title"><a href="workflows.html" id="workflows-d66e1108-link">workflows</a></span></span></li>
+         <li role="treeitem"><span data-tocid="write_jolokia_jmx_mbean-d66e1148" class="topicref" data-id="write_jolokia_jmx_mbean" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="write_jolokia_jmx_mbean.html" id="write_jolokia_jmx_mbean-d66e1148-link">write-jolokia-jmx-mbean</a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">run-daemons-with-custom-user</h1>
+    <div class="body">
+        <p class="p"></p>
+    </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

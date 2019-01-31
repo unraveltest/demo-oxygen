@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Monitoring-Airflow-Workflows_52961844">
+   <title>
+                        Monitoring Airflow Workflows 
+                    </title>
+   <taskbody>
+      <context>
+         <p>
+            <ph>This article describes how to set up Unravel Server to monitor Airflow workflows so that you can see
+               them in Unravel Web UI. </ph>
+         </p>
+         <p>
+            <ph>All the following steps are on the Unravel Server host that runs </ph>
+            <ph>the <codeph>unravel_jcs2</codeph>
+            </ph>
+            <ph> daemon. </ph>
+            <ph>Highlighted</ph>
+            <ph> text indicates where you need to substitute your particular values.</ph>
+         </p>
+         <p>
+            <ph>Before you start, ensure that the Unravel Server host and the server that runs Airflow web service are
+               in the same cluster. </ph>
+         </p>
+         <p>
+            <ph>If You Use Http For Airflow Web UI </ph>
+            <ph>Access </ph>
+         </p>
+         <p>
+            <ph>Add the following 3 settings to </ph>
+            <ph>
+               <codeph>/usr/local/unravel/etc/unravel.properties</codeph>:</ph>
+         </p>
+         <p/>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>Replace <ph>{airflow web url}</ph> with the full URL, starting with <codeph>
+               <ph>http://</ph>
+            </codeph>
+            <ph>. </ph>
+         </p>
+         <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.airflow.protocol=http
+com.unraveldata.airflow.server.url={airflow web url}
+com.unraveldata.airflow.available=true</codeblock>
+         <p>
+            <ph>Then restart </ph>
+            <ph>the <codeph>unravel_jcs2</codeph>
+            </ph>
+            <ph> daemon:</ph>
+         </p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_jcs2 restart</codeblock>
+         <p>
+            <ph>If You Use Https For Airflow Web UI </ph>
+            <ph>Access </ph>
+         </p>
+         <p>
+            <ph>Add the following 4 settings to </ph>
+            <ph>
+               <codeph>/usr/local/unravel/etc/unravel.properties</codeph>:</ph>
+         </p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>Replace <ph>{airflow web url}</ph> with the full URL, starting with <codeph>
+               <ph>http://</ph>
+            </codeph>
+            <ph>. </ph>
+         </p>
+         <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.airflow.server.url={airflow web url}
+com.unraveldata.airflow.available=true
+com.unraveldata.airflow.login.name={airflow web UI username}
+com.unraveldata.airflow.login.password={airflow web UI password}</codeblock>
+         <p>
+            <ph>Then restart </ph>
+            <ph>the <codeph>unravel_jcs2</codeph>
+            </ph>
+            <ph> daemon:</ph>
+         </p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_jcs2 restart</codeblock>
+         <p> </p>
+         <p>Changing the Range of Monitoring</p>
+         <p/>
+         <p>
+            <ph>By default, Unravel Server ingests all the workflows that started within the last 5 days. If you wish to
+               change the date range to the last </ph>
+            <codeph>
+               <i>
+                  <ph>x</ph>
+               </i>
+            </codeph>
+            <ph> days, do the following:</ph>
+         </p>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>Add the following configuration to </ph>
+                  <ph>
+                     <codeph>/usr/local/unravel/etc/unravel.properties</codeph>.</ph>
+                  <ph>
+                     <ph> Note there’s a “-” (minus sign) in the value.</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">airflow.look.back.num.days=-x</codeblock>
+            </li>
+            <li>
+               <p>
+                  <ph>Restart </ph>
+                  <ph>the <codeph>unravel_jcs2</codeph>
+                  </ph>
+                  <ph> daemon:</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_jcs2 restart</codeblock>
+            </li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

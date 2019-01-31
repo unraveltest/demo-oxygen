@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="FAGIIDCG">
+   <title>Part 2: Enable Additional Data Collection / Instrumentation for MapR </title>
+   <taskbody>
+      <context>
+         <p>Introduction</p>
+         <p>This topic explains how to <ph>enable additional data collection or instrumentation on the MapR converged
+               data platform</ph>. These instructions apply to Unravel Server v4.0. For older versions of Unravel
+            Server, contact Unravel Support.</p>
+         <b>Workflow Summary</b>
+         <ol>
+            <li>Enable additional instrumentation on Unravel Server's host.</li>
+            <li>Enter correct value for Hive Metastore, Resource Manager and Oozie properties.</li>
+            <li>Confirm that Unravel Web UI shows additional data.</li>
+            <li>Confirm and adjust the settings in <codeph>yarn-site.xml</codeph>.</li>
+            <li>
+               <p>Enable additional instrumentation on other hosts in the cluster.</p>
+            </li>
+         </ol>
+         <p>1. Enable Additional Instrumentation on Unravel Server's Host</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>Best practice is to enable instrumentation on Unravel Server itself for testing, practice, and demonstration
+            purposes, before enabling instrumentation on other gateway/edge/client machines that do real client work
+            (Hive queries, Map-Reduce jobs, Spark, and so on).</p>
+         <p>Run the shell script <codeph>unravel_mapr_setup.sh</codeph> on Unravel Server (on <b>host1</b> for
+            multi-host Unravel installs). This script installs Unravel Sensor (Hive Hook) on Unravel Server's host:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo yum install -y wget
+cd /usr/local/unravel/install_bin/unraveldata-clients
+sudo ./unravel_mapr_setup.sh install -y --unravel-server $UNRAVEL_HOST:3000 --spark-version SPARK_VERSION --hive-version HIVE_VERSION</codeblock>
+         <p>
+            <i>Note: In the code above, substitute valid values for:</i>
+         </p>
+         <ul>
+            <li>
+               <i>
+                  <ph>UNRAVEL_HOST_IP <ph>-</ph>
+                  </ph>fully qualified host name or IP address</i>
+            </li>
+            <li>
+               <i>
+                  <ph>
+                     <ph>
+                        <ph>SPARK_VERSION</ph> - target Spark version</ph>
+                  </ph>
+               </i>
+            </li>
+            <li>
+               <i>
+                  <ph>
+                     <ph>
+                        <ph>HIVE_VERSION</ph> - target Hive version</ph>
+                  </ph>
+               </i>
+            </li>
+         </ul>
+         <p>2. Enter correct value for Hive Metastore, Resource Manager, and Oozie properties</p>
+         <p>
+            <ph>Use <codeph>vi</codeph> to edit  <b>/usr/local/unravel/etc/unravel.properties</b>: un-comment relevant
+               respective Hive Metastore, Resource Manager, and Oozie properties: </ph>
+         </p>
+         <p/>
+         <codeblock outputclass="syntaxhighlighter-pre">#     hive metastore
+#
+### Uncomment and enter correct HM java.jdo.option.Connection properties ###
+#javax.jdo.option.ConnectionURL=jdbc:mysql://example.localdomain:3306/hive
+#javax.jdo.option.ConnectionURL=jdbc:postgresql://example.localdomain:7432/hive_zzzzzz
+#javax.jdo.option.ConnectionDriverName=com.mysql.jdbc.Driver
+#javax.jdo.option.ConnectionDriverName=org.postgresql.Driver
+#javax.jdo.option.ConnectionUserName=hiveuser?
+#javax.jdo.option.ConnectionPassword=???????
+
+#     optional selectivity of databases to analyze in metastore
+#com.unraveldata.metastore.databasePattern=s*|t*|d*
+
+#     Resource Manager (RM)
+#
+#     Enable https access to Resource Manager
+#https.protocols=TLSv1.2
+#
+### Uncomment and enter correct below properties RM ###
+#yarn.resourcemanager.webapp.address=http://example.localdomain:8088 
+
+#     Resource Manager username to login
+#yarn.resourcemanager.webapp.username=foo
+
+#     Resource Manager password to login
+#yarn.resourcemanager.webapp.password=?????
+
+#
+#     oozie
+#
+### Uncomment below oozie properties when oozie is used ###
+# oozie.server.url=http://&lt;oozie-hostname-IP-address&gt;:11000/oozie</codeblock>
+         <p>Then restart Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_all.sh restart</codeblock>
+         <p>3. Confirm that Unravel Web UI Shows Additional Data</p>
+         <p>Run a Hive job using a test script provided by Unravel Server:</p>
+         <p>
+            <image href="images/icons/emoticons/lightbulb_on.png" outputclass="emoticon emoticon-light-on">
+               <alt>(lightbulb)</alt>
+            </image> This is where you can see the effects of the instrumentation setup. Best practice is to run this
+            test script on Unravel Server rather than on a gateway/edge/client node. That way you can verify that
+            instrumentation is working first, and then enable instrumentation on other gateway/edge/client nodes.</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo -u $someUser /usr/local/unravel/install_bin/hive_test_simple.sh</codeblock>
+         <p>This script creates a uniquely named table in the default database, adds some data, runs a Hive query on it,
+            and then deletes the table.</p>
+         <p>
+            <i>Note: Replace $someUser with a user that can create tables in the default database. If you need to use a
+               different database, copy the script and edit it to change the target database. </i>
+         </p>
+         <p>This script runs the query twice using different workflow tags so you can clearly see the two different runs
+            of the same workflow in Unravel Web UI.</p>
+         <p/>
+         <p>4. Confirm and Adjust the Settings in <codeph>yarn-site.xml</codeph>
+         </p>
+         <p>Check specific properties only Unravel srv in
+               <codeph>/opt/mapr/hadoop/hadoop-2.7.0/etc/hadoop/yarn-site.xml</codeph> to be sure that these settings
+            are present (with your particular values for your Resource Manager web app address):</p>
+         <ul>
+            <li>
+               <p>
+                  <codeph>yarn.resourcemanager.webapp.address</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">&lt;property&gt;
+&lt;name&gt;yarn.resourcemanager.webapp.address&lt;/name&gt;
+&lt;value&gt;10.0.0.110:8088&lt;/value&gt;
+&lt;source&gt;yarn-site.xml&lt;/source&gt;
+&lt;/property&gt;</codeblock>
+            </li>
+            <li>
+               <p>
+                  <codeph>yarn.log-aggregation-enable</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">&lt;property&gt;
+&lt;name&gt;yarn.log-aggregation-enable&lt;/name&gt;
+&lt;value&gt;true&lt;/value&gt;
+&lt;description&gt;For log aggregations&lt;/description&gt;
+&lt;/property&gt;</codeblock>
+            </li>
+         </ul>
+         <p>5. Enable Additional Instrumentation on Other Hosts in the Cluster</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>
+            <ph>To instrument more servers, you can use the setup script we provide or see the effect it has and
+               replicate it using your own provisioning automation system. If you already have a way to customize and
+               deploy hive-site.xml, yarn-site.xml and user defined function jars, you can add the changes and jar from
+               Unravel to your existing mechanism.</ph>
+         </p>
+         <ul>
+            <li>Run the shell script <codeph>unravel_mapr_setup.sh</codeph> on each node of the cluster, just like it
+               was run on the Unravel server above.</li>
+            <li>Copy the newly edited (in the previous step 4) yarn-site.xml to all nodes.</li>
+            <li>Do a rolling-restart of HiveServer2</li>
+         </ul>
+      </context>
+   </taskbody>
+</task>

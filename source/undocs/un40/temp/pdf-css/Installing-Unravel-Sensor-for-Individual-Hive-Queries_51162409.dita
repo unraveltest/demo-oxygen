@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="task:1;4:92">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="title:1;5:11">Installing Unravel Sensor for Individual Hive Queries </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:3;23:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="xref:3;24:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:4;28:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:4;29:20">
+                  <xref href="Sensors_53900864.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="xref:4;30:54" type="topic"><?ditaot usertext?>Sensors</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:1;35:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:5;36:17">The MapReduce JVM sensor is a prepackaged distribution of JVM agent which enables collection of
+               additional information, including resource usage metrics. The sensor binary is distributed as </ph>
+            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeph:1;38:21">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:6;39:20">unravel-sensor-for-mapreduce-bin.zip</ph>
+            </codeph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:7;41:17">. This archive contains the following 4 jars:</ph>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ul:1;43:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:5;45:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:2;46:19">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeph:2;47:27">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:8;48:26">btrace-agent.jar</ph>
+                  </codeph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:6;53:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:3;54:19">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeph:3;55:27">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:9;56:26">btrace-boot.jar </ph>
+                  </codeph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:7;61:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:4;62:19">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeph:4;63:27">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:10;64:26">unravel-mr-boot.jar </ph>
+                  </codeph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:8;69:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:5;70:19">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeph:5;71:27">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:11;72:26">unravel-mr-sys.jar </ph>
+                  </codeph>
+               </p>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:6;78:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:12;79:17">When you enable this sensor, it uses the standard MapReduce profiling extension. You can copy and paste
+               the following configuration snippets for a quick bootstrap:</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:7;82:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:13;83:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:14;84:20">Option A: Installing the MapReduce JVM Sensor </ph>on Cloudera</ph>
+         </p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ol:2;86:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:9;88:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:8;89:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:15;90:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:16;91:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:17;92:29">Enable profiling:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:1;96:63">set mapreduce.task.profile=true;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:10;99:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:9;100:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:18;101:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:19;102:26">Select map and reduce profiles:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:2;105:63">set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:11;109:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:10;110:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:20;111:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:21;112:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:22;113:29">Enable the JVM agent for map and reduce tasks:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:23;117:114"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:11;118:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:24;119:23">Set </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:25;120:23">UNRAVEL_HOST_IP</ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:26;121:23">of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:3;123:63">set 
+mapreduce.task.profile.params=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:12;127:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:12;128:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:27;129:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:28;130:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:29;131:29">Enable the JVM agent for application master:</ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:4;135:63">set 
+yarn.app.mapreduce.am.command-opts=-javaagent:/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/btrace-agent.jar=systemClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-sys.jar,bootClassPath=/opt/cloudera/parcels/UNRAVEL_SENSOR/lib/java/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:13;140:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:30;141:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:31;142:20">Option B: Installing the MapReduce JVM Sensor on </ph>
+            </ph>Cloudera Manager for Hive</p>
+         <p outputclass="with-breadcrumbs" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:14;144:44">See <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="i:1;144:51">Optional - Configure YARN - MapReduce (MR) JVM Sensor Cluster-Wide</i>
+            in <xref href="50689256.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="xref:5;145:43" type="task"><?ditaot usertext?>Part 2: Install Unravel Sensor Parcel on CDH+CM</xref>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:15;146:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:32;147:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:33;148:20">Option C: Installing the MapReduce JVM Sensor on</ph> HDFS</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:16;150:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:34;151:17">Change your <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeph:6;151:37">*init</codeph> file as follows:</ph>
+         </p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ol:3;153:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:13;155:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:17;156:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:35;157:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:36;158:26">Set the path to the JVM sensor archive:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:5;161:63">set mapreduce.job.cache.archives=path_in_hdfs/unravel-sensor-for-mapreduce-bin.zip;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:14;164:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:18;165:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:37;166:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:38;167:26">Enable profiling:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:6;170:63">set mapreduce.task.profile=true;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:15;173:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:19;174:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:39;175:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:40;176:26">Select map and reduce profiles:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:7;179:63">set mapreduce.task.profile.maps=0-5;
+set mapreduce.task.profile.reduces=0-5;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:16;183:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:20;184:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:41;185:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:42;186:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:43;187:29">Enable the JVM agent for map and reduce tasks</ph>:</ph>
+                  </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:44;190:114"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:21;191:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:45;192:23">Set </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:46;193:23">UNRAVEL_HOST_IP </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:47;194:23">of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:8;196:63">set 
+mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:17;200:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:22;201:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:48;202:23">Enable the JVM agent for application master:</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:9;204:63">set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:23;208:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:49;209:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:50;210:20">Option D: Installing the MapReduce JVM Sensor on the </ph>Local File System</ph>
+         </p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ol:4;212:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:18;214:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:24;215:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:51;216:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:52;217:26">Add the JVM sensor archive to the PATH environment variable.</ph>
+                  </ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:19;222:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:25;223:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:53;224:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:54;225:26">Enable profiling:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:10;228:63">set mapreduce.task.profile=true;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:20;231:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:26;232:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:55;233:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:56;234:26">Select map and reduce profiles:</ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:11;237:63">set mapreduce.task.profile.maps=0-5;set mapreduce.task.profile.reduces=0-5;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:21;240:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:27;241:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:57;242:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:58;243:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:59;244:29">Enable the JVM agent for map and reduce tasks</ph>:</ph>
+                  </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:60;247:114"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:28;248:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:61;249:23">Set </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:62;250:23">UNRAVEL_HOST_IP </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:63;251:23">of your Unravel gateway server. Port #4043 is where Unravel LR server is running. </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:12;253:63">set mapreduce.task.profile.params=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="li:22;256:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:29;257:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="ph:64;258:23">Enable the JVM agent for application master.</ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="codeblock:13;260:63">set yarn.app.mapreduce.am.command-opts=-javaagent:unravel-sensor-for-mapreduce-bin.zip/btrace-agent.jar=systemClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-sys.jar,bootClassPath=unravel-sensor-for-mapreduce-bin.zip/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=&lt;UNRAVEL_HOST_IP&gt;:4043 -Dcom.sun.btrace.FileClient.flush=-1;</codeblock>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:30;264:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:31;265:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="p:32;266:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="image:1;267:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="alt:1;268:19"/>
+         </image>
+         <xref href="media/51162413.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita" xtrc="xref:6;270:56"><?ditaot usertext?>logo_small.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

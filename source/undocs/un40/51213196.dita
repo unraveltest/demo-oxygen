@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" >
+<topic xml:lang="en-us" id="FBCBDBJG">
+   <title>Part 3: Additional Topics for HDP </title>
+   <body>
+
+
+
+
+
+
+      <ul outputclass="childpages-macro">
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50689913/Creating+Active+Directory+Kerberos+Principals+and+Keytabs+for+Unravel"
+               scope="external" format="html">Creating Active Directory Kerberos Principals and
+               Keytabs for Unravel</xref>
+         </li>
+
+         <li>
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/53900864/Sensors"
+               scope="external" format="html">Sensors</xref>
+            <ul outputclass="childpages-macro">
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/53908545/Installing+Unravel+Sensor+for+Individual+Applications+Submitted+Through+spark-shell"
+                     scope="external" format="html">Installing Unravel Sensor for Individual
+                     Applications Submitted Through spark-shell</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51977040/Installing+Unravel+Sensor+for+Individual+Applications+Submitted+Through+spark-submit"
+                     scope="external" format="html">Installing Unravel Sensor for Individual
+                     Applications Submitted Through spark-submit</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162409/Installing+Unravel+Sensor+for+Individual+Hive+Queries"
+                     scope="external" format="html">Installing Unravel Sensor for Individual Hive
+                     Queries</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li>
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/53900905/Workflows"
+               scope="external" format="html">Workflows</xref>
+            <ul outputclass="childpages-macro">
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/52961844/Monitoring+Airflow+Workflows"
+                     scope="external" format="html">Monitoring Airflow Workflows</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51161894/Monitoring+Oozie+Workflows"
+                     scope="external" format="html">Monitoring Oozie Workflows</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162078/Tagging+Workflows"
+                     scope="external" format="html">Tagging Workflows</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/54044915/Custom+Configurations"
+               scope="external" format="html">Custom Configurations</xref>
+            <ul outputclass="childpages-macro">
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50672747/Adding+More+Admins+to+Unravel+Web+UI"
+                     scope="external" format="html">Adding More Admins to Unravel Web UI</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50690195/Configuring+Multiple+Hosts+for+Unravel+Server"
+                     scope="external" format="html">Configuring Multiple Hosts for Unravel
+                     Server</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162494/Creating+Multiple+Workers+for+High+Volume+Data"
+                     scope="external" format="html">Creating Multiple Workers for High Volume
+                     Data</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50688848/Defining+a+Custom+TC+Port"
+                     scope="external" format="html">Defining a Custom TC Port</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162161/Integrating+LDAP+Authentication+for+Unravel+Web+UI"
+                     scope="external" format="html">Integrating LDAP Authentication for Unravel Web
+                     UI</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51757832/Setting+Retention+Time+in+Unravel+Server"
+                     scope="external" format="html">Setting Retention Time in Unravel Server</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162243/Setting+Up+Email+for+Auto+Actions+and+Collaboration"
+                     scope="external" format="html">Setting Up Email for Auto Actions and
+                     Collaboration</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51162326/Connecting+to+a+Hive+Metastore"
+               scope="external" format="html">Connecting to a Hive Metastore</xref>
+         </li>
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/52728267/Creating+an+AWS+RDS+CloudWatch+Alarm+for+FreeStorageSpace"
+               scope="external" format="html">Creating an AWS RDS CloudWatch Alarm for
+               FreeStorageSpace</xref>
+         </li>
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/54048480/Creating+Application+Tags"
+               scope="external" format="html">Creating Application Tags</xref>
+         </li>
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50881320/Troubleshooting"
+               scope="external" format="html">Troubleshooting</xref>
+            <ul outputclass="childpages-macro">
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/52960296/Running+Verification+Scripts+and+Benchmarks"
+                     scope="external" format="html">Running Verification Scripts and
+                     Benchmarks</xref>
+               </li>
+
+               <li>
+                  <xref
+                     href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50689210/Sending+Diagnostics+to+Unravel+Support"
+                     scope="external" format="html">Sending Diagnostics to Unravel Support</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/50688928/Uninstalling+Unravel+Server"
+               scope="external" format="html">Uninstalling Unravel Server</xref>
+         </li>
+
+         <li>
+            <xref
+               href="https://unraveldata.atlassian.net/wiki/spaces/UN40/pages/51854263/Upgrading+Unravel+Server"
+               scope="external" format="html">Upgrading Unravel Server</xref>
+         </li>
+
+      </ul>
+
+
+
+   </body>
+</topic>

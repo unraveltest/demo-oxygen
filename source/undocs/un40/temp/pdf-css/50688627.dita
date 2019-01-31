@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FAGIIGCH" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="topic:1;4:39">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="title:1;5:11">Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole
+      Clusters </title>
+   <body class="- topic/body " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="body:1;7:10">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ol:1;8:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:1;10:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ph:1;11:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="xref:1;12:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:2;16:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ph:2;17:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="xref:2;18:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="p:1;25:10">This guide is compatible with</p>
+      <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ul:1;26:11">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:3;28:14">
+            <p outputclass="_mce_tagged_br" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="p:2;29:45">Amazon EMR 3.4 - 4.7</p>
+         </li>
+
+      </ul>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="section:1;33:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="title:2;34:17">Ordered Steps</title>
+      </section>
+      <ul outputclass="content-by-label" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ul:2;36:42">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:4;38:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ph:3;39:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50689611/Part+1%3A+Install+Unravel+Server+for+Amazon+EMR+or+Qubole+Cluster" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="xref:3;42:30"><?ditaot usertext?>Part 1: Install Unravel Server for Amazon EMR or Qubole Cluster</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:5;45:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ph:4;46:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50689789" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="xref:4;47:73"><?ditaot usertext?>Part 2: Install Unravel Hive
+               Sensor on Qubole Hadoop2/Hive Cluster</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:6;51:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ph:5;52:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/52567661/Part+3%3A+Install+Unravel+Spark+Sensor+on+New+or+Existing+Qubole+Spark+Cluster" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="xref:5;55:30"><?ditaot usertext?>Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark
+               Cluster</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:7;59:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ph:6;60:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50876309" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="xref:6;61:73"><?ditaot usertext?>Part 4: Modify Amazon EMR
+               Cluster Bootstrap/Setup</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="li:8;65:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="ph:7;66:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/51213131/Part+5%3A+Additional+Topics+for+EMR+or+Qubole" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="xref:7;69:30"><?ditaot usertext?>Part 5: Additional Topics for EMR or Qubole</xref>
+         </li>
+
+      </ul>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="p:3;73:11"/>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/50688627.dita" xtrc="p:4;74:11"/>
+   </body>
+</topic>

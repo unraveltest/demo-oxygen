@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" >
+<topic xml:lang="en-us" id="index">
+   <title> Space Details: </title>
+   <titlealts>
+      <searchtitle>UN40 (Unravel 4.0-4.1)</searchtitle>
+   </titlealts>
+   <body>
+
+
+
+
+
+
+      <table outputclass="confluenceTable">
+         <tgroup cols="2">
+            <colspec colname="col1"/>
+            <colspec colname="col2"/>
+            <tbody>
+               <row>
+
+                  <entry outputclass="confluenceTh">Key</entry>
+
+                  <entry outputclass="confluenceTd">UN40</entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTh">Name</entry>
+
+                  <entry outputclass="confluenceTd">Unravel 4.0-4.1</entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTh">Description</entry>
+
+                  <entry outputclass="confluenceTd">Unravel 4.0-4.1 documentation</entry>
+
+               </row>
+               <row>
+
+                  <entry outputclass="confluenceTh">Created by</entry>
+
+                  <entry outputclass="confluenceTd">udadmin (Feb 17, 2017)</entry>
+
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+
+      <!--A BR tag was used here in the original source.-->
+      <!--A BR tag was used here in the original source.-->
+
+
+
+      <section>
+         <title outputclass="pageSectionTitle">Available Pages:</title>
+      </section>
+
+
+      <ul outputclass="toc">
+
+         <li>
+            <xref href="Unravel-4.0-4.1_50672724.dita">Unravel 4.0-4.1</xref>
+            <image href="images/icons/contenttypes/home_page_16.png"/>
+            <ul>
+
+               <li>
+                  <xref href="Overview_53899450.dita">Overview</xref>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="50688254.dita">Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH),
+                     with Cloudera Manager (CM)</xref>
+                  <ul>
+
+                     <li>
+                        <xref href="50792782.dita">Part 1: Install Unravel Server on CDH+CM</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="50689256.dita">Part 2: Install Unravel Sensor Parcel on CDH+CM</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="51212745.dita">Part 3: Additional Topics for CDH</xref>
+                     </li>
+
+                  </ul>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="Installation-Guide-for-MapR_50961894.dita">Installation Guide for MapR</xref>
+                  <ul>
+
+                     <li>
+                        <xref href="50690385.dita">Part 1: Install Unravel Server on MapR</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="50688326.dita">Part 2: Enable Additional Data Collection / Instrumentation for
+                           MapR</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="51213065.dita">Part 3: Additional Topics for MapR</xref>
+                     </li>
+
+                  </ul>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="50688627.dita">Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole
+                     Clusters</xref>
+                  <ul>
+
+                     <li>
+                        <xref href="50689611.dita">Part 1: Install Unravel Server for Amazon EMR or Qubole
+                           Cluster</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="50689789.dita">Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive
+                           Cluster</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="52567661.dita">Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark
+                           Cluster</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="50876309.dita">Part 4: Modify Amazon EMR Cluster Bootstrap/Setup</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="51213131.dita">Part 5: Additional Topics for EMR or Qubole</xref>
+                     </li>
+
+                  </ul>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="50688443.dita">Installation Guide for Hortonworks Data Platform (HDP)</xref>
+                  <ul>
+
+                     <li>
+                        <xref href="50672736.dita">Part 1: Install Unravel Server on HDP</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="50689477.dita">Part 2: Enable Additional Data Collection / Instrumentation for
+                           HDP</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="51213196.dita">Part 3: Additional Topics for HDP</xref>
+                     </li>
+
+                  </ul>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="User-Guide_50687944.dita">User Guide</xref>
+                  <ul>
+
+                     <li>
+                        <xref href="Getting-Started_53157411.dita">Getting Started</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="The-Operations-Tab_53165661.dita">The Operations Tab</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="The-Applications-Tab_53166005.dita">The Applications Tab</xref>
+                        <ul>
+
+                           <li>
+                              <xref href="Resource-Metrics_53232237.dita">Resource Metrics</xref>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="The-Data-Tab_53166350.dita">The Data Tab</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="53167025.dita">Setting Up Auto Actions (Alerts)</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Use-Cases_53314582.dita">Use Cases</xref>
+                        <ul>
+
+                           <li>
+                              <xref href="Detecting-Resource-Contention-in-the-Cluster_51745187.dita">Detecting Resource
+                                 Contention in the Cluster</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Identifying-Rogue-Applications_51744637.dita">Identifying Rogue
+                                 Applications</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Optimizing-the-Performance-of-Spark-Applications_52494973.dita">Optimizing the
+                                 Performance of Spark Applications</xref>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                  </ul>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="Unravel-Server-Reference_50690507.dita">Unravel Server Reference</xref>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="Advanced-Topics_50688158.dita">Advanced Topics</xref>
+                  <ul>
+
+                     <li>
+                        <xref href="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913.dita"
+                           >Creating Active Directory Kerberos Principals and Keytabs for Unravel</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Sensors_53900864.dita">Sensors</xref>
+                        <ul>
+
+                           <li>
+                              <xref
+                                 href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.dita"
+                                 >Installing Unravel Sensor for Individual Applications Submitted Through
+                                 spark-shell</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref
+                                 href="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040.dita"
+                                 >Installing Unravel Sensor for Individual Applications Submitted Through
+                                 spark-submit</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.dita"
+                                 >Installing Unravel Sensor for Individual Hive Queries</xref>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Workflows_53900905.dita">Workflows</xref>
+                        <ul>
+
+                           <li>
+                              <xref href="Monitoring-Airflow-Workflows_52961844.dita">Monitoring Airflow
+                                 Workflows</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Monitoring-Oozie-Workflows_51161894.dita">Monitoring Oozie Workflows</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Tagging-Workflows_51162078.dita">Tagging Workflows</xref>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Custom-Configurations_54044915.dita">Custom Configurations</xref>
+                        <ul>
+
+                           <li>
+                              <xref href="Adding-More-Admins-to-Unravel-Web-UI_50672747.dita">Adding More Admins to
+                                 Unravel Web UI</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita">Configuring
+                                 Multiple Hosts for Unravel Server</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Creating-Multiple-Workers-for-High-Volume-Data_51162494.dita">Creating
+                                 Multiple Workers for High Volume Data</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Defining-a-Custom-TC-Port_50688848.dita">Defining a Custom TC Port</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161.dita">Integrating
+                                 LDAP Authentication for Unravel Web UI</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Setting-Retention-Time-in-Unravel-Server_51757832.dita">Setting Retention Time
+                                 in Unravel Server</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.dita">Setting Up
+                                 Email for Auto Actions and Collaboration</xref>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Connecting-to-a-Hive-Metastore_51162326.dita">Connecting to a Hive Metastore</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.dita">Creating an
+                           AWS RDS CloudWatch Alarm for FreeStorageSpace</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Creating-Application-Tags_54048480.dita">Creating Application Tags</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Troubleshooting_50881320.dita">Troubleshooting</xref>
+                        <ul>
+
+                           <li>
+                              <xref href="Running-Verification-Scripts-and-Benchmarks_52960296.dita">Running
+                                 Verification Scripts and Benchmarks</xref>
+                           </li>
+
+                        </ul>
+                        <ul>
+
+                           <li>
+                              <xref href="Sending-Diagnostics-to-Unravel-Support_50689210.dita">Sending Diagnostics to
+                                 Unravel Support</xref>
+                           </li>
+
+                        </ul>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Uninstalling-Unravel-Server_50688928.dita">Uninstalling Unravel Server</xref>
+                     </li>
+
+                  </ul>
+                  <ul>
+
+                     <li>
+                        <xref href="Upgrading-Unravel-Server_51854263.dita">Upgrading Unravel Server</xref>
+                     </li>
+
+                  </ul>
+               </li>
+
+            </ul>
+            <ul>
+
+               <li>
+                  <xref href="53900010.dita">Release Notes: Version 4.1.941</xref>
+               </li>
+
+            </ul>
+         </li>
+
+      </ul>
+
+
+
+   </body>
+</topic>

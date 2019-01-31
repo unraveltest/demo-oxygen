@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Optimizing-the-Performance-of-Spark-Applications_52494973" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="concept:1;4:90">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="title:1;5:11">Optimizing the Performance of Spark Applications </title>
+   <conbody class="- topic/body  concept/conbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="conbody:1;6:13">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ol:1;7:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:1;9:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:1;10:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:1;11:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:2;15:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:2;16:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:2;17:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:3;21:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:3;22:17">
+               <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:3;23:54" type="topic"><?ditaot usertext?>User Guide</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:4;27:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:4;28:17">
+               <xref href="Use-Cases_53314582.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:4;29:53"><?ditaot usertext?>Use Cases</xref>
+            </ph>
+         </li>
+
+      </ol>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:1;34:10">Unravel Web UI makes it easy for you to identify underperforming Spark apps: click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="b:1;34:96">Operations</b> |
+            <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="b:2;35:16">Dashboard</b>, and scroll down to <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="b:3;35:53">INEFFICIENT APPLICATIONS</b>.</p>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:2;36:11"/>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:3;37:10">The following case illustrates the performance of a Spark app before and after tuning it based on Unravel's
+         performance analysis:</p>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:4;39:11"/>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="section:1;40:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="title:2;41:17">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:5;42:17">Before Tuning</ph>
+         </title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:5;44:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:6;45:17">Before tuning, Unravel Web UI indicated that this app had a running duration of 34 min 11sec:</ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:6;47:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:7;48:17">
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:8;49:99">
+                  <image href="media/52567511.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="image:1;50:93"/>
+               </ph>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:7;54:13">In addition, Unravel Web UI captured details as shown in the following events:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ul:1;55:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:5;57:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:8;58:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:9;59:23">LOW UTILIZATION OF MEMORY RESOURCES</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:6;63:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:9;64:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:10;65:23">LOW UTILIZATION OF SPARK STORAGE MEMORY</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:7;69:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:10;70:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:11;71:23">CONTENTION FOR CPU RESOURCES</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:8;75:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:11;76:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:12;77:23">OPPORTUNITY FOR RDD CACHING</ph>
+               </p>
+               <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ul:2;79:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:9;81:23">
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:12;82:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:13;83:29">Save up to 9 minutes by caching at </ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:14;84:29">PetFoodAnalysisCaching.scala:129, </ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:15;85:29">with StorageLevel.MEMORY_AND_DISK_SER</ph>
+                     </p>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:10;92:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:13;93:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:16;94:23">TOO FEW PARTITIONS W.R.T. AVAILABLE PARALLELISM</ph>
+               </p>
+               <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ul:3;96:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:11;98:23">
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:14;99:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:17;100:29">Change executor instances from 2 to 127, partitions from 2 to 289, adjust driver memory (to </ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:18;101:29">1161908224)</ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:19;102:29"> and yarn overhead (to 819 MB).</ph>
+                     </p>
+                  </li>
+
+               </ul>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:15;110:13"> </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="section:2;112:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="title:3;113:17">After Tuning</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:16;114:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:20;115:17">After tuning, <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:21;115:35">Unravel Web UI indicates that this app now has a running duration of <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:22;115:108">1min
+                     19sec</ph>:</ph>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:17;119:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:23;120:96">
+               <image href="media/52495353.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="image:2;121:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:18;124:14"/>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ul:4;125:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:12;127:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:19;128:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:24;129:23">Unravel Web UI displays these events:</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:13;133:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:20;134:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:25;135:23">LOW UTILIZATION OF MEMORY RESOURCES</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:14;139:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:21;140:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:26;141:23">LOW UTILIZATION OF SPARK STORAGE MEMORY</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:15;145:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:22;146:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:27;147:23">LARGE IDLE TIME FOR EXECUTORS</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:16;151:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:23;152:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:28;153:23">TOO FEW PARTITIONS W.R.T. AVAILABLE PARALLELISM</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="li:17;157:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:24;158:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="ph:29;159:23">Change executor instances from 127 to 138</ph>
+               </p>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="p:25;164:14"/>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="section:3;166:16">
+         <title outputclass="pageSectionTitle" class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="title:4;167:48">Attachments:</title>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="image:3;168:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="alt:1;169:19"/>
+         </image>
+         <xref href="media/52494977.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:5;171:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.43.57 PM.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="image:4;172:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="alt:2;173:19"/>
+         </image>
+         <xref href="media/52494980.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:6;175:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.43.07 PM.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="image:5;176:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="alt:3;177:19"/>
+         </image>
+         <xref href="media/52494983.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:7;179:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.41.20 PM.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="image:6;180:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="alt:4;181:19"/>
+         </image>
+         <xref href="media/52495353.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:8;183:56"><?ditaot usertext?>gui_spark_app_details_after.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="image:7;184:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="alt:5;185:19"/>
+         </image>
+         <xref href="media/52567511.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Optimizing-the-Performance-of-Spark-Applications_52494973.dita" xtrc="xref:9;187:56"><?ditaot usertext?>gui_spark_app_details_before.png</xref>
+      </section>
+   </conbody>
+</concept>

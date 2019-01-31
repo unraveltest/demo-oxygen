@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Configuring-Multiple-Hosts-for-Unravel-Server_50690195" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="task:1;4:84">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="title:1;5:11">Configuring Multiple Hosts for Unravel Server </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:3;23:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="xref:3;24:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:4;28:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:4;29:20">
+                  <xref href="Custom-Configurations_54044915.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="xref:4;30:68" type="topic"><?ditaot usertext?>Custom Configurations</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:1;35:13">This topic explains how to configure multiple hosts for Unravel Server. This is useful
+            for volume/throughput/reliability requirements.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:2;37:13">Prerequisites</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ul:1;38:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:5;40:17">If you use Kerberos, set that up first on <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:1;40:62">host1</b>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:6;42:17">Install the same Unravel RPM on one or two additional hosts, hereafter referred to
+               as <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:2;43:22">host2</b> and <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:3;43:39">host3</b>.  This distinction is important because certain
+               instructions only apply to specific hosts.</li>
+
+         </ul>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:5;48:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:3;49:13">The internal DNS or IP address of a host is specific to your installation.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:6;51:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:4;52:13">Each host is assigned unique roles identified by daemon names that start with
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:1;53:24">unravel_</codeph>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:5;54:13">Expected Result</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:6;55:13">When you complete the steps below, the expected result is</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ul:2;56:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:7;58:17">Multiple Unravel hosts work together in an ensemble.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:8;60:17">Each host has a unique role, and is identified by a daemon named
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:2;61:27">unravel_xyz</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:3;61:59">unravel_xyz_<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="i:1;61:74">n</i>
+               </codeph> (where <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="i:2;62:36">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:4;63:27">n</codeph>
+               </i> is 1, 2, 3,...), which runs on exactly one host.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:9;66:17">Unravel Web UI (<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:5;66:41">unravel_tc</codeph>) runs on <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:4;66:73">host1</b>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:10;68:17">Port 4043 <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:6;68:35">unravel_lr</codeph> runs on <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:5;68:66">host2</b>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:11;70:17">If you do not use an external database (db), <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:7;70:70">unravel_db</codeph> runs on
+                  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:6;71:22">host1</b>. However, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:8;71:50">unravel_db</codeph> can also run harmlessly if an
+               external db is used.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:12;74:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:7;75:52">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:9;76:27">/usr/local/unravel/etc/unravel.properties</codeph> is identical on all
+                  Unravel hosts in the ensemble.</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:7;79:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:8;80:19">The file <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:10;80:36">unravel.properties</codeph> is never changed by an RPM upgrade
+                  because it contains site-specific information, but some one-time changes  occur
+                  when setting up multiple hosts. The file <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:11;82:68">unravel.properties</codeph> must
+                  be identical on all hosts, so if you are using data center automation like Puppet,
+                  Chef, Salt, Ansible, CloudFormation, Cfengine, and so on, you must maintain one
+                  "golden" <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:12;85:36">unravel.properties</codeph> per Unravel ensemble. After you
+                  modify <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:13;86:34">unravel.properties</codeph> as described below, you must update the
+                  "golden" <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:14;87:36">unravel.properties</codeph> file for your site.</p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:13;90:17">Daemons are enabled/disabled via <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:15;90:58">chkconfig</codeph>.
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:16;91:27">chkconfig</codeph> sets symbolic links which are persistent across Unravel
+               Server RPM upgrades.</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:9;95:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:10;96:13">1. Stop Unravel Server</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:11;97:13">On each Unravel host, run this command:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:1;98:57">sudo /etc/init.d/unravel_all.sh stop</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:12;99:13">2. Modify <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:17;99:31">unravel.properties</codeph> on host1</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ol:2;100:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:14;102:17">Pick a machine to be <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:7;102:41">host1</b>, where the Unravel Web UI will run.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:15;104:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:13;105:52">
+                  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:8;106:22">If the bundled db is in use</b>, edit
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:18;107:30">/usr/local/unravel/etc/unravel.properties</codeph> on <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:9;107:87">host1</b> to
+                  change:</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:8;110:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:14;111:19">Replace <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:9;111:31">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:19;112:30">127.0.0.1</codeph>
+                  </ph> with your LAN IP address or fully qualified hostname, replace <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:10;113:91">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:20;114:30">3316</codeph>
+                  </ph> with your port number,  and replace <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:11;115:65">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:21;116:30">unravel_mysql_prod</codeph>
+                  </ph> with your database name.</p>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:15;118:19">To find your fully qualified hostname, type <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:22;118:71">hostname -I</codeph> at the OS
+                  prompt.</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:2;120:63">unravel.jdbc.url=jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod</codeblock>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:16;124:13">
+            <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:10;125:16">2. Copy host1's <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:23;125:40">unravel.properties</codeph> to Other Hosts</b>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:17;127:13">
+            <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:11;128:17"/>
+         </p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ol:3;130:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:16;132:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:18;133:52">Copy
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:24;134:30">/usr/local/unravel/etc/unravel.properties</codeph> and
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:25;135:30">/usr/local/unravel/etc/unravel.ext.sh</codeph> from <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:12;135:85">host1</b> to
+                     <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:13;136:25">host2</b> (and <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:14;136:43">host3</b>, if you are using three hosts). For example,</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:3;137:63"># host1
+scp /usr/local/unravel/etc/unravel.properties host2:/usr/local/unravel/etc/
+# host1
+scp /usr/local/unravel/etc/unravel.ext.sh host2:/usr/local/unravel/etc/</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:17;143:17">Verify that the ownership of <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:26;143:54">unravel.properties</codeph> and
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:27;144:27">unravel.ext.sh</codeph> is <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:28;144:62">unravel:unravel</codeph>.</li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:19;147:14"/>
+         <p outputclass="title" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:20;148:33">Important Note</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:12;150:107"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:21;151:13">The scripts invoked below will make an identical change to the
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:29;152:24">unravel.properties</codeph> file on each machine.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:22;153:13">3. Assign Roles</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:23;154:13"> Use these scripts to assign unique
+            roles to the hosts. To reduce the chance of errors, the command line arguments are the
+            same on each host, but notice that the script name is different. The arguments are the
+            hostnames IP addresses of the hosts in the ensemble.</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ul:3;158:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:18;160:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:24;161:19">For a 2-host ensemble (substitute <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:13;161:57">host</ph>):</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:4;162:63"># host1
+sudo /usr/local/unravel/install_bin/switch_to_1of2.sh\ 
+host1 host2 
+# host2
+sudo /usr/local/unravel/install_bin/switch_to_2of2.sh\ 
+host1 host2</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:19;170:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:25;171:52">For a 3-host ensemble (substitute
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:14;172:23">host</ph>):</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:5;173:63"># host1 sudo /usr/local/unravel/install_bin/switch_to_1of3.sh\ 
+host1 host2 host3
+# host2 sudo /usr/local/unravel/install_bin/switch_to_2of3.sh\ 
+host1 host2 host3
+# host3 sudo /usr/local/unravel/install_bin/switch_to_3of3.sh\ 
+host1 host2 host3</codeblock>
+            </li>
+
+         </ul>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ph:15;183:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:26;184:13">These scripts establish the roles each host plays in the ensemble. The main effect is to
+            assign specific Unravel logical daemons to one host and only one host. 
+             Note that some daemons have names
+            like <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:30;187:26">unravel_<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="i:3;187:37">xyz</i>_1</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:31;187:67">unravel_<i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="i:4;187:78">xyz</i>_2</codeph>, and
+            so on. The entire name with the instance numeric suffix is set to run on one host in the
+            ensemble. In some cases, multiple <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="i:5;189:50">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:32;190:24">xyz</codeph>
+            </i> numeric instances run on one machine, but the overall name with suffix runs on one
+            host only. 
+             The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:33;193:79">switch_to_*</codeph>
+            scripts change <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:34;194:36">unravel.properties</codeph> in a coordinated fashion and also
+            create a file, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:35;195:36">
+               <xref href="http://unravel.id" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="xref:5;197:47"><?ditaot usertext?>unravel.id</xref>.properties</codeph>, to hold the
+            integer property indicating which role the particular machine has (1, 2, or 3).</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:27;199:13">4. Set Up Zookeeper and Kafka</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:28;200:13">Assign Kafka Partitions</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:29;201:13">Kafka partition assignment (for 3 host installs) is done by evenly distributing a topic
+            over the hosts that exist at topic create time. Topics must be created anew when a new
+            host is added in order to have proper distribution.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:30;204:13">Redistribute Zookeeper Topics</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:31;205:13">Perform these steps, <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="i:6;205:37">in sequential order, on the specific hosts</i> as indicated by
+            the prompt name. Skip <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:15;206:38">host3</b> if you are only using 2 hosts for Unravel Server:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="ul:4;207:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:20;209:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:32;210:19">Stop all and clear Zookeeper and Kafka data areas on each host:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:6;211:63"># host1
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host2
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host3
+sudo /usr/local/unravel/install_bin/kafka_clear.sh</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:21;219:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:33;220:52">Start up Zookeeper ensemble:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:7;221:63"># host1 
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host2
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host3
+sudo /etc/init.d/unravel_all.sh start-zk</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:22;229:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:34;230:52">Wait 15sec for Zookeeper quorum to settle:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:8;231:63">sleep 15</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:23;234:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:35;235:52">Start up Kafka ensemble:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:9;236:63"># host1
+sudo /etc/init.d/unravel_all.sh start-k 
+# host2
+sudo /etc/init.d/unravel_all.sh start-k 
+# host3
+sudo /etc/init.d/unravel_all.sh start-k</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:24;244:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:36;245:52">Wait 10sec for Kafka coordination:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:10;246:63">sleep 10</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="li:25;249:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:37;250:52">Create the Kafka topics (only on one host):</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:11;251:63"># host1 
+sudo /usr/local/unravel/install_bin/kafka_create_topics.sh</codeblock>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:38;256:13">5. Start Unravel Server</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:39;257:13">Finish multi-host installation by starting up Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeblock:12;258:57"># host1
+sudo /etc/init.d/unravel_all.sh start 
+# host1
+echo "http://$(hostname -f):3000/" 
+# host2
+sudo /etc/init.d/unravel_all.sh start</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:40;264:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:41;265:13">6. Edit Hive-site Snippet for Hive-Hook</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:42;266:13">The port 4043 is on <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:16;266:36">host2</b> and that means the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:36;266:73">hive-site.xml</codeph> file
+            changes needed for Unravel hive-hook are in
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:37;268:24">/usr/local/unravel/hive-hook/hive-site.xml.snip</codeph> on <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:17;268:87">host2</b>. If
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="codeph:38;269:24">hive-site.xml</codeph> was already configured for <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:18;269:77">host1</b>, then modify
+            it for <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="b:19;270:23">host2</b>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:43;271:13">7. Snapshot unravel.properties as new golden file</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:44;272:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:45;273:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:46;274:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="p:47;275:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="image:1;276:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="alt:1;277:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="xref:6;280:14"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="image:2;281:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="alt:2;282:19"/>
+         </image>
+         <xref href="media/51229596.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Configuring-Multiple-Hosts-for-Unravel-Server_50690195.dita" xtrc="xref:7;284:56"><?ditaot usertext?>logo_small.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

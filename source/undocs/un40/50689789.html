@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Part 2: Install Unravel Hive Sensor on Qubole Hadoop2/Hive
+            Cluster</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="50688627.html">Installation Guide for Amazon Elastic
+                                        MapReduce (Amazon EMR) and Qubole Clusters</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Part 2: Install Unravel Hive Sensor
+                            on Qubole Hadoop2/Hive Cluster </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    
+                    <div id="main-content" class="wiki-content group">
+                        <div class="confluence-information-macro confluence-information-macro-tip"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Follow
+                                    these steps only if you have a Qubole-based Hadoop2/Hive
+                                    cluster.</p><p>Highlighted text indicates where you must
+                                    substitute your particular values.</p></div></div><h2
+                            id="Part2:InstallUnravelHiveSensoronQuboleHadoop2/HiveCluster-Introduction"
+                            >Introduction</h2><p>This topic explains how to install Unravel Sensor
+                            (Hive Hook) on Qubole-based Hadoop2/Hive clusters. Unravel Sensor
+                            collects information about Hive queries in Hadoop and pushes it to
+                            Unravel Server.</p><div class="panel"
+                            style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"
+                                ><div class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Workflow Summary</b></div><div class="panelContent">
+                                <ol>
+                                    <li>Step 1 is a one-time only step.</li>
+                                    <li>If the Qubole cluster already exists (is already running),
+                                        do a &quot;setup&quot; procedure: follow the steps 3 to 5 in
+                                        Hive Bootstrap and Unravel Hive Hook Sensor <a
+                                            href="#Part2:InstallUnravelHiveSensoronQuboleHadoop2/HiveCluster-hivehooksetupexistingcluster"
+                                            >Setup.</a></li>
+                                </ol>
+                            </div></div><p><br /></p><h2
+                            id="Part2:InstallUnravelHiveSensoronQuboleHadoop2/HiveCluster-HiveBootstrapandUnravelHiveHookSensorSetup:"
+                            >Hive Bootstrap and Unravel Hive Hook Sensor Setup:</h2><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"
+                                    ><p>{location_in_s3_where_unravel_jar_folder} - is the s3
+                                    location where the unravel hive hook jar will be
+                                        accessed</p><p><span>{</span>Unravel_Hostname_IP} - is the
+                                    Unravel server's fully qualified internal IP address, preferably
+                                    the LAN (private) IP if in the same availability
+                            zone</p></div></div><ol>
+                            <li><p class="auto-cursor-target">Add a one-time Unravel Hive Bootstrap
+                                    into Qubole's control panel on the left-hand side in the
+                                    &quot;Hive Bootstrap&quot; section, as follows:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">add jar  s3n://{location_in_s3_where_unravel_jar_folder} /unravel-hive-0.13.0-hook.jar;
+
+set com.unraveldata.hive.hdfs.dir=/user/unravel/HOOK_RESULT_DIR;
+set hive.exec.driver.run.hooks=com.unraveldata.dataflow.hive.hook.HiveDriverHook;
+set hive.exec.pre.hooks=com.unraveldata.dataflow.hive.hook.HivePreHook;
+set hive.exec.post.hooks=com.unraveldata.dataflow.hive.hook.HivePostHook;
+set hive.exec.failure.hooks=com.unraveldata.dataflow.hive.hook.HiveFailHook;
+set com.unraveldata.host=&lt;Unravel_Hostname_FQDN_Internal_IP&gt;;
+set com.unraveldata.hive.hook.tcp=true;</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target">Determine the Hive version that Qubole
+                                    uses, and use that value for <span style="color: rgb(255,0,0);"
+                                            ><code>HIVE_VER</code></span> in the commands
+                                    below.</p><div
+                                    class="confluence-information-macro confluence-information-macro-note"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p>To
+                                            determine the Hive version Qubole uses, see <a
+                                                href="http://docs.qubole.com/en/latest/faqs/hive/version-hive-qubole-provide.html"
+                                                class="external-link" rel="nofollow"
+                                                >http://docs.qubole.com/en/latest/faqs/hive/version-hive-qubole-provide.html</a>.</p><p><span
+                                                style="color: rgb(255,0,0);"
+                                                ><code>HIVE_VER</code></span> must be a Hive version
+                                            that Unravel Server supports:  either <code>1.2.0</code>
+                                            or <code>0.13.0</code>. Be sure to use either of these
+                                            values in exactly this format.</p></div></div></li>
+                            <li><p class="auto-cursor-target">On the master node of the Qubole
+                                    Hadoop2/Hive cluster, check that Unravel Server is
+                                    reachable.</p><div
+                                    class="confluence-information-macro confluence-information-macro-note"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                            ><p>Ensure the security group on the master/slave allows
+                                            TCP port #3000 and #4043 accessible.</p></div></div><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># curl http://{Unravel_Hostname_IP}:3000/version.txt</pre>
+                                    </div></div><div
+                                    class="confluence-information-macro confluence-information-macro-tip"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p>If
+                                            the version information is not visible, adjust security
+                                            groups and routing and try again.</p></div></div></li>
+                            <li><p class="auto-cursor-target">SSH to the master server of the
+                                    existing Qubole Hadoop2/Hive cluster, run the following
+                                    commands:</p><ol>
+                                    <li><p class="auto-cursor-target">Use <code>curl</code> to get
+                                            the script from Unravel Server:</p><div
+                                            class="code panel pdl" style="border-width: 1px;"><div
+                                                class="codeContent panelContent pdl">
+                                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># curl http://{Unravel_Hostname_IP}:3000/hh/unraveldata-clients/unravel_qubole_setup.sh &gt; unravel_qubole_setup.sh</pre>
+                                            </div></div></li>
+                                    <li><p class="auto-cursor-target">Ensure <code>wget</code> is
+                                            installed, and run the script on each server in the
+                                            cluster:</p><div
+                                            class="confluence-information-macro confluence-information-macro-information"
+                                                ><span
+                                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                                ></span><div
+                                                class="confluence-information-macro-body"><p
+                                                  style="margin-left: 30.0px;"><span>Files will be
+                                                  installed under:</span></p><p
+                                                  style="margin-left: 30.0px;"><span>     Hive hook
+                                                  jar is /usr/local/unravel_client/.</span></p><p
+                                                  style="margin-left: 30.0px;"><span><span>    
+                                                  Spark jar is
+                                                  /usr/local/unravel-spark/.</span><br /></span></p><p
+                                                  style="margin-left: 30.0px;"><span><span>    
+                                                  Unravel ES is
+                                                  /usr/local/unravel_es/.</span><br /></span></p><p
+                                                  style="margin-left: 30.0px;"><span>On the master
+                                                  node, /etc/init.d/unravel_es service will be
+                                                  defined and started.</span></p></div></div><div
+                                            class="code panel pdl" style="border-width: 1px;"><div
+                                                class="codeContent panelContent pdl">
+                                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># yum install -y wget
+# chmod 755 unravel_qubole_setup.sh 
+# sudo ./unravel_qubole_setup.sh install -y --unravel-server UNRAVEL_HOST_IP:3000</pre>
+                                            </div></div></li>
+                                </ol></li>
+                            <li><p class="auto-cursor-target">Verify if the setup works in Qubole by
+                                    invoking Analyze and execute following Hive test query:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">set hive.on.master=true ;
+select count(*) from default_qubole_memetracker;</pre>
+                                    </div></div></li>
+                        </ol><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51089633.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

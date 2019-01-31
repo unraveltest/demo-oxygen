@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Unravel-Server-Reference_50690507" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="concept:1;4:66">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="title:1;5:11">Unravel Server Reference </title>
+   <conbody class="- topic/body  concept/conbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="conbody:1;6:13">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="ol:1;7:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="li:1;9:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="ph:1;10:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="xref:1;11:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="li:2;15:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="ph:2;16:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="xref:2;17:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+      </ol>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:1;22:10"> This reference covers both the
+         on-premises and Unravel for EMR editions. Some daemons and properties do not apply to the
+         EMR edition.</p>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="section:1;25:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="title:2;26:17">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="ph:3;27:55"/>Unravel Server Daemons</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:2;28:13">The Unravel service is composed of many daemons which are summarized in the next table.
+            The single script <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:1;29:39">/etc/init.d/unravel_all.sh</codeph> can be used with a
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:2;30:24">start</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:3;30:50">stop</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:4;30:75">restart</codeph> argument
+            to control all the daemons on a host, in the correct order. The suffix
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:5;32:24">_N</codeph> means 1, 2, 3, up to 4 separate daemons.</p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="table:1;33:55">
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tgroup:1;34:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:1;35:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:2;36:41" colnum="2"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tbody:1;37:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:1;38:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:1;40:56" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:1;41:28">Daemon Logical Name</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:2;44:56" colname="col2" dita-ot:x="2" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:2;45:28">Description</b>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:2;49:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:3;51:56" colname="col1" dita-ot:x="1" dita-ot:y="2">unravel_tc</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:4;53:56" colname="col2" dita-ot:x="2" dita-ot:y="2">bundled TomCat (port 3000), Web UI</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:3;56:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:5;58:56" colname="col1" dita-ot:x="1" dita-ot:y="3">unravel_db</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:6;60:56" colname="col2" dita-ot:x="2" dita-ot:y="3">bundled db (on a custom port)</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:4;63:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:7;65:56" colname="col1" dita-ot:x="1" dita-ot:y="4">unravel_zk_N</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:8;67:56" colname="col2" dita-ot:x="2" dita-ot:y="4">bundled Zookeeper (on a custom port)</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:5;70:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:9;72:56" colname="col1" dita-ot:x="1" dita-ot:y="5">unravel_k</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:10;74:56" colname="col2" dita-ot:x="2" dita-ot:y="5">bundled Kafka (on a custom port)</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:6;77:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:11;79:56" colname="col1" dita-ot:x="1" dita-ot:y="6">unravel_hhs</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:12;81:56" colname="col2" dita-ot:x="2" dita-ot:y="6">Hive Hook Sensor</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:7;84:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:13;86:56" colname="col1" dita-ot:x="1" dita-ot:y="7">unravel_hhw</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:14;88:56" colname="col2" dita-ot:x="2" dita-ot:y="7">Hive Hook Worker</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:8;91:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:15;93:56" colname="col1" dita-ot:x="1" dita-ot:y="8">unravel_hhwe</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:16;95:56" colname="col2" dita-ot:x="2" dita-ot:y="8">Hive Hook Worker EMR</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:9;98:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:17;100:56" colname="col1" dita-ot:x="1" dita-ot:y="9">unravel_hvw</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:18;102:56" colname="col2" dita-ot:x="2" dita-ot:y="9">Hive Worker</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:10;105:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:19;107:56" colname="col1" dita-ot:x="1" dita-ot:y="10">unravel_jcs1</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:20;109:56" colname="col2" dita-ot:x="2" dita-ot:y="10">Job Collector Sensor MRv1</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:11;112:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:21;114:56" colname="col1" dita-ot:x="1" dita-ot:y="11">unravel_jcs2</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:22;116:56" colname="col2" dita-ot:x="2" dita-ot:y="11">Job Collector Sensor YARN</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:12;119:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:23;121:56" colname="col1" dita-ot:x="1" dita-ot:y="12">unravel_jcse2</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:24;123:56" colname="col2" dita-ot:x="2" dita-ot:y="12">Job Collector Sensor YARN for EMR</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:13;126:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:25;128:56" colname="col1" dita-ot:x="1" dita-ot:y="13">unravel_jcw1_N</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:26;130:56" colname="col2" dita-ot:x="2" dita-ot:y="13">Job Collector Sensor Worker MRv1</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:14;133:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:27;135:56" colname="col1" dita-ot:x="1" dita-ot:y="14">unravel_jcw2_N</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:28;137:56" colname="col2" dita-ot:x="2" dita-ot:y="14">Job Collector Sensor Worker YARN</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:15;140:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:29;142:56" colname="col1" dita-ot:x="1" dita-ot:y="15">unravel_lr</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:30;144:56" colname="col2" dita-ot:x="2" dita-ot:y="15">Log Receiver</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:16;147:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:31;149:56" colname="col1" dita-ot:x="1" dita-ot:y="16">unravel_mrw</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:32;151:56" colname="col2" dita-ot:x="2" dita-ot:y="16">Map Reduce Worker</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:17;154:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:33;156:56" colname="col1" dita-ot:x="1" dita-ot:y="17">unravel_ja</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:34;158:56" colname="col2" dita-ot:x="2" dita-ot:y="17">"Job Analyzer" summarizes jobs</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:18;161:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:35;163:56" colname="col1" dita-ot:x="1" dita-ot:y="18">unravel_td</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:36;165:56" colname="col2" dita-ot:x="2" dita-ot:y="18">"Tidy Dir" cleans up and archives hdfs
+                        directories, db retention cleaner</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:19;169:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:37;171:56" colname="col1" dita-ot:x="1" dita-ot:y="19">unravel_os3</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:38;173:56" colname="col2" dita-ot:x="2" dita-ot:y="19">Oozie v3 Sensor</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:20;176:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:39;178:56" colname="col1" dita-ot:x="1" dita-ot:y="20">unravel_os4</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:40;180:56" colname="col2" dita-ot:x="2" dita-ot:y="20">Oozie v4 Sensor</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:21;183:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:41;185:56" colname="col1" dita-ot:x="1" dita-ot:y="21">unravel_tw</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:42;187:56" colname="col2" dita-ot:x="2" dita-ot:y="21">Table Worker</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:22;190:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:43;192:56" colname="col1" dita-ot:x="1" dita-ot:y="22">unravel_pw</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:44;194:56" colname="col2" dita-ot:x="2" dita-ot:y="22">Partition Worker</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:23;197:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:45;199:56" colname="col1" dita-ot:x="1" dita-ot:y="23">unravel_ew_N</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:46;201:56" colname="col2" dita-ot:x="2" dita-ot:y="23">Event Worker</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:24;204:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:47;206:56" colname="col1" dita-ot:x="1" dita-ot:y="24">unravel_sw_N</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:48;208:56" colname="col2" dita-ot:x="2" dita-ot:y="24">Spark Worker</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:3;214:14"/>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="section:2;217:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="title:3;218:17">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="ph:4;219:55"/>Unravel Server Adjustable Properties</title>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="section:3;221:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="title:4;222:17">TITLE_HERE</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:4;223:13">The file <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:6;223:30">/usr/local/unravel/etc/unravel.properties</codeph> contains settings
+            that can be preserved during an RPM upgrade. These properties are described in the
+            following table:</p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="table:2;226:55">
+            <tgroup cols="3" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tgroup:2;227:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:3;228:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:4;229:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:5;230:41" colnum="3"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tbody:2;231:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:25;232:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:49;234:56" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:3;235:28">Property Name</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:50;238:56" colname="col2" dita-ot:x="2" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:4;239:28">Default Value</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:51;242:56" colname="col3" dita-ot:x="3" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:5;243:28">Description</b>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:26;247:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:52;249:56" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:7;250:33">com.unraveldata.tmpdir</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:53;253:56" colname="col2" dita-ot:x="2" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:8;254:33">/srv/unravel/tmp or $UNRAVEL_DATA_DIR/tmp</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:54;257:56" colname="col3" dita-ot:x="3" dita-ot:y="2">Determines where daemons will put temporary
+                        files. Depending on the daemon role, up to 10GB might be used
+                        temporarily.</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:27;262:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:55;264:56" colname="col1" dita-ot:x="1" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:9;265:33">com.unraveldata.logdir</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:56;268:56" colname="col2" dita-ot:x="2" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:10;269:33">/usr/local/unravel/logs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:57;272:56" colname="col3" dita-ot:x="3" dita-ot:y="3">Do not set directly; set UNRAVEL_LOG_DIR in
+                        etc/unravel.ext.sh instead and this property will be derived from
+                        that</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:28;277:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:58;279:56" colname="col1" dita-ot:x="1" dita-ot:y="4">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:11;280:33">com.unraveldata.zk.quorum</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:59;283:56" colname="col2" dita-ot:x="2" dita-ot:y="4">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:12;284:33">127.0.0.1:4181</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:60;287:56" colname="col3" dita-ot:x="3" dita-ot:y="4">embedded Zookeeper ensemble in form
+                        host1:port1,host2:port2, …</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:29;291:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:61;293:56" colname="col1" dita-ot:x="1" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:13;294:33">com.unraveldata.kafka.broker_list</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:62;297:56" colname="col2" dita-ot:x="2" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:14;298:33">127.0.0.1:4091</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:63;301:56" colname="col3" dita-ot:x="3" dita-ot:y="5">embedded Kafka</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:30;304:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:64;306:56" colname="col1" dita-ot:x="1" dita-ot:y="6">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:15;307:33">unravel.jdbc.username</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:65;310:56" colname="col2" dita-ot:x="2" dita-ot:y="6">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:16;311:33">unravel</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:66;314:56" colname="col3" dita-ot:x="3" dita-ot:y="6">MySQL (embedded or external) username for
+                        db</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:31;318:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:67;320:56" colname="col1" dita-ot:x="1" dita-ot:y="7">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:17;321:33">unravel.jdbc.password</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:68;324:56" colname="col2" dita-ot:x="2" dita-ot:y="7">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:18;325:33">random generated for bundled MySQL</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:69;328:56" colname="col3" dita-ot:x="3" dita-ot:y="7">MySQL (embedded or external) password for
+                        db</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:32;332:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:70;334:56" colname="col1" dita-ot:x="1" dita-ot:y="8">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:19;335:33">unravel.jdbc.url</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:71;338:56" colname="col2" dita-ot:x="2" dita-ot:y="8">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:20;339:33">jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:72;342:56" colname="col3" dita-ot:x="3" dita-ot:y="8">This is JDBC URL without username and
+                        password</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:33;346:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:73;348:56" colname="col1" dita-ot:x="1" dita-ot:y="9">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:21;349:33">com.unraveldata.hdfs.interactive.monitoring.interval.sec</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:74;352:56" colname="col2" dita-ot:x="2" dita-ot:y="9">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:22;353:33">30</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:75;356:56" colname="col3" dita-ot:x="3" dita-ot:y="9">Number of seconds between checks for presence
+                        of hive queries and MR logs to load into Unravel for interactive visibility;
+                        should be between 5 and 60 (inclusive)</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:34;361:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:76;363:56" colname="col1" dita-ot:x="1" dita-ot:y="10">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:23;364:33">com.unraveldata.hdfs.batch.monitoring.interval.sec</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:77;367:56" colname="col2" dita-ot:x="2" dita-ot:y="10">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:24;368:33">300</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:78;371:56" colname="col3" dita-ot:x="3" dita-ot:y="10">Number of seconds between checks for presence
+                        of hive queries and MR logs to load into Unravel for batch visibility;
+                        should be between 300 and 1800 (inclusive)</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:35;376:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:79;378:56" colname="col1" dita-ot:x="1" dita-ot:y="11">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:25;379:33">com.unraveldata.longest.job.duration.days</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:80;382:56" colname="col2" dita-ot:x="2" dita-ot:y="11">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:26;383:33">2</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:81;386:56" colname="col3" dita-ot:x="3" dita-ot:y="11">Number of days for the longest running Map
+                        Reduce job ever expected; should be between 2 and 7 (inclusive)</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:36;390:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:82;392:56" colname="col1" dita-ot:x="1" dita-ot:y="12">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:27;393:33">oozie.server.url</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:83;396:56" colname="col2" dita-ot:x="2" dita-ot:y="12">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:28;397:33">
+                           <xref href="http://localhost:11000/oozie" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="xref:3;399:59"><?ditaot usertext?>http://localhost:11000/oozie</xref>
+                        </codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:84;403:56" colname="col3" dita-ot:x="3" dita-ot:y="12">URL for accessing Oozie to track
+                        workflows</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:37;407:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:85;409:56" colname="col1" dita-ot:x="1" dita-ot:y="13">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:29;410:33">com.unraveldata.oozie.fetch.num</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:86;413:56" colname="col2" dita-ot:x="2" dita-ot:y="13">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:30;414:33">100</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:87;417:56" colname="col3" dita-ot:x="3" dita-ot:y="13">Max number of jobs to fetch during an
+                        interval</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:38;421:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:88;423:56" colname="col1" dita-ot:x="1" dita-ot:y="14">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:31;424:33">com.unraveldata.oozie.fetch.interval.sec</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:89;427:56" colname="col2" dita-ot:x="2" dita-ot:y="14">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:32;428:33">120</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:90;431:56" colname="col3" dita-ot:x="3" dita-ot:y="14">seconds between intervals for fetching Oozie
+                        workflow status</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:5;438:14"/>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="section:4;441:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="title:5;442:17">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="ph:5;443:55"/>Adjustable Environment Settings</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:6;444:13">The optional file <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:33;444:39">/usr/local/unravel/etc/unravel.ext.sh</codeph> is
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:34;445:24">source'</codeph>d to allow site-specific env variables to be set. The
+            following table shows possible choices:</p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="table:3;447:55">
+            <tgroup cols="3" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tgroup:3;448:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:6;449:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:7;450:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:8;451:41" colnum="3"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tbody:3;452:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:39;453:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:91;455:56" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:6;456:28">Env Variable</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:92;459:56" colname="col2" dita-ot:x="2" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:7;460:28">Default if not set</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:93;463:56" colname="col3" dita-ot:x="3" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:8;464:28">Description</b>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:40;468:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:94;470:56" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:35;471:33">JAVA_HOME</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:95;474:56" colname="col2" dita-ot:x="2" dita-ot:y="2">Should use update-alternatives to make
+                        correct Java first choice</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:96;477:56" colname="col3" dita-ot:x="3" dita-ot:y="2">The standard way to specify the home dir. of
+                        Oracle Java so that $JAVA_HOME/bin/java is the jvm</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:41;481:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:97;483:56" colname="col1" dita-ot:x="1" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:36;484:33">JAVA_EXT_OPTS</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:98;487:56" colname="col2" dita-ot:x="2" dita-ot:y="3">
+                        <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="i:1;488:28">unset</i>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:99;491:56" colname="col3" dita-ot:x="3" dita-ot:y="3">Last chance arguments to jvm to override
+                        other settings</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:42;495:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:100;497:56" colname="col1" dita-ot:x="1" dita-ot:y="4">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:37;498:33">HADOOP_CONF</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:101;501:56" colname="col2" dita-ot:x="2" dita-ot:y="4">as discovered by running "hadoop fs -ls
+                        "</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:102;504:56" colname="col3" dita-ot:x="3" dita-ot:y="4">The directory containing the hadoop config
+                        files core-site.xml, hdfs-site.xml, and mapred-site.xml</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:43;508:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:103;510:56" colname="col1" dita-ot:x="1" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:38;511:33">UNRAVEL_DATA_DIR</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:104;514:56" colname="col2" dita-ot:x="2" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:39;515:33">/srv/unravel</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:105;518:56" colname="col3" dita-ot:x="3" dita-ot:y="5">A base dir. owned by user unravel, during
+                        installation unravel creates multiple sub dirs for holding persistent data
+                        (db_data, k_data, zk_data) and also tmp data if property
+                        com.unraveldata.tmpdir is not set.</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:44;524:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:106;526:56" colname="col1" dita-ot:x="1" dita-ot:y="6">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:40;527:33">UNRAVEL_LISTEN_PORT</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:107;530:56" colname="col2" dita-ot:x="2" dita-ot:y="6">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:41;531:33">3000</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:108;534:56" colname="col3" dita-ot:x="3" dita-ot:y="6">The Web UI port on the primary or standalone
+                        Unravel installation (service unravel_tc) which listens on 0.0.0.0 ; the
+                        property <xref href="http://com.unraveldata.tc" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="xref:4;537:70"><?ditaot usertext?>com.unraveldata.tc</xref>.port
+                        automatically reflects this env var.</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:45;541:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:109;543:56" colname="col1" dita-ot:x="1" dita-ot:y="7">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:42;544:33">UNRAVEL_LOG_DIR</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:110;547:56" colname="col2" dita-ot:x="2" dita-ot:y="7">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:43;548:33">/usr/local/unravel/logs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:111;551:56" colname="col3" dita-ot:x="3" dita-ot:y="7">A destination dir. owned by user unravel for
+                        log files</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:46;555:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:112;557:56" colname="col1" dita-ot:x="1" dita-ot:y="8">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:44;558:33">UNRAVEL_TC_SHUTDOWN_PORT</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:113;561:56" colname="col2" dita-ot:x="2" dita-ot:y="8">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:45;562:33">3005</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:114;565:56" colname="col3" dita-ot:x="3" dita-ot:y="8">An unoccupied port used for cleanly stopping
+                        the Web UI (service unravel_tc) which listens on 127.0.0.1</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:7;572:14"/>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="section:5;575:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="title:6;576:17">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="ph:6;577:55"/>Unravel Server Directories and Files</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:8;578:13">The following is a cross-reference of notable directories and files used by Unravel
+            Server:</p>
+         <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="table:4;580:55">
+            <tgroup cols="4" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tgroup:4;581:30">
+               <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:9;582:41" colnum="1"/>
+               <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:10;583:41" colnum="2"/>
+               <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:11;584:41" colnum="3"/>
+               <colspec colname="col4" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="colspec:12;585:41" colnum="4"/>
+               <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="tbody:4;586:23">
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:47;587:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:115;589:56" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:9;590:28">Path</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:116;593:56" colname="col2" dita-ot:x="2" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:10;594:28">Purpose</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:117;597:56" colname="col3" dita-ot:x="3" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:11;598:28">Expected Size</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:118;601:56" colname="col4" dita-ot:x="4" dita-ot:y="1">
+                        <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="b:12;602:28">Notes</b>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:48;606:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:119;608:56" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:46;609:33">/usr/local/unravel</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:120;612:56" colname="col2" dita-ot:x="2" dita-ot:y="2">Unravel Server installation directory</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:121;614:56" colname="col3" dita-ot:x="3" dita-ot:y="2">1-2.5GB</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:122;616:56" colname="col4" dita-ot:x="4" dita-ot:y="2">This directory is created by installing the
+                        Unravel RPM; this is a fixed destination</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:49;620:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:123;622:56" colname="col1" dita-ot:x="1" dita-ot:y="3">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:47;623:33">/usr/local/unravel/logs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:124;626:56" colname="col2" dita-ot:x="2" dita-ot:y="3">Logs written by Unravel daemons</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:125;628:56" colname="col3" dita-ot:x="3" dita-ot:y="3">~1.5GB max</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:126;630:56" colname="col4" dita-ot:x="4" dita-ot:y="3">Each daemon will have a maximum of 100MB of
+                        logs, auto-rolled; use a symlink to put on another partition.</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:50;634:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:127;636:56" colname="col1" dita-ot:x="1" dita-ot:y="4">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:48;637:33">/srv/unravel/</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:128;640:56" colname="col2" dita-ot:x="2" dita-ot:y="4">Base directory for Unravel server data kept
+                        separately from installation directory; contains messaging data for process
+                        coordination, bundled db, Elasticsearch indexes, temporary files</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:129;644:56" colname="col3" dita-ot:x="3" dita-ot:y="4">2-900GB ; depending on activity level,
+                        retention</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:130;647:56" colname="col4" dita-ot:x="4" dita-ot:y="4">This directory or subdirectories can be a
+                        symlinks to other volumes for disk io performance reasons to distribute load
+                        over multiple volumes. If this is an EBS on AWS, then it must be provisioned
+                        for max available IOPS and the Unravel server must be EBS optimized.</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:51;653:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:131;655:56" colname="col1" dita-ot:x="1" dita-ot:y="5">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:49;656:33">/etc/init.d/unravel_all.sh</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:132;659:56" colname="col2" dita-ot:x="2" dita-ot:y="5">convenience script for Unravel start,
+                        restart, status, and stop ; controls daemons in proper order</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:133;662:56" colname="col3" dita-ot:x="3" dita-ot:y="5">n/a</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:134;664:56" colname="col4" dita-ot:x="4" dita-ot:y="5">Note for multi-host installations: run this
+                        script on both primary and secondary Unravel host</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:52;668:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:135;670:56" colname="col1" dita-ot:x="1" dita-ot:y="6">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:50;671:33">/usr/local/unravel/etc/unravel.properties</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:136;674:56" colname="col2" dita-ot:x="2" dita-ot:y="6">site-specific settings for Unravel</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:137;676:56" colname="col3" dita-ot:x="3" dita-ot:y="6">n/a</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:138;678:56" colname="col4" dita-ot:x="4" dita-ot:y="6">Keep a "golden" copy of this file;
+                           <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:51;679:36">rpm -U</codeph> upgrades will not overwrite</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:53;682:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:139;684:56" colname="col1" dita-ot:x="1" dita-ot:y="7">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:52;685:33">/usr/local/unravel/etc/unravel.version.properties</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:140;688:56" colname="col2" dita-ot:x="2" dita-ot:y="7">version-specific values for Unravel like
+                        version number, build timestamp</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:141;691:56" colname="col3" dita-ot:x="3" dita-ot:y="7">n/a</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:142;693:56" colname="col4" dita-ot:x="4" dita-ot:y="7">Updated during upgrades; do not modify this
+                        reference file to preserve traceability</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:54;697:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:143;699:56" colname="col1" dita-ot:x="1" dita-ot:y="8">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:53;700:33">/usr/local/unravel/etc/unravel.ext.sh</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:144;703:56" colname="col2" dita-ot:x="2" dita-ot:y="8">an optional file for overriding JAVA_HOME or
+                        other settings as shown in table above</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:145;706:56" colname="col3" dita-ot:x="3" dita-ot:y="8">n/a</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:146;708:56" colname="col4" dita-ot:x="4" dita-ot:y="8">Optional; example syntax: <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:54;708:90">export
+                           JAVA_HOME=/path</codeph>
+                     </entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:55;713:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:147;715:56" colname="col1" dita-ot:x="1" dita-ot:y="9">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:55;716:33">/srv/unravel/log_hdfs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:148;719:56" colname="col2" dita-ot:x="2" dita-ot:y="9">log directory for daemons that run as user
+                        hdfs (for YARN, when applicable)</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:149;722:56" colname="col3" dita-ot:x="3" dita-ot:y="9">&lt;2GB</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:150;724:56" colname="col4" dita-ot:x="4" dita-ot:y="9">Needed for YARN. Owned by user hdfs; not
+                        applicable for MRv1 or EMR</entry>
+
+                  </row>
+                  <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="row:56;728:24">
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:151;730:56" colname="col1" dita-ot:x="1" dita-ot:y="10">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="codeph:56;731:33">/srv/unravel/tmp_hdfs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:152;734:56" colname="col2" dita-ot:x="2" dita-ot:y="10">tmp directory for daemons that run as user
+                        hdfs (for YARN, when applicable)</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:153;737:56" colname="col3" dita-ot:x="3" dita-ot:y="10">&lt;1GB</entry>
+
+                     <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="entry:154;739:56" colname="col4" dita-ot:x="4" dita-ot:y="10">Needed for YARN. Owned by user hdfs; not
+                        applicable for MRv1 or EMR</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="section:6;748:16">
+         <title outputclass="pageSectionTitle" class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="title:7;749:48">Attachments:</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="p:9;750:13"><xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="xref:5;751:17"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref></p>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="image:1;752:71"> </image>
+         <xref href="media/51243870.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-Server-Reference_50690507.dita" xtrc="xref:6;753:56"><?ditaot usertext?>logo_small.png</xref>
+      </section>
+   </conbody>
+</concept>

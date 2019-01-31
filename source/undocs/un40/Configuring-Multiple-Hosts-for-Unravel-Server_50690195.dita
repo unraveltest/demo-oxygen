@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Configuring-Multiple-Hosts-for-Unravel-Server_50690195">
+   <title>Configuring Multiple Hosts for Unravel Server </title>
+   <taskbody>
+      <context>
+         <p>This topic explains how to configure multiple hosts for Unravel Server. This is useful for
+            volume/throughput/reliability requirements.</p>
+         <p>Prerequisites</p>
+         <ul>
+            <li>If you use Kerberos, set that up first on <b>host1</b>.</li>
+            <li>Install the same Unravel RPM on one or two additional hosts, hereafter referred to as <b>host2</b> and
+                  <b>host3</b>.  This distinction is important because certain instructions only apply to specific
+               hosts.</li>
+         </ul>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>The internal DNS or IP address of a host is specific to your installation.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>Each host is assigned unique roles identified by daemon names that start with <codeph>unravel_</codeph>.</p>
+         <p>Expected Result</p>
+         <p>When you complete the steps below, the expected result is</p>
+         <ul>
+            <li>Multiple Unravel hosts work together in an ensemble.</li>
+            <li>Each host has a unique role, and is identified by a daemon named <codeph>unravel_xyz</codeph> or
+                     <codeph>unravel_xyz_<i>n</i>
+               </codeph> (where <i>
+                  <codeph>n</codeph>
+               </i> is 1, 2, 3,...), which runs on exactly one host.</li>
+            <li>Unravel Web UI (<codeph>unravel_tc</codeph>) runs on <b>host1</b>.</li>
+            <li>Port 4043 <codeph>unravel_lr</codeph> runs on <b>host2</b>.</li>
+            <li>If you do not use an external database (db), <codeph>unravel_db</codeph> runs on <b>host1</b>. However,
+                  <codeph>unravel_db</codeph> can also run harmlessly if an external db is used.</li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <codeph>/usr/local/unravel/etc/unravel.properties</codeph> is identical on all Unravel hosts in the
+                  ensemble.</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+               <p>The file <codeph>unravel.properties</codeph> is never changed by an RPM upgrade because it contains
+                  site-specific information, but some one-time changes  occur when setting up multiple hosts. The file
+                     <codeph>unravel.properties</codeph> must be identical on all hosts, so if you are using data center
+                  automation like Puppet, Chef, Salt, Ansible, CloudFormation, Cfengine, and so on, you must maintain
+                  one "golden" <codeph>unravel.properties</codeph> per Unravel ensemble. After you modify
+                     <codeph>unravel.properties</codeph> as described below, you must update the "golden"
+                     <codeph>unravel.properties</codeph> file for your site.</p>
+            </li>
+            <li>Daemons are enabled/disabled via <codeph>chkconfig</codeph>. <codeph>chkconfig</codeph> sets symbolic
+               links which are persistent across Unravel Server RPM upgrades.</li>
+         </ul>
+         <p/>
+         <p>1. Stop Unravel Server</p>
+         <p>On each Unravel host, run this command:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_all.sh stop</codeblock>
+         <p>2. Modify <codeph>unravel.properties</codeph> on host1</p>
+         <ol>
+            <li>Pick a machine to be <b>host1</b>, where the Unravel Web UI will run.</li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <b>If the bundled db is in use</b>, edit <codeph>/usr/local/unravel/etc/unravel.properties</codeph> on
+                     <b>host1</b> to change:</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+               <p>Replace <ph>
+                     <codeph>127.0.0.1</codeph>
+                  </ph> with your LAN IP address or fully qualified hostname, replace <ph>
+                     <codeph>3316</codeph>
+                  </ph> with your port number,  and replace <ph>
+                     <codeph>unravel_mysql_prod</codeph>
+                  </ph> with your database name.</p>
+               <p>To find your fully qualified hostname, type <codeph>hostname -I</codeph> at the OS prompt.</p>
+               <codeblock outputclass="syntaxhighlighter-pre">unravel.jdbc.url=jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod</codeblock>
+            </li>
+         </ol>
+         <p>
+            <b>2. Copy host1's <codeph>unravel.properties</codeph> to Other Hosts</b>
+         </p>
+         <p>
+            <b/>
+         </p>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">Copy <codeph>/usr/local/unravel/etc/unravel.properties</codeph> and
+                     <codeph>/usr/local/unravel/etc/unravel.ext.sh</codeph> from <b>host1</b> to <b>host2</b> (and
+                     <b>host3</b>, if you are using three hosts). For example,</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1
+scp /usr/local/unravel/etc/unravel.properties host2:/usr/local/unravel/etc/
+# host1
+scp /usr/local/unravel/etc/unravel.ext.sh host2:/usr/local/unravel/etc/</codeblock>
+            </li>
+            <li>Verify that the ownership of <codeph>unravel.properties</codeph> and <codeph>unravel.ext.sh</codeph> is
+                  <codeph>unravel:unravel</codeph>.</li>
+         </ol>
+         <p/>
+         <p outputclass="title">Important Note</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"/>
+         <p>The scripts invoked below will make an identical change to the <codeph>unravel.properties</codeph> file on
+            each machine.</p>
+         <p>3. Assign Roles</p>
+         <p><!--A BR tag was used here in the original source.--> Use these scripts to assign unique roles to the hosts.
+            To reduce the chance of errors, the command line arguments are the same on each host, but notice that the
+            script name is different. The arguments are the hostnames IP addresses of the hosts in the ensemble.</p>
+         <ul>
+            <li>
+               <p>For a 2-host ensemble (substitute <ph>host</ph>):</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1
+sudo /usr/local/unravel/install_bin/switch_to_1of2.sh\ 
+host1 host2 
+# host2
+sudo /usr/local/unravel/install_bin/switch_to_2of2.sh\ 
+host1 host2</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">For a 3-host ensemble (substitute <ph>host</ph>):</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1 sudo /usr/local/unravel/install_bin/switch_to_1of3.sh\ 
+host1 host2 host3
+# host2 sudo /usr/local/unravel/install_bin/switch_to_2of3.sh\ 
+host1 host2 host3
+# host3 sudo /usr/local/unravel/install_bin/switch_to_3of3.sh\ 
+host1 host2 host3</codeblock>
+            </li>
+         </ul>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>These scripts establish the roles each host plays in the ensemble. The main effect is to assign specific
+            Unravel logical daemons to one host and only one host. <!--A BR tag was used here in the original source.-->
+            <!--A BR tag was used here in the original source.--> Note that some daemons have names like
+                  <codeph>unravel_<i>xyz</i>_1</codeph> or <codeph>unravel_<i>xyz</i>_2</codeph>, and so on. The entire
+            name with the instance numeric suffix is set to run on one host in the ensemble. In some cases, multiple <i>
+               <codeph>xyz</codeph>
+            </i> numeric instances run on one machine, but the overall name with suffix runs on one host only. <!--A BR tag was used here in the original source.-->
+            <!--A BR tag was used here in the original source.--> The <codeph>switch_to_*</codeph> scripts change
+               <codeph>unravel.properties</codeph> in a coordinated fashion and also create a file, <codeph>
+               <xref href="http://unravel.id" scope="external" format="html" outputclass="external-link"
+                  >unravel.id</xref>.properties</codeph>, to hold the integer property indicating which role the
+            particular machine has (1, 2, or 3).</p>
+         <p>4. Set Up Zookeeper and Kafka</p>
+         <p>Assign Kafka Partitions</p>
+         <p>Kafka partition assignment (for 3 host installs) is done by evenly distributing a topic over the hosts that
+            exist at topic create time. Topics must be created anew when a new host is added in order to have proper
+            distribution.</p>
+         <p>Redistribute Zookeeper Topics</p>
+         <p>Perform these steps, <i>in sequential order, on the specific hosts</i> as indicated by the prompt name. Skip
+               <b>host3</b> if you are only using 2 hosts for Unravel Server:</p>
+         <ul>
+            <li>
+               <p>Stop all and clear Zookeeper and Kafka data areas on each host:</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host2
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host3
+sudo /usr/local/unravel/install_bin/kafka_clear.sh</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Start up Zookeeper ensemble:</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1 
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host2
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host3
+sudo /etc/init.d/unravel_all.sh start-zk</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Wait 15sec for Zookeeper quorum to settle:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">sleep 15</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Start up Kafka ensemble:</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1
+sudo /etc/init.d/unravel_all.sh start-k 
+# host2
+sudo /etc/init.d/unravel_all.sh start-k 
+# host3
+sudo /etc/init.d/unravel_all.sh start-k</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Wait 10sec for Kafka coordination:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">sleep 10</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">Create the Kafka topics (only on one host):</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1 
+sudo /usr/local/unravel/install_bin/kafka_create_topics.sh</codeblock>
+            </li>
+         </ul>
+         <p>5. Start Unravel Server</p>
+         <p>Finish multi-host installation by starting up Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre"># host1
+sudo /etc/init.d/unravel_all.sh start 
+# host1
+echo "http://$(hostname -f):3000/" 
+# host2
+sudo /etc/init.d/unravel_all.sh start</codeblock>
+         <p/>
+         <p>6. Edit Hive-site Snippet for Hive-Hook</p>
+         <p>The port 4043 is on <b>host2</b> and that means the <codeph>hive-site.xml</codeph> file changes needed for
+            Unravel hive-hook are in <codeph>/usr/local/unravel/hive-hook/hive-site.xml.snip</codeph> on <b>host2</b>.
+            If <codeph>hive-site.xml</codeph> was already configured for <b>host1</b>, then modify it for
+            <b>host2</b>.</p>
+         <p>7. Snapshot unravel.properties as new golden file</p>
+      </context>
+   </taskbody>
+</task>

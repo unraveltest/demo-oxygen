@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Connecting-to-a-Hive-Metastore_51162326" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="task:1;4:69">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="title:1;5:11">Connecting to a Hive Metastore </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="taskbody:1;6:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="context:1;7:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ol:1;8:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:1;10:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:1;11:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:1;12:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:2;16:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:2;17:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:2;18:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:3;22:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:3;23:20">
+                  <xref href="Advanced-Topics_50688158.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:3;24:62" type="topic"><?ditaot usertext?>Advanced Topics</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:1;29:46">Connecting to a Hive metastore enables Unravel Server to collect
+            instrumentation from it, which results in the population of the Data Page in Unravel Web UI.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:2;31:13">For CDH+CM</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:3;32:13">You can enable instrumentation for the Hive metastore through Unravel Web UI's configuration wizard, but
+            first you need to obtain <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:4;33:42">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:5;34:20">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:6;35:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:7;36:26">Hive metastore details from Cloudera Manager.</ph>
+                  </ph>
+               </ph>
+            </ph>
+         </p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ol:2;41:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:4;43:17">Obtain the Hive metastore details from the Cloudera Manager by using a CDH REST API</li>
+
+         </ol>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ul:1;46:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:5;48:17">
+               <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ul:2;49:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:6;51:23">From CDH version 5.5 onward, use the REST API
+                        "<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="codeph:1;52:34">http://<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:8;52:45">CMGR_HOSTNAME_IP</ph>:7182/api/v12/cm/deployment</codeph>"</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:7;54:23">
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:4;55:25">Look at the response body, a JSON-like text format as in the image below.</p>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:8;58:23">
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:5;59:25">Search the response body for "<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="codeph:2;59:63">metastore</codeph>".</p>
+                  </li>
+
+               </ul>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:6;66:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:9;67:96">
+               <image href="media/52274297.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="image:1;68:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:7;71:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:8;72:13">2. In Unravel Web UI, on the top right-hand corner, click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="b:1;72:74">Admin</b> and, in the pull-down menu, select
+               <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="b:2;73:19">Manage</b>.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:9;74:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:10;75:96">
+               <image href="media/52274015.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="image:2;76:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:10;79:13">3. On the left tab, click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="b:3;79:42">Hive</b>, and fill in the values you obtained from Cloudera Manager:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ul:3;80:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:9;82:17">
+               <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ul:4;83:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:10;85:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:11;86:26">HIVE METASTORE URL</ph>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:11;89:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:12;90:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:13;91:29">HIVE METASTORE DRIVER</ph>
+                     </ph>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:12;95:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:14;96:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:15;97:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:16;98:32">HIVE METASTORE USER NAME</ph>
+                        </ph>
+                     </ph>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="li:13;103:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:17;104:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:18;105:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:19;106:32">
+                              <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:20;107:35">HIVE METASTORE PASSWORD</ph>
+                           </ph>
+                        </ph>
+                     </ph>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:11;111:25">
+                        <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:21;112:108">
+                           <image href="media/52274083.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="image:3;113:102"/>
+                        </ph>
+                     </p>
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:22;116:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:23;117:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:24;118:32">
+                              <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:25;119:36"/>
+                           </ph>
+                        </ph>
+                     </ph>
+                  </li>
+
+               </ul>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:12;129:13">4. Save the information when done: <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:26;129:52">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:27;130:20">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:28;131:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="ph:29;132:26">click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="b:4;132:35">Save Changes</b>.</ph>
+                  </ph>
+               </ph>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:13;137:13">5. Restart Unravel Server:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="codeblock:1;138:57">sudo /etc/init.d/unravel_all.sh restart</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:14;139:13">6. After restart, confirm that Hive queries appear in Unravel UI in the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="b:5;139:88">Application</b> tab.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:15;140:13">For HDP </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:16;141:13">See <xref href="50689477.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:4;141:44" type="task"><?ditaot usertext?>Part 2: Enable Additional Data Collection / Instrumentation for HDP</xref>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:17;143:13">For MapR</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:18;144:13">See <xref href="50688326.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:5;144:44" type="task"><?ditaot usertext?>Part 2: Enable Additional Data Collection / Instrumentation for MapR</xref>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:19;146:13"> </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:20;147:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="p:21;148:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="image:4;149:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="alt:1;150:19"/>
+         </image>
+         <xref href="media/51162330.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:6;152:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="image:5;153:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="alt:2;154:19"/>
+         </image>
+         <xref href="media/52274015.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:7;156:56"><?ditaot usertext?>UI_Admin_Manage_page.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="image:6;157:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="alt:3;158:19"/>
+         </image>
+         <xref href="media/52274083.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:8;160:56"><?ditaot usertext?>UI_Hive_Metastore_page.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="image:7;161:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="alt:4;162:19"/>
+         </image>
+         <xref href="media/52274297.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Connecting-to-a-Hive-Metastore_51162326.dita" xtrc="xref:9;164:56"><?ditaot usertext?>CMGR_rest_api_extracting_HM_pwd.png</xref> (image/png)
+         
+      </context>
+   </taskbody>
+</task>

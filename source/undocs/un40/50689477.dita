@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="FAGIJEHH">
+   <title>Part 2: Enable Additional Data Collection / Instrumentation for HDP </title>
+   <taskbody>
+      <context>
+         <p>Introduction</p>
+         <p>This guide describes how to install the Unravel Sensor for Hive Hook and Spark on HDP 2.2.x-2.5.x clusters
+            using <b>Ambari Web UI</b> (AWU). Unravel Hive Hook is used to collect information about Hive queries in
+            Hadoop. The information here applies to Hive versions 0.10.0 through 2.1.x and Unravel 4.0-4.1.
+               <ph>Highlighted</ph> text indicates where you must substitute your particular values.</p>
+         <p>1. Start Unravel Server</p>
+         <note>Note: Unravel needs to be up for the next step to complete. </note><codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_all.sh start</codeblock>
+         <p>2. Install Unravel Hive Hook and Spark Sensor Onto HDP Servers</p>
+         <p>Install Unravel Hive Hook and Spark Sensor onto HDP servers (JAR files) as follows.</p>
+         <codeblock outputclass="syntaxhighlighter-pre"># login as root to do below steps
+# ensure wget is install and use below script to install sensors 
+# /usr/local/unravel/install_bin/unraveldata-clients/unravel_hdp_setup.sh 
+# from Unravel server (eg. edge node)
+# run on each server that will use instrumentation:
+yum install -y wget
+cd /usr/local/unravel/install_bin/unraveldata-clients/
+sudo ./unravel_hdp_setup.sh install -y --unravel-server UNRAVEL_HOST_IP:3000 --spark-version SPARK_VERSION --hive-version HIVE_VERSION</codeblock>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+         <p>Substitute valid values for:</p>
+         <ul>
+            <li>
+               <ph>UNRAVEL_HOST_IP <ph>-</ph>
+               </ph>fully qualified host name or IP address</li>
+            <li>
+               <ph>
+                  <ph>
+                     <ph>
+                        <ph>SPARK_VERSION</ph> - target </ph>Spark version</ph>
+               </ph>
+            </li>
+            <li>
+               <ph>
+                  <ph>
+                     <ph>
+                        <ph>HIVE_VERSION</ph> - target </ph>Hive version</ph>
+               </ph>
+            </li>
+         </ul>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"/>
+         <p>Files will be installed under:</p>
+         <p>Hive hook jar is located in /usr/local/unravel_client/.</p>
+         <p>Spark jar is located in /usr/local/unravel-spark/jars/.</p>
+         <note>
+            <p>Once the files are installed under /usr/local/unravel_client/ &amp; /usr/local/unravel-spark/ on edge
+               host where Unravel rpm is installed, you can tar these two directories up and put on other hosts, if that
+               is more convenient than running the script. In all cases, instrumented nodes must be able to open port
+               4043 of Unravel Server (host2 if multi-host Unravel install).</p>
+         </note>
+         <p>3. Add Unravel Hive Hook hive-site Settings to All of HDP's Servers in the Cluster Using AWU</p>
+         <note type="important">
+            <p>
+               <b>IMPORTANT:</b> Completion of this step will require a restart of all affected Hive services in Ambari
+               UI. If the env steps below are not deployed or use incorrect paths, then Hive jobs could fail with
+               ClassNotFoundException when the hive-site change takes effect after the Hive service is restarted.</p>
+         </note>
+         <ul>
+            <li>Add <codeph>AUX_CLASSPATH</codeph> to AWU's <b>hive-env</b> template:<ul>
+                  <li>In AWU, on the left-hand side, click <b>Hive</b>, next click <b>Configs</b>, go to the
+                        <b>Advanced</b> tab, and select/click <b>Advanced hive-env</b>.</li>
+                  <li>
+                     <p outputclass="auto-cursor-target">Next, inside the <b>Advanced hive-env</b> template, towards the
+                        end of line add below:</p>
+                     <codeblock outputclass="syntaxhighlighter-pre">AUX_CLASSPATH=${AUX_CLASSPATH}:/usr/local/unravel_client/unravel-hive-1.2.0-hook.jar</codeblock>
+                     <p outputclass="auto-cursor-target">
+                        <i>Hold off on restarting any services until the next step. </i>
+                     </p>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <ul>
+            <li>Add <codeph>HADOOP_CLASSPATH</codeph> to AWU's <b>hadoop-env</b> template:<ul>
+                  <li>In AWU, on the left-hand side, click <b>HDFS</b>, next click <b>Configs</b>, go to the
+                        <b>Advanced</b> tab, and select/click <b>Advanced hadoop-env</b>.</li>
+                  <li>
+                     <p outputclass="auto-cursor-target">Next, inside the <b>hadoop-env</b> template, towards the end of
+                        line add below:</p>
+                     <codeblock outputclass="syntaxhighlighter-pre">HADOOP_CLASSPATH=${HADOOP_CLASSPATH}:/usr/local/unravel_client/unravel-hive-1.2.0-hook.jar</codeblock>
+                     <p outputclass="auto-cursor-target">
+                        <i>You can optionally restart the services in Ambari, as prompted, at this point in order to
+                           verify that the environment change is done correctly. After the restart, look at
+                           hadoop-env.sh and hive-env.sh on an edge node and check the path to the jar file. Hint: find
+                           the files with <codeph>
+                              <ph outputclass="s1">sudo find /etc -name '*env.sh' -newerct '1 hour ago'</ph>
+                           </codeph>
+                        </i>
+                     </p>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <ul>
+            <li>Add the contents of <codeph>/usr/local/unravel/hive-hook/hive-site.xml.snip</codeph>  from Unravel
+               Gateway server (from host2 if multi-host Unravel so you get the proper UNRAVEL_HOST_IP) into AWU's
+                  <b>Custom hive-site</b> under <b>Hive</b>:<ul>
+                  <li>
+                     <p outputclass="auto-cursor-target">In AWU, on the left-hand side, click <b>Hive</b> |
+                           <b>Configs</b>. Select the <b>Advanced</b> tab, and then select <b>Custom hive-site</b> and
+                           <b>Add Property</b> below and use <ph
+                           outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                           <image href="media/50689484.png" outputclass="confluence-embedded-image"/>
+                        </ph>
+                        <b>Bulk property add mode.</b>
+                     </p>
+                     <codeblock outputclass="syntaxhighlighter-pre">hive.exec.driver.run.hooks=com.unraveldata.dataflow.hive.hook.HiveDriverHook 
+com.unraveldata.hive.hdfs.dir=/user/unravel/HOOK_RESULT_DIR 
+com.unraveldata.hive.hook.tcp=true 
+com.unraveldata.host=UNRAVEL_HOST_IP 
+ 
+-- Find below properties as it may already exists, concatenate it with a comma &amp; no spaces -- 
+hive.exec.pre.hooks=com.unraveldata.dataflow.hive.hook.HivePreHook 
+hive.exec.post.hooks=com.unraveldata.dataflow.hive.hook.HivePostHook 
+hive.exec.failure.hooks=com.unraveldata.dataflow.hive.hook.HiveFailHook</codeblock>
+                     <p outputclass="auto-cursor-target">
+                        <i>You should restart the services in Ambari now, as prompted, to test whether Hive queries can
+                           succeed after the above configuration change. If you get ClassNotFoundException during a
+                           query, then make corrections or revert. </i>
+                     </p>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <p>4. If Possible, Ensure that <b>hive.execution.engine</b> is Set to <codeph>MapReduce</codeph> in your Hive
+            query</p>
+         <codeblock>set hive.execution.engine=mr;</codeblock>
+         <p>5. <b>Optionally for Spark on YARN</b>, Enable Unravel Spark Instrumentation on All of HDP's Servers in the
+            Cluster</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+         <b>IMPORTANT</b>: Completion of this step will require a restart of all affected Spark services in Ambari UI.<ul>
+            <li>Add Spark properties into AWU's <b>Custom spark-defaults</b>:<ul>
+                  <li>In AWU, on the left-hand side, click <b>Spark</b> | <b>Configs</b> | <b>Custom
+                     spark-defaults</b>.</li>
+               </ul>
+            </li>
+            <li>
+               <p>Inside <b>Custom spark-defaults</b>, click <b>Add Property</b> for Spark as follows and use <ph
+                     outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                     <image href="media/50689484.png" outputclass="confluence-embedded-image"/>
+                  </ph> <b>Bulk property add mode</b>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">spark.unravel.server.hostport=UNRAVEL_HOST_IP:4043
+
+spark.driver.extraJavaOptions=-javaagent:/usr/local/unravel-spark/jars/btrace-agent.jar=bootClassPath=/usr/local/unravel-spark/jars/unravel-boot.jar,systemClassPath=/usr/local/unravel-spark/jars/unravel-sys.jar,scriptOutputFile=/dev/null,script=DriverProbe.class:SQLProbe.class 
+
+spark.executor.extraJavaOptions=-javaagent:/usr/local/unravel-spark/jars/btrace-agent.jar=bootClassPath=/usr/local/unravel-spark/jars/unravel-boot.jar,systemClassPath=/usr/local/unravel-spark/jars/unravel-sys.jar,scriptOutputFile=/dev/null,script=ExecutorProbe.class
+
+
+spark.eventLog.enabled=true</codeblock>
+               <p outputclass="auto-cursor-target">Notice that in this code block, the blank lines separate single full
+                  lines of text that are wrapped due to length. Also, ensure you replace "<ph>UNRAVEL_HOST_IP" with your
+                     Unravel server's IP address.</ph>
+               </p>
+            </li>
+         </ul>
+         <p>6. <b>Optionally for MapReduce2</b> (MR) JVM Sensor Cluster-Wide</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+         <b>IMPORTANT</b>: Completion of this step will require a restart of all affected HDFS, MAPREDUCE2, <ph>YARN and
+         </ph>HIVE services in Ambari UI.<ul>
+            <li>
+               <p outputclass="auto-cursor-target">In AWU, on the left-hand side, click <b>MapReduce2</b>, next
+                     click <b>Configs</b>, go to the <b>Advanced</b> tab, and select/click <b>Advanced mapred-site</b>
+               </p>
+            </li>
+            <li>Search for <b>MR AppMaster Java Heap Size </b>property and concatenate by copying and paste below code
+               block property for "<ph>yarn.app.mapreduce.am.command-opts" </ph>MR JVM sensor as follows:</li>
+         </ul>
+         <p> <i>(Note: please leave a white space in-between the current and the following new property)</i>
+         </p>
+         <ul>
+            <li>
+               <p outputclass="auto-cursor-target">On the top notification banner, click Save</p>
+               <codeblock outputclass="syntaxhighlighter-pre">  -javaagent:/usr/local/unravel-spark/jars/btrace-agent.jar=systemClassPath=/usr/local/unravel-spark/jars/unravel-mr-sys.jar,bootClassPath=/usr/local/unravel-spark/jars/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043 -Dcom.sun.btrace.FileClient.flush=-1</codeblock>
+               <p outputclass="auto-cursor-target">Notice that in this code block, the blank lines separate single full
+                  lines of text that are wrapped due to length. Also, ensure you replace "<ph>
+                     <ph>UNRAVEL_HOST_IP</ph>" with your Unravel server's IP address.</ph>
+               </p>
+               <p outputclass="auto-cursor-target">
+                  <ph/>
+               </p>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">In AWU, on the left-hand side, click <b>MapReduce2</b>, next
+                     click <b>Configs</b>, go to the <b>Advanced</b> tab, and select/click <b>Custom mapred-site:</b>
+               </p>
+            </li>
+         </ul>
+         <ul>
+            <li>Inside <b>Custom </b>
+               <b>mapred-site</b>, click <b>Add Property</b> for MR JVM sensor as follows and use <ph
+                  outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                  <image href="media/50689484.png" outputclass="confluence-embedded-image"/>
+               </ph>
+               <b>Bulk property add mode</b>:</li>
+            <li>
+               <p outputclass="auto-cursor-target">On the top notification banner, click Save</p>
+               <codeblock outputclass="syntaxhighlighter-pre">mapreduce.task.profile=true
+mapreduce.task.profile.maps=0-5
+mapreduce.task.profile.reduces=0-5
+mapreduce.task.profile.params=-javaagent:/usr/local/unravel-spark/jars/btrace-agent.jar=systemClassPath=/usr/local/unravel-spark/jars/unravel-mr-sys.jar,bootClassPath=/usr/local/unravel-spark/jars/unravel-mr-boot.jar,scriptOutputFile=/dev/null -Dunravel.server.hostport=UNRAVEL_HOST_IP:4043 -Dcom.sun.btrace.FileClient.flush=-1</codeblock>
+               <p outputclass="auto-cursor-target">Notice that in this code block, the blank lines separate single full
+                  lines of text that are wrapped due to length. Also, ensure you replace "<ph>
+                     <ph>UNRAVEL_HOST_IP</ph>" with your Unravel server's IP address.</ph>
+               </p>
+            </li>
+            <li>
+               <p>
+                  <ph>Following instructions are for Unravel rpm 4.0.x and 4.1.x</ph>
+               </p>
+               <p outputclass="auto-cursor-target">
+                  <ph>Please propagate Unravel MR jar </ph>
+                  <ph>onto all the servers in the cluster </ph>as follows<b>:</b>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>Ensure
+               you have already installed unzip, curl, and Unravel port# 3000 must be open<ul>
+                  <li>
+                     <p outputclass="auto-cursor-target">ssh to the Unravel gateway host server and use guided steps to
+                        unzip the Unravel MR jars.</p>
+                     <ul>
+                        <li>
+                           <p outputclass="auto-cursor-target">With root or sudo access, change directory to
+                              /usr/local/unravel-spark and run the below curl get command:</p>
+                           <codeblock outputclass="syntaxhighlighter-pre">cd /usr/local/unravel-spark
+curl http://localhost:3000/hh/unravel-sensor-for-mapreduce-bin.zip -o unravel-sensor-for-mapreduce-bin.zip
+unzip -d jars unravel-sensor-for-mapreduce-bin.zip</codeblock>
+                        </li>
+                        <li>
+                           <p outputclass="auto-cursor-target">Now, tar up the /usr/local/unravel-spark directory, and
+                              propagate to all the servers in the HDP cluster</p>
+                           <codeblock outputclass="syntaxhighlighter-pre">cd /usr/local/
+tar -cvf unravel-spark.tar  ./unravel-spark
+---&gt; copy the unravel-spark.tar file to all your servers, and untar to /usr/local directory because when you untar unravel-spark directory will appear</codeblock>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </context>
+   </taskbody>
+</task>

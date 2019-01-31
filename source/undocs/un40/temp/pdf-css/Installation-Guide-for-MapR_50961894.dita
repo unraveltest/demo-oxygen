@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Installation-Guide-for-MapR_50961894" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="topic:1;4:67">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="title:1;5:11">Installation Guide for MapR </title>
+   <titlealts class="- topic/titlealts " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="titlealts:1;6:15">
+      <searchtitle class="- topic/searchtitle " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="searchtitle:1;7:20">Installation Guide for MapR</searchtitle>
+   </titlealts>
+   <body class="- topic/body " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="body:1;9:10">
+
+
+
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ol:1;13:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="li:1;15:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ph:1;16:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="xref:1;17:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="li:2;21:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ph:2;22:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="xref:2;23:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+
+
+
+
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="p:1;34:11"/>
+      
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="p:2;36:10">This guide is compatible with</p>
+      <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ul:1;37:11">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="li:3;39:14">
+            <p outputclass="_mce_tagged_br" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="p:3;40:45">MapR 5.1</p>
+         </li>
+
+      </ul>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="section:1;44:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="title:2;45:17">Ordered Steps</title>
+      </section>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="p:4;47:11"/>
+
+      <ul outputclass="content-by-label" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ul:2;49:42">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="li:4;51:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ph:3;52:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50690385/Part+1%3A+Install+Unravel+Server+on+MapR" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="xref:3;53:114"><?ditaot usertext?>Part 1:
+               Install Unravel Server on MapR</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="li:5;57:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ph:4;58:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/50688326" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="xref:4;59:73"><?ditaot usertext?>Part 2: Enable Additional Data Collection /
+               Instrumentation for MapR</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="li:6;63:14">
+            <ph outputclass="icon aui-icon aui-icon-small aui-iconfont-page-default" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="ph:5;64:86">Page:</ph>
+            <xref href="file:/wiki/spaces/UN40/pages/51213065/Part+3%3A+Additional+Topics+for+MapR" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Installation-Guide-for-MapR_50961894.dita" xtrc="xref:5;65:110"><?ditaot usertext?>Part 3:
+               Additional Topics for MapR</xref>
+         </li>
+
+      </ul>
+
+
+
+   </body>
+</topic>

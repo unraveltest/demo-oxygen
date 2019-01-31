@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Uninstalling-Unravel-Server_50688928">
+   <title>
+                        Uninstalling Unravel Server 
+                    </title>
+   <taskbody>
+      <context>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+         <p>Disable and uninstall cluster instrumentation before uninstalling Unravel Server.</p>
+         <p>The Unravel Server RPM has the service name <codeph>unravel</codeph>. That means you can uninstall it by
+            running the following commands:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo rpm -e unravel
+sudo /bin/rm -rf /usr/local/unravel /srv/unravel/* /etc/unravel_ctl</codeblock>
+         <p>All data in the bundled database is deleted by the <codeph>rm</codeph> command.</p>
+      </context>
+   </taskbody>
+</task>

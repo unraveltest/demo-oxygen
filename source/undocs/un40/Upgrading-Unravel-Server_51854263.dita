@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" ><task xml:lang="en-us" id="Upgrading-Unravel-Server_51854263">
+   <title>
+                        Upgrading Unravel Server 
+                    </title>
+   <taskbody>
+      <context>
+         <p>This topic explains how to upgrade the Unravel Server RPM in a single or multi-host environment.</p>
+         <p>For single Unravel gateway or client host, run only the commands that are marked as <codeph>host1</codeph>
+            in each step below.</p>
+         <ol>
+            <li>Copy the new RPM to each Unravel host.</li>
+            <li>Stop each host <b>simultaneously</b>:
+               <codeblock outputclass="syntaxhighlighter-pre"># host1
+sudo /etc/init.d/unravel_all.sh stop 
+# host2
+sudo /etc/init.d/unravel_all.sh stop 
+# host3
+sudo /etc/init.d/unravel_all.sh stop</codeblock>
+            </li>
+            <li>Upgrade the RPM on each host <b>simultaneously</b>:
+               <codeblock outputclass="syntaxhighlighter-pre"># host1
+sudo rpm -U unravel-4.*.x86_64.rpm* 
+# host2
+sudo rpm -U unravel-4.*.x86_64.rpm* 
+# host3
+sudo rpm -U unravel-4.*.x86_64.rpm*</codeblock>
+            </li>
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>Add your license key to <codeph>unravel.properties</codeph>. </ph>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+               <p>
+                  <ph>You must enter add license key to <ph>
+                        <codeph>unravel.properties</codeph>
+                     </ph> before starting/restarting Unravel Server.</ph>
+               </p>
+            </li>
+            <li>Run <b>/usr/local/unravel/install_bin/await_fixups.sh </b>script after upgrade</li>
+         </ol>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /usr/local/unravel/install_bin/await_fixups.sh</codeblock>
+         <ol>
+            <li>
+               <p outputclass="auto-cursor-target">After all the RPM upgrades finish, restart Unravel Server on each
+                  host <b>simultaneously</b>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre"># host1
+sudo /etc/init.d/unravel_all.sh start 
+# host2
+sudo /etc/init.d/unravel_all.sh start 
+# host3
+sudo /etc/init.d/unravel_all.sh start</codeblock>
+            </li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

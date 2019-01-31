@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="FCFGHGGB" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="task:1;4:38">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="title:1;5:11">Part 3: Install Unravel Spark Sensor on New or Existing Qubole Spark
+      Cluster </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="taskbody:1;7:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="context:1;8:16">
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ol:1;9:14">
+
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:1;11:37">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:1;12:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:1;13:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:2;17:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:2;18:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:2;19:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:3;23:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:3;24:20">
+                  <xref href="50688627.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:3;25:46" type="topic"><?ditaot usertext?>Installation Guide for Amazon Elastic MapReduce (Amazon
+                     EMR) and Qubole Clusters</xref>
+               </ph>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:1;31:13">Introduction</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:2;32:13">Unravel Sensor can collect information about Spark applications. This guide describes
+            how to install Unravel Sensor for Qubole-based Spark clusters. The information here
+            applies to Spark versions 1.5.x through 2.0.x and Unravel 3.4-4.1. Highlighted text
+            indicates where you must substitute your particular values.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:4;37:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:3;38:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:5;39:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:1;40:24">HIGHLIGHTED</codeph>
+            </ph> text and text with brackets ( { } ), unless otherwise noted, indicates where you
+            must substitute your particular values for the text.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:4;43:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:6;44:17">
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:2;45:24">UNRAVEL_HOST_IP</codeph>
+            </ph>must be a fully qualified DNS or the IP address.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:5;47:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:7;48:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:8;49:20">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:9;50:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:10;51:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:11;52:29">
+                           <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:3;53:36">PATH_TO_SENSOR_JARS</codeph>
+                        </ph>
+                     </ph>
+                  </ph>
+               </ph>
+            </ph>: <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:12;58:24">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:13;59:20">is the absolute path to the location of the sensor jars.</ph>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:6;62:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:14;63:17"> </ph>
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:15;64:18"/>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:7;66:13">Add Unravel Spark Instrumentation to New Qubole Spark Cluster</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ol:2;67:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:4;69:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:8;70:19">
+                  <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:16;71:61"/>Configure<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:1;71:73"> </b>Unravel s3 read-only
+                  credentials in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:4;72:42">/usr/local/unravel/etc/s3ro.properties</codeph> as
+                  follows:</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:17;75:110"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:9;76:19">This sample <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:5;76:39">s3ro.properties</codeph> file has multiple s3 profiles and
+                  access keys.</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:1;78:63">[default]
+aws_access_key_id = {ACCESS_KEY_VALUE1}
+aws_secret_access_key = {SECRET_KEY_VALUE1}
+
+[profile_name_2]
+aws_access_key_id = {ACCESS_KEY_VALUE2}
+aws_secret_access_key = {SECRET_KEY_VALUE2}</codeblock>
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:10;85:52">
+                  <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="i:1;86:22">Note: Substitute actual values for ACCESS_KEY_VALUEx and SECRET_KEY_VALUEx.</i>
+               </p>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:11;88:20"/>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:5;91:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:12;92:19">Edit <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:6;92:32">/usr/local/unravel/etc/unravel.properties</codeph> so that Unravel
+                  Server incorporates <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:7;93:47">s3ro.properties</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:2;94:63">com.unraveldata.s3.profile.config.file.path=/usr/local/unravel/etc/s3ro.properties
+com.unraveldata.spark.s3.profilesToBuckets=&lt;default&gt;:&lt;s3ro_bucket1&gt;,&lt;profile_name_2&gt;:&lt;s3r0_bucket2&gt;</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:6;98:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:13;99:52">Restart the Unravel ETL daemon(s):</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:3;100:63"># sudo /etc/init.d/unravel_all.sh stop-etl
+# sudo /etc/init.d/unravel_all.sh start</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:7;104:17">Ensure ports 3000 (for web UI access) and 4043 (from cluster) are open for incoming
+               traffic. These should <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:2;105:41">not</b> be open to the public
+               Internet.
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:8;109:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:14;110:52">Verify that port 3000 is open by running a
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:8;111:30">curl</codeph> command from a potential Unravel user machine as follows
+                  :</p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:18;114:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:15;115:19">If the version information is not visible (request timeout), then adjust security
+                  groups, firewalls, etc. and try again. For VPCs, it might be necessary to add a
+                  route.</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:4;118:63"># curl http://{UNRAVEL_HOST_IP}:3000/version.txt</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:9;121:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:16;122:52">Copy the Unravel Spark bootstrap file from
+                  Unravel Server to your Spark Qubole cluster, using <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:9;123:78">curl</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:5;124:63"># curl http://{UNRAVEL_HOST_IP}:3000/hh/unraveldata-clients/unravel_qubole_bootstrap.sh &gt; unravel_qubole_bootstrap.sh</codeblock>
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:17;125:52">
+                  <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="i:2;126:22">Note: Substitute the actual host for UNRAVEL_HOST_IP.</i>
+               </p>
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:18;128:52">
+                  <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="i:3;129:23"/>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:10;133:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:19;134:52">Copy Unravel Spark bootstrap file to your s3://<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:19;134:103">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:20;135:26">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:10;136:33">Bootstrap_location_for_Spark Qubole Cluster</codeph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:6;140:63">aws s3 cp unravel_qubole_bootstrap.sh s3://{Bootstrap_location_for_Spark Qubole cluster}/unravel_qubole_bootstrap.sh</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:11;143:17">In Qubole’s <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:3;143:32">Edit Cluster Setting</b>, if you <u class="+ topic/ph hi-d/u " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="u:1;143:68">
+                  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:4;144:22">do not</b>
+               </u> have your own customized Node Bootstrap file, add
+                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:11;146:27">unravel_qubole_bootstrap.sh</codeph> into this field as shown in the diagram:
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:21;147:99">
+                  <image href="media/52620138.png" outputclass="confluence-embedded-image confluence-content-image-border" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="image:1;149:95"/>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:12;153:17">In Qubole, scripts do not take input parameters. Therefore, Unravel's bootstrap
+               script takes all the required parameters from the Hadoop configuration. You can
+               customize your Hadoop configuration through specific parameters within the
+                  <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:5;156:22">Override Hadoop Configuration Variables</b> section as shown in the diagram
+               below. As you can see, <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:6;157:42">unravel-bootstrap </b>is the property name you must use
+               prepend to all configuration parameters relevant to Unravel. 
+               <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="i:4;159:19">Note: Separate parameters with commas.</i>
+               <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:22;160:99">
+                  <image href="media/52620160.png" outputclass="confluence-embedded-image confluence-content-image-border" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="image:2;162:95"/>
+               </ph>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:13;166:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:20;167:52">Add these settings
+                     to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:12;168:33">unravel-bootstrap</codeph> for Spark clusters:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:7;169:63">unravel-bootstrap=UNRAVEL_SERVER=UNRAVEL_HOST_AND_PORT, SPARK_VER_XYZ=SPARK_VER_XYZ[,SPARK_APP_LOAD_MODE=SPARK_APP_LOAD_MODE,WRAPPED_SCRIPT=WRAPPED_SCRIPT]</codeblock>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:21;170:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:23;171:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:13;172:30">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:24;173:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:25;174:32">
+                              <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:26;175:35">
+                                 <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:27;176:38">
+                                    <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:28;177:41">
+                                       <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:14;178:48">
+                                          <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:29;179:47">SPARK_VERSION<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:30;179:64">
+                                                <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:31;180:53">
+                                                  <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:15;181:59">_X.Y.Z</codeph>
+                                                </ph>
+                                             </ph>
+                                          </ph>
+                                       </codeph>
+                                    </ph>
+                                    <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:32;187:41">
+                                       <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:33;188:44"> - target Spark version (eg. 1.3.0, 1.6.0, 2.0.1,
+                                          etc.)</ph>
+                                    </ph>
+                                 </ph>
+                              </ph>
+                           </ph>
+                        </ph>
+                     </codeph>
+                  </ph>
+               </p>
+               <p outputclass="title" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:22;198:39">Note:</p>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:23;199:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:34;200:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:16;201:30">The parameters in square brackets [ ] above are optional. Their
+                        meanings are:</codeph>
+                  </ph>
+               </p>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:24;205:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:35;206:23">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:17;207:30">SPARK_APP_LOAD_MODE </codeph>
+                  </ph>is either OPS or DEV mode, and if not explicitly specified defaults to OPS
+                  mode. For details on application loading modes, see <xref href="#FCFGHGGB/Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-Appendix" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:4;211:23"><?ditaot usertext?>Appendix</xref>.</p>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:25;212:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:36;213:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:37;214:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:38;215:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:39;216:32">
+                              <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:40;217:35">
+                                 <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:41;218:38">
+                                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:18;219:45">
+                                       <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:42;220:44">WRAPPED_SCRIPT</ph>
+                                    </codeph>
+                                 </ph>
+                              </ph>
+                           </ph>
+                        </ph>
+                     </ph>
+                  </ph> is the full S3 path to your original bootstrap script. Your bootstrap script
+                  is invoked from <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:43;228:39">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:19;229:30">unravel_qubole_bootstrap.sh</codeph>
+                  </ph>.</p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:14;233:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:26;234:52">Confirm that the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:20;234:77">unravel_es</codeph>
+                  service is installed:</p>
+               <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ol:3;236:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:15;238:23">
+                     <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:27;239:58">Open an SSH session to the Qubole master
+                        node.</p>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:16;243:23">
+                     <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:28;244:58">Run this command to check that the
+                        unravel_es service has been started:</p>
+                     <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:8;246:69"># ps -aux | grep unravel_es</codeblock>
+                  </li>
+
+               </ol>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:29;253:13">(Optional) Add Unravel Spark Instrumentation to an Existing Qubole Spark Cluster</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ol:4;254:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:17;256:17">Ensure that you have configured s3 read-only credentials
+                  in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:21;257:30">/usr/local/unravel/etc/s3ro.properties</codeph> for Unravel, as
+               described in <xref href="#FCFGHGGB/Part3:InstallUnravelSparkSensoronNeworExistingQuboleSparkCluster-configure_s3ro" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:5;260:20"><?ditaot usertext?>steps 1 and 2 above</xref>.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:18;262:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:30;263:19">Obtain following essential Spark version files from Unravel Server:</p>
+               <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ol:5;264:20">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:19;266:23">
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:31;267:25">To obtain Spark version 1.6.x zip file:</p>
+                     <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:9;268:69"># wget http://{UNRAVEL_HOST_IP}:3000/hh/unravel-sensor-for-spark-bin-1.6.zip
+</codeblock>
+                  </li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:20;272:23">
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:32;273:25">To obtain Spark version 2.0.x zip file:</p>
+                     <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:10;274:69"># wget http://{UNRAVEL_HOST_IP}:3000/hh/unravel-sensor-for-spark-bin-2.0.zip</codeblock>
+                     <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:44;276:119"/>
+                     <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:33;277:25">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:45;278:29">Unzip the archive </ph>
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:22;279:33">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:46;280:32">unravel-sensor-for-spark-bin-1.6.zip</ph>
+                        </codeph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:47;282:29"> and ensure via the bootstrap action that the included jars are deployed
+                           on Qubole nodes at <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:48;283:51">
+                              <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:49;284:35">
+                                 <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:50;285:38">
+                                    <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:23;286:45">PATH_TO_SENSOR_JARS</codeph>
+                                 </ph>
+                              </ph>
+                           </ph>
+                        </ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:51;291:29"> </ph>
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:52;292:29">which is used in the configuration settings outlined in step 4. </ph>
+                     </p>
+                  </li>
+
+               </ol>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:21;299:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:34;300:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:53;301:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:54;302:26">Obtain EMR jar files and snippet script that should be added to the
+                        bootstrap action to start the unravel_es process:</ph>
+                  </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:55;305:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:56;306:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:57;307:30"/>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:11;311:63">
+#wget http://{UNRAVEL_HOST_IP}:3000/hh/unraveldata-clients/snippets/run-es.sh
+#wget http://{UNRAVEL_HOST_IP}:3000/hh/unravel-emr-sensor.jar
+</codeblock>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:58;316:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:35;317:19">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:59;318:23">Ensure that <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:24;318:43">unravel-emr-sensor.jar</codeph>
+                  </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:60;320:23"> is deployed on the Qubole nodes via the bootstrap action. Preferably, deploy <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:61;320:105">
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:25;321:33">unravel-emr-sensor.jar</codeph>
+                     </ph>
+                  </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:62;324:23">at the same path of <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:63;324:47">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:64;325:29">
+                           <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:65;326:32">
+                              <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:66;327:35">
+                                 <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:26;328:42">PATH_TO_SENSOR_JARS</codeph>
+                              </ph>
+                           </ph>
+                        </ph>
+                     </ph>
+                  </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:67;334:23"> </ph>
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:68;335:23">as used above.</ph>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:22;339:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:36;340:52">Edit <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:27;340:65">run-es.sh</codeph> snippet script to
+                  customize following two parameters to fit into your Qubole Spark environment:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:12;342:63"># Replace following two parameters into your Qubole Spark environment #
+UNRAVEL_HOST={UNRAVEL_HOST_IP}
+UNRAVEL_EMR_SENSOR_JAR={PATH_TO_SENSOR_JARS}</codeblock>
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:37;345:52">
+                  <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="i:5;346:23"/>
+               </p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:23;350:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:38;351:52">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:69;352:23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:70;353:26">Spark configuration can be provided in the </ph>
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:71;354:26">Qubole console</ph>
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:72;355:26"> at bootstrap or directly inside </ph>
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:73;356:26">
+                        <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:74;357:29">
+                           <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:28;358:36">spark-defaults.conf</codeph>
+                        </ph>
+                     </ph>
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:75;361:26"> configuration file, if the cluster is already started. </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:13;364:63">spark.unravel.server.hostport {UNRAVEL_HOST_IP}:4043
+spark.driver.extraJavaOptions -javaagent:{PATH_TO_SENSOR_JARS}/btrace-agent.jar=bootClassPath={PATH_TO_SENSOR_JARS}/unravel-boot.jar,systemClassPath=&lt;PATH_TO_SENSOR_JARS&gt;/unravel-sys.jar,script=DriverProbe.class:SQLProbe.class -Dcom.sun.btrace.FileClient.flush=-1
+spark.executor.extraJavaOptions -javaagent:{PATH_TO_SENSOR_JARS}/btrace-agent.jar=bootClassPath={PATH_TO_SENSOR_JARS}/unravel-boot.jar,systemClassPath={PATH_TO_SENSOR_JARS}/unravel-sys.jar,script=ExecutorProbe.class -Dcom.sun.btrace.FileClient.flush=-1</codeblock>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:24;369:17">
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:39;370:52">Edit <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:29;370:65">zeppelin-env.sh</codeph> by
+                  appending the following values to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:30;371:61">ZEPPELIN_JAVA_OPTS</codeph> as
+                  follows:</p>
+               <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:14;373:63">export ZEPPELIN_JAVA_OPTS="-Dcom.sun.btrace.FileClient.flush=-1 -javaagent:{PATH_TO_SENSOR_JARS}/btrace-agent.jar=bootClassPath={PATH_TO_SENSOR_JARS}/unravel-boot.jar,systemClassPath={PATH_TO_SENSOR_JARS}/unravel-sys.jar,script=DriverProbe.class:SQLProbe.class"</codeblock>
+               <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:40;374:52">
+                  <i class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="i:6;375:23"/>
+               </p>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:76;378:113"/>
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:41;379:19">The Zeppelin configuration is located at
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:31;380:30">/usr/lib/zeppelin/conf/zeppelin-env.sh</codeph>.</p>
+            </li>
+
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:42;384:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:43;385:13">
+            <ph outputclass="confluence-anchor-link" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:77;386:55"/>Appendix</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:44;387:13">
+            <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:7;388:16">Application Loading Modes for Spark Applications: OPS, DEV, and BATCH</b>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:45;390:13">There are three modes in which Spark applications can be loaded into Unravel Web UI:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ul:1;391:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:25;393:17">OPS mode shows applications in the UI after the application is done.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:26;395:17">DEV mode shows applications in the UI as soon as the first job of the Spark
+               application completes.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:27;398:17">BATCH mode loads applications for which the sensor was not enabled at the time the
+               application has been run.  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:78;399:47">
+                  <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:79;400:23"> </ph>
+               </ph>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:46;405:13">You can specify the application load mode for the bootstrap script by setting
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:32;406:24">SPARK_APP_LOAD_MODE</codeph> to <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:33;406:64">OPS</codeph> or <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:34;406:88">DEV</codeph>.
+            By default, if not explicitly specified, <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:35;407:62">SPARK_APP_LOAD_MODE</codeph> is
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:36;408:24">OPS</codeph>. All three modes can coexist in the same Unravel Server. For
+            example, all Spark applications from Qubole cluster A can be loaded in OPS mode, all
+            Spark applications from Qubole cluster B can be loaded in DEV mode, and all Spark
+            applications from Qubole cluster C can be loaded in BATCH mode.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:47;412:13">
+            <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:8;413:16">When to Use Which Mode</b>
+         </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ul:2;415:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:28;417:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:48;418:19">Unravel recommends using OPS mode as the cluster-side default for all Qubole
+                  clusters. The OPS mode has been rigorously benchmarked to have less than 1.3% CPU
+                  and memory overhead. Both the OPS and DEV modes use the Unravel Spark sensor,
+                  which is enabled via modifications to <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:80;421:61">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:37;422:30">spark.driver.extraJavaOptions</codeph>.</ph> The key difference is that
+                  OPS mode sets <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:38;423:41">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:81;424:26">-Dcom.unraveldata.spark.sensor.disableLiveUpdates=true</ph>
+                  </codeph> while DEV mode sets<ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:82;425:52">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:39;426:30"> -Dcom.unraveldata.spark.sensor.disableLiveUpdates=false</codeph>
+                     (false is the default).</ph>
+               </p>
+            </li>
+
+         </ul>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ul:3;432:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:29;434:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:49;435:19">DEV mode is useful during Spark application development. This mode shows a Spark
+                  application as soon as the first Spark job of the application finishes. For long
+                  running applications, this functionality is useful, as the application is shown in
+                  the UI while the application is running. In addition, DEV mode shows applications
+                  even when the Spark event log is not being persisted to HDFS or S3. This is an
+                  advantage in situations like Spark on Mesos.</p>
+            </li>
+
+         </ul>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ul:4;444:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:30;446:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:50;447:19">In a Qubole cluster that is using OPS mode as the default, DEV mode can be
+                  obtained for individual Spark applications by overriding <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:83;448:80">
+                     <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:40;449:30">spark.driver.extraJavaOptions</codeph> to include
+                        <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:41;450:33">-Dcom.unraveldata.spark.sensor.disableLiveUpdates=false</codeph>.</ph>
+               </p>
+            </li>
+
+         </ul>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ul:5;455:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="li:31;457:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:51;458:19">BATCH mode is always on and does not interfere with application performance in any
+                  way since the loading is entirely outside the application execution path. For
+                  details see the next section.</p>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:52;464:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:53;465:13">
+            <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="b:9;466:16">Loading Applications in Batch Mode</b>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:54;468:13">In order to load Spark apps in BATCH mode, Unravel Server must pull the Spark event log
+            file either from S3 or from HDFS. The data collected in the UI is less detailed than
+            when  Unravel Sensor is enabled (for instance, detailed resource usage metrics are
+            unavailable). The BATCH mode of operation is helpful to load all of the applications
+            that have been run in the past, before Unravel Sensor was installed. To enable the batch
+            mode, add the following property to
+               <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeph:42;474:24">/usr/local/unravel/etc/unravel.properties</codeph> and restart the Spark
+            worker daemon(s) as listed earlier:</p>
+         <codeblock outputclass="syntaxhighlighter-pre" xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="codeblock:15;476:57">com.unraveldata.spark.eventlog.location=hdfs://NAMENODE_IP_PORT/user/spark/applicationHistory/</codeblock>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:55;477:14"/>
+         <p outputclass="title" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:56;478:33">Note:</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="ph:84;480:104"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:57;481:13">Currently, only one event log location is supported.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:58;482:13">
+            <i outputclass="auto-cursor-target" class="+ topic/ph hi-d/i " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="i:7;483:50"/>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:59;485:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:60;486:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:61;487:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:62;488:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:63;489:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="p:64;490:13">Attachments:</p>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="image:3;491:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="alt:1;492:19"/>
+         </image>
+         <xref href="media/52567665.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:6;494:56"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="image:4;495:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="alt:2;496:19"/>
+         </image>
+         <xref href="media/52567668.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:7;499:14"><?ditaot usertext?>worddav95f1e8fd13958fae391afc8e6f9ad03d.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="image:5;500:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="alt:3;501:19"/>
+         </image>
+         <xref href="media/52620090.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:8;503:56"><?ditaot usertext?>image2017-6-2_19-21-20.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="image:6;504:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="alt:4;505:19"/>
+         </image>
+         <xref href="media/52620138.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:9;507:56"><?ditaot usertext?>hadoop_cluster_settings1.png</xref>
+         (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="image:7;509:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="alt:5;510:19"/>
+         </image>
+         <xref href="media/52620160.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/52567661.dita" xtrc="xref:10;512:56"><?ditaot usertext?>hadoop_cluster_settings2.png</xref>
+         (image/png) 
+      </context>
+   </taskbody>
+</task>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" >
+<topic xml:lang="en-us" id="FAGIIEED">
+   <title>Installation Guide for Hortonworks Data Platform (HDP) </title>
+   <body>
+
+      <p>This guide is compatible with:</p>
+      <ul>
+
+         <li>HDP 2.2-2.6</li>
+
+      </ul>
+   </body>
+</topic>

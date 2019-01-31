@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <mainbooktitle>Unravel 4.5</mainbooktitle>
+    </booktitle>
+    <chapter href="overview.dita"/>
+    <chapter href="installation_guides.dita">
+        <topicref href="cdh.dita">
+            <topicref href="top.dita"/>
+            <topicref href="pre_installation_cdh.dita"/>
+            <topicref href="install_cdh_step1.dita"/>
+            <topicref href="install_cdh_step2.dita"/>
+            <topicref href="install_cdh_step3.dita"/>
+        </topicref>
+        <topicref href="hdp.dita">
+            <topicref href="top_0.dita"/>
+            <topicref href="pre_installation_hdp.dita"/>
+            <topicref href="install_hdp_step1.dita"/>
+            <topicref href="install_hdp_step2.dita"/>
+        </topicref>
+        <topicref href="emr.dita"/>
+        <topicref href="mapr.dita">
+            <topicref href="top_1.dita"/>
+            <topicref href="pre_installation_mapr.dita"/>
+            <topicref href="install_mapr_step1.dita"/>
+            <topicref href="install_mapr_step2.dita"/>
+        </topicref>
+        <topicref href="hdi.dita">
+            <topicref href="install_hdinsight_app.dita"/>
+        </topicref>
+        <topicref href="mysql.dita">
+            <topicref href="install_configure_mysql.dita"/>
+            <topicref href="move_mysql.dita"/>
+            <topicref href="partition_or_migrate_mysql.dita"/>
+        </topicref>
+        <topicref href="ondemand.dita">
+            <topicref href="install_or_upgrade_ondemand.dita"/>
+            <topicref href="library_versions_and_licenses.dita"/>
+        </topicref>
+        <topicref href="find_properties_in_hdi.dita"/>
+    </chapter>
+    <chapter href="user_guide.dita">
+        <topicref href="get_started.dita"/>
+        <topicref href="common_ui_features.dita"/>
+        <topicref href="the_operations_page.dita"/>
+        <topicref href="the_applications_page.dita"/>
+        <topicref href="the_reports_page.dita">
+            <topicref href="operational_insights.dita"/>
+            <topicref href="data_insights.dita"/>
+            <topicref href="cloud_reports.dita"/>
+            <topicref href="schedule_report.dita"/>
+            <topicref href="reports_archive.dita"/>
+        </topicref>
+        <topicref href="the_application_managers.dita">
+            <topicref href="typical_apms.dita"/>
+            <topicref href="spark_apm.dita"/>
+        </topicref>
+        <topicref href="events_and_insights.dita">
+            <topicref href="event_panel_and_insights.dita"/>
+            <topicref href="impala_events.dita"/>
+            <topicref href="event_list.dita"/>
+        </topicref>
+        <topicref href="auto_actions.dita">
+            <topicref href="auto_actions_overview.dita"/>
+            <topicref href="create_auto_actions.dita"/>
+            <topicref href="expert_rule.dita"/>
+            <topicref href="same_logical_operator.dita"/>
+            <topicref href="snooze_features.dita"/>
+            <topicref href="sample_auto_actions.dita"/>
+            <topicref href="run_auto_action_demos.dita"/>
+            <topicref href="supported_cluster_metrics.dita"/>
+        </topicref>
+        <topicref href="use_cases.dita">
+            <topicref href="identify_rogue_apps.dita"/>
+            <topicref href="detect_resource_contention.dita"/>
+            <topicref href="optimize_spark_app_performance.dita"/>
+            <topicref href="get_kafka_insights.dita"/>
+        </topicref>
+        <topicref href="keywords_and_error_messages.dita"/>
+        <topicref href="resource_metrics.dita"/>
+    </chapter>
+    <chapter href="advanced_topics.dita">
+        <topicref href="back_up_and_disaster_recovery.dita"/>
+        <topicref href="cluster_wide_report.dita"/>
+        <topicref href="configurations.dita">
+            <topicref href="custom_configurations.dita"/>
+            <topicref href="configure_permissions_on_cdh_sentry_secured_cluster.dita"/>
+            <topicref href="configure_multiple_hosts_for_unravel_server.dita"/>
+            <topicref href="create_multiple_workers_for_high_volume_data.dita"/>
+            <topicref href="create_custom_banner.dita"/>
+            <topicref href="define_custom_ui_port.dita"/>
+            <topicref href="set_up_email_alerts.dita"/>
+            <topicref href="configure_hbase.dita"/>
+            <topicref href="run_daemons_with_custom_user.dita"/>
+            <topicref href="set_retention_time.dita"/>
+            <topicref href="set_properties_for_spark_worker_daemon.dita"/>
+            <topicref href="use_impalad_as_data_source.dita"/>
+        </topicref>
+        <topicref href="security_configurations.dita">
+            <topicref href="add_more_admins.dita"/>
+            <topicref href="add_ssl_and_tls.dita"/>
+            <topicref href="configure_alternate_kerberos_principal_for_cdh.dita"/>
+            <topicref href="configure_hdfs_permission_on_cdh_sentry_secured_cluster.dita"/>
+            <topicref href="configure_hive_metastore_permissions.dita"/>
+            <topicref href="disable_browser_telemetry.dita"/>
+            <topicref href="disable_support_comments_panel.dita"/>
+            <topicref href="enable_ldap_authentication.dita"/>
+            <topicref href="enable_saml_authentication.dita"/>
+            <topicref href="enable_tls_directly_to_ui.dita"/>
+            <topicref
+                href="enable_small_files_and_file_reports_on_sentry_or_ranger_secured_clusters.dita"/>
+            <topicref href="encrypt_passwords.dita"/>
+            <topicref href="add_kafka_security.dita"/>
+            <topicref href="restrict_direct_access_to_ui.dita"/>
+            <topicref href="use_private_cert_authority.dita"/>
+        </topicref>
+        <topicref href="autoscale_hdi_spark_cluster.dita"/>
+        <topicref href="create_ad_kerberos_principals_and_keytabs.dita"/>
+        <topicref href="create_aws_rds_cloudwatch_alarm_for_free_storage_space.dita"/>
+        <topicref href="trigger_import_of_fsimage.dita"/>
+        <topicref href="configure_jvm_sensor.dita">
+            <topicref href="enable_jvm_sensor_on_cdh.dita"/>
+            <topicref href="enable_jvm_sensor_on_hdp.dita"/>
+        </topicref>
+        <topicref href="connectivity.dita">
+            <topicref href="connect_and_configure_kafka_stream.dita"/>
+            <topicref href="connect_and_configure_hive_metastore.dita">
+                <topicref href="connect_hive_metastore.dita"/>
+                <topicref href="configure_hive_metastore.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="create_application_tags.dita"/>
+        <topicref href="deploy_over_selinux.dita"/>
+        <topicref href="roles_and_rbac.dita">
+            <topicref href="rbac_roles.dita"/>
+            <topicref href="configure_rbac.dita"/>
+            <topicref href="manage_rbac.dita"/>
+        </topicref>
+        <topicref href="run_verification_scripts.dita"/>
+        <topicref href="rest_api.dita">
+            <topicref href="sign_in.dita"/>
+            <topicref href="application.dita"/>
+            <topicref href="data.dita"/>
+            <topicref href="operations.dita"/>
+            <topicref href="reports.dita"/>
+            <topicref href="use_case_for_rest_api.dita"/>
+        </topicref>
+        <topicref href="monitoring_service.dita">
+            <topicref href="configuration.dita"/>
+            <topicref href="monitor_disks.dita"/>
+            <topicref href="monitor_jmx_client.dita"/>
+            <topicref href="monitor_rest_api.dita"/>
+        </topicref>
+        <topicref href="properties.dita">
+            <topicref href="ondemand_configurations_for_reports.dita"/>
+            <topicref href="sensors.dita"/>
+        </topicref>
+        <topicref href="servers_and_sensors.dita">
+            <topicref href="install_sensors.dita">
+                <topicref
+                    href="on_individual_apps_submitted_through_spark_submitted_through_spark_submit.dita"/>
+                <topicref href="on_individual_hive_queries.dita"/>
+            </topicref>
+            <topicref href="upgrade_server_and_sensors.dita"/>
+            <topicref href="upload_spark_programs.dita"/>
+            <topicref href="uninstall_unravel_server.dita"/>
+        </topicref>
+        <topicref href="workflows.dita">
+            <topicref href="add_tags_to_workflows.dita"/>
+            <topicref href="add_tags_to_hive_on_tez_query.dita"/>
+            <topicref href="monitor_oozie_workflows.dita"/>
+            <topicref href="monitor_airflow_workflows.dita"/>
+        </topicref>
+        <topicref href="write_jolokia_jmx_mbean.dita"/>
+    </chapter>
+    <chapter href="appendices.dita">
+        <topicref href="server_daemon_reference.dita"/>
+        <topicref href="hbase_alerts_and_metrics.dita"/>
+    </chapter>
+    <chapter href="troubleshooting.dita">
+        <topicref href="send_diagnostics_to_support.dita"/>
+    </chapter>
+    <chapter href="release_notes.dita">
+        <topicref href="vversionid.dita"/>
+        <topicref href="upgrade_instructions.dita"/>
+        <topicref href="updates_to_properties.dita"/>
+    </chapter>
+</bookmap>

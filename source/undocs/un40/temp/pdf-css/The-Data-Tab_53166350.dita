@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="The-Data-Tab_53166350" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="concept:1;4:54">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="title:1;5:11">The Data Tab </title>
+   <conbody class="- topic/body  concept/conbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="conbody:1;6:13">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ol:1;7:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:1;9:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:1;10:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:1;11:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:2;15:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:2;16:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:2;17:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:3;21:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:3;22:17">
+               <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:3;23:54" type="topic"><?ditaot usertext?>User Guide</xref>
+            </ph>
+         </li>
+
+      </ol>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:1;28:10">Table of Contents</p>
+      <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ul:1;29:41">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:4;31:14">
+            <xref href="#The-Data-Tab_53166350/TheDataTab-Table/PartitionUsage" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:4;32:81"><?ditaot usertext?>Table/Partition Usage</xref>
+            <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ul:2;33:47">
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:5;35:20">
+                  <xref href="#The-Data-Tab_53166350/TheDataTab-TableDetails" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:5;36:79"><?ditaot usertext?>Table Details</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:6;39:20">
+                  <xref href="#The-Data-Tab_53166350/TheDataTab-PartitionDetails" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:6;40:83"><?ditaot usertext?>Partition Details</xref>
+               </li>
+
+            </ul>
+         </li>
+
+      </ul>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="section:1;47:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="title:2;48:17">Table/Partition Usage</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:2;49:13">The Data tab provides a quick snapshot of the tables and partitions in the cluster. To see table and
+            partition details, click the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="b:1;50:45">Details</b> tab.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:3;51:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:4;52:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:4;53:96">
+               <image href="media/53166417.png" outputclass="confluence-embedded-image confluence-content-image-border" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:1;55:92"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:5;58:13">On the<b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="b:2;58:22"> Details</b> tab, you can sort the data on any column by clicking that column's header. </p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ul:3;59:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:7;61:17">Click on any column to sort by that metric such as:<ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ul:4;61:72">
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:8;63:23">Last Access - to find tables used most recently</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:9;65:23">Created At - to sort oldest/newest tables</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:10;67:23">Read I/O - to find tables which have performed most I/O</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:11;69:23">Attempts - to find tables which have had most number of read/write attempts on them</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:12;71:23">Apps - to find tables which have most number of applications using it</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:13;73:23">Users - to find tables which have the most number of users using it</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:14;75:23">Other Tables - shows other tables commonly used along with a particular table in applications</li>
+
+                  <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:15;77:23">Labels - view tables which have been labeled Hot, Warm or Cold</li>
+
+               </ul>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:16;82:17">Hover on columns like Users and Other Tables to know respectively which users accessed this table and
+               which other tables are accessed along with this table.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:17;85:17">View trends of table usage and access by accessing the drop-down menu on the top right corner. Metrics
+               available are Read I/O, Total Users, Total Apps, Total Attempts as shown below.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:18;88:17">You can also search for a particular table by typing part of the table name in the table search box as
+               shown below. In our example we are looking for tables with the word customer in it.</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:6;92:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:7;93:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:5;94:96">
+               <image href="media/53166414.png" outputclass="confluence-embedded-image confluence-content-image-border" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:2;96:92"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:8;99:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:9;100:13">Table Details</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:10;101:13">To drill down into a particular table click its <uicontrol class="+ topic/ph ui-d/uicontrol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="uicontrol:1;101:72">More Info</uicontrol> icon.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:11;102:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:6;103:96">
+               <image href="media/53315752.png" outputclass="confluence-embedded-image confluence-content-image-border" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:3;105:92"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:12;108:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:13;109:13">This opens a <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="b:3;109:29">Table Detail</b> pane as shown below.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:14;110:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:7;111:96">
+               <image href="media/53166408.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:4;112:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:15;115:13">You can view different metric trends on this pane including:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ul:5;116:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:19;118:17">Read IO</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:20;120:17">Number of Users</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:21;122:17">Number of Apps</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:22;124:17">Number of Attempts</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:16;127:13">It also allows you to view the historical usage and access information about this table. The table detail
+            view also shows a list of applications and users that accessed the table in the given time range. This list
+            of applications and users is also sortable for easy search and browse capabilities.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:17;130:13">Partition Details</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:18;131:13">To view detailed information about partitions associated with a Table, click the Partition Detail tab in the
+            Table Detailed View and you will open up a Partition detail page as shown below.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:19;133:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:8;134:96">
+               <image href="media/53166411.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:5;135:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:20;138:13">The Partition histogram provide the Access Age of Partitions (including the Max Access Age). This
+            information is used to calculate the number and size of Reclaimable Partitions. This can be explained as
+            follows:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ul:6;141:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:23;143:17">Reclaimable Partitions Found = number of Partitions with Last Access Time &lt; (Current Time - Max
+               Access Age of Partitions). In the example above:</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:24;146:17">No partition is accessed by any application more than 4 days 14 hrs. after it is created. Thus, the
+               partitions created on Dec 1, 2015, will not be accessed after Dec 5, 2015.</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:25;149:17">In Unravel, the Max Access Age of Partitions for the above Table will be computed as 4 days 14 hrs.
+               based on the history of accesses to partitions in the above Table</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:26;152:17">So on Dec 15, 2015, if the above Table is reviewed:</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:27;154:17">Reclaimable Partitions found = number of Partitions with Last Access Time &lt; (Dec 14 2015 - 4days 14
+               hrs.) i.e., (Dec 10, 2015). Thus, the partitions created on any day before Dec 10, 2015 will be marked as
+               a Reclaimable Partition. In this case, it will be all the 26 partitions.</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:21;159:13">The page also list all Partitions by key KPI’s, including:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ul:7;160:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:28;162:17">Last access date/time</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:29;164:17">Create date/time</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:30;166:17">Current Size</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="li:31;168:17"># of Users accessing the Partition</li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:22;171:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:9;172:96">
+               <image href="media/53166405.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:6;173:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:23;176:13">Unravel provides an easy way to label Tables/Partitions as “HOT”, “WARM” and “COLD” based on access patterns
+            – last access time or age (last access time – create time).</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:24;178:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:10;179:96">
+               <image href="media/53166402.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:7;180:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:25;183:13">Once you have the rule configured as above, please click on the "SAVE RULES" and you will see a confirmation
+            as below. </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:26;185:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:11;186:96">
+               <image href="media/53236814.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:8;187:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:27;190:13">While the "HOT", "WARM" and "COLD" labels are associated with the Tables right away, the main dashboard page
+            with appropriate pie chart values are typically populated in 24 hrs. </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:28;192:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:29;193:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:30;194:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="ph:12;195:96">
+               <image href="media/53166399.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:9;196:90"/>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:31;199:13">As illustrated above, HOT rule can be  “Last Access &lt;= 120 days”, WARN rule  can be “Last Access &lt;=
+            175 days and &gt; 120 days” and COLD rule can be “Last Access &gt;= 176 days”</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:32;201:13">These rules are checked periodically (every 24 hrs.) and tables/partition are labeled and classified
+            accordingly. The Data overview page provides a quick summary information based on these labels. Operators
+            can use this information to identify unused or frequently used tables/partitions and take appropriate
+            actions.</p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:33;205:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:34;206:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:35;207:14"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="p:36;208:14"/>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="section:2;210:16">
+         <title outputclass="pageSectionTitle" class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="title:3;211:48">Attachments:</title>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:10;212:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:1;213:19"/>
+         </image>
+         <xref href="media/53166354.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:7;215:56"><?ditaot usertext?>gui_auto_actions_select.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:11;216:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:2;217:19"/>
+         </image>
+         <xref href="media/53166357.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:8;219:56"><?ditaot usertext?>gui_auto_actions2.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:12;220:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:3;221:19"/>
+         </image>
+         <xref href="media/53166360.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:9;223:56"><?ditaot usertext?>gui_auto_actions1.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:13;224:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:4;225:19"/>
+         </image>
+         <xref href="media/53166363.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:10;227:56"><?ditaot usertext?>gui_applications.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:14;228:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:5;229:19"/>
+         </image>
+         <xref href="media/53166366.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:11;231:56"><?ditaot usertext?>gui_hive_app_mgr1_events.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:15;232:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:6;233:19"/>
+         </image>
+         <xref href="media/53166369.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:12;235:56"><?ditaot usertext?>gui_hive_app_mgr1.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:16;236:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:7;237:19"/>
+         </image>
+         <xref href="media/53166372.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:13;239:56"><?ditaot usertext?>hive-recommendation.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:17;240:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:8;241:19"/>
+         </image>
+         <xref href="media/53166375.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:14;243:56"><?ditaot usertext?>caching-opportunity.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:18;244:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:9;245:19"/>
+         </image>
+         <xref href="media/53166378.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:15;247:56"><?ditaot usertext?>spark-insights3.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:19;248:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:10;249:19"/>
+         </image>
+         <xref href="media/use-case-4.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:16;251:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo4.mp4</xref> (video/mp4) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:20;252:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:11;253:19"/>
+         </image>
+         <xref href="media/use-case-3.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:17;255:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo3.mp4</xref> (video/mp4) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:21;256:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:12;257:19"/>
+         </image>
+         <xref href="media/use-case-2.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:18;259:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo2.mp4</xref> (video/mp4) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:22;260:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:13;261:19"/>
+         </image>
+         <xref href="media/use-case-1.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:19;263:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo-1.mp4</xref> (video/mp4) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:23;264:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:14;265:19"/>
+         </image>
+         <xref href="media/53166393.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:20;267:56"><?ditaot usertext?>gui_report_users.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:24;268:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:15;269:19"/>
+         </image>
+         <xref href="media/53166396.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:21;271:56"><?ditaot usertext?>gui_report_ops.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:25;272:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:16;273:19"/>
+         </image>
+         <xref href="media/53166399.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:22;275:56"><?ditaot usertext?>gui_data_table_rules2.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:26;276:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:17;277:19"/>
+         </image>
+         <xref href="media/53166402.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:23;279:56"><?ditaot usertext?>gui_data_table_rules1.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:27;280:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:18;281:19"/>
+         </image>
+         <xref href="media/53166405.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:24;283:56"><?ditaot usertext?>gui_data_table_details3.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:28;284:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:19;285:19"/>
+         </image>
+         <xref href="media/53166408.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:25;287:56"><?ditaot usertext?>gui_data_table_details2.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:29;288:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:20;289:19"/>
+         </image>
+         <xref href="media/53166411.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:26;291:56"><?ditaot usertext?>gui_data_table_details.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:30;292:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:21;293:19"/>
+         </image>
+         <xref href="media/53315588.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:27;295:56"><?ditaot usertext?>gui_data_table_summary.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:31;296:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:22;297:19"/>
+         </image>
+         <xref href="media/53315514.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:28;299:56"><?ditaot usertext?>gui_data_table.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:32;300:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:23;301:19"/>
+         </image>
+         <xref href="media/53166420.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:29;303:56"><?ditaot usertext?>gui_ops_chargeback.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:33;304:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:24;305:19"/>
+         </image>
+         <xref href="media/53166423.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:30;307:56"><?ditaot usertext?>gui_ops_cluster_metrics.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:34;308:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:25;309:19"/>
+         </image>
+         <xref href="media/53166426.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:31;311:56"><?ditaot usertext?>gui_ops_dashboard.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:35;312:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:26;313:19"/>
+         </image>
+         <xref href="media/53166430.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:32;315:56"><?ditaot usertext?>gui_error_view.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:36;316:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:27;317:19"/>
+         </image>
+         <xref href="media/53166433.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:33;319:56"><?ditaot usertext?>gui_events_workflow.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:37;320:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:28;321:19"/>
+         </image>
+         <xref href="media/53166436.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:34;323:56"><?ditaot usertext?>gui_events_spark.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:38;324:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:29;325:19"/>
+         </image>
+         <xref href="media/53166439.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:35;327:56"><?ditaot usertext?>gui_events_hive.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:39;328:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:30;329:19"/>
+         </image>
+         <xref href="media/53166442.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:36;331:56"><?ditaot usertext?>gui_workflow_mgr3.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:40;332:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:31;333:19"/>
+         </image>
+         <xref href="media/53166445.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:37;335:56"><?ditaot usertext?>gui_spark_app_mgr3.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:41;336:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:32;337:19"/>
+         </image>
+         <xref href="media/53166448.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:38;339:56"><?ditaot usertext?>gui_workflow_mgr2.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:42;340:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:33;341:19"/>
+         </image>
+         <xref href="media/53166451.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:39;343:56"><?ditaot usertext?>gui_workflow_mgr1.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:43;344:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:34;345:19"/>
+         </image>
+         <xref href="media/53166454.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:40;347:56"><?ditaot usertext?>gui_mapreduce_app_mgr1.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:44;348:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:35;349:19"/>
+         </image>
+         <xref href="media/53166457.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:41;351:56"><?ditaot usertext?>gui_hive_app_mgr2.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:45;352:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:36;353:19"/>
+         </image>
+         <xref href="media/53166460.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:42;355:56"><?ditaot usertext?>gui_spark_app_mgr2.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:46;356:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:37;357:19"/>
+         </image>
+         <xref href="media/53166463.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:43;359:56"><?ditaot usertext?>gui_spark_app_mgr.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:47;360:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:38;361:19"/>
+         </image>
+         <xref href="media/53166466.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:44;363:56"><?ditaot usertext?>gui_global_search.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:48;364:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:39;365:19"/>
+         </image>
+         <xref href="media/53166469.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:45;367:56"><?ditaot usertext?>gui_email.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:49;368:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:40;369:19"/>
+         </image>
+         <xref href="media/53166472.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:46;371:56"><?ditaot usertext?>gui_admin_manage_configuration.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:50;372:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:41;373:19"/>
+         </image>
+         <xref href="media/53166475.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:47;375:56"><?ditaot usertext?>admin_manage_configuration.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:51;376:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:42;377:19"/>
+         </image>
+         <xref href="media/53166478.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:48;379:56"><?ditaot usertext?>image2017-2-26_0-20-12.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:52;380:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:43;381:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:49;383:52"><?ditaot usertext?>logo_small.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:53;384:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:44;385:19"/>
+         </image>
+         <xref href="media/53236814.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:50;387:56"><?ditaot usertext?>Screen Shot 2017-07-06 at 1.14.55 PM.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:54;388:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:45;389:19"/>
+         </image>
+         <xref href="media/53315549.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:51;391:56"><?ditaot usertext?>gui_data_table.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:55;392:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:46;393:19"/>
+         </image>
+         <xref href="media/53166417.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:52;395:56"><?ditaot usertext?>gui_data_table.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:56;396:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:47;397:19"/>
+         </image>
+         <xref href="media/53166414.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:53;399:56"><?ditaot usertext?>gui_data_table_summary.png</xref> (image/png) 
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="image:57;400:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="alt:48;401:19"/>
+         </image>
+         <xref href="media/53315752.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/The-Data-Tab_53166350.dita" xtrc="xref:54;403:56"><?ditaot usertext?>gui091moreinfo.png</xref> (image/png)
+         
+      </section>
+   </conbody>
+</concept>

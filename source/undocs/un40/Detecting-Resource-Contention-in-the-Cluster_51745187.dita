@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Detecting-Resource-Contention-in-the-Cluster_51745187">
+   <title>Detecting Resource Contention in the Cluster </title>
+   <taskbody>
+      <context>
+         <p>If your cluster has a lot of apps these apps will contend for resources in the cluster. Unravel Web UI
+            assists you in detecting and resolving resource contention.</p>
+         <ol>
+            <li>Click <b>Operations</b> | <b>Charts</b> | <b>Resources</b>.</li>
+            <li>In the <b>Cluster VCores</b> or <b>Cluster MemoryMB</b> graph, click on a spike.Unravel Web UI displays
+               the list of applications running or pending in the cluster at the spike's timestamp, at the bottom of the
+               page. When you see many applications in the ACCEPTED state (not RUNNING), it means they are waiting for
+               resources. For example, the screenshot below shows that only one Spark application is RUNNING (consuming
+               resources) and four MR applications are ACCEPTED (waiting for resources). Now you can take steps to
+               resolve the problem.<ph outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51745197.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </li>
+         </ol>
+         <p/>
+         <p>Setting Up Auto Actions (Alerts)</p>
+         <p>To define an action for Unravel to execute automatically when it detects resource contention in the
+            cluster:</p>
+         <ol>
+            <li>Click <b>Manage</b> | <b>Auto Actions</b>.</li>
+            <li>Select <b>Resource Contention in Cluster</b>.<!--A BR tag was used here in the original source.-->
+               <ph outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51745220.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </li>
+            <li>Specify the rules for triggering this auto action, such as a memory threshold, job count threshold, and
+               so on:<ph outputclass="confluence-embedded-file-wrapper">
+                  <image href="media/51745239.png" outputclass="confluence-embedded-image"/>
+               </ph>
+            </li>
+            <li>Select the <b>Send Email</b> check box.</li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

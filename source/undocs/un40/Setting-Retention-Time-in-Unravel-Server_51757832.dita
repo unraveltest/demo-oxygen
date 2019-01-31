@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Setting-Retention-Time-in-Unravel-Server_51757832">
+   <title>Setting Retention Time in Unravel Server </title>
+   <taskbody>
+      <context>
+         <p/>
+         <p>To adjust the retention time (<i>time horizon</i>), you need to change three settings. These settings can be
+            made in /usr/local/unravel/etc/unravel.properties or via the <b>Manage</b>
+            <ph> page, <b>Configuration </b>tab, <b>Core</b> section (tab on left) and scroll down to the</ph>
+            <ph> </ph>
+            <b>Retention</b>
+            <ph> heading. If you make the setting in the <b>Manage</b> page <b>Configuration</b> tab, then the
+               corresponding property in unravel.properties <i>will be ignored</i> because settings made in the web UI
+               take precedence.</ph>
+         </p>
+         <p>
+            <ph>When changing these settings, be aware that long retention requires significant disk space. As a rule of
+               thumb, each map-reduce or Spark job requires about 500KB of disk space. That means about 2000 jobs per
+               1GB of disk. </ph>
+         </p>
+         <ol>
+
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>In Unravel Web UI, select the </ph>
+                  <b>Manage</b>
+                  <ph> page, </ph>
+                  <b>Configuration </b>
+                  <ph>tab, </ph>
+                  <ph>and </ph>
+                  <b>Core</b>
+                  <ph> section (tab on left). The settings below are show the label in the web UI and the boxes show the
+                     corresponding property you can optionally set in  /usr/local/unravel/etc/unravel.properties if you
+                     prefer.</ph>
+               </p>
+            </li>
+
+            <li>
+               <p outputclass="auto-cursor-target">
+                  <ph>
+                     <ph>The <b>
+                           <ph>TIME SERIES RETENTION DAYS</ph>
+                        </b> field is number of days to keep the heaviest data (such as error logs and drill-down
+                        details). This corresponds to the <ph>property in <codeph>unravel.properties:</codeph>
+                        </ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.retention.max.days=90</codeblock>
+            </li>
+
+            <li>
+               <p>
+                  <ph>
+                     <ph>The <b>
+                           <ph>WEEKS TO SHOW FOR SEARCH RESULTS</ph>
+                        </b> <ph>field is number of weeks to show in search results. This corresponds to the</ph>
+                        <ph> </ph>
+                        <ph>property in <codeph>unravel.properties:</codeph>
+                        </ph>
+                     </ph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.history.maxSize.weeks=7</codeblock>
+               <p outputclass="auto-cursor-target">This value should be no larger than the next setting minus 1.</p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>The </ph>
+                  <b>WEEKS TO SHOW FOR DEEP SEARCH RESULTS</b>
+                  <ph> </ph>
+                  <ph>field is number of weeks to retain for search results. This corresponds to the</ph>
+                  <ph> </ph>
+                  <ph>property in <codeph>unravel.properties:</codeph>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.recent.maxSize.weeks=14</codeblock>
+               <p outputclass="auto-cursor-target">This value should be at least 1 week more than the setting
+                  immediately above. </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>After changing any of the settings above, restart unravel_td service:</ph>
+               </p>
+               <p/>
+               <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_td restart</codeblock>
+            </li>
+
+         </ol>
+      </context>
+   </taskbody>
+</task>

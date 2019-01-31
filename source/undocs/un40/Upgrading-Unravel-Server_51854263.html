@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Upgrading Unravel Server</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced
+                                    Topics</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Upgrading Unravel Server </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p style="text-align: left;">This topic explains how to upgrade the Unravel
+                            Server RPM in a single or multi-host environment.</p><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>For single
+                                    Unravel gateway or client host, run only the commands that are
+                                    marked as <code>host1</code> in each step below.</p></div></div><ol>
+                            <li>Copy the new RPM to each Unravel host.</li>
+                            <li>Stop each host <strong>simultaneously</strong>:<div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+sudo /etc/init.d/unravel_all.sh stop 
+# host2
+sudo /etc/init.d/unravel_all.sh stop 
+# host3
+sudo /etc/init.d/unravel_all.sh stop</pre>
+                                    </div></div></li>
+                            <li>Upgrade the RPM on each host <strong>simultaneously</strong>:<div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+sudo rpm -U unravel-4.*.x86_64.rpm* 
+# host2
+sudo rpm -U unravel-4.*.x86_64.rpm* 
+# host3
+sudo rpm -U unravel-4.*.x86_64.rpm*</pre>
+                                    </div></div></li>
+                            <li><p class="auto-cursor-target"><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">Add your
+                                        license key to <code>unravel.properties</code>.
+                                    </span></p><div
+                                    class="confluence-information-macro confluence-information-macro-warning"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                                ><p><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">You
+                                                must enter add license key to <span
+                                                  style="color: rgb(0,0,0);text-decoration: none;"
+                                                  ><code>unravel.properties</code></span> before
+                                                starting/restarting Unravel
+                                    Server.</span></p></div></div></li>
+                            <li>Run
+                                <strong>/usr/local/unravel/install_bin/await_fixups.sh </strong>script
+                                after upgrade</li>
+                        </ol><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">sudo /usr/local/unravel/install_bin/await_fixups.sh</pre>
+                            </div></div><p><br /></p><ol>
+                            <li><p class="auto-cursor-target">After all the RPM upgrades finish,
+                                    restart Unravel Server on each host
+                                        <strong>simultaneously</strong>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># host1
+sudo /etc/init.d/unravel_all.sh start 
+# host2
+sudo /etc/init.d/unravel_all.sh start 
+# host3
+sudo /etc/init.d/unravel_all.sh start</pre>
+                                    </div></div></li>
+                        </ol><p><br /></p><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51854267.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a>
+                            (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

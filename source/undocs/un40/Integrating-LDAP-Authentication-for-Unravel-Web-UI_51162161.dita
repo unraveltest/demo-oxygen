@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161">
+   <title>Integrating LDAP Authentication for Unravel Web UI </title>
+   <taskbody>
+      <context>
+         <p>
+            <ph>To configure lightweight directory access protocol (LDAP) or active directory (AD) authentication for
+               Unravel Web UI, use settings identical to the settings for HiveServer2. In other words, if you have
+               HiveServer2 set up for AD-based LDAP, use the same values for Unravel Web UI. If you do not use
+               HiveServer2 LDAP, then follow the steps below.</ph>
+         </p>
+         <p>
+            <ph>1. Modify <codeph>unravel.properties</codeph>
+            </ph>
+         </p>
+         <p>Add/modify these properties in <codeph>/usr/local/unravel/etc/unravel.properties</codeph>:</p>
+         <p>Change <codeph>
+               <ph>QA</ph>
+            </codeph> and <ph>
+               <codeph>ldap://LDAP_HOST</codeph>
+            </ph> to your specific values:</p>
+         <ul>
+            <li>For <codeph>
+                  <ph>QA</ph>
+               </codeph>, use a value in uppercase that matches your setup, like QA.EXAMPLE.COM.</li>
+            <li>For <ph>
+                  <codeph>ldap://LDAP_HOST</codeph>
+               </ph>, use <ph>
+                  <codeph>ldaps://LDAP_HOST</codeph>
+               </ph> if SSL is in use. If ldaps (SSL), a truststore must be set under <codeph>unravel/jre/</codeph> if
+               the CA is not well-known or an external JDK can be set in unravel/etc/unravel.ext.sh. You can append a
+               port number, if needed; for example, <ph>
+                  <codeph>ldap://ldap_host:9999</codeph>
+               </ph>. You can also specify multiple LDAP hosts by using a SPACE to separate them. This is useful for HA
+               purposes.</li>
+         </ul>
+         <p>For Active Directory (AD):</p>
+         <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.login.mode=ldap
+com.unraveldata.ldap.use_jndi=true
+hive.server2.authentication.ldap.url=ldap://LDAP_HOST
+hive.server2.authentication.ldap.Domain=QA</codeblock>
+         <p>
+            <i>Change LDAP_HOST and QA to appropriate value for your installation.</i>
+         </p>
+         <p>For Open LDAP, example 1:</p>
+         <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.login.mode=ldap
+com.unraveldata.ldap.use_jndi=true
+hive.server2.authentication.ldap.url=ldap://LDAP_HOST
+hive.server2.authentication.ldap.baseDN=ou=myunit,dc=example,dc=com</codeblock>
+         <p>
+            <i>Change the example ou=myunit,dc=example,dc=com to appropriate value for your installation.</i>
+         </p>
+         <p>For Open LDAP, example 2:</p>
+         <p>In this example, we expect a typical DN to be uid=%s,ou=myunit,dc=example,dc=com  where %s is the login name
+            as typed in the login form. In some cases 'cn' is used in place of 'uid'.  </p>
+         <codeblock outputclass="syntaxhighlighter-pre">com.unraveldata.login.mode=ldap
+com.unraveldata.ldap.use_jndi=true
+hive.server2.authentication.ldap.url=ldap://LDAP_HOST
+hive.server2.authentication.ldap.guidKey=uid
+hive.server2.authentication.ldap.userDNPattern=uid=%s,ou=myunit,dc=example,dc=com</codeblock>
+         <p>
+            <i>Change the example ou=myunit,dc=example,dc=com to appropriate value for your installation.</i>
+         </p>
+         <p>2. Restart unravel_tc</p>
+         <p>Restart <codeph>unravel_tc</codeph> on Unravel Server (on host1 if multiple host Unravel install):</p>
+         <codeblock outputclass="syntaxhighlighter-pre">sudo /etc/init.d/unravel_tc restart</codeblock>
+         <p><!--A BR tag was used here in the original source.-->
+            <ph outputclass="confluence-anchor-link"/>Advanced Hive Properties</p>
+         <p>Below is a list of advanced properties that narrow the search for authorized users. For more detail, see the
+               page <xref href="#UserandGroupFilterSupportwithLDAPAtnProviderinHiveServer2" scope="external"
+               format="html" outputclass="external-link">User and Group Filtering LDAP in HiveServer2</xref> </p>
+         <p>The process of authentication is described next.</p>
+         <p>Authentication Process for Active Directory (AD)</p>
+         <ol>
+            <li>Bind as username + at sign + domain, using the given password, with simple LDAP auth mode<ol>
+                  <li>verbose log will show Connecting and then Connected when bind is successful</li>
+               </ol>
+            </li>
+            <li>If there are no more qualifications for groups or filtering or custom query, then login to Unravel is
+               deemed successful if bind succeeds</li>
+            <li>If custom query is specified, the query is made, and results are checked for a match against the user
+               name, if there is a match, login to Unravel is successful<ol>
+                  <li>verbose log will show results list and the match arguments in effect</li>
+                  <li>user or group filters will be ignored if custom query is used</li>
+               </ol>
+            </li>
+            <li>If a group filter is specified, it is checked</li>
+            <li>if a user filter is specified, it is checked</li>
+         </ol>
+         <p>Authentication Process for Open LDAP</p>
+         <ol>
+            <li>Bind as cn or uid =username + baseDN  using the given password, with simple LDAP auth mode<ol>
+                  <li>the guidKey property determines whether cn or uid is used</li>
+                  <li>if userDNPattern is used, it takes precedence over baseDN, and each pattern is tried</li>
+               </ol>
+            </li>
+            <li>If there are no more qualifications for groups or filtering or custom query, then login to Unravel is
+               deemed successful if bind succeeds</li>
+            <li>If custom query is specified, the query is made, and results are checked for a match against the user
+               name, if there is a match, login to Unravel is successful<ol>
+                  <li>verbose log will show results list and the match arguments in effect</li>
+                  <li>user or group filters will be ignored if custom query is used</li>
+               </ol>
+            </li>
+            <li>If a group pattern or filter is specified, it is checked</li>
+            <li>if a user filter is specified, it is checked</li>
+         </ol>
+         <table outputclass="wrapped fixed-table confluenceTable">
+            <tgroup cols="3">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <tbody>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.baseDN</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">LDAP base DN; use your rootDN value if a custom LDAP query is
+                        applied. Needed for Open LDAP. See also userDNPattern as alternative.</entry>
+                     <entry outputclass="confluenceTd">
+                        <codeph>
+                           <ph>DC=qa,DC=example,DC=com</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.customLDAPQuery</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">A full LDAP query that LDAP Atn provider uses to execute against
+                        LDAP Server. If this query returns a null resultset, the LDAP Provider fails the Authentication
+                        request, succeeds if the user is part of the resultset. If this property is set, filtering and
+                        group properties are ignored.</entry>
+                     <entry outputclass="confluenceTd">
+                        <codeph>
+                           <ph>(&amp;(objectClass=group)(objectClass=top)(instanceType=4)(cn=Domain*))
+                              (&amp;(objectClass=person)(|(sAMAccountName=admin)(|(memberOf=CN=Domain
+                              Admins,CN=Users,DC=domain,DC=com)
+                              (memberOf=CN=Administrators,CN=Builtin,DC=domain,DC=com))))</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.guidKey</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">LDAP attribute name whose values are unique in this LDAP server.
+                           <ph>REQUIRED for advanced query except when setting custom query or groupDNPattern.</ph>
+                     </entry>
+                     <entry outputclass="confluenceTd">uid or CN</entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.groupDNPattern</codeph>
+                     </entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">COLON-separated list of patterns to
+                        use to find DNs for group entities in this directory. Use %s where the actual group name is to
+                        be substituted for. Each pattern should be fully qualified. Do not set ldap.Domain property to
+                        use this qualifier.</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <codeph>
+                           <ph>CN=%s,CN=Groups,DC=subdomain,DC=domain,DC=com</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.groupFilter</codeph>
+                     </entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">COMMA-separated list of LDAP Group
+                        names (short name not full DNs)</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <codeph>
+                           <ph>HiveAdmins,HadoopAdmins,Administrators</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.userDNPattern</codeph>
+                     </entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">COLON-separated list of patterns to
+                        use to find DNs for users in this directory. Use <codeph>%s</codeph> where the actual group name
+                        is to be substituted for. This is used like a list of baseDNs and baseDN is ignored if this is
+                        set.</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <codeph>
+                           <ph>CN=%s,CN=Users,DC=subdomain,DC=domain,DC=com</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.userFilter</codeph>
+                     </entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">COMMA-separated list of LDAP
+                        usernames (just short names, not full DNs).</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <codeph>
+                           <ph>hiveuser,impalauser,hiveadmin,hadoopadmin</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd"/>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd"/>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd"/>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.groupMembershipKey</codeph>
+                     </entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">LDAP attribute name on the user
+                        entry that references a group that the user belongs to. Default is 'member'.</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <codeph>
+                           <ph>member, uniqueMember or memberUid</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd"/>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd"/>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd"/>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">
+                        <codeph>hive.server2.authentication.ldap.groupClassKey</codeph>
+                     </entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">LDAP attribute name on the group
+                        entry that is to be used in LDAP group searches.</entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">
+                        <codeph>
+                           <ph>group, groupOfNames or groupOfUniqueNames</ph>
+                        </codeph>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry namest="col1" nameend="col1" outputclass="confluenceTd">
+                        <codeblock>com.unraveldata.ldap.verbose</codeblock>
+                     </entry>
+                     <entry namest="col2" nameend="col2" outputclass="confluenceTd">enables verbose logging. Grep for
+                        "Ldap" entries in the<p outputclass="p1">
+                           <ph outputclass="s1">unravel_tc_webapp.log file under /usr/local/unravel/logs/ ; when
+                              enabled, user names and group names can appear in this log, but raw passwords are not
+                              logged.</ph>
+                        </p>
+                     </entry>
+                     <entry namest="col3" nameend="col3" outputclass="confluenceTd">Can be true or false or not set;
+                        default is false</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </context>
+   </taskbody>
+</task>

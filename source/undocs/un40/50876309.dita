@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" >
+<task xml:lang="en-us" id="FAIHGDAJ">
+   <title>Part 4: Modify Amazon EMR Cluster Bootstrap/Setup </title>
+   <taskbody>
+      <context>
+         <p>Follow these steps only if you have an Amazon EMR cluster.</p>
+         <p>Introduction</p>
+         <p>This topic explains how to modify and Amazon EMR cluster's bootstrap/setup for <ph>Unravel Server 4.0</ph>.
+            For instructions that correspond to older versions of Unravel Server, contact Unravel Support.</p>
+         <p>
+            <i>Steps marked <ph>[HVD]</ph> are for production high volume and durable installations can be skipped for
+               PoCs.</i>
+         </p>
+         <b>Workflow Summary</b>
+         <ol>
+            <li>Add your AWS account number(s) to the Unravel Data main s3 bucket policy.</li>
+            <li>
+               <p>Get the bootstrap script(s).</p>
+            </li>
+            <li>
+               <p>Integrate the bootstrap script(s) into your Amazon EMR cluster(s).</p>
+            </li>
+         </ol>
+         <b>Table of Contents</b>
+         <ul outputclass="toc-indentation">
+            <li>
+               <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-Introduction">Introduction</xref>
+            </li>
+            <li>
+               <xref
+                  href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-1.AddYourAWSAccountNumber(s)totheUnravelDataMainS3BucketPolicy"
+                  >1. Add Your AWS Account Number(s) to the Unravel Data Main S3 Bucket Policy</xref>
+            </li>
+            <li>
+               <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-2.GettheBootstrapScript(s)">2. Get the
+                  Bootstrap Script(s)</xref>
+            </li>
+            <li>
+               <xref
+                  href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-3.IntegratetheBootstrapScript(s)intoYourAmazonEMRCluster(s)"
+                  >3. Integrate the Bootstrap Script(s) into Your Amazon EMR Cluster(s)</xref>
+               <ul outputclass="toc-indentation">
+                  <li>
+                     <xref
+                        href="#FAIHGDAJ/Part4-ModifyAmazonEMRClusterBootstrap/Setup-ForPersistent-Long-Running-or-Existing-AmazonEMRClusters"
+                        >For Persistent ("Long-Running" or "Existing") Amazon EMR Clusters</xref>
+                     <ul outputclass="toc-indentation">
+                        <li>
+                           <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:">Hive
+                              Applications:</xref>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-ForTransientAmazonEMRClusters"
+                        >For Transient Amazon EMR Clusters</xref>
+                     <ul outputclass="toc-indentation">
+                        <li>
+                           <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:.1">Hive
+                              Applications:</xref>
+                        </li>
+                        <li>
+                           <xref href="#FAIHGDAJ/Part4:ModifyAmazonEMRClusterBootstrap/Setup-SparkApplications:">Spark
+                              Applications:</xref>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <p>1. Add Your AWS Account Number(s) to the Unravel Data Main S3 Bucket Policy</p>
+         <p>Prior to doing below steps, ensure that your AWS account number(s) is added to the Unravel Data main s3
+            bucket policy for <codeph>s3://unraveldata-client</codeph> by asking Unravel Support to do this;
+            alternatively, the scripts can be found on Unravel Server in the directory
+               <codeph>/usr/local/unravel/install_bin/unraveldata-clients</codeph>.</p>
+         <p>2. Get the Bootstrap Script(s)</p>
+         <p>To gain access to the s3 bucket that contains the bootstrap scripts (<codeph>s3://</codeph>
+            <ph>unraveldata-clients/</ph>), add a one-time new Inline policy to <ph>
+               <b>EMR_DefaultRole</b>
+            </ph> as follows:</p>
+         <ol>
+            <li>In the IAM management console on the left-hand side, click <b>Roles</b> | <ph>
+                  <b>EMR_DefaultRole</b>
+               </ph>.</li>
+            <li>
+               <ph>Click </ph>
+               <b>Inline Policies</b> | <b>Create Role Policy</b>, and select <b>Custom Policy</b>.</li>
+            <li>Click <b>Select</b>.</li>
+            <li>Enter the policy name as you wish.</li>
+            <li>
+               <p>Copy and paste below policy into the <ph>
+                     <b>Policy Document:</b>
+                  </ph>
+               </p>
+               <codeblock outputclass="syntaxhighlighter-pre">{
+    "Version": "2012-10-17", 
+    "Statement": [ 
+        { 
+            "Sid": "getunraveldataclients3files", 
+            "Effect": "Allow", 
+            "Action": [ 
+                "s3:ListBucket", 
+                "s3:Get*" 
+            ], 
+            "Resource": [ 
+              "arn:aws:s3:::unraveldata-clients/*" 
+            ] 
+        } 
+    ]
+}</codeblock>
+               <p>
+                  <ph/>
+               </p>
+            </li>
+            <li>
+               <ph>Save it by clicking <b>Apply Policy</b>.</ph>
+            </li>
+         </ol>
+         <p>When you create a new Amazon EMR cluster, be sure to add a bootstrap action as shown in the IAM screenshot
+            below.  You need to copy and paste the full pathname of the bootstrap action (script) into the <b>Script
+               location</b> field. The full pathname is the s3 bucket name plus the filename of the script.  Important
+            Note: <b>
+               <ph>Do not</ph>
+            </b> use the <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/51156088.png" outputclass="confluence-embedded-image"/>
+            </ph> folder glyph <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <image href="media/51156092.png" outputclass="confluence-embedded-image"/>
+            </ph>
+         </p>
+         <p>For guidance on which script to use, see the table below.</p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="4">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <colspec colname="col4"/>
+               <tbody>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <codeph>unravel_emr_bootstrap.sh</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">s3://unraveldata-clients/</entry>
+                     <entry outputclass="confluenceTd">
+                        <codeph>install_bin/unraveldata-clients/</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">Amazon EMR 3.x Hive</entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <codeph>unravel_emr4_bootstrap.sh</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">s3://unraveldata-clients/</entry>
+                     <entry outputclass="confluenceTd">
+                        <codeph>install_bin/unraveldata-clients/</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">Amazon EMR 4.x Hive</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p>3. Integrate the Bootstrap Script(s) into Your Amazon EMR Cluster(s)</p>
+         <p>For Persistent ("Long-Running" or "Existing") Amazon EMR Clusters</p>
+         <p>Hive Applications:</p>
+         <p>Unravel does not load data from a cluster until the cluster is instrumented. Use the steps here to set up an
+            existing cluster.</p>
+         <ol>
+            <li>Identify the LOCAL_IP address of your Unravel Server.</li>
+            <li>Download <codeph>s3://unraveldata-clients/unravel_emr_setup.sh</codeph> using the S3 console or
+                  '<codeph>aws s3</codeph>' command or other utility OR get it from the Unravel Server in
+                  <codeph>install_bin/unraveldata-clients</codeph>.</li>
+            <li>scp <codeph>unravel_emr_setup.sh</codeph> to <codeph>/tmp</codeph> of the cluster's master node (ssh
+               user is <codeph>hadoop</codeph>).</li>
+            <li>
+               <p>Open an SSH session to the cluster's master node (ssh as user <codeph>hadoop</codeph>) and then do as
+                     <codeph>hadoop</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">cd /tmp 
+aws s3 cp s3://unraveldata-clients/unravel_emr_setup.sh . 
+chmod +x unravel_emr_setup.sh 
+./unravel_emr_setup.sh --unravel-server $LOCAL_IP:3000</codeblock>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>
+               <p>To uninstall Hive instrumentation on an Amazon EMR cluster (perhaps because you want to upgrade the
+                  instrumentation), you simply run the same install script again with the <codeph>uninstall</codeph>
+                  argument:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">cd /tmp 
+aws s3 cp s3://unraveldata-clients/unravel_emr_setup.sh . 
+chmod +x unravel_emr_setup.sh 
+./unravel_emr_setup.sh --uninstall</codeblock>
+            </li>
+         </ol>
+         <p>For Transient Amazon EMR Clusters</p>
+         <p>Hive Applications:</p>
+         <p>This is similar to the previous section on integrating an existing cluster except the script used as a
+            bootstrap step is one of the following files:</p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="4">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <colspec colname="col4"/>
+               <tbody>
+                  <row>
+                     <entry outputclass="confluenceTd">
+                        <b>File</b>
+                     </entry>
+                     <entry outputclass="confluenceTd">
+                        <b>S3 Bucket</b>
+                     </entry>
+                     <entry outputclass="confluenceTd">
+                        <b>Local Directory</b>
+                     </entry>
+                     <entry outputclass="confluenceTd">
+                        <b>Applies To</b>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">unravel_emr_bootstrap.sh</entry>
+                     <entry outputclass="confluenceTd">s3://unraveldata-clients/</entry>
+                     <entry outputclass="confluenceTd">
+                        <codeph>install_bin/unraveldata-clients/</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">Amazon EMR 3.x Hive</entry>
+                  </row>
+                  <row>
+                     <entry outputclass="confluenceTd">unravel_emr4_bootstrap.sh</entry>
+                     <entry outputclass="confluenceTd">s3://unraveldata-clients/</entry>
+                     <entry outputclass="confluenceTd">
+                        <codeph>install_bin/unraveldata-clients/</codeph>
+                     </entry>
+                     <entry outputclass="confluenceTd">Amazon EMR 4.x Hive</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p>Spark Applications:</p>
+         <p>The Unravel Server does not load data from a Spark cluster until the cluster is instrumented. Use the steps
+            here to set up an existing cluster.</p>
+         <ol>
+            <li>Identify the LOCAL_IP address of your Unravel Server</li>
+            <li>Download <codeph>s3://unraveldata-clients/unravel_emr_spark_setup.sh</codeph> using the S3 console or
+                  '<codeph>aws s3</codeph>' command or other utility OR get it from the Unravel Server in
+                  <codeph>install_bin/unraveldata-clients</codeph>.</li>
+            <li>scp <codeph>unravel_emr_setup.sh</codeph> to <codeph>/tmp</codeph> of the EMR cluster master node (ssh
+               user is <codeph>ec2-user</codeph>).</li>
+            <li>
+               <p>Open an SSH session to the cluster's master node (ssh user is <codeph>ec2-user</codeph>) and then do
+                  as <codeph>ec2-user</codeph>:</p>
+               <codeblock outputclass="syntaxhighlighter-pre">cd /tmp 
+sudo ./unravel_emr_spark_setup.sh --unravel-server \ 
+ $LOCAL_IP:3000 --client</codeblock>
+               <ph outputclass="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"/>Change
+                  <codeph>--client</codeph> to <codeph>--cluster</codeph> if you use the Spark driver in cluster
+               mode.</li>
+         </ol>
+      </context>
+   </taskbody>
+</task>

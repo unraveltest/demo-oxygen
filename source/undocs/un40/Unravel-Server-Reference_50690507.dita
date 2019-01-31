@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="Unravel-Server-Reference_50690507">
+   <title>Unravel Server Reference </title>
+   <shortdesc>Get reference information on our product.</shortdesc>
+   <conbody>
+      <p> This reference covers both the on-premises and Unravel for EMR editions. Some daemons and properties do not
+         apply to the EMR edition.</p>
+      <section>
+         <title> Unravel Server Daemons</title>
+         <p>The Unravel service is composed of many daemons which are summarized in the next table.
+            The single script <codeph>/etc/init.d/unravel_all.sh</codeph> can be used with a
+               <codeph>start</codeph> or <codeph>stop</codeph> or <codeph>restart</codeph> argument
+            to control all the daemons on a host, in the correct order. The suffix
+               <codeph>_N</codeph> means 1, 2, 3, up to 4 separate daemons.</p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="2">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <tbody>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Daemon Logical Name</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Description</b>
+                     </entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_tc</entry>
+
+                     <entry outputclass="confluenceTd">bundled TomCat (port 3000), Web UI</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_db</entry>
+
+                     <entry outputclass="confluenceTd">bundled db (on a custom port)</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_zk_N</entry>
+
+                     <entry outputclass="confluenceTd">bundled Zookeeper (on a custom port)</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_k</entry>
+
+                     <entry outputclass="confluenceTd">bundled Kafka (on a custom port)</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_hhs</entry>
+
+                     <entry outputclass="confluenceTd">Hive Hook Sensor</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_hhw</entry>
+
+                     <entry outputclass="confluenceTd">Hive Hook Worker</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_hhwe</entry>
+
+                     <entry outputclass="confluenceTd">Hive Hook Worker EMR</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_hvw</entry>
+
+                     <entry outputclass="confluenceTd">Hive Worker</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_jcs1</entry>
+
+                     <entry outputclass="confluenceTd">Job Collector Sensor MRv1</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_jcs2</entry>
+
+                     <entry outputclass="confluenceTd">Job Collector Sensor YARN</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_jcse2</entry>
+
+                     <entry outputclass="confluenceTd">Job Collector Sensor YARN for EMR</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_jcw1_N</entry>
+
+                     <entry outputclass="confluenceTd">Job Collector Sensor Worker MRv1</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_jcw2_N</entry>
+
+                     <entry outputclass="confluenceTd">Job Collector Sensor Worker YARN</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_lr</entry>
+
+                     <entry outputclass="confluenceTd">Log Receiver</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_mrw</entry>
+
+                     <entry outputclass="confluenceTd">Map Reduce Worker</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_ja</entry>
+
+                     <entry outputclass="confluenceTd">"Job Analyzer" summarizes jobs</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_td</entry>
+
+                     <entry outputclass="confluenceTd">"Tidy Dir" cleans up and archives hdfs
+                        directories, db retention cleaner</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_os3</entry>
+
+                     <entry outputclass="confluenceTd">Oozie v3 Sensor</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_os4</entry>
+
+                     <entry outputclass="confluenceTd">Oozie v4 Sensor</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_tw</entry>
+
+                     <entry outputclass="confluenceTd">Table Worker</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_pw</entry>
+
+                     <entry outputclass="confluenceTd">Partition Worker</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_ew_N</entry>
+
+                     <entry outputclass="confluenceTd">Event Worker</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">unravel_sw_N</entry>
+
+                     <entry outputclass="confluenceTd">Spark Worker</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p/>
+      </section>
+
+      <section>
+         <title>
+            <ph outputclass="confluence-anchor-link"/>Unravel Server Adjustable Properties</title>
+      </section>
+      <section>
+         <title>TITLE_HERE</title>
+         <p>The file <codeph>/usr/local/unravel/etc/unravel.properties</codeph> contains settings
+            that can be preserved during an RPM upgrade. These properties are described in the
+            following table:</p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="3">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <tbody>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Property Name</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Default Value</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Description</b>
+                     </entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.tmpdir</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/srv/unravel/tmp or $UNRAVEL_DATA_DIR/tmp</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Determines where daemons will put temporary
+                        files. Depending on the daemon role, up to 10GB might be used
+                        temporarily.</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.logdir</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/usr/local/unravel/logs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Do not set directly; set UNRAVEL_LOG_DIR in
+                        etc/unravel.ext.sh instead and this property will be derived from
+                        that</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.zk.quorum</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>127.0.0.1:4181</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">embedded Zookeeper ensemble in form
+                        host1:port1,host2:port2, …</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.kafka.broker_list</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>127.0.0.1:4091</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">embedded Kafka</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>unravel.jdbc.username</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>unravel</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">MySQL (embedded or external) username for
+                        db</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>unravel.jdbc.password</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>random generated for bundled MySQL</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">MySQL (embedded or external) password for
+                        db</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>unravel.jdbc.url</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">This is JDBC URL without username and
+                        password</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.hdfs.interactive.monitoring.interval.sec</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>30</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Number of seconds between checks for presence
+                        of hive queries and MR logs to load into Unravel for interactive visibility;
+                        should be between 5 and 60 (inclusive)</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.hdfs.batch.monitoring.interval.sec</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>300</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Number of seconds between checks for presence
+                        of hive queries and MR logs to load into Unravel for batch visibility;
+                        should be between 300 and 1800 (inclusive)</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.longest.job.duration.days</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>2</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Number of days for the longest running Map
+                        Reduce job ever expected; should be between 2 and 7 (inclusive)</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>oozie.server.url</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>
+                           <xref href="http://localhost:11000/oozie" scope="external" format="html"
+                              outputclass="external-link">http://localhost:11000/oozie</xref>
+                        </codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">URL for accessing Oozie to track
+                        workflows</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.oozie.fetch.num</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>100</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Max number of jobs to fetch during an
+                        interval</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>com.unraveldata.oozie.fetch.interval.sec</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>120</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">seconds between intervals for fetching Oozie
+                        workflow status</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p/>
+      </section>
+
+      <section>
+         <title>
+            <ph outputclass="confluence-anchor-link"/>Adjustable Environment Settings</title>
+         <p>The optional file <codeph>/usr/local/unravel/etc/unravel.ext.sh</codeph> is
+               <codeph>source'</codeph>d to allow site-specific env variables to be set. The
+            following table shows possible choices:</p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="3">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <tbody>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Env Variable</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Default if not set</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Description</b>
+                     </entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>JAVA_HOME</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Should use update-alternatives to make
+                        correct Java first choice</entry>
+
+                     <entry outputclass="confluenceTd">The standard way to specify the home dir. of
+                        Oracle Java so that $JAVA_HOME/bin/java is the jvm</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>JAVA_EXT_OPTS</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <i>unset</i>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Last chance arguments to jvm to override
+                        other settings</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>HADOOP_CONF</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">as discovered by running "hadoop fs -ls
+                        "</entry>
+
+                     <entry outputclass="confluenceTd">The directory containing the hadoop config
+                        files core-site.xml, hdfs-site.xml, and mapred-site.xml</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>UNRAVEL_DATA_DIR</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/srv/unravel</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">A base dir. owned by user unravel, during
+                        installation unravel creates multiple sub dirs for holding persistent data
+                        (db_data, k_data, zk_data) and also tmp data if property
+                        com.unraveldata.tmpdir is not set.</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>UNRAVEL_LISTEN_PORT</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>3000</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">The Web UI port on the primary or standalone
+                        Unravel installation (service unravel_tc) which listens on 0.0.0.0 ; the
+                        property <xref href="http://com.unraveldata.tc" scope="external"
+                           format="html" outputclass="external-link">com.unraveldata.tc</xref>.port
+                        automatically reflects this env var.</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>UNRAVEL_LOG_DIR</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/usr/local/unravel/logs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">A destination dir. owned by user unravel for
+                        log files</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>UNRAVEL_TC_SHUTDOWN_PORT</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>3005</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">An unoccupied port used for cleanly stopping
+                        the Web UI (service unravel_tc) which listens on 127.0.0.1</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+         <p/>
+      </section>
+
+      <section>
+         <title>
+            <ph outputclass="confluence-anchor-link"/>Unravel Server Directories and Files</title>
+         <p>The following is a cross-reference of notable directories and files used by Unravel
+            Server:</p>
+         <table outputclass="wrapped confluenceTable">
+            <tgroup cols="4">
+               <colspec colname="col1"/>
+               <colspec colname="col2"/>
+               <colspec colname="col3"/>
+               <colspec colname="col4"/>
+               <tbody>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Path</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Purpose</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Expected Size</b>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">
+                        <b>Notes</b>
+                     </entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/usr/local/unravel</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Unravel Server installation directory</entry>
+
+                     <entry outputclass="confluenceTd">1-2.5GB</entry>
+
+                     <entry outputclass="confluenceTd">This directory is created by installing the
+                        Unravel RPM; this is a fixed destination</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/usr/local/unravel/logs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Logs written by Unravel daemons</entry>
+
+                     <entry outputclass="confluenceTd">~1.5GB max</entry>
+
+                     <entry outputclass="confluenceTd">Each daemon will have a maximum of 100MB of
+                        logs, auto-rolled; use a symlink to put on another partition.</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/srv/unravel/</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">Base directory for Unravel server data kept
+                        separately from installation directory; contains messaging data for process
+                        coordination, bundled db, Elasticsearch indexes, temporary files</entry>
+
+                     <entry outputclass="confluenceTd">2-900GB ; depending on activity level,
+                        retention</entry>
+
+                     <entry outputclass="confluenceTd">This directory or subdirectories can be a
+                        symlinks to other volumes for disk io performance reasons to distribute load
+                        over multiple volumes. If this is an EBS on AWS, then it must be provisioned
+                        for max available IOPS and the Unravel server must be EBS optimized.</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/etc/init.d/unravel_all.sh</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">convenience script for Unravel start,
+                        restart, status, and stop ; controls daemons in proper order</entry>
+
+                     <entry outputclass="confluenceTd">n/a</entry>
+
+                     <entry outputclass="confluenceTd">Note for multi-host installations: run this
+                        script on both primary and secondary Unravel host</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/usr/local/unravel/etc/unravel.properties</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">site-specific settings for Unravel</entry>
+
+                     <entry outputclass="confluenceTd">n/a</entry>
+
+                     <entry outputclass="confluenceTd">Keep a "golden" copy of this file;
+                           <codeph>rpm -U</codeph> upgrades will not overwrite</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/usr/local/unravel/etc/unravel.version.properties</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">version-specific values for Unravel like
+                        version number, build timestamp</entry>
+
+                     <entry outputclass="confluenceTd">n/a</entry>
+
+                     <entry outputclass="confluenceTd">Updated during upgrades; do not modify this
+                        reference file to preserve traceability</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/usr/local/unravel/etc/unravel.ext.sh</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">an optional file for overriding JAVA_HOME or
+                        other settings as shown in table above</entry>
+
+                     <entry outputclass="confluenceTd">n/a</entry>
+
+                     <entry outputclass="confluenceTd">Optional; example syntax: <codeph>export
+                           JAVA_HOME=/path</codeph>
+                     </entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/srv/unravel/log_hdfs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">log directory for daemons that run as user
+                        hdfs (for YARN, when applicable)</entry>
+
+                     <entry outputclass="confluenceTd">&lt;2GB</entry>
+
+                     <entry outputclass="confluenceTd">Needed for YARN. Owned by user hdfs; not
+                        applicable for MRv1 or EMR</entry>
+
+                  </row>
+                  <row>
+
+                     <entry outputclass="confluenceTd">
+                        <codeph>/srv/unravel/tmp_hdfs</codeph>
+                     </entry>
+
+                     <entry outputclass="confluenceTd">tmp directory for daemons that run as user
+                        hdfs (for YARN, when applicable)</entry>
+
+                     <entry outputclass="confluenceTd">&lt;1GB</entry>
+
+                     <entry outputclass="confluenceTd">Needed for YARN. Owned by user hdfs; not
+                        applicable for MRv1 or EMR</entry>
+
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </section>
+   </conbody>
+</concept>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Monitoring Airflow Workflows</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Workflows_53900905.html">Workflows</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Monitoring Airflow Workflows </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p><span style="color: rgb(67,67,67);text-decoration: none;">This article describes how to set
+                                up Unravel Server to monitor Airflow workflows so that you can see them in Unravel Web
+                                UI. <br /></span></p><p><span style="color: rgb(0,0,0);text-decoration: none;">All the
+                                following steps are on the Unravel Server host that runs </span><span
+                                style="color: rgb(0,0,0);text-decoration: none;">the
+                                <code>unravel_jcs2</code></span><span style="color: rgb(0,0,0);text-decoration: none;">
+                                daemon. </span><span style="color: rgb(0,0,0);text-decoration: none;"
+                                >Highlighted</span><span style="color: rgb(0,0,0);text-decoration: none;"> text
+                                indicates where you need to substitute your particular values.</span></p><div
+                            class="confluence-information-macro confluence-information-macro-note"><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">Before you start, ensure that
+                                        the Unravel Server host and the server that runs Airflow web service are in the
+                                        same cluster. </span></p></div></div><h1
+                            id="MonitoringAirflowWorkflows-IfYouUseHttpForAirflowWebUIAccess"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">If You Use Http For Airflow Web UI
+                                </span><span style="color: rgb(0,0,0);text-decoration: none;">Access
+                                </span></h1><p><span style="color: rgb(0,0,0);text-decoration: none;">Add the following
+                                3 settings to </span><span style="color: rgb(0,0,0);text-decoration: none;"
+                                    ><code>/usr/local/unravel/etc/unravel.properties</code>:</span></p><p><br /></p><div
+                            class="confluence-information-macro confluence-information-macro-note"><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Replace <span
+                                        style="color: rgb(255,0,0);">{airflow web url}</span> with the full URL,
+                                    starting with <code><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            >http://</span></code><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >. <br /></span></p></div></div><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.airflow.protocol=http
+com.unraveldata.airflow.server.url={airflow web url}
+com.unraveldata.airflow.available=true</pre>
+                            </div></div><p><span style="color: rgb(0,0,0);text-decoration: none;">Then restart
+                                </span><span style="color: rgb(0,0,0);text-decoration: none;">the
+                                    <code>unravel_jcs2</code></span><span
+                                style="color: rgb(0,0,0);text-decoration: none;"> daemon:</span></p><div
+                            class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_jcs2 restart</pre>
+                            </div></div><h1 id="MonitoringAirflowWorkflows-IfYouUseHttpsForAirflowWebUIAccess"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">If You Use Https For Airflow Web UI
+                                </span><span style="color: rgb(0,0,0);text-decoration: none;">Access
+                                </span></h1><p><span style="color: rgb(0,0,0);text-decoration: none;">Add the following
+                                4 settings to </span><span style="color: rgb(0,0,0);text-decoration: none;"
+                                    ><code>/usr/local/unravel/etc/unravel.properties</code>:</span></p><div
+                            class="confluence-information-macro confluence-information-macro-note"><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Replace <span
+                                        style="color: rgb(255,0,0);">{airflow web url}</span> with the full URL,
+                                    starting with <code><span style="color: rgb(0,0,0);text-decoration: none;"
+                                            >http://</span></code><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >. <br /></span></p></div></div><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">com.unraveldata.airflow.server.url={airflow web url}
+com.unraveldata.airflow.available=true
+com.unraveldata.airflow.login.name={airflow web UI username}
+com.unraveldata.airflow.login.password={airflow web UI password}</pre>
+                            </div></div><p><span style="color: rgb(0,0,0);text-decoration: none;">Then restart
+                                </span><span style="color: rgb(0,0,0);text-decoration: none;">the
+                                    <code>unravel_jcs2</code></span><span
+                                style="color: rgb(0,0,0);text-decoration: none;"> daemon:</span></p><div
+                            class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_jcs2 restart</pre>
+                            </div></div><p> </p><h1 id="MonitoringAirflowWorkflows-ChangingtheRangeofMonitoring"
+                            >Changing the Range of Monitoring</h1><p><br /></p><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">By default, Unravel Server ingests all
+                                the workflows that started within the last 5 days. If you wish to change the date range
+                                to the last </span><code><em><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >x</span></em></code><span style="color: rgb(0,0,0);text-decoration: none;">
+                                days, do the following:</span></p><ol>
+                            <li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);text-decoration: none;">Add
+                                        the following configuration to </span><span
+                                        style="color: rgb(0,0,0);text-decoration: none;"
+                                            ><code>/usr/local/unravel/etc/unravel.properties</code>.</span><span
+                                        style="color: rgb(0,0,0);text-decoration: none;"><span
+                                            style="color: rgb(0,0,0);text-decoration: none;"> Note there’s a “-” (minus
+                                            sign) in the value.</span></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">airflow.look.back.num.days=-x</pre>
+                                    </div></div></li>
+                            <li><p><span style="color: rgb(0,0,0);text-decoration: none;">Restart </span><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">the
+                                        <code>unravel_jcs2</code></span><span
+                                        style="color: rgb(0,0,0);text-decoration: none;"> daemon:</span></p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_jcs2 restart</pre>
+                                    </div></div></li>
+                        </ol><p> </p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">logo_small.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Optimizing the Performance of Spark Applications</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="User-Guide_50687944.html">User Guide</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Use-Cases_53314582.html">Use Cases</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Optimizing the Performance of Spark Applications
+                        </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <p>Unravel Web UI makes it easy for you to identify underperforming Spark apps: click
+                                <strong>Operations</strong> | <strong>Dashboard</strong>, and scroll down to
+                                <strong>INEFFICIENT APPLICATIONS</strong>.</p><p><br /></p><p>The following case
+                            illustrates the performance of a Spark app before and after tuning it based on Unravel's
+                            performance analysis:</p><p><br /></p><h1
+                            id="OptimizingthePerformanceofSparkApplications-BeforeTuning"><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Before Tuning</span></h1><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">Before tuning, Unravel Web UI indicated
+                                that this app had a running duration of 34 min 11sec:</span></p><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;"><span
+                                    class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                        class="confluence-embedded-image" height="400"
+                                        src="media/52567511.png" data-image-src="media/52567511.png"
+                                        data-unresolved-comment-count="0" data-linked-resource-id="52567511"
+                                        data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                        data-linked-resource-default-alias="gui_spark_app_details_before.png"
+                                        data-base-url="https://unraveldata.atlassian.net/wiki"
+                                        data-linked-resource-content-type="image/png"
+                                        data-linked-resource-container-id="52494973"
+                                        data-linked-resource-container-version="6"
+                                        data-media-id="21b192fc-12f4-49d2-9160-fcf2349be5c7" data-media-type="file"
+                                     /></span><br /></span></p><p>In addition, Unravel Web UI captured details as shown
+                            in the following events:</p><ul>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-LOWUTILIZATIONOFMEMORYRESOURCES"
+                                        ><span style="color: rgb(0,0,0);text-decoration: none;">LOW UTILIZATION OF
+                                        MEMORY RESOURCES</span></h3></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-LOWUTILIZATIONOFSPARKSTORAGEMEMORY"
+                                        ><span style="color: rgb(0,0,0);text-decoration: none;">LOW UTILIZATION OF SPARK
+                                        STORAGE MEMORY</span></h3></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-CONTENTIONFORCPURESOURCES"><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">CONTENTION FOR CPU
+                                        RESOURCES</span></h3></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-OPPORTUNITYFORRDDCACHING"><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">OPPORTUNITY FOR RDD
+                                        CACHING</span></h3><ul>
+                                    <li style="list-style-type: square;"><p><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Save up to 9 minutes by
+                                                caching at </span><span style="color: rgb(0,0,0);text-decoration: none;"
+                                                >PetFoodAnalysisCaching.scala:129, </span><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">with
+                                                StorageLevel.MEMORY_AND_DISK_SER</span></p></li>
+                                </ul></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-TOOFEWPARTITIONSW.R.T.AVAILABLEPARALLELISM"
+                                        ><span style="color: rgb(0,0,0);text-decoration: none;">TOO FEW PARTITIONS
+                                        W.R.T. AVAILABLE PARALLELISM</span></h3><ul>
+                                    <li style="list-style-type: square;"><p><span
+                                                style="color: rgb(0,0,0);text-decoration: none;">Change executor
+                                                instances from 2 to 127, partitions from 2 to 289, adjust driver memory
+                                                (to </span><span style="color: rgb(0,0,0);text-decoration: none;"
+                                                >1161908224)</span><span
+                                                style="color: rgb(0,0,0);text-decoration: none;"> and yarn overhead (to
+                                                819 MB).</span></p></li>
+                                </ul></li>
+                        </ul><p style="margin-left: 48.0px;"> </p><h1
+                            id="OptimizingthePerformanceofSparkApplications-AfterTuning">After Tuning</h1><p><span
+                                style="color: rgb(0,0,0);text-decoration: none;">After tuning, <span
+                                    style="color: rgb(0,0,0);text-decoration: none;">Unravel Web UI indicates that this
+                                    app now has a running duration of <span
+                                        style="color: rgb(0,0,0);text-decoration: none;">1min
+                                19sec</span>:</span><br /></span></p><p><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image" height="400" src="media/52495353.png"
+                                    data-image-src="media/52495353.png" data-unresolved-comment-count="0"
+                                    data-linked-resource-id="52495353" data-linked-resource-version="1"
+                                    data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="gui_spark_app_details_after.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="52494973"
+                                    data-linked-resource-container-version="6"
+                                    data-media-id="828ff016-745c-4b4a-8ee4-279170223d89" data-media-type="file"
+                                 /></span></p><p><br /></p><ul>
+                            <li style="list-style-type: disc;"><p><span style="color: rgb(0,0,0);text-decoration: none;"
+                                        >Unravel Web UI displays these events:</span></p></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-LOWUTILIZATIONOFMEMORYRESOURCES.1"
+                                        ><span style="color: rgb(0,0,0);text-decoration: none;">LOW UTILIZATION OF
+                                        MEMORY RESOURCES</span></h3></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-LOWUTILIZATIONOFSPARKSTORAGEMEMORY.1"
+                                        ><span style="color: rgb(0,0,0);text-decoration: none;">LOW UTILIZATION OF SPARK
+                                        STORAGE MEMORY</span></h3></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-LARGEIDLETIMEFOREXECUTORS"><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">LARGE IDLE TIME FOR
+                                        EXECUTORS</span></h3></li>
+                            <li style="list-style-type: circle;"><h3
+                                    id="OptimizingthePerformanceofSparkApplications-TOOFEWPARTITIONSW.R.T.AVAILABLEPARALLELISM.1"
+                                        ><span style="color: rgb(0,0,0);text-decoration: none;">TOO FEW PARTITIONS
+                                        W.R.T. AVAILABLE PARALLELISM</span></h3></li>
+                            <li style="list-style-type: square;"><p><span
+                                        style="color: rgb(0,0,0);text-decoration: none;">Change executor instances from
+                                        127 to 138</span></p></li>
+                        </ul><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52494977.png">Screen Shot 2017-04-05 at 11.43.57 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52494980.png">Screen Shot 2017-04-05 at 11.43.07 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52494983.png">Screen Shot 2017-04-05 at 11.41.20 PM.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52495353.png">gui_spark_app_details_after.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/52567511.png">gui_spark_app_details_before.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

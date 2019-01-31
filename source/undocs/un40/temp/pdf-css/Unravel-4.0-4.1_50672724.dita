@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Unravel-4.0-4.1_50672724" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="topic:1;4:55">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="title:1;5:11">Unravel 4.0-4.1 </title>
+   <body class="- topic/body " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="body:1;6:10">
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="ol:1;7:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:1;9:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="ph:1;10:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:1;11:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+      <p outputclass="auto-cursor-target" class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="p:1;17:43">
+         <ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="ph:2;18:61">
+            <image href="media/53899022.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="image:1;19:87"/>
+         </ph>
+      </p>
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="p:2;22:10">This documentation is for Unravel versions 4.0-4.1. For Unravel 4.2 documentation, see
+            <xref href="https://unraveldata.atlassian.net/wiki/spaces/UN42/overview" scope="external" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:2;24:44"><?ditaot usertext?>Unravel 4.2</xref>. For older documentation, contact
+            <xref href="http://unraveldata.com/contact/" scope="external" format="html" outputclass="external-link" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:3;26:41"><?ditaot usertext?>Unravel Support</xref>.</p>
+      <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="ul:1;27:11">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:2;29:14">
+            <xref href="file:/wiki/label/UN40/advanced" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:4;30:86"><?ditaot usertext?>advanced</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:3;33:14">
+            <xref href="file:/wiki/label/UN40/airflow" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:5;34:85"><?ditaot usertext?>airflow</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:4;37:14">
+            <xref href="file:/wiki/label/UN40/autoactions" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:6;39:17"><?ditaot usertext?>autoactions</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:5;42:14">
+            <xref href="file:/wiki/label/UN40/btrace" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:7;43:84"><?ditaot usertext?>btrace</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:6;46:14">
+            <xref href="file:/wiki/label/UN40/cdh" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:8;47:81"><?ditaot usertext?>cdh</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:7;50:14">
+            <xref href="file:/wiki/label/UN40/cloudera" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:9;51:86"><?ditaot usertext?>cloudera</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:8;54:14">
+            <xref href="file:/wiki/label/UN40/cm" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:10;55:80"><?ditaot usertext?>cm</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:9;58:14">
+            <xref href="file:/wiki/label/UN40/daemons" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:11;59:85"><?ditaot usertext?>daemons</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:10;62:14">
+            <xref href="file:/wiki/label/UN40/diagnostics" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:12;64:17"><?ditaot usertext?>diagnostics</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:11;67:14">
+            <xref href="file:/wiki/label/UN40/emr" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:13;68:81"><?ditaot usertext?>emr</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:12;71:14">
+            <xref href="file:/wiki/label/UN40/featured" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:14;72:86"><?ditaot usertext?>featured</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:13;75:14">
+            <xref href="file:/wiki/label/UN40/hdp" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:15;76:81"><?ditaot usertext?>hdp</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:14;79:14">
+            <xref href="file:/wiki/label/UN40/hive" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:16;80:82"><?ditaot usertext?>hive</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:15;83:14">
+            <xref href="file:/wiki/label/UN40/hortonworks" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:17;85:17"><?ditaot usertext?>hortonworks</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:16;88:14">
+            <xref href="file:/wiki/label/UN40/hosts" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:18;89:83"><?ditaot usertext?>hosts</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:17;92:14">
+            <xref href="file:/wiki/label/UN40/impala" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:19;93:84"><?ditaot usertext?>impala</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:18;96:14">
+            <xref href="file:/wiki/label/UN40/insights" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:20;97:86"><?ditaot usertext?>insights</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:19;100:14">
+            <xref href="file:/wiki/label/UN40/installation" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:21;102:17"><?ditaot usertext?>installation</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:20;105:14">
+            <xref href="file:/wiki/label/UN40/kerberos" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:22;106:86"><?ditaot usertext?>kerberos</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:21;109:14">
+            <xref href="file:/wiki/label/UN40/mapr" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:23;110:82"><?ditaot usertext?>mapr</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:22;113:14">
+            <xref href="file:/wiki/label/UN40/mapreduce" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:24;115:17"><?ditaot usertext?>mapreduce</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:23;118:14">
+            <xref href="file:/wiki/label/UN40/metastore" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:25;120:17"><?ditaot usertext?>metastore</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:24;123:14">
+            <xref href="file:/wiki/label/UN40/oozie" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:26;124:83"><?ditaot usertext?>oozie</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:25;127:14">
+            <xref href="file:/wiki/label/UN40/pig" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:27;128:81"><?ditaot usertext?>pig</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:26;131:14">
+            <xref href="file:/wiki/label/UN40/python" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:28;132:84"><?ditaot usertext?>python</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:27;135:14">
+            <xref href="file:/wiki/label/UN40/qubole" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:29;136:84"><?ditaot usertext?>qubole</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:28;139:14">
+            <xref href="file:/wiki/label/UN40/retention" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:30;141:17"><?ditaot usertext?>retention</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:29;144:14">
+            <xref href="file:/wiki/label/UN40/sensor" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:31;145:84"><?ditaot usertext?>sensor</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:30;148:14">
+            <xref href="file:/wiki/label/UN40/spark" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:32;149:83"><?ditaot usertext?>spark</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:31;152:14">
+            <xref href="file:/wiki/label/UN40/spark-submit" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:33;154:17"><?ditaot usertext?>spark-submit</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:32;157:14">
+            <xref href="file:/wiki/label/UN40/sqoop" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:34;158:83"><?ditaot usertext?>sqoop</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:33;161:14">
+            <xref href="file:/wiki/label/UN40/tagging" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:35;162:85"><?ditaot usertext?>tagging</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:34;165:14">
+            <xref href="file:/wiki/label/UN40/tags" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:36;166:82"><?ditaot usertext?>tags</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:35;169:14">
+            <xref href="file:/wiki/label/UN40/unravel-4-0" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:37;171:17"><?ditaot usertext?>unravel-4-0</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:36;174:14">
+            <xref href="file:/wiki/label/UN40/unravel-sensor" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:38;176:17"><?ditaot usertext?>unravel-sensor</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:37;179:14">
+            <xref href="file:/wiki/label/UN40/user-guide" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:39;181:17"><?ditaot usertext?>user-guide</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:38;184:14">
+            <xref href="file:/wiki/label/UN40/workers" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:40;185:85"><?ditaot usertext?>workers</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:39;188:14">
+            <xref href="file:/wiki/label/UN40/workflow" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:41;189:86"><?ditaot usertext?>workflow</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:40;192:14">
+            <xref href="file:/wiki/label/UN40/workflows" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:42;194:17"><?ditaot usertext?>workflows</xref>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="li:41;197:14">
+            <xref href="file:/wiki/label/UN40/yarn" format="html" outputclass="label" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:43;198:82"><?ditaot usertext?>yarn</xref>
+         </li>
+
+      </ul>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="section:1;202:16">
+         <title outputclass="pageSectionTitle" class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="title:2;203:48">Attachments:</title>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="image:2;204:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="alt:1;205:19"/>
+         </image>
+         <xref href="media/logo.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:44;207:52"><?ditaot usertext?>logo_small.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="break" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="image:3;208:71">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="alt:2;209:19"/>
+         </image>
+         <xref href="media/53899022.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Unravel-4.0-4.1_50672724.dita" xtrc="xref:45;212:14"><?ditaot usertext?>why-unravel-sketch-v3-2-1200x687-zoomin.png</xref>
+      </section>
+
+   </body>
+</topic>

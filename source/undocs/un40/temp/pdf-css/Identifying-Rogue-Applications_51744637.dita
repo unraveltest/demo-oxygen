@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Identifying-Rogue-Applications_51744637" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="task:1;3:120">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="title:1;4:11">
+                        Identifying Rogue Applications 
+                    </title>
+   <taskbody class="- topic/body task/taskbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="taskbody:1;7:14">
+      <context class="- topic/section task/context " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="context:1;8:16">
+                
+                    
+                        
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ol:1;12:14">
+                            
+            <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:1;14:37">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:1;16:20">
+                  <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:1;17:43" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:2;22:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:2;24:20">
+                  <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:2;25:62" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:3;30:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:3;32:20">
+                  <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:3;33:57" type="topic"><?ditaot usertext?>User Guide</xref>
+               </ph>
+                            
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:4;38:17">
+                                
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:4;40:20">
+                  <xref href="Use-Cases_53314582.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:4;41:56"><?ditaot usertext?>Use Cases</xref>
+               </ph>
+                            
+            </li>
+                        
+         </ol>
+                    
+                    
+                
+                
+                    
+                        
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="p:1;53:13">Rogue applications can affect cluster health and lead to missed SLAs. Therefore, it is best
+                            practice to identify and eliminate them. Symptoms of a cluster with rogue applications
+                            include jobs that take too long to run or applications that use too many vcores. Unravel Web
+                            UI makes identifying rogue apps easy:</p>
+         <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ol:2;57:14">
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:5;59:17">Click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="b:1;59:26">Operations</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="b:2;59:46">Charts</b> |
+                                <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="b:3;60:36">Resources</b>.</li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:6;62:17">In the <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="b:4;62:27">Cluster VCores</b> or <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="b:5;62:52">Cluster MemoryMB</b> graph, click
+                                on a spike.Unravel Web UI displays the list of applications running or pending in
+                                the cluster at the spike's timestamp, at the bottom of the page.<ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:5;64:148">
+                  <image href="media/51744670.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:1;65:93"/>
+               </ph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:7;69:17">Click the application which has allocated the highest number of vcores. In this example,
+                                there is a MapReduce application which has allocated 240 vcores of the cluster.<ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:6;70:163">
+                  <image href="media/51744760.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:2;71:93"/>
+               </ph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:8;75:17">Check the Application page to see Unravel's recommendations for improving the efficiency
+                                of this MapReduce application. For example:<ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:7;76:127">
+                  <image href="media/51744795.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:3;77:93"/>
+               </ph>
+            </li>
+                            
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="li:9;81:17">
+               <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:8;82:20">Set up an AutoAction to proactively alert if a rogue
+                                    application is occupying the cluster.</ph>
+            </li>
+                        
+         </ol>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="p:2;87:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:9;88:17">
+               <ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:10;89:67">
+                  <image href="media/51744833.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:4;90:93"/>
+               </ph>
+            </ph>
+         </p>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="p:3;94:13">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:11;95:17">
+               <ph outputclass="confluence-embedded-file-wrapper" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="ph:12;96:67">
+                  <image href="media/51744853.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:5;97:93"/>
+               </ph>
+            </ph>
+         </p>
+                    
+                    
+                        
+                            
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="p:4;105:13">Attachments:</p>
+                        
+                        
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:6;109:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:1;110:19"/>
+         </image>
+                            
+         <xref href="media/52269790.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:5;113:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.16.49 PM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:7;115:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:2;116:19"/>
+         </image>
+                            
+         <xref href="media/52269861.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:6;119:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.21.10 PM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:8;121:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:3;122:19"/>
+         </image>
+                            
+         <xref href="media/52269926.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:7;125:56"><?ditaot usertext?>Screen Shot 2017-04-06 at 8.31.49 AM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:9;127:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:4;128:19"/>
+         </image>
+                            
+         <xref href="media/52270004.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:8;131:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.21.50 PM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:10;133:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:5;134:19"/>
+         </image>
+                            
+         <xref href="media/52270065.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:9;137:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.23.34 PM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:11;139:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:6;140:19"/>
+         </image>
+                            
+         <xref href="media/51744670.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:10;143:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.16.49 PM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:12;145:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:7;146:19"/>
+         </image>
+                            
+         <xref href="media/51744760.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:11;149:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.21.10 PM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:13;151:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:8;152:19"/>
+         </image>
+                            
+         <xref href="media/51744795.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:12;155:56"><?ditaot usertext?>Screen Shot 2017-04-06 at 8.31.49 AM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:14;157:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:9;158:19"/>
+         </image>
+                            
+         <xref href="media/51744833.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:13;161:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.21.50 PM.png</xref> 
+                            
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="image:15;163:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="alt:10;164:19"/>
+         </image>
+                            
+         <xref href="media/51744853.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Identifying-Rogue-Applications_51744637.dita" xtrc="xref:14;167:56"><?ditaot usertext?>Screen Shot 2017-04-05 at 11.23.34 PM.png</xref> 
+                            
+                        
+                    
+                
+            
+      </context>
+   </taskbody>
+</task>

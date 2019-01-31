@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" >
+<concept xml:lang="en-us" id="Creating-Application-Tags_54048480">
+   <title>Creating Application Tags </title>
+   <conbody>
+
+
+
+
+
+
+      <p>
+         <ph>Annotating applications with tags (key-value pairs) allows you to search, group, and charge back based on
+            tags. It also allows you to track Unravel's insights based on tags. </ph>
+         <ph>Thus, understanding how tags work in Unravel is crucial.</ph>
+      </p>
+
+      <p>
+         <ph>Application tags are immutable: once created they cannot be changed</ph>.</p>
+      <section>
+         <title>
+            <ph>What is a Tag in Unravel?</ph>
+         </title>
+         <p>
+            <ph>A tag is key-value pair <i>&lt;k,v&gt;</i> that has been associated with an application <i>A</i>.</ph>
+         </p>
+         <p>
+            <ph>Thus, <ph>application </ph>
+               <i>A</i> in Unravel can have zero or more tags associated with it: <i> &lt;k1,v1&gt;, &lt;k2,v2&gt;,
+                  ...</i>
+            </ph>
+         </p>
+      </section>
+      <section>
+         <title>
+            <ph>How Does Unravel Use Tags?</ph>
+         </title>
+         <p>
+            <ph>Unravel Server and Web UI use tags to:</ph>
+         </p>
+         <ul>
+
+            <li>
+               <p>
+                  <ph>Group applications for chargeback reports</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>Provide access control for different users</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>Search/group applications using tags</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>Group applications for insights</ph>
+               </p>
+            </li>
+
+         </ul>
+      </section>
+      <section>
+         <title>
+            <ph>What Types of Tags Are There?</ph>
+         </title>
+         <p>
+            <ph>There are two types of tags: Unravel tags and user-created tags.</ph>
+         </p>
+      </section>
+      <section>
+         <title>
+            <ph>Unravel Tags</ph>
+         </title>
+         <p>
+            <ph>All the tag names starting with <codeph>unravel</codeph> are internal to Unravel, and have a specific
+               meaning. For example, <codeph>unravel.workflow.<i>name</i>
+               </codeph> and <codeph>unravel.workflow.<i>utctimestamp</i>
+               </codeph> are used to create workflows. <ph>Best practice is to use these tags only if you want to get
+                  the behavior associated with that tag. </ph>
+            </ph>
+         </p>
+      </section>
+      <section>
+         <title>
+            <ph>User-Created Tags</ph>
+         </title>
+         <p>
+            <ph>You can create tags based on your use cases. </ph>
+         </p>
+      </section>
+      <section>
+         <title>
+            <ph>How Do I Create Tags?</ph>
+         </title>
+         <p>
+            <ph>There are two ways to create tags: by adding them to the configuration of your application, or by
+               writing a Python script to inject them.</ph>
+         </p>
+      </section>
+      <section>
+         <title>
+            <ph>Adding Tags to your Application's Configuration</ph>
+         </title>
+         <p>
+            <ph>Add tags to your application's configuration (configuration file or <codeph>setConf</codeph>). Tags must
+               be in key-value format (<i>
+                  <codeph>key1,value1,key2,value2,key3,value3,...</codeph>
+               </i>). Keys and values </ph>
+            <ph>
+               <ph>can only contain alphanumeric characters. </ph>
+            </ph>
+            <ph>Unravel Server extracts these key-value pairs from the application's configuration file.</ph>
+         </p>
+      </section>
+      <section>
+         <title>
+            <ph>Injecting Tags Through a Python Script</ph>
+         </title>
+         <p>
+            <ph>You can write Python script which is invoked in the ingestion pipeline and is set up to access
+               application metadata to create tags on the fly.</ph>
+         </p>
+         <p>
+            <ph>Unravel receives metadata about applications from different sources, and that metadata can be received
+               out of order, but it is merged and <ph>eventually </ph>reaches a consistent state. </ph>
+            <ph>For example, Spark receives data from Resource Manager, event log file, YARN aggregated logs, and
+               sensors. </ph>
+         </p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"/>
+         <p>
+            <ph>Your Python script must be idempotent, in other words, it must produce the same result over multiple
+               invocations with <ph>different input (metadata)</ph> for the same application. </ph>
+         </p>
+      </section>
+      <section>
+         <title>
+            <ph>Precedence of Tags</ph>
+         </title>
+         <p>
+            <ph>Unravel gives precedence to tags in this order (low to high):</ph>
+         </p>
+         <ul>
+
+            <li>
+               <ph>Unravel tags defined in application configuration</ph>
+            </li>
+
+            <li>
+               <ph>Tags extracted by Python script</ph>
+            </li>
+
+         </ul>
+      </section>
+      <section>
+         <title>
+            <ph>Sample Use Cases</ph>
+         </title>
+         <ul>
+
+            <li>
+               <p>
+                  <ph>Differentiate between job types such as pipeline and workflow</ph>
+               </p>
+            </li>
+
+            <li>
+               <p>
+                  <ph>
+                     <ph>Differentiate between</ph> projects, queues, departments, <ph>groups, </ph>
+                     <ph>users, </ph>and tenants</ph>
+               </p>
+            </li>
+
+         </ul>
+      </section>
+
+   </conbody>
+</concept>

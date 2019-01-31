@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Getting-Started_53157411" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="concept:1;4:57">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:1;5:11">Getting Started </title>
+   <conbody class="- topic/body  concept/conbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="conbody:1;6:13">
+
+
+
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ol:1;10:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:1;12:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:1;13:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:1;14:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:2;18:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:2;19:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:2;20:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:3;24:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:3;25:17">
+               <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:3;26:54" type="topic"><?ditaot usertext?>User Guide</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+
+
+
+
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:1;37:10">Table of Contents</p>
+
+
+      <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ul:1;40:41">
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:4;42:14">
+            <xref href="#Getting-Started_53157411/GettingStarted-UseCaseVideos" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:4;43:81"><?ditaot usertext?>Use Case Videos</xref>
+            <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ul:2;44:47">
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:5;46:20">
+                  <xref href="#Getting-Started_53157411/GettingStarted-UseCase1-HowtoSearchforApplicationsandOptimize/TuneaHiveApplication" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:5;49:23"><?ditaot usertext?>Use Case #1: How to Search for Applications and Optimize/Tune a Hive Application</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:6;52:20">
+                  <xref href="#Getting-Started_53157411/GettingStarted-UseCase2-Howto%22RootCause%22IssueswithaWorkflowthatMissedItsSLA" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:6;55:23"><?ditaot usertext?>Use Case #2: How to "Root Cause" Issues with a Workflow that Missed Its SLA</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:7;58:20">
+                  <xref href="#Getting-Started_53157411/GettingStarted-UseCase3-HowtoDebugFailedApplications" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:7;59:111"><?ditaot usertext?>Use Case
+                     #3: How to Debug Failed Applications</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:8;63:20">
+                  <xref href="#Getting-Started_53157411/GettingStarted-UseCase4-HowtoReviewSparkApplicationsandIdentifyAreasforPerformanceImprovements" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:8;66:23"><?ditaot usertext?>Use Case #4: How to Review Spark Applications and Identify Areas for Performance
+                     Improvements</xref>
+               </li>
+
+            </ul>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:9;73:14">
+            <xref href="#Getting-Started_53157411/GettingStarted-RunningtheConfigurationWizard" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:9;74:97"><?ditaot usertext?>Running the
+               Configuration Wizard</xref>
+            <ul outputclass="toc-indentation" class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ul:3;76:47">
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:10;78:20">
+                  <xref href="#Getting-Started_53157411/GettingStarted-SettingUpAccesstoBigDataComponents" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:10;79:108"><?ditaot usertext?>Setting Up
+                     Access to Big Data Components</xref>
+               </li>
+
+               <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:11;83:20">
+                  <xref href="#Getting-Started_53157411/GettingStarted-CreatingUsersandSettingUpEmail/SMTP,LDAP,Kerberos" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:11;86:23"><?ditaot usertext?>Creating Users and Setting Up Email/SMTP, LDAP, Kerberos</xref>
+               </li>
+
+            </ul>
+         </li>
+
+      </ul>
+
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:2;95:11"/>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:1;96:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:2;97:17">Use Case Videos</title>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:2;99:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:3;100:17">Use Case #1: How to Search for Applications and Optimize/Tune a Hive Application</title>
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:4;101:15"/>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:3;104:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:4;105:17">Use Case #2: How to "Root Cause" Issues with a Workflow that Missed Its SLA</title>
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:5;106:15"/>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:4;109:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:5;110:17">Use Case #3: How to Debug Failed Applications</title>
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:6;111:15"/>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:5;114:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:6;115:17">Use Case #4: How to Review Spark Applications and Identify Areas for Performance Improvements</title>
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:7;116:15"/>
+      </section>
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:6;119:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:7;120:17">Running the Configuration Wizard</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:3;121:13">After you install the Unravel Server RPM, you can run Unravel Web UI's configuration wizard to:</p>
+         <ul class="- topic/ul " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ul:4;122:14">
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:12;124:17">Set up access to various Big Data components (HDFS, Hive, Oozie, and so on).</li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:13;126:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:4;127:19">Create users</p>
+            </li>
+
+            <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="li:14;130:17">
+               <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:5;131:19">Set up email/SMTP, LDAP, Kerberos</p>
+            </li>
+
+         </ul>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:6;135:13">The configuration wizard informs you of errors and continuously checks for failed and incorrect settings. To
+            start the configuration wizard, click <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="b:1;136:54">Admin</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="b:2;136:69">Manage</b> | <b class="+ topic/ph hi-d/b " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="b:3;136:85">Configuration</b>.</p>
+         <ph outputclass="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:8;137:108"/>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:7;138:13">The Unravel Web UI configuration wizard is available only for the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="codeph:1;138:87">admin</codeph> user.</p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:7;140:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:8;141:17">Setting Up Access to Big Data Components</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:8;142:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:9;143:96">
+               <image href="media/53157532.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:1;144:90"/>
+            </ph>
+         </p>
+      </section>
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:8;148:16">
+         <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:9;149:17">Creating Users and Setting Up Email/SMTP, LDAP, Kerberos</title>
+         <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="p:9;150:13">
+            <ph outputclass="confluence-embedded-file-wrapper confluence-embedded-manual-size" class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="ph:10;151:96">
+               <image href="media/53157529.png" outputclass="confluence-embedded-image" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:2;152:90"/>
+            </ph>
+         </p>
+      </section>
+
+
+
+
+      <section class="- topic/section " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="section:9;160:16">
+         <title outputclass="pageSectionTitle" class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="title:10;161:48">Attachments:</title>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:3;162:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:1;163:19"/>
+         </image>
+         <xref href="media/53157415.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:12;165:56"><?ditaot usertext?>gui_auto_actions_select.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:4;166:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:2;167:19"/>
+         </image>
+         <xref href="media/53157418.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:13;169:56"><?ditaot usertext?>gui_auto_actions2.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:5;170:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:3;171:19"/>
+         </image>
+         <xref href="media/53157421.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:14;173:56"><?ditaot usertext?>gui_auto_actions1.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:6;174:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:4;175:19"/>
+         </image>
+         <xref href="media/53157424.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:15;177:56"><?ditaot usertext?>gui_applications.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:7;178:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:5;179:19"/>
+         </image>
+         <xref href="media/53157427.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:16;181:56"><?ditaot usertext?>gui_hive_app_mgr1_events.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:8;182:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:6;183:19"/>
+         </image>
+         <xref href="media/53157430.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:17;185:56"><?ditaot usertext?>gui_hive_app_mgr1.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:9;186:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:7;187:19"/>
+         </image>
+         <xref href="media/53157433.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:18;189:56"><?ditaot usertext?>hive-recommendation.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:10;190:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:8;191:19"/>
+         </image>
+         <xref href="media/53157436.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:19;193:56"><?ditaot usertext?>caching-opportunity.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:11;194:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:9;195:19"/>
+         </image>
+         <xref href="media/53157439.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:20;197:56"><?ditaot usertext?>spark-insights3.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:12;198:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:10;199:19"/>
+         </image>
+         <xref href="media/use-case-4.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:21;201:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo4.mp4</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:13;202:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:11;203:19"/>
+         </image>
+         <xref href="media/use-case-3.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:22;205:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo3.mp4</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:14;206:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:12;207:19"/>
+         </image>
+         <xref href="media/use-case-2.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:23;209:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo2.mp4</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:15;210:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:13;211:19"/>
+         </image>
+         <xref href="media/use-case-1.mp4" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:24;213:58"><?ditaot usertext?>Unravel-Product-Use-Case-Demo-1.mp4</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:16;214:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:14;215:19"/>
+         </image>
+         <xref href="media/53157454.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:25;217:56"><?ditaot usertext?>gui_report_users.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:17;218:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:15;219:19"/>
+         </image>
+         <xref href="media/53157457.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:26;221:56"><?ditaot usertext?>gui_report_ops.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:18;222:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:16;223:19"/>
+         </image>
+         <xref href="media/53157460.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:27;225:56"><?ditaot usertext?>gui_data_table_rules2.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:19;226:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:17;227:19"/>
+         </image>
+         <xref href="media/53157463.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:28;229:56"><?ditaot usertext?>gui_data_table_rules1.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:20;230:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:18;231:19"/>
+         </image>
+         <xref href="media/53157466.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:29;233:56"><?ditaot usertext?>gui_data_table_details3.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:21;234:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:19;235:19"/>
+         </image>
+         <xref href="media/53157469.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:30;237:56"><?ditaot usertext?>gui_data_table_details2.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:22;238:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:20;239:19"/>
+         </image>
+         <xref href="media/53157472.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:31;241:56"><?ditaot usertext?>gui_data_table_details.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:23;242:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:21;243:19"/>
+         </image>
+         <xref href="media/53157475.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:32;245:56"><?ditaot usertext?>gui_data_table_summary.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:24;246:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:22;247:19"/>
+         </image>
+         <xref href="media/53157478.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:33;249:56"><?ditaot usertext?>gui_data_table.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:25;250:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:23;251:19"/>
+         </image>
+         <xref href="media/53157481.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:34;253:56"><?ditaot usertext?>gui_ops_chargeback.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:26;254:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:24;255:19"/>
+         </image>
+         <xref href="media/53157484.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:35;257:56"><?ditaot usertext?>gui_ops_cluster_metrics.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:27;258:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:25;259:19"/>
+         </image>
+         <xref href="media/53157487.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:36;261:56"><?ditaot usertext?>gui_ops_dashboard.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:28;262:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:26;263:19"/>
+         </image>
+         <xref href="media/53157490.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:37;265:56"><?ditaot usertext?>gui_error_view.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:29;266:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:27;267:19"/>
+         </image>
+         <xref href="media/53157493.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:38;269:56"><?ditaot usertext?>gui_events_workflow.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:30;270:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:28;271:19"/>
+         </image>
+         <xref href="media/53157496.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:39;273:56"><?ditaot usertext?>gui_events_spark.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:31;274:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:29;275:19"/>
+         </image>
+         <xref href="media/53157499.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:40;277:56"><?ditaot usertext?>gui_events_hive.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:32;278:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:30;279:19"/>
+         </image>
+         <xref href="media/53157502.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:41;281:56"><?ditaot usertext?>gui_workflow_mgr3.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:33;282:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:31;283:19"/>
+         </image>
+         <xref href="media/53157505.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:42;285:56"><?ditaot usertext?>gui_spark_app_mgr3.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:34;286:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:32;287:19"/>
+         </image>
+         <xref href="media/53157508.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:43;289:56"><?ditaot usertext?>gui_workflow_mgr2.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:35;290:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:33;291:19"/>
+         </image>
+         <xref href="media/53157511.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:44;293:56"><?ditaot usertext?>gui_workflow_mgr1.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:36;294:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:34;295:19"/>
+         </image>
+         <xref href="media/53157514.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:45;297:56"><?ditaot usertext?>gui_mapreduce_app_mgr1.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:37;298:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:35;299:19"/>
+         </image>
+         <xref href="media/53157517.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:46;301:56"><?ditaot usertext?>gui_hive_app_mgr2.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:38;302:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:36;303:19"/>
+         </image>
+         <xref href="media/53157520.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:47;305:56"><?ditaot usertext?>gui_spark_app_mgr2.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:39;306:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:37;307:19"/>
+         </image>
+         <xref href="media/53157523.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:48;309:56"><?ditaot usertext?>gui_spark_app_mgr.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:40;310:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:38;311:19"/>
+         </image>
+         <xref href="media/53157526.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:49;313:56"><?ditaot usertext?>gui_global_search.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:41;314:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:39;315:19"/>
+         </image>
+         <xref href="media/53157529.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:50;317:56"><?ditaot usertext?>gui_email.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:42;318:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:40;319:19"/>
+         </image>
+         <xref href="media/53157532.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:51;321:56"><?ditaot usertext?>gui_admin_manage_configuration.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:43;322:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:41;323:19"/>
+         </image>
+         <xref href="media/53157535.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:52;325:56"><?ditaot usertext?>admin_manage_configuration.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:44;326:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:42;327:19"/>
+         </image>
+         <xref href="media/53157538.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:53;329:56"><?ditaot usertext?>image2017-2-26_0-20-12.png</xref>
+         <image href="images/icons/bullet_blue.gif" placement="inline" class="- topic/image " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="image:45;330:53">
+            <alt class="- topic/alt " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="alt:43;331:19"/>
+         </image>
+         <xref href="media/53157541.png" format="html" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Getting-Started_53157411.dita" xtrc="xref:54;333:56"><?ditaot usertext?>logo_small.png</xref>
+      </section>
+
+
+
+   </conbody>
+</concept>

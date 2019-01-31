@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /C:\Users\five\Documents\unravel\demos\Oxygen\git\demo-oxygen\source\undocs\un40\temp\pdf-css?><?workdir-uri file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/temp/pdf-css/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-us" id="Resource-Metrics_53232237" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="concept:1;4:58">
+   <title class="- topic/title " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="title:1;5:11">Resource Metrics </title>
+   <conbody class="- topic/body  concept/conbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="conbody:1;6:13">
+
+
+
+      <ol class="- topic/ol " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ol:1;10:11">
+
+         <li outputclass="first" class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="li:1;12:34">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:1;13:17">
+               <xref href="index.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="xref:1;14:40" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="li:2;18:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:2;19:17">
+               <xref href="Unravel-4.0-4.1_50672724.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="xref:2;20:59" type="topic"><?ditaot usertext?>Unravel 4.0-4.1</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="li:3;24:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:3;25:17">
+               <xref href="User-Guide_50687944.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="xref:3;26:54" type="topic"><?ditaot usertext?>User Guide</xref>
+            </ph>
+         </li>
+
+         <li class="- topic/li " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="li:4;30:14">
+            <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:4;31:17">
+               <xref href="The-Applications-Tab_53166005.dita" class="- topic/xref " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="xref:4;32:64" type="concept"><?ditaot usertext?>The Applications Tab</xref>
+            </ph>
+         </li>
+
+      </ol>
+
+
+
+
+
+
+
+      <p class="- topic/p " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="p:1;44:10">
+         <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:5;45:14">The table below lists the resource metrics collected by Unravel. The availability of a particular metric is
+            dependent on the underlying OS and JVM GC algorithm in use.</ph>
+      </p>
+      <table outputclass="wrapped confluenceTable" class="- topic/table " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="table:1;48:52">
+         <tgroup cols="3" class="- topic/tgroup " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="tgroup:1;49:27">
+            <colspec colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="colspec:1;50:38" colnum="1"/>
+            <colspec colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="colspec:2;51:38" colnum="2"/>
+            <colspec colname="col3" rowheader="headers" class="- topic/colspec " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="colspec:3;52:38" colnum="3"/>
+            <tbody class="- topic/tbody " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="tbody:1;53:20">
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:1;54:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:1;56:53" colname="col1" dita-ot:x="1" dita-ot:y="1">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:6;57:26">Metric</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:2;60:53" colname="col2" dita-ot:x="2" dita-ot:y="1">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:7;61:26">Unit</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:3;64:53" colname="col3" dita-ot:x="3" dita-ot:y="1">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:8;65:26">Description</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:2;69:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:4;71:53" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:9;72:26">snapshotTs</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:5;75:53" colname="col2" dita-ot:x="2" dita-ot:y="2">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:10;76:26">TIMESTAMP (milliseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:6;79:53" colname="col3" dita-ot:x="3" dita-ot:y="2">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:11;80:26">The time the metric was read</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:3;84:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:7;86:53" colname="col1" dita-ot:x="1" dita-ot:y="3">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:12;87:26">startTs</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:8;90:53" colname="col2" dita-ot:x="2" dita-ot:y="3">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:13;91:26">TIMESTAMP (milliseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:9;94:53" colname="col3" dita-ot:x="3" dita-ot:y="3">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:14;95:26">The time when the collection process started</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:4;99:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:10;101:53" colname="col1" dita-ot:x="1" dita-ot:y="4">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:15;102:26">totalPhysicalMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:11;105:53" colname="col2" dita-ot:x="2" dita-ot:y="4">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:16;106:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:12;109:53" colname="col3" dita-ot:x="3" dita-ot:y="4">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:17;110:26">The total physical memory in the operating system</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:5;114:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:13;116:53" colname="col1" dita-ot:x="1" dita-ot:y="5">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:18;117:26">freePhysicalMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:14;120:53" colname="col2" dita-ot:x="2" dita-ot:y="5">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:19;121:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:15;124:53" colname="col3" dita-ot:x="3" dita-ot:y="5">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:20;125:26">The free physical memory in the operating system</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:6;129:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:16;131:53" colname="col1" dita-ot:x="1" dita-ot:y="6">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:21;132:26">committedVirtualMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:17;135:53" colname="col2" dita-ot:x="2" dita-ot:y="6">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:22;136:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:18;139:53" colname="col3" dita-ot:x="3" dita-ot:y="6">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:23;140:26">The committed virtual memory in the operating system</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:7;144:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:19;146:53" colname="col1" dita-ot:x="1" dita-ot:y="7">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:24;147:26">freeSwap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:20;150:53" colname="col2" dita-ot:x="2" dita-ot:y="7">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:25;151:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:21;154:53" colname="col3" dita-ot:x="3" dita-ot:y="7">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:26;155:26">The free swap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:8;159:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:22;161:53" colname="col1" dita-ot:x="1" dita-ot:y="8">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:27;162:26">availableMemory</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:23;165:53" colname="col2" dita-ot:x="2" dita-ot:y="8">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:28;166:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:24;169:53" colname="col3" dita-ot:x="3" dita-ot:y="8">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:29;170:26">An estimate of memory available for launching new processes</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:9;174:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:25;176:53" colname="col1" dita-ot:x="1" dita-ot:y="9">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:30;177:26">vmRss</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:26;180:53" colname="col2" dita-ot:x="2" dita-ot:y="9">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:31;181:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:27;184:53" colname="col3" dita-ot:x="3" dita-ot:y="9">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:32;185:26">The resident set size of the complete process tree</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:10;189:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:28;191:53" colname="col1" dita-ot:x="1" dita-ot:y="10">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:33;192:26">vmRssDir</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:29;195:53" colname="col2" dita-ot:x="2" dita-ot:y="10">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:34;196:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:30;199:53" colname="col3" dita-ot:x="3" dita-ot:y="10">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:35;200:26">The resident set size of the process</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:11;204:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:31;206:53" colname="col1" dita-ot:x="1" dita-ot:y="11">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:36;207:26">totalSwap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:32;210:53" colname="col2" dita-ot:x="2" dita-ot:y="11">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:37;211:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:33;214:53" colname="col3" dita-ot:x="3" dita-ot:y="11">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:38;215:26">The total swap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:12;219:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:34;221:53" colname="col1" dita-ot:x="1" dita-ot:y="12">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:39;222:26">processCpuLoad</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:35;225:53" colname="col2" dita-ot:x="2" dita-ot:y="12">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:40;226:26">PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:36;229:53" colname="col3" dita-ot:x="3" dita-ot:y="12">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:41;230:26">Average process CPU load for the last minute (all cores)</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:13;234:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:37;236:53" colname="col1" dita-ot:x="1" dita-ot:y="13">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:42;237:26">systemCpuLoad</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:38;240:53" colname="col2" dita-ot:x="2" dita-ot:y="13">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:43;241:26">PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:39;244:53" colname="col3" dita-ot:x="3" dita-ot:y="13">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:44;245:26">Average system CPU load for the last minute (all cores)</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:14;249:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:40;251:53" colname="col1" dita-ot:x="1" dita-ot:y="14">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:45;252:26">fullGcCount</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:41;255:53" colname="col2" dita-ot:x="2" dita-ot:y="14">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:46;256:26">COUNT</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:42;259:53" colname="col3" dita-ot:x="3" dita-ot:y="14">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:47;260:26">Number of full GC runs</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:15;264:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:43;266:53" colname="col1" dita-ot:x="1" dita-ot:y="15">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:48;267:26">minorGcCount</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:44;270:53" colname="col2" dita-ot:x="2" dita-ot:y="15">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:49;271:26">COUNT</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:45;274:53" colname="col3" dita-ot:x="3" dita-ot:y="15">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:50;275:26">Number of minor GC runs</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:16;279:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:46;281:53" colname="col1" dita-ot:x="1" dita-ot:y="16">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:51;282:26">minorGcTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:47;285:53" colname="col2" dita-ot:x="2" dita-ot:y="16">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:52;286:26">DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:48;289:53" colname="col3" dita-ot:x="3" dita-ot:y="16">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:53;290:26">Accumulated time spent in minor GC</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:17;294:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:49;296:53" colname="col1" dita-ot:x="1" dita-ot:y="17">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:54;297:26">fullGcTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:50;300:53" colname="col2" dita-ot:x="2" dita-ot:y="17">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:55;301:26">DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:51;304:53" colname="col3" dita-ot:x="3" dita-ot:y="17">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:56;305:26">Accumulated time spent in full GC</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:18;309:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:52;311:53" colname="col1" dita-ot:x="1" dita-ot:y="18">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:57;312:26">gcEdenSurvivedAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:53;315:53" colname="col2" dita-ot:x="2" dita-ot:y="18">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:58;316:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:54;319:53" colname="col3" dita-ot:x="3" dita-ot:y="18">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:59;320:26">Average number of bytes moved from eden to survivor space. Might not be available for
+                        particular GC algorithms</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:19;325:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:55;327:53" colname="col1" dita-ot:x="1" dita-ot:y="19">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:60;328:26">gcSurvivorPromotedAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:56;331:53" colname="col2" dita-ot:x="2" dita-ot:y="19">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:61;332:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:57;335:53" colname="col3" dita-ot:x="3" dita-ot:y="19">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:62;336:26">Average number of bytes moved from survivor to old space. Might not be available for particular
+                        GC algorithms</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:20;341:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:58;343:53" colname="col1" dita-ot:x="1" dita-ot:y="20">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:63;344:26">gcYoungLiveAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:59;347:53" colname="col2" dita-ot:x="2" dita-ot:y="20">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:64;348:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:60;351:53" colname="col3" dita-ot:x="3" dita-ot:y="20">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:65;352:26">Average number of bytes alive in the young generation (eden + survivor spaces). Might not be
+                        available for particular GC algorithms</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:21;357:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:61;359:53" colname="col1" dita-ot:x="1" dita-ot:y="21">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:66;360:26">allocatedBytes</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:62;363:53" colname="col2" dita-ot:x="2" dita-ot:y="21">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:67;364:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:63;367:53" colname="col3" dita-ot:x="3" dita-ot:y="21">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:68;368:26">Accumulated number of allocated bytes</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:22;372:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:64;374:53" colname="col1" dita-ot:x="1" dita-ot:y="22">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:69;375:26">edenPeakUsage</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:65;378:53" colname="col2" dita-ot:x="2" dita-ot:y="22">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:70;379:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:66;382:53" colname="col3" dita-ot:x="3" dita-ot:y="22">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:71;383:26">Maximum memory usage in the eden space</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:23;387:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:67;389:53" colname="col1" dita-ot:x="1" dita-ot:y="23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:72;390:26">survivorPeakUsage</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:68;393:53" colname="col2" dita-ot:x="2" dita-ot:y="23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:73;394:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:69;397:53" colname="col3" dita-ot:x="3" dita-ot:y="23">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:74;398:26">Maximum memory usage in the survivor space</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:24;402:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:70;404:53" colname="col1" dita-ot:x="1" dita-ot:y="24">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:75;405:26">oldPeakUsage</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:71;408:53" colname="col2" dita-ot:x="2" dita-ot:y="24">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:76;409:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:72;412:53" colname="col3" dita-ot:x="3" dita-ot:y="24">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:77;413:26">Maximum memory usage in the old space</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:25;417:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:73;419:53" colname="col1" dita-ot:x="1" dita-ot:y="25">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:78;420:26">avgMinorInterval</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:74;423:53" colname="col2" dita-ot:x="2" dita-ot:y="25">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:79;424:26">DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:75;427:53" colname="col3" dita-ot:x="3" dita-ot:y="25">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:80;428:26">Average interval between two subsequent minor GCs. Might not be available for particular GC
+                        algorithms</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:26;433:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:76;435:53" colname="col1" dita-ot:x="1" dita-ot:y="26">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:81;436:26">gcLoad</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:77;439:53" colname="col2" dita-ot:x="2" dita-ot:y="26">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:82;440:26">PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:78;443:53" colname="col3" dita-ot:x="3" dita-ot:y="26">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:83;444:26">Percentage of CPU time spent in GC</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:27;448:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:79;450:53" colname="col1" dita-ot:x="1" dita-ot:y="27">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:84;451:26">blockingRatio</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:80;454:53" colname="col2" dita-ot:x="2" dita-ot:y="27">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:85;455:26">PERCENTS</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:81;458:53" colname="col3" dita-ot:x="3" dita-ot:y="27">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:86;459:26">Estimated percentage of CPU time spent in kernel blocking operations</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:28;463:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:82;465:53" colname="col1" dita-ot:x="1" dita-ot:y="28">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:87;466:26">avgFullGcInterval</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:83;469:53" colname="col2" dita-ot:x="2" dita-ot:y="28">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:88;470:26">DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:84;473:53" colname="col3" dita-ot:x="3" dita-ot:y="28">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:89;474:26">Average interval between two subsequent full GCs. Might not be available for particular GC
+                        algorithms</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:29;479:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:85;481:53" colname="col1" dita-ot:x="1" dita-ot:y="29">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:90;482:26">gcOldLiveAvg</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:86;485:53" colname="col2" dita-ot:x="2" dita-ot:y="29">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:91;486:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:87;489:53" colname="col3" dita-ot:x="3" dita-ot:y="29">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:92;490:26">Average number of bytes alive in the old generation. Might not be available for particular GC
+                        algorithms</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:30;495:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:88;497:53" colname="col1" dita-ot:x="1" dita-ot:y="30">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:93;498:26">initHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:89;501:53" colname="col2" dita-ot:x="2" dita-ot:y="30">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:94;502:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:90;505:53" colname="col3" dita-ot:x="3" dita-ot:y="30">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:95;506:26">Initial heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:31;510:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:91;512:53" colname="col1" dita-ot:x="1" dita-ot:y="31">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:96;513:26">maxHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:92;516:53" colname="col2" dita-ot:x="2" dita-ot:y="31">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:97;517:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:93;520:53" colname="col3" dita-ot:x="3" dita-ot:y="31">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:98;521:26">Maximum heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:32;525:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:94;527:53" colname="col1" dita-ot:x="1" dita-ot:y="32">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:99;528:26">usedHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:95;531:53" colname="col2" dita-ot:x="2" dita-ot:y="32">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:100;532:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:96;535:53" colname="col3" dita-ot:x="3" dita-ot:y="32">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:101;536:26">Used heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:33;540:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:97;542:53" colname="col1" dita-ot:x="1" dita-ot:y="33">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:102;543:26">committedHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:98;546:53" colname="col2" dita-ot:x="2" dita-ot:y="33">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:103;547:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:99;550:53" colname="col3" dita-ot:x="3" dita-ot:y="33">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:104;551:26">Committed heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:34;555:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:100;557:53" colname="col1" dita-ot:x="1" dita-ot:y="34">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:105;558:26">initNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:101;561:53" colname="col2" dita-ot:x="2" dita-ot:y="34">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:106;562:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:102;565:53" colname="col3" dita-ot:x="3" dita-ot:y="34">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:107;566:26">Initial non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:35;570:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:103;572:53" colname="col1" dita-ot:x="1" dita-ot:y="35">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:108;573:26">maxNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:104;576:53" colname="col2" dita-ot:x="2" dita-ot:y="35">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:109;577:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:105;580:53" colname="col3" dita-ot:x="3" dita-ot:y="35">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:110;581:26">Maximum non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:36;585:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:106;587:53" colname="col1" dita-ot:x="1" dita-ot:y="36">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:111;588:26">usedNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:107;591:53" colname="col2" dita-ot:x="2" dita-ot:y="36">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:112;592:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:108;595:53" colname="col3" dita-ot:x="3" dita-ot:y="36">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:113;596:26">Used non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:37;600:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:109;602:53" colname="col1" dita-ot:x="1" dita-ot:y="37">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:114;603:26">committedNonHeap</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:110;606:53" colname="col2" dita-ot:x="2" dita-ot:y="37">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:115;607:26">BYTES</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:111;610:53" colname="col3" dita-ot:x="3" dita-ot:y="37">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:116;611:26">Committed non-heap size</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:38;615:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:112;617:53" colname="col1" dita-ot:x="1" dita-ot:y="38">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:117;618:26">currentThreadCpuTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:113;621:53" colname="col2" dita-ot:x="2" dita-ot:y="38">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:118;622:26">DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:114;625:53" colname="col3" dita-ot:x="3" dita-ot:y="38">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:119;626:26">Current thread CPU time elapsed since the start of the measurement. Might not be available on
+                        some operating systems</ph>
+                  </entry>
+
+               </row>
+               <row class="- topic/row " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="row:39;631:21">
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:115;633:53" colname="col1" dita-ot:x="1" dita-ot:y="39">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:120;634:26">currentThreadUserTime</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:116;637:53" colname="col2" dita-ot:x="2" dita-ot:y="39">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:121;638:26">DURATION (nanoseconds)</ph>
+                  </entry>
+
+                  <entry outputclass="confluenceTd" class="- topic/entry " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="entry:117;641:53" colname="col3" dita-ot:x="3" dita-ot:y="39">
+                     <ph class="- topic/ph " xtrf="file:/C:/Users/five/Documents/unravel/demos/Oxygen/git/demo-oxygen/source/undocs/un40/Resource-Metrics_53232237.dita" xtrc="ph:122;642:26">Current thread user time elapsed since the start of the measurement. Might not be available on
+                        some operating systems</ph>
+                  </entry>
+
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+
+
+
+   </conbody>
+</concept>

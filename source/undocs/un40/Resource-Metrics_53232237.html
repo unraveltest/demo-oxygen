@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Resource Metrics</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="User-Guide_50687944.html">User Guide</a></span>
+                            </li>
+                            <li>
+                                <span><a href="The-Applications-Tab_53166005.html">The Applications Tab</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Resource Metrics </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    
+                    <div id="main-content" class="wiki-content group">
+                        <p><span style="color: rgb(0,0,0);text-decoration: none;">The table below lists the resource
+                                metrics collected by Unravel. The availability of a particular metric is dependent on
+                                the underlying OS and JVM GC algorithm in use.</span></p><div class="table-wrap"><table
+                                class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="confluenceTd"><p style="text-align: center;"><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >Metric</span></p></td>
+                                        <td class="confluenceTd"><p style="text-align: center;"><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >Unit</span></p></td>
+                                        <td class="confluenceTd"><p style="text-align: center;"><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >Description</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >snapshotTs</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">TIMESTAMP
+                                                    (milliseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The time the metric
+                                                    was read</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >startTs</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">TIMESTAMP
+                                                    (milliseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The time when the
+                                                    collection process started</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >totalPhysicalMemory</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The total physical
+                                                    memory in the operating system<br /></span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >freePhysicalMemory</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The free physical
+                                                    memory in the operating system<br /></span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >committedVirtualMemory</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The committed
+                                                    virtual memory in the operating system<br /></span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >freeSwap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The free swap
+                                                    size<br /></span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >availableMemory</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">An estimate of
+                                                    memory available for launching new processes</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >vmRss</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The resident set
+                                                    size of the complete process tree</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >vmRssDir</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The resident set
+                                                    size of the process</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >totalSwap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">The total swap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >processCpuLoad</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >PERCENTS</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average process CPU
+                                                    load for the last minute (all cores)</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >systemCpuLoad</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >PERCENTS</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average system CPU
+                                                    load for the last minute (all cores)</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >fullGcCount</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >COUNT</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Number of full GC
+                                                    runs</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >minorGcCount</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >COUNT</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Number of minor GC
+                                                    runs</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >minorGcTime</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">DURATION
+                                                    (nanoseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Accumulated time
+                                                    spent in minor GC</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >fullGcTime</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">DURATION
+                                                    (nanoseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Accumulated time
+                                                    spent in full GC</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >gcEdenSurvivedAvg</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average number of
+                                                    bytes moved from eden to survivor space. Might not be available for
+                                                    particular GC algorithms</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >gcSurvivorPromotedAvg</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average number of
+                                                    bytes moved from survivor to old space. Might not be available for
+                                                    particular GC algorithms</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >gcYoungLiveAvg</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average number of
+                                                    bytes alive in the young generation (eden + survivor spaces). Might
+                                                    not be available for particular GC algorithms</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >allocatedBytes</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Accumulated number
+                                                    of allocated bytes<br /></span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >edenPeakUsage</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Maximum memory
+                                                    usage in the eden space</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >survivorPeakUsage</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Maximum memory
+                                                    usage in the survivor space</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >oldPeakUsage</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Maximum memory
+                                                    usage in the old space</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >avgMinorInterval</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">DURATION
+                                                    (nanoseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average interval
+                                                    between two subsequent minor GCs. Might not be available for
+                                                    particular GC algorithms</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >gcLoad</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >PERCENTS</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Percentage of CPU
+                                                    time spent in GC</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >blockingRatio</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >PERCENTS</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Estimated
+                                                    percentage of CPU time spent in kernel blocking
+                                                operations</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >avgFullGcInterval</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">DURATION
+                                                    (nanoseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average interval
+                                                    between two subsequent full GCs. Might not be available for
+                                                    particular GC algorithms</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >gcOldLiveAvg</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Average number of
+                                                    bytes alive in the old generation. Might not be available for
+                                                    particular GC algorithms</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >initHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Initial heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >maxHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Maximum heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >usedHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Used heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >committedHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Committed heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >initNonHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Initial non-heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >maxNonHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Maximum non-heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                >usedNonHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Used non-heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >committedNonHeap</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                            >BYTES</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Committed non-heap
+                                                    size</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >currentThreadCpuTime</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">DURATION
+                                                    (nanoseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Current thread CPU
+                                                    time elapsed since the start of the measurement. Might not be
+                                                    available on some operating systems</span></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;"
+                                                    >currentThreadUserTime</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">DURATION
+                                                    (nanoseconds)</span></p></td>
+                                        <td class="confluenceTd"><p><span
+                                                    style="color: rgb(0,0,0);text-decoration: none;">Current thread user
+                                                    time elapsed since the start of the measurement. Might not be
+                                                    available on some operating systems</span></p></td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

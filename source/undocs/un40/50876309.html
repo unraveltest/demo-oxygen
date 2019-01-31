@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Part 4: Modify Amazon EMR Cluster Bootstrap/Setup</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="50688627.html">Installation Guide for Amazon Elastic
+                                        MapReduce (Amazon EMR) and Qubole Clusters</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Part 4: Modify Amazon EMR Cluster
+                            Bootstrap/Setup </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    
+                    <div id="main-content" class="wiki-content group">
+                        <div class="confluence-information-macro confluence-information-macro-tip"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Follow
+                                    these steps only if you have an Amazon EMR
+                            cluster.</p></div></div><p><br /></p><h2 style="text-align: left;"
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-Introduction"
+                            >Introduction</h2><p style="text-align: left;">This topic explains how
+                            to modify and Amazon EMR cluster's bootstrap/setup for <span>Unravel
+                                Server 4.0</span>. For instructions that correspond to older
+                            versions of Unravel Server, contact Unravel Support.</p><p
+                            style="text-align: left;"><br />
+                            <em>Steps marked <span style="color: rgb(0,128,0);">[HVD]</span> are for
+                                production high volume and durable installations can be skipped for
+                                PoCs.</em></p><div class="panel"
+                            style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"
+                                ><div class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Workflow Summary</b></div><div class="panelContent">
+                                <ol>
+                                    <li>Add your AWS account number(s) to the Unravel Data main s3
+                                        bucket policy.</li>
+                                    <li><p>Get the bootstrap script(s).</p></li>
+                                    <li><p>Integrate the bootstrap script(s) into your Amazon EMR
+                                            cluster(s).</p></li>
+                                </ol>
+                            </div></div><div class="panel"
+                            style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"
+                                ><div class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Table of Contents</b></div><div class="panelContent">
+                                <div class="toc-macro rbtoc1548486130641">
+                                    <ul class="toc-indentation">
+                                        <li><a
+                                                href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-Introduction"
+                                                >Introduction</a></li>
+                                        <li><a
+                                                href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-1.AddYourAWSAccountNumber(s)totheUnravelDataMainS3BucketPolicy"
+                                                >1. Add Your AWS Account Number(s) to the Unravel
+                                                Data Main S3 Bucket Policy</a></li>
+                                        <li><a
+                                                href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-2.GettheBootstrapScript(s)"
+                                                >2. Get the Bootstrap Script(s)</a></li>
+                                        <li><a
+                                                href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-3.IntegratetheBootstrapScript(s)intoYourAmazonEMRCluster(s)"
+                                                >3. Integrate the Bootstrap Script(s) into Your
+                                                Amazon EMR Cluster(s)</a>
+                                            <ul class="toc-indentation">
+                                                <li><a
+                                                  href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-ForPersistent(&quot;Long-Running&quot;or&quot;Existing&quot;)AmazonEMRClusters"
+                                                  >For Persistent (&quot;Long-Running&quot; or
+                                                  &quot;Existing&quot;) Amazon EMR Clusters</a>
+                                                  <ul class="toc-indentation">
+                                                  <li><a
+                                                  href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:"
+                                                  >Hive Applications:</a></li>
+                                                  </ul>
+                                                </li>
+                                                <li><a
+                                                  href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-ForTransientAmazonEMRClusters"
+                                                  >For Transient Amazon EMR Clusters</a>
+                                                  <ul class="toc-indentation">
+                                                  <li><a
+                                                  href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:.1"
+                                                  >Hive Applications:</a></li>
+                                                  <li><a
+                                                  href="#Part4:ModifyAmazonEMRClusterBootstrap/Setup-SparkApplications:"
+                                                  >Spark Applications:</a></li>
+                                                  </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div></div><h2
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-1.AddYourAWSAccountNumber(s)totheUnravelDataMainS3BucketPolicy"
+                            >1. Add Your AWS Account Number(s) to the Unravel Data Main S3 Bucket
+                            Policy</h2><div
+                            class="confluence-information-macro confluence-information-macro-note"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Prior to
+                                    doing below steps, ensure that your AWS account number(s) is
+                                    added to the Unravel Data main s3 bucket policy for
+                                        <code>s3://unraveldata-client</code> by asking Unravel
+                                    Support to do this; alternatively, the scripts can be found on
+                                    Unravel Server in the directory
+                                        <code>/usr/local/unravel/install_bin/unraveldata-clients</code>.</p></div></div><p><br /></p><h2
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-2.GettheBootstrapScript(s)"
+                            >2. Get the Bootstrap Script(s)</h2><p>To gain access to the s3 bucket
+                            that contains the bootstrap scripts (<code>s3://</code><span
+                                style="color: rgb(68,68,68);">unraveldata-clients/</span>), add a
+                            one-time new Inline policy to <span style="color: rgb(68,68,68);"
+                                    ><strong>EMR_DefaultRole</strong></span> as follows:</p><ol>
+                            <li>In the IAM management console on the left-hand side, click
+                                    <strong>Roles</strong> | <span style="color: rgb(68,68,68);"
+                                        ><strong>EMR_DefaultRole</strong></span>.</li>
+                            <li><span style="color: rgb(68,68,68);">Click </span><strong>Inline
+                                    Policies</strong> | <strong>Create Role Policy</strong>, and
+                                select <strong>Custom Policy</strong>.</li>
+                            <li>Click <strong>Select</strong>.</li>
+                            <li>Enter the policy name as you wish.</li>
+                            <li><p>Copy and paste below policy into the <span
+                                        style="color: rgb(68,68,68);"><strong>Policy
+                                            Document:</strong></span></p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">{
+    &quot;Version&quot;: &quot;2012-10-17&quot;, 
+    &quot;Statement&quot;: [ 
+        { 
+            &quot;Sid&quot;: &quot;getunraveldataclients3files&quot;, 
+            &quot;Effect&quot;: &quot;Allow&quot;, 
+            &quot;Action&quot;: [ 
+                &quot;s3:ListBucket&quot;, 
+                &quot;s3:Get*&quot; 
+            ], 
+            &quot;Resource&quot;: [ 
+              &quot;arn:aws:s3:::unraveldata-clients/*&quot; 
+            ] 
+        } 
+    ]
+}</pre>
+                                    </div></div><p><span style="color: rgb(68,68,68);"
+                                    ><br /></span></p></li>
+                            <li><span style="color: rgb(68,68,68);">Save it by clicking
+                                        <strong>Apply Policy</strong>.</span></li>
+                        </ol><p><br /></p><div
+                            class="confluence-information-macro confluence-information-macro-tip"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>When you
+                                    create a new Amazon EMR cluster, be sure to add a bootstrap
+                                    action as shown in the IAM screenshot below.  You need to copy
+                                    and paste the full pathname of the bootstrap action (script)
+                                    into the <strong>Script location</strong> field. The full
+                                    pathname is the s3 bucket name plus the filename of the script.
+                                    <br /> Important Note: <strong><span
+                                            style="text-decoration: underline;">Do
+                                        not</span></strong> use the <span
+                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                            ><img class="confluence-embedded-image" height="24"
+                                            width="20" src="media/51156088.png"
+                                            data-image-src="media/51156088.png"
+                                            data-unresolved-comment-count="0"
+                                            data-linked-resource-id="51156088"
+                                            data-linked-resource-version="1"
+                                            data-linked-resource-type="attachment"
+                                            data-linked-resource-default-alias="worddavb613e73f110587889f8b58fd6cdcdfa4.png"
+                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                            data-linked-resource-content-type="image/png"
+                                            data-linked-resource-container-id="50876309"
+                                            data-linked-resource-container-version="16"
+                                            data-media-id="0e720113-46f3-44be-a0b8-ea914dcc1c1d"
+                                            data-media-type="file" /></span> folder glyph<br /><span
+                                        class="confluence-embedded-file-wrapper confluence-embedded-manual-size"
+                                            ><img class="confluence-embedded-image" height="229"
+                                            width="650" src="media/51156092.png"
+                                            data-image-src="media/51156092.png"
+                                            data-unresolved-comment-count="0"
+                                            data-linked-resource-id="51156092"
+                                            data-linked-resource-version="1"
+                                            data-linked-resource-type="attachment"
+                                            data-linked-resource-default-alias="worddav17bd11fa4b44a52a180fec44ac2a622c.png"
+                                            data-base-url="https://unraveldata.atlassian.net/wiki"
+                                            data-linked-resource-content-type="image/png"
+                                            data-linked-resource-container-id="50876309"
+                                            data-linked-resource-container-version="16"
+                                            data-media-id="897f3f05-e5f1-463e-8301-b7dd9be6ecf1"
+                                            data-media-type="file" /></span></p><p>For guidance on
+                                    which script to use, see the table below.</p><div
+                                    class="table-wrap"><table class="wrapped confluenceTable">
+                                        <colgroup>
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="confluenceTh">File</th>
+                                                <th class="confluenceTh">S3 Bucket</th>
+                                                <th class="confluenceTh">Local Directory</th>
+                                                <th class="confluenceTh">Applies To</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="confluenceTd"
+                                                  ><p><code>unravel_emr_bootstrap.sh</code></p></td>
+                                                <td class="confluenceTd"
+                                                  ><p>s3://unraveldata-clients/</p></td>
+                                                <td class="confluenceTd"
+                                                  ><p><code>install_bin/unraveldata-clients/</code></p></td>
+                                                <td class="confluenceTd"><p>Amazon EMR 3.x
+                                                  Hive</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="confluenceTd"
+                                                  ><p><code>unravel_emr4_bootstrap.sh</code></p></td>
+                                                <td class="confluenceTd"
+                                                  ><p>s3://unraveldata-clients/</p></td>
+                                                <td class="confluenceTd"
+                                                  ><p><code>install_bin/unraveldata-clients/</code></p></td>
+                                                <td class="confluenceTd"><p>Amazon EMR 4.x
+                                                  Hive</p></td>
+                                            </tr>
+                                        </tbody>
+                                    </table></div></div></div><h2
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-3.IntegratetheBootstrapScript(s)intoYourAmazonEMRCluster(s)"
+                            >3. Integrate the Bootstrap Script(s) into Your Amazon EMR
+                            Cluster(s)</h2><h3
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-ForPersistent(&quot;Long-Running&quot;or&quot;Existing&quot;)AmazonEMRClusters"
+                            >For Persistent (&quot;Long-Running&quot; or &quot;Existing&quot;)
+                            Amazon EMR Clusters</h3><h4
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:">Hive
+                            Applications:</h4><p>Unravel does not load data from a cluster until the
+                            cluster is instrumented. Use the steps here to set up an existing
+                            cluster.</p><ol>
+                            <li>Identify the LOCAL_IP address of your Unravel Server.</li>
+                            <li>Download <code>s3://unraveldata-clients/unravel_emr_setup.sh</code>
+                                using the S3 console or '<code>aws s3</code>' command or other
+                                utility OR get it from the Unravel Server in
+                                    <code>install_bin/unraveldata-clients</code>.</li>
+                            <li>scp <code>unravel_emr_setup.sh</code> to <code>/tmp</code> of the
+                                cluster's master node (ssh user is <code>hadoop</code>).</li>
+                            <li><p>Open an SSH session to the cluster's master node (ssh as user
+                                        <code>hadoop</code>) and then do as
+                                    <code>hadoop</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">cd /tmp 
+aws s3 cp s3://unraveldata-clients/unravel_emr_setup.sh . 
+chmod +x unravel_emr_setup.sh 
+./unravel_emr_setup.sh --unravel-server $LOCAL_IP:3000</pre>
+                                    </div></div><div
+                                    class="confluence-information-macro confluence-information-macro-tip"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p>To
+                                            uninstall Hive instrumentation on an Amazon EMR cluster
+                                            (perhaps because you want to upgrade the
+                                            instrumentation), you simply run the same install script
+                                            again with the <code>uninstall</code> argument:</p><div
+                                            class="code panel pdl" style="border-width: 1px;"><div
+                                                class="codeContent panelContent pdl">
+                                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">cd /tmp 
+aws s3 cp s3://unraveldata-clients/unravel_emr_setup.sh . 
+chmod +x unravel_emr_setup.sh 
+./unravel_emr_setup.sh --uninstall</pre>
+                                            </div></div></div></div></li>
+                        </ol><h3 class="auto-cursor-target"
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-ForTransientAmazonEMRClusters"
+                            >For Transient Amazon EMR Clusters</h3><h4
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-HiveApplications:.1"
+                            >Hive Applications:</h4><p>This is similar to the previous section on
+                            integrating an existing cluster except the script used as a bootstrap
+                            step is one of the following files:</p><div class="table-wrap"><table
+                                class="wrapped confluenceTable">
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="confluenceTd"><p><strong>File</strong></p></td>
+                                        <td class="confluenceTd"><p><strong>S3
+                                            Bucket</strong></p></td>
+                                        <td class="confluenceTd"><p><strong>Local
+                                                Directory</strong></p></td>
+                                        <td class="confluenceTd"><p><strong>Applies
+                                            To</strong></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                            ><p>unravel_emr_bootstrap.sh</p></td>
+                                        <td class="confluenceTd"
+                                            ><p>s3://unraveldata-clients/</p></td>
+                                        <td class="confluenceTd"
+                                                  ><p><code>install_bin/unraveldata-clients/</code></p></td>
+                                        <td class="confluenceTd"><p>Amazon EMR 3.x Hive</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="confluenceTd"
+                                            ><p>unravel_emr4_bootstrap.sh</p></td>
+                                        <td class="confluenceTd"
+                                            ><p>s3://unraveldata-clients/</p></td>
+                                        <td class="confluenceTd"
+                                                  ><p><code>install_bin/unraveldata-clients/</code></p></td>
+                                        <td class="confluenceTd"><p>Amazon EMR 4.x Hive</p></td>
+                                    </tr>
+                                </tbody>
+                            </table></div><h4
+                            id="Part4:ModifyAmazonEMRClusterBootstrap/Setup-SparkApplications:"
+                            >Spark Applications:</h4><p>The Unravel Server does not load data from a
+                            Spark cluster until the cluster is instrumented. Use the steps here to
+                            set up an existing cluster.</p><ol>
+                            <li>Identify the LOCAL_IP address of your Unravel Server</li>
+                            <li>Download
+                                    <code>s3://unraveldata-clients/unravel_emr_spark_setup.sh</code>
+                                using the S3 console or '<code>aws s3</code>' command or other
+                                utility OR get it from the Unravel Server in
+                                    <code>install_bin/unraveldata-clients</code>.</li>
+                            <li>scp <code>unravel_emr_setup.sh</code> to <code>/tmp</code> of the
+                                EMR cluster master node (ssh user is <code>ec2-user</code>).</li>
+                            <li><p>Open an SSH session to the cluster's master node (ssh user is
+                                        <code>ec2-user</code>) and then do as
+                                    <code>ec2-user</code>:</p><div class="code panel pdl"
+                                    style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">cd /tmp 
+sudo ./unravel_emr_spark_setup.sh --unravel-server \ 
+ $LOCAL_IP:3000 --client</pre>
+                                    </div></div><div
+                                    class="confluence-information-macro confluence-information-macro-tip"
+                                        ><span
+                                        class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"
+                                        >Change <code>--client</code> to <code>--cluster</code> if
+                                        you use the Spark driver in cluster mode.</div></div></li>
+                        </ol>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/50876269.png">image2017-2-26_0-20-12.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">worddav95f1e8fd13958fae391afc8e6f9ad03d.png</a>
+                            (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51156084.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51156088.png"
+                                >worddavb613e73f110587889f8b58fd6cdcdfa4.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51156092.png"
+                                >worddav17bd11fa4b44a52a180fec44ac2a622c.png</a> (image/png) <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

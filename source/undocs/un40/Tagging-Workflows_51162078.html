@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Tagging Workflows</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Advanced-Topics_50688158.html">Advanced Topics</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Workflows_53900905.html">Workflows</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Tagging Workflows </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div id="main-content" class="wiki-content group">
+                        <h2 id="TaggingWorkflows-AboutUnravelTags">About Unravel Tags</h2><p>You can add two Unravel
+                            tags (key-value pairs) to mark queries and jobs that belong to a particular workflow:</p><ul>
+                            <li><code>unravel.workflow.name</code>: a string that represents the name of the workflow.
+                                Recommended format is
+                                        <code><em>TenantName</em>-<em>ProjectName</em>-<em>WorkflowName</em></code>.</li>
+                            <li><p class="auto-cursor-target"><code>unravel.workflow.utctimestamp</code>: a timestamp in
+                                            <em><code>yyyyMMddThhmmssZ</code></em> format that represents the logical
+                                    time of a run of the workflow in UTC/ISO format. In UNIX/LINUX bash, you can get a
+                                    timestamp in UTC format by running the command &quot;<code>$(date -u
+                                        '+%Y%m%dT%H%M%SZ')</code>&quot;.</p><div
+                                    class="confluence-information-macro confluence-information-macro-note"><span
+                                        class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                        ></span><div class="confluence-information-macro-body"><p>Do not put quotes
+                                            (&quot;&quot;) or blank spaces in/around the tag keys or values. For
+                                            example:</p><ul>
+                                            <li><code>SET unravel.workflow.name=&quot;ETL-Workflow&quot;;</code> [Wrong
+                                                usage]</li>
+                                            <li><code>SET unravel.workflow.name=ETL-Workflow;</code> [Correct
+                                                usage]</li>
+                                        </ul></div></div></li>
+                        </ul><p>Please note the following:</p><ul>
+                            <li>Different runs of the <strong>same </strong>workflow have the <strong>same</strong>
+                                value for <code>unravel.workflow.name</code>.</li>
+                            <li>Different runs of the <strong>same</strong> workflow have <strong>different
+                                </strong>values for <code>unravel.workflow.utctimestamp</code>.</li>
+                            <li><p class="auto-cursor-target">Different workflows have different values for
+                                        <code>unravel.workflow.name</code>.</p></li>
+                        </ul><p>The example below shows a Hive query that is marked as part of the
+                                <code>Financial-Tenant-ETL-Workflow</code> workflow that was run on February 1,
+                            2016:</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">SET unravel.workflow.name=Financial-Tenant-ETL-Workflow;
+SET unravel.workflow.utctimestamp=20160201T000000Z;
+
+SELECT foo FROM table WHERE … [Rest of Hive Query text goes here]</pre>
+                            </div></div><h2 id="TaggingWorkflows-EasyRecipesforTaggingWorkflows">Easy Recipes for
+                            Tagging Workflows</h2><p class="auto-cursor-target">First, export the workflow name and UTC
+                            timestamp from your top-level script that schedules each run of the workflow:</p><p
+                            class="auto-cursor-target" style="margin-left: 30.0px;">Export the workflow name:</p><div
+                            class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">export WORKFLOW_NAME=Financial-Tenant-ETL-Workflow</pre>
+                            </div></div><p class="auto-cursor-target" style="margin-left: 30.0px;"><br />Export the UTC
+                            timestamp for this run of the workflow. Here, we use bash's <code>date</code>
+                            command:</p><div class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">export UTC_TIME_STAMP=$(date -u &#39;+%Y%m%dT%H%M%SZ&#39;)</pre>
+                            </div></div><p>Then follow the appropriate instructions below:</p><ul>
+                            <li><a href="#TaggingWorkflows-TagHive">Tagging a Hive query</a></li>
+                            <li><a href="#TaggingWorkflows-TagSqoop">Tagging a Sqoop job</a></li>
+                            <li><a href="#TaggingWorkflows-TagMapReduce">Tagging a direct MapReduce job</a></li>
+                            <li><a href="#TaggingWorkflows-TagSpark">Tagging a Spark job</a></li>
+                            <li><a href="#TaggingWorkflows-TagPig">Tagging a Pig job</a></li>
+                            <li><a href="#TaggingWorkflows-TagImpala">Tagging a Impala query</a></li>
+                        </ul><p><br /></p><h3 id="TaggingWorkflows-TagHiveHowtoTagaHiveQueryUsingSETCommandsinHive"
+                                ><span class="confluence-anchor-link" id="TaggingWorkflows-TagHive"></span>How to Tag a
+                            Hive Query Using <code>SET</code> Commands in Hive</h3><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">hive -f hive/simple_wf.hql </pre>
+                            </div></div><p>In <code>hive/simple_wf.hql</code>:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">SET unravel.workflow.name=${env:WORKFLOW_NAME};
+SET unravel.workflow.utctimestamp=${env:UTC_TIME_STAMP};
+select count(1) from lineitem;</pre>
+                            </div></div><h3 id="TaggingWorkflows-TagSqoopHowtoTagaSqoopJobUsing–DCommandLineParameters"
+                                ><span class="confluence-anchor-link" id="TaggingWorkflows-TagSqoop"></span>How to Tag a
+                            Sqoop Job Using <code>–D</code> Command Line Parameters</h3><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sqoop export \
+ *-D&quot;unravel.workflow.name=$WORKFLOW_NAME&quot; -D&quot;unravel.workflow.utctimestamp=$UTC_TIME_STAMP&quot; * \
+ --connect jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod --table settings -m 1 \
+ --export-dir /tmp/sqoop_test --username unravel --verbose --password foobar</pre>
+                            </div></div><h3
+                            id="TaggingWorkflows-TagMapReduceHowtoTagaDirectMapReduceJobUsing–DCommandLineParameters"
+                                ><span class="confluence-anchor-link" id="TaggingWorkflows-TagMapReduce"></span>How to
+                            Tag a Direct MapReduce Job Using <code>–D</code> Command Line Parameters</h3><div
+                            class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">hadoop jar libs/ooziemr-1.0.jar com.unraveldata.mr.apps.Driver \
+*-D&quot;unravel.workflow.name=$WORKFLOW_NAME&quot; -D&quot;unravel.workflow.utctimestamp=$UTC_TIME_STAMP&quot; * \
+-p /wordcount.properties -input /tmp/soumitra/data/small -output /tmp/soumitra/outsmoke</pre>
+                            </div></div><h3
+                            id="TaggingWorkflows-TagSparkHowtoTagaSparkJobUsing--confCommandLineParameters"><span
+                                class="confluence-anchor-link" id="TaggingWorkflows-TagSpark"></span>How to Tag a Spark
+                            Job Using <code>--conf</code> Command Line Parameters</h3><div
+                            class="confluence-information-macro confluence-information-macro-note"><span
+                                class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>For Spark jobs, you must
+                                    prefix the Unravel tags with &quot;<code>spark.</code>&quot;. For example, <code><a
+                                            href="http://unravel.workflow.name" class="external-link" rel="nofollow"
+                                            >unravel.workflow.name</a></code> becomes <code><a
+                                            href="http://spark.unravel.workflow.name" class="external-link"
+                                            rel="nofollow">spark.unravel.workflow.name</a></code>.</p></div></div><div
+                            class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">spark-submit \
+ *   --conf &quot;spark.unravel.workflow.name=$WORKFLOW_NAME&quot; *
+ *   --conf &quot;spark.unravel.workflow.utctimestamp=$UTC_TIME_STAMP&quot; *
+    --conf &quot;spark.eventLog.enabled=true&quot; \
+    --class org.apache.spark.examples.SparkPi \
+    --master yarn-cluster \
+    --deploy-mode cluster</pre>
+                            </div></div><h3 id="TaggingWorkflows-TagPigHowtoTagaPigJobUsing–paramandSETCommands"><span
+                                class="confluence-anchor-link" id="TaggingWorkflows-TagPig"></span>How to Tag a Pig Job
+                            Using <code>–param</code> and <code>SET</code> Commands</h3><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">pig \
+*-param WORKFLOW_NAME=$WORKFLOW_NAME -param UTC_TIME_STAMP=$UTC_TIME_STAMP * \
+-x mapreduce -f pig/simple.pig</pre>
+                            </div></div><p> In <code>pig/simple.pig</code>:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">SET unravel.workflow.name $WORKFLOW_NAME;
+SET unravel.workflow.utctimestamp $UTC_TIME_STAMP;
+
+lines = LOAD &#39;/tmp/soumitra/data/small&#39; using PigStorage(&#39;|&#39;) AS (line:chararray);
+words = FOREACH lines GENERATE FLATTEN(TOKENIZE(line)) as word;
+grouped = GROUP words BY word;
+wordcount = FOREACH grouped GENERATE group, COUNT(words);
+DUMP wordcount;</pre>
+                            </div></div><h3
+                            id="TaggingWorkflows-TagImpalaHowtoTagaImpalaJobUsing–-query_optionsandSETCommand"><span
+                                class="confluence-anchor-link" id="TaggingWorkflows-TagImpala"></span>How to Tag a
+                            Impala Job Using <code>–-query_options</code> and <code>SET</code> Command</h3><p>User can
+                            set DEBUG_ACTION in Impala script to pass the workflow tags into impala queries:</p><div
+                            class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">SET DEBUG_ACTION=|unravel.workflow.name::{$WORKFLOW_NAME}|unravel.workflow.utctimestamp::{$WORKFLOW_TIMESTAMP};</pre>
+                            </div></div><p>According to this CDH article: <a
+                                href="https://www.cloudera.com/documentation/enterprise/5-14-x/topics/impala_query_options.html"
+                                class="external-link" rel="nofollow"
+                                >https://www.cloudera.com/documentation/enterprise/5-14-x/topics/impala_query_options.html</a>,
+                            user can pass in query options via --query_options i<span style="color: rgb(102,102,102);"
+                                    >n<span> </span></span><span style="color: rgb(51,51,51);"><span class="keyword">CDH
+                                    5.14 / Impala 2.11</span> and later:</span></p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">impala-shell --query_option=DEBUG_ACTION=|unravel.workflow.name::{$WORKFLOW_NAME}|unravel.workflow.utctimestamp::{$WORKFLOW_TIMESTAMP}| -f impala.script</pre>
+                            </div></div><p>Note: the tagging option should be turned on for this tagging to work. ie,
+                            the followings need to be set in unravel.properties:</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence"># Tagging
+com.unraveldata.tagging.script.enabled=true
+com.unraveldata.app.tagging.script.path=/tmp/app_tag.py
+com.unraveldata.app.tagging.script.method.name=get_tags</pre>
+                            </div></div><h2 id="TaggingWorkflows-FindingWorkflowsinUnravelWebUI"><br
+                                class="atl-forced-newline" />Finding Workflows in Unravel Web UI</h2><p>Once your tagged
+                            workflows have been run, go log into Unravel Web UI and select <strong>Application</strong>
+                            | <strong>Workflow</strong> to start exploring Unravel's Workflow Management features, as
+                            illustrated in the screenshot below. <br class="atl-forced-newline" /><span
+                                class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img
+                                    class="confluence-embedded-image" height="414" width="624"
+                                    src="media/51192096.png" data-image-src="media/51192096.png"
+                                    data-unresolved-comment-count="0" data-linked-resource-id="51192096"
+                                    data-linked-resource-version="1" data-linked-resource-type="attachment"
+                                    data-linked-resource-default-alias="worddav45f3dd6c1009f4ad8588eb86ede42f01.png"
+                                    data-base-url="https://unraveldata.atlassian.net/wiki"
+                                    data-linked-resource-content-type="image/png"
+                                    data-linked-resource-container-id="51162078"
+                                    data-linked-resource-container-version="13"
+                                    data-media-id="7598fbdb-3897-4f76-ba1e-168e783567b5" data-media-type="file"
+                                 /></span></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51162082.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51192096.png">worddav45f3dd6c1009f4ad8588eb86ede42f01.png</a> (image/png)
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

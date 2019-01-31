@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unravel 4.0-4.1 : Part 2: Enable Additional Data Collection / Instrumentation for
+            MapR</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Unravel 4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Unravel-4.0-4.1_50672724.html">Unravel
+                                    4.0-4.1</a></span>
+                            </li>
+                            <li>
+                                <span><a href="Installation-Guide-for-MapR_50961894.html"
+                                        >Installation Guide for MapR</a></span>
+                            </li>
+                        </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                        <span id="title-text">Part 2: Enable Additional Data
+                            Collection / Instrumentation for MapR </span>
+                    </h1>
+                </div>
+                <div id="content" class="view">
+                    <div class="page-metadata"> Created by <span class="author"> Ada-C</span>, last
+                        modified on Sep 29, 2017 </div>
+                    <div id="main-content" class="wiki-content group">
+                        <p><br /></p><h2
+                            id="Part2:EnableAdditionalDataCollection/InstrumentationforMapR-Introduction"
+                            >Introduction</h2><p>This topic explains how to <span>enable additional
+                                data collection or instrumentation on the MapR converged data
+                                platform</span>. These instructions apply to Unravel Server v4.0.
+                            For older versions of Unravel Server, contact Unravel Support.</p><div
+                            class="panel"
+                            style="border-color: #94BEE5;border-style: dotted;border-width: 1px;"
+                                ><div class="panelHeader"
+                                style="border-bottom-width: 1px;border-bottom-style: dotted;border-bottom-color: #94BEE5;background-color: #94BEE5;"
+                                    ><b>Workflow Summary</b></div><div class="panelContent">
+                                <ol>
+                                    <li>Enable additional instrumentation on Unravel Server's
+                                        host.</li>
+                                    <li>Enter correct value for Hive Metastore, Resource Manager and
+                                        Oozie properties.</li>
+                                    <li>Confirm that Unravel Web UI shows additional data.</li>
+                                    <li>Confirm and adjust the settings in
+                                            <code>yarn-site.xml</code>.</li>
+                                    <li><p>Enable additional instrumentation on other hosts in the
+                                            cluster.</p></li>
+                                </ol>
+                            </div></div><h2
+                            id="Part2:EnableAdditionalDataCollection/InstrumentationforMapR-1.EnableAdditionalInstrumentationonUnravelServer&#39;sHost"
+                            >1. Enable Additional Instrumentation on Unravel Server's Host</h2><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p>Best
+                                    practice is to enable instrumentation on Unravel Server itself
+                                    for testing, practice, and demonstration purposes, before
+                                    enabling instrumentation on other gateway/edge/client machines
+                                    that do real client work (Hive queries, Map-Reduce jobs, Spark,
+                                    and so on).</p></div></div><p>Run the shell script
+                                <code>unravel_mapr_setup.sh</code> on Unravel Server (on
+                                <strong>host1</strong> for multi-host Unravel installs). This script
+                            installs Unravel Sensor (Hive Hook) on Unravel Server's host:</p><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo yum install -y wget
+cd /usr/local/unravel/install_bin/unraveldata-clients
+sudo ./unravel_mapr_setup.sh install -y --unravel-server $UNRAVEL_HOST:3000 --spark-version SPARK_VERSION --hive-version HIVE_VERSION</pre>
+                            </div></div><p><em>Note: In the code above, substitute valid values
+                                for:</em></p><ul>
+                            <li><em><span style="color: rgb(255,0,0);">UNRAVEL_HOST_IP <span
+                                            style="color: rgb(0,0,0);">-</span>
+                                    </span>fully qualified host name or IP address</em></li>
+                            <li><em><span style="color: rgb(255,0,0);"><span
+                                            style="color: rgb(0,0,0);"><span
+                                                style="color: rgb(255,0,0);">SPARK_VERSION</span> -
+                                            target Spark version</span></span></em></li>
+                            <li><em><span style="color: rgb(255,0,0);"><span
+                                            style="color: rgb(0,0,0);"><span
+                                                style="color: rgb(255,0,0);">HIVE_VERSION</span> -
+                                            target Hive version</span></span></em></li>
+                        </ul><h2
+                            id="Part2:EnableAdditionalDataCollection/InstrumentationforMapR-2.EntercorrectvalueforHiveMetastore,ResourceManager,andOozieproperties"
+                            >2. Enter correct value for Hive Metastore, Resource Manager, and Oozie
+                            properties</h2><p><span>Use <code>vi</code> to edit 
+                                    <strong>/usr/local/unravel/etc/unravel.properties</strong>:
+                                un-comment relevant respective Hive Metastore, Resource Manager, and
+                                Oozie properties: <br /></span></p><p><br /></p><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">#     hive metastore
+#
+### Uncomment and enter correct HM java.jdo.option.Connection properties ###
+#javax.jdo.option.ConnectionURL=jdbc:mysql://example.localdomain:3306/hive
+#javax.jdo.option.ConnectionURL=jdbc:postgresql://example.localdomain:7432/hive_zzzzzz
+#javax.jdo.option.ConnectionDriverName=com.mysql.jdbc.Driver
+#javax.jdo.option.ConnectionDriverName=org.postgresql.Driver
+#javax.jdo.option.ConnectionUserName=hiveuser?
+#javax.jdo.option.ConnectionPassword=???????
+
+#     optional selectivity of databases to analyze in metastore
+#com.unraveldata.metastore.databasePattern=s*|t*|d*
+
+#     Resource Manager (RM)
+#
+#     Enable https access to Resource Manager
+#https.protocols=TLSv1.2
+#
+### Uncomment and enter correct below properties RM ###
+#yarn.resourcemanager.webapp.address=http://example.localdomain:8088 
+
+#     Resource Manager username to login
+#yarn.resourcemanager.webapp.username=foo
+
+#     Resource Manager password to login
+#yarn.resourcemanager.webapp.password=?????
+
+#
+#     oozie
+#
+### Uncomment below oozie properties when oozie is used ###
+# oozie.server.url=http://&lt;oozie-hostname-IP-address&gt;:11000/oozie</pre>
+                            </div></div><p>Then restart Unravel Server:</p><div
+                            class="code panel pdl" style="border-width: 1px;"><div
+                                class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo /etc/init.d/unravel_all.sh restart</pre>
+                            </div></div><h2
+                            id="Part2:EnableAdditionalDataCollection/InstrumentationforMapR-3.ConfirmthatUnravelWebUIShowsAdditionalData"
+                            >3. Confirm that Unravel Web UI Shows Additional Data</h2><p>Run a Hive
+                            job using a test script provided by Unravel Server:</p><p><img
+                                class="emoticon emoticon-light-on" title="(lightbulb)"
+                                src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" />
+                            This is where you can see the effects of the instrumentation setup. Best
+                            practice is to run this test script on Unravel Server rather than on a
+                            gateway/edge/client node. That way you can verify that instrumentation
+                            is working first, and then enable instrumentation on other
+                            gateway/edge/client nodes.</p><div class="code panel pdl"
+                            style="border-width: 1px;"><div class="codeContent panelContent pdl">
+                                <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">sudo -u $someUser /usr/local/unravel/install_bin/hive_test_simple.sh</pre>
+                            </div></div><p>This script creates a uniquely named table in the default
+                            database, adds some data, runs a Hive query on it, and then deletes the
+                            table.</p><p><em>Note: Replace $someUser with a user that can create
+                                tables in the default database. If you need to use a different
+                                database, copy the script and edit it to change the target
+                                database. </em></p><p>This script runs the query twice using
+                            different workflow tags so you can clearly see the two different runs of
+                            the same workflow in Unravel Web UI.</p><p><br /></p><h2
+                            id="Part2:EnableAdditionalDataCollection/InstrumentationforMapR-4.ConfirmandAdjusttheSettingsinyarn-site.xml"
+                            >4. Confirm and Adjust the Settings in
+                            <code>yarn-site.xml</code></h2><p>Check specific properties only Unravel
+                            srv in
+                                <code>/opt/mapr/hadoop/hadoop-2.7.0/etc/hadoop/yarn-site.xml</code>
+                            to be sure that these settings are present (with your particular values
+                            for your Resource Manager web app address):</p><ul>
+                            <li><p><code>yarn.resourcemanager.webapp.address</code>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">&lt;property&gt;
+&lt;name&gt;yarn.resourcemanager.webapp.address&lt;/name&gt;
+&lt;value&gt;10.0.0.110:8088&lt;/value&gt;
+&lt;source&gt;yarn-site.xml&lt;/source&gt;
+&lt;/property&gt;</pre>
+                                    </div></div></li>
+                            <li><p><code>yarn.log-aggregation-enable</code>:</p><div
+                                    class="code panel pdl" style="border-width: 1px;"><div
+                                        class="codeContent panelContent pdl">
+                                        <pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence">&lt;property&gt;
+&lt;name&gt;yarn.log-aggregation-enable&lt;/name&gt;
+&lt;value&gt;true&lt;/value&gt;
+&lt;description&gt;For log aggregations&lt;/description&gt;
+&lt;/property&gt;</pre>
+                                    </div></div></li>
+                        </ul><h2 class="_mce_tagged_br"
+                            id="Part2:EnableAdditionalDataCollection/InstrumentationforMapR-5.EnableAdditionalInstrumentationonOtherHostsintheCluster"
+                            >5. Enable Additional Instrumentation on Other Hosts in the
+                            Cluster</h2><div
+                            class="confluence-information-macro confluence-information-macro-information"
+                                ><span
+                                class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"
+                                ></span><div class="confluence-information-macro-body"><p><span>To
+                                        instrument more servers, you can use the setup script we
+                                        provide or see the effect it has and replicate it using your
+                                        own provisioning automation system. If you already have a
+                                        way to customize and deploy hive-site.xml, yarn-site.xml and
+                                        user defined function jars, you can add the changes and jar
+                                        from Unravel to your existing
+                            mechanism.</span></p></div></div><ul>
+                            <li>Run the shell script <code>unravel_mapr_setup.sh</code> on each node
+                                of the cluster, just like it was run on the Unravel server
+                                above.</li>
+                            <li>Copy the newly edited (in the previous step 4) yarn-site.xml to all
+                                nodes.</li>
+                            <li>Do a rolling-restart of HiveServer2</li>
+                        </ul><p><br /></p><p><br /></p><p><br /></p>
+                    </div>
+                    <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+                        <div class="greybox">
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/logo.png">logo_small.png</a> (image/png) <br />
+                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt="" />
+                            <a href="media/51087332.png">image2017-2-26_0-20-12.png</a> (image/png)
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jan 25, 2019 23:02</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

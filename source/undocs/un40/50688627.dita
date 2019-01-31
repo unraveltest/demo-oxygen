@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" >
+<topic xml:lang="en-us" id="FAGIIGCH">
+   <title>Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole
+      Clusters </title>
+   <body>
+
+
+      <p>This guide is compatible with</p>
+      <ul>
+
+         <li>
+            <p outputclass="_mce_tagged_br">Amazon EMR 3.4 - 4.7</p>
+         </li>
+
+      </ul>
+   </body>
+</topic>
