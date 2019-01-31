@@ -1,0 +1,785 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="The table below lists the resource metrics collected by Unravel. The availability of a particular metric is dependent on the underlying OS and JVM GC algorithm in use. Metric Unit Description ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="concept" /><meta name="DC.Relation" scheme="URI" content="The-Applications-Tab_53166005.html" /><meta name="DC.Relation" scheme="URI" content="The-Applications-Tab_53166005.html" /><meta name="DC.Relation" scheme="URI" content="The-Data-Tab_53166350.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="Resource-Metrics_53232237" /><meta name="DC.Language" content="en-us" /><title>Resource Metrics</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="Resource-Metrics_53232237-d66e217" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/green.css?buildId=2018122203" /></head>
+
+    <body id="Resource-Metrics_53232237" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="unravel-logo-white-small-1.png" alt="  Unravel 4.0-4.1  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Unravel 4.0-4.1</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="Overview_53899450-d66e14" data-state="leaf" class=" topicref " data-id="Overview_53899450"><span class="title"><a href="Overview_53899450.html">Overview </a></span></span></li>
+   <li class="has-children"><span data-tocid="installation-d66e26" data-state="not-ready" class=" topicref " data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="User-Guide_50687944-d66e182" data-state="not-ready" class=" topicref " data-id="User-Guide_50687944"><span class="title"><a href="User-Guide_50687944.html">User Guide </a></span></span></li>
+   <li><span data-tocid="Unravel-Server-Reference_50690507-d66e274" data-state="leaf" class=" topicref " data-id="Unravel-Server-Reference_50690507"><span class="title"><a href="Unravel-Server-Reference_50690507.html">Unravel Server Reference </a></span></span></li>
+   <li class="has-children"><span data-tocid="Advanced-Topics_50688158-d66e287" data-state="not-ready" class=" topicref " data-id="Advanced-Topics_50688158"><span class="title"><a href="Advanced-Topics_50688158.html">Advanced Topics </a></span></span></li>
+   <li class="has-children"><span data-tocid="FDJAAABA-d66e499" data-state="not-ready" class=" topicref " data-id="FDJAAABA"><span class="title"><a href="53900010.html">Release Notes</a></span></span></li>
+   <li><span data-tocid="older_versions-d66e519" data-state="leaf" class=" topicref " data-id="older_versions"><span class="title"><a href="older_versions.html">Older Versions</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="User-Guide_50687944"><span class="title"><a href="User-Guide_50687944.html">User Guide </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Get help on our user interface.</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="The-Applications-Tab_53166005"><span class="title"><a href="The-Applications-Tab_53166005.html">The Applications Tab </a></span></span></li>
+   <li class="active"><span class="topicref" data-id="Resource-Metrics_53232237"><span class="title"><a href="Resource-Metrics_53232237.html">Resource Metrics </a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="The-Applications-Tab_53166005.html" title="The Applications Tab" aria-label="Previous topic: The Applications Tab" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="The-Data-Tab_53166350.html" title="The Data Tab" aria-label="Next topic: The Data Tab" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="User-Guide_50687944-d66e182" class="topicref" data-id="User-Guide_50687944" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action User-Guide_50687944-d66e182-link" class="wh-expand-btn"></span><span class="title"><a href="User-Guide_50687944.html" id="User-Guide_50687944-d66e182-link">User Guide </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Get help on our user interface.</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="Getting-Started_53157411-d66e193" class="topicref" data-id="Getting-Started_53157411" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Getting-Started_53157411.html" id="Getting-Started_53157411-d66e193-link">Getting Started </a></span></span></li>
+         <li role="treeitem"><span data-tocid="The-Operations-Tab_53165661-d66e201" class="topicref" data-id="The-Operations-Tab_53165661" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="The-Operations-Tab_53165661.html" id="The-Operations-Tab_53165661-d66e201-link">The Operations Tab </a></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="The-Applications-Tab_53166005-d66e209" class="topicref" data-id="The-Applications-Tab_53166005" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action The-Applications-Tab_53166005-d66e209-link" class="wh-expand-btn"></span><span class="title"><a href="The-Applications-Tab_53166005.html" id="The-Applications-Tab_53166005-d66e209-link">The Applications Tab </a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="Resource-Metrics_53232237-d66e217" class="topicref" data-id="Resource-Metrics_53232237" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="Resource-Metrics_53232237.html" id="Resource-Metrics_53232237-d66e217-link">Resource Metrics </a></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem"><span data-tocid="The-Data-Tab_53166350-d66e225" class="topicref" data-id="The-Data-Tab_53166350" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="The-Data-Tab_53166350.html" id="The-Data-Tab_53166350-d66e225-link">The Data Tab </a></span></span></li>
+         <li role="treeitem"><span data-tocid="FDBGHACF-d66e233" class="topicref" data-id="FDBGHACF" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="53167025.html" id="FDBGHACF-d66e233-link">Setting Up Auto Actions (Alerts) </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="Use-Cases_53314582-d66e241" class="topicref" data-id="Use-Cases_53314582" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action Use-Cases_53314582-d66e241-link" class="wh-expand-btn"></span><span class="title"><a href="Use-Cases_53314582.html" id="Use-Cases_53314582-d66e241-link">Use Cases </a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Resource Metrics </h1>
+   <div class="body conbody">
+
+
+
+
+
+
+
+      <p class="p">
+         <span class="ph">The table below lists the resource metrics collected by Unravel. The availability of a particular metric is
+            dependent on the underlying OS and JVM GC algorithm in use.</span>
+      </p>
+      <table class="table wrapped confluenceTable"><caption></caption><colgroup><col /><col /><col /></colgroup><tbody class="tbody">
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Metric</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Unit</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Description</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">snapshotTs</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">TIMESTAMP (milliseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The time the metric was read</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">startTs</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">TIMESTAMP (milliseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The time when the collection process started</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">totalPhysicalMemory</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The total physical memory in the operating system</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">freePhysicalMemory</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The free physical memory in the operating system</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">committedVirtualMemory</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The committed virtual memory in the operating system</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">freeSwap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The free swap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">availableMemory</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">An estimate of memory available for launching new processes</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">vmRss</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The resident set size of the complete process tree</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">vmRssDir</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The resident set size of the process</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">totalSwap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">The total swap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">processCpuLoad</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">PERCENTS</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average process CPU load for the last minute (all cores)</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">systemCpuLoad</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">PERCENTS</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average system CPU load for the last minute (all cores)</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">fullGcCount</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">COUNT</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Number of full GC runs</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">minorGcCount</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">COUNT</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Number of minor GC runs</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">minorGcTime</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">DURATION (nanoseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Accumulated time spent in minor GC</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">fullGcTime</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">DURATION (nanoseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Accumulated time spent in full GC</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">gcEdenSurvivedAvg</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average number of bytes moved from eden to survivor space. Might not be available for
+                        particular GC algorithms</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">gcSurvivorPromotedAvg</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average number of bytes moved from survivor to old space. Might not be available for particular
+                        GC algorithms</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">gcYoungLiveAvg</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average number of bytes alive in the young generation (eden + survivor spaces). Might not be
+                        available for particular GC algorithms</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">allocatedBytes</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Accumulated number of allocated bytes</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">edenPeakUsage</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Maximum memory usage in the eden space</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">survivorPeakUsage</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Maximum memory usage in the survivor space</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">oldPeakUsage</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Maximum memory usage in the old space</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">avgMinorInterval</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">DURATION (nanoseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average interval between two subsequent minor GCs. Might not be available for particular GC
+                        algorithms</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">gcLoad</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">PERCENTS</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Percentage of CPU time spent in GC</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">blockingRatio</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">PERCENTS</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Estimated percentage of CPU time spent in kernel blocking operations</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">avgFullGcInterval</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">DURATION (nanoseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average interval between two subsequent full GCs. Might not be available for particular GC
+                        algorithms</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">gcOldLiveAvg</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Average number of bytes alive in the old generation. Might not be available for particular GC
+                        algorithms</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">initHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Initial heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">maxHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Maximum heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">usedHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Used heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">committedHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Committed heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">initNonHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Initial non-heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">maxNonHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Maximum non-heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">usedNonHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Used non-heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">committedNonHeap</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">BYTES</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Committed non-heap size</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">currentThreadCpuTime</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">DURATION (nanoseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Current thread CPU time elapsed since the start of the measurement. Might not be available on
+                        some operating systems</span>
+                  </td>
+
+               </tr>
+               <tr>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">currentThreadUserTime</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">DURATION (nanoseconds)</span>
+                  </td>
+
+                  <td class="entry confluenceTd">
+                     <span class="ph">Current thread user time elapsed since the start of the measurement. Might not be available on
+                        some operating systems</span>
+                  </td>
+
+               </tr>
+            </tbody></table>
+
+
+
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>
