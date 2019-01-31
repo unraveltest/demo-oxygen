@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"install-hdinsight-app","href":"install_hdinsight_app.html","attributes": {"data-id":"install_hdinsight_app",},"menu": {"hasChildren":false,},"tocID":"install_hdinsight_app-d66e175","topics":[]}]});

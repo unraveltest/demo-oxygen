@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Resource Metrics ","href":"Resource-Metrics_53232237.html","attributes": {"data-id":"Resource-Metrics_53232237",},"menu": {"hasChildren":false,},"tocID":"Resource-Metrics_53232237-d66e212","topics":[]}]});

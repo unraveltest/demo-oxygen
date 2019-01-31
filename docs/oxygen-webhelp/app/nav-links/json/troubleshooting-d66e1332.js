@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"send-diagnostics-to-support","href":"send_diagnostics_to_support.html","attributes": {"data-id":"send_diagnostics_to_support",},"menu": {"hasChildren":false,},"tocID":"send_diagnostics_to_support-d66e1340","topics":[]}]});
