@@ -1,0 +1,690 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="The Applications tab is the main interface for finding your applications and analyzing their performance. Unravel supports both ad-hoc applications and repeated running workflows or data pipelines. ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="concept" /><meta name="DC.Relation" scheme="URI" content="user-guide.html" /><meta name="DC.Relation" scheme="URI" content="user-guide-operations-page.html" /><meta name="DC.Relation" scheme="URI" content="user-guide-resource-metrics.html" /><meta name="DC.Relation" scheme="URI" content="user-guide-resource-metrics.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="user-guide-applications-page" /><meta name="DC.Language" content="en-us" /><title>The Applications Tab</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="user-guide-applications-page-d66e209" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/green.css?buildId=2018122203" /></head>
+
+    <body id="user-guide-applications-page" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="logo.png" alt="  4.0-4.1  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">4.0-4.1</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="overview-d66e14" data-state="leaf" class=" topicref " data-id="overview"><span class="title"><a href="overview.html">Overview </a></span></span></li>
+   <li class="has-children"><span data-tocid="installation-d66e26" data-state="not-ready" class=" topicref " data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="user-guide-d66e182" data-state="not-ready" class=" topicref " data-id="user-guide"><span class="title"><a href="user-guide.html">User Guide </a></span></span></li>
+   <li><span data-tocid="appendices-server-daemon-reference-d66e274" data-state="leaf" class=" topicref " data-id="appendices-server-daemon-reference"><span class="title"><a href="appendices-server-daemon-reference.html">Unravel Server Reference </a></span></span></li>
+   <li class="has-children"><span data-tocid="advanced-topics-d66e287" data-state="not-ready" class=" topicref " data-id="advanced-topics"><span class="title"><a href="advanced-topics.html">Advanced Topics </a></span></span></li>
+   <li class="has-children"><span data-tocid="FDJAAABA-d66e499" data-state="not-ready" class=" topicref " data-id="FDJAAABA"><span class="title"><a href="release-notes.html">Release Notes</a></span></span></li>
+   <li><span data-tocid="older_versions-d66e519" data-state="leaf" class=" topicref " data-id="older_versions"><span class="title"><a href="older_versions.html">Older Versions</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="user-guide"><span class="title"><a href="user-guide.html">User Guide </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Get help on our user interface.</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="user-guide-applications-page"><span class="title"><a href="user-guide-applications-page.html">The Applications Tab </a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="user-guide-operations-page.html" title="The Operations Tab" aria-label="Previous topic: The Operations Tab" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="user-guide-resource-metrics.html" title="Resource Metrics" aria-label="Next topic: Resource Metrics" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="user-guide-d66e182" class="topicref" data-id="user-guide" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action user-guide-d66e182-link" class="wh-expand-btn"></span><span class="title"><a href="user-guide.html" id="user-guide-d66e182-link">User Guide </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Get help on our user interface.</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="user-guide-get-started-d66e193" class="topicref" data-id="user-guide-get-started" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-get-started.html" id="user-guide-get-started-d66e193-link">Getting Started </a></span></span></li>
+         <li role="treeitem"><span data-tocid="user-guide-operations-page-d66e201" class="topicref" data-id="user-guide-operations-page" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-operations-page.html" id="user-guide-operations-page-d66e201-link">The Operations Tab </a></span></span></li>
+         <li role="treeitem" aria-expanded="true" class="active"><span data-tocid="user-guide-applications-page-d66e209" class="topicref" data-id="user-guide-applications-page" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action user-guide-applications-page-d66e209-link" class="wh-expand-btn"></span><span class="title"><a href="user-guide-applications-page.html" id="user-guide-applications-page-d66e209-link">The Applications Tab </a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="user-guide-resource-metrics-d66e217" class="topicref" data-id="user-guide-resource-metrics" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-resource-metrics.html" id="user-guide-resource-metrics-d66e217-link">Resource Metrics </a></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem"><span data-tocid="user-guide-data-page-d66e225" class="topicref" data-id="user-guide-data-page" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-data-page.html" id="user-guide-data-page-d66e225-link">The Data Tab </a></span></span></li>
+         <li role="treeitem"><span data-tocid="FDBGHACF-d66e233" class="topicref" data-id="FDBGHACF" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-auto-actions-create.html" id="FDBGHACF-d66e233-link">Setting Up Auto Actions (Alerts) </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="user-guide-use-cases-d66e241" class="topicref" data-id="user-guide-use-cases" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action user-guide-use-cases-d66e241-link" class="wh-expand-btn"></span><span class="title"><a href="user-guide-use-cases.html" id="user-guide-use-cases-d66e241-link">Use Cases </a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">The Applications Tab </h1>
+   <div class="body conbody">
+      
+      
+      
+      
+      <p class="p">The <strong class="ph b">Applications</strong> tab is the main interface for finding your applications and analyzing their
+         performance. Unravel supports both ad-hoc applications and repeated running workflows or data pipelines. Ad-hoc
+         applications are generally Hive queries, MR jobs, Spark applications, Impala queries, and so on; these are
+         generated by end user tools (such as BI tools like Tableau, Microstrategy etc.) or submitted via CLI. Repeated
+         running workflows or data pipelines are created using cron or schedulers like Oozie, AirFlow or ETL tools like
+         Informatica, Pentaho and others.</p>
+      <p class="p">
+         <span class="ph confluence-embedded-file-wrapper">
+            <img class="image confluence-embedded-image emoticon emoticon-light-on confluence-external-resource" src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" />
+         </span> The performance and reliability of an application depends on several factors such as quality of the code,
+         types of joins used, configuration settings, data size, scheduler settings, contention with other applications,
+         and so on. Therefore, it takes significant expertise and effort to get to the root cause of problems of an
+         application. Unravel provides insights into an application. These insights are called <em class="ph i">events</em>. For more
+         information about events, see <em class="ph i">Key Performance Indicators</em> within the appropriate application "manager"
+         below.</p>
+      <section class="section"><h2 class="title sectiontitle">Finding Applications</h2>
+         
+         <p class="p">You can search on various dimensions (app type, status, queue, user, cluster, duration, and so on) to find
+            your application(s).  Use the date pull-down menu to limit results to a specific time range. Search results
+            are ordered by the most recent start time. To reorder the results by another property, click the appropriate
+            header in the results table.</p>
+         <p class="p"></p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166127.png" />
+            </span>
+         </p>
+         <p class="p">You can also use the global search bar in the top banner to search by full job ID, user name, table name and
+            cluster ID. </p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper">
+               <img class="image confluence-embedded-image" src="media/53166025.png" />
+            </span>
+         </p>
+         <p class="p"></p>
+         <p class="p">
+            <img class="image emoticon emoticon-light-on" src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" /> Search results list individual jobs, and job IDs. If the job is part of a Hive query, Pig script,
+            and/or a workflow, then a link to that Hive query/Pig script/workflow page appears on the same line. To go
+            to the job-specific page, click the job ID.  To go to the application-specific manager for a
+            query/script/job/workflow, click the icon under its <strong class="ph b">GoTo</strong> column as highlighted in the image
+            below.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53224524.png" />
+            </span>
+         </p>
+         <p class="p"></p>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Application-Specific Managers</h2>
+         
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Spark Application Manager</h2>
+         
+         <p class="p">The Spark Application Manager provides a detailed view into the behavior of Spark applications. You can use
+            this view to:</p>
+         <ul class="ul">
+
+            <li class="li">Resolve inefficiencies, bottlenecks, and reasons for failure within applications</li>
+
+            <li class="li">Optimize resource allocation for Spark executors</li>
+
+            <li class="li">Detect and fix poor partitioning</li>
+
+            <li class="li">Detect and fix inefficient and failed Spark apps</li>
+
+            <li class="li">Tune JVM settings for Spark drivers/executors</li>
+
+         </ul>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166028.png" />
+            </span>
+         </p>
+         <p class="p">Key Performance Indicators (KPIs)</p>
+         <p class="p">The key performance indicators (KPIs) at the top provide the most important information about the Spark
+            application. The Spark Application Manager displays the following KPIs:</p>
+         <ul class="ul">
+
+            <li class="li">
+               <strong class="ph b">Events</strong>: The number of Unravel recommendations or insights for this query. To see details, click
+               the <strong class="ph b">Events</strong> icon as highlighted in the image below.
+               <p class="p">
+                  <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                     <img class="image confluence-embedded-image confluence-content-image-border" src="media/53546227.png" />
+                  </span>
+               </p>
+               <p class="p">The performance and reliability of your Spark application depends on several factors such as quality
+                  of the code, types of joins used, configuration settings, data size, scheduler settings, contention
+                  with other applications, and so on. Therefore, it takes significant expertise and effort to get to the
+                  root cause of problems in a Spark application. Unravel Events are designed to save you time and effort
+                  by automatically providing insights into the application. These events capture reasons for failed and
+                  killed queries as well as provide recommendations to improve application performance.</p>
+               <p class="p">
+                  <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                     <img class="image confluence-embedded-image confluence-content-image-border" src="media/53546255.png" />
+                  </span>
+               </p>
+               <p class="p"></p>
+            </li>
+
+            <li class="li">
+               <strong class="ph b">Duration</strong>: Total time taken by the application to complete execution</li>
+
+            <li class="li">
+               <strong class="ph b">Data I/O</strong>: Total data read and written by the application</li>
+
+            <li class="li">
+               <strong class="ph b">Number of Stages</strong>: The number of stages that make up the Spark application and their status</li>
+
+         </ul>
+         <p class="p">Sub-Tabs</p>
+         <p class="p">The Spark Application Manager contains multiple sub-tabs, each of which is described below.</p>
+         <ul class="ul">
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Navigation</strong>: A table of the stages associated with this application. To see details about a
+                  stage, click its row in the table. This displays the Spark Stage view, as illustrated in the image
+                  below.  </p>
+               <p class="p">
+                  <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                     <img class="image confluence-embedded-image confluence-content-image-border" src="media/53251597.png" alt="Spark Stage View" />
+                  </span>
+               </p>
+               <p class="p">The Spark Stage view provides detailed information about each Spark stage. It includes:</p>
+               <ul class="ul">
+
+                  <li class="li">
+                     <strong class="ph b">Graphs</strong>: General task/slot statistics of the stage</li>
+
+                  <li class="li">
+                     <strong class="ph b">Timeline</strong>: Timeline and histogram of task attempts, duration, and bytes shuffled/spilled.
+                        <img class="image emoticon emoticon-light-on" src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" /> This information is very useful for identifying data skew.</li>
+
+                  <li class="li">
+                     <p class="p auto-cursor-target">
+                        <strong class="ph b">Configuration</strong>: Key/value pairs of configuration settings for the application</p>
+                     <span class="ph expand-control-icon">
+                        <img class="image expand-control-image" src="images/icons/grey_arrow_down.png" />
+                     </span>
+                     <span class="ph expand-control-text">Click here to see sample screenshots...</span>
+                     <p class="p">
+                        <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                           <img class="image confluence-embedded-image" src="media/53166031.png" />
+                        </span>
+                     </p>
+                     <p class="p">
+                        <span class="ph confluence-embedded-file-wrapper">
+                           <img class="image confluence-embedded-image" src="media/53166046.png" />
+                        </span>
+                     </p>
+                     <p class="p"></p>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Execution Graph</strong>: Displays both the stage view and RDD view associated with this
+                  application.</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Gantt Chart</strong>: A timeline of application stages</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Query Plan</strong>: The logical plan of the SparkSQL query</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Errors</strong>: Exceptions, errors, and warnings associated with this application</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Logs</strong>: Logs for the driver and executors of this application, and a skyline of task attempts
+                  within the stage</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Program</strong>: Source code of a general purpose Spark application, or the SQL query for a SparkSQL
+                  query</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Task Attempts</strong>: Statistics about the task attempts that are executed as part of the current
+                  application</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Containers</strong>: Utilization of slot containers over time</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Vcores</strong>: Utilization of slot vcores over time</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Memory</strong>: Utilization of slot memory over time</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Resource</strong>: Graphs of JVM-level metrics at the executor and driver level. To show the graph for a
+                  specific metric, select that metric from the <strong class="ph b">METRIC</strong> pull-down menu and click <strong class="ph b">Get Data</strong>.
+                  For a list of resource-level metrics, see <a class="xref" href="user-guide-resource-metrics.html">Resource
+                     Metrics</a>. <img class="image emoticon emoticon-light-on" src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" /> These graphs are very useful for identifying critical resources that caused a performance
+                  degradation.</p>
+            </li>
+
+         </ul>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Hive Application Manager</h2>
+         
+         <p class="p">The Hive Application Manager provides a detailed view into the behavior of Hive queries. You can use this
+            view to resolve inefficiencies, bottlenecks and reasons for failure within applications. Typical users are
+            Hadoop DBAs or application owners (engineers, BI team, analysts). The Hive Application Manager uses
+            Unravel's Intelligence Engine to automatically identify certain inefficiencies with the application and to
+            provide recommendations on how to improve efficiency.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166121.png" />
+            </span>
+         </p>
+         <p class="p"></p>
+         <p class="p">Key Performance Indicators (KPIs)</p>
+         <p class="p">The key performance indicators (KPIs) at the top provide the most important information about the Hive
+            query. The Hive Application Manager displays the following KPIs:</p>
+         <ul class="ul">
+
+            <li class="li">
+               <strong class="ph b">Events</strong>: The number of Unravel recommendations or insights for this query. To see details, click
+               the <strong class="ph b">Events</strong> icon as highlighted in the image below.
+               <p class="p">
+                  <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                     <img class="image confluence-embedded-image confluence-content-image-border" src="media/53224722.png" />
+                  </span>
+               </p>
+               <p class="p">The performance and reliability of your Hive query depends on several factors such as quality of the
+                  code, types of joins used, configuration settings, data size, scheduler settings, contention with
+                  other applications, and so on. Therefore, it takes significant expertise and effort to get to the root
+                  cause of problems in a Hive query. Unravel Events are designed to save you time and effort by
+                  automatically providing insights into the application. These events capture reasons for failed and
+                  killed queries as well as provide recommendations to improve application performance.</p>
+               <p class="p">
+                  <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                     <img class="image confluence-embedded-image confluence-content-image-border" src="media/53224679.png" />
+                  </span>
+               </p>
+            </li>
+
+            <li class="li">
+               <strong class="ph b">Duration</strong>: Total time taken by the application to complete execution</li>
+
+            <li class="li">
+               <strong class="ph b">Data I/O</strong>: Total data read and written by the application</li>
+
+            <li class="li">
+               <strong class="ph b">Number of YARN apps</strong>: The number of YARN apps that make up the Hive query</li>
+
+         </ul>
+         <p class="p"> </p>
+         <p class="p">Sub-Tabs</p>
+         <p class="p">The Hive Application Manager contains multiple sub-tabs, each of which is described below.</p>
+         <ul class="ul">
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Navigation</strong>: Provides an easy way to understand the breakdown of the application and drill down
+                  into MapReduce jobs that make up the application. It includes information about MapReduce jobs such as
+                  duration, I/O, resources, events, job ID, and job status. When you select a MapReduce job, its details
+                  are shown in a pane below it. This detailed view includes the MapReduce timeline, MapReduce task
+                  attempts, and slot usage graph.</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Execution Graph</strong>: Provides insights into the execution of the application. It shows detailed
+                  information about MapReduce stages and their relationship with one another. The execution view is
+                  split into two areas; the execution plan and the expanded info area. <img class="image emoticon emoticon-light-on" src="images/icons/emoticons/lightbulb_on.png" alt="(lightbulb)" /> This view helps identify bottlenecks and inefficiencies.</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Gantt Chart</strong>: Shows the relationship between MapReduce stages and high level information about
+                  each stage. The information shown in each stage box includes MapReduce job ID, base table name, time
+                  taken by the stage, percentage of total run time taken by the stage, and execution status.</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Errors</strong>
+               </p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Query</strong>: Shows detailed information about a stage when selected. The expanded info shows each of
+                  the map reduce functions, tables usage information, timings of each function and input paths used by
+                  the stage.</p>
+            </li>
+
+         </ul>
+         <ul class="ul">
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Task Attempts</strong>: Provides an easy way to understand efficiency and status of MapReduce task
+                  attempts by breaking down attempted tasks by successful, failed and killed.</p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Attempts</strong>
+               </p>
+            </li>
+
+            <li class="li">
+               <p class="p">
+                  <strong class="ph b">Slot Usage</strong>: Shows slot usage by Map and Reduce jobs over time.</p>
+            </li>
+
+         </ul>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">MapReduce Application Manager</h2>
+         
+         <p class="p">The MapReduce Application Manager provides a detailed view into the behavior of MapReduce applications. It
+            is used by Hadoop DBAs or application owners (engineers, BI team, analysts) to resolve inefficiencies,
+            bottlenecks and reasons for failure within applications. The MapReduce Application Manager uses the Unravel
+            intelligence engine to automatically identify certain inefficiencies with the application and provides
+            solutions on how to the fix the problem.</p>
+         <p class="p">It contains similar sections to the Hive Application Manager and additionally shows the timeline view of
+            MapReduce job execution, logs and configuration.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166037.png" />
+            </span>
+         </p>
+         <p class="p">Sub-Tabs</p>
+         <p class="p">The MapReduce Application Manager contains multiple sub-tabs, each of which is described below.</p>
+         <ul class="ul">
+
+            <li class="li">
+               <strong class="ph b">Timeline</strong>: Provides a detailed view into a MapReduce job execution. The Timeline shows execution of
+               each MapReduce task on the machine that those tasks ran on and allows drill-down into each task to obtain
+               further information. The timeline view comes with filters which can be used to display only map tasks,
+               reduce tasks and killed/failed tasks. The histograms above the Timeline show the distribution of
+               MapReduce tasks along time and data size. This histogram can also be used as a filter to zoom in on
+               specific tasks.</li>
+
+            <li class="li">
+               <strong class="ph b">Logs</strong>: Provides comprehensive information about each application including task and job logs. The
+               logs section intelligently selects interesting tasks and presents its logs in an organized manner.</li>
+
+            <li class="li">
+               <strong class="ph b">Configuration</strong>: Provides a complete list of configuration settings used during the application
+               execution.</li>
+
+         </ul>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Finding Workflows</h2>
+         
+         <p class="p">To find workflows, select <strong class="ph b">SHOW</strong> | <strong class="ph b">Workflow</strong> as highlighted in the image below.</p>
+      </section>
+      <section class="section"><!--no heading--><h2 class="title sectiontitle">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53546377.png" />
+            </span>
+         </h2>
+         
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Workflow Manager</h2>
+         
+         <p class="p">The Workflow Manager provides a comprehensive view to understand workflows and their patterns of execution.
+            It is used by Workflow (Pipelines) owners to identify anomalies, inefficiencies and bottlenecks in workflow
+            instances. The Workflow Manager uses the Unravel intelligence engine to automatically identify
+            inefficiencies with the workflow and provides solutions on how to the fix the problem. The Workflow Manager
+            helps pipeline owners easily maintain SLAs.</p>
+         <p class="p">The workflow header provides primary information about the workflow such as name, user name, queue that the
+            workflow was submitted on, start time and tags that the workflow has been given.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166040.png" />
+            </span>
+         </p>
+         <p class="p"></p>
+         <p class="p">Key Performance Indicators (KPIs)</p>
+         <ul class="ul">
+
+            <li class="li">
+               <strong class="ph b">Events</strong>: The number of Unravel recommendations or insights for this workflow. To see details, click
+               the <strong class="ph b">Events</strong> icon.</li>
+
+            <li class="li">
+               <strong class="ph b">Duration</strong>: Total time taken by the workflow to complete execution</li>
+
+            <li class="li">
+               <strong class="ph b">Data I/O</strong>: Total data read and written by the workflow</li>
+
+            <li class="li">
+               <strong class="ph b">Resources</strong>
+            </li>
+
+            <li class="li">
+               <strong class="ph b">Number of Apps</strong>: The number of apps that make up this workflow</li>
+
+         </ul>
+         <p class="p">Sub-Tabs</p>
+         <p class="p">The Workflow Manager contains multiple sub-tabs, each of which is described below.</p>
+         <ul class="ul">
+
+            <li class="li">
+               <strong class="ph b">Navigation</strong>: Provides an easy way to understand the breakdown of the workflow and drill down into
+               the Hive queries, Spark jobs, and MapReduce jobs that make up the application. It includes information
+               about duration, I/O, resources, events, job IDs, and job status.</li>
+
+            <li class="li">
+               <strong class="ph b">Gantt Chart</strong>: Shows the dependency between the various components and the time taken by each. It
+               helps you to identify stuck or incomplete components which could be affecting the overall completion of
+               the workflow.
+               <span class="ph confluence-embedded-file-wrapper">
+                  <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166043.png" />
+               </span>
+            </li>
+
+            <li class="li">
+               <strong class="ph b">DAG View</strong>: Clearly shows the dependencies between various components of the workflow and the status
+               of components. To see details about status, hover over a status box to see the tool tips.
+               <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+                  <img class="image confluence-embedded-image" src="media/53166049.png" />
+               </span>
+            </li>
+
+         </ul>
+         <ul class="ul">
+
+            <li class="li">
+               <strong class="ph b">Compare</strong>: Provides a quick way to understand how well a workflow run compares to its other runs.
+               Hovering your pointer over instances displays top KPIs such as duration, data I/O, resources, and the
+               number of jobs in that instance. Clicking on a point on the chart loads that particular instance for
+               inspection.</li>
+
+         </ul>
+         <p class="p"></p>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">
+            <span class="ph confluence-anchor-link"></span>Events</h2>
+         
+         <p class="p">Unravel Events are designed to save you time and effort by automatically providing <strong class="ph b">recommendations</strong>
+            and <strong class="ph b">insights</strong> into the application. Recommendations are concrete suggestions at the level of
+            configuration settings that can be applied at subsequent application runs to speed up the application
+            performance, and to improve the resource efficiency. Insights, on the other hand, are identifying
+            performance bottlenecks, data skew problems, capture reasons for failed, killed, and slow applications. In
+            addition, insights provide useful guidelines that can be used to adjust the current configuration settings
+            of the application. Unravel Events fall into the following categories:  Application Speedup, Application
+            Failure, Resource Efficiency, SLA Management.</p>
+         <p class="p">Example: Hive Recommendations</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166118.png" />
+            </span>
+         </p>
+         <p class="p">Example: Hive Insights</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166052.png" />
+            </span>
+         </p>
+         <p class="p">Example: Spark Recommendations</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166112.png" />
+            </span>
+         </p>
+         <p class="p">Example: Spark Insights</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166115.png" />
+            </span>
+         </p>
+         <p class="p">Example: Workflow Events</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166058.png" />
+            </span>
+         </p>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Error View</h2>
+         
+         <p class="p">This new feature allows to quickly identify errors affecting your applications. Error views are available
+            for MR, Hive and Oozie applications.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166061.png" />
+            </span>
+         </p>
+         <p class="p">Errors for each application are categorized by Severity type and also include Keywords and details
+            associated with each. Keywords extract important details from the errors messages/log data that can help
+            developers/operators quickly root cause issue. Examples of keywords include Oozie errors code(s), Java run
+            time error(s) etc.</p>
+      </section>
+   </div>
+</article></main></div>
+                        <div class=" wh_child_links "><nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="user-guide-resource-metrics.html">Resource Metrics</a></strong><br /></li></ul></nav></div>
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

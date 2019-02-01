@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map productID="oxy-webhelp" productVersion="1.0">
-   <appContext helpID="Overview_53899450" path="Overview_53899450.html"/>
+   <appContext helpID="overview" path="overview.html"/>
    <appContext helpID="installation" path="installation.html"/>
-   <appContext helpID="FAGIICFE" path="50688254.html"/>
-   <appContext helpID="FAHJCHIC" path="50792782.html"/>
-   <appContext helpID="FAGIJCFG" path="50689256.html"/>
-   <appContext helpID="FBCBCHEF" path="51212745.html"/>
-   <appContext helpID="Installation-Guide-for-MapR_50961894"
-               path="Installation-Guide-for-MapR_50961894.html"/>
-   <appContext helpID="FAGJADIF" path="50690385.html"/>
-   <appContext helpID="FAGIIDCG" path="50688326.html"/>
-   <appContext helpID="FBCBDAGF" path="51213065.html"/>
-   <appContext helpID="FAGIIGCH" path="50688627.html"/>
-   <appContext helpID="FAGIJGBB" path="50689611.html"/>
-   <appContext helpID="FAGIJHIJ" path="50689789.html"/>
-   <appContext helpID="FCFGHGGB" path="52567661.html"/>
-   <appContext helpID="FAIHGDAJ" path="50876309.html"/>
-   <appContext helpID="FBCBDBDB" path="51213131.html"/>
-   <appContext helpID="FAGIIEED" path="50688443.html"/>
-   <appContext helpID="FAGHCHDG" path="50672736.html"/>
-   <appContext helpID="FAGIJEHH" path="50689477.html"/>
-   <appContext helpID="FBCBDBJG" path="51213196.html"/>
-   <appContext helpID="User-Guide_50687944" path="User-Guide_50687944.html"/>
-   <appContext helpID="Getting-Started_53157411" path="Getting-Started_53157411.html"/>
-   <appContext helpID="The-Operations-Tab_53165661" path="The-Operations-Tab_53165661.html"/>
-   <appContext helpID="The-Applications-Tab_53166005"
-               path="The-Applications-Tab_53166005.html"/>
-   <appContext helpID="Resource-Metrics_53232237" path="Resource-Metrics_53232237.html"/>
-   <appContext helpID="The-Data-Tab_53166350" path="The-Data-Tab_53166350.html"/>
-   <appContext helpID="FDBGHACF" path="53167025.html"/>
-   <appContext helpID="Use-Cases_53314582" path="Use-Cases_53314582.html"/>
-   <appContext helpID="Detecting-Resource-Contention-in-the-Cluster_51745187"
-               path="Detecting-Resource-Contention-in-the-Cluster_51745187.html"/>
-   <appContext helpID="Identifying-Rogue-Applications_51744637"
-               path="Identifying-Rogue-Applications_51744637.html"/>
-   <appContext helpID="Optimizing-the-Performance-of-Spark-Applications_52494973"
-               path="Optimizing-the-Performance-of-Spark-Applications_52494973.html"/>
-   <appContext helpID="Unravel-Server-Reference_50690507"
-               path="Unravel-Server-Reference_50690507.html"/>
-   <appContext helpID="Advanced-Topics_50688158" path="Advanced-Topics_50688158.html"/>
-   <appContext helpID="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913"
-               path="Creating-Active-Directory-Kerberos-Principals-and-Keytabs-for-Unravel_50689913.html"/>
-   <appContext helpID="Sensors_53900864" path="Sensors_53900864.html"/>
-   <appContext helpID="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545"
-               path="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-shell_53908545.html"/>
-   <appContext helpID="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040"
-               path="Installing-Unravel-Sensor-for-Individual-Applications-Submitted-Through-spark-submit_51977040.html"/>
-   <appContext helpID="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409"
-               path="Installing-Unravel-Sensor-for-Individual-Hive-Queries_51162409.html"/>
-   <appContext helpID="Workflows_53900905" path="Workflows_53900905.html"/>
-   <appContext helpID="Monitoring-Airflow-Workflows_52961844"
-               path="Monitoring-Airflow-Workflows_52961844.html"/>
-   <appContext helpID="Monitoring-Oozie-Workflows_51161894"
-               path="Monitoring-Oozie-Workflows_51161894.html"/>
-   <appContext helpID="Tagging-Workflows_51162078" path="Tagging-Workflows_51162078.html"/>
-   <appContext helpID="Custom-Configurations_54044915"
-               path="Custom-Configurations_54044915.html"/>
-   <appContext helpID="Adding-More-Admins-to-Unravel-Web-UI_50672747"
-               path="Adding-More-Admins-to-Unravel-Web-UI_50672747.html"/>
-   <appContext helpID="Configuring-Multiple-Hosts-for-Unravel-Server_50690195"
-               path="Configuring-Multiple-Hosts-for-Unravel-Server_50690195.html"/>
-   <appContext helpID="Creating-Multiple-Workers-for-High-Volume-Data_51162494"
-               path="Creating-Multiple-Workers-for-High-Volume-Data_51162494.html"/>
-   <appContext helpID="Defining-a-Custom-TC-Port_50688848"
-               path="Defining-a-Custom-TC-Port_50688848.html"/>
-   <appContext helpID="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161"
-               path="Integrating-LDAP-Authentication-for-Unravel-Web-UI_51162161.html"/>
-   <appContext helpID="Setting-Retention-Time-in-Unravel-Server_51757832"
-               path="Setting-Retention-Time-in-Unravel-Server_51757832.html"/>
-   <appContext helpID="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243"
-               path="Setting-Up-Email-for-Auto-Actions-and-Collaboration_51162243.html"/>
-   <appContext helpID="Connecting-to-a-Hive-Metastore_51162326"
-               path="Connecting-to-a-Hive-Metastore_51162326.html"/>
-   <appContext helpID="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267"
-               path="Creating-an-AWS-RDS-CloudWatch-Alarm-for-FreeStorageSpace_52728267.html"/>
-   <appContext helpID="Creating-Application-Tags_54048480"
-               path="Creating-Application-Tags_54048480.html"/>
-   <appContext helpID="Troubleshooting_50881320" path="Troubleshooting_50881320.html"/>
-   <appContext helpID="Running-Verification-Scripts-and-Benchmarks_52960296"
-               path="Running-Verification-Scripts-and-Benchmarks_52960296.html"/>
-   <appContext helpID="Sending-Diagnostics-to-Unravel-Support_50689210"
-               path="Sending-Diagnostics-to-Unravel-Support_50689210.html"/>
-   <appContext helpID="Uninstalling-Unravel-Server_50688928"
-               path="Uninstalling-Unravel-Server_50688928.html"/>
-   <appContext helpID="Upgrading-Unravel-Server_51854263"
-               path="Upgrading-Unravel-Server_51854263.html"/>
-   <appContext helpID="FDJAAABA" path="53900010.html"/>
+   <appContext helpID="FAGIICFE" path="install-cdh.html"/>
+   <appContext helpID="FAHJCHIC" path="install-cdh-step1.html"/>
+   <appContext helpID="FAGIJCFG" path="install-cdh-step2.html"/>
+   <appContext helpID="FBCBCHEF" path="install-cdh-step3.html"/>
+   <appContext helpID="install-mapr" path="install-mapr.html"/>
+   <appContext helpID="FAGJADIF" path="install-mapr-step1.html"/>
+   <appContext helpID="FAGIIDCG" path="install-mapr-step2.html"/>
+   <appContext helpID="FBCBDAGF" path="install-mapr-step3.html"/>
+   <appContext helpID="FAGIIGCH" path="install-emr.html"/>
+   <appContext helpID="FAGIJGBB" path="install-emr-step1.html"/>
+   <appContext helpID="FAGIJHIJ" path="install-emr-step2.html"/>
+   <appContext helpID="FCFGHGGB" path="install-emr-step3.html"/>
+   <appContext helpID="FAIHGDAJ" path="install-emr-step4.html"/>
+   <appContext helpID="FBCBDBDB" path="install-emr-step5.html"/>
+   <appContext helpID="FAGIIEED" path="install-hdp.html"/>
+   <appContext helpID="FAGHCHDG" path="install-hdp-step1.html"/>
+   <appContext helpID="FAGIJEHH" path="install-hdp-step2.html"/>
+   <appContext helpID="FBCBDBJG" path="install-hdp-step3.html"/>
+   <appContext helpID="user-guide" path="user-guide.html"/>
+   <appContext helpID="user-guide-get-started" path="user-guide-get-started.html"/>
+   <appContext helpID="user-guide-operations-page" path="user-guide-operations-page.html"/>
+   <appContext helpID="user-guide-applications-page" path="user-guide-applications-page.html"/>
+   <appContext helpID="user-guide-resource-metrics" path="user-guide-resource-metrics.html"/>
+   <appContext helpID="user-guide-data-page" path="user-guide-data-page.html"/>
+   <appContext helpID="FDBGHACF" path="user-guide-auto-actions-create.html"/>
+   <appContext helpID="user-guide-use-cases" path="user-guide-use-cases.html"/>
+   <appContext helpID="user-guide-use-cases-detect-resource-contention"
+               path="user-guide-use-cases-detect-resource-contention.html"/>
+   <appContext helpID="user-guide-use-cases-identify-rogue-apps"
+               path="user-guide-use-cases-identify-rogue-apps.html"/>
+   <appContext helpID="user-guide-use-cases-optimize-spark-app-performance"
+               path="user-guide-use-cases-optimize-spark-app-performance.html"/>
+   <appContext helpID="appendices-server-daemon-reference"
+               path="appendices-server-daemon-reference.html"/>
+   <appContext helpID="advanced-topics" path="advanced-topics.html"/>
+   <appContext helpID="advanced-topics-create-ad-kerberos-principals-and-keytabs"
+               path="advanced-topics-create-ad-kerberos-principals-and-keytabs.html"/>
+   <appContext helpID="advanced-topics-servers-and-sensors"
+               path="advanced-topics-servers-and-sensors.html"/>
+   <appContext helpID="advanced-topics-servers-and-sensors-install-on-individual-spark-shell-apps"
+               path="advanced-topics-servers-and-sensors-install-on-individual-spark-shell-apps.html"/>
+   <appContext helpID="advanced-topics-servers-and-sensors-install-on-individual-spark-shell-apps"
+               path="advanced-topics-servers-and-sensors-install-on-individual-spark-shell-apps.html"/>
+   <appContext helpID="advanced-topics-servers-and-sensors-on-individual-hive-queries"
+               path="advanced-topics-servers-and-sensors-on-individual-hive-queries.html"/>
+   <appContext helpID="advanced-topics-workflows" path="advanced-topics-workflows.html"/>
+   <appContext helpID="advanced-topics-workflows-monitor-airflow"
+               path="advanced-topics-workflows-monitor-airflow.html"/>
+   <appContext helpID="advanced-topics-workflows-monitor-oozie"
+               path="advanced-topics-workflows-monitor-oozie.html"/>
+   <appContext helpID="advanced-topics-workflows-add-tags"
+               path="advanced-topics-workflows-add-tags.html"/>
+   <appContext helpID="advanced-topics-configurations"
+               path="advanced-topics-configurations.html"/>
+   <appContext helpID="advanced-topics-security-add-more-admins"
+               path="advanced-topics-security-add-more-admins.html"/>
+   <appContext helpID="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server"
+               path="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server.html"/>
+   <appContext helpID="advanced-topics-configurations-create-multiple-workers-for-high-volume-data"
+               path="advanced-topics-configurations-create-multiple-workers-for-high-volume-data.html"/>
+   <appContext helpID="advanced-topics-configurations-define-custom-ui-port"
+               path="advanced-topics-configurations-define-custom-ui-port.html"/>
+   <appContext helpID="advanced-topics-security-enable-ldap-authentication"
+               path="advanced-topics-security-enable-ldap-authentication.html"/>
+   <appContext helpID="advanced-topics-configurations-set-retention-time"
+               path="advanced-topics-configurations-set-retention-time.html"/>
+   <appContext helpID="advanced-topics-configurations-set-up-email-alerts"
+               path="advanced-topics-configurations-set-up-email-alerts.html"/>
+   <appContext helpID="advanced-topics-connectivity-hive-metastore"
+               path="advanced-topics-connectivity-hive-metastore.html"/>
+   <appContext helpID="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space"
+               path="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space.html"/>
+   <appContext helpID="advanced-topics-create-application-tags"
+               path="advanced-topics-create-application-tags.html"/>
+   <appContext helpID="troubleshooting" path="troubleshooting.html"/>
+   <appContext helpID="troubleshooting-run-verification-scripts-and-benchmarks"
+               path="troubleshooting-run-verification-scripts-and-benchmarks.html"/>
+   <appContext helpID="troubleshooting-run-verification-scripts-and-benchmarks"
+               path="troubleshooting-run-verification-scripts-and-benchmarks.html"/>
+   <appContext helpID="advanced-topics-servers-and-sensors-uninstall"
+               path="advanced-topics-servers-and-sensors-uninstall.html"/>
+   <appContext helpID="advanced-topics-servers-and-sensors-upgrade"
+               path="advanced-topics-servers-and-sensors-upgrade.html"/>
+   <appContext helpID="FDJAAABA" path="release-notes.html"/>
    <appContext helpID="FDJAAABA" path="release-notes-v4-1-941.html"/>
    <appContext helpID="older_versions" path="older_versions.html"/>
 </map>

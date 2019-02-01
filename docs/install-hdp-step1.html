@@ -1,0 +1,714 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Introduction This topic explains how to deploy Unravel Server 4.0-4.1 on HDP 2.2.x-2.5.x clusters using Ambari Web UI (AWU). Unravel Hive Hook is used to collect information about Hive queries in ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="DC.Relation" scheme="URI" content="install-hdp.html" /><meta name="DC.Relation" scheme="URI" content="install-hdp.html" /><meta name="DC.Relation" scheme="URI" content="install-hdp-step2.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="FAGHCHDG" /><meta name="DC.Language" content="en-us" /><title>Part 1: Install Unravel Server on HDP</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="FAGHCHDG-d66e157" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/green.css?buildId=2018122203" /></head>
+
+    <body id="FAGHCHDG" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="logo.png" alt="  4.0-4.1  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">4.0-4.1</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="overview-d66e14" data-state="leaf" class=" topicref " data-id="overview"><span class="title"><a href="overview.html">Overview </a></span></span></li>
+   <li class="has-children"><span data-tocid="installation-d66e26" data-state="not-ready" class=" topicref " data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="user-guide-d66e182" data-state="not-ready" class=" topicref " data-id="user-guide"><span class="title"><a href="user-guide.html">User Guide </a></span></span></li>
+   <li><span data-tocid="appendices-server-daemon-reference-d66e274" data-state="leaf" class=" topicref " data-id="appendices-server-daemon-reference"><span class="title"><a href="appendices-server-daemon-reference.html">Unravel Server Reference </a></span></span></li>
+   <li class="has-children"><span data-tocid="advanced-topics-d66e287" data-state="not-ready" class=" topicref " data-id="advanced-topics"><span class="title"><a href="advanced-topics.html">Advanced Topics </a></span></span></li>
+   <li class="has-children"><span data-tocid="FDJAAABA-d66e499" data-state="not-ready" class=" topicref " data-id="FDJAAABA"><span class="title"><a href="release-notes.html">Release Notes</a></span></span></li>
+   <li><span data-tocid="older_versions-d66e519" data-state="leaf" class=" topicref " data-id="older_versions"><span class="title"><a href="older_versions.html">Older Versions</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Find installation steps for your platform.</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="FAGIIEED"><span class="title"><a href="install-hdp.html">Installation Guide for Hortonworks Data Platform (HDP) </a></span></span></li>
+   <li class="active"><span class="topicref" data-id="FAGHCHDG"><span class="title"><a href="install-hdp-step1.html">Part 1: Install Unravel Server on HDP </a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="install-hdp.html" title="Installation Guide for Hortonworks Data Platform (HDP)" aria-label="Previous topic: Installation Guide for Hortonworks Data Platform (HDP)" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="install-hdp-step2.html" title="Part 2: Enable Additional Data Collection / Instrumentation for HDP" aria-label="Next topic: Part 2: Enable Additional Data Collection / Instrumentation for HDP" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="installation-d66e26" class="topicref" data-id="installation" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action installation-d66e26-link" class="wh-expand-btn"></span><span class="title"><a href="installation.html" id="installation-d66e26-link">Installation Guides</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Find installation steps for your platform.</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="FAGIICFE-d66e37" class="topicref" data-id="FAGIICFE" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action FAGIICFE-d66e37-link" class="wh-expand-btn"></span><span class="title"><a href="install-cdh.html" id="FAGIICFE-d66e37-link">Installation Guide for Cloudera Distribution Including Apache Hadoop (CDH), with Cloudera Manager (CM) </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="install-mapr-d66e69" class="topicref" data-id="install-mapr" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action install-mapr-d66e69-link" class="wh-expand-btn"></span><span class="title"><a href="install-mapr.html" id="install-mapr-d66e69-link">Installation Guide for MapR </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="FAGIIGCH-d66e101" class="topicref" data-id="FAGIIGCH" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action FAGIIGCH-d66e101-link" class="wh-expand-btn"></span><span class="title"><a href="install-emr.html" id="FAGIIGCH-d66e101-link">Installation Guide for Amazon Elastic MapReduce (Amazon EMR) and Qubole Clusters </a></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="FAGIIEED-d66e149" class="topicref" data-id="FAGIIEED" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action FAGIIEED-d66e149-link" class="wh-expand-btn"></span><span class="title"><a href="install-hdp.html" id="FAGIIEED-d66e149-link">Installation Guide for Hortonworks Data Platform (HDP) </a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="FAGHCHDG-d66e157" class="topicref" data-id="FAGHCHDG" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="install-hdp-step1.html" id="FAGHCHDG-d66e157-link">Part 1: Install Unravel Server on HDP </a></span></span></li>
+               <li role="treeitem"><span data-tocid="FAGIJEHH-d66e165" class="topicref" data-id="FAGIJEHH" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="install-hdp-step2.html" id="FAGIJEHH-d66e165-link">Part 2: Enable Additional Data Collection / Instrumentation for HDP </a></span></span></li>
+               <li role="treeitem"><span data-tocid="FBCBDBJG-d66e173" class="topicref" data-id="FBCBDBJG" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="install-hdp-step3.html" id="FBCBDBJG-d66e173-link">Part 3: Additional Topics for HDP </a></span></span></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Part 1: Install Unravel Server on HDP </h1>
+   <div class="body taskbody">
+      <section class="section context">
+         <p class="p">Introduction</p>
+         <p class="p">This topic explains how to <span class="ph">deploy Unravel Server 4.0-4.1 on HDP 2.2.x-2.5.x clusters using Ambari Web UI
+               (AWU). Unravel Hive Hook is used to collect information about Hive queries in Hadoop. The information
+               here applies to Hive versions 0.10.0 through 2.1.x and Unravel 4.0-4.1</span>. For older versions of
+            Unravel Server, contact Unravel Support.</p>
+         <strong class="ph b">Workflow Summary</strong>
+         <ol class="ol">
+            <li class="li">Pre-installation check</li>
+            <li class="li">Configure the host machine.</li>
+            <li class="li">Install the Unravel Server RPM on the host machine.</li>
+            <li class="li">
+               <p class="p">Configure Unravel Server (basic/core options).</p>
+            </li>
+            <li class="li">Log into Unravel Web UI.</li>
+            <li class="li">(Optional) Configure Unravel Server (advanced options).</li>
+         </ol>
+         
+         
+         <p class="p">Pre-Installation Check</p>
+         <p class="p">The following installation requirements must be met for successful installation of Unravel.</p>
+         <p class="p">Platform Compatibility</p>
+         <ul class="ul">
+            <li class="li">HDP 2.2-2.6</li>
+            <li class="li">Hadoop 1.x - 2.x</li>
+            <li class="li">Hive 0.9.x - 1.2.x</li>
+            <li class="li">Spark 1.3.x - 2.0.x</li>
+         </ul>
+         <p class="p">Hardware</p>
+         <ul class="ul">
+            <li class="li">Architecture: x86_64</li>
+            <li class="li">Cores: 8</li>
+            <li class="li">RAM: 64GB minimum</li>
+            <li class="li">Disk: <code class="ph codeph">/usr/local/unravel</code> with 2.5GB free minimum</li>
+            <li class="li">Disk: <code class="ph codeph">/srv/unravel</code> with 500GB free minimum</li>
+            <li class="li">For 10,000+ MR jobs per day, two or more gateway/edge nodes are recommended</li>
+         </ul>
+         <p class="p">Software</p>
+         <ul class="ul">
+            <li class="li">Operating System: RedHat/Centos 6.4 - 7.3</li>
+            <li class="li">
+               <code class="ph codeph">libaio.x86_64</code> installed</li>
+            <li class="li">
+               <code class="ph codeph">SELINUX=permissive</code> (or disabled) should be set in <code class="ph codeph">/etc/selinux/config</code>
+            </li>
+            <li class="li">HDFS+Hive+YARN client/gateway, Hadoop and Hive commands in <code class="ph codeph">PATH</code>
+            </li>
+            <li class="li">If Spark is in use, Spark client gateway</li>
+            <li class="li">LDAP (AD or Open LDAP) compatible for Unravel Web UI user authentication (Open signup by default)</li>
+            <li class="li">On Unravel Edge-node server, please <strong class="ph b">
+                  <u class="ph u">do not</u>
+               </strong> have zookeeper installed in same server</li>
+         </ul>
+         <p class="p">Access Permissions</p>
+         <ul class="ul">
+            <li class="li">If Kerberos is in use, a keytab for principal hdfs (or read-only equivalent) is required for access to:<ul class="ul">
+                  <li class="li">Access to YARN’s “done dir” in HDFS</li>
+                  <li class="li">Access to YARN’s log aggregation directory in HDFS</li>
+                  <li class="li">Access to Spark event log directory in HDFS</li>
+                  <li class="li">Access to file sizes under HIve warehouse directory</li>
+               </ul>
+            </li>
+            <li class="li">Access to YARN Resource Manager REST API
+               <ul class="ul">
+                  <li class="li">principal needs right to find out which RM is active</li>
+               </ul>
+            </li>
+            <li class="li">JDBC access to the Hive Metastore (read-only user is sufficient)</li>
+         </ul>
+         <p class="p">Network</p>
+         <ul class="ul">
+            <li class="li">Port 3000 (or 4020) from users and entire cluster to Unravel Web UI</li>
+            <li class="li">HDFS ports open from Hadoop cluster to Unravel Server(s)</li>
+            <li class="li">For MR1, TaskTracker port open from Hadoop cluster to Unravel Server(s)</li>
+            <li class="li">For MR1/YARN, Hive Metadata DB port open to Unravel Server(s) for partition reporting</li>
+            <li class="li">UDP and TCP port 4043 open from entire cluster to Unravel Server(s)</li>
+            <li class="li">For Oozie, port 11000 open from Unravel Server(s) to the Oozie server</li>
+            <li class="li">Resource Manager (RM) port 8032 from Unravel Server(s) to the RM server(s)</li>
+            <li class="li">
+               <span class="ph">Port 4176, 4181 through 4189, 3316, 4091 must be available for localhost communication between
+                  Unravel daemons or services</span>
+            </li>
+         </ul>
+         <p class="p">1. Configure the Host Machine</p>
+         <p class="p">Allocate a Cluster Gateway/Edge/Client Host with HDFS Access</p>
+         <p class="p">For HDP, use Ambari Web UI to create a Gateway node configuration. The hadoop command must be present on the
+            Unravel target server.</p>
+         <p class="p">2. Install the Unravel Server RPM on the Host Machine</p>
+         <p class="p">Get the Unravel Server RPM</p>
+         <p class="p">Copy the RPM from the Unravel distribution server to the host machine using the username and password given
+            to you by Unravel Support:</p>
+         <ul class="ul">
+            <li class="li">
+               <p class="p auto-cursor-target">For the free trial version:</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>scp "unraveltrial@trial.unraveldata.com:unravel-4.*.x86_64.rpm" .</code></pre>
+            </li>
+            <li class="li">For the enterprise version:
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>scp $USER@dist.unraveldata.com:unravel-4.*.x86_64.rpm.$timestamp .</code></pre>
+            </li>
+         </ul>
+         <p class="p">The precise RPM filename will vary. The version has the structure <em class="ph i">
+               <code class="ph codeph">x.y.b</code>
+            </em> where <em class="ph i">
+               <code class="ph codeph">b</code>
+            </em> is a build number that is imposed as an RPM epoch which means it takes precedence over version numbers
+            for determining what is more up-to-date. The Unravel build numbers always increase and are allocated so that
+            they respect the ordering of <em class="ph i">
+               <code class="ph codeph">x.y</code>
+            </em> versioning.</p>
+         <p class="p"></p>
+         <p class="p">Install the Unravel Server RPM</p>
+         <p class="p">Replace the asterisks as needed to be more selective.</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>sudo rpm -U unravel-4.*.x86_64.rpm*</code></pre>
+         <span class="ph aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
+         <p class="p">The installation creates <code class="ph codeph">/usr/local/unravel/</code> which contains the executables, scripts, and
+            settings. User <code class="ph codeph">unravel</code> is created. The initial internal database and other durable state
+            are put in <code class="ph codeph">/srv/unravel/</code> for larger storage. By default, the installation supports YARN.
+            The master configuration file is in <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code> and the logs
+            are in <code class="ph codeph">/usr/local/unravel/logs/</code>. The RPM installation creates user <code class="ph codeph">unravel</code>
+            if it does not already exist; <code class="ph codeph">/etc/init.d/unravel_*</code> scripts for controlling its services as
+            well as <code class="ph codeph">/etc/init.d/unravel_all.sh</code> which can be used to manually stop, start, and get
+            status of all daemons in proper order.  The RPM installation also creates an HDFS directory for Hive Hook
+            information collection.  During initial install, a bundled database is used. This can be switched to use an
+            externally managed MySQL for production. (The bundled database root mysql password will be stored
+               in <code class="ph codeph">/root/unravel.install.include</code> during installation.)</p>
+         <p class="p">
+            <span class="ph">Do Host-Specific Post-Installation Actions</span>
+         </p>
+         <p class="p">
+            <span class="ph">For HDP, there are no host-specific post-installation actions.</span>
+         </p>
+         <p class="p">3. Configure Unravel Server (Basic/Core Options)</p>
+         <p class="p">Modify <code class="ph codeph">unravel.properties</code>
+         </p>
+         <ul class="ul">
+            <li class="li">
+               <p class="p">Open <span class="ph">
+                     <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code>
+                  </span> with <code class="ph codeph">vi</code>.</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>sudo vi /usr/local/unravel/etc/unravel.properties</code></pre>
+            </li>
+            <li class="li">Edit the values in <span class="ph">
+                  <code class="ph codeph">unravel.properties</code>
+               </span> using the guidelines and descriptions in the table below.</li>
+         </ul>
+         <table class="table wrapped confluenceTable"><caption></caption><colgroup><col /><col /><col /></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.advertised.url</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Defines the Unravel Server URL for
+                        HTTP traffic.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.advertised.url=<span class="ph nolink">
+                              <span class="ph nolink">http://<span class="ph">LAN_DNS</span>:3000</span>
+                           </span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.customer.organization</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Identifies your installation for
+                        reporting purposes.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.customer.organization=<span class="ph">Company_and_org</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <pre class="pre codeblock"><code>com.unraveldata.tmpdir</code></pre>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Location where Unravel's temp file
+                        will reside</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <pre class="pre codeblock"><code>com.unraveldata.tmpdir=/srv/unravel/tmp</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.history.maxSize.weeks</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Sets retention for search
+                        data.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.history.maxSize.weeks=26</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.hive.hook.topic.num.threads</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <strong class="ph b">Optional</strong>. Defines the number of threads. Default is 1. Depending on job volume, increase
+                        this property to <em class="ph i">N</em> where <em class="ph i">N</em> is between 1 and 4, or roughly
+                           <em class="ph i">ThousandJobsPerDay</em>/10.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.hive.hook.topic.num.threads=1</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">
+                           <span class="ph">com.unraveldata.job.collector.done.log.base</span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd">Only modifiable through Unravel Web UI's configuration
+                        wizard.</td>
+                     <td class="entry confluenceTd">
+                        <pre class="pre codeblock"><code>com.unraveldata.job.collector.done.log.base=/mr-history/done</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">
+                           <span class="ph">
+                              <span class="ph">
+                                 <code class="ph codeph">com.unraveldata.job.collector.log.aggregation.base</code>
+                              </span>
+                           </span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd">Only modifiable through Unravel Web UI's configuration
+                        wizard.</td>
+                     <td class="entry confluenceTd">
+                        <pre class="pre codeblock"><code>com.unraveldata.job.collector.log.aggregation.base=/app-logs/*/logs/</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.login.admins</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Defines the usernames that can
+                        access Unravel Web UI's admin pages. Default is <code class="ph codeph">admin</code>.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.login.admins=admin</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.s3.batch.monitoring.interval.sec</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <strong class="ph b">Optional</strong>. Defines the monitoring frequency. Default is 300 seconds (5 minutes). Set this
+                        property to 60 for lower latency.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">com.unraveldata.s3.batch.monitoring.interval.sec=120</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">
+                           <span class="ph">com.unraveldata.spark.eventlog.location</span>
+                        </code>
+                        <span class="ph"></span>
+                     </td>
+                     <td class="entry confluenceTd">
+                        <span class="ph">Where to find Spark event logs</span>
+                     </td>
+                     <td class="entry confluenceTd">
+                        <pre class="pre codeblock"><code>com.unraveldata.spark.eventlog.location=hdfs://example.localdomain:8020/spark-history/</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">
+                              <span class="ph">yarn.resourcemanager.webapp.address</span>
+                           </span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">YARN resource manager web address URL </span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <pre class="pre codeblock"><code>yarn.resourcemanager.webapp.address=http://example.localdomain<a class="xref external-link" href="http://ip-10-0-0-90.ec2.internal:8088" target="_blank">:8088</a>
+                        </code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">oozie.server.url</span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Oozie URL</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <pre class="pre codeblock"><code>oozie.server.url=http://example.localdomain<a class="xref external-link" href="http://ip-10-0-0-90.ec2.internal:11000/oozie" target="_blank">:11000/oozie</a>
+                        </code></pre>
+                     </td>
+                  </tr>
+               </tbody></table>
+         <p class="p">If Kerberos is Enabled:</p>
+         <span class="ph expand-control-icon">
+            <img class="image expand-control-image" src="images/icons/grey_arrow_down.png" />
+         </span>
+         <span class="ph expand-control-text">Add authentication for HDFS...</span>
+         <p class="p">(a) Create a keytab for unravel for daemons that run as <code class="ph codeph">unravel</code> and put the file in
+               <code class="ph codeph">/etc/keytabs/unravel.keytab</code> (for example).</p>
+         <p class="p">(b) Create a keytab for hdfs for the Unravel daemons that run as user <code class="ph codeph">hdfs</code> and put the file
+            in <code class="ph codeph">/etc/keytabs/hdfs.keytab</code> (for example).</p>
+         <p class="p">(c) Tell Unravel Server about it (env var for hdfs keytab location; substitute correct realm and /hostname,
+            if applicable):</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>echo "export HDFS_KEYTAB_PATH=/etc/keytabs/hdfs.keytab 
+export HDFS_KERBEROS_PRINCIPAL=hdfs/myhost.mydomain@MYREALM 
+" | sudo tee -a /usr/local/unravel/etc/unravel.ext.sh </code></pre>
+         <p class="p">(d) Add properties for Kerberos:</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>echo "
+com.unraveldata.kerberos.principal=unravel/myhost.mydomain@MYREALM
+com.unraveldata.kerberos.keytab.path=/etc/keytabs/unravel.keytab
+" | sudo tee -a /usr/local/unravel/unravel.properties
+
+</code></pre>
+         <p class="p auto-cursor-target">
+            <em class="ph i">You can find the principal by using 'klist -kt KEYTAB_FILE'</em>
+         </p>
+         <p class="p">If Ranger is Enabled:</p>
+         <span class="ph expand-control-icon">
+            <img class="image expand-control-image" src="images/icons/grey_arrow_down.png" />
+         </span>
+         <span class="ph expand-control-text">Add these permissions...</span>
+         <table class="table wrapped confluenceTable"><caption></caption><colgroup><col /><col /><col /><col /></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">hdfs://user/unravel/HOOK_RESULT_DIR</code>
+                     </td>
+                     <td class="entry confluenceTd">*</td>
+                     <td class="entry confluenceTd">read+write</td>
+                     <td class="entry confluenceTd" colspan="1">data transfer from Hive jobs when
+                        Unravel is not up</td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">hdfs://user/spark/applicationHistory</span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">hdfs</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">read</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Spark event log</td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">hdfs://usr/history/done</span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">hdfs</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">read</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">MapReduce logs</td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">hdfs://tmp/logs</span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">hdfs</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">read</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">YARN aggregation folder</td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">hdfs://user/hive/warehouse</span>
+                        </code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">hdfs</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">read</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Obtain table partition sizes</td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">Hive Metastore GRANT</td>
+                     <td class="entry confluenceTd" colspan="1">hive</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <span class="ph">read</span>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Hive table information</td>
+                  </tr>
+               </tbody></table>
+         <p class="p"></p>
+         <p class="p"></p>
+         <p class="p">4. Convert Your Unravel Installation to HDP</p>
+         <p class="p">Run the following commands on Unravel Server:</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>sudo /etc/init.d/unravel_all.sh stop
+sudo /usr/local/unravel/install_bin/switch_to_hdp.sh</code></pre>
+         <p class="p"></p>
+         <span class="ph aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>Note: This
+         change will stick after RPM upgrades.<p class="p">5. Update Site-Specific HDP Properties</p>
+         <p class="p">The following site-specific properties in <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code> were
+            added or modified by the script above (<code class="ph codeph">switch_to_hdp.sh</code>). Check
+               <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code> to see if you need to modify any of these
+            properties:</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code># Repoint Unravel application logs directory
+com.unraveldata.job.collector.done.log.base=/mr-history/done
+com.unraveldata.job.collector.log.aggregation.base=/app-logs/*/logs/
+com.unraveldata.spark.eventlog.location=hdfs:///user/spark/applicationHistory/
+ 
+# Add Hive Metastore database information for Unravel Hive Config 
+javax.jdo.option.ConnectionURL=jdbc:mysql://{hostname}:3306/{database_name} 
+javax.jdo.option.ConnectionDriverName=com.mysql.jdbc.Driver
+javax.jdo.option.ConnectionUserName={HiveMetastoreUserName} 
+javax.jdo.option.ConnectionPassword={HiveMetastorePassword}</code></pre>
+         <p class="p"></p>
+         <p class="p">Verify above site-specific values using the Ambari Web UI (AWU):</p>
+         <ul class="ul">
+            <li class="li">Verify <code class="ph codeph">com.unraveldata.job.collector.done.log.base</code>
+               <ul class="ul">
+                  <li class="li">
+                     <span class="ph">In AWU, on the left-hand side, click <strong class="ph b">MapReduce2</strong> | <strong class="ph b">Configs</strong>. Select the
+                           <strong class="ph b">Advanced</strong> tab, and then select </span>
+                     <strong class="ph b">Advanced mapred-site</strong>.<ul class="ul">
+                        <li class="li">
+                           <span class="ph">Take note of the value of <code class="ph codeph">mapreduce.jobhistory.done-dir</code> to enter into
+                                 <code class="ph codeph">unravel.properties</code> of
+                                 "<code class="ph codeph">com.unraveldata.job.collector.done.log.base=</code>"</span>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li class="li">Verify <code class="ph codeph">com.unraveldata.job.collector.log.aggregation.base</code>
+               <ul class="ul">
+                  <li class="li">
+                     <span class="ph">In AWU, on the left-hand side, click <strong class="ph b">YARN</strong> | <strong class="ph b">Configs</strong>. Select the <strong class="ph b">Advanced</strong>
+                        tab, and then select </span>
+                     <strong class="ph b">Node Manager</strong>.<ul class="ul">
+                        <li class="li">
+                           <span class="ph">Take note of the value of <code class="ph codeph">yarn.nodemanager.remote-app-log-dir</code> to enter
+                              into <code class="ph codeph">unravel.properties</code> of
+                                 "<code class="ph codeph">com.unraveldata.job.collector.log.aggregation.base=</code>"</span>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li class="li">Verify Hive Metastore <code class="ph codeph">javax.jdo.option.Connection</code>
+               <ul class="ul">
+                  <li class="li">
+                     <span class="ph">In AWU, on the left-hand side, click <strong class="ph b">Hive</strong> | <span class="ph">
+                           <strong class="ph b">Configs</strong>. Select the <strong class="ph b">Advanced</strong> tab</span>, and then select </span>
+                     <strong class="ph b">Hive Metastore</strong>. <ul class="ul">
+                        <li class="li">
+                           <span class="ph">Take note of following properties and their values to be entered into
+                                 <code class="ph codeph">unravel.properties</code>:</span>
+                           <ul class="ul">
+                              <li class="li">
+                                 <strong class="ph b">
+                                    <span class="ph">Database URL</span>
+                                 </strong>
+                              </li>
+                              <li class="li">
+                                 <strong class="ph b">
+                                    <span class="ph">Database Host</span>
+                                 </strong>
+                              </li>
+                              <li class="li">
+                                 <strong class="ph b">
+                                    <span class="ph">JDBC Driver Class</span>
+                                 </strong>
+                              </li>
+                              <li class="li">
+                                 <strong class="ph b">
+                                    <span class="ph">Database Name</span>
+                                 </strong>
+                              </li>
+                              <li class="li">
+                                 <strong class="ph b">
+                                    <span class="ph">Database Username</span>
+                                 </strong>
+                              </li>
+                              <li class="li">
+                                 <span class="ph">
+                                    <strong class="ph b">Database Password</strong> (if visible)</span>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <p class="p"></p>
+         <p class="p">Restart Unravel Server</p>
+         <p class="p">After edits to <code class="ph codeph">com.unraveldata.login.admins</code> in
+               <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code> it is necessary to run the following script in
+            order to make changes take effect. The <code class="ph codeph">echo</code> command shows the page to visit with your
+            browser. If you are using an ssh tunnel or http proxy, you might need to make adjustments.</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>sudo /etc/init.d/unravel_all.sh start
+sleep 60
+echo "http://$(hostname -f):3000/"</code></pre>
+         <p class="p">This completes the basic/core configuration.</p>
+         <p class="p">4. Log into Unravel Web UI</p>
+         <p class="p">Using a web browser, navigate to <code class="ph codeph">
+               <span class="ph nolink">http://($hostname</span> -f):3000</code> and login as user
+               "<code class="ph codeph">admin"</code> with password <code class="ph codeph">"unraveldata</code>".</p>
+         <span class="ph aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span>
+         <p class="p">For the free trial version, use the Chrome web browser.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image image-center" src="media/51099949.png" />
+            </span>
+         </p>
+         <p class="p">
+            <em class="ph i">Unravel Web UI Login Screen</em>
+         </p>
+         <p class="p">Congratulations!</p>
+         <p class="p">Unravel Server is up and running. Unravel Web UI displays collected data. For instructions on using Unravel
+            Web UI, see the <a class="xref" href="user-guide.html" title="Get help on our user interface.">User Guide</a>.</p>
+         <p class="p">5. (Optional) Configure Unravel Server (Advanced Options)</p>
+         <p class="p">Enable Additional Data Collection/Instrumentation</p>
+         <p class="p">Install the Unravel Sensor Parcel on gateway/edge/client nodes that are used to submit Hive queries to push
+            additional information to Unravel Server. For details, see <a class="xref" href="install-hdp-step2.html">Part 2: Enable
+               Additional Data Collection / Instrumentation for HDP</a>.</p>
+         <p class="p">Run the Unravel Web UI Configuration Wizard</p>
+         <p class="p">Run the Unravel Web UI configuration wizard to choose additional configuration options. For instructions on
+            configuring advanced options, see the <a class="xref" href="user-guide.html" title="Get help on our user interface.">User Guide</a>.</p>
+         <p class="p"></p>
+         <pre class="pre codeblock"><code>
+
+         </code></pre>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

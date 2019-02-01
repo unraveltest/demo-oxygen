@@ -1,0 +1,429 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="To configure lightweight directory access protocol (LDAP) or active directory (AD) authentication for Unravel Web UI, use settings identical to the settings for HiveServer2. In other words, if you ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="DC.Relation" scheme="URI" content="advanced-topics-configurations.html" /><meta name="DC.Relation" scheme="URI" content="advanced-topics-configurations-define-custom-ui-port.html" /><meta name="DC.Relation" scheme="URI" content="advanced-topics-configurations-set-retention-time.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="advanced-topics-security-enable-ldap-authentication" /><meta name="DC.Language" content="en-us" /><title>Integrating LDAP Authentication for Unravel Web UI</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="advanced-topics-security-enable-ldap-authentication-d66e410" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/green.css?buildId=2018122203" /></head>
+
+    <body id="advanced-topics-security-enable-ldap-authentication" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="logo.png" alt="  4.0-4.1  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">4.0-4.1</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="overview-d66e14" data-state="leaf" class=" topicref " data-id="overview"><span class="title"><a href="overview.html">Overview </a></span></span></li>
+   <li class="has-children"><span data-tocid="installation-d66e26" data-state="not-ready" class=" topicref " data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="user-guide-d66e182" data-state="not-ready" class=" topicref " data-id="user-guide"><span class="title"><a href="user-guide.html">User Guide </a></span></span></li>
+   <li><span data-tocid="appendices-server-daemon-reference-d66e274" data-state="leaf" class=" topicref " data-id="appendices-server-daemon-reference"><span class="title"><a href="appendices-server-daemon-reference.html">Unravel Server Reference </a></span></span></li>
+   <li class="has-children"><span data-tocid="advanced-topics-d66e287" data-state="not-ready" class=" topicref " data-id="advanced-topics"><span class="title"><a href="advanced-topics.html">Advanced Topics </a></span></span></li>
+   <li class="has-children"><span data-tocid="FDJAAABA-d66e499" data-state="not-ready" class=" topicref " data-id="FDJAAABA"><span class="title"><a href="release-notes.html">Release Notes</a></span></span></li>
+   <li><span data-tocid="older_versions-d66e519" data-state="leaf" class=" topicref " data-id="older_versions"><span class="title"><a href="older_versions.html">Older Versions</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="advanced-topics"><span class="title"><a href="advanced-topics.html">Advanced Topics </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Find procedures for specific sensors, workflow engines, query engines, and more.</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="advanced-topics-configurations"><span class="title"><a href="advanced-topics-configurations.html"> Custom Configurations </a></span></span></li>
+   <li class="active"><span class="topicref" data-id="advanced-topics-security-enable-ldap-authentication"><span class="title"><a href="advanced-topics-security-enable-ldap-authentication.html">Integrating LDAP Authentication for Unravel Web UI </a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="advanced-topics-configurations-define-custom-ui-port.html" title="Defining a Custom TC Port" aria-label="Previous topic: Defining a Custom TC Port" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="advanced-topics-configurations-set-retention-time.html" title="Setting Retention Time in Unravel Server" aria-label="Next topic: Setting Retention Time in Unravel Server" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="advanced-topics-d66e287" class="topicref" data-id="advanced-topics" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action advanced-topics-d66e287-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics.html" id="advanced-topics-d66e287-link">Advanced Topics </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Find procedures for specific sensors, workflow engines, query engines, and more.</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="advanced-topics-create-ad-kerberos-principals-and-keytabs-d66e298" class="topicref" data-id="advanced-topics-create-ad-kerberos-principals-and-keytabs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-create-ad-kerberos-principals-and-keytabs.html" id="advanced-topics-create-ad-kerberos-principals-and-keytabs-d66e298-link"> Creating Active Directory Kerberos Principals and Keytabs for Unravel </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="advanced-topics-servers-and-sensors-d66e306" class="topicref" data-id="advanced-topics-servers-and-sensors" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action advanced-topics-servers-and-sensors-d66e306-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-servers-and-sensors.html" id="advanced-topics-servers-and-sensors-d66e306-link"> Sensors </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="advanced-topics-workflows-d66e338" class="topicref" data-id="advanced-topics-workflows" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action advanced-topics-workflows-d66e338-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-workflows.html" id="advanced-topics-workflows-d66e338-link"> Workflows </a></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="advanced-topics-configurations-d66e370" class="topicref" data-id="advanced-topics-configurations" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action advanced-topics-configurations-d66e370-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations.html" id="advanced-topics-configurations-d66e370-link"> Custom Configurations </a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="advanced-topics-security-add-more-admins-d66e378" class="topicref" data-id="advanced-topics-security-add-more-admins" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-security-add-more-admins.html" id="advanced-topics-security-add-more-admins-d66e378-link">Adding More Admins to Unravel Web UI </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server-d66e386" class="topicref" data-id="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server.html" id="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server-d66e386-link">Configuring Multiple Hosts for Unravel Server </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-create-multiple-workers-for-high-volume-data-d66e394" class="topicref" data-id="advanced-topics-configurations-create-multiple-workers-for-high-volume-data" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-create-multiple-workers-for-high-volume-data.html" id="advanced-topics-configurations-create-multiple-workers-for-high-volume-data-d66e394-link">Creating Multiple Workers for High Volume Data </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-define-custom-ui-port-d66e402" class="topicref" data-id="advanced-topics-configurations-define-custom-ui-port" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-define-custom-ui-port.html" id="advanced-topics-configurations-define-custom-ui-port-d66e402-link">Defining a Custom TC Port </a></span></span></li>
+               <li role="treeitem" class="active"><span data-tocid="advanced-topics-security-enable-ldap-authentication-d66e410" class="topicref" data-id="advanced-topics-security-enable-ldap-authentication" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-security-enable-ldap-authentication.html" id="advanced-topics-security-enable-ldap-authentication-d66e410-link">Integrating LDAP Authentication for Unravel Web UI </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-set-retention-time-d66e418" class="topicref" data-id="advanced-topics-configurations-set-retention-time" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-set-retention-time.html" id="advanced-topics-configurations-set-retention-time-d66e418-link">Setting Retention Time in Unravel Server </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-set-up-email-alerts-d66e426" class="topicref" data-id="advanced-topics-configurations-set-up-email-alerts" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-set-up-email-alerts.html" id="advanced-topics-configurations-set-up-email-alerts-d66e426-link">Setting Up Email for Auto Actions and Collaboration </a></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem"><span data-tocid="advanced-topics-connectivity-hive-metastore-d66e434" class="topicref" data-id="advanced-topics-connectivity-hive-metastore" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-connectivity-hive-metastore.html" id="advanced-topics-connectivity-hive-metastore-d66e434-link">Connecting to a Hive Metastore </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space-d66e442" class="topicref" data-id="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space.html" id="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space-d66e442-link"> Creating an AWS RDS CloudWatch Alarm for FreeStorageSpace </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-create-application-tags-d66e450" class="topicref" data-id="advanced-topics-create-application-tags" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-create-application-tags.html" id="advanced-topics-create-application-tags-d66e450-link">Creating Application Tags </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="troubleshooting-d66e458" class="topicref" data-id="troubleshooting" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action troubleshooting-d66e458-link" class="wh-expand-btn"></span><span class="title"><a href="troubleshooting.html" id="troubleshooting-d66e458-link">Troubleshooting </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-servers-and-sensors-uninstall-d66e482" class="topicref" data-id="advanced-topics-servers-and-sensors-uninstall" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-servers-and-sensors-uninstall.html" id="advanced-topics-servers-and-sensors-uninstall-d66e482-link"> Uninstalling Unravel Server </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-servers-and-sensors-upgrade-d66e490" class="topicref" data-id="advanced-topics-servers-and-sensors-upgrade" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-servers-and-sensors-upgrade.html" id="advanced-topics-servers-and-sensors-upgrade-d66e490-link"> Upgrading Unravel Server </a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Integrating LDAP Authentication for Unravel Web UI </h1>
+   <div class="body taskbody">
+      <section class="section context">
+         <p class="p">
+            <span class="ph">To configure lightweight directory access protocol (LDAP) or active directory (AD) authentication for
+               Unravel Web UI, use settings identical to the settings for HiveServer2. In other words, if you have
+               HiveServer2 set up for AD-based LDAP, use the same values for Unravel Web UI. If you do not use
+               HiveServer2 LDAP, then follow the steps below.</span>
+         </p>
+         <p class="p">
+            <span class="ph">1. Modify <code class="ph codeph">unravel.properties</code>
+            </span>
+         </p>
+         <p class="p">Add/modify these properties in <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code>:</p>
+         <p class="p">Change <code class="ph codeph">
+               <span class="ph">QA</span>
+            </code> and <span class="ph">
+               <code class="ph codeph">ldap://LDAP_HOST</code>
+            </span> to your specific values:</p>
+         <ul class="ul">
+            <li class="li">For <code class="ph codeph">
+                  <span class="ph">QA</span>
+               </code>, use a value in uppercase that matches your setup, like QA.EXAMPLE.COM.</li>
+            <li class="li">For <span class="ph">
+                  <code class="ph codeph">ldap://LDAP_HOST</code>
+               </span>, use <span class="ph">
+                  <code class="ph codeph">ldaps://LDAP_HOST</code>
+               </span> if SSL is in use. If ldaps (SSL), a truststore must be set under <code class="ph codeph">unravel/jre/</code> if
+               the CA is not well-known or an external JDK can be set in unravel/etc/unravel.ext.sh. You can append a
+               port number, if needed; for example, <span class="ph">
+                  <code class="ph codeph">ldap://ldap_host:9999</code>
+               </span>. You can also specify multiple LDAP hosts by using a SPACE to separate them. This is useful for HA
+               purposes.</li>
+         </ul>
+         <p class="p">For Active Directory (AD):</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>com.unraveldata.login.mode=ldap
+com.unraveldata.ldap.use_jndi=true
+hive.server2.authentication.ldap.url=ldap://LDAP_HOST
+hive.server2.authentication.ldap.Domain=QA</code></pre>
+         <p class="p">
+            <em class="ph i">Change LDAP_HOST and QA to appropriate value for your installation.</em>
+         </p>
+         <p class="p">For Open LDAP, example 1:</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>com.unraveldata.login.mode=ldap
+com.unraveldata.ldap.use_jndi=true
+hive.server2.authentication.ldap.url=ldap://LDAP_HOST
+hive.server2.authentication.ldap.baseDN=ou=myunit,dc=example,dc=com</code></pre>
+         <p class="p">
+            <em class="ph i">Change the example ou=myunit,dc=example,dc=com to appropriate value for your installation.</em>
+         </p>
+         <p class="p">For Open LDAP, example 2:</p>
+         <p class="p">In this example, we expect a typical DN to be uid=%s,ou=myunit,dc=example,dc=com  where %s is the login name
+            as typed in the login form. In some cases 'cn' is used in place of 'uid'.  </p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>com.unraveldata.login.mode=ldap
+com.unraveldata.ldap.use_jndi=true
+hive.server2.authentication.ldap.url=ldap://LDAP_HOST
+hive.server2.authentication.ldap.guidKey=uid
+hive.server2.authentication.ldap.userDNPattern=uid=%s,ou=myunit,dc=example,dc=com</code></pre>
+         <p class="p">
+            <em class="ph i">Change the example ou=myunit,dc=example,dc=com to appropriate value for your installation.</em>
+         </p>
+         <p class="p">2. Restart unravel_tc</p>
+         <p class="p">Restart <code class="ph codeph">unravel_tc</code> on Unravel Server (on host1 if multiple host Unravel install):</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>sudo /etc/init.d/unravel_tc restart</code></pre>
+         <p class="p">
+            <span class="ph confluence-anchor-link"></span>Advanced Hive Properties</p>
+         <p class="p">Below is a list of advanced properties that narrow the search for authorized users. For more detail, see the
+               page <a class="xref external-link" href="#UserandGroupFilterSupportwithLDAPAtnProviderinHiveServer2" target="_blank">User and Group Filtering LDAP in HiveServer2</a> </p>
+         <p class="p">The process of authentication is described next.</p>
+         <p class="p">Authentication Process for Active Directory (AD)</p>
+         <ol class="ol">
+            <li class="li">Bind as username + at sign + domain, using the given password, with simple LDAP auth mode<ol class="ol" type="a">
+                  <li class="li">verbose log will show Connecting and then Connected when bind is successful</li>
+               </ol>
+            </li>
+            <li class="li">If there are no more qualifications for groups or filtering or custom query, then login to Unravel is
+               deemed successful if bind succeeds</li>
+            <li class="li">If custom query is specified, the query is made, and results are checked for a match against the user
+               name, if there is a match, login to Unravel is successful<ol class="ol" type="a">
+                  <li class="li">verbose log will show results list and the match arguments in effect</li>
+                  <li class="li">user or group filters will be ignored if custom query is used</li>
+               </ol>
+            </li>
+            <li class="li">If a group filter is specified, it is checked</li>
+            <li class="li">if a user filter is specified, it is checked</li>
+         </ol>
+         <p class="p">Authentication Process for Open LDAP</p>
+         <ol class="ol">
+            <li class="li">Bind as cn or uid =username + baseDN  using the given password, with simple LDAP auth mode<ol class="ol" type="a">
+                  <li class="li">the guidKey property determines whether cn or uid is used</li>
+                  <li class="li">if userDNPattern is used, it takes precedence over baseDN, and each pattern is tried</li>
+               </ol>
+            </li>
+            <li class="li">If there are no more qualifications for groups or filtering or custom query, then login to Unravel is
+               deemed successful if bind succeeds</li>
+            <li class="li">If custom query is specified, the query is made, and results are checked for a match against the user
+               name, if there is a match, login to Unravel is successful<ol class="ol" type="a">
+                  <li class="li">verbose log will show results list and the match arguments in effect</li>
+                  <li class="li">user or group filters will be ignored if custom query is used</li>
+               </ol>
+            </li>
+            <li class="li">If a group pattern or filter is specified, it is checked</li>
+            <li class="li">if a user filter is specified, it is checked</li>
+         </ol>
+         <table class="table wrapped fixed-table confluenceTable"><caption></caption><colgroup><col /><col /><col /></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">hive.server2.authentication.ldap.baseDN</code>
+                     </td>
+                     <td class="entry confluenceTd">LDAP base DN; use your rootDN value if a custom LDAP query is
+                        applied. Needed for Open LDAP. See also userDNPattern as alternative.</td>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">
+                           <span class="ph">DC=qa,DC=example,DC=com</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">hive.server2.authentication.ldap.customLDAPQuery</code>
+                     </td>
+                     <td class="entry confluenceTd">A full LDAP query that LDAP Atn provider uses to execute against
+                        LDAP Server. If this query returns a null resultset, the LDAP Provider fails the Authentication
+                        request, succeeds if the user is part of the resultset. If this property is set, filtering and
+                        group properties are ignored.</td>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">
+                           <span class="ph">(&amp;(objectClass=group)(objectClass=top)(instanceType=4)(cn=Domain*))
+                              (&amp;(objectClass=person)(|(sAMAccountName=admin)(|(memberOf=CN=Domain
+                              Admins,CN=Users,DC=domain,DC=com)
+                              (memberOf=CN=Administrators,CN=Builtin,DC=domain,DC=com))))</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd">
+                        <code class="ph codeph">hive.server2.authentication.ldap.guidKey</code>
+                     </td>
+                     <td class="entry confluenceTd">LDAP attribute name whose values are unique in this LDAP server.
+                           <span class="ph">REQUIRED for advanced query except when setting custom query or groupDNPattern.</span>
+                     </td>
+                     <td class="entry confluenceTd">uid or CN</td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">hive.server2.authentication.ldap.groupDNPattern</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">COLON-separated list of patterns to
+                        use to find DNs for group entities in this directory. Use %s where the actual group name is to
+                        be substituted for. Each pattern should be fully qualified. Do not set ldap.Domain property to
+                        use this qualifier.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">CN=%s,CN=Groups,DC=subdomain,DC=domain,DC=com</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">hive.server2.authentication.ldap.groupFilter</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">COMMA-separated list of LDAP Group
+                        names (short name not full DNs)</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">HiveAdmins,HadoopAdmins,Administrators</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">hive.server2.authentication.ldap.userDNPattern</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">COLON-separated list of patterns to
+                        use to find DNs for users in this directory. Use <code class="ph codeph">%s</code> where the actual group name
+                        is to be substituted for. This is used like a list of baseDNs and baseDN is ignored if this is
+                        set.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">CN=%s,CN=Users,DC=subdomain,DC=domain,DC=com</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">hive.server2.authentication.ldap.userFilter</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">COMMA-separated list of LDAP
+                        usernames (just short names, not full DNs).</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">hiveuser,impalauser,hiveadmin,hadoopadmin</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1"></td>
+                     <td class="entry confluenceTd" colspan="1"></td>
+                     <td class="entry confluenceTd" colspan="1"></td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">hive.server2.authentication.ldap.groupMembershipKey</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">LDAP attribute name on the user
+                        entry that references a group that the user belongs to. Default is 'member'.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">member, uniqueMember or memberUid</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1"></td>
+                     <td class="entry confluenceTd" colspan="1"></td>
+                     <td class="entry confluenceTd" colspan="1"></td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">hive.server2.authentication.ldap.groupClassKey</code>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">LDAP attribute name on the group
+                        entry that is to be used in LDAP group searches.</td>
+                     <td class="entry confluenceTd" colspan="1">
+                        <code class="ph codeph">
+                           <span class="ph">group, groupOfNames or groupOfUniqueNames</span>
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry confluenceTd" colspan="1">
+                        <pre class="pre codeblock"><code>com.unraveldata.ldap.verbose</code></pre>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">enables verbose logging. Grep for
+                        "Ldap" entries in the<p class="p p1">
+                           <span class="ph s1">unravel_tc_webapp.log file under /usr/local/unravel/logs/ ; when
+                              enabled, user names and group names can appear in this log, but raw passwords are not
+                              logged.</span>
+                        </p>
+                     </td>
+                     <td class="entry confluenceTd" colspan="1">Can be true or false or not set;
+                        default is false</td>
+                  </tr>
+               </tbody></table>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

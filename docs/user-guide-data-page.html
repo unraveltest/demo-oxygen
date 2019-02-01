@@ -1,0 +1,331 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Table/Partition Usage The Data tab provides a quick snapshot of the tables and partitions in the cluster. To see table and partition details, click the Details tab. On the Details tab, you can sort ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="concept" /><meta name="DC.Relation" scheme="URI" content="user-guide.html" /><meta name="DC.Relation" scheme="URI" content="user-guide-resource-metrics.html" /><meta name="DC.Relation" scheme="URI" content="user-guide-auto-actions-create.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="user-guide-data-page" /><meta name="DC.Language" content="en-us" /><title>The Data Tab</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="user-guide-data-page-d66e225" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/green.css?buildId=2018122203" /></head>
+
+    <body id="user-guide-data-page" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="logo.png" alt="  4.0-4.1  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">4.0-4.1</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="overview-d66e14" data-state="leaf" class=" topicref " data-id="overview"><span class="title"><a href="overview.html">Overview </a></span></span></li>
+   <li class="has-children"><span data-tocid="installation-d66e26" data-state="not-ready" class=" topicref " data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="user-guide-d66e182" data-state="not-ready" class=" topicref " data-id="user-guide"><span class="title"><a href="user-guide.html">User Guide </a></span></span></li>
+   <li><span data-tocid="appendices-server-daemon-reference-d66e274" data-state="leaf" class=" topicref " data-id="appendices-server-daemon-reference"><span class="title"><a href="appendices-server-daemon-reference.html">Unravel Server Reference </a></span></span></li>
+   <li class="has-children"><span data-tocid="advanced-topics-d66e287" data-state="not-ready" class=" topicref " data-id="advanced-topics"><span class="title"><a href="advanced-topics.html">Advanced Topics </a></span></span></li>
+   <li class="has-children"><span data-tocid="FDJAAABA-d66e499" data-state="not-ready" class=" topicref " data-id="FDJAAABA"><span class="title"><a href="release-notes.html">Release Notes</a></span></span></li>
+   <li><span data-tocid="older_versions-d66e519" data-state="leaf" class=" topicref " data-id="older_versions"><span class="title"><a href="older_versions.html">Older Versions</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="user-guide"><span class="title"><a href="user-guide.html">User Guide </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Get help on our user interface.</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="user-guide-data-page"><span class="title"><a href="user-guide-data-page.html">The Data Tab </a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="user-guide-resource-metrics.html" title="Resource Metrics" aria-label="Previous topic: Resource Metrics" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="user-guide-auto-actions-create.html" title="Setting Up Auto Actions (Alerts)" aria-label="Next topic: Setting Up Auto Actions (Alerts)" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="user-guide-d66e182" class="topicref" data-id="user-guide" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action user-guide-d66e182-link" class="wh-expand-btn"></span><span class="title"><a href="user-guide.html" id="user-guide-d66e182-link">User Guide </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Get help on our user interface.</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="user-guide-get-started-d66e193" class="topicref" data-id="user-guide-get-started" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-get-started.html" id="user-guide-get-started-d66e193-link">Getting Started </a></span></span></li>
+         <li role="treeitem"><span data-tocid="user-guide-operations-page-d66e201" class="topicref" data-id="user-guide-operations-page" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-operations-page.html" id="user-guide-operations-page-d66e201-link">The Operations Tab </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="user-guide-applications-page-d66e209" class="topicref" data-id="user-guide-applications-page" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action user-guide-applications-page-d66e209-link" class="wh-expand-btn"></span><span class="title"><a href="user-guide-applications-page.html" id="user-guide-applications-page-d66e209-link">The Applications Tab </a></span></span></li>
+         <li role="treeitem" class="active"><span data-tocid="user-guide-data-page-d66e225" class="topicref" data-id="user-guide-data-page" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-data-page.html" id="user-guide-data-page-d66e225-link">The Data Tab </a></span></span></li>
+         <li role="treeitem"><span data-tocid="FDBGHACF-d66e233" class="topicref" data-id="FDBGHACF" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="user-guide-auto-actions-create.html" id="FDBGHACF-d66e233-link">Setting Up Auto Actions (Alerts) </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="user-guide-use-cases-d66e241" class="topicref" data-id="user-guide-use-cases" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action user-guide-use-cases-d66e241-link" class="wh-expand-btn"></span><span class="title"><a href="user-guide-use-cases.html" id="user-guide-use-cases-d66e241-link">Use Cases </a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">The Data Tab </h1>
+   <div class="body conbody">
+      
+      
+      <section class="section"><h2 class="title sectiontitle">Table/Partition Usage</h2>
+         
+         <p class="p">The Data tab provides a quick snapshot of the tables and partitions in the cluster. To see table and
+            partition details, click the <strong class="ph b">Details</strong> tab.</p>
+         <p class="p"></p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166417.png" />
+            </span>
+         </p>
+         <p class="p">On the<strong class="ph b"> Details</strong> tab, you can sort the data on any column by clicking that column's header. </p>
+         <ul class="ul">
+
+            <li class="li">Click on any column to sort by that metric such as:<ul class="ul">
+
+                  <li class="li">Last Access - to find tables used most recently</li>
+
+                  <li class="li">Created At - to sort oldest/newest tables</li>
+
+                  <li class="li">Read I/O - to find tables which have performed most I/O</li>
+
+                  <li class="li">Attempts - to find tables which have had most number of read/write attempts on them</li>
+
+                  <li class="li">Apps - to find tables which have most number of applications using it</li>
+
+                  <li class="li">Users - to find tables which have the most number of users using it</li>
+
+                  <li class="li">Other Tables - shows other tables commonly used along with a particular table in applications</li>
+
+                  <li class="li">Labels - view tables which have been labeled Hot, Warm or Cold</li>
+
+               </ul>
+            </li>
+
+            <li class="li">Hover on columns like Users and Other Tables to know respectively which users accessed this table and
+               which other tables are accessed along with this table.</li>
+
+            <li class="li">View trends of table usage and access by accessing the drop-down menu on the top right corner. Metrics
+               available are Read I/O, Total Users, Total Apps, Total Attempts as shown below.</li>
+
+            <li class="li">You can also search for a particular table by typing part of the table name in the table search box as
+               shown below. In our example we are looking for tables with the word customer in it.</li>
+
+         </ul>
+         <p class="p"></p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53166414.png" />
+            </span>
+         </p>
+         <p class="p"></p>
+         <p class="p">Table Details</p>
+         <p class="p">To drill down into a particular table click its <span class="ph uicontrol">More Info</span> icon.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image confluence-content-image-border" src="media/53315752.png" />
+            </span>
+         </p>
+         <p class="p"></p>
+         <p class="p">This opens a <strong class="ph b">Table Detail</strong> pane as shown below.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image" src="media/53166408.png" />
+            </span>
+         </p>
+         <p class="p">You can view different metric trends on this pane including:</p>
+         <ul class="ul">
+
+            <li class="li">Read IO</li>
+
+            <li class="li">Number of Users</li>
+
+            <li class="li">Number of Apps</li>
+
+            <li class="li">Number of Attempts</li>
+
+         </ul>
+         <p class="p">It also allows you to view the historical usage and access information about this table. The table detail
+            view also shows a list of applications and users that accessed the table in the given time range. This list
+            of applications and users is also sortable for easy search and browse capabilities.</p>
+         <p class="p">Partition Details</p>
+         <p class="p">To view detailed information about partitions associated with a Table, click the Partition Detail tab in the
+            Table Detailed View and you will open up a Partition detail page as shown below.</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image" src="media/53166411.png" />
+            </span>
+         </p>
+         <p class="p">The Partition histogram provide the Access Age of Partitions (including the Max Access Age). This
+            information is used to calculate the number and size of Reclaimable Partitions. This can be explained as
+            follows:</p>
+         <ul class="ul">
+
+            <li class="li">Reclaimable Partitions Found = number of Partitions with Last Access Time &lt; (Current Time - Max
+               Access Age of Partitions). In the example above:</li>
+
+            <li class="li">No partition is accessed by any application more than 4 days 14 hrs. after it is created. Thus, the
+               partitions created on Dec 1, 2015, will not be accessed after Dec 5, 2015.</li>
+
+            <li class="li">In Unravel, the Max Access Age of Partitions for the above Table will be computed as 4 days 14 hrs.
+               based on the history of accesses to partitions in the above Table</li>
+
+            <li class="li">So on Dec 15, 2015, if the above Table is reviewed:</li>
+
+            <li class="li">Reclaimable Partitions found = number of Partitions with Last Access Time &lt; (Dec 14 2015 - 4days 14
+               hrs.) i.e., (Dec 10, 2015). Thus, the partitions created on any day before Dec 10, 2015 will be marked as
+               a Reclaimable Partition. In this case, it will be all the 26 partitions.</li>
+
+         </ul>
+         <p class="p">The page also list all Partitions by key KPI’s, including:</p>
+         <ul class="ul">
+
+            <li class="li">Last access date/time</li>
+
+            <li class="li">Create date/time</li>
+
+            <li class="li">Current Size</li>
+
+            <li class="li"># of Users accessing the Partition</li>
+
+         </ul>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image" src="media/53166405.png" />
+            </span>
+         </p>
+         <p class="p">Unravel provides an easy way to label Tables/Partitions as “HOT”, “WARM” and “COLD” based on access patterns
+            – last access time or age (last access time – create time).</p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image" src="media/53166402.png" />
+            </span>
+         </p>
+         <p class="p">Once you have the rule configured as above, please click on the "SAVE RULES" and you will see a confirmation
+            as below. </p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image" src="media/53236814.png" />
+            </span>
+         </p>
+         <p class="p">While the "HOT", "WARM" and "COLD" labels are associated with the Tables right away, the main dashboard page
+            with appropriate pie chart values are typically populated in 24 hrs. </p>
+         <p class="p"></p>
+         <p class="p"></p>
+         <p class="p">
+            <span class="ph confluence-embedded-file-wrapper confluence-embedded-manual-size">
+               <img class="image confluence-embedded-image" src="media/53166399.png" />
+            </span>
+         </p>
+         <p class="p">As illustrated above, HOT rule can be  “Last Access &lt;= 120 days”, WARN rule  can be “Last Access &lt;=
+            175 days and &gt; 120 days” and COLD rule can be “Last Access &gt;= 176 days”</p>
+         <p class="p">These rules are checked periodically (every 24 hrs.) and tables/partition are labeled and classified
+            accordingly. The Data overview page provides a quick summary information based on these labels. Operators
+            can use this information to identify unused or frequently used tables/partitions and take appropriate
+            actions.</p>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>
