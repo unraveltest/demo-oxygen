@@ -1,0 +1,378 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="favicon32x32.png"><!----></link><link rel="icon" href="favicon32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="This topic explains how to configure multiple hosts for Unravel Server. This is useful for volume/throughput/reliability requirements. Prerequisites If you use Kerberos, set that up first on host1 . ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="DC.Relation" scheme="URI" content="advanced-topics-configurations.html" /><meta name="DC.Relation" scheme="URI" content="advanced-topics-security-add-more-admins.html" /><meta name="DC.Relation" scheme="URI" content="advanced-topics-configurations-create-multiple-workers-for-high-volume-data.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server" /><meta name="DC.Language" content="en-us" /><title>Configuring Multiple Hosts for Unravel Server</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018122203.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server-d66e386" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018122203" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/green.css?buildId=2018122203" /></head>
+
+    <body id="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://unraveldata.com/" class=" wh_logo hidden-xs "><img src="logo.png" alt="  4.0-4.1  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">4.0-4.1</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="overview-d66e14" data-state="leaf" class=" topicref " data-id="overview"><span class="title"><a href="overview.html">Overview </a></span></span></li>
+   <li class="has-children"><span data-tocid="installation-d66e26" data-state="not-ready" class=" topicref " data-id="installation"><span class="title"><a href="installation.html">Installation Guides</a></span></span></li>
+   <li class="has-children"><span data-tocid="user-guide-d66e182" data-state="not-ready" class=" topicref " data-id="user-guide"><span class="title"><a href="user-guide.html">User Guide </a></span></span></li>
+   <li><span data-tocid="appendices-server-daemon-reference-d66e274" data-state="leaf" class=" topicref " data-id="appendices-server-daemon-reference"><span class="title"><a href="appendices-server-daemon-reference.html">Unravel Server Reference </a></span></span></li>
+   <li class="has-children"><span data-tocid="advanced-topics-d66e287" data-state="not-ready" class=" topicref " data-id="advanced-topics"><span class="title"><a href="advanced-topics.html">Advanced Topics </a></span></span></li>
+   <li class="has-children"><span data-tocid="FDJAAABA-d66e507" data-state="not-ready" class=" topicref " data-id="FDJAAABA"><span class="title"><a href="release-notes.html">Release Notes</a></span></span></li>
+   <li class="has-children"><span data-tocid="older_versions-d66e527" data-state="not-ready" class=" topicref " data-id="older_versions"><span class="title"><a href="older_versions.html">Older Versions</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="advanced-topics"><span class="title"><a href="advanced-topics.html">Advanced Topics </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Find procedures for specific sensors, workflow engines, query engines, and more.</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="advanced-topics-configurations"><span class="title"><a href="advanced-topics-configurations.html"> Custom Configurations </a></span></span></li>
+   <li class="active"><span class="topicref" data-id="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server"><span class="title"><a href="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server.html">Configuring Multiple Hosts for Unravel Server </a></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="advanced-topics-security-add-more-admins.html" title="Adding More Admins to Unravel Web UI" aria-label="Previous topic: Adding More Admins to Unravel Web UI" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="advanced-topics-configurations-create-multiple-workers-for-high-volume-data.html" title="Creating Multiple Workers for High Volume Data" aria-label="Next topic: Creating Multiple Workers for High Volume Data" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="advanced-topics-d66e287" class="topicref" data-id="advanced-topics" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action advanced-topics-d66e287-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics.html" id="advanced-topics-d66e287-link">Advanced Topics </a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Find procedures for specific sensors, workflow engines, query engines, and more.</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="advanced-topics-create-ad-kerberos-principals-and-keytabs-d66e298" class="topicref" data-id="advanced-topics-create-ad-kerberos-principals-and-keytabs" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-create-ad-kerberos-principals-and-keytabs.html" id="advanced-topics-create-ad-kerberos-principals-and-keytabs-d66e298-link"> Creating Active Directory Kerberos Principals and Keytabs for Unravel </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="advanced-topics-servers-and-sensors-d66e306" class="topicref" data-id="advanced-topics-servers-and-sensors" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action advanced-topics-servers-and-sensors-d66e306-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-servers-and-sensors.html" id="advanced-topics-servers-and-sensors-d66e306-link"> Sensors </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="advanced-topics-workflows-d66e338" class="topicref" data-id="advanced-topics-workflows" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action advanced-topics-workflows-d66e338-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-workflows.html" id="advanced-topics-workflows-d66e338-link"> Workflows </a></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="advanced-topics-configurations-d66e370" class="topicref" data-id="advanced-topics-configurations" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action advanced-topics-configurations-d66e370-link" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations.html" id="advanced-topics-configurations-d66e370-link"> Custom Configurations </a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="advanced-topics-security-add-more-admins-d66e378" class="topicref" data-id="advanced-topics-security-add-more-admins" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-security-add-more-admins.html" id="advanced-topics-security-add-more-admins-d66e378-link">Adding More Admins to Unravel Web UI </a></span></span></li>
+               <li role="treeitem" class="active"><span data-tocid="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server-d66e386" class="topicref" data-id="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server.html" id="advanced-topics-configurations-configure-multiple-hosts-for-unravel-server-d66e386-link">Configuring Multiple Hosts for Unravel Server </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-create-multiple-workers-for-high-volume-data-d66e394" class="topicref" data-id="advanced-topics-configurations-create-multiple-workers-for-high-volume-data" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-create-multiple-workers-for-high-volume-data.html" id="advanced-topics-configurations-create-multiple-workers-for-high-volume-data-d66e394-link">Creating Multiple Workers for High Volume Data </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-define-custom-ui-port-d66e402" class="topicref" data-id="advanced-topics-configurations-define-custom-ui-port" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-define-custom-ui-port.html" id="advanced-topics-configurations-define-custom-ui-port-d66e402-link">Defining a Custom TC Port </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-security-enable-ldap-authentication-d66e410" class="topicref" data-id="advanced-topics-security-enable-ldap-authentication" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-security-enable-ldap-authentication.html" id="advanced-topics-security-enable-ldap-authentication-d66e410-link">Integrating LDAP Authentication for Unravel Web UI </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-set-retention-time-d66e418" class="topicref" data-id="advanced-topics-configurations-set-retention-time" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-set-retention-time.html" id="advanced-topics-configurations-set-retention-time-d66e418-link">Setting Retention Time in Unravel Server </a></span></span></li>
+               <li role="treeitem"><span data-tocid="advanced-topics-configurations-set-up-email-alerts-d66e426" class="topicref" data-id="advanced-topics-configurations-set-up-email-alerts" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-configurations-set-up-email-alerts.html" id="advanced-topics-configurations-set-up-email-alerts-d66e426-link">Setting Up Email for Auto Actions and Collaboration </a></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem"><span data-tocid="advanced-topics-connectivity-hive-metastore-d66e434" class="topicref" data-id="advanced-topics-connectivity-hive-metastore" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-connectivity-hive-metastore.html" id="advanced-topics-connectivity-hive-metastore-d66e434-link">Connecting to a Hive Metastore </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space-d66e442" class="topicref" data-id="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space.html" id="advanced-topics-create-aws-rds-cloudwatch-alarm-for-free-storage-space-d66e442-link"> Creating an AWS RDS CloudWatch Alarm for FreeStorageSpace </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-create-application-tags-d66e450" class="topicref" data-id="advanced-topics-create-application-tags" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-create-application-tags.html" id="advanced-topics-create-application-tags-d66e450-link">Creating Application Tags </a></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="troubleshooting-d66e458" class="topicref" data-id="troubleshooting" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action troubleshooting-d66e458-link" class="wh-expand-btn"></span><span class="title"><a href="troubleshooting.html" id="troubleshooting-d66e458-link">Troubleshooting </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-servers-and-sensors-uninstall-d66e490" class="topicref" data-id="advanced-topics-servers-and-sensors-uninstall" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-servers-and-sensors-uninstall.html" id="advanced-topics-servers-and-sensors-uninstall-d66e490-link"> Uninstalling Unravel Server </a></span></span></li>
+         <li role="treeitem"><span data-tocid="advanced-topics-servers-and-sensors-upgrade-d66e498" class="topicref" data-id="advanced-topics-servers-and-sensors-upgrade" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="advanced-topics-servers-and-sensors-upgrade.html" id="advanced-topics-servers-and-sensors-upgrade-d66e498-link"> Upgrading Unravel Server </a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Configuring Multiple Hosts for Unravel Server </h1>
+   <div class="body taskbody">
+      <section class="section context">
+         <p class="p">This topic explains how to configure multiple hosts for Unravel Server. This is useful for
+            volume/throughput/reliability requirements.</p>
+         <p class="p">Prerequisites</p>
+         <ul class="ul">
+            <li class="li">If you use Kerberos, set that up first on <strong class="ph b">host1</strong>.</li>
+            <li class="li">Install the same Unravel RPM on one or two additional hosts, hereafter referred to as <strong class="ph b">host2</strong> and
+                  <strong class="ph b">host3</strong>.  This distinction is important because certain instructions only apply to specific
+               hosts.</li>
+         </ul>
+         <span class="ph aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
+         <p class="p">The internal DNS or IP address of a host is specific to your installation.</p>
+         <span class="ph aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
+         <p class="p">Each host is assigned unique roles identified by daemon names that start with <code class="ph codeph">unravel_</code>.</p>
+         <p class="p">Expected Result</p>
+         <p class="p">When you complete the steps below, the expected result is</p>
+         <ul class="ul">
+            <li class="li">Multiple Unravel hosts work together in an ensemble.</li>
+            <li class="li">Each host has a unique role, and is identified by a daemon named <code class="ph codeph">unravel_xyz</code> or
+                     <code class="ph codeph">unravel_xyz_<em class="ph i">n</em>
+               </code> (where <em class="ph i">
+                  <code class="ph codeph">n</code>
+               </em> is 1, 2, 3,...), which runs on exactly one host.</li>
+            <li class="li">Unravel Web UI (<code class="ph codeph">unravel_tc</code>) runs on <strong class="ph b">host1</strong>.</li>
+            <li class="li">Port 4043 <code class="ph codeph">unravel_lr</code> runs on <strong class="ph b">host2</strong>.</li>
+            <li class="li">If you do not use an external database (db), <code class="ph codeph">unravel_db</code> runs on <strong class="ph b">host1</strong>. However,
+                  <code class="ph codeph">unravel_db</code> can also run harmlessly if an external db is used.</li>
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code> is identical on all Unravel hosts in the
+                  ensemble.</p>
+               <span class="ph aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span>
+               <p class="p">The file <code class="ph codeph">unravel.properties</code> is never changed by an RPM upgrade because it contains
+                  site-specific information, but some one-time changes  occur when setting up multiple hosts. The file
+                     <code class="ph codeph">unravel.properties</code> must be identical on all hosts, so if you are using data center
+                  automation like Puppet, Chef, Salt, Ansible, CloudFormation, Cfengine, and so on, you must maintain
+                  one "golden" <code class="ph codeph">unravel.properties</code> per Unravel ensemble. After you modify
+                     <code class="ph codeph">unravel.properties</code> as described below, you must update the "golden"
+                     <code class="ph codeph">unravel.properties</code> file for your site.</p>
+            </li>
+            <li class="li">Daemons are enabled/disabled via <code class="ph codeph">chkconfig</code>. <code class="ph codeph">chkconfig</code> sets symbolic
+               links which are persistent across Unravel Server RPM upgrades.</li>
+         </ul>
+         <p class="p"></p>
+         <p class="p">1. Stop Unravel Server</p>
+         <p class="p">On each Unravel host, run this command:</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code>sudo /etc/init.d/unravel_all.sh stop</code></pre>
+         <p class="p">2. Modify <code class="ph codeph">unravel.properties</code> on host1</p>
+         <ol class="ol">
+            <li class="li">Pick a machine to be <strong class="ph b">host1</strong>, where the Unravel Web UI will run.</li>
+            <li class="li">
+               <p class="p auto-cursor-target">
+                  <strong class="ph b">If the bundled db is in use</strong>, edit <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code> on
+                     <strong class="ph b">host1</strong> to change:</p>
+               <span class="ph aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span>
+               <p class="p">Replace <span class="ph">
+                     <code class="ph codeph">127.0.0.1</code>
+                  </span> with your LAN IP address or fully qualified hostname, replace <span class="ph">
+                     <code class="ph codeph">3316</code>
+                  </span> with your port number,  and replace <span class="ph">
+                     <code class="ph codeph">unravel_mysql_prod</code>
+                  </span> with your database name.</p>
+               <p class="p">To find your fully qualified hostname, type <code class="ph codeph">hostname -I</code> at the OS prompt.</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>unravel.jdbc.url=jdbc:mysql://127.0.0.1:3316/unravel_mysql_prod</code></pre>
+            </li>
+         </ol>
+         <p class="p">
+            <strong class="ph b">2. Copy host1's <code class="ph codeph">unravel.properties</code> to Other Hosts</strong>
+         </p>
+         <p class="p">
+            <strong class="ph b"></strong>
+         </p>
+         <ol class="ol">
+            <li class="li">
+               <p class="p auto-cursor-target">Copy <code class="ph codeph">/usr/local/unravel/etc/unravel.properties</code> and
+                     <code class="ph codeph">/usr/local/unravel/etc/unravel.ext.sh</code> from <strong class="ph b">host1</strong> to <strong class="ph b">host2</strong> (and
+                     <strong class="ph b">host3</strong>, if you are using three hosts). For example,</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code># host1
+scp /usr/local/unravel/etc/unravel.properties host2:/usr/local/unravel/etc/
+# host1
+scp /usr/local/unravel/etc/unravel.ext.sh host2:/usr/local/unravel/etc/</code></pre>
+            </li>
+            <li class="li">Verify that the ownership of <code class="ph codeph">unravel.properties</code> and <code class="ph codeph">unravel.ext.sh</code> is
+                  <code class="ph codeph">unravel:unravel</code>.</li>
+         </ol>
+         <p class="p"></p>
+         <p class="p title">Important Note</p>
+         <span class="ph aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span>
+         <p class="p">The scripts invoked below will make an identical change to the <code class="ph codeph">unravel.properties</code> file on
+            each machine.</p>
+         <p class="p">3. Assign Roles</p>
+         <p class="p"> Use these scripts to assign unique roles to the hosts.
+            To reduce the chance of errors, the command line arguments are the same on each host, but notice that the
+            script name is different. The arguments are the hostnames IP addresses of the hosts in the ensemble.</p>
+         <ul class="ul">
+            <li class="li">
+               <p class="p">For a 2-host ensemble (substitute <span class="ph">host</span>):</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code># host1
+sudo /usr/local/unravel/install_bin/switch_to_1of2.sh\ 
+host1 host2 
+# host2
+sudo /usr/local/unravel/install_bin/switch_to_2of2.sh\ 
+host1 host2</code></pre>
+            </li>
+            <li class="li">
+               <p class="p auto-cursor-target">For a 3-host ensemble (substitute <span class="ph">host</span>):</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code># host1 sudo /usr/local/unravel/install_bin/switch_to_1of3.sh\ 
+host1 host2 host3
+# host2 sudo /usr/local/unravel/install_bin/switch_to_2of3.sh\ 
+host1 host2 host3
+# host3 sudo /usr/local/unravel/install_bin/switch_to_3of3.sh\ 
+host1 host2 host3</code></pre>
+            </li>
+         </ul>
+         <span class="ph aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span>
+         <p class="p">These scripts establish the roles each host plays in the ensemble. The main effect is to assign specific
+            Unravel logical daemons to one host and only one host. 
+             Note that some daemons have names like
+                  <code class="ph codeph">unravel_<em class="ph i">xyz</em>_1</code> or <code class="ph codeph">unravel_<em class="ph i">xyz</em>_2</code>, and so on. The entire
+            name with the instance numeric suffix is set to run on one host in the ensemble. In some cases, multiple <em class="ph i">
+               <code class="ph codeph">xyz</code>
+            </em> numeric instances run on one machine, but the overall name with suffix runs on one host only. 
+             The <code class="ph codeph">switch_to_*</code> scripts change
+               <code class="ph codeph">unravel.properties</code> in a coordinated fashion and also create a file, <code class="ph codeph">
+               <a class="xref external-link" href="http://unravel.id" target="_blank">unravel.id</a>.properties</code>, to hold the integer property indicating which role the
+            particular machine has (1, 2, or 3).</p>
+         <p class="p">4. Set Up Zookeeper and Kafka</p>
+         <p class="p">Assign Kafka Partitions</p>
+         <p class="p">Kafka partition assignment (for 3 host installs) is done by evenly distributing a topic over the hosts that
+            exist at topic create time. Topics must be created anew when a new host is added in order to have proper
+            distribution.</p>
+         <p class="p">Redistribute Zookeeper Topics</p>
+         <p class="p">Perform these steps, <em class="ph i">in sequential order, on the specific hosts</em> as indicated by the prompt name. Skip
+               <strong class="ph b">host3</strong> if you are only using 2 hosts for Unravel Server:</p>
+         <ul class="ul">
+            <li class="li">
+               <p class="p">Stop all and clear Zookeeper and Kafka data areas on each host:</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code># host1
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host2
+sudo /usr/local/unravel/install_bin/kafka_clear.sh 
+# host3
+sudo /usr/local/unravel/install_bin/kafka_clear.sh</code></pre>
+            </li>
+            <li class="li">
+               <p class="p auto-cursor-target">Start up Zookeeper ensemble:</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code># host1 
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host2
+sudo /etc/init.d/unravel_all.sh start-zk 
+# host3
+sudo /etc/init.d/unravel_all.sh start-zk</code></pre>
+            </li>
+            <li class="li">
+               <p class="p auto-cursor-target">Wait 15sec for Zookeeper quorum to settle:</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>sleep 15</code></pre>
+            </li>
+            <li class="li">
+               <p class="p auto-cursor-target">Start up Kafka ensemble:</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code># host1
+sudo /etc/init.d/unravel_all.sh start-k 
+# host2
+sudo /etc/init.d/unravel_all.sh start-k 
+# host3
+sudo /etc/init.d/unravel_all.sh start-k</code></pre>
+            </li>
+            <li class="li">
+               <p class="p auto-cursor-target">Wait 10sec for Kafka coordination:</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code>sleep 10</code></pre>
+            </li>
+            <li class="li">
+               <p class="p auto-cursor-target">Create the Kafka topics (only on one host):</p>
+               <pre class="pre codeblock syntaxhighlighter-pre"><code># host1 
+sudo /usr/local/unravel/install_bin/kafka_create_topics.sh</code></pre>
+            </li>
+         </ul>
+         <p class="p">5. Start Unravel Server</p>
+         <p class="p">Finish multi-host installation by starting up Unravel Server:</p>
+         <pre class="pre codeblock syntaxhighlighter-pre"><code># host1
+sudo /etc/init.d/unravel_all.sh start 
+# host1
+echo "http://$(hostname -f):3000/" 
+# host2
+sudo /etc/init.d/unravel_all.sh start</code></pre>
+         <p class="p"></p>
+         <p class="p">6. Edit Hive-site Snippet for Hive-Hook</p>
+         <p class="p">The port 4043 is on <strong class="ph b">host2</strong> and that means the <code class="ph codeph">hive-site.xml</code> file changes needed for
+            Unravel hive-hook are in <code class="ph codeph">/usr/local/unravel/hive-hook/hive-site.xml.snip</code> on <strong class="ph b">host2</strong>.
+            If <code class="ph codeph">hive-site.xml</code> was already configured for <strong class="ph b">host1</strong>, then modify it for
+            <strong class="ph b">host2</strong>.</p>
+         <p class="p">7. Snapshot unravel.properties as new golden file</p>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/config/config.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/parseuri.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/localization/strings.js"><!----></script>
+    <script type="text/javascript" src="./oxygen-webhelp/feedback/resources/js/init.js"><!----></script>
+    <script type="text/javascript">
+        function showCommentsFor(page) {
+           console.log('showCommentsFor(' + page + ')');
+           init(page, $('#cmts'));
+           
+           return false;
+        }
+        
+        var pageLocation = window.location.href;
+        try {
+            var p = parseUri(pageLocation);
+            console.log(p);
+            showCommentsFor(p.path);
+        } catch (e) {
+            debug(e);
+        }
+    </script>
+</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">&lt;oXygen/&gt; XML WebHelp</a> - Trial Edition
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>
